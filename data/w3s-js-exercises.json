@@ -1,0 +1,3010 @@
+{
+  "language": "js",
+  "topics": {
+    "arithmetic": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5;<br>x++;</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>55</code>",
+          "<code>25</code>",
+          "<code>10</code>",
+          "<code>6</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arithmetic1",
+        "prompt_zh": "[算術運算] Consider the following code:let x = 5;x++;What will be the result of x?"
+      },
+      {
+        "draganddroptext": "<code>let x = 15 ___ 9</code>",
+        "draganddropquestion": "Insert the correct operator to return the remainder when 15 is divided by 9:",
+        "options": [
+          "<code>#</code>",
+          "<code>%</code>",
+          "<code>-</code>",
+          "<code>/</code>",
+          "<code>\\</code>",
+          "<code>*</code>"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arithmetic2",
+        "prompt_zh": "[算術運算] Insert the correct operator to return the remainder when 15 is divided by 9:"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 100 + 50 * 3;<br></code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>450</code>",
+          "<code>250</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arithmetic3",
+        "prompt_zh": "[算術運算] Consider the following code:let x = 100 + 50 * 3;What will be the result of x?"
+      }
+    ],
+    "array_const": [
+      {
+        "question": "True or False.<br>If you declare an array with the <code class='w3-codespan'>const</code> keyword, you cannot change the array items later.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_const1",
+        "prompt_zh": "True 或 False：If you declare an array with the const keyword, you cannot change the array items later."
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const x = ['Apple', 'Banana', 'Cherry'];<br>{<br>&nbsp;&nbsp;const x = ['Audi', 'BMW', 'Chevrolet'];<br>}<br>alert(x[1]);</code><br>What will be the alerted result?",
+        "options": [
+          "<code>You will get an error.</code>",
+          "<code>Banana</code>",
+          "<code>BMW</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_const2",
+        "prompt_zh": "[陣列 const] Consider the following code:const x = ['Apple', 'Banana', 'Cherry'];{  const x = ['Audi', 'BMW', 'Chevrolet'];}alert(x[1]);What will be the alerted result?"
+      },
+      {
+        "question": "Is the following redeclaring of the <code class='w3-codespan'>fruits</code> array allowed?<br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Cherry'];<br>var fruits = ['Kiwi', 'Lemon', 'Mango'];</code>",
+        "options": [
+          "<code>Yes, it's allowed</code>",
+          "<code>No it's not allowed</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_const3",
+        "prompt_zh": "[陣列 const] Is the following redeclaring of the fruits array allowed?const fruits = ['Apple', 'Banana', 'Cherry'];var fruits = ['Kiwi', 'Lemon', 'Mango'];"
+      }
+    ],
+    "array_iteration": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const x = [45, 4, 9, 16, 25];<br>let y = x.every(myfunc);<br>function myfunc(val) {<br>&nbsp;&nbsp;return val > 20;<br>}</code><br>What will the result of the <code class='w3-codespan'>y</code>?",
+        "options": [
+          "<code>[45, 25]</code>",
+          "<code>false</code>",
+          "<code>[]</code>",
+          "<code>NaN</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_iteration1",
+        "prompt_zh": "[陣列迭代] Consider the following code:const x = [45, 4, 9, 16, 25];let y = x.every(myfunc);function myfunc(val) {  return val > 20;}What will the result of the y?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const x = [45, 4, 9, 16, 25];<br>let y = x.some(myfunc);<br>function myfunc(val) {<br>&nbsp;&nbsp;return val > 20;<br>}</code><br>What will the result of the <code class='w3-codespan'>y</code>?",
+        "options": [
+          "<code>[45, 25]</code>",
+          "<code>[]</code>",
+          "<code>true</code>",
+          "<code>2</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_iteration2",
+        "prompt_zh": "[陣列迭代] Consider the following code:const x = [45, 4, 9, 16, 25];let y = x.some(myfunc);function myfunc(val) {  return val > 20;}What will the result of the y?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const x = [45, 4, 9, 16, 25];<br>let y = x.map(myfunc);<br>function myfunc(val) {<br>&nbsp;&nbsp;return val > 20;<br>}</code><br>What will the result of the <code class='w3-codespan'>y</code>?",
+        "options": [
+          "<code>[45, 25]</code>",
+          "<code>false</code>",
+          "<code>true</code>",
+          "<code>[true, false, false, false, true]</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_iteration3",
+        "prompt_zh": "[陣列迭代] Consider the following code:const x = [45, 4, 9, 16, 25];let y = x.map(myfunc);function myfunc(val) {  return val > 20;}What will the result of the y?"
+      }
+    ],
+    "array_methods": [
+      {
+        "question": "After executing the following code:<br><code class='codeblock'>const fruits = ['Banana', 'Orange', 'Apple'];<br>fruits.pop();</code><br>What will the <code class='w3-codespan'>fruits</code> array look like?",
+        "options": [
+          "<code>['', 'Banana', 'Orange', 'Apple']</code>",
+          "<code>['Banana', 'Orange']</code>",
+          "<code>['Orange', 'Apple']</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_methods1",
+        "prompt_zh": "[陣列方法] After executing the following code:const fruits = ['Banana', 'Orange', 'Apple'];fruits.pop();What will the fruits array look like?"
+      },
+      {
+        "fillintheblanks": "exercise_js_array_methods2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_methods2",
+        "prompt_zh": "陣列方法 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_array_methods3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_methods3",
+        "prompt_zh": "陣列方法 填空題"
+      }
+    ],
+    "array_search": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const fruits = ['Apple', 'Orange', 'Mango'];<br>let x = fruits.indexOf('Orange');</code><br>What will the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>0</code>",
+          "<code>1</code>",
+          "<code>true</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_search1",
+        "prompt_zh": "[陣列搜尋] Consider the following code:const fruits = ['Apple', 'Orange', 'Mango'];let x = fruits.indexOf('Orange');What will the result of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const fruits = ['Apple', 'Orange', 'Mango'];<br>let x = fruits.includes('Orange');</code><br>What will the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>0</code>",
+          "<code>1</code>",
+          "<code>true</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_search2",
+        "prompt_zh": "[陣列搜尋] Consider the following code:const fruits = ['Apple', 'Orange', 'Mango'];let x = fruits.includes('Orange');What will the result of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const fruits = ['Apple', 'Orange', 'Mango'];<br>let x = fruits.indexOf('Banana');</code><br>What will the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>0</code>",
+          "<code>-1</code>",
+          "<code>false</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_search3",
+        "prompt_zh": "[陣列搜尋] Consider the following code:const fruits = ['Apple', 'Orange', 'Mango'];let x = fruits.indexOf('Banana');What will the result of x?"
+      }
+    ],
+    "array_sort": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const fruits = ['Apple', 'Orange', 'Banana'];<br>fruits.reverse();</code><br>What will the result of the <code class='w3-codespan'>fruits</code> array?",
+        "options": [
+          "<code>['Orange', 'Banana', 'Apple']</code>",
+          "<code>['Banana', 'Orange', 'Apple']</code>",
+          "<code>['Apple', 'Banana', 'Orange']</code>",
+          "<code>['Orange', 'Apple', 'Banana']</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_sort1",
+        "prompt_zh": "[陣列排序] Consider the following code:const fruits = ['Apple', 'Orange', 'Banana'];fruits.reverse();What will the result of the fruits array?"
+      },
+      {
+        "fillintheblanks": "exercise_js_array_sort1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_sort2",
+        "prompt_zh": "陣列排序 填空題"
+      },
+      {
+        "question": "True or False.<br>The <code class='w3-codespan'>reverse()</code> method returns a new array, the original array is not affected.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_array_sort3",
+        "prompt_zh": "True 或 False：The reverse() method returns a new array, the original array is not affected."
+      }
+    ],
+    "arrays": [
+      {
+        "question": "What is NOT a legal way to create an array??",
+        "options": [
+          "<code>const fruits = ['Orange', 'Banana', 'Apple'];</code>",
+          "<code>const fruits = new Array ('Orange', 'Banana', 'Apple');</code>",
+          "<code>const fruits = ('Orange', 'Banana', 'Apple');</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrays1",
+        "prompt_zh": "[陣列] What is NOT a legal way to create an array??"
+      },
+      {
+        "fillintheblanks": "exercise_js_arrays1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrays2",
+        "prompt_zh": "陣列 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_arrays2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrays3",
+        "prompt_zh": "陣列 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_arrays3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrays4",
+        "prompt_zh": "陣列 填空題"
+      }
+    ],
+    "arrow_function": [
+      {
+        "question": "Which one of the following is a correct JavaScript arrow function?",
+        "options": [
+          "<code>greeting => 'Hello World!';</code>",
+          "<code>greeting = return => 'Hello World!';</code>",
+          "<code>greeting = () => 'Hello World!';</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrow_function1",
+        "prompt_zh": "[箭頭函式] Which one of the following is a correct JavaScript arrow function?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>myfunc ___ ___ ___ {<br>&nbsp;&nbsp;let x = 5;<br>&nbsp;&nbsp;return x;<br>}</code>",
+        "draganddropquestion": "Insert the missing parts to complete the arrow function:",
+        "options": [
+          "<code>==</code>",
+          "<code>=></code>",
+          "<code>()</code>",
+          "<code>[]</code>",
+          "<code>=</code>",
+          "<code>{}</code>"
+        ],
+        "correct": [
+          4,
+          2,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrow_function2",
+        "prompt_zh": "[箭頭函式] Insert the missing parts to complete the arrow function:"
+      },
+      {
+        "question": "True or False.<br>You are not allowed to use parameters in arrow functions.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_arrow_function3",
+        "prompt_zh": "True 或 False：You are not allowed to use parameters in arrow functions."
+      }
+    ],
+    "assignment": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5;<br>x += 10;</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>5</code>",
+          "<code>10</code>",
+          "<code>15</code>",
+          "<code>50</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_assignment1",
+        "prompt_zh": "[賦值] Consider the following code:let x = 5;x += 10;What will be the result of x?"
+      },
+      {
+        "fillintheblanks": "exercise_js_operators4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_assignment2",
+        "prompt_zh": "賦值 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_operators5.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_assignment3",
+        "prompt_zh": "賦值 填空題"
+      }
+    ],
+    "bigint": [
+      {
+        "question": "What is a legal JavaScript syntax for creating a BigInt number?",
+        "options": [
+          "<code>1234567890123456789m</code>",
+          "<code>1234567890123456789max</code>",
+          "<code>1234567890123456789n</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bigint1",
+        "prompt_zh": "[BigInt] What is a legal JavaScript syntax for creating a BigInt number?"
+      },
+      {
+        "question": "What is <i>also</i> a legal JavaScript syntax for creating a BigInt number?",
+        "options": [
+          "<code>1234567890123456789.toBigInt()</code>",
+          "<code>BigInt(1234567890123456789)</code>",
+          "<code>Int64+(1234567890123456789)</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bigint2",
+        "prompt_zh": "[BigInt] What is also a legal JavaScript syntax for creating a BigInt number?"
+      },
+      {
+        "question": "True of False.<br>BigInt numbers can have decimals.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bigint3",
+        "prompt_zh": "[BigInt] True of False.BigInt numbers can have decimals."
+      }
+    ],
+    "bitwise": [
+      {
+        "question": "What number does the binary number <code class='w3-codespan'>010</code> represent?",
+        "options": [
+          "<code>1</code>",
+          "<code>2</code>",
+          "<code>10</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bitwise1",
+        "prompt_zh": "[位元運算] What number does the binary number 010 represent?"
+      },
+      {
+        "question": "When working with binary numbers, what is the result of the following operation?<br><code class='codeblock'>1111 & 0001</code>",
+        "options": [
+          "<code>0000</code>",
+          "<code>0001</code>",
+          "<code>1110</code>",
+          "<code>1111</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bitwise2",
+        "prompt_zh": "當 working with binary numbers 時，what is the result of the following operation？1111 & 0001"
+      },
+      {
+        "question": "When working with binary numbers, what is the result of the following operation?<br><code class='codeblock'>1111 | 0001</code>",
+        "options": [
+          "<code>0000</code>",
+          "<code>0001</code>",
+          "<code>1110</code>",
+          "<code>1111</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_bitwise3",
+        "prompt_zh": "當 working with binary numbers 時，what is the result of the following operation？1111 | 0001"
+      }
+    ],
+    "booleans": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5 < 2;</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>true</code>",
+          "<code>false</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_booleans1",
+        "prompt_zh": "[布林值] Consider the following code:let x = 5 What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5 == 5;</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>true</code>",
+          "<code>false</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_booleans2",
+        "prompt_zh": "[布林值] Consider the following code:let x = 5 == 5;What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = Boolean(0);</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>true</code>",
+          "<code>false</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_booleans3",
+        "prompt_zh": "[布林值] Consider the following code:let x = Boolean(0);What will be the value of x?"
+      }
+    ],
+    "break": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Cherry'];<br>let x = '';<br>myfavorite: {<br>&nbsp;&nbsp;x = fruits[0];<br>&nbsp;&nbsp;break myfavorite;<br>&nbsp;&nbsp;x = fruits[1];<br>&nbsp;&nbsp;x = fruits[2];<br>}<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "Apple",
+          "Banana",
+          "Cherry"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_break1",
+        "prompt_zh": "[break] Consider the following code:const fruits = ['Apple', 'Banana', 'Cherry'];let x = '';myfavorite: {  x = fruits[0];  break myfavorite;  x = fruits[1];  x = fruits[2];}alert(x);What will be the alerted result?"
+      },
+      {
+        "fillintheblanks": "exercise_js_break1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_break2",
+        "prompt_zh": "break 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_break2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_break3",
+        "prompt_zh": "break 填空題"
+      }
+    ],
+    "classes": [
+      {
+        "question": "There is one method all classes should have, which one?",
+        "options": [
+          "<code>init()</code>",
+          "<code>constructor()</code>",
+          "<code>onerror()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_classes1",
+        "prompt_zh": "[類別] There is one method all classes should have, which one?"
+      },
+      {
+        "question": "What keyword do we use when we create a class?",
+        "options": [
+          "<code>class</code>",
+          "<code>object</code>",
+          "<code>function</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_classes2",
+        "prompt_zh": "[類別] What keyword do we use when we create a class?"
+      },
+      {
+        "question": "True or False.<br>You are not allowed to send parameters into class methods.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_classes3",
+        "prompt_zh": "True 或 False：You are not allowed to send parameters into class methods."
+      }
+    ],
+    "comments": [
+      {
+        "question": "What is a correct syntax for creating a comment in JavaScript?",
+        "options": [
+          "<code># this is a comment</code>",
+          "<code>// this is a comment</code>",
+          "<code>'' this is a comment</code>",
+          "<code>## this is a comment</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comments1",
+        "prompt_zh": "[註解] What is a correct syntax for creating a comment in JavaScript?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___<br>This code will<br>be ignored by JavaScript<br>and will NOT be executed<br>___</code>",
+        "draganddropquestion": "Select the correct syntax for commenting out the entire section of the code.",
+        "options": [
+          "<code>//</code>",
+          "<code>*/</code>",
+          "<code>##</code>",
+          "<code>'''</code>",
+          "<code>'''</code>",
+          "<code>/*</code>",
+          "<code>//</code>"
+        ],
+        "correct": [
+          5,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comments2",
+        "prompt_zh": "[註解] Select the correct syntax for commenting out the entire section of the code."
+      },
+      {
+        "question": "What will be the value of <code class='w3-codespan'>x</code>?<br><code class='codeblock'>x = 5;<br>//x = 7;</code>",
+        "options": [
+          "<code>5</code>",
+          "<code>7</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comments3",
+        "prompt_zh": "[註解] What will be the value of x?x = 5;//x = 7;"
+      }
+    ],
+    "comparisons": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = (5 == 5 || 5 < 2);</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>true</code>",
+          "<code>false</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comparisons1",
+        "prompt_zh": "[比較] Consider the following code:let x = (5 == 5 || 5 What will be the value of x?"
+      },
+      {
+        "fillintheblanks": "exercise_js_comparisons1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comparisons2",
+        "prompt_zh": "比較 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_comparisons2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comparisons3",
+        "prompt_zh": "比較 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_comparisons3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comparisons4",
+        "prompt_zh": "比較 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_comparisons4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_comparisons5",
+        "prompt_zh": "比較 填空題"
+      }
+    ],
+    "const": [
+      {
+        "question": "True or False.<br>Variables of type String or Number, created with the <code class='w3-codespan'>const</code> keyword, can never change their value.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_const1",
+        "prompt_zh": "True 或 False：Variables of type String or Number, created with the const keyword, can never change their value."
+      },
+      {
+        "question": "What is a correct use of the <code class='w3-codespan'>const</code> keyword?",
+        "options": [
+          "<code>x const 5;</code>",
+          "<code>const 5 into x;</code>",
+          "<code>const x = 5;</code>",
+          "<code>const(x, 5);</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_const2",
+        "prompt_zh": "[const] What is a correct use of the const keyword?"
+      },
+      {
+        "question": "True or False.<br>If you create an Array with the <code class='w3-codespan'>const</code> keyword, you cannot change the item values.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_const3",
+        "prompt_zh": "True 或 False：If you create an Array with the const keyword, you cannot change the item values."
+      }
+    ],
+    "datatypes": [
+      {
+        "question": "In JavaScript, what is the data type of the following variable?<br><code class='codeblock'>let x = 7.5</code>",
+        "options": [
+          "<code>Decimal</code>",
+          "<code>Number</code>",
+          "<code>Integer</code>",
+          "<code>Float</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_datatypes1",
+        "prompt_zh": "[資料型別] In JavaScript, what is the data type of the following variable?let x = 7.5"
+      },
+      {
+        "question": "True or False.<br>If a variable is declared using the <code class='w3-codespan'>let</code> keyword, it can never change its data type.</code>",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_datatypes2",
+        "prompt_zh": "True 或 False：If a variable is declared using the let keyword, it can never change its data type."
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>let a = 10; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//___<br>let b = 'Sally'; //___<br>let c = true;&nbsp;&nbsp;&nbsp;&nbsp;//___</code>",
+        "draganddropquestion": "Insert the correct data type for each variable:",
+        "options": [
+          "<code>String</code>",
+          "<code>Boolean</code>",
+          "<code>Dictionary</code>",
+          "<code>Number</code>",
+          "<code>Float</code>",
+          "<code>Object</code>"
+        ],
+        "correct": [
+          3,
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_datatypes3",
+        "prompt_zh": "[資料型別] Insert the correct data type for each variable:"
+      }
+    ],
+    "date_formats": [
+      {
+        "question": "What date is created with the following code:<br><code class='codeblock'>const d = new Date('2024');</code>.",
+        "options": [
+          "A random date in 2024",
+          "January 1. 2024",
+          "December 31. 2024"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_formats1",
+        "prompt_zh": "[日期格式] What date is created with the following code:const d = new Date('2024');."
+      },
+      {
+        "question": "True or False.<br>UTC (Universal Time Coordinated) is the same as GMT (Greenwich Mean Time).",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_formats2",
+        "prompt_zh": "True 或 False：UTC (Universal Time Coordinated) is the same as GMT (Greenwich Mean Time)."
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = Date.parse('March 30, 2011');</code><br>What will be the result <code class='w3-codespan'>x</code>?",
+        "options": [
+          "The number of milliseconds between March 30, 2011 and January 1, 1900",
+          "The number of milliseconds between March 30, 2011 and January 1, 1970",
+          "The number of milliseconds between March 30, 2011 and January 1, 2000"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_formats3",
+        "prompt_zh": "[日期格式] Consider the following code:let x = Date.parse('March 30, 2011');What will be the result x?"
+      }
+    ],
+    "date_methods": [
+      {
+        "question": "What is the return value of the <code class='w3-codespan'>getDay()</code>?",
+        "options": [
+          "A number between 1 and 31",
+          "A number between 0 and 30",
+          "A number between 1 and 7",
+          "A number between 0 and 6"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods1",
+        "prompt_zh": "return value of the getDay() 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_js_dates2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods2",
+        "prompt_zh": "日期方法 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_dates3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods3",
+        "prompt_zh": "日期方法 填空題"
+      }
+    ],
+    "date_methods_set": [
+      {
+        "question": "What is expected format of the argument in the <code class='w3-codespan'>setDate()</code> method?",
+        "options": [
+          "A number between 1 and 31",
+          "A number between 0 and 30",
+          "A number between 1 and 7",
+          "A number between 0 and 6"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods_set1",
+        "prompt_zh": "[日期 set 方法] What is expected format of the argument in the setDate() method?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dates4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods_set2",
+        "prompt_zh": "日期 set 方法 填空題"
+      },
+      {
+        "question": "What is expected format of the <code class='w3-codespan'>setTime()</code> method?",
+        "options": [
+          "A number between 0 and 23",
+          "A date with the time specified",
+          "Milliseconds since January 1, 1970"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_date_methods_set3",
+        "prompt_zh": "[日期 set 方法] What is expected format of the setTime() method?"
+      }
+    ],
+    "dates": [
+      {
+        "question": "What date is created with the following code:<br><code class='codeblock'>const d = new Date(2024, 10, 18);</code>.",
+        "options": [
+          "October 18. 2024",
+          "November 18. 2024",
+          "October 19. 2024",
+          "November 19. 2024"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_dates1",
+        "prompt_zh": "[日期] What date is created with the following code:const d = new Date(2024, 10, 18);."
+      },
+      {
+        "fillintheblanks": "exercise_js_dates1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_dates2",
+        "prompt_zh": "日期 填空題"
+      },
+      {
+        "question": "What date is created with the following code:<br><code class='codeblock'>const d = new Date(24, 10, 18);</code>.",
+        "options": [
+          "October 18. 2024",
+          "November 18. 2024",
+          "October 18. 1924",
+          "November 18. 1924"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_dates3",
+        "prompt_zh": "[日期] What date is created with the following code:const d = new Date(24, 10, 18);."
+      }
+    ],
+    "debugging": [
+      {
+        "question": "What is a common method to display information in the debugger window?",
+        "options": [
+          "<code>debug.log()</code>",
+          "<code>console.log()</code>",
+          "<code>document.log()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_debugging1",
+        "prompt_zh": "[除錯] What is a common method to display information in the debugger window?"
+      },
+      {
+        "question": "What is a correct JavaScript keyword to stop the execution of JavaScript?",
+        "options": [
+          "<code>stop</code>",
+          "<code>goto</code>",
+          "<code>debugger</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_debugging2",
+        "prompt_zh": "[除錯] What is a correct JavaScript keyword to stop the execution of JavaScript?"
+      },
+      {
+        "question": "Which keyboard key will normally activate debugging in your browser?",
+        "options": [
+          "<code>F10</code>",
+          "<code>F11</code>",
+          "<code>F12</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_debugging3",
+        "prompt_zh": "[除錯] Which keyboard key will normally activate debugging in your browser?"
+      }
+    ],
+    "destructuring": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Cherry'];<br>let [x, y] = fruits;</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>['Apple', 'Banana', 'Cherry']</code>",
+          "<code>['Apple']</code>",
+          "<code>Apple</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_destructuring1",
+        "prompt_zh": "[解構] Consider the following code:const fruits = ['Apple', 'Banana', 'Cherry'];let [x, y] = fruits;What will be the value of x?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>const numbers = [10, 20, 30, 40, 50, 60, 70];<br>const [a,b, ___leftover] = numbers;</code><br>",
+        "draganddropquestion": "Insert the missing syntax to make the <code class='w3-codespan'>leftover</code> variable contain the rest of the Array.",
+        "options": [
+          "<code>:</code>",
+          "<code>=</code>",
+          "<code>...</code>",
+          "<code>===</code>",
+          "<code>,,,</code>"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_destructuring2",
+        "prompt_zh": "[解構] Insert the missing syntax to make the leftover variable contain the rest of the Array."
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>let fName = 'John';<br>let lName = 'Doe';<br>[fName, lName] = ___ ___ , ___ ___;</code><br>",
+        "draganddropquestion": "Use destructuring to swap fName and lName. Meaning, fName should get the value 'Doe' and lName 'John'.",
+        "options": [
+          "<code>this</code>",
+          "<code>=</code>",
+          "<code>{</code>",
+          "<code>lName</code>",
+          "<code>[</code>",
+          "<code>]</code>",
+          "<code>:</code>",
+          "<code>new</code>",
+          "<code>fName</code>",
+          "<code>(</code>",
+          "<code>)</code>"
+        ],
+        "correct": [
+          4,
+          3,
+          8,
+          5
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_destructuring3",
+        "prompt_zh": "[解構] Use destructuring to swap fName and lName. Meaning, fName should get the value 'Doe' and lName 'John'."
+      }
+    ],
+    "errors": [
+      {
+        "question": "Only one of the following words is a legal JavaScript statement, which one?",
+        "options": [
+          "<code>find</code>",
+          "<code>check</code>",
+          "<code>try</code>",
+          "<code>execute</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_errors1",
+        "prompt_zh": "[錯誤處理] Only one of the following words is a legal JavaScript statement, which one?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___ {<br>&nbsp;&nbsp;let x = 'Hello';<br>}<br>___(err) {<br>&nbsp;&nbsp;alert('Something wen wrong');<br>}</code><br>",
+        "draganddropquestion": "Insert the missing syntax to complete the error handling:",
+        "options": [
+          "<code>if</code>",
+          "<code>elseif</code>",
+          "<code>catch</code>",
+          "<code>repeat</code>",
+          "<code>try</code>"
+        ],
+        "correct": [
+          4,
+          2
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_errors2",
+        "prompt_zh": "[錯誤處理] Insert the missing syntax to complete the error handling:"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___ {<br>&nbsp;&nbsp;let x = 'Hello';<br>}<br>___(err) {<br>&nbsp;&nbsp;alert('Something went wrong');<br>___ {<br>&nbsp;&nbsp;alert('Everything went fine');<br>}</code><br>",
+        "draganddropquestion": "Insert the missing syntax to complete the error handling:",
+        "options": [
+          "<code>default</code>",
+          "<code>if</code>",
+          "<code>elseif</code>",
+          "<code>end</code>",
+          "<code>catch</code>",
+          "<code>repeat</code>",
+          "<code>finally</code>",
+          "<code>try</code>"
+        ],
+        "correct": [
+          7,
+          4,
+          6
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_errors3",
+        "prompt_zh": "[錯誤處理] Insert the missing syntax to complete the error handling:"
+      }
+    ],
+    "events": [
+      {
+        "question": "What is the correct HTML event attribute to execute something when a user clicks on an element?",
+        "options": [
+          "<code>ontap</code>",
+          "<code>onmouseclick</code>",
+          "<code>clickme</code>",
+          "<code>onclick</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_events1",
+        "prompt_zh": "correct HTML event attribute to execute something when a user clicks on an element 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_js_events2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_events2",
+        "prompt_zh": "事件 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_events3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_events3",
+        "prompt_zh": "事件 填空題"
+      }
+    ],
+    "functions": [
+      {
+        "question": "What keyword is used to define a function in JavaScript?",
+        "options": [
+          "<code>def</code>",
+          "<code>func</code>",
+          "<code>function</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_functions1",
+        "prompt_zh": "[函式] What keyword is used to define a function in JavaScript?"
+      },
+      {
+        "fillintheblanks": "exercise_js_functions1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_functions2",
+        "prompt_zh": "函式 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_functions2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_functions3",
+        "prompt_zh": "函式 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_functions3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_functions4",
+        "prompt_zh": "函式 填空題"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___ myFunction() ___<br>___.___('demo').___ = 'Hello';<br>___</code>",
+        "draganddropquestion": "Complete the code to make the function display 'Hello' in the inner HTML of an element with the ID 'demo':",
+        "options": [
+          "<code>document</code>",
+          "<code>getId</code>",
+          "<code>{</code>",
+          "<code>innerHTML</code>",
+          "<code>alert</code>",
+          "<code>}</code>",
+          "<code>getElementById</code>",
+          "<code>(</code>",
+          "<code>)</code>",
+          "<code>function</code>",
+          "<code>write</code>",
+          "<code>insertElement</code>"
+        ],
+        "correct": [
+          9,
+          2,
+          0,
+          6,
+          3,
+          5
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_functions5",
+        "prompt_zh": "[函式] Complete the code to make the function display 'Hello' in the inner HTML of an element with the ID 'demo':"
+      }
+    ],
+    "hoisting": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>x = 5;<br>alert(x);<br>var x;</code><br>What will be the alerted result?",
+        "options": [
+          "5",
+          "undefined"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_hoisting1",
+        "prompt_zh": "[hoisting] Consider the following code:x = 5;alert(x);var x;What will be the alerted result?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>x = 5;<br>var x;<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "5",
+          "undefined"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_hoisting2",
+        "prompt_zh": "[hoisting] Consider the following code:x = 5;var x;alert(x);What will be the alerted result?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>var x = 5;<br>var y;<br>alert(y);<br>y = 7;</code><br>What will be the alerted result?",
+        "options": [
+          "7",
+          "undefined"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_hoisting3",
+        "prompt_zh": "[hoisting] Consider the following code:var x = 5;var y;alert(y);y = 7;What will be the alerted result?"
+      }
+    ],
+    "htmldom": [
+      {
+        "question": "What does DOM stand for?",
+        "options": [
+          "Document Object Model",
+          "Document Order Manager",
+          "Document Organize Manager"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom1",
+        "prompt_zh": "DOM 是什麼縮寫？"
+      },
+      {
+        "question": "Who has created the DOM standard?",
+        "options": [
+          "Microsoft",
+          "Apple",
+          "W3C"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom2",
+        "prompt_zh": "[HTML DOM] Who has created the DOM standard?"
+      },
+      {
+        "question": "True or False.<br>With the HTML Dom, you can use JavaScript to access HTML elements.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom3",
+        "prompt_zh": "True 或 False：With the HTML Dom, you can use JavaScript to access HTML elements."
+      }
+    ],
+    "htmldom_collections": [
+      {
+        "question": "What is a correct syntax for returning all &lt;p&gt; element?",
+        "options": [
+          "<code>document.getElementsByTagName('p')</code>",
+          "<code>document.getElements('p')</code>",
+          "<code>document.all('p')</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_collections1",
+        "prompt_zh": "[DOM 集合] What is a correct syntax for returning all <p> element?"
+      },
+      {
+        "question": "What is a correct property for returning the number of elements in a collection?",
+        "options": [
+          "<code>count</code>",
+          "<code>length</code>",
+          "<code>nth</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_collections2",
+        "prompt_zh": "[DOM 集合] What is a correct property for returning the number of elements in a collection?"
+      },
+      {
+        "question": "True or False.<br>The first element in a collection has the index 1",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_collections3",
+        "prompt_zh": "True 或 False：The first element in a collection has the index 1"
+      }
+    ],
+    "htmldom_css": [
+      {
+        "question": "What is a legal JavaScript syntax for returning the background color of an element?",
+        "options": [
+          "<code>document.getElementById('demo').layout.backgroundColor;</code>",
+          "<code>document.getElementById('demo').css.backgroundColor;</code>",
+          "<code>document.getElementById('demo').style.backgroundColor;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_css1",
+        "prompt_zh": "[DOM CSS] What is a legal JavaScript syntax for returning the background color of an element?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html6.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_css2",
+        "prompt_zh": "DOM CSS 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html7.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_css3",
+        "prompt_zh": "DOM CSS 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html8.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_css4",
+        "prompt_zh": "DOM CSS 填空題"
+      }
+    ],
+    "htmldom_document": [
+      {
+        "question": "What is a NOT a legal HTML DOM document method?",
+        "options": [
+          "<code>getElementsByClassName()</code>",
+          "<code>getElementsByTagName()</code>",
+          "<code>getElementsByAttributeName()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_document1",
+        "prompt_zh": "[DOM document] What is a NOT a legal HTML DOM document method?"
+      },
+      {
+        "question": "What is a correct syntax for returning the title of an HTML document?",
+        "options": [
+          "<code>document.name</code>",
+          "<code>document.title</code>",
+          "<code>document.getTitle</code>",
+          "<code>document.getElementByName('title')</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_document2",
+        "prompt_zh": "[DOM document] What is a correct syntax for returning the title of an HTML document?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>alert(___.___('demo').___);</code>",
+        "draganddropquestion": "Insert the missing syntax to alert the value of the element with the id 'demo'.",
+        "options": [
+          "<code>valueHTML</code>",
+          "<code>innerHTML</code>",
+          "<code>document</code>",
+          "<code>element</code>",
+          "<code>getElementById</code>"
+        ],
+        "correct": [
+          2,
+          4,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_document3",
+        "prompt_zh": "[DOM document] Insert the missing syntax to alert the value of the element with the id 'demo'."
+      }
+    ],
+    "htmldom_elements": [
+      {
+        "question": "What is a legal syntax for returning all the &lt;p&gt; elements of a document?",
+        "options": [
+          "<code>document.getElementsByTagName('p')</code>",
+          "<code>document.paragraphs</code>",
+          "<code>document.getElements('p')</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_elements1",
+        "prompt_zh": "[DOM 元素] What is a legal syntax for returning all the <p> elements of a document?"
+      },
+      {
+        "question": "What is a legal syntax for returning all the &lt;p&gt; elements with the class name 'menu-item'?",
+        "options": [
+          "<code>document.querySelectorAll('p.menu-item');</code>",
+          "<code>document.getParagraphsByClassName('menu-item');</code>",
+          "<code>document.getAll('p', 'menu-item');</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_elements2",
+        "prompt_zh": "[DOM 元素] What is a legal syntax for returning all the <p> elements with the class name 'menu-item'?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_elements3",
+        "prompt_zh": "DOM 元素 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_elements4",
+        "prompt_zh": "DOM 元素 填空題"
+      }
+    ],
+    "htmldom_eventlistener": [
+      {
+        "question": "What is a legal syntax for executing a function called 'myfunc' when the browser window resizes?",
+        "options": [
+          "<code>window.listen('resize', myfunc);</code>",
+          "<code>window.addEventListener('resize', myfunc);</code>",
+          "<code>window.addEvent('resize', myfunc);</code>",
+          "<code>window.execute(myfunc, 'resize');</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_eventlistener1",
+        "prompt_zh": "[DOM addEventListener] What is a legal syntax for executing a function called 'myfunc' when the browser window resizes?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html9.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_eventlistener2",
+        "prompt_zh": "DOM addEventListener 填空題"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>document.getElementById('demo').___('click', ___(){<br>&nbsp;&nbsp;alert('Hello');});</code>",
+        "draganddropquestion": "Insert the missing syntax for a function to execute when an element is clicked.",
+        "options": [
+          "<code>execute</code>",
+          "<code>function</code>",
+          "<code>document</code>",
+          "<code>onmouse</code>",
+          "<code>addEventListener</code>",
+          "<code>addFunction</code>"
+        ],
+        "correct": [
+          4,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_eventlistener3",
+        "prompt_zh": "[DOM addEventListener] Insert the missing syntax for a function to execute when an element is clicked."
+      }
+    ],
+    "htmldom_events": [
+      {
+        "question": "What is a legal HTML attribute used for adding some action when a button is clicked?",
+        "options": [
+          "<code>&lt;button onclick='alert(10)'>Click me&lt;/button></code>",
+          "<code>&lt;button click='alert(10)'>Click me&lt;/button></code>",
+          "<code>&lt;button press='alert(10)'>Click me&lt;/button></code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_events1",
+        "prompt_zh": "[DOM 事件] What is a legal HTML attribute used for adding some action when a button is clicked?"
+      },
+      {
+        "question": "What is a legal JavaScript syntax for adding some action when a button is clicked?",
+        "options": [
+          "<code>document.getElementById('x').click = alert(5);</code>",
+          "<code>document.getElementById('x').onclick = alert(5);</code>",
+          "<code>document.getElementById('x').onmouseclick = alert(5);</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_events2",
+        "prompt_zh": "[DOM 事件] What is a legal JavaScript syntax for adding some action when a button is clicked?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>&lt;div ___='console.log('Entered');</code>",
+        "draganddropquestion": "Insert the correct event attribute to add some action when the mouse cursor moves over an element.",
+        "options": [
+          "<code>oncursorout</code>",
+          "<code>oncursorin</code>",
+          "<code>onmouseout</code>",
+          "<code>onmousein</code>",
+          "<code>onmouseover</code>",
+          "<code>onmousehover</code>"
+        ],
+        "correct": [
+          4
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_events3",
+        "prompt_zh": "[DOM 事件] Insert the correct event 屬性 to add some action when the mouse cursor moves over an element."
+      }
+    ],
+    "htmldom_html": [
+      {
+        "question": "What is a legal syntax for changing the content of an Element?",
+        "options": [
+          "<code class='codeblock'>let x = document.getElementById('demo')<br>x.content = 'Welcome';</code>",
+          "<code class='codeblock'>let x = document.getElementById('demo')<br>x.innerHTML = 'Welcome';</code>",
+          "<code class='codeblock'>let x = document.getElementById('demo')<br>x.changeContent('Welcome');</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_html1",
+        "prompt_zh": "[DOM HTML] What is a legal syntax for changing the content of an Element?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_html2",
+        "prompt_zh": "DOM HTML 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_html3",
+        "prompt_zh": "DOM HTML 填空題"
+      }
+    ],
+    "htmldom_methods": [
+      {
+        "question": "What is a legal HTML DOM method for accessing HTML elements?",
+        "options": [
+          "<code>fetchId</code>",
+          "<code>getElementById()</code>",
+          "<code>element()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_methods1",
+        "prompt_zh": "[DOM 方法] What is a legal HTML DOM method for accessing HTML elements?"
+      },
+      {
+        "question": "What is a legal HTML DOM property for changing the value of an HTML element?",
+        "options": [
+          "<code>content</code>",
+          "<code>tagValue</code>",
+          "<code>innerHTML</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_methods2",
+        "prompt_zh": "[DOM 方法] What is a legal HTML DOM property for changing the value of an HTML element?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___.___('demo').___ = 'Hello!';</code>",
+        "draganddropquestion": "Insert the missing syntax to change the content of the HTML element with the id 'demo'.",
+        "options": [
+          "<code>valueHTML</code>",
+          "<code>innerHTML</code>",
+          "<code>document</code>",
+          "<code>element</code>",
+          "<code>getElementById</code>"
+        ],
+        "correct": [
+          2,
+          4,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_methods3",
+        "prompt_zh": "[DOM 方法] Insert the missing syntax to change the content of the HTML element with the id 'demo'."
+      }
+    ],
+    "htmldom_navigation": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>&lt;body&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>&nbsp;&nbsp;&lt;p&gt;Read this.&lt;/p&gt;<br>&lt;/body&gt;</code><br>Which one of the following statements is true?",
+        "options": [
+          "<code>&lt;body&gt; is the sibling of &lt;h1&gt;</code>",
+          "<code>&lt;body&gt; is the child of &lt;h1&gt;</code>",
+          "<code>&lt;body&gt; is the parent of &lt;h1&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_navigation1",
+        "prompt_zh": "[DOM 導覽] Consider the following code:<body>  <h1>Welcome</h1>  <p>Read this.</p></body>Which one of the following statements is true?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>&lt;div&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>&lt;/div&gt;<br><br>&lt;div&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>&lt;/div&gt;</code><br>True or False.<br>The two &lt;h1&gt; elements are siblings.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_navigation2",
+        "prompt_zh": "[DOM 導覽] Consider the following code:<div>  <h1>Welcome</h1></div><div>  <h1>Welcome</h1></div>True or False.The two <h1> elements are siblings."
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>let x = document.getElementsByTagName('h1')[0].___;</code>",
+        "draganddropquestion": "Insert the missing syntax for returning the parent of the &lt;h1&gt; element.",
+        "options": [
+          "<code>father</code>",
+          "<code>parent</code>",
+          "<code>parentNode</code>",
+          "<code>sibling</code>",
+          "<code>upper</code>"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_navigation3",
+        "prompt_zh": "[DOM 導覽] Insert the missing syntax for returning the parent of the &lt;h1&gt; element."
+      }
+    ],
+    "htmldom_nodelist": [
+      {
+        "question": "What is a correct syntax for returning all &lt;p&gt; element?",
+        "options": [
+          "<code>document.getElementsByTagName('p')</code>",
+          "<code>document.getElements('p')</code>",
+          "<code>document.all('p')</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodelist1",
+        "prompt_zh": "[DOM NodeList] What is a correct syntax for returning all <p> element?"
+      },
+      {
+        "question": "What is a correct property for returning the number of elements in a Node List?",
+        "options": [
+          "<code>count</code>",
+          "<code>length</code>",
+          "<code>numberOfItems</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodelist2",
+        "prompt_zh": "[DOM NodeList] What is a correct property for returning the number of elements in a Node List?"
+      },
+      {
+        "question": "Only one of the following statements return a Node List. Which one?",
+        "options": [
+          "<code>getElementsByClassName()</code>",
+          "<code>getElementsByTagName</code>",
+          "<code>querySelectorAll</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodelist3",
+        "prompt_zh": "[DOM NodeList] Only one of the following statements return a Node List. Which one?"
+      }
+    ],
+    "htmldom_nodes": [
+      {
+        "question": "What is a correct syntax for creating a new &lt;h1&gt; element?",
+        "options": [
+          "<code>document.appendChild('h1');</code>",
+          "<code>document.newElement('h1');</code>",
+          "<code>document.createElement('h1');</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodes1",
+        "prompt_zh": "[DOM 節點] What is a correct syntax for creating a new <h1> element?"
+      },
+      {
+        "question": "What is a correct method for inserting elements?",
+        "options": [
+          "<code>insertBefore();</code>",
+          "<code>appendToParent();</code>",
+          "<code>insertToParent();</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodes2",
+        "prompt_zh": "[DOM 節點] What is a correct method for inserting elements?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>let a = document.___('p');<br>let b = document.___('___');<br>a.___(b);document.body.appendChild(___);</code>",
+        "draganddropquestion": "Insert the missing syntax to:<br>1. Create a paragraph</br>2. Create a Text Node<br>3. Append the Text Node to the paragraph<br>4. Append the paragraph to the body element",
+        "options": [
+          "<code>appendChild</code>",
+          "<code>createElement</code>",
+          "<code>a</code>",
+          "<code>my text node.</code>",
+          "<code>createTextNode</code>"
+        ],
+        "correct": [
+          1,
+          4,
+          3,
+          0,
+          2
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_htmldom_nodes3",
+        "prompt_zh": "[DOM 節點] Insert the missing syntax to:1. Create a paragraph2. Create a Text Node3. Append the Text Node to the paragraph4. Append the paragraph to the body element"
+      }
+    ],
+    "if_else": [
+      {
+        "question": "True or False.<br>JavaScript allows both lowercase <code class='w3-codespan'>if</code> and uppercase <code class='w3-codespan'>If</code> statements.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_if_else1",
+        "prompt_zh": "True 或 False：JavaScript allows both lowercase if and uppercase If statements."
+      },
+      {
+        "fillintheblanks": "exercise_js_conditions1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_if_else2",
+        "prompt_zh": "if/else 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_conditions2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_if_else3",
+        "prompt_zh": "if/else 填空題"
+      }
+    ],
+    "intro": [
+      {
+        "question": "True or False.<br>JAVA is short for JavaScript.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_intro1",
+        "prompt_zh": "True 或 False：JAVA is short for JavaScript."
+      },
+      {
+        "question": "Who invented JavaScript?",
+        "options": [
+          "Tim Berners-Lee",
+          "Brendan Eich",
+          "Haakon Wium Lie"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_intro2",
+        "prompt_zh": "[JS 介紹] Who invented JavaScript?"
+      },
+      {
+        "draganddroptext": "<code>document.___('demo').innerHTML</code>",
+        "draganddropquestion": "Select the correct JavaScript method for finding the specified HTML element:",
+        "options": [
+          "<code>findHTMLById</code>",
+          "<code>HTMLbyId</code>",
+          "<code>getElementById</code>"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_intro3",
+        "prompt_zh": "[JS 介紹] Select the correct JavaScript 方法 for finding the specified HTML element:"
+      }
+    ],
+    "iterables": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>let firstname = 'Jim', i = 0;<br>for (const x of firstname) {<br>&nbsp;&nbsp;i++;<br>}</code><br>What will be the value of <code class='w3-codespan'>i</code>?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_iterables1",
+        "prompt_zh": "[iterable] Consider the following code:let firstname = 'Jim', i = 0;for (const x of firstname) {  i++;}What will be the value of i?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Cherry'];<br>let txt = '';<br>for (const x of fruits) {<br>&nbsp;&nbsp;txt += x;<br>}</code><br>What will be the value of <code class='w3-codespan'>txt</code>?",
+        "options": [
+          "Apple",
+          "Banana",
+          "Cherry",
+          "AppleBananaCherry"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_iterables2",
+        "prompt_zh": "[iterable] Consider the following code:const fruits = ['Apple', 'Banana', 'Cherry'];let txt = '';for (const x of fruits) {  txt += x;}What will be the value of txt?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Cherry'];<br>let txt = '';<br>for (const x in fruits) {<br>&nbsp;&nbsp;txt += x;<br>}</code><br>What will be the value of <code class='w3-codespan'>txt</code>?",
+        "options": [
+          "012",
+          "AppleBananaCherry"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_iterables3",
+        "prompt_zh": "[iterable] Consider the following code:const fruits = ['Apple', 'Banana', 'Cherry'];let txt = '';for (const x in fruits) {  txt += x;}What will be the value of txt?"
+      }
+    ],
+    "json": [
+      {
+        "question": "What does JSON stand for?",
+        "options": [
+          "JavaScript Organized Nodes",
+          "JavaScript Object Notation",
+          "JavaScript Original Numbers"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_json1",
+        "prompt_zh": "JSON 是什麼的縮寫？",
+        "answer_zh": "JavaScript 物件表示法"
+      },
+      {
+        "question": "What is a correct JavaScript function to convert a string into a JavaScript object?",
+        "options": [
+          "<code>JSON.toObject()</code>",
+          "<code>JSON.objectify()</code>",
+          "<code>JSON.parse()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_json2",
+        "prompt_zh": "將字串轉成 JavaScript 物件的正確函式是哪一個？"
+      },
+      {
+        "question": "Which one is a legal JSON object?",
+        "options": [
+          "<code>{\"firstName\":\"John\", \"lastName\":\"Doe\"}</code>",
+          "<code>{\"firstName\"=\"John\", \"lastName\"=\"Doe\"}</code>",
+          "<code>{firstName=\"John\", lastName=\"Doe\"}</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_json3",
+        "prompt_zh": "下列哪一個是合法的 JSON 物件？",
+        "answer_zh": "註：JSON 的 key 必須加雙引號"
+      }
+    ],
+    "let": [
+      {
+        "question": "What is a correct use of the <code class='w3-codespan'>let</code> keyword?",
+        "options": [
+          "<code>let x = 5;</code>",
+          "<code>x let 5;</code>",
+          "<code>let 5 into x;</code>",
+          "<code>x = 5(let);</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_let1",
+        "prompt_zh": "[let] What is a correct use of the let keyword?"
+      },
+      {
+        "question": "True or False.<br>Variables created with the <code class='w3-codespan'>let</code> keyword can never change their value.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_let2",
+        "prompt_zh": "True 或 False：Variables created with the let keyword can never change their value."
+      },
+      {
+        "question": "True or False.<br>With the <code class='w3-codespan'>let</code> keyword, you can declare variables with the same name in the same block.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_let3",
+        "prompt_zh": "True 或 False：With the let keyword, you can declare variables with the same name in the same block."
+      }
+    ],
+    "loop_for": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let i, x = '';<br>for (i = 0; i <= 5; i++) {<br>&nbsp;&nbsp;x += i;<br>}</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>01234</code>",
+          "<code>012345</code>",
+          "<code>1234</code>",
+          "<code>12345</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_for1",
+        "prompt_zh": "[for 迴圈] Consider the following code:let i, x = '';for (i = 0; i   x += i;}What will be the result of x?"
+      },
+      {
+        "fillintheblanks": "exercise_js_loops1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_for2",
+        "prompt_zh": "for 迴圈 填空題"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let i, x = '';<br>for (i = 0; i < 5; i = i + 2) {<br>&nbsp;&nbsp;x += i;<br>}</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>0123456</code>",
+          "<code>01234567</code>",
+          "<code>02468</code>",
+          "<code>024</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_for3",
+        "prompt_zh": "[for 迴圈] Consider the following code:let i, x = '';for (i = 0; i   x += i;}What will be the result of x?"
+      }
+    ],
+    "loop_forin": [
+      {
+        "question": "True or False.<br>The <code class='w3-codespan'>for in</code> loop cannot be used on Arrays.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forin1",
+        "prompt_zh": "True 或 False：The for in loop cannot be used on Arrays."
+      },
+      {
+        "draganddroptext": "<code>___ ___ let x ___ person___ ___<br>&nbsp;&nbsp;alert(person[x]);<br>___</code>",
+        "draganddropquestion": "Complete the following code to make a <code class='w3-codespan'>for in</code> loop:",
+        "options": [
+          "<code>{</code>",
+          "<code>}</code>",
+          "<code>(</code>",
+          "<code>)</code>",
+          "<code>i</code>",
+          "<code>x</code>",
+          "<code>is</code>",
+          "<code>in</code>",
+          "<code>object</code>",
+          "<code>for</code>",
+          "<code>end</code>"
+        ],
+        "correct": [
+          9,
+          2,
+          7,
+          3,
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forin2",
+        "prompt_zh": "[for...in] Complete the following code to make a for in loop:"
+      },
+      {
+        "question": "There is an Array method you can use to loop through the item of an array, which one?",
+        "options": [
+          "<code>Array.for()</code>",
+          "<code>Array.in</code>",
+          "<code>Array.forEach</code>",
+          "<code>Array.iterate()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forin3",
+        "prompt_zh": "[for...in] There is an Array method you can use to loop through the item of an array, which one?"
+      }
+    ],
+    "loop_forof": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Orange'];<br>for (x of fruits) {<br>&nbsp;&nbsp;console.log(x);<br>}</code><br>What will be the result in the console?",
+        "options": [
+          "<code class='codeblock'>1<br>2<br>3</code>",
+          "<code class='codeblock'>0<br>1<br>2</code>",
+          "<code class='codeblock'>Apple<br>Banana<br>Orange</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forof1",
+        "prompt_zh": "[for...of] Consider the following code:const fruits = ['Apple', 'Banana', 'Orange'];for (x of fruits) {  console.log(x);}What will be the result in the console?"
+      },
+      {
+        "fillintheblanks": "exercise_js_loops2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forof2",
+        "prompt_zh": "for...of 填空題"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>const fruits = ['Apple', 'Banana', 'Orange'];<br>for (x in fruits) {<br>&nbsp;&nbsp;console.log(x);<br>}</code><br>What will be the result in the console?",
+        "options": [
+          "<code class='codeblock'>1<br>2<br>3</code>",
+          "<code class='codeblock'>0<br>1<br>2</code>",
+          "<code class='codeblock'>Apple<br>Banana<br>Orange</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_forof3",
+        "prompt_zh": "[for...of] Consider the following code:const fruits = ['Apple', 'Banana', 'Orange'];for (x in fruits) {  console.log(x);}What will be the result in the console?"
+      }
+    ],
+    "loop_while": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>let i = 15, x = '';<br>do {<br>&nbsp;&nbsp;x += 'The number is ' + i;<br>}<br>while (i < 10);</code><br>Which one of these statements will be true?",
+        "options": [
+          "<code class='w3-codespan'>x</code> will be an empty string",
+          "<code class='w3-codespan'>x</code> will be a string with the value 'The number is 15'",
+          "The loop will never end"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_while1",
+        "prompt_zh": "[while 迴圈] Consider the following code:let i = 15, x = '';do {  x += 'The number is ' + i;}while (i Which one of these statements will be true?"
+      },
+      {
+        "fillintheblanks": "exercise_js_loop_while1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_while2",
+        "prompt_zh": "while 迴圈 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_loop_while2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_loop_while3",
+        "prompt_zh": "while 迴圈 填空題"
+      }
+    ],
+    "map_methods": [
+      {
+        "question": "Which property can be used to return the number of elements in a Map?",
+        "options": [
+          "<code>length</code>",
+          "<code>size</code>",
+          "<code>count</code>",
+          "<code>numberOf</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_map_methods1",
+        "prompt_zh": "[Map 方法] Which property can be used to return the number of elements in a Map?"
+      },
+      {
+        "question": "Which method can be used to check if a Map contains a specified element?",
+        "options": [
+          "<code>contains()</code>",
+          "<code>indexOf()</code>",
+          "<code>has()</code>",
+          "<code>inSet()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_map_methods2",
+        "prompt_zh": "[Map 方法] Which method can be used to check if a Map contains a specified element?"
+      },
+      {
+        "question": "Which method returns an Iterator object with all the keys in a Map",
+        "options": [
+          "<code>all()</code>",
+          "<code>keys()</code>",
+          "<code>items()</code>",
+          "<code>iterator()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_map_methods3",
+        "prompt_zh": "[Map 方法] Which method returns an Iterator object with all the keys in a Map"
+      }
+    ],
+    "maps": [
+      {
+        "question": "Which method can be used to add elements to a Map?",
+        "options": [
+          "<code>add()</code>",
+          "<code>insert()</code>",
+          "<code>push()</code>",
+          "<code>set()</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_maps1",
+        "prompt_zh": "[Map] Which method can be used to add elements to a Map?"
+      },
+      {
+        "question": "Which method can be used to get elements from a Map?",
+        "options": [
+          "<code>key()</code>",
+          "<code>value()</code>",
+          "<code>get()</code>",
+          "<code>select()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_maps2",
+        "prompt_zh": "[Map] Which method can be used to get elements from a Map?"
+      },
+      {
+        "question": "True or False.<br>The Map key must be a String.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_maps3",
+        "prompt_zh": "True 或 False：The Map key must be a String."
+      }
+    ],
+    "math": [
+      {
+        "question": "What is a correct syntax for rounding down a number to its nearest integer?",
+        "options": [
+          "<code>Math.roundDown(4.9)</code>",
+          "<code>Math.floor(4.9)</code>",
+          "<code>Math.abs(4.9)</code>",
+          "<code>Math.min(4.9)</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_math1",
+        "prompt_zh": "[Math] What is a correct syntax for rounding down a number to its nearest integer?"
+      },
+      {
+        "fillintheblanks": "exercise_js_math2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_math2",
+        "prompt_zh": "Math 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_math3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_math3",
+        "prompt_zh": "Math 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_math4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_math4",
+        "prompt_zh": "Math 填空題"
+      }
+    ],
+    "modules": [
+      {
+        "question": "What attribute and value are required on the <code class='w3-codespan'>&lt;script></code> tag when importing a module?",
+        "options": [
+          "<code>&lt;script type='module'></code>",
+          "<code>&lt;script module='<i>name of module</i>'></code>",
+          "<code>&lt;script link='module'></code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_modules1",
+        "prompt_zh": "[模組] What attribute and value are required on the <script> tag when importing a module?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>const name = 'Tobias';<br>const age = 18;<br><br>___ {name, age};</code>",
+        "draganddropquestion": "Insert the missing keyword to export the name and age properties:",
+        "options": [
+          "<code>return</code>",
+          "<code>export</code>",
+          "<code>values</code>"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_modules2",
+        "prompt_zh": "[模組] Insert the missing 關鍵字 to export the name and age properties:"
+      },
+      {
+        "question": "True or False.<br>You can only have one 'default export' in a module file.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_modules3",
+        "prompt_zh": "True 或 False：You can only have one 'default export' in a module file."
+      }
+    ],
+    "number_methods": [
+      {
+        "question": "What is a legal JavaScript method for returning a number as a string?",
+        "options": [
+          "<code>intToString()</code>",
+          "<code>toString()</code>",
+          "<code>stringify()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_methods1",
+        "prompt_zh": "[Number 方法] What is a legal JavaScript method for returning a number as a string?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 2.7;<br>let z = x.toFixed(2);</code><br>What will be the result of <code class='w3-codespan'>z</code>?",
+        "options": [
+          "2",
+          "3",
+          "2.7",
+          "2.70"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_methods2",
+        "prompt_zh": "[Number 方法] Consider the following code:let x = 2.7;let z = x.toFixed(2);What will be the result of z?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 'Tobias';<br>let z = Number(x);</code><br>What will be the result of <code class='w3-codespan'>z</code>?",
+        "options": [
+          "false",
+          "-1",
+          "NaN",
+          "undefined"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_methods3",
+        "prompt_zh": "[Number 方法] Consider the following code:let x = 'Tobias';let z = Number(x);What will be the result of z?"
+      }
+    ],
+    "number_properties": [
+      {
+        "question": "What is the name of the property for returing the largest number possible in javaScript?",
+        "options": [
+          "<code>POSSIBLE_MAX</code>",
+          "<code>MAX_POSSIBLE</code>",
+          "<code>MAX_VALUE</code>",
+          "<code>MAX_POSITIVE</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_properties1",
+        "prompt_zh": "name of the property for returing the largest number possible in javaScript 是什麼？"
+      },
+      {
+        "question": "What is the name of the property for returing the largest INTEGER possible in javaScript?",
+        "options": [
+          "<code>MAX_INTEGER</code>",
+          "<code>MAX_SAFE_INTEGER</code>",
+          "<code>MAX_VALUE</code>",
+          "<code>MAX_POSITIVE_INTEGER</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_properties2",
+        "prompt_zh": "name of the property for returing the largest INTEGER possible in javaScript 是什麼？"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let a = Number.POSITIVE_INFINITY;</code><br>If you try to write the result of <code class='w3-codespan'>a</code>, what will be the result?",
+        "options": [
+          "Infinity",
+          "undefined",
+          "NaN"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_number_properties3",
+        "prompt_zh": "[Number 屬性] Consider the following code:let a = Number.POSITIVE_INFINITY;If you try to write the result of a, what will be the result?"
+      }
+    ],
+    "numbers": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 10;<br>let y = 20;<br>let z = x + y;</code><br>What will be the result of <code class='w3-codespan'>z</code>?",
+        "options": [
+          "30",
+          "1020",
+          "30.00"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_numbers1",
+        "prompt_zh": "[數字] Consider the following code:let x = 10;let y = 20;let z = x + y;What will be the result of z?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 10;<br>let y = 20;<br>let z = 'The prize is ' + x + y;</code><br>What will be the result of <code class='w3-codespan'>z</code>?",
+        "options": [
+          "The prize is 30",
+          "The prize is 1020",
+          "The prize is 30.00"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_numbers2",
+        "prompt_zh": "[數字] Consider the following code:let x = 10;let y = 20;let z = 'The prize is ' + x + y;What will be the result of z?"
+      },
+      {
+        "question": "True of False.<br>In JavaScript <code class='w3-codespan'>4</code> and <code class='w3-codespan'>1.8</code> has the same data type.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_numbers3",
+        "prompt_zh": "[數字] True of False.In JavaScript 4 and 1.8 has the same data type."
+      }
+    ],
+    "object_constructors": [
+      {
+        "question": "What is a correct syntax for adding a new property to the <code class='w3-codespan'>Person</code> object constructor?",
+        "options": [
+          "<code>Person.hometown = 'Roma';</code>",
+          "<code>Person.prototype.hometown = 'Roma';</code>",
+          "<code>new Person.hometown = 'Roma';</code>",
+          "<code>Person['hometown'] = 'Roma';</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_constructors1",
+        "prompt_zh": "[物件建構子] What is a correct syntax for adding a new property to the Person object constructor?"
+      },
+      {
+        "question": "It is common to use these object literals instead of <code class='w3-codespan'>new Object()</code>, which ones?",
+        "options": [
+          "<code>()</code>",
+          "<code>{}</code>",
+          "<code>[]</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_constructors2",
+        "prompt_zh": "[物件建構子] It is common to use these object literals instead of new Object(), which ones?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>___ Person(fname) ___<br>&nbsp;&nbsp;___.firstname ___ fname;<br>___</code><br>",
+        "draganddropquestion": "Insert the missing parts to complete the object constructor:",
+        "options": [
+          "<code>}</code>",
+          "<code>this</code>",
+          "<code>;</code>",
+          "<code>{</code>",
+          "<code>function</code>",
+          "<code>,</code>",
+          "<code>=</code>",
+          "<code>:</code>",
+          "<code>new</code>",
+          "<code>(</code>",
+          "<code>)</code>"
+        ],
+        "correct": [
+          4,
+          3,
+          1,
+          6,
+          0
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_constructors3",
+        "prompt_zh": "[物件建構子] Insert the missing parts to complete the object constructor:"
+      }
+    ],
+    "object_display": [
+      {
+        "question": "Only one of the following methods are a built-in JavaScript Object method, which one?",
+        "options": [
+          "<code>return()</code>",
+          "<code>all()</code>",
+          "<code>entries()</code>",
+          "<code>methods()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_display1",
+        "prompt_zh": "[物件顯示] Only one of the following methods are a built-in JavaScript Object method, which one?"
+      },
+      {
+        "question": "What method can be used to convert JavaScript Objects into JSON strings?",
+        "options": [
+          "<code>JSON.toString()</code>",
+          "<code>JSON.stringify()</code>",
+          "<code>JSON.string()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_display2",
+        "prompt_zh": "[物件顯示] What method can be used to convert JavaScript Objects into JSON strings?"
+      },
+      {
+        "question": "When using <code class='w3-codespan'>Object.values()</code> on a JavaScript Object, what will be the data type of the returned result?",
+        "options": [
+          "Array",
+          "String",
+          "JSON",
+          "Object"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_display3",
+        "prompt_zh": "當 using Object.values() on a JavaScript Object 時，what will be the data type of the returned result？"
+      }
+    ],
+    "object_method": [
+      {
+        "question": "Consider the following object:<br><code class='codeblock'>const person = {<br>&nbsp;&nbsp;firstname: 'Jane',<br>&nbsp;&nbsp;lastname: 'Doe',<br>&nbsp;&nbsp;fullname: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.firstname + ' ' + this.lastname;<br>&nbsp;&nbsp;}<br>};</code><br>How many methods do the object have?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_method1",
+        "prompt_zh": "[物件方法] Consider the following object:const person = {  firstname: 'Jane',  lastname: 'Doe',  fullname: function() {    return this.firstname + ' ' + this.lastname;  }};How many methods do the object have?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>alert(___ ___ ___ ___);</code>",
+        "draganddropquestion": "Consider the following object:<br><code class='codeblock'>const person = {<br>&nbsp;&nbsp;firstname: 'Jane',<br>&nbsp;&nbsp;lastname: 'Doe',<br>&nbsp;&nbsp;fullname: function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;return this.firstname + ' ' + this.lastname;<br>&nbsp;&nbsp;}<br>};</code><br>Insert the missing parts to alert 'Jane Doe'.",
+        "options": [
+          "<code>Jane</code>",
+          "<code>.</code>",
+          "<code>:</code>",
+          "<code>person</code>",
+          "<code>()</code>",
+          "<code>fullname</code>",
+          "<code>firstname</code>",
+          "<code>lastname</code>",
+          "<code>=</code>",
+          "<code>Person</code>",
+          "<code>name</code>"
+        ],
+        "correct": [
+          3,
+          1,
+          5,
+          4
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_method2",
+        "prompt_zh": "[物件方法] Consider the following object:const person = {&nbsp;&nbsp;firstname: 'Jane',&nbsp;&nbsp;lastname: 'Doe',&nbsp;&nbsp;fullname: function() {&nbsp;&nbsp;&nbsp;&nbsp;return this.firstname + ' ' + this.lastname;&nbsp;&nbsp;}};Insert the missing parts to alert 'Jane Doe'."
+      },
+      {
+        "question": "True or False:<br>You are allowed to insert new methods to existing objects.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_method3",
+        "prompt_zh": "True 或 False：You are allowed to insert new methods to existing objects."
+      }
+    ],
+    "object_property": [
+      {
+        "question": "Consider the following object:<br><code class='codeblock'>const car = {<br>&nbsp;&nbsp;brand : 'Volvo',<br>&nbsp;&nbsp;model : 'EX90'<br>};</code><br>What is NOT a correct syntax to alert 'Volvo'?",
+        "options": [
+          "<code>alert(car[brand])</code>",
+          "<code>alert(car.brand)</code>",
+          "<code>alert(car['brand'])</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_property1",
+        "prompt_zh": "[物件屬性] Consider the following object:const car = {  brand : 'Volvo',  model : 'EX90'};What is NOT a correct syntax to alert 'Volvo'?"
+      },
+      {
+        "question": "True or False:<br>You are allowed to insert new properties to existing objects.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_property2",
+        "prompt_zh": "True 或 False：You are allowed to insert new properties to existing objects."
+      },
+      {
+        "question": "What is a correct syntax to delete the property <code class='w3-codespan'>model</code> from an object named <code class='w3-codespan'>car</code>?",
+        "options": [
+          "<code>del car.model</code>",
+          "<code>del model from car</code>",
+          "<code>delete car.model</code>",
+          "<code>car.model = NULL</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_object_property3",
+        "prompt_zh": "[物件屬性] What is a correct syntax to delete the property model from an object named car?"
+      }
+    ],
+    "objects": [
+      {
+        "question": "Consider the following object:<br><code class='codeblock'>const car = {<br>&nbsp;&nbsp;brand: 'Volvo',<br>&nbsp;&nbsp;model: 'EX90'<br>};</code><br>How many properties do the object have?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_objects1",
+        "prompt_zh": "[物件] Consider the following object:const car = {  brand: 'Volvo',  model: 'EX90'};How many properties do the object have?"
+      },
+      {
+        "fillintheblanks": "exercise_js_objects1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_objects2",
+        "prompt_zh": "物件 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_objects2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_objects3",
+        "prompt_zh": "物件 填空題"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>alert(___.___ + ' ___ ' + person.___);</code>",
+        "draganddropquestion": "Consider the following object:<br><code class='codeblock'>const person = {<br>&nbsp;&nbsp;name: 'John', age: 50<br>};</code><br>Insert the missing parts to alert 'John is 50'.",
+        "options": [
+          "<code>age</code>",
+          "<code>person</code>",
+          "<code>John</code>",
+          "<code>.</code>",
+          "<code>50</code>",
+          "<code>[age]</code>",
+          "<code>is</code>",
+          "<code>object</code>",
+          "<code>const</code>",
+          "<code>Person</code>",
+          "<code>name</code>"
+        ],
+        "correct": [
+          1,
+          10,
+          6,
+          0
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_objects4",
+        "prompt_zh": "[物件] Consider the following object:const person = {&nbsp;&nbsp;name: 'John', age: 50};Insert the missing parts to alert 'John is 50'."
+      }
+    ],
+    "operators": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5;<br>let y = '8';<br>let z = x + y;</code><br>What will be the result of <code class='w3-codespan'>z</code>?",
+        "options": [
+          "<code>undefined</code>",
+          "<code>58</code>",
+          "<code>13</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_operators1",
+        "prompt_zh": "[運算子] Consider the following code:let x = 5;let y = '8';let z = x + y;What will be the result of z?"
+      },
+      {
+        "fillintheblanks": "exercise_js_operators1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_operators2",
+        "prompt_zh": "運算子 填空題"
+      },
+      {
+        "draganddroptext": "<code>let x = 10 ___ 2</code>",
+        "draganddropquestion": "Insert the correct operator to divide 10 by 2:",
+        "options": [
+          "<code>x</code>",
+          "<code>*</code>",
+          "<code>-</code>",
+          "<code>/</code>",
+          "<code>\\</code>",
+          "<code>#</code>",
+          "<code>%</code>"
+        ],
+        "correct": [
+          3
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_operators3",
+        "prompt_zh": "[運算子] Insert the correct operator to divide 10 by 2:"
+      }
+    ],
+    "output": [
+      {
+        "question": "What is NOT a correct syntax for writing output in JavaScript?",
+        "options": [
+          "<code>window.alert()</code>",
+          "<code>console.log()</code>",
+          "<code>body.html()</code>",
+          "<code>document.write()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_output1",
+        "prompt_zh": "[輸出] What is NOT a correct syntax for writing output in JavaScript?"
+      },
+      {
+        "question": "True or False.<br><code class='w3-codespan'>alert(8);</code> is the same as <code class='w3-codespan'>window.alert(8);</code>.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_output2",
+        "prompt_zh": "True 或 False：alert(8); is the same as window.alert(8);."
+      },
+      {
+        "draganddroptext": "<code>___.___(___)</code>",
+        "draganddropquestion": "Select the correct syntax for writing 'Hello':",
+        "options": [
+          "<code>body</code>",
+          "<code>'Hello'</code>",
+          "<code>document</code>",
+          "<code>console</code>",
+          "<code>getElementById</code>",
+          "<code>write</code>",
+          "<code>print</code>"
+        ],
+        "correct": [
+          2,
+          5,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_output3",
+        "prompt_zh": "[輸出] Select the correct syntax for writing 'Hello':"
+      }
+    ],
+    "precedence": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 10 + 50 * 3;</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "160",
+          "180",
+          "250"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_precedence1",
+        "prompt_zh": "[運算子優先順序] Consider the following code:let x = 10 + 50 * 3;What will be the result of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 10 / 2 * 5;</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "1",
+          "10",
+          "20",
+          "25"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_precedence2",
+        "prompt_zh": "[運算子優先順序] Consider the following code:let x = 10 / 2 * 5;What will be the result of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 20 + 5 * (5 + 5);</code><br>What will be the result of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "250",
+          "70"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_precedence3",
+        "prompt_zh": "[運算子優先順序] Consider the following code:let x = 20 + 5 * (5 + 5);What will be the result of x?"
+      }
+    ],
+    "random": [
+      {
+        "question": "How many parameters can the <code class='w3-codespan'>Math.random()</code> method take?",
+        "options": [
+          "0",
+          "1",
+          "2"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_random1",
+        "prompt_zh": "[亂數] How many parameters can the Math.random() method take?"
+      },
+      {
+        "fillintheblanks": "exercise_js_math1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_random2",
+        "prompt_zh": "亂數 填空題"
+      },
+      {
+        "question": "What is a correct syntax for returning a random number between 0 and 10?",
+        "options": [
+          "<code>Math.random()</code>",
+          "<code>Math.random() * 10</code>",
+          "<code>Math.random() * 100</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_random3",
+        "prompt_zh": "[亂數] What is a correct syntax for returning a random number between 0 and 10?"
+      }
+    ],
+    "regexp": [
+      {
+        "question": "What does the <code class='w3-codespan'>i</code> modifier represent in Regular Expressions?",
+        "options": [
+          "Perform global matching (find all occurences)",
+          "Perform case-sensitive matching",
+          "Perform case-insensitive matching"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_regexp1",
+        "prompt_zh": "[正規表達式] What does the i modifier represent in Regular Expressions?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let pattern = /e/;<br>let x = pattern.test('Ladies and gentlemen');</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "e",
+          "4",
+          "true",
+          "false"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_regexp2",
+        "prompt_zh": "[正規表達式] Consider the following code:let pattern = /e/;let x = pattern.test('Ladies and gentlemen');What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let txt = 'Ladies and gentlemen';<br>let x = txt.match(/[abc]/ig);</code><br>How many matches will the regular expression get?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_regexp3",
+        "prompt_zh": "[正規表達式] Consider the following code:let txt = 'Ladies and gentlemen';let x = txt.match(/[abc]/ig);How many matches will the regular expression get?"
+      }
+    ],
+    "scope": [
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>let x = 5;<br>{<br>&nbsp;&nbsp;let x = 3;<br>}<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "5",
+          "3"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_scope1",
+        "prompt_zh": "[作用域] Consider the following code:let x = 5;{  let x = 3;}alert(x);What will be the alerted result?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>let x = 5;<br>function myfunc() {<br>&nbsp;&nbsp;x = 3;<br>}<br>myfunc();<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "5",
+          "3"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_scope2",
+        "prompt_zh": "[作用域] Consider the following code:let x = 5;function myfunc() {  x = 3;}myfunc();alert(x);What will be the alerted result?"
+      },
+      {
+        "question": "Consider the following code:</br><code class='codeblock'>let x = 5;<br>function myfunc() {<br>&nbsp;&nbsp;const x = 3;<br>}<br>myfunc();<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "5",
+          "3"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_scope3",
+        "prompt_zh": "[作用域] Consider the following code:let x = 5;function myfunc() {  const x = 3;}myfunc();alert(x);What will be the alerted result?"
+      }
+    ],
+    "set_methods": [
+      {
+        "question": "Which method can be used to check if a Set contains a specified value?",
+        "options": [
+          "<code>contains()</code>",
+          "<code>indexOf()</code>",
+          "<code>has()</code>",
+          "<code>inSet()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_set_methods1",
+        "prompt_zh": "[Set 方法] Which method can be used to check if a Set contains a specified value?"
+      },
+      {
+        "question": "Which method can be used to execute a function for each Set item?",
+        "options": [
+          "<code>function</code>",
+          "<code>run()</code>",
+          "<code>forEach()</code>",
+          "<code>next()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_set_methods2",
+        "prompt_zh": "[Set 方法] Which method can be used to execute a function for each Set item?"
+      },
+      {
+        "question": "Which method returns an Iterator object with all the values in a Set",
+        "options": [
+          "<code>all()</code>",
+          "<code>values()</code>",
+          "<code>items()</code>",
+          "<code>iterator()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_set_methods3",
+        "prompt_zh": "[Set 方法] Which method returns an Iterator object with all the values in a Set"
+      }
+    ],
+    "sets": [
+      {
+        "question": "True or False.<br>Each value can only occur once in a Set.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_sets1",
+        "prompt_zh": "True 或 False：Each value can only occur once in a Set."
+      },
+      {
+        "question": "Which method can be used to add a value to a set?",
+        "options": [
+          "<code>add()</code>",
+          "<code>insert()</code>",
+          "<code>push()</code>",
+          "<code>attach()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_sets2",
+        "prompt_zh": "[Set] Which method can be used to add a value to a set?"
+      },
+      {
+        "question": "What happens if you try to add a value that already exists?",
+        "options": [
+          "An error will occur",
+          "The Set will not add the new value, but keep the first occurance",
+          "The Set will add the new value and delete the first occurance"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_sets3",
+        "prompt_zh": "[Set] What happens if you try to add a value that already exists?"
+      }
+    ],
+    "statements": [
+      {
+        "question": "How many statements can you find in this line of code:<br><code class='codeblock'>let a = 5; let b = 6; c = a + b;</code>",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_statements1",
+        "prompt_zh": "[敘述] How many statements can you find in this line of code:let a = 5; let b = 6; c = a + b;"
+      },
+      {
+        "question": "True or False.<br>A semicolons is required after a statement in JavaScript.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_statements2",
+        "prompt_zh": "True 或 False：A semicolons is required after a statement in JavaScript."
+      },
+      {
+        "question": "How many statements are present inside the function block?<br><code class='codeblock'>function genie() {<br>&nbsp;&nbsp;let a, b, c;<br>&nbsp;&nbsp;a = 5;<br>&nbsp;&nbsp;b = 9;<br>&nbsp;&nbsp;c = a + b;<br>}</code>",
+        "options": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_statements3",
+        "prompt_zh": "[敘述] How many statements are present inside the function block?function genie() {  let a, b, c;  a = 5;  b = 9;  c = a + b;}"
+      }
+    ],
+    "strict": [
+      {
+        "question": "How do we define that JavaScript code should be executed in 'strict mode'?",
+        "options": [
+          "<code>&quot;use strict&quot;;</code>",
+          "<code>use strict;</code>",
+          "<code>&quot;strict mode&quot;;</code>",
+          "<code>strict mode;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strict1",
+        "prompt_zh": "[嚴格模式] How do we define that JavaScript code should be executed in 'strict mode'?"
+      },
+      {
+        "question": "True or False.<br>&quot;strict mode&quot; can only be defined at the very beginning of a JavaScript?",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strict2",
+        "prompt_zh": "True 或 False：\"strict mode\" can only be defined at the very beginning of a JavaScript?"
+      },
+      {
+        "question": "Will the following code cause an error?<br><code class='codeblock'>&quot;use strict&quot;;<br>var x = 5;</code>",
+        "options": [
+          "No it will not cause an error",
+          "Yes it will cause an error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strict3",
+        "prompt_zh": "[嚴格模式] Will the following code cause an error?\"use strict\";var x = 5;"
+      },
+      {
+        "question": "Will the following code cause an error?<br><code class='codeblock'>&quot;use strict&quot;;<br>x = 'Hello';</code>",
+        "options": [
+          "No it will not cause an error",
+          "Yes it will cause an error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strict4",
+        "prompt_zh": "[嚴格模式] Will the following code cause an error?\"use strict\";x = 'Hello';"
+      }
+    ],
+    "string_methods": [
+      {
+        "question": "Consider the following string:<br><code class='codeblock'>let x = 'Having fun?';</code><br>Which one of the following statements returns 'fun'?",
+        "options": [
+          "<code>x.slice(7, 10)</code>",
+          "<code>x.substring(7, 9)</code>",
+          "<code>x.substr(7, 10)</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_methods1",
+        "prompt_zh": "[字串方法] Consider the following string:let x = 'Having fun?';Which one of the following statements returns 'fun'?"
+      },
+      {
+        "fillintheblanks": "exercise_js_string_methods1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_methods2",
+        "prompt_zh": "字串方法 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_string_methods2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_methods3",
+        "prompt_zh": "字串方法 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_string_methods3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_methods4",
+        "prompt_zh": "字串方法 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_string_methods5.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_methods5",
+        "prompt_zh": "字串方法 填空題"
+      }
+    ],
+    "string_search": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 'Hello world!';<br>alert(x.indexOf('Hello'));</code><br>What will be the alerted result?",
+        "options": [
+          "<code>-1</code>",
+          "<code>0</code>",
+          "<code>1</code>",
+          "<code>true</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_search1",
+        "prompt_zh": "[字串搜尋] Consider the following code:let x = 'Hello world!';alert(x.indexOf('Hello'));What will be the alerted result?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 'JavaScript is fun!';<br>alert(x.includes('fun'));</code><br>What will be the alerted result?",
+        "options": [
+          "<code>13</code>",
+          "<code>14</code>",
+          "<code>true</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_search2",
+        "prompt_zh": "[字串搜尋] Consider the following code:let x = 'JavaScript is fun!';alert(x.includes('fun'));What will be the alerted result?"
+      },
+      {
+        "question": "Which one is NOT a legal JavaScript method?",
+        "options": [
+          "<code>indexOf()</code>",
+          "<code>instr()</code>",
+          "<code>lastIndexOf()</code>",
+          "<code>search()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_search3",
+        "prompt_zh": "[字串搜尋] Which one is NOT a legal JavaScript method?"
+      },
+      {
+        "fillintheblanks": "exercise_js_strings4.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_search4",
+        "prompt_zh": "字串搜尋 填空題"
+      }
+    ],
+    "string_templates": [
+      {
+        "question": "What do the back-ticks used for template strings in JavaScript look like?",
+        "options": [
+          "<code>&quot; &quot;</code>",
+          "<code>' '</code>",
+          "<code>` `</code>",
+          "<code>/ \\</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_templates1",
+        "prompt_zh": "[字串模板] What do the back-ticks used for template strings in JavaScript look like?"
+      },
+      {
+        "draganddroptext": "<code class='codeblock'>let firstname = 'John';<br>let lastname = 'Doe';<br>___(`Hello ___ ___!`);</code><br>",
+        "draganddropquestion": "Insert the missing parts to alert 'Hello John Doe!':",
+        "options": [
+          "<code>${firstname}</code>",
+          "<code>[firstname]</code>",
+          "<code>alert</code>",
+          "<code>${lastname}</code>",
+          "<code>[lastname]</code>",
+          "<code>write</code>",
+          "<code>document</code>"
+        ],
+        "correct": [
+          2,
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_templates2",
+        "prompt_zh": "[字串模板] Insert the missing parts to alert 'Hello John Doe!':"
+      },
+      {
+        "question": "True or False.<br>Template strings allows multi line strings.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_string_templates3",
+        "prompt_zh": "True 或 False：Template strings allows multi line strings."
+      }
+    ],
+    "strings": [
+      {
+        "question": "Which one of the following is not a legal JavaScript String?",
+        "options": [
+          "<code>&quot;Hello world!&quot;</code>",
+          "<code>&quot;&quot;Hello world!&quot;&quot;</code>",
+          "<code>'Hello world!'</code>",
+          "<code>`Hello world!`</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strings1",
+        "prompt_zh": "[字串] Which one of the following is not a legal JavaScript String?"
+      },
+      {
+        "fillintheblanks": "exercise_js_strings1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strings2",
+        "prompt_zh": "字串 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_strings2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strings3",
+        "prompt_zh": "字串 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_strings3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_strings4",
+        "prompt_zh": "字串 填空題"
+      }
+    ],
+    "switch": [
+      {
+        "question": "Which one is NOT a keyword in the <code class='w3-codespan'>switch</code> statement?",
+        "options": [
+          "<code>switch</code>",
+          "<code>break</code>",
+          "<code>continue</code>",
+          "<code>default</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_switch1",
+        "prompt_zh": "[switch] Which one is NOT a keyword in the switch statement?"
+      },
+      {
+        "fillintheblanks": "exercise_js_switch1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_switch2",
+        "prompt_zh": "switch 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_switch2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_switch3",
+        "prompt_zh": "switch 填空題"
+      }
+    ],
+    "syntax": [
+      {
+        "question": "What is a correct syntax for assigning a value to a variable?",
+        "options": [
+          "<code>x : 5</code>",
+          "<code>x = 5</code>",
+          "<code>x == 5</code>",
+          "<code>x -> 5</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_syntax1",
+        "prompt_zh": "[語法] What is a correct syntax for assigning a value to a variable?"
+      },
+      {
+        "question": "Which one is NOT a legal variable name?",
+        "options": [
+          "<code>FirstName</code>",
+          "<code>$FirstName</code>",
+          "<code>_FirstName</code>",
+          "<code>-FirstName</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_syntax2",
+        "prompt_zh": "[語法] Which one is NOT a legal variable name?"
+      },
+      {
+        "question": "True or False.<br>JavaScript variable names are case in-sensitive, meaning <code class='w3-codespan'>name</code> is the same as <code class='w3-codespan'>NAME</code>",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_syntax3",
+        "prompt_zh": "True 或 False：JavaScript variable names are case in-sensitive, meaning name is the same as NAME"
+      }
+    ],
+    "this": [
+      {
+        "question": "True or False.<br>You cannot change the value of <code class='w3-codespan'>this</code>.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_this1",
+        "prompt_zh": "True 或 False：You cannot change the value of this."
+      },
+      {
+        "question": "What does <code class='w3-codespan'>this</code> refer to when used in an object method?",
+        "options": [
+          "The global object [object Window]",
+          "The object that the method belongs to."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_this2",
+        "prompt_zh": "[this] What does this refer to when used in an object method?"
+      },
+      {
+        "question": "Consider the following code?<br><code class='codeblock'>&lt;button onclick='this.style.display=\"none\"'>OK&lt;/button></code><br>What object does <code class='w3-codespan'>this</code> refer to?",
+        "options": [
+          "The global object [object Window]",
+          "The button element",
+          "The body element"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_this3",
+        "prompt_zh": "[this] Consider the following code?<button onclick='this.style.display=\"none\"'>OK</button>What object does this refer to?"
+      }
+    ],
+    "type_conversion": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = Number(55.21);</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>55</code>",
+          "<code>55.2</code>",
+          "<code>55.21</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_type_conversion1",
+        "prompt_zh": "[型別轉換] Consider the following code:let x = Number(55.21);What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = Number('John');</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>0</code>",
+          "<code>John</code>",
+          "<code>NaN</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_type_conversion2",
+        "prompt_zh": "[型別轉換] Consider the following code:let x = Number('John');What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = typeof(Number('John'));</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>string</code>",
+          "<code>NaN</code>",
+          "<code>undefined</code>",
+          "<code>number</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_type_conversion3",
+        "prompt_zh": "[型別轉換] Consider the following code:let x = typeof(Number('John'));What will be the value of x?"
+      }
+    ],
+    "typeof": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>x = typeof('John' + 35);</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>string</code>",
+          "<code>undefined</code>",
+          "<code>number</code>",
+          "<code>boolean</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_typeof1",
+        "prompt_zh": "[typeof] Consider the following code:x = typeof('John' + 35);What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>x = typeof(['Apple', 'Banana']);</code><br>What will be the value of <code class='w3-codespan'>x</code>?",
+        "options": [
+          "<code>string</code>",
+          "<code>array</code>",
+          "<code>object</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_typeof2",
+        "prompt_zh": "[typeof] Consider the following code:x = typeof(['Apple', 'Banana']);What will be the value of x?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>x = ['Apple', 'Banana'];<br>y = (x instanceof Array);</code><br>What will be the value of <code class='w3-codespan'>y</code>?",
+        "options": [
+          "<code>string</code>",
+          "<code>array</code>",
+          "<code>true</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_typeof3",
+        "prompt_zh": "[typeof] Consider the following code:x = ['Apple', 'Banana'];y = (x instanceof Array);What will be the value of y?"
+      }
+    ],
+    "validation": [
+      {
+        "question": "What is a legal syntax for returning all the form elements of a document?",
+        "options": [
+          "<code>document.forms;</code>",
+          "<code>document.all('form');</code>",
+          "<code>document.getForms();</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_validation1",
+        "prompt_zh": "[表單驗證] What is a legal syntax for returning all the form elements of a document?"
+      },
+      {
+        "fillintheblanks": "exercise_js_dom_html5.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_validation2",
+        "prompt_zh": "表單驗證 填空題"
+      },
+      {
+        "question": "What is a legal JavaScript syntax for setting a form field as REQUIRED?",
+        "options": [
+          "<code>document.forms['myForm']['fname'].type = 'required'</code>",
+          "<code>document.forms['myForm']['fname'].required = true</code>",
+          "<code>document.forms['myForm']['fname'].value = 'required'</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_validation3",
+        "prompt_zh": "[表單驗證] What is a legal JavaScript syntax for setting a form field as REQUIRED?"
+      }
+    ],
+    "variables": [
+      {
+        "question": "What is NOT a correct syntax for declaring variables?",
+        "options": [
+          "<code>let x;</code>",
+          "<code>dim x;</code>",
+          "<code>var x;</code>",
+          "<code>const x;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables1",
+        "prompt_zh": "[變數] What is NOT a correct syntax for declaring variables?"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>let x = 5;<br>x = 7;<br>x = x + x;<br>alert(x);</code><br>What will be the alerted result?",
+        "options": [
+          "<code>10</code>",
+          "<code>12</code>",
+          "<code>14</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables2",
+        "prompt_zh": "[變數] Consider the following code:let x = 5;x = 7;x = x + x;alert(x);What will be the alerted result?"
+      },
+      {
+        "question": "Which one is NOT a legal variable name?",
+        "options": [
+          "<code>first-name</code>",
+          "<code>first_name</code>",
+          "<code>first$name</code>",
+          "<code>first3name</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables3",
+        "prompt_zh": "[變數] Which one is NOT a legal variable name?"
+      },
+      {
+        "fillintheblanks": "exercise_js_variables1.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables4",
+        "prompt_zh": "變數 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_variables2.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables5",
+        "prompt_zh": "變數 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_js_variables3.htm",
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables6",
+        "prompt_zh": "變數 填空題"
+      },
+      {
+        "draganddroptext": "<code>let fname = ___ , lname = ___ ___ ___ = ___</code>",
+        "draganddropquestion": "On one single line, declare three variables named fname, lname, and age, with the values John, Doe, and 46.",
+        "options": [
+          "<code>const</code>",
+          "<code>46</code>",
+          "<code>:</code>",
+          "<code>John</code>",
+          "<code>.</code>",
+          "<code>'Doe'</code>",
+          "<code>fname</code>",
+          "<code>,</code>",
+          "<code>'John'</code>",
+          "<code>'age'</code>",
+          "<code>Doe</code>",
+          "<code>(</code>",
+          "<code>)</code>",
+          "<code>age</code>",
+          "<code>var</code>"
+        ],
+        "correct": [
+          8,
+          5,
+          7,
+          13,
+          1
+        ],
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_variables7",
+        "prompt_zh": "[變數] On one single line, declare three variables named fname, lname, and age, with the values John, Doe, and 46."
+      }
+    ],
+    "whereto": [
+      {
+        "question": "In HTML, JavaScripts must be inserted inside which HTML tags?",
+        "options": [
+          "<code>&lt;script> and &lt;/script></code>",
+          "<code>&lt;javascript> and &lt;/javascript></code>",
+          "<code>&lt;head>&lt;/head></code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_whereto1",
+        "prompt_zh": "[放在哪裡] In HTML, JavaScripts must be inserted inside which HTML tags?"
+      },
+      {
+        "question": "What is the correct file extension for JavaScript files?",
+        "options": [
+          "<code>.jvs</code>",
+          "<code>.jv</code>",
+          "<code>.js</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_whereto2",
+        "prompt_zh": "JavaScript files 的正確file extension是？"
+      },
+      {
+        "question": "What is a correct syntax for including a JavaScript in an HTML document?",
+        "options": [
+          "<code>&lt;script href='myScript.js'>&lt;/script></code>",
+          "<code>&lt;script type='myScript.js'>&lt;/script></code>",
+          "<code>&lt;script src='myScript.js'>&lt;/script></code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/js/exercise.asp?x=xrcise_whereto3",
+        "prompt_zh": "[放在哪裡] What is a correct syntax for including a JavaScript in an HTML document?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1019 @@
+{
+  "test": "JS",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;scripting&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;script&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;javascript&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;js&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "JavaScript 應該放在哪個 HTML 元素內？",
+      "options_translations": [
+        {
+          "text_en": "<scripting>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<script>",
+          "text_zh": "script 元素",
+          "correct": true
+        },
+        {
+          "text_en": "<javascript>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<js>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "What is the correct JavaScript syntax to change the content of the HTML element below?<br><br>&lt;p id=\"demo\"&gt;This is a demonstration.&lt;/p&gt;",
+      "options": [
+        {
+          "value": 1,
+          "text": "document.getElementByName(\"p\").innerHTML = \"Hello World!\";"
+        },
+        {
+          "value": 2,
+          "text": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";"
+        },
+        {
+          "value": 3,
+          "text": "document.getElement(\"p\").innerHTML = \"Hello World!\";"
+        },
+        {
+          "value": 4,
+          "text": "#demo.innerHTML = \"Hello World!\";"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "變更 <p id=\"demo\"> 內容的正確 JavaScript 語法是？",
+      "options_translations": [
+        {
+          "text_en": "document.getElementByName(\"p\").innerHTML = \"Hello World!\";",
+          "text_zh": "沒這個方法（且大小寫錯）",
+          "correct": false
+        },
+        {
+          "text_en": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+          "text_zh": "用 getElementById",
+          "correct": true
+        },
+        {
+          "text_en": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+          "text_zh": "沒這個方法",
+          "correct": false
+        },
+        {
+          "text_en": "#demo.innerHTML = \"Hello World!\";",
+          "text_zh": "那是 CSS 選擇器寫法",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "Where is the correct place to insert a JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "The &lt;head&gt; section"
+        },
+        {
+          "value": 2,
+          "text": "The &lt;body&gt; section"
+        },
+        {
+          "value": 3,
+          "text": "Both the &lt;head&gt; section and the &lt;body&gt; section are correct"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "插入 JavaScript 的正確位置是？",
+      "options_translations": [
+        {
+          "text_en": "The <head> section",
+          "text_zh": "head 區塊",
+          "correct": false
+        },
+        {
+          "text_en": "The <body> section",
+          "text_zh": "body 區塊",
+          "correct": false
+        },
+        {
+          "text_en": "Both the <head> section and the <body> section are correct",
+          "text_zh": "head 與 body 都可以",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;script href=\"xxx.js\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;script src=\"xxx.js\"&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;script name=\"xxx.js\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "引用外部 \"xxx.js\" 的正確語法是？",
+      "options_translations": [
+        {
+          "text_en": "<script href=\"xxx.js\">",
+          "text_zh": "<script> 沒 href",
+          "correct": false
+        },
+        {
+          "text_en": "<script src=\"xxx.js\">",
+          "text_zh": "用 src 屬性",
+          "correct": true
+        },
+        {
+          "text_en": "<script name=\"xxx.js\">",
+          "text_zh": "name 不是合法屬性",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "The external JavaScript file must contain the &lt;script&gt; tag.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "外部 JavaScript 檔案必須包含 <script> 標籤。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "外部 .js 檔不需要 <script> 標籤",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "How do you write \"Hello World\" in an alert box?",
+      "options": [
+        {
+          "value": 1,
+          "text": "msgBox(\"Hello World\");"
+        },
+        {
+          "value": 2,
+          "text": "msg(\"Hello World\");"
+        },
+        {
+          "value": 3,
+          "text": "alertBox(\"Hello World\");"
+        },
+        {
+          "value": 4,
+          "text": "alert(\"Hello World\");"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何用警告框顯示 \"Hello World\"？",
+      "options_translations": [
+        {
+          "text_en": "msgBox(\"Hello World\");",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "msg(\"Hello World\");",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "alertBox(\"Hello World\");",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "alert(\"Hello World\");",
+          "text_zh": "alert() 顯示警告框",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "How do you create a function in JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "function = myFunction()"
+        },
+        {
+          "value": 2,
+          "text": "function:myFunction()"
+        },
+        {
+          "value": 3,
+          "text": "function myFunction()"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何在 JavaScript 中建立函式？",
+      "options_translations": [
+        {
+          "text_en": "function = myFunction()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "function:myFunction()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "function myFunction()",
+          "text_zh": "function 關鍵字 + 函式名",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "How do you call a function named \"myFunction\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "myFunction()"
+        },
+        {
+          "value": 2,
+          "text": "call function myFunction()"
+        },
+        {
+          "value": 3,
+          "text": "call myFunction()"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何呼叫名為 \"myFunction\" 的函式？",
+      "options_translations": [
+        {
+          "text_en": "myFunction()",
+          "text_zh": "加括號呼叫",
+          "correct": true
+        },
+        {
+          "text_en": "call function myFunction()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "call myFunction()",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "How to write an IF statement in JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "if i = 5 then"
+        },
+        {
+          "value": 2,
+          "text": "if (i == 5)"
+        },
+        {
+          "value": 3,
+          "text": "if i = 5"
+        },
+        {
+          "value": 4,
+          "text": "if i == 5 then"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "JavaScript 的 IF 語句怎麼寫？",
+      "options_translations": [
+        {
+          "text_en": "if i = 5 then",
+          "text_zh": "= 是賦值 + 沒 then",
+          "correct": false
+        },
+        {
+          "text_en": "if (i == 5)",
+          "text_zh": "條件用 () + ==",
+          "correct": true
+        },
+        {
+          "text_en": "if i = 5",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "if i == 5 then",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
+      "options": [
+        {
+          "value": 1,
+          "text": "if i =! 5 then"
+        },
+        {
+          "value": 2,
+          "text": "if (i &lt;&gt; 5)"
+        },
+        {
+          "value": 3,
+          "text": "if i &lt;&gt; 5"
+        },
+        {
+          "value": 4,
+          "text": "if (i != 5)"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "\"i 不等於 5 才執行\" 的 IF 怎麼寫？",
+      "options_translations": [
+        {
+          "text_en": "if i =! 5 then",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "if (i <> 5)",
+          "text_zh": "<> 不是 JS 語法",
+          "correct": false
+        },
+        {
+          "text_en": "if i <> 5",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "if (i != 5)",
+          "text_zh": "!= 不等於",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "How does a WHILE loop start?",
+      "options": [
+        {
+          "value": 1,
+          "text": "while (i &lt;= 10)"
+        },
+        {
+          "value": 2,
+          "text": "while i = 1 to 10"
+        },
+        {
+          "value": 3,
+          "text": "while (i &lt;= 10; i++)"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "WHILE 迴圈怎麼開頭？",
+      "options_translations": [
+        {
+          "text_en": "while (i <= 10)",
+          "text_zh": "條件用 () 包起來",
+          "correct": true
+        },
+        {
+          "text_en": "while i = 1 to 10",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "while (i <= 10; i++)",
+          "text_zh": "那是 for 迴圈格式",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "How does a FOR loop start?",
+      "options": [
+        {
+          "value": 1,
+          "text": "for i = 1 to 5"
+        },
+        {
+          "value": 2,
+          "text": "for (i &lt;= 5; i++)"
+        },
+        {
+          "value": 3,
+          "text": "for (i = 0; i &lt;= 5; i++)"
+        },
+        {
+          "value": 4,
+          "text": "for (i = 0; i &lt;= 5)"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "FOR 迴圈怎麼開頭？",
+      "options_translations": [
+        {
+          "text_en": "for i = 1 to 5",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "for (i <= 5; i++)",
+          "text_zh": "少初始化",
+          "correct": false
+        },
+        {
+          "text_en": "for (i = 0; i <= 5; i++)",
+          "text_zh": "初始化; 條件; 更新",
+          "correct": true
+        },
+        {
+          "text_en": "for (i = 0; i <= 5)",
+          "text_zh": "少更新",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "How can you add a comment in a JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "//This is a comment"
+        },
+        {
+          "value": 2,
+          "text": "'This is a comment"
+        },
+        {
+          "value": 3,
+          "text": "&lt;!--This is a comment--&gt;"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "JavaScript 中如何加註解？",
+      "options_translations": [
+        {
+          "text_en": "//This is a comment",
+          "text_zh": "單行註解",
+          "correct": true
+        },
+        {
+          "text_en": "'This is a comment",
+          "text_zh": "那是 BASIC/SQL",
+          "correct": false
+        },
+        {
+          "text_en": "<!--This is a comment-->",
+          "text_zh": "那是 HTML 註解",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "How to insert a comment that has more than one line?",
+      "options": [
+        {
+          "value": 1,
+          "text": "//This comment has<br>more than one line//"
+        },
+        {
+          "value": 2,
+          "text": "/*This comment has<br>more than one line*/"
+        },
+        {
+          "value": 3,
+          "text": "&lt;!--This comment has<br>more than one line--&gt;"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何插入多行註解？",
+      "options_translations": [
+        {
+          "text_en": "//This comment hasmore than one line//",
+          "text_zh": "// 只到行尾",
+          "correct": false
+        },
+        {
+          "text_en": "/*This comment hasmore than one line*/",
+          "text_zh": "/* */ 多行註解",
+          "correct": true
+        },
+        {
+          "text_en": "<!--This comment hasmore than one line-->",
+          "text_zh": "那是 HTML 註解",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "What is the correct way to write a JavaScript array?",
+      "options": [
+        {
+          "value": 1,
+          "text": "var colors = \"red\", \"green\", \"blue\""
+        },
+        {
+          "value": 2,
+          "text": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")"
+        },
+        {
+          "value": 3,
+          "text": "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")"
+        },
+        {
+          "value": 4,
+          "text": "var colors = [\"red\", \"green\", \"blue\"]"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "宣告 JavaScript 陣列的正確方式是？",
+      "options_translations": [
+        {
+          "text_en": "var colors = \"red\", \"green\", \"blue\"",
+          "text_zh": "沒陣列括號",
+          "correct": false
+        },
+        {
+          "text_en": "var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "var colors = [\"red\", \"green\", \"blue\"]",
+          "text_zh": "用方括號 []",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "How do you round the number 7.25, to the nearest integer?",
+      "options": [
+        {
+          "value": 1,
+          "text": "rnd(7.25)"
+        },
+        {
+          "value": 2,
+          "text": "Math.rnd(7.25)"
+        },
+        {
+          "value": 3,
+          "text": "Math.round(7.25)"
+        },
+        {
+          "value": 4,
+          "text": "round(7.25)"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何將 7.25 四捨五入到最接近的整數？",
+      "options_translations": [
+        {
+          "text_en": "rnd(7.25)",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "Math.rnd(7.25)",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "Math.round(7.25)",
+          "text_zh": "四捨五入",
+          "correct": true
+        },
+        {
+          "text_en": "round(7.25)",
+          "text_zh": "沒這個全域函式",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "How do you find the number with the highest value of x and y?",
+      "options": [
+        {
+          "value": 1,
+          "text": "top(x, y)"
+        },
+        {
+          "value": 2,
+          "text": "Math.max(x, y)"
+        },
+        {
+          "value": 3,
+          "text": "Math.ceil(x, y)"
+        },
+        {
+          "value": 4,
+          "text": "ceil(x, y)"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何取得 x、y 中較大值？",
+      "options_translations": [
+        {
+          "text_en": "top(x, y)",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Math.max(x, y)",
+          "text_zh": "取最大值",
+          "correct": true
+        },
+        {
+          "text_en": "Math.ceil(x, y)",
+          "text_zh": "ceil 是無條件進位",
+          "correct": false
+        },
+        {
+          "text_en": "ceil(x, y)",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "What is the correct JavaScript syntax for opening a new window called \"w2\" ?",
+      "options": [
+        {
+          "value": 1,
+          "text": "w2 = window.open(\"http://www.w3schools.com\");"
+        },
+        {
+          "value": 2,
+          "text": "w2 = window.new(\"http://www.w3schools.com\");"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "開啟新視窗 \"w2\" 的正確 JS 語法是？",
+      "options_translations": [
+        {
+          "text_en": "w2 = window.open(\"http://www.w3schools.com\");",
+          "text_zh": "window.open()",
+          "correct": true
+        },
+        {
+          "text_en": "w2 = window.new(\"http://www.w3schools.com\");",
+          "text_zh": "沒這個方法",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "JavaScript is the same as Java.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "JavaScript 跟 Java 是同一個東西。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "完全不同的兩個語言",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "Which is NOT a legal keyword to declare a variable in JavaScript?",
+      "options": [
+        {
+          "value": 1,
+          "text": "constant"
+        },
+        {
+          "value": 2,
+          "text": "let"
+        },
+        {
+          "value": 3,
+          "text": "var"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "下列哪個不是 JavaScript 宣告變數的合法關鍵字？",
+      "options_translations": [
+        {
+          "text_en": "constant",
+          "text_zh": "沒這個關鍵字（應為 const）",
+          "correct": true
+        },
+        {
+          "text_en": "let",
+          "text_zh": "區塊作用域變數",
+          "correct": false
+        },
+        {
+          "text_en": "var",
+          "text_zh": "傳統變數宣告",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "options": [
+        {
+          "value": 1,
+          "text": "onchange"
+        },
+        {
+          "value": 2,
+          "text": "onclick"
+        },
+        {
+          "value": 3,
+          "text": "onmouseover"
+        },
+        {
+          "value": 4,
+          "text": "onmouseclick"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "使用者點擊 HTML 元素時觸發哪個事件？",
+      "options_translations": [
+        {
+          "text_en": "onchange",
+          "text_zh": "值變更",
+          "correct": false
+        },
+        {
+          "text_en": "onclick",
+          "text_zh": "點擊",
+          "correct": true
+        },
+        {
+          "text_en": "onmouseover",
+          "text_zh": "游標移入",
+          "correct": false
+        },
+        {
+          "text_en": "onmouseclick",
+          "text_zh": "沒這個事件",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "How do you declare a JavaScript variable?",
+      "options": [
+        {
+          "value": 1,
+          "text": "variable carName;"
+        },
+        {
+          "value": 2,
+          "text": "v carName;"
+        },
+        {
+          "value": 3,
+          "text": "var carName;"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "如何宣告 JavaScript 變數？",
+      "options_translations": [
+        {
+          "text_en": "variable carName;",
+          "text_zh": "沒這個關鍵字",
+          "correct": false
+        },
+        {
+          "text_en": "v carName;",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "var carName;",
+          "text_zh": "var 是合法關鍵字",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": [
+        {
+          "value": 1,
+          "text": "*"
+        },
+        {
+          "value": 2,
+          "text": "x"
+        },
+        {
+          "value": 3,
+          "text": "="
+        },
+        {
+          "value": 4,
+          "text": "-"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "哪個運算子用來把值賦給變數？",
+      "options_translations": [
+        {
+          "text_en": "*",
+          "text_zh": "乘號",
+          "correct": false
+        },
+        {
+          "text_en": "x",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "=",
+          "text_zh": "= 是賦值運算子",
+          "correct": true
+        },
+        {
+          "text_en": "-",
+          "text_zh": "減號",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "What will the following code return: Boolean(10 &gt; 9)",
+      "options": [
+        {
+          "value": 1,
+          "text": "true"
+        },
+        {
+          "value": 2,
+          "text": "false"
+        },
+        {
+          "value": 3,
+          "text": "NaN"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "以下程式會回傳什麼：Boolean(10 > 9)",
+      "options_translations": [
+        {
+          "text_en": "true",
+          "text_zh": "10 > 9 為真",
+          "correct": true
+        },
+        {
+          "text_en": "false",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "NaN",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Is JavaScript case-sensitive?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Yes"
+        },
+        {
+          "value": 2,
+          "text": "No"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS",
+      "prompt_zh": "JavaScript 區分大小寫嗎？",
+      "options_translations": [
+        {
+          "text_en": "Yes",
+          "text_zh": "區分大小寫",
+          "correct": true
+        },
+        {
+          "text_en": "No",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

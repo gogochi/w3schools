@@ -1,0 +1,1046 @@
+{
+  "test": "SQL",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "What does SQL stand for?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Structured Query Language"
+        },
+        {
+          "value": 2,
+          "text": "Structured Question Language"
+        },
+        {
+          "value": 3,
+          "text": "Strong Question Language"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "SQL 是什麼的縮寫？",
+      "options_translations": [
+        {
+          "text_en": "Structured Query Language",
+          "text_zh": "結構化查詢語言",
+          "correct": true
+        },
+        {
+          "text_en": "Structured Question Language",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Strong Question Language",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "Which SQL statement is used to extract data from a database?",
+      "options": [
+        {
+          "value": 1,
+          "text": "GET"
+        },
+        {
+          "value": 2,
+          "text": "EXTRACT"
+        },
+        {
+          "value": 3,
+          "text": "SELECT"
+        },
+        {
+          "value": 4,
+          "text": "OPEN"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來從資料庫擷取資料？",
+      "options_translations": [
+        {
+          "text_en": "GET",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "EXTRACT",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT",
+          "text_zh": "查詢",
+          "correct": true
+        },
+        {
+          "text_en": "OPEN",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "Which SQL statement is used to update data in a database?",
+      "options": [
+        {
+          "value": 1,
+          "text": "UPDATE"
+        },
+        {
+          "value": 2,
+          "text": "MODIFY"
+        },
+        {
+          "value": 3,
+          "text": "SAVE"
+        },
+        {
+          "value": 4,
+          "text": "SAVE AS"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來更新資料？",
+      "options_translations": [
+        {
+          "text_en": "UPDATE",
+          "text_zh": "更新",
+          "correct": true
+        },
+        {
+          "text_en": "MODIFY",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SAVE",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SAVE AS",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "Which SQL statement is used to delete data from a database?",
+      "options": [
+        {
+          "value": 1,
+          "text": "COLLAPSE"
+        },
+        {
+          "value": 2,
+          "text": "DELETE"
+        },
+        {
+          "value": 3,
+          "text": "REMOVE"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來刪除資料？",
+      "options_translations": [
+        {
+          "text_en": "COLLAPSE",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "DELETE",
+          "text_zh": "刪除",
+          "correct": true
+        },
+        {
+          "text_en": "REMOVE",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "Which SQL statement is used to insert new data in a database?",
+      "options": [
+        {
+          "value": 1,
+          "text": "ADD NEW"
+        },
+        {
+          "value": 2,
+          "text": "ADD RECORD"
+        },
+        {
+          "value": 3,
+          "text": "INSERT NEW"
+        },
+        {
+          "value": 4,
+          "text": "INSERT INTO"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來插入新資料？",
+      "options_translations": [
+        {
+          "text_en": "ADD NEW",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "ADD RECORD",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "INSERT NEW",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "INSERT INTO",
+          "text_zh": "標準插入語法",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "With SQL, how do you select a column named \"FirstName\" from a table named \"Persons\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "EXTRACT FirstName FROM Persons"
+        },
+        {
+          "value": 2,
+          "text": "SELECT FirstName FROM Persons"
+        },
+        {
+          "value": 3,
+          "text": "SELECT Persons.FirstName"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何從 Persons 表選取 FirstName 欄位？",
+      "options_translations": [
+        {
+          "text_en": "EXTRACT FirstName FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT FirstName FROM Persons",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT Persons.FirstName",
+          "text_zh": "少了 FROM",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "With SQL, how do you select all the columns from a table named \"Persons\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT Persons"
+        },
+        {
+          "value": 2,
+          "text": "SELECT [all] FROM Persons"
+        },
+        {
+          "value": 3,
+          "text": "SELECT * FROM Persons"
+        },
+        {
+          "value": 4,
+          "text": "SELECT *.Persons"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何從 Persons 表選取所有欄位？",
+      "options_translations": [
+        {
+          "text_en": "SELECT Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT [all] FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons",
+          "text_zh": "* 代表所有欄位",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT *.Persons",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "With SQL, how do you select all the records from a table named \"Persons\" where the value of the column \"FirstName\" is \"Peter\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT * FROM Persons WHERE FirstName='Peter'"
+        },
+        {
+          "value": 2,
+          "text": "SELECT [all] FROM Persons WHERE FirstName='Peter'"
+        },
+        {
+          "value": 3,
+          "text": "SELECT * FROM Persons WHERE FirstName&lt;&gt;'Peter'"
+        },
+        {
+          "value": 4,
+          "text": "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何選取 FirstName='Peter' 的所有紀錄？",
+      "options_translations": [
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName='Peter'",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT [all] FROM Persons WHERE FirstName='Peter'",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName<>'Peter'",
+          "text_zh": "<> 是不等於",
+          "correct": false
+        },
+        {
+          "text_en": "SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "With SQL, how do you select all the records from a table named \"Persons\" where the value of the column \"FirstName\" starts with an \"a\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT * FROM Persons WHERE FirstName='a'"
+        },
+        {
+          "value": 2,
+          "text": "SELECT * FROM Persons WHERE FirstName='%a%'"
+        },
+        {
+          "value": 3,
+          "text": "SELECT * FROM Persons WHERE FirstName LIKE 'a%'"
+        },
+        {
+          "value": 4,
+          "text": "SELECT * FROM Persons WHERE FirstName LIKE '%a'"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何選取 FirstName 以 'a' 開頭的所有紀錄？",
+      "options_translations": [
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName='a'",
+          "text_zh": "等於只 a 一字",
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName='%a%'",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName LIKE 'a%'",
+          "text_zh": "以 a 開頭",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName LIKE '%a'",
+          "text_zh": "以 a 結尾",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "OR 任一條件成立顯示，AND 全部條件成立才顯示。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "With SQL, how do you select all the records from a table named \"Persons\" where the \"FirstName\" is \"Peter\" and the \"LastName\" is \"Jackson\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT * FROM Persons WHERE FirstName&lt;&gt;'Peter' AND LastName&lt;&gt;'Jackson'"
+        },
+        {
+          "value": 2,
+          "text": "SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'"
+        },
+        {
+          "value": 3,
+          "text": "SELECT FirstName='Peter', LastName='Jackson' FROM Persons"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何選取 FirstName='Peter' 且 LastName='Jackson'？",
+      "options_translations": [
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName<>'Peter' AND LastName<>'Jackson'",
+          "text_zh": "<> 是不等於",
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'",
+          "text_zh": "AND 條件",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT FirstName='Peter', LastName='Jackson' FROM Persons",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "With SQL, how do you select all the records from a table named \"Persons\" where the \"LastName\" is alphabetically between (and including) \"Hansen\" and \"Pettersen\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'"
+        },
+        {
+          "value": 2,
+          "text": "SELECT * FROM Persons WHERE LastName&gt;'Hansen' AND LastName&lt;'Pettersen'"
+        },
+        {
+          "value": 3,
+          "text": "SELECT LastName&gt;'Hansen' AND LastName&lt;'Pettersen' FROM Persons"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何選取 LastName 字母排序在 'Hansen' 與 'Pettersen' 之間（含）？",
+      "options_translations": [
+        {
+          "text_en": "SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'",
+          "text_zh": "BETWEEN 含兩端",
+          "correct": true
+        },
+        {
+          "text_en": "SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'",
+          "text_zh": "不含兩端",
+          "correct": false
+        },
+        {
+          "text_en": "SELECT LastName>'Hansen' AND LastName<'Pettersen' FROM Persons",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "Which SQL statement is used to return only different values?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT DIFFERENT"
+        },
+        {
+          "value": 2,
+          "text": "SELECT UNIQUE"
+        },
+        {
+          "value": 3,
+          "text": "SELECT DISTINCT"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來只回傳不重複的值？",
+      "options_translations": [
+        {
+          "text_en": "SELECT DIFFERENT",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT UNIQUE",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT DISTINCT",
+          "text_zh": "DISTINCT 去重複",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "Which SQL keyword is used to sort the result-set?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SORT"
+        },
+        {
+          "value": 2,
+          "text": "SORT BY"
+        },
+        {
+          "value": 3,
+          "text": "ORDER BY"
+        },
+        {
+          "value": 4,
+          "text": "ORDER"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 關鍵字用來排序結果？",
+      "options_translations": [
+        {
+          "text_en": "SORT",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SORT BY",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "ORDER BY",
+          "text_zh": "排序",
+          "correct": true
+        },
+        {
+          "text_en": "ORDER",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "With SQL, how can you return all the records from a table named \"Persons\" sorted descending by \"FirstName\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT * FROM Persons SORT 'FirstName' DESC"
+        },
+        {
+          "value": 2,
+          "text": "SELECT * FROM Persons SORT BY 'FirstName' DESC"
+        },
+        {
+          "value": 3,
+          "text": "SELECT * FROM Persons ORDER FirstName DESC"
+        },
+        {
+          "value": 4,
+          "text": "SELECT * FROM Persons ORDER BY FirstName DESC"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何依 FirstName 倒序回傳所有 Persons 紀錄？",
+      "options_translations": [
+        {
+          "text_en": "SELECT * FROM Persons SORT 'FirstName' DESC",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons SORT BY 'FirstName' DESC",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons ORDER FirstName DESC",
+          "text_zh": "少 BY",
+          "correct": false
+        },
+        {
+          "text_en": "SELECT * FROM Persons ORDER BY FirstName DESC",
+          "text_zh": "標準寫法",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "With SQL, how can you insert a new record into the \"Persons\" table?",
+      "options": [
+        {
+          "value": 1,
+          "text": "INSERT ('Jimmy', 'Jackson') INTO Persons"
+        },
+        {
+          "value": 2,
+          "text": "INSERT INTO Persons VALUES ('Jimmy', 'Jackson')"
+        },
+        {
+          "value": 3,
+          "text": "INSERT VALUES ('Jimmy', 'Jackson') INTO Persons"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何插入新紀錄到 Persons 表？",
+      "options_translations": [
+        {
+          "text_en": "INSERT ('Jimmy', 'Jackson') INTO Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "INSERT INTO Persons VALUES ('Jimmy', 'Jackson')",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "INSERT VALUES ('Jimmy', 'Jackson') INTO Persons",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "With SQL, how can you insert \"Olsen\" as the \"LastName\" in the \"Persons\" table?",
+      "options": [
+        {
+          "value": 1,
+          "text": "INSERT INTO Persons (LastName) VALUES ('Olsen')"
+        },
+        {
+          "value": 2,
+          "text": "INSERT ('Olsen') INTO Persons (LastName)"
+        },
+        {
+          "value": 3,
+          "text": "INSERT INTO Persons ('Olsen') INTO LastName"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何只在 LastName 欄位插入 'Olsen'？",
+      "options_translations": [
+        {
+          "text_en": "INSERT INTO Persons (LastName) VALUES ('Olsen')",
+          "text_zh": "指定欄位 + VALUES",
+          "correct": true
+        },
+        {
+          "text_en": "INSERT ('Olsen') INTO Persons (LastName)",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "INSERT INTO Persons ('Olsen') INTO LastName",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "How can you change \"Hansen\" into \"Nilsen\" in the \"LastName\" column in the Persons table?",
+      "options": [
+        {
+          "value": 1,
+          "text": "UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'"
+        },
+        {
+          "value": 2,
+          "text": "MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'"
+        },
+        {
+          "value": 3,
+          "text": "UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'"
+        },
+        {
+          "value": 4,
+          "text": "MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何把 Persons 表中 LastName='Hansen' 改成 'Nilsen'？",
+      "options_translations": [
+        {
+          "text_en": "UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'",
+          "text_zh": "UPDATE-SET-WHERE",
+          "correct": true
+        },
+        {
+          "text_en": "MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'",
+          "text_zh": "MODIFY 不是 SQL",
+          "correct": false
+        },
+        {
+          "text_en": "UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "With SQL, how can you delete the records where the \"FirstName\" is \"Peter\" in the Persons Table?",
+      "options": [
+        {
+          "value": 1,
+          "text": "DELETE FirstName='Peter' FROM Persons"
+        },
+        {
+          "value": 2,
+          "text": "DELETE ROW FirstName='Peter' FROM Persons"
+        },
+        {
+          "value": 3,
+          "text": "DELETE FROM Persons WHERE FirstName = 'Peter'"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何刪除 FirstName='Peter' 的紀錄？",
+      "options_translations": [
+        {
+          "text_en": "DELETE FirstName='Peter' FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "DELETE ROW FirstName='Peter' FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "DELETE FROM Persons WHERE FirstName = 'Peter'",
+          "text_zh": "DELETE FROM ... WHERE",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "With SQL, how can you return the number of records in the \"Persons\" table?",
+      "options": [
+        {
+          "value": 1,
+          "text": "SELECT COLUMNS(*) FROM Persons"
+        },
+        {
+          "value": 2,
+          "text": "SELECT NO(*) FROM Persons"
+        },
+        {
+          "value": 3,
+          "text": "SELECT LEN(*) FROM Persons"
+        },
+        {
+          "value": 4,
+          "text": "SELECT COUNT(*) FROM Persons"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "如何回傳 Persons 表的紀錄筆數？",
+      "options_translations": [
+        {
+          "text_en": "SELECT COLUMNS(*) FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT NO(*) FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT LEN(*) FROM Persons",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "SELECT COUNT(*) FROM Persons",
+          "text_zh": "COUNT 計數函式",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "What is the most common type of join?",
+      "options": [
+        {
+          "value": 1,
+          "text": "INSIDE JOIN"
+        },
+        {
+          "value": 2,
+          "text": "INNER JOIN"
+        },
+        {
+          "value": 3,
+          "text": "JOINED"
+        },
+        {
+          "value": 4,
+          "text": "JOINED TABLE"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "最常見的 JOIN 類型是？",
+      "options_translations": [
+        {
+          "text_en": "INSIDE JOIN",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "INNER JOIN",
+          "text_zh": "內部連接（取交集）",
+          "correct": true
+        },
+        {
+          "text_en": "JOINED",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "JOINED TABLE",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "Which operator is used to select values within a range?",
+      "options": [
+        {
+          "value": 1,
+          "text": "BETWEEN"
+        },
+        {
+          "value": 2,
+          "text": "WITHIN"
+        },
+        {
+          "value": 3,
+          "text": "RANGE"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個運算子用來選取某範圍內的值？",
+      "options_translations": [
+        {
+          "text_en": "BETWEEN",
+          "text_zh": "範圍判斷（含兩端）",
+          "correct": true
+        },
+        {
+          "text_en": "WITHIN",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "RANGE",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "The NOT NULL constraint enforces a column to not accept NULL values.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "NOT NULL 約束強制欄位不接受 NULL 值。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "Which operator is used to search for a specified pattern in a column?",
+      "options": [
+        {
+          "value": 1,
+          "text": "LIKE"
+        },
+        {
+          "value": 2,
+          "text": "GET"
+        },
+        {
+          "value": 3,
+          "text": "FROM"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個運算子用來在欄位中搜尋指定模式？",
+      "options_translations": [
+        {
+          "text_en": "LIKE",
+          "text_zh": "模糊比對（含 %、_ 萬用字元）",
+          "correct": true
+        },
+        {
+          "text_en": "GET",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "FROM",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Which SQL statement is used to create a database table called 'Customers'?",
+      "options": [
+        {
+          "value": 1,
+          "text": "CREATE DB Customers"
+        },
+        {
+          "value": 2,
+          "text": "CREATE DATABASE TAB Customers"
+        },
+        {
+          "value": 3,
+          "text": "CREATE TABLE Customers"
+        },
+        {
+          "value": 4,
+          "text": "CREATE DATABASE TABLE Customers"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL",
+      "prompt_zh": "哪個 SQL 語句用來建立名為 'Customers' 的資料表？",
+      "options_translations": [
+        {
+          "text_en": "CREATE DB Customers",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "CREATE DATABASE TAB Customers",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "CREATE TABLE Customers",
+          "text_zh": "建立資料表",
+          "correct": true
+        },
+        {
+          "text_en": "CREATE DATABASE TABLE Customers",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

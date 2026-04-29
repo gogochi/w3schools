@@ -1,0 +1,3275 @@
+{
+  "language": "c",
+  "topics": {
+    "arrays": [
+      {
+        "question": "Of the following, what is the correct syntax to declare an array of integers called <code class='w3-codespan'>myNumbers</code> with the values 25, 50, 75, and 100?",
+        "options": [
+          "int myNumbers[25, 50, 75, 100];",
+          "int myNumbers = {25, 50, 75, 100};",
+          "int myNumbers[] = {25, 50, 75, 100};",
+          "int myNumbers[] = 25, 50, 75, 100;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays1",
+        "prompt_zh": "[陣列] Of the following, what is the correct syntax to declare an array of integers called myNumbers with the values 25, 50, 75, and 100?"
+      },
+      {
+        "fillintheblanks": "exercise_arrays1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays2",
+        "prompt_zh": "陣列 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_arrays2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays3",
+        "prompt_zh": "陣列 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_arrays3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays4",
+        "prompt_zh": "陣列 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myNumbers[] = {25, 50, 75, 100};<br>myNumbers[0] = 12;<br>printf(\"%d\", myNumbers[0]);</code>",
+        "options": [
+          "25",
+          "50",
+          "12",
+          "100"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays5",
+        "prompt_zh": "[陣列] What will the following code output?int myNumbers[] = {25, 50, 75, 100};myNumbers[0] = 12;printf(\"%d\", myNumbers[0]);"
+      },
+      {
+        "question": "Which index should be used to access the third element in an array?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays6",
+        "prompt_zh": "[陣列] Which index should be used to access the third element in an array?"
+      },
+      {
+        "question": "What is the output of the following code?<br><code class='codeblock'>int myNumbers[] = {25, 50, 75, 100};<br>for (int i = 0; i < 4; i++) {<br>&nbsp;&nbsp;printf(\"%d \", myNumbers[i]);<br>}</code>",
+        "options": [
+          "25\n50\n75\n100",
+          "25\n75\n50\n100",
+          "100\n75\n50\n25",
+          "0\n1\n2\n3"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays7",
+        "prompt_zh": "output of the following code 是什麼？int myNumbers[] = {25, 50, 75, 100};for (int i = 0; i   printf(\"%d \", myNumbers[i]);}"
+      },
+      {
+        "fillintheblanks": "exercise_arrays4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays8",
+        "prompt_zh": "陣列 填空題"
+      }
+    ],
+    "arrays_multi": [
+      {
+        "question": "What does the following declaration represent?<br><code class='codeblock'>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };</code>",
+        "options": [
+          "A 1-dimensional array of 5 elements",
+          "A 2-dimensional array with 2 rows and 3 columns",
+          "A 3-dimensional array with 2 rows and 3 columns",
+          "A 1-dimensional array with 6 elements"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_multi1",
+        "prompt_zh": "[多維陣列] What does the following declaration represent?int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };"
+      },
+      {
+        "question": "How would you access the element in the second row and first column of this array?<br><code class='codeblock'>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };</code>",
+        "options": [
+          "<code class='w3-codespan'>matrix[1][0]</code>",
+          "<code class='w3-codespan'>matrix[2][0]</code>",
+          "<code class='w3-codespan'>matrix[0][1]</code>",
+          "<code class='w3-codespan'>matrix[1][1]</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_multi2",
+        "prompt_zh": "[多維陣列] How would you access the element in the second row and first column of this array?int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };"
+      },
+      {
+        "question": "What would the following code output?<br><code class='codeblock'>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };<br>printf(\"%d\", matrix[0][2]);</code>",
+        "options": [
+          "4",
+          "6",
+          "2",
+          "3"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_multi3",
+        "prompt_zh": "[多維陣列] What would the following code output?int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };printf(\"%d\", matrix[0][2]);"
+      },
+      {
+        "question": "Which of the following statements will change the first element in the second row of <code class='w3-codespan'>matrix</code> to 7?<br><code class='codeblock'>int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };</code>",
+        "options": [
+          "<code class='w3-codespan'>matrix[0][1] = 7;</code>",
+          "<code class='w3-codespan'>matrix[1][0] = 7;</code>",
+          "<code class='w3-codespan'>matrix[2][0] = 7;</code>",
+          "<code class='w3-codespan'>matrix[1][1] = 7;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_multi4",
+        "prompt_zh": "[多維陣列] Which of the following statements will change the first element in the second row of matrix to 7?int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };"
+      },
+      {
+        "question": "To print all elements in a 2D array, what is required?",
+        "options": [
+          "Only one for loop",
+          "A nested loop with one for loop for each dimension",
+          "Two separate for loops for each dimension",
+          "A single printf statement"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_multi5",
+        "prompt_zh": "[多維陣列] To print all elements in a 2D array, what is required?"
+      }
+    ],
+    "arrays_size": [
+      {
+        "question": "True or False:<br> The <code class='w3-codespan'>sizeof</code> operator returns the size of a type in bytes.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_size1",
+        "prompt_zh": "True 或 False：The sizeof operator returns the size of a type in bytes."
+      },
+      {
+        "question": "What will be printed by this code?<br><code class='codeblock'>int myNumbers[] = {25, 50, 75, 100};<br>int length = sizeof(myNumbers) / sizeof(myNumbers[0]);<br>printf(\"%d\", length);</code>",
+        "options": [
+          "4",
+          "25",
+          "100",
+          "1"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_size2",
+        "prompt_zh": "[陣列大小] What will be printed by this code?int myNumbers[] = {25, 50, 75, 100};int length = sizeof(myNumbers) / sizeof(myNumbers[0]);printf(\"%d\", length);"
+      },
+      {
+        "question": "What formula can you use to find the number of elements in an array called <code class='w3-codespan'>myNumbers</code>?",
+        "options": [
+          "<code class='w3-codespan'>sizeof(myNumbers) * sizeof(myNumbers[0])</code>",
+          "<code class='w3-codespan'>sizeof(myNumbers) / sizeof(int)</code>",
+          "<code class='w3-codespan'>sizeof(myNumbers) / sizeof(myNumbers[0])</code>",
+          "<code class='w3-codespan'>sizeof(myNumbers[0]) / sizeof(myNumbers)</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_arrays_size3",
+        "prompt_zh": "[陣列大小] What formula can you use to find the number of elements in an array called myNumbers?"
+      }
+    ],
+    "booleans": [
+      {
+        "question": "What is a boolean data type in C used for?",
+        "options": [
+          "Storing floating-point numbers",
+          "Storing whole numbers",
+          "Storing true or false values",
+          "Storing characters"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans1",
+        "prompt_zh": "[布林值] What is a boolean data type in C used for?"
+      },
+      {
+        "question": "How are boolean values represented in C?",
+        "options": [
+          "1 for true, 0 for false",
+          "true for true, false for false",
+          "Any non-zero value for false, 0 for true",
+          "Only integers can be used as boolean values"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans2",
+        "prompt_zh": "[布林值] How are boolean values represented in C?"
+      },
+      {
+        "fillintheblanks": "exercise_booleans1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans3",
+        "prompt_zh": "布林值 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_booleans2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans4",
+        "prompt_zh": "布林值 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_booleans3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans5",
+        "prompt_zh": "布林值 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_booleans4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans6",
+        "prompt_zh": "布林值 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x = 10;<br>int y = 9;<br>printf(\"%d\", x > y);</code>",
+        "options": [
+          "0",
+          "1",
+          "true",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_booleans7",
+        "prompt_zh": "[布林值] What will the following code output?int x = 10;int y = 9;printf(\"%d\", x > y);"
+      }
+    ],
+    "break_continue": [
+      {
+        "question": "What does the <code class='w3-codespan'>break</code> statement do in a loop?",
+        "options": [
+          "Skips the current iteration and continues with the next",
+          "Ends the entire loop",
+          "Pauses the loop temporarily",
+          "Restarts the loop from the beginning"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_break_continue1",
+        "prompt_zh": "[break/continue] What does the break statement do in a loop?"
+      },
+      {
+        "question": "What will be the output of this code?<br><code class='codeblock'>int i;<br>for (i = 0; i < 10; i++) {<br>&nbsp;&nbsp;if (i == 4) {<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;printf(\"%d \", i);<br>}</code>",
+        "options": [
+          "0\n1\n2\n3\n4",
+          "4",
+          "0\n1\n2\n3",
+          "0\n1\n2\n3\n5\n6\n7\n8\n9"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_break_continue2",
+        "prompt_zh": "[break/continue] What will be the output of this code?int i;for (i = 0; i   if (i == 4) {    break;  }  printf(\"%d \", i);}"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>continue</code> statement do in a loop?",
+        "options": [
+          "Ends the entire loop",
+          "Skips the current iteration and continues with the next",
+          "Pauses the loop temporarily",
+          "Ends the current iteration and jumps out of the loop"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_break_continue3",
+        "prompt_zh": "[break/continue] What does the continue statement do in a loop?"
+      },
+      {
+        "question": "What will be the output of this code?<br><code class='codeblock'>int i;<br>for (i = 0; i < 10; i++) {<br>&nbsp;&nbsp;if (i == 4) {<br>&nbsp;&nbsp;&nbsp;&nbsp;continue;<br>&nbsp;&nbsp;}<br>&nbsp;&nbsp;printf(\"%d \", i);<br>}</code>",
+        "options": [
+          "0\n1\n2\n3\n5\n6\n7\n8\n9",
+          "0\n1\n2\n3\n4",
+          "4\n5\n6\n7\n8\n9",
+          "1\n2\n3\n4\n5"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_break_continue4",
+        "prompt_zh": "[break/continue] What will be the output of this code?int i;for (i = 0; i   if (i == 4) {    continue;  }  printf(\"%d \", i);}"
+      },
+      {
+        "fillintheblanks": "exercise_while_loop5.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_break_continue5",
+        "prompt_zh": "break/continue 填空題"
+      }
+    ],
+    "comments": [
+      {
+        "question": "What is the meaning of comments in C?",
+        "options": [
+          "To output text",
+          "To create text variables",
+          "To explain and document code",
+          "To print text and numbers with a simple line of code"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_comments1",
+        "prompt_zh": "meaning of comments in C 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_comments1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_comments2",
+        "prompt_zh": "註解 填空題"
+      },
+      {
+        "question": "When do we usually use multi-line comments?",
+        "options": [
+          "For short comments",
+          "For longer comments",
+          "For comments that should be printed"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_comments3",
+        "prompt_zh": "[註解] When do we usually use multi-line comments?"
+      }
+    ],
+    "conditions": [
+      {
+        "question": "Which of the following operators checks if two values are equal in C?",
+        "options": [
+          "=",
+          "==",
+          "!=",
+          "<>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions1",
+        "prompt_zh": "[條件] Which of the following operators checks if two values are equal in C?"
+      },
+      {
+        "fillintheblanks": "exercise_conditions1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions2",
+        "prompt_zh": "條件 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_conditions2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions3",
+        "prompt_zh": "條件 填空題"
+      },
+      {
+        "question": "What is the correct syntax for an if statement in C?",
+        "options": [
+          "if condition { }",
+          "If (condition) [ ]",
+          "if (condition) { }",
+          "if {condition} ( )"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions4",
+        "prompt_zh": "an if statement in C 的正確syntax是？"
+      },
+      {
+        "question": "True or False:<br>The <code class='w3-codespan'>if</code> statement in C is case-sensitive, so <code class='w3-codespan'>IF</code> or <code class='w3-codespan'>If</code> would generate an error.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions5",
+        "prompt_zh": "True 或 False：The if statement in C is case-sensitive, so IF or If would generate an error."
+      },
+      {
+        "question": "Which conditional statement should you use if you want to check multiple alternative conditions?",
+        "options": [
+          "if",
+          "else",
+          "else if",
+          "if multi"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions6",
+        "prompt_zh": "[條件] Which conditional statement should you use if you want to check multiple alternative conditions?"
+      }
+    ],
+    "conditions_else": [
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>else</code> statement in C?",
+        "options": [
+          "To execute a block of code if the <code class='w3-codespan'>if</code> condition is true",
+          "To execute a block of code if the <code class='w3-codespan'>if</code> condition is false",
+          "To create a new condition",
+          "To end the program"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else1",
+        "prompt_zh": "purpose of the else statement in C 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_conditions3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else2",
+        "prompt_zh": "else 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int time = 15;<br>if (time < 18) {<br>&nbsp;&nbsp;printf(\"Good day.\");<br>} else {<br>&nbsp;&nbsp;printf(\"Good evening.\");<br>}</code>",
+        "options": [
+          "Good evening.",
+          "Good day.",
+          "No output",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else3",
+        "prompt_zh": "[else] What will the following code output?int time = 15;if (time   printf(\"Good day.\");} else {  printf(\"Good evening.\");}"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int time = 20;<br>if (time < 18) {<br>&nbsp;&nbsp;printf(\"Good day.\");<br>} else {<br>&nbsp;&nbsp;printf(\"Good evening.\");<br>}</code>",
+        "options": [
+          "Good day.",
+          "Good evening.",
+          "No output",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else4",
+        "prompt_zh": "[else] What will the following code output?int time = 20;if (time   printf(\"Good day.\");} else {  printf(\"Good evening.\");}"
+      },
+      {
+        "question": "What is the correct syntax for an <code class='w3-codespan'>else</code> statement in C?",
+        "options": [
+          "else (condition) { }",
+          "else { }",
+          "else if (condition) { }",
+          "if else { }"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else5",
+        "prompt_zh": "an else statement in C 的正確syntax是？"
+      },
+      {
+        "question": "Which part of the code will execute if the condition in the <code class='w3-codespan'>if</code> statement is false?<br><code class='codeblock'>if (a > b) {<br>&nbsp;&nbsp;printf(\"a is greater\");<br>} else {<br>&nbsp;&nbsp;printf(\"b is greater\");<br>}</code>",
+        "options": [
+          "<code class='w3-codespan'>printf(\"a is greater\");</code>",
+          "<code class='w3-codespan'>printf(\"b is greater\");</code>",
+          "Both",
+          "Neither"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_else6",
+        "prompt_zh": "[else] Which part of the code will execute if the condition in the if statement is false?if (a > b) {  printf(\"a is greater\");} else {  printf(\"b is greater\");}"
+      }
+    ],
+    "conditions_elseif": [
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>else if</code> statement in C?",
+        "options": [
+          "To check a new condition if the first <code class='w3-codespan'>if</code> condition is true",
+          "To end the program",
+          "To specify a new condition if the first <code class='w3-codespan'>if</code> condition is false",
+          "To repeat the previous condition"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_elseif1",
+        "prompt_zh": "purpose of the else if statement in C 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_conditions4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_elseif2",
+        "prompt_zh": "else if 填空題"
+      },
+      {
+        "question": "What will the following code output if <code class='w3-codespan'>time</code> is 14?<br><code class='codeblock'>int time = 14;<br>if (time < 10) {<br>&nbsp;&nbsp;printf(\"Good morning.\");<br>} else if (time < 20) {<br>&nbsp;&nbsp;printf(\"Good day.\");<br>} else {<br>&nbsp;&nbsp;printf(\"Good evening.\");<br>}</code>",
+        "options": [
+          "Good morning.",
+          "Good day.",
+          "Good evening.",
+          "No output"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_elseif3",
+        "prompt_zh": "[else if] What will the following code output if time is 14?int time = 14;if (time   printf(\"Good morning.\");} else if (time   printf(\"Good day.\");} else {  printf(\"Good evening.\");}"
+      },
+      {
+        "question": "True or False:<br>The <code class='w3-codespan'>else if</code> statement in C executes only if the previous <code class='w3-codespan'>if</code> condition is false and the <code class='w3-codespan'>else if</code> condition is true.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_elseif4",
+        "prompt_zh": "True 或 False：The else if statement in C executes only if the previous if condition is false and the else if condition is true."
+      }
+    ],
+    "conditions_short_hand": [
+      {
+        "question": "What is the purpose of the ternary operator in C?",
+        "options": [
+          "To write multiple lines of code within an if...else statement",
+          "To replace a simple if...else statement with a single line of code",
+          "To handle complex conditions that require nested if statements",
+          "To declare a new variable"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_short_hand1",
+        "prompt_zh": "purpose of the ternary operator in C 是什麼？"
+      },
+      {
+        "question": "What is the correct syntax for using the ternary operator?",
+        "options": [
+          "<code class='w3-codespan'>variable = condition ? expressionTrue : expressionFalse;</code>",
+          "<code class='w3-codespan'>if (condition) ? expressionTrue : expressionFalse;</code>",
+          "<code class='w3-codespan'>condition ? var = expressionTrue : variable = expressionFalse;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_short_hand2",
+        "prompt_zh": "using the ternary operator 的正確syntax是？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int time = 20;<br>(time < 18) ? printf(\"Good day.\") : printf(\"Good evening.\");</code>",
+        "options": [
+          "Good day.",
+          "Good evening.",
+          "No output",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_short_hand3",
+        "prompt_zh": "[三元運算子] What will the following code output?int time = 20;(time"
+      },
+      {
+        "question": "Rewrite the following code using the ternary operator:<br><code class='codeblock'>int x = 5;<br>if (x > 10) {<br>&nbsp;&nbsp;printf(\"Greater\");<br>} else {<br>&nbsp;&nbsp;printf(\"Smaller\");<br>}</code>",
+        "options": [
+          "<code class='w3-codespan'>(x > 10) ? printf(\"Greater\") : printf(\"Smaller\");</code>",
+          "<code class='w3-codespan'>(x < 10) ? printf(\"Greater\") : printf(\"Smaller\");</code>",
+          "<code class='w3-codespan'>printf(\"Greater\") ? (x > 10) : printf(\"Smaller\");</code>",
+          "<code class='w3-codespan'>(x > 10) : printf(\"Greater\") ? printf(\"Smaller\");</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_conditions_short_hand4",
+        "prompt_zh": "[三元運算子] Rewrite the following code using the ternary operator:int x = 5;if (x > 10) {  printf(\"Greater\");} else {  printf(\"Smaller\");}"
+      }
+    ],
+    "constants": [
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>const</code> keyword in C?",
+        "options": [
+          "To declare a variable that can be changed",
+          "To declare a variable that cannot be changed",
+          "To declare a variable without assigning a value",
+          "To declare a variable with a default value"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants1",
+        "prompt_zh": "purpose of the const keyword in C 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_constants1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants2",
+        "prompt_zh": "常數 填空題"
+      },
+      {
+        "question": "What will happen if you try to change the value of a constant variable?<br><code class='codeblock'>const int myNum = 15;<br>myNum = 10;</code>",
+        "options": [
+          "The value of myNum will change to 10",
+          "An error will occur",
+          "The value will remain as 15 but no error will occur",
+          "The program will ignore the change"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants3",
+        "prompt_zh": "[常數] What will happen if you try to change the value of a constant variable?const int myNum = 15;myNum = 10;"
+      },
+      {
+        "question": "Which of the following is a common practice for naming constant variables?",
+        "options": [
+          "Use lowercase letters only",
+          "Use a mix of uppercase and lowercase",
+          "Use all uppercase letters",
+          "Use numbers only"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants4",
+        "prompt_zh": "下列哪個是a common practice for naming constant variables？"
+      },
+      {
+        "question": "True or False:<br>You can declare a constant variable without assigning it a value immediately.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants5",
+        "prompt_zh": "True 或 False：You can declare a constant variable without assigning it a value immediately."
+      },
+      {
+        "question": "Which of the following is a valid declaration of a constant variable?",
+        "options": [
+          "const int YEAR;",
+          "int const PI = 3.14;",
+          "const int BIRTHYEAR = 1980;",
+          "const float 3.14 = PI;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_constants6",
+        "prompt_zh": "下列哪個是a valid declaration of a constant variable？"
+      }
+    ],
+    "data_types": [
+      {
+        "question": "Which data type is used to store whole numbers in C?",
+        "options": [
+          "float",
+          "char",
+          "int",
+          "double"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types1",
+        "prompt_zh": "哪個 data type 用來store whole numbers in C？"
+      },
+      {
+        "fillintheblanks": "exercise_data_types1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types2",
+        "prompt_zh": "資料型別 填空題"
+      },
+      {
+        "question": "Which format specifier is used to print a double data type?",
+        "options": [
+          "%d",
+          "%f",
+          "%lf",
+          "%c"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types3",
+        "prompt_zh": "哪個 format specifier 用來print a double data type？"
+      },
+      {
+        "question": "True or False:<br>Using the wrong format specifier for a data type can cause errors in C.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types4",
+        "prompt_zh": "True 或 False：Using the wrong format specifier for a data type can cause errors in C."
+      },
+      {
+        "question": "What is the correct format specifier for an integer?",
+        "options": [
+          "%i or %d",
+          "%f",
+          "%lf",
+          "%s"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types5",
+        "prompt_zh": "an integer 的正確format specifier是？"
+      },
+      {
+        "question": "Which data type is used to store a single character or letter in C?",
+        "options": [
+          "char",
+          "string",
+          "int",
+          "float"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types6",
+        "prompt_zh": "哪個 data type 用來store a single character or letter in C？"
+      }
+    ],
+    "data_types_characters": [
+      {
+        "question": "What is the correct syntax to declare a char variable with the letter 'A'?",
+        "options": [
+          "char myGrade = A;",
+          "char myGrade = 'A';",
+          "char myGrade = \"A\";"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters1",
+        "prompt_zh": "correct syntax to declare a char variable with the letter 'A' 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_data_types2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters2",
+        "prompt_zh": "字元型別 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>char myGrade = 'B';<br>printf(\"%c\", myGrade);</code>",
+        "options": [
+          "B",
+          "%c",
+          "myGrade",
+          "Error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters3",
+        "prompt_zh": "[字元型別] What will the following code output?char myGrade = 'B';printf(\"%c\", myGrade);"
+      },
+      {
+        "question": "What will the following code output using ASCII values?<br><code class='codeblock'>char a = 65, b = 66, c = 67;<br>printf(\"%c%c%c\", a, b, c);</code>",
+        "options": [
+          "65 66 67",
+          "ABC",
+          "Error",
+          "A B C"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters4",
+        "prompt_zh": "[字元型別] What will the following code output using ASCII values?char a = 65, b = 66, c = 67;printf(\"%c%c%c\", a, b, c);"
+      },
+      {
+        "question": "True or False:<br>You can use the <code class='w3-codespan'>char</code> type to store multiple characters, like 'Hello'.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters5",
+        "prompt_zh": "True 或 False：You can use the char type to store multiple characters, like 'Hello'."
+      },
+      {
+        "question": "Which format specifier should you use to print multiple characters as a string?",
+        "options": [
+          "%c",
+          "%s",
+          "%f",
+          "%d"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_characters6",
+        "prompt_zh": "[字元型別] Which format specifier should you use to print multiple characters as a string?"
+      }
+    ],
+    "data_types_dec": [
+      {
+        "question": "Which syntax would you use to print a <code class='w3-codespan'>float</code> variable with only 2 decimal places?",
+        "options": [
+          "printf(\"%2f\", myFloatNum);",
+          "printf(\"%.2f\", myFloatNum);",
+          "printf(\"%f2\", myFloatNum);",
+          "printf(\"%lf\", myFloatNum);"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_dec1",
+        "prompt_zh": "[小數精度] Which syntax would you use to print a float variable with only 2 decimal places?"
+      },
+      {
+        "fillintheblanks": "exercise_data_types3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_dec2",
+        "prompt_zh": "小數精度 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>float myFloatNum = 3.5;<br>printf(\"%.1f\", myFloatNum);</code>",
+        "options": [
+          "3.50",
+          "3.5",
+          "3.500",
+          "3"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_dec3",
+        "prompt_zh": "[小數精度] What will the following code output?float myFloatNum = 3.5;printf(\"%.1f\", myFloatNum);"
+      },
+      {
+        "question": "How would you print a <code class='w3-codespan'>double</code> variable with 4 decimal places in C?",
+        "options": [
+          "printf(\"%.4lf\", myDoubleNum);",
+          "printf(\"%4lf\", myDoubleNum);",
+          "printf(\"%lf.4\", myDoubleNum);",
+          "printf(\"%.lf4\", myDoubleNum);"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_dec4",
+        "prompt_zh": "[小數精度] How would you print a double variable with 4 decimal places in C?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>double myDoubleNum = 19.99;<br>printf(\"%.0lf\", myDoubleNum);</code>",
+        "options": [
+          "20",
+          "19.99",
+          "19.990000",
+          "An error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_dec5",
+        "prompt_zh": "[小數精度] What will the following code output?double myDoubleNum = 19.99;printf(\"%.0lf\", myDoubleNum);"
+      }
+    ],
+    "data_types_numbers": [
+      {
+        "question": "Which data type would you use to store a whole number without decimals?",
+        "options": [
+          "float",
+          "double",
+          "int",
+          "char"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_numbers1",
+        "prompt_zh": "[數值型別] Which data type would you use to store a whole number without decimals?"
+      },
+      {
+        "question": "What is the correct format specifier to print a float variable?",
+        "options": [
+          "%f",
+          "%d",
+          "%lf",
+          "%c"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_numbers2",
+        "prompt_zh": "correct format specifier to print a float variable 是什麼？"
+      },
+      {
+        "question": "What is the main difference between <code class='w3-codespan'>float</code> and <code class='w3-codespan'>double</code> in C?",
+        "options": [
+          "float has higher precision than double",
+          "double has higher precision than float",
+          "float uses more memory than double",
+          "They are identical"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_numbers3",
+        "prompt_zh": "main difference between float and double in C 是什麼？"
+      },
+      {
+        "question": "How would you declare a scientific number in C, representing 35,000 using scientific notation?",
+        "options": [
+          "float num = 35.000;",
+          "float num = 3.5x4;",
+          "float num = 35e3;",
+          "float num = 35*1000;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_numbers4",
+        "prompt_zh": "[數值型別] How would you declare a scientific number in C, representing 35,000 using scientific notation?"
+      }
+    ],
+    "data_types_sizeof": [
+      {
+        "question": "What is the typical memory size of an <code class='w3-codespan'>int</code> in C?",
+        "options": [
+          "1 byte",
+          "4 bytes",
+          "8 bytes",
+          "16 bytes"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof1",
+        "prompt_zh": "typical memory size of an int in C 是什麼？"
+      },
+      {
+        "question": "Which operator is used in C to find the memory size of a data type or variable?",
+        "options": [
+          "lengthof",
+          "sizeof",
+          "memorysize",
+          "sizeofbytes"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof2",
+        "prompt_zh": "[sizeof] Which operator is used in C to find the memory size of a data type or variable?"
+      },
+      {
+        "question": "What format specifier is often used with <code class='w3-codespan'>printf</code> to display the result of <code class='w3-codespan'>sizeof</code> in bytes?",
+        "options": [
+          "%d",
+          "%f",
+          "%zu",
+          "%c"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof3",
+        "prompt_zh": "[sizeof] What format specifier is often used with printf to display the result of sizeof in bytes?"
+      },
+      {
+        "question": "What will the following code output on most systems?<br><code class='codeblock'>char myChar;<br>printf(\"%zu\", sizeof(myChar));</code>",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof4",
+        "prompt_zh": "[sizeof] What will the following code output on most systems?char myChar;printf(\"%zu\", sizeof(myChar));"
+      },
+      {
+        "question": "True or False:<br>Knowing the size of different data types can help optimize memory usage and improve performance.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof5",
+        "prompt_zh": "True 或 False：Knowing the size of different data types can help optimize memory usage and improve performance."
+      },
+      {
+        "question": "If you have an array of 500 <code class='w3-codespan'>char</code> values, how many bytes of memory will it occupy?",
+        "options": [
+          "500 bytes",
+          "1000 bytes",
+          "250 bytes",
+          "4 bytes"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_data_types_sizeof6",
+        "prompt_zh": "[sizeof] If you have an array of 500 char values, how many bytes of memory will it occupy?"
+      }
+    ],
+    "do_while_loop": [
+      {
+        "question": "What is the main difference between a <code class='w3-codespan'>do/while</code> loop and a <code class='w3-codespan'>while</code> loop?",
+        "options": [
+          "The <code class='w3-codespan'>do/while</code> loop checks the condition first",
+          "The <code class='w3-codespan'>do/while</code> loop executes the code block at least once before checking the condition",
+          "The <code class='w3-codespan'>do/while</code> loop only runs if the condition is initially false",
+          "The <code class='w3-codespan'>do/while</code> loop is only used for infinite loops"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop1",
+        "prompt_zh": "main difference between a do/while loop and a while loop 是什麼？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int i = 5;<br>do {<br>&nbsp;&nbsp;printf(\"%d\\n\", i);<br>&nbsp;&nbsp;i++;<br>} <br>while (i < 5);</code>",
+        "options": [
+          "5",
+          "No output",
+          "0",
+          "5\n6\n7\n8\n9"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop2",
+        "prompt_zh": "[do-while] What will the following code output?int i = 5;do {  printf(\"%d\\n\", i);  i++;} while (i"
+      },
+      {
+        "question": "Which of the following correctly shows the syntax of a <code class='w3-codespan'>do/while</code> loop?",
+        "options": [
+          "<code class='w3-codespan'>do { // code block } while (condition);</code>",
+          "<code class='w3-codespan'>do while (condition) { // code block }</code>",
+          "<code class='w3-codespan'>while (condition) do { // code block }</code>",
+          "<code class='w3-codespan'>do { // code block } while condition;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop3",
+        "prompt_zh": "[do-while] Which of the following correctly shows the syntax of a do/while loop?"
+      },
+      {
+        "fillintheblanks": "exercise_while_loop2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop4",
+        "prompt_zh": "do-while 填空題"
+      },
+      {
+        "question": "What happens if you forget to increment a variable inside a <code class='w3-codespan'>do/while</code> loop?",
+        "options": [
+          "The loop runs indefinitely",
+          "The loop will execute only once",
+          "The loop produces an error",
+          "The loop skips the condition check"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop5",
+        "prompt_zh": "[do-while] What happens if you forget to increment a variable inside a do/while loop?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int i = 0;<br>do {<br>&nbsp;&nbsp;printf(\"%d \", i);<br>&nbsp;&nbsp;i++;<br>} <br>while (i < 3);</code>",
+        "options": [
+          "0 1 2",
+          "1 2 3",
+          "0 1 2 3",
+          "0 1"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_do_while_loop6",
+        "prompt_zh": "[do-while] What will the following code output?int i = 0;do {  printf(\"%d \", i);  i++;} while (i"
+      }
+    ],
+    "enums": [
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>enum Level {<br>&nbsp;&nbsp;LOW,<br>&nbsp;&nbsp;MEDIUM,<br>&nbsp;&nbsp;HIGH<br>};<br><br>int main() {<br>&nbsp;&nbsp;enum Level myVar = MEDIUM;<br>&nbsp;&nbsp;printf(\"%d\", myVar);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_enums1",
+        "prompt_zh": "[enum] What will the following code output?enum Level {  LOW,  MEDIUM,  HIGH};int main() {  enum Level myVar = MEDIUM;  printf(\"%d\", myVar);  return 0;}"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>enum Level {<br>&nbsp;&nbsp;LOW = 5,<br>&nbsp;&nbsp;MEDIUM,<br>&nbsp;&nbsp;HIGH<br>};<br><br>int main() {<br>&nbsp;&nbsp;enum Level myVar = HIGH;<br>&nbsp;&nbsp;printf(\"%d\", myVar);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_enums2",
+        "prompt_zh": "[enum] What will the following code output?enum Level {  LOW = 5,  MEDIUM,  HIGH};int main() {  enum Level myVar = HIGH;  printf(\"%d\", myVar);  return 0;}"
+      },
+      {
+        "question": "What is the default integer value assigned to the first element of an enum if no values are specified?",
+        "options": [
+          "0",
+          "1",
+          "The value must be set explicitly",
+          "10"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_enums3",
+        "prompt_zh": "default integer value assigned to the first element of an enum if no values are specified 是什麼？"
+      },
+      {
+        "question": "What is the purpose of using enums in C?",
+        "options": [
+          "To create floating-point constants",
+          "To give names to constant values, making code easier to read and maintain",
+          "To replace arrays",
+          "To create functions"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_enums4",
+        "prompt_zh": "purpose of using enums in C 是什麼？"
+      }
+    ],
+    "errors": [
+      {
+        "draganddroptext": "<code>#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;int x = 5___<br>&nbsp;&nbsp;printf(\"%d\", x);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Drag and drop the correct symbol to fix the missing semicolon compile-time error.",
+        "options": [
+          ".",
+          ";",
+          ","
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_errors1",
+        "prompt_zh": "[錯誤處理] 拖放正確的 symbol to fix the missing semicolon compile-time error."
+      },
+      {
+        "question": "What type of error occurs if you try to compile code that contains undeclared variables?",
+        "options": [
+          "Compile-time error",
+          "Runtime error",
+          "Logical error",
+          "Syntax warning"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_errors2",
+        "prompt_zh": "[錯誤處理] What type of error occurs if you try to compile code that contains undeclared variables?"
+      },
+      {
+        "question": "What happens if you divide an integer by zero in C?",
+        "options": [
+          "It prints 0",
+          "It results in undefined behavior and may crash",
+          "It sets the value to infinity",
+          "It ignores the division"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_errors3",
+        "prompt_zh": "[錯誤處理] What happens if you divide an integer by zero in C?"
+      },
+      {
+        "draganddroptext": "<code>#include &lt;stdio.h&gt;<br><br>int main() {<br>&nbsp;&nbsp;int numbers[3] = {1, 2, 3};<br>&nbsp;&nbsp;printf(\"%d\\n\", numbers[___]);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Drag and drop the invalid index value that would cause an out-of-bounds array access.",
+        "options": [
+          "0",
+          "2",
+          "8",
+          "1"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_errors4",
+        "prompt_zh": "[錯誤處理] Drag and drop the invalid index value that would cause an out-of-bounds array access."
+      },
+      {
+        "question": "Which of the following is NOT a good habit to avoid C errors?",
+        "options": [
+          "Always initialize variables",
+          "Use meaningful variable names",
+          "Keep functions long and complex",
+          "Read error messages carefully"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_errors5",
+        "prompt_zh": "下列哪個不是a good habit to avoid C errors？"
+      }
+    ],
+    "files": [
+      {
+        "question": "Which function can be used to open a file in C?",
+        "options": [
+          "<code class='w3-codespan'>fwrite()</code>",
+          "<code class='w3-codespan'>fread()</code>",
+          "<code class='w3-codespan'>fopen()</code>",
+          "<code class='w3-codespan'>fclose()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files1",
+        "prompt_zh": "[檔案] Which function can be used to open a file in C?"
+      },
+      {
+        "question": "What happens if you open a file in <code class='w3-codespan'>'w'</code> mode and it already exists?",
+        "options": [
+          "The file is deleted",
+          "The file content is overwritten",
+          "The file is opened in read-only mode",
+          "An error is raised"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files2",
+        "prompt_zh": "[檔案] What happens if you open a file in 'w' mode and it already exists?"
+      },
+      {
+        "question": "Which mode should you use to append content to an existing file in C?",
+        "options": [
+          "<code class='w3-codespan'>'r'</code>",
+          "<code class='w3-codespan'>'w'</code>",
+          "<code class='w3-codespan'>'a'</code>",
+          "<code class='w3-codespan'>'x'</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files3",
+        "prompt_zh": "[檔案] Which mode should you use to append content to an existing file in C?"
+      },
+      {
+        "question": "Why is it recommended to use <code class='w3-codespan'>fclose()</code> after working with a file?",
+        "options": [
+          "To save changes to the file",
+          "To release memory space",
+          "To allow other programs to access the file",
+          "All of the above"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files4",
+        "prompt_zh": "[檔案] Why is it recommended to use fclose() after working with a file?"
+      }
+    ],
+    "files_read": [
+      {
+        "question": "Which mode should you use to open a file for reading in C?",
+        "options": [
+          "<code class='w3-codespan'>'r'</code>",
+          "<code class='w3-codespan'>'w'</code>",
+          "<code class='w3-codespan'>'a'</code>",
+          "<code class='w3-codespan'>'rw'</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_read1",
+        "prompt_zh": "[讀取檔案] Which mode should you use to open a file for reading in C?"
+      },
+      {
+        "question": "Which function is used to read a line from a file in C?",
+        "options": [
+          "<code class='w3-codespan'>fgets()</code>",
+          "<code class='w3-codespan'>fscanf()</code>",
+          "<code class='w3-codespan'>fread()</code>",
+          "<code class='w3-codespan'>fopen()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_read2",
+        "prompt_zh": "哪個函式用來read a line from a file in C？"
+      },
+      {
+        "question": "What does <code class='w3-codespan'>fgets()</code> return when it reaches the end of a file?",
+        "options": [
+          "It returns an empty string",
+          "It returns <code class='w3-codespan'>NULL</code>",
+          "It returns the last character in the file",
+          "It causes an error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_read3",
+        "prompt_zh": "[讀取檔案] What does fgets() return when it reaches the end of a file?"
+      },
+      {
+        "question": "What will happen if you try to open a non-existent file in read mode?",
+        "options": [
+          "The program will crash",
+          "The <code class='w3-codespan'>fopen()</code> function will return <code class='w3-codespan'>NULL</code>",
+          "The program will create a new file",
+          "The program will display an error message automatically"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_read4",
+        "prompt_zh": "[讀取檔案] What will happen if you try to open a non-existent file in read mode?"
+      },
+      {
+        "question": "What is the correct way to check if a file exists before reading it?",
+        "options": [
+          "<code class='w3-codespan'>if (fptr == NULL)</code>",
+          "<code class='w3-codespan'>if (fptr == 0)</code>",
+          "<code class='w3-codespan'>if (fptr == false)</code>",
+          "<code class='w3-codespan'>if (fptr != 1)</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_read5",
+        "prompt_zh": "correct way to check if a file exists before reading it 是什麼？"
+      }
+    ],
+    "files_write": [
+      {
+        "question": "Which function can be used to write content to a file in C?",
+        "options": [
+          "<code class='w3-codespan'>fprintf()</code>",
+          "<code class='w3-codespan'>fscanf()</code>",
+          "<code class='w3-codespan'>fwrite()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write1",
+        "prompt_zh": "[寫入檔案] Which function can be used to write content to a file in C?"
+      },
+      {
+        "question": "What happens to existing content when a file is opened in <code class='w3-codespan'>'w'</code> mode?",
+        "options": [
+          "Existing content is preserved and new content is added at the beginning",
+          "Existing content is deleted and replaced with new content",
+          "An error occurs if the file has content",
+          "Existing content is preserved, and new content is added at the end"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write2",
+        "prompt_zh": "[寫入檔案] What happens to existing content when a file is opened in 'w' mode?"
+      },
+      {
+        "question": "Which mode should you use to add content to the end of a file without deleting existing content?",
+        "options": [
+          "<code class='w3-codespan'>'w'</code>",
+          "<code class='w3-codespan'>'a'</code>",
+          "<code class='w3-codespan'>'r'</code>",
+          "<code class='w3-codespan'>'x'</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write3",
+        "prompt_zh": "[寫入檔案] Which mode should you use to add content to the end of a file without deleting existing content?"
+      },
+      {
+        "question": "If a file does not exist, what happens when opening it in <code class='w3-codespan'>'a'</code> mode?",
+        "options": [
+          "The program returns an error",
+          "The file is created and new content is added",
+          "The file remains closed",
+          "The program skips writing to the file"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write4",
+        "prompt_zh": "[寫入檔案] If a file does not exist, what happens when opening it in 'a' mode?"
+      },
+      {
+        "question": "What is the correct way to open a file in append mode?",
+        "options": [
+          "<code class='w3-codespan'>fopen(\"filename.txt\", \"a\")</code>",
+          "<code class='w3-codespan'>fopen(\"filename.txt\", \"w+\")</code>",
+          "<code class='w3-codespan'>fopen(\"filename.txt\", \"r+\")</code>",
+          "<code class='w3-codespan'>fopen(\"filename.txt\", \"aw\")</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write5",
+        "prompt_zh": "correct way to open a file in append mode 是什麼？"
+      },
+      {
+        "question": "What would the following code output if <code class='w3-codespan'>filename.txt</code> initially contains 'Hello' and <code class='w3-codespan'>a</code> mode is used?<br><code class='codeblock'>FILE *fptr;<br>fptr = fopen(\"filename.txt\", \"a\");<br>fprintf(fptr, \" World!\");<br>fclose(fptr);</code>",
+        "options": [
+          "Hello World!",
+          "World! Hello",
+          "World!",
+          "Hello"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_files_write6",
+        "prompt_zh": "[寫入檔案] What would the following code output if filename.txt initially contains 'Hello' and a mode is used?FILE *fptr;fptr = fopen(\"filename.txt\", \"a\");fprintf(fptr, \" World!\");fclose(fptr);"
+      }
+    ],
+    "for_loop": [
+      {
+        "question": "What is the main use of a <code class='w3-codespan'>for</code> loop in C?",
+        "options": [
+          "To execute a block of code indefinitely",
+          "To loop through a block of code a specific number of times",
+          "To check conditions without executing any code",
+          "To run a loop based on user input only"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop1",
+        "prompt_zh": "a for loop in C 的用途是什麼？"
+      },
+      {
+        "question": "Which part of the <code class='w3-codespan'>for</code> loop is executed only once at the start of the loop?",
+        "options": [
+          "Expression 1",
+          "Expression 2",
+          "Expression 3",
+          "The entire <code class='w3-codespan'>for</code> statement"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop2",
+        "prompt_zh": "[for 迴圈] Which part of the for loop is executed only once at the start of the loop?"
+      },
+      {
+        "fillintheblanks": "exercise_while_loop3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop3",
+        "prompt_zh": "for 迴圈 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int i;<br>for (i = 0; i < 3; i++) {<br>&nbsp;&nbsp;printf(\"%d \", i);<br>}</code>",
+        "options": [
+          "0\n1\n2",
+          "0\n1\n2\n3",
+          "1\n2\n3",
+          "3\n2\n1\n0"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop4",
+        "prompt_zh": "[for 迴圈] What will the following code output?int i;for (i = 0; i   printf(\"%d \", i);}"
+      },
+      {
+        "question": "Which part of the <code class='w3-codespan'>for</code> loop updates the loop variable each time the code block has been executed?",
+        "options": [
+          "Expression 1",
+          "Expression 2",
+          "Expression 3",
+          "The entire <code class='w3-codespan'>for</code> statement"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop5",
+        "prompt_zh": "[for 迴圈] Which part of the for loop updates the loop variable each time the code block has been executed?"
+      }
+    ],
+    "for_loop_nested": [
+      {
+        "question": "What is a nested loop?",
+        "options": [
+          "A loop that repeats indefinitely",
+          "A loop placed inside another loop",
+          "A loop with multiple conditions",
+          "A loop that runs only once"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop_nested1",
+        "prompt_zh": "[巢狀 for] What is a nested loop?"
+      },
+      {
+        "question": "How many times will the inner loop execute in the following code?<br><code class='codeblock'>for (i = 1; i <= 2; ++i) {<br>&nbsp;&nbsp;for (j = 1; j <= 3; ++j) {<br>&nbsp;&nbsp;&nbsp;&nbsp;// code block<br>&nbsp;&nbsp;}<br>}</code>",
+        "options": [
+          "3 times",
+          "2 times",
+          "5 times",
+          "6 times"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop_nested2",
+        "prompt_zh": "[巢狀 for] How many times will the inner loop execute in the following code?for (i = 1; i   for (j = 1; j     // code block  }}"
+      },
+      {
+        "question": "True or False:<br>In a nested loop, the inner loop runs once for each iteration of the outer loop.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop_nested3",
+        "prompt_zh": "True 或 False：In a nested loop, the inner loop runs once for each iteration of the outer loop."
+      },
+      {
+        "question": "How can you control the execution of the inner loop independently from the outer loop?",
+        "options": [
+          "By using different loop variables",
+          "By using the same loop variable",
+          "By removing the outer loop",
+          "By setting the inner loop condition to false"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_for_loop_nested4",
+        "prompt_zh": "如何control the execution of the inner loop independently from the outer loop？"
+      }
+    ],
+    "functions": [
+      {
+        "question": "What does the keyword <code class='w3-codespan'>void</code> indicate when used with a function in C?",
+        "options": [
+          "The function returns an integer",
+          "The function can only be called once",
+          "The function does not return a value",
+          "The function can accept any type of parameter"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions1",
+        "prompt_zh": "[函式] What does the keyword void indicate when used with a function in C?"
+      },
+      {
+        "fillintheblanks": "exercise_functions1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions2",
+        "prompt_zh": "函式 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_functions2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions3",
+        "prompt_zh": "函式 填空題"
+      },
+      {
+        "question": "Which line in the following code calls the function <code class='w3-codespan'>myFunction</code>?<br><code class='codeblock'>void myFunction() {<br>&nbsp;&nbsp;printf(\"Hello!\");<br>}<br><br>int main() {<br>&nbsp;&nbsp;myFunction();<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "<code class='w3-codespan'>void myFunction()</code>",
+          "<code class='w3-codespan'>printf(\"Hello!\");</code>",
+          "<code class='w3-codespan'>myFunction();</code>",
+          "<code class='w3-codespan'>return 0;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions4",
+        "prompt_zh": "[函式] Which line in the following code calls the function myFunction?void myFunction() {  printf(\"Hello!\");}int main() {  myFunction();  return 0;}"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>void calculateSum() {<br>&nbsp;&nbsp;int x = 3;<br>&nbsp;&nbsp;int y = 7;<br>&nbsp;&nbsp;printf(\"Sum: %d\", x + y);<br>}<br><br>int main() {<br>&nbsp;&nbsp;calculateSum();<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "Error",
+          "Sum: 3",
+          "Sum: 7",
+          "Sum: 10"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions5",
+        "prompt_zh": "[函式] What will the following code output?void calculateSum() {  int x = 3;  int y = 7;  printf(\"Sum: %d\", x + y);}int main() {  calculateSum();  return 0;}"
+      }
+    ],
+    "functions_decl": [
+      {
+        "question": "What is a function declaration in C?",
+        "options": [
+          "The body of the function",
+          "The function's name, return type, and parameters",
+          "The call to the function",
+          "The code that executes when the function is called"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_decl1",
+        "prompt_zh": "[函式宣告] What is a function declaration in C?"
+      },
+      {
+        "question": "Where is it generally recommended to place function declarations in a C program?",
+        "options": [
+          "Inside the main function",
+          "Below the main function",
+          "Above the main function",
+          "Directly after the function definition"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_decl2",
+        "prompt_zh": "it generally recommended to place function declarations in a C program 應放在哪裡？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>void myFunction();<br><br>int main() {<br>&nbsp;&nbsp;myFunction();<br>&nbsp;&nbsp;return 0;<br>}<br><br>void myFunction() {<br>&nbsp;&nbsp;printf(\"Hello from myFunction\");<br>}</code>",
+        "options": [
+          "No output, as the function is not defined",
+          "Error due to missing function definition",
+          "Hello from myFunction",
+          "No output as main() does not call the function"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_decl3",
+        "prompt_zh": "[函式宣告] What will the following code output?void myFunction();int main() {  myFunction();  return 0;}void myFunction() {  printf(\"Hello from myFunction\");}"
+      },
+      {
+        "question": "What happens if you try to call a function that has not been declared or defined?",
+        "options": [
+          "The program will throw an error",
+          "The program will ignore the function call",
+          "The program will run without issues",
+          "The program will treat the function as a variable"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_decl4",
+        "prompt_zh": "[函式宣告] What happens if you try to call a function that has not been declared or defined?"
+      },
+      {
+        "question": "Is it possible for one function to call another function in C?",
+        "options": [
+          "Yes, as long as the function to be called is declared",
+          "No, each function must be executed independently",
+          "Yes, but only if they have the same return type",
+          "No, functions cannot interact with each other"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_decl5",
+        "prompt_zh": "[函式宣告] Is it possible for one function to call another function in C?"
+      }
+    ],
+    "functions_parameters": [
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>void myFunction(char name[]) {<br>&nbsp;&nbsp;printf(\"Hello %s\\n\", name);<br>}<br><br>int main() {<br>&nbsp;&nbsp;myFunction(\"Jenny\");<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "Hello World",
+          "Hello Jenny",
+          "Jenny",
+          "Hello"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_parameters1",
+        "prompt_zh": "[函式參數] What will the following code output?void myFunction(char name[]) {  printf(\"Hello %s\\n\", name);}int main() {  myFunction(\"Jenny\");  return 0;}"
+      },
+      {
+        "fillintheblanks": "exercise_functions3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_parameters2",
+        "prompt_zh": "函式參數 填空題"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>return</code> statement do in a function?",
+        "options": [
+          "Ends the program",
+          "Defines a parameter for the function",
+          "Returns a value to the calling function",
+          "Starts a new loop"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_parameters3",
+        "prompt_zh": "[函式參數] What does the return statement do in a function?"
+      },
+      {
+        "fillintheblanks": "exercise_functions4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_parameters4",
+        "prompt_zh": "函式參數 填空題"
+      }
+    ],
+    "functions_recursion": [
+      {
+        "question": "What is recursion in C programming?",
+        "options": [
+          "A function calling another function",
+          "A function calling itself",
+          "Repeating a loop indefinitely",
+          "Using a function inside another function"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_recursion1",
+        "prompt_zh": "[遞迴] What is recursion in C programming?"
+      },
+      {
+        "question": "Which of the following is essential for a recursive function to terminate?",
+        "options": [
+          "A call to another function",
+          "A conditional statement that prevents further recursive calls",
+          "A loop inside the function",
+          "Passing multiple parameters to the function"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_recursion2",
+        "prompt_zh": "下列哪個是essential for a recursive function to terminate？"
+      },
+      {
+        "question": "What will happen if a recursive function is missing a terminating condition?",
+        "options": [
+          "The function will execute only once",
+          "The function will call itself indefinitely",
+          "The program will run without outputting anything",
+          "The function will return 0"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_recursion3",
+        "prompt_zh": "[遞迴] What will happen if a recursive function is missing a terminating condition?"
+      },
+      {
+        "question": "Why is recursion considered an efficient approach to certain problems?",
+        "options": [
+          "It eliminates the need for loops in programming",
+          "It simplifies code by breaking down complex problems into smaller ones",
+          "It uses less memory than traditional loops",
+          "It is the only way to handle repetitive tasks in C"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_functions_recursion4",
+        "prompt_zh": "[遞迴] Why is recursion considered an efficient approach to certain problems?"
+      }
+    ],
+    "math": [
+      {
+        "question": "Which library must be included to use math functions in C?",
+        "options": [
+          "<code class='w3-codespan'>&lt;stdlib.h&gt;</code>",
+          "<code class='w3-codespan'>&lt;stdio.h&gt;</code>",
+          "<code class='w3-codespan'>&lt;math.h&gt;</code>",
+          "<code class='w3-codespan'>&lt;conio.h&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_math1",
+        "prompt_zh": "[數學] Which library must be included to use math functions in C?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>printf(\"%f\", sqrt(25));</code>",
+        "options": [
+          "4.000000",
+          "5.000000",
+          "25.000000",
+          "6.000000"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_math2",
+        "prompt_zh": "[數學] What will the following code output?printf(\"%f\", sqrt(25));"
+      },
+      {
+        "question": "Which function rounds a number down to the nearest integer?",
+        "options": [
+          "<code class='w3-codespan'>floor()</code>",
+          "<code class='w3-codespan'>ceil()</code>",
+          "<code class='w3-codespan'>round()</code>",
+          "<code class='w3-codespan'>trunc()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_math3",
+        "prompt_zh": "[數學] Which function rounds a number down to the nearest integer?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>printf(\"%f\", ceil(2.3));</code>",
+        "options": [
+          "2.000000",
+          "2.300000",
+          "3.000000",
+          "4.000000"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_math4",
+        "prompt_zh": "[數學] What will the following code output?printf(\"%f\", ceil(2.3));"
+      },
+      {
+        "question": "Which function would you use to calculate 4 raised to the power of 2?",
+        "options": [
+          "<code class='w3-codespan'>sqrt(4)</code>",
+          "<code class='w3-codespan'>pow(4, 2)</code>",
+          "<code class='w3-codespan'>ceil(4)</code>",
+          "<code class='w3-codespan'>floor(4)</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_math5",
+        "prompt_zh": "[數學] Which function would you use to calculate 4 raised to the power of 2?"
+      }
+    ],
+    "memory_access": [
+      {
+        "question": "True or False:<br>To access an element in dynamic memory, refer to its index number.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_access1",
+        "prompt_zh": "True 或 False：To access an element in dynamic memory, refer to its index number."
+      },
+      {
+        "question": "How do you access the first element in dynamically allocated memory pointed to by <code>ptr</code>?",
+        "options": [
+          "ptr[1]",
+          "*ptr",
+          "ptr + 1"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_access2",
+        "prompt_zh": "如何存取 the first element in dynamically allocated memory pointed to by ptr？"
+      },
+      {
+        "question": "In the following code, what type of data is represented by <code>ptr2</code>?<br><code class='codeblock'>int *ptr1 = malloc(4);<br>char *ptr2 = (char*) ptr1;</code>",
+        "options": [
+          "A pointer to an int",
+          "An int array",
+          "A pointer to a char array",
+          "A pointer to a float array"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_access3",
+        "prompt_zh": "[記憶體存取] In the following code, what type of data is represented by ptr2?int *ptr1 = malloc(4);char *ptr2 = (char*) ptr1;"
+      }
+    ],
+    "memory_address": [
+      {
+        "question": "What does the memory address represent in C?",
+        "options": [
+          "The value of a variable",
+          "The location where the variable is stored",
+          "The data type of the variable",
+          "The size of the variable"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_address1",
+        "prompt_zh": "[記憶體位址] What does the memory address represent in C?"
+      },
+      {
+        "question": "Which operator is used to get the memory address of a variable?",
+        "options": [
+          "<code class='w3-codespan'>%</code>",
+          "<code class='w3-codespan'>*</code>",
+          "<code class='w3-codespan'>&</code>",
+          "<code class='w3-codespan'>@</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_address2",
+        "prompt_zh": "哪個運算子用來get the memory address of a variable？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myAge = 45;<br>printf(\"%p\", &myAge);</code>",
+        "options": [
+          "45",
+          "The actual memory address of <code class='w3-codespan'>myAge</code>",
+          "0",
+          "Nothing"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_address3",
+        "prompt_zh": "[記憶體位址] What will the following code output?int myAge = 45;printf(\"%p\", &myAge);"
+      },
+      {
+        "question": "What format specifier should be used to print a pointer value?",
+        "options": [
+          "<code class='w3-codespan'>%d</code>",
+          "<code class='w3-codespan'>%c</code>",
+          "<code class='w3-codespan'>%f</code>",
+          "<code class='w3-codespan'>%p</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_address4",
+        "prompt_zh": "[記憶體位址] What format specifier should be used to print a pointer value?"
+      },
+      {
+        "question": "Why are pointers important in C?",
+        "options": [
+          "They allow manipulation of data directly in memory",
+          "They are faster than variables",
+          "They increase the size of variables",
+          "They replace the need for variables"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_address5",
+        "prompt_zh": "[記憶體位址] Why are pointers important in C?"
+      }
+    ],
+    "memory_allocate": [
+      {
+        "question": "What is the main difference between static and dynamic memory allocation?",
+        "options": [
+          "Static memory is allocated at runtime, and dynamic memory is allocated at compile time.",
+          "Static memory is allocated before the program runs, while dynamic memory is allocated at runtime.",
+          "Static memory is allocated using malloc, while dynamic memory is allocated using calloc.",
+          "Dynamic memory cannot be freed, while static memory can be freed."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_allocate1",
+        "prompt_zh": "main difference between static and dynamic memory allocation 是什麼？"
+      },
+      {
+        "question": "Which of the following functions can be used to allocate memory dynamically in C?",
+        "options": [
+          "malloc and sizeof",
+          "sizeof and calloc",
+          "malloc and calloc",
+          "calloc and printf"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_allocate2",
+        "prompt_zh": "[記憶體配置] Which of the following functions can be used to allocate memory dynamically in C?"
+      },
+      {
+        "question": "What is the advantage of using calloc over malloc?",
+        "options": [
+          "calloc is faster than malloc",
+          "calloc automatically initializes the allocated memory to zero",
+          "calloc allocates memory only for integer values",
+          "calloc does not require pointers"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_allocate3",
+        "prompt_zh": "advantage of using calloc over malloc 是什麼？"
+      }
+    ],
+    "memory_deallocate": [
+      {
+        "question": "What does the <code class='w3-codespan'>free()</code> function do?",
+        "options": [
+          "Allocates dynamic memory",
+          "Releases allocated memory",
+          "Reserves static memory",
+          "Increases memory size"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_deallocate1",
+        "prompt_zh": "the free() function 做什麼？"
+      },
+      {
+        "question": "Why is it considered good practice to set a pointer to <code class='w3-codespan'>NULL</code> after freeing it?",
+        "options": [
+          "To allocate more memory",
+          "To prevent accidentally using freed memory",
+          "To reallocate memory",
+          "To reset the memory size"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_deallocate2",
+        "prompt_zh": "[記憶體釋放] Why is it considered good practice to set a pointer to NULL after freeing it?"
+      },
+      {
+        "question": "What is a memory leak?",
+        "options": [
+          "When memory is deallocated before it is used",
+          "When memory is allocated but never freed",
+          "When memory is accessed after it is freed",
+          "When memory is reallocated frequently"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_deallocate3",
+        "prompt_zh": "[記憶體釋放] What is a memory leak?"
+      },
+      {
+        "question": "Which line of code is a risk for memory leaks?<br><code class='codeblock'>int *ptr;<br>ptr = malloc(4);<br>ptr = realloc(ptr, 8);</code>",
+        "options": [
+          "<code>ptr = malloc(4);</code>",
+          "<code>ptr = realloc(ptr, 8);</code>",
+          "<code>int *ptr;</code>",
+          "No line poses a risk"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_deallocate4",
+        "prompt_zh": "[記憶體釋放] Which line of code is a risk for memory leaks?int *ptr;ptr = malloc(4);ptr = realloc(ptr, 8);"
+      },
+      {
+        "question": "What is a cause of memory leaks?",
+        "options": [
+          "Setting a pointer to NULL",
+          "Reallocating memory without freeing it first",
+          "Freeing memory when it is no longer needed",
+          "Using dynamic memory with pointers"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_deallocate5",
+        "prompt_zh": "[記憶體釋放] What is a cause of memory leaks?"
+      }
+    ],
+    "memory_management": [
+      {
+        "question": "What does the following code output?<br><code class='w3-codespan'>double myDouble;<br>printf(\"%zu\", sizeof(myDouble));<br></code>",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_management1",
+        "prompt_zh": "[記憶體管理] What does the following code output?double myDouble;printf(\"%zu\", sizeof(myDouble));"
+      },
+      {
+        "question": "Why is memory management important in C programming?",
+        "options": [
+          "It allows C to manage memory automatically.",
+          "Proper memory management optimizes program performance and prevents unnecessary memory usage.",
+          "It helps increase the default memory size for variables.",
+          "It prevents variables from being assigned new values."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_management2",
+        "prompt_zh": "[記憶體管理] Why is memory management important in C programming?"
+      },
+      {
+        "question": "Which statement is true about pointers in C?",
+        "options": [
+          "Pointers are only used to store integers.",
+          "Pointers allow direct manipulation of memory and should be used with care.",
+          "Pointers automatically manage memory usage.",
+          "Pointers are only needed in low-level programming."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_management3",
+        "prompt_zh": "[記憶體管理] Which statement is true about pointers in C?"
+      },
+      {
+        "question": "What is memory management?",
+        "options": [
+          "The process of allocating, reallocating, and freeing memory in a program.",
+          "Using variables to store data in a program.",
+          "Creating functions to optimize code."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_management4",
+        "prompt_zh": "[記憶體管理] What is memory management?"
+      },
+      {
+        "question": "What potential risk is associated with pointers?",
+        "options": [
+          "They increase the memory usage of variables.",
+          "They can overwrite other data in memory if not handled carefully.",
+          "They are incompatible with C functions.",
+          "They are difficult to use with sizeof."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_management5",
+        "prompt_zh": "[記憶體管理] What potential risk is associated with pointers?"
+      }
+    ],
+    "memory_reallocate": [
+      {
+        "question": "What does the <code class='w3-codespan'>realloc</code> function do?",
+        "options": [
+          "Allocates new memory without keeping existing data",
+          "Increases the size of allocated memory while keeping data",
+          "Clears all data in memory",
+          "Returns the memory address of a variable"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_reallocate1",
+        "prompt_zh": "the realloc function 做什麼？"
+      },
+      {
+        "question": "What will be the output of this code if the reallocation fails?<br><code class='codeblock'>int *ptr1, *ptr2;<br>ptr1 = malloc(4);<br>ptr2 = realloc(ptr1, 8);<br>if (ptr2 == NULL) {<br>&nbsp;&nbsp;printf(\"Failed. Unable to resize memory\");<br>} else {<br>&nbsp;&nbsp;printf(\"Success\");<br>}</code>",
+        "options": [
+          "Success",
+          "Failed. Unable to resize memory",
+          "Segmentation fault",
+          "Reallocation complete"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_reallocate2",
+        "prompt_zh": "[記憶體重配] What will be the output of this code if the reallocation fails?int *ptr1, *ptr2;ptr1 = malloc(4);ptr2 = realloc(ptr1, 8);if (ptr2 == NULL) {  printf(\"Failed. Unable to resize memory\");} else {  printf(\"Success\");}"
+      },
+      {
+        "question": "Which function is used to release allocated memory once it is no longer needed?",
+        "options": [
+          "realloc",
+          "free",
+          "malloc",
+          "sizeof"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_memory_reallocate3",
+        "prompt_zh": "哪個函式用來release allocated memory once it is no longer needed？"
+      }
+    ],
+    "newline": [
+      {
+        "question": "What does the <code class='w3-codespan'>\\n</code> character do in a C program?",
+        "options": [
+          "It creates a new line",
+          "It creates a space",
+          "It creates a tab",
+          "It creates a backslash"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_newline1",
+        "prompt_zh": "[換行] What does the \\n character do in a C program?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>printf(\"Hello World!\\nI am learning C.\");</code>",
+        "options": [
+          "Hello World! I am learning C.",
+          "Hello World!<br>I am learning C.",
+          "Hello World!<br><br>I am learning C."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_newline2",
+        "prompt_zh": "[換行] What will the following code output?printf(\"Hello World!\\nI am learning C.\");"
+      },
+      {
+        "question": "How can you create a blank line between two printed lines in C?",
+        "options": [
+          "Use two \\n characters in a row",
+          "Use a tab character",
+          "Use the \\ character",
+          "Insert a space between the lines"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_newline3",
+        "prompt_zh": "如何建立 blank line between two printed lines in C？"
+      }
+    ],
+    "operators": [
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x = 10;<br>x += 5;<br>printf(\"%d\", x);</code>",
+        "options": [
+          "10",
+          "15",
+          "5",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators1",
+        "prompt_zh": "[運算子] What will the following code output?int x = 10;x += 5;printf(\"%d\", x);"
+      },
+      {
+        "question": "Which operator is used to check if two values are equal?",
+        "options": [
+          "=",
+          "==",
+          "!=",
+          "||"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators2",
+        "prompt_zh": "哪個運算子用來check if two values are equal？"
+      },
+      {
+        "fillintheblanks": "exercise_operators1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators3",
+        "prompt_zh": "運算子 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_operators2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators4",
+        "prompt_zh": "運算子 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_operators3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators5",
+        "prompt_zh": "運算子 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_operators4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_operators6",
+        "prompt_zh": "運算子 填空題"
+      }
+    ],
+    "output": [
+      {
+        "question": "Which function is used to print text in C?",
+        "options": [
+          "println()",
+          "printf()",
+          "cout()",
+          "echo()"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_output1",
+        "prompt_zh": "哪個函式用來print text in C？"
+      },
+      {
+        "fillintheblanks": "exercise_syntax1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_output2",
+        "prompt_zh": "輸出 填空題"
+      },
+      {
+        "question": "True or False:<br>You cannot use more than one <code class='w3-codespan'>printf()</code> functions in your program.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_output3",
+        "prompt_zh": "True 或 False：You cannot use more than one printf() functions in your program."
+      }
+    ],
+    "pointers": [
+      {
+        "question": "How do you declare a pointer to an <code class='w3-codespan'>int</code> variable?",
+        "options": [
+          "<code class='w3-codespan'>int* ptr;</code>",
+          "<code class='w3-codespan'>int ptr*;</code>",
+          "<code class='w3-codespan'>*int ptr;</code>",
+          "<code class='w3-codespan'>int& ptr;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers1",
+        "prompt_zh": "如何declare a pointer to an int variable？"
+      },
+      {
+        "fillintheblanks": "exercise_pointers1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers2",
+        "prompt_zh": "指標 填空題"
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>&</code> operator?",
+        "options": [
+          "To get the value of a variable",
+          "To declare a pointer variable",
+          "To get the memory address of a variable",
+          "To dereference a pointer"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers3",
+        "prompt_zh": "purpose of the & operator 是什麼？"
+      },
+      {
+        "question": "Which operator is used to get the value stored at the memory address a pointer is pointing to?",
+        "options": [
+          "<code class='w3-codespan'>*</code>",
+          "<code class='w3-codespan'>&</code>",
+          "<code class='w3-codespan'>%</code>",
+          "<code class='w3-codespan'>#</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers4",
+        "prompt_zh": "哪個運算子用來get the value stored at the memory address a pointer is pointing to？"
+      },
+      {
+        "question": "Which of the following statements is correct about pointers in C?",
+        "options": [
+          "Pointers increase the size of variables.",
+          "Pointers allow direct manipulation of data in memory.",
+          "Pointers can only point to <code class='w3-codespan'>int</code> variables.",
+          "Pointers are not allowed in C programming."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers5",
+        "prompt_zh": "[指標] Which of the following statements is correct about pointers in C?"
+      }
+    ],
+    "pointers_arrays": [
+      {
+        "question": "How would you access the third element in <code class='w3-codespan'>myNumbers</code> using pointers?<br><code class='codeblock'>int myNumbers[4] = {25, 50, 75, 100};</code>",
+        "options": [
+          "<code class='w3-codespan'>myNumbers[3]</code>",
+          "<code class='w3-codespan'>*myNumbers + 3</code>",
+          "<code class='w3-codespan'>*(myNumbers + 2)</code>",
+          "<code class='w3-codespan'>myNumbers[2]</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers_arrays1",
+        "prompt_zh": "[指標與陣列] How would you access the third element in myNumbers using pointers?int myNumbers[4] = {25, 50, 75, 100};"
+      },
+      {
+        "question": "Which of the following will print the memory address of the first element in <code class='w3-codespan'>myNumbers</code>?<br><code class='codeblock'>int myNumbers[4] = {25, 50, 75, 100};</code>",
+        "options": [
+          "<code class='w3-codespan'>printf(\"%p\", myNumbers);</code>",
+          "<code class='w3-codespan'>printf(\"%d\", *myNumbers);</code>",
+          "<code class='w3-codespan'>printf(\"%p\", myNumbers[1]);</code>",
+          "<code class='w3-codespan'>printf(\"%d\", myNumbers);</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers_arrays2",
+        "prompt_zh": "[指標與陣列] Which of the following will print the memory address of the first element in myNumbers?int myNumbers[4] = {25, 50, 75, 100};"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myNumbers[4] = {25, 50, 75, 100};<br>int *ptr = myNumbers;<br>printf(\"%d\", *(ptr + 1));</code>",
+        "options": [
+          "25",
+          "50",
+          "75",
+          "100"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers_arrays3",
+        "prompt_zh": "[指標與陣列] What will the following code output?int myNumbers[4] = {25, 50, 75, 100};int *ptr = myNumbers;printf(\"%d\", *(ptr + 1));"
+      },
+      {
+        "question": "How many bytes of memory does the array <code class='w3-codespan'>myNumbers</code> occupy, assuming each <code class='w3-codespan'>int</code> is 4 bytes?<br><code class='codeblock'>int myNumbers[4] = {25, 50, 75, 100};</code>",
+        "options": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers_arrays4",
+        "prompt_zh": "[指標與陣列] How many bytes of memory does the array myNumbers occupy, assuming each int is 4 bytes?int myNumbers[4] = {25, 50, 75, 100};"
+      },
+      {
+        "question": "What will the following code output after modifying the array with pointers?<br><code class='codeblock'>int myNumbers[4] = {25, 50, 75, 100};<br>*myNumbers = 13;<br>*(myNumbers + 1) = 17;<br>printf(\"%d, %d\", myNumbers[0], myNumbers[1]);</code>",
+        "options": [
+          "25, 50",
+          "13, 50",
+          "13, 17",
+          "50, 100"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_pointers_arrays5",
+        "prompt_zh": "[指標與陣列] What will the following code output after modifying the array with pointers?int myNumbers[4] = {25, 50, 75, 100};*myNumbers = 13;*(myNumbers + 1) = 17;printf(\"%d, %d\", myNumbers[0], myNumbers[1]);"
+      }
+    ],
+    "scope": [
+      {
+        "question": "Where can a variable with local scope be accessed?",
+        "options": [
+          "Inside the function it was created",
+          "Anywhere in the program",
+          "Only inside the main function",
+          "Only in global scope"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_scope1",
+        "prompt_zh": "[作用域] Where can a variable with local scope be accessed?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x = 10;<br><br>void myFunction() {<br>&nbsp;&nbsp;int x = 5;<br>&nbsp;&nbsp;printf(\"%d\\n\", x);<br>}<br><br>int main() {<br>&nbsp;&nbsp;myFunction();<br>&nbsp;&nbsp;printf(\"%d\\n\", x);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "10 and 10",
+          "5 and 5",
+          "5 and 10",
+          "10 and 5"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_scope2",
+        "prompt_zh": "[作用域] What will the following code output?int x = 10;void myFunction() {  int x = 5;  printf(\"%d\\n\", x);}int main() {  myFunction();  printf(\"%d\\n\", x);  return 0;}"
+      },
+      {
+        "question": "What is a global variable in C?",
+        "options": [
+          "A variable that is only accessible in the main function",
+          "A variable that can be accessed from any function in the program",
+          "A variable created inside a function",
+          "A variable used only once"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_scope3",
+        "prompt_zh": "[作用域] What is a global variable in C?"
+      },
+      {
+        "question": "What will happen if you try to access a local variable outside of its function?",
+        "options": [
+          "It will output 0",
+          "It will cause a compilation error",
+          "It will output a random value",
+          "It will access the global variable with the same name"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_scope4",
+        "prompt_zh": "[作用域] What will happen if you try to access a local variable outside of its function?"
+      },
+      {
+        "question": "Why is it generally recommended to use local variables over global variables?",
+        "options": [
+          "Local variables are faster",
+          "Global variables cannot be printed",
+          "Local variables make the code easier to maintain and understand",
+          "Global variables are automatically deleted"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_scope5",
+        "prompt_zh": "[作用域] Why is it generally recommended to use local variables over global variables?"
+      }
+    ],
+    "statements": [
+      {
+        "question": "True or False:<br>In C, each code statement must end with a semicolon <code class='w3-codespan'>(;)</code>.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_statements1",
+        "prompt_zh": "True 或 False：In C, each code statement must end with a semicolon (;)."
+      },
+      {
+        "question": "What is the output of the following code? <code class='codeblock'>printf(&quot;Hello World!&quot;)</code>",
+        "options": [
+          "Hello World!",
+          "printf",
+          "print",
+          "Error"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_statements2",
+        "prompt_zh": "output of the following code 是什麼？ printf(\"Hello World!\")"
+      },
+      {
+        "question": "What is the output of the following code? <code class='codeblock'>printf(&quot;Hello World!&quot;);</code>",
+        "options": [
+          "Hello World!",
+          "printf",
+          "print",
+          "Error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_statements3",
+        "prompt_zh": "output of the following code 是什麼？ printf(\"Hello World!\");"
+      },
+      {
+        "question": "True or False:<br>Statements are executed, one by one, in the same order as they are written.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_statements4",
+        "prompt_zh": "True 或 False：Statements are executed, one by one, in the same order as they are written."
+      }
+    ],
+    "strings": [
+      {
+        "draganddroptext": "<code>int main() {<br>&nbsp;&nbsp;___ greeting[] = \"Hello\";<br>&nbsp;&nbsp;printf(\"%___\", ___);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Fill in the blanks to declare and print a string in C.",
+        "options": [
+          "s",
+          "str",
+          "string",
+          "char",
+          "text",
+          "greeting"
+        ],
+        "correct": [
+          3,
+          0,
+          5
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings1",
+        "prompt_zh": "[字串] Fill in the blanks to declare and print a string in C."
+      },
+      {
+        "question": "What is the correct way to declare a string in C with the text 'Hello World'?",
+        "options": [
+          "<code class='w3-codespan'>char greetings = \"Hello World\";</code>",
+          "<code class='w3-codespan'>string greetings = \"Hello World\";</code>",
+          "<code class='w3-codespan'>char greetings[] = \"Hello World\";</code>",
+          "<code class='w3-codespan'>string greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings2",
+        "prompt_zh": "correct way to declare a string in C with the text 'Hello World' 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_strings1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings3",
+        "prompt_zh": "字串 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_strings3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings4",
+        "prompt_zh": "字串 填空題"
+      },
+      {
+        "question": "Given the following code, what will it print?<br><code class='codeblock'>char greetings[] = \"Hello\";<br>printf(\"%c\", greetings[0]);</code>",
+        "options": [
+          "H",
+          "e",
+          "Hello",
+          "h"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings5",
+        "prompt_zh": "[字串] Given the following code, what will it print?char greetings[] = \"Hello\";printf(\"%c\", greetings[0]);"
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>\\0</code> character in C strings?",
+        "options": [
+          "To mark the beginning of the string",
+          "To separate each character in a string",
+          "To indicate the end of the string",
+          "To increase the length of the string by one"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings6",
+        "prompt_zh": "purpose of the \\0 character in C strings 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_strings4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings7",
+        "prompt_zh": "字串 填空題"
+      },
+      {
+        "question": "What will this code output?<br><code class='codeblock'>char greetings[] = {'H', 'e', 'l', 'l', 'o', '\\0'};<br>printf(\"%s\", greetings);</code>",
+        "options": [
+          "H",
+          "Hello",
+          "Hello World",
+          "H e l l o"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings8",
+        "prompt_zh": "[字串] What will this code output?char greetings[] = {'H', 'e', 'l', 'l', 'o', '\\0'};printf(\"%s\", greetings);"
+      }
+    ],
+    "strings_esc": [
+      {
+        "question": "What is the correct way to include double quotes inside a string in C?",
+        "options": [
+          "<code class='w3-codespan'>char txt[] = \"The \"Vikings\" are here.\";</code>",
+          "<code class='w3-codespan'>char txt[] = \"The \\\"Vikings\\\" are here.\";</code>",
+          "<code class='w3-codespan'>char txt[] = \"The 'Vikings' are here.\";</code>",
+          "<code class='w3-codespan'>char txt[] = 'The \"Vikings\" are here.';</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_esc1",
+        "prompt_zh": "correct way to include double quotes inside a string in C 是什麼？"
+      },
+      {
+        "question": "Which escape character is used to insert a single quote (') in a string?",
+        "options": [
+          "<code class='w3-codespan'>\"</code>",
+          "<code class='w3-codespan'>\\'</code>",
+          "<code class='w3-codespan'>\\\"</code>",
+          "<code class='w3-codespan'>''</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_esc2",
+        "prompt_zh": "哪個 escape character 用來insert a single quote (') in a string？"
+      },
+      {
+        "question": "What will this code output?<br><code class='codeblock'>char txt[] = \"The path is C:\\\\Program Files\\\\\";<br>printf(\"%s\", txt);</code>",
+        "options": [
+          "The path is C:\\Program Files\\",
+          "The path is C:Program Files",
+          "The path is C:Program Files\\",
+          "The path is C:/Program Files/"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_esc3",
+        "prompt_zh": "[跳脫字元] What will this code output?char txt[] = \"The path is C:\\\\Program Files\\\\\";printf(\"%s\", txt);"
+      },
+      {
+        "question": "Which escape sequence is used to create a new line in a string?",
+        "options": [
+          "<code class='w3-codespan'>\\t</code>",
+          "<code class='w3-codespan'>\\0</code>",
+          "<code class='w3-codespan'>\\n</code>",
+          "<code class='w3-codespan'>\\\\</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_esc4",
+        "prompt_zh": "哪個 escape sequence 用來建立 new line in a string？"
+      }
+    ],
+    "strings_functions": [
+      {
+        "question": "Which function is used to find the length of a string in C?",
+        "options": [
+          "<code class='w3-codespan'>strcopy()</code>",
+          "<code class='w3-codespan'>strcat()</code>",
+          "<code class='w3-codespan'>strlen()</code>",
+          "<code class='w3-codespan'>strcmp()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions1",
+        "prompt_zh": "哪個函式用來找出 the length of a string in C？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>char alphabet[] = \"ABC\";<br>printf(\"%zu\", strlen(alphabet));</code>",
+        "options": [
+          "3",
+          "4",
+          "2",
+          "1"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions2",
+        "prompt_zh": "[字串函式] What will the following code output?char alphabet[] = \"ABC\";printf(\"%zu\", strlen(alphabet));"
+      },
+      {
+        "question": "Which function can be used to concatenate two strings in C?",
+        "options": [
+          "<code class='w3-codespan'>strcat()</code>",
+          "<code class='w3-codespan'>strcmp()</code>",
+          "<code class='w3-codespan'>strlen()</code>",
+          "<code class='w3-codespan'>strcpy()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions3",
+        "prompt_zh": "[字串函式] Which function can be used to concatenate two strings in C?"
+      },
+      {
+        "question": "Given <code class='w3-codespan'>char str1[20] = \"Hello\";</code> and <code class='w3-codespan'>char str2[] = \" World\";</code>, what will be the value of <code class='w3-codespan'>str1</code> after <code class='w3-codespan'>strcat(str1, str2);</code>?",
+        "options": [
+          "<code class='w3-codespan'>Hello</code>",
+          "<code class='w3-codespan'>Hello World</code>",
+          "<code class='w3-codespan'> World</code>",
+          "<code class='w3-codespan'>HelloWorld</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions4",
+        "prompt_zh": "[字串函式] Given char str1[20] = \"Hello\"; and char str2[] = \" World\";, what will be the value of str1 after strcat(str1, str2);?"
+      },
+      {
+        "question": "Which function is used to copy the contents of one string to another in C?",
+        "options": [
+          "<code class='w3-codespan'>strcpy()</code>",
+          "<code class='w3-codespan'>strcat()</code>",
+          "<code class='w3-codespan'>strlen()</code>",
+          "<code class='w3-codespan'>strcmp()</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions5",
+        "prompt_zh": "哪個函式用來copy the contents of one string to another in C？"
+      },
+      {
+        "question": "What does <code class='w3-codespan'>strcmp(str1, str2)</code> return if <code class='w3-codespan'>str1</code> and <code class='w3-codespan'>str2</code> are identical?",
+        "options": [
+          "1",
+          "-1",
+          "0",
+          "undefined"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_strings_functions6",
+        "prompt_zh": "[字串函式] What does strcmp(str1, str2) return if str1 and str2 are identical?"
+      }
+    ],
+    "structs": [
+      {
+        "question": "What is a structure (struct) in C?",
+        "options": [
+          "A way to store multiple values of the same data type",
+          "A way to store multiple values of different data types",
+          "A way to store a sequence of characters",
+          "A way to store memory addresses of variables"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs1",
+        "prompt_zh": "[結構] What is a structure (struct) in C?"
+      },
+      {
+        "fillintheblanks": "exercise_structs1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs2",
+        "prompt_zh": "結構 填空題"
+      },
+      {
+        "question": "How do you access a member of a structure in C?",
+        "options": [
+          "Using the + operator",
+          "Using the dot (.) operator",
+          "Using square brackets []",
+          "Using parentheses ()"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs3",
+        "prompt_zh": "如何存取 a member of a structure in C？"
+      },
+      {
+        "fillintheblanks": "exercise_structs2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs4",
+        "prompt_zh": "結構 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_structs3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs5",
+        "prompt_zh": "結構 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>struct myStructure { <br>&nbsp;&nbsp;int myNum;<br>&nbsp;&nbsp;char myLetter;<br>};<br><br>int main() {<br>&nbsp;&nbsp;struct myStructure s1 = {13, 'A'};<br>&nbsp;&nbsp;printf(\"%d %c\", s1.myNum, s1.myLetter);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "13 A",
+          "13 65",
+          "A 13",
+          "Error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs6",
+        "prompt_zh": "[結構] What will the following code output?struct myStructure {   int myNum;  char myLetter;};int main() {  struct myStructure s1 = {13, 'A'};  printf(\"%d %c\", s1.myNum, s1.myLetter);  return 0;}"
+      },
+      {
+        "question": "Which function should you use to assign a string to a char array in a structure?",
+        "options": [
+          "<code class='w3-codespan'>strcat()</code>",
+          "<code class='w3-codespan'>strcpy()</code>",
+          "<code class='w3-codespan'>sprintf()</code>",
+          "<code class='w3-codespan'>strstr()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs7",
+        "prompt_zh": "[結構] Which function should you use to assign a string to a char array in a structure?"
+      },
+      {
+        "question": "What will be the output of this code?<br><code class='codeblock'>struct Car { <br>&nbsp;&nbsp;char brand[10];<br>&nbsp;&nbsp;int year;<br>};<br><br>int main() {<br>&nbsp;&nbsp;struct Car c1 = {\"Toyota\", 2020};<br>&nbsp;&nbsp;struct Car c2;<br>&nbsp;&nbsp;c2 = c1;<br>&nbsp;&nbsp;c2.year = 2021;<br>&nbsp;&nbsp;printf(\"%s %d\", c1.brand, c1.year);<br>}</code>",
+        "options": [
+          "Toyota 2021",
+          "Toyota 2020",
+          "Toyota",
+          "Error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs8",
+        "prompt_zh": "[結構] What will be the output of this code?struct Car {   char brand[10];  int year;};int main() {  struct Car c1 = {\"Toyota\", 2020};  struct Car c2;  c2 = c1;  c2.year = 2021;  printf(\"%s %d\", c1.brand, c1.year);}"
+      }
+    ],
+    "structs_pointers": [
+      {
+        "question": "Which operator is used to access members of a struct through a pointer?",
+        "options": [
+          "The dot (.) operator",
+          "The arrow (->) operator",
+          "The ampersand (&) operator",
+          "The plus (+) operator"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs_pointers1",
+        "prompt_zh": "哪個運算子用來存取 members of a struct through a pointer？"
+      },
+      {
+        "draganddroptext": "<code>struct Car {<br>&nbsp;&nbsp;char brand[50];<br>&nbsp;&nbsp;int year;<br>};<br><br>int main() {<br>&nbsp;&nbsp;struct Car car = {\"Toyota\", 2020};<br><br>&nbsp;&nbsp;struct Car *ptr = &amp;car;<br><br>&nbsp;&nbsp;printf(\"Brand: %s\\n\", ptr___brand);<br>&nbsp;&nbsp;<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Drag and drop the correct operator to access struct members through a pointer.",
+        "options": [
+          ".",
+          "->",
+          "&"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs_pointers2",
+        "prompt_zh": "[struct 指標] 拖放正確的 operator to access struct members through a pointer."
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>struct Car {<br>&nbsp;&nbsp;char brand[50];<br>&nbsp;&nbsp;int year;<br>};<br><br>int main() {<br>&nbsp;&nbsp;struct Car car = {\"Ford\", 2015};<br>&nbsp;&nbsp;struct Car *ptr = &amp;car;<br>&nbsp;&nbsp;printf(\"%s %d\", ptr-&gt;brand, ptr-&gt;year);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "Ford 2015",
+          "Ford 0",
+          "Error",
+          "brand year"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs_pointers3",
+        "prompt_zh": "[struct 指標] What will the following code output?struct Car {  char brand[50];  int year;};int main() {  struct Car car = {\"Ford\", 2015};  struct Car *ptr = &car;  printf(\"%s %d\", ptr->brand, ptr->year);  return 0;}"
+      },
+      {
+        "question": "True or False on Struct Pointers:<br>Instead of copying a whole struct, you can just pass a pointer.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_structs_pointers4",
+        "prompt_zh": "True 或 False：on Struct Pointers:Instead of copying a whole struct, you can just pass a pointer."
+      }
+    ],
+    "switch": [
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>switch</code> statement in C?",
+        "options": [
+          "To select one of many code blocks to be executed",
+          "To loop through a set of conditions",
+          "To compare two values",
+          "To declare multiple variables"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_switch1",
+        "prompt_zh": "purpose of the switch statement in C 是什麼？"
+      },
+      {
+        "question": "What is the role of the <code class='w3-codespan'>break</code> statement in a <code class='w3-codespan'>switch</code> block?",
+        "options": [
+          "It repeats the switch block",
+          "It exits the switch block when a case is matched",
+          "It resets the switch expression",
+          "It allows testing of all cases"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_switch2",
+        "prompt_zh": "role of the break statement in a switch block 是什麼？"
+      },
+      {
+        "question": "What will the following code output if <code class='w3-codespan'>day</code> is 5?<br><code class='codeblock'>int day = 5;<br>switch (day) {<br>&nbsp;&nbsp;case 1:<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(\"Monday\");<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;case 5:<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(\"Friday\");<br>&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;default:<br>&nbsp;&nbsp;&nbsp;&nbsp;printf(\"Not a weekday\");<br>}</code>",
+        "options": [
+          "Monday",
+          "Friday",
+          "Not a weekday",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_switch3",
+        "prompt_zh": "[switch] What will the following code output if day is 5?int day = 5;switch (day) {  case 1:    printf(\"Monday\");    break;  case 5:    printf(\"Friday\");    break;  default:    printf(\"Not a weekday\");}"
+      },
+      {
+        "fillintheblanks": "exercise_switch1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_switch4",
+        "prompt_zh": "switch 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_switch2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_switch5",
+        "prompt_zh": "switch 填空題"
+      }
+    ],
+    "syntax": [
+      {
+        "question": "What is the purpose of <code class='w3-codespan'>#include &lt;stdio.h&gt;</code> in a C program?",
+        "options": [
+          "It defines the main() function",
+          "It allows the use of input and output functions, such as printf()",
+          "It declares variables",
+          "It ends the program"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax1",
+        "prompt_zh": "purpose of #include <stdio.h> in a C program 是什麼？"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>printf()</code> function do in C?",
+        "options": [
+          "It defines the main function",
+          "It outputs text to the screen",
+          "It reads input from the user",
+          "It closes the program"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax2",
+        "prompt_zh": "[語法] What does the printf() function do in C?"
+      },
+      {
+        "fillintheblanks": "exercise_syntax1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax3",
+        "prompt_zh": "語法 填空題"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>return 0;</code> statement do in the main() function?",
+        "options": [
+          "It prints the value 0 to the screen",
+          "It defines the start of the program",
+          "It ends the main() function",
+          "It adds a new line in the output"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax4",
+        "prompt_zh": "[語法] What does the return 0; statement do in the main() function?"
+      },
+      {
+        "question": "True or False:<br>C ignores white space, such as blank lines and extra spaces.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax5",
+        "prompt_zh": "True 或 False：C ignores white space, such as blank lines and extra spaces."
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>main()</code> function in a C program?",
+        "options": [
+          "To declare variables",
+          "To read input from the user",
+          "To execute the code inside its curly brackets",
+          "To define libraries"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_syntax6",
+        "prompt_zh": "purpose of the main() function in a C program 是什麼？"
+      }
+    ],
+    "type_conversion": [
+      {
+        "question": "What is type conversion in C?",
+        "options": [
+          "Assigning a variable to multiple data types",
+          "Converting one data type to another",
+          "Changing the value of a variable",
+          "Storing multiple values in a single variable"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_type_conversion1",
+        "prompt_zh": "[型別轉換] What is type conversion in C?"
+      },
+      {
+        "fillintheblanks": "exercise_data_types4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_type_conversion2",
+        "prompt_zh": "型別轉換 填空題"
+      },
+      {
+        "question": "What is implicit conversion in C?",
+        "options": [
+          "Manually converting one data type to another",
+          "Using the sizeof operator",
+          "Automatic conversion done by the compiler",
+          "Changing a variable's name"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_type_conversion3",
+        "prompt_zh": "[型別轉換] What is implicit conversion in C?"
+      },
+      {
+        "question": "What will the following code output due to implicit conversion?<br><code class='codeblock'>float myFloat = 9;<br>printf(\"%f\", myFloat);</code>",
+        "options": [
+          "9.000000",
+          "9",
+          "9.01",
+          "An error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_type_conversion4",
+        "prompt_zh": "[型別轉換] What will the following code output due to implicit conversion?float myFloat = 9;printf(\"%f\", myFloat);"
+      },
+      {
+        "question": "Which of the following is an example of explicit type conversion?",
+        "options": [
+          "int myInt = 9.99;",
+          "float sum = (float) 5 / 2;",
+          "float num = 10;",
+          "double myDouble = 3.14;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_type_conversion5",
+        "prompt_zh": "下列哪個是an example of explicit type conversion？"
+      }
+    ],
+    "unions": [
+      {
+        "draganddroptext": "<code>___ myUnion {<br>&nbsp;&nbsp;int myNum;<br>&nbsp;&nbsp;char myLetter;<br>};<br><br>int main() {<br>&nbsp;&nbsp;union myUnion u1;<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Drag and drop the correct keyword to declare a union named myUnion.",
+        "options": [
+          "struct",
+          "union",
+          "enum",
+          "un"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_unions1",
+        "prompt_zh": "[union] 拖放正確的 關鍵字 to declare a union named myUnion."
+      },
+      {
+        "draganddroptext": "<code>union Data {<br>&nbsp;&nbsp;int myNum;<br>&nbsp;&nbsp;char myString[30];<br>};<br><br>int main() {<br>&nbsp;&nbsp;union Data d1;<br>&nbsp;&nbsp;strcpy(d1.___, \"Hello\");<br>&nbsp;&nbsp;printf(\"%s\", d1.myString);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "draganddropquestion": "Drag and drop the correct member name to copy a string into the char array inside the union.",
+        "options": [
+          "myNum",
+          "myString",
+          "myLetter"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_unions2",
+        "prompt_zh": "[union] 拖放正確的 member name to copy a string into the char array inside the union."
+      },
+      {
+        "question": "What is the main difference between a struct and a union in C?",
+        "options": [
+          "A struct can store different types, a union cannot",
+          "A union can store different types, a struct cannot",
+          "In a struct, members have separate memory; in a union, members share the same memory",
+          "A struct can only store integers, a union can store any type"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_unions3",
+        "prompt_zh": "main difference between a struct and a union in C 是什麼？"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>union myUnion {<br>&nbsp;&nbsp;int myNum;<br>&nbsp;&nbsp;char myLetter;<br>};<br><br>int main() {<br>&nbsp;&nbsp;union myUnion u1;<br>&nbsp;&nbsp;u1.myNum = 1000;<br>&nbsp;&nbsp;u1.myLetter = 'A';<br>&nbsp;&nbsp;printf(\"%c\", u1.myLetter);<br>&nbsp;&nbsp;return 0;<br>}</code>",
+        "options": [
+          "1000",
+          "A",
+          "Error",
+          "Unknown value"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_unions4",
+        "prompt_zh": "[union] What will the following code output?union myUnion {  int myNum;  char myLetter;};int main() {  union myUnion u1;  u1.myNum = 1000;  u1.myLetter = 'A';  printf(\"%c\", u1.myLetter);  return 0;}"
+      },
+      {
+        "question": "If the largest member of a union takes up 36 bytes, what will be the size of the union?",
+        "options": [
+          "36 bytes",
+          "4 bytes",
+          "40 bytes"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_unions5",
+        "prompt_zh": "[union] If the largest member of a union takes up 36 bytes, what will be the size of the union?"
+      }
+    ],
+    "user_input": [
+      {
+        "question": "Which function is used to get user input in C?",
+        "options": [
+          "<code class='w3-codespan'>printf()</code>",
+          "<code class='w3-codespan'>scanf()</code>",
+          "<code class='w3-codespan'>pgets()</code>",
+          "<code class='w3-codespan'>sgets()</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_user_input1",
+        "prompt_zh": "哪個函式用來get user input in C？"
+      },
+      {
+        "question": "What is the correct syntax to store an integer input from the user in a variable called <code class='w3-codespan'>myNum</code>?",
+        "options": [
+          "<code class='w3-codespan'>scanf(\"%d\", myNum);</code>",
+          "<code class='w3-codespan'>scanf(\"%d\", &myNum);</code>",
+          "<code class='w3-codespan'>scanf(myNum, \"%d\");</code>",
+          "<code class='w3-codespan'>scanf(&myNum, \"%d\");</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_user_input2",
+        "prompt_zh": "correct syntax to store an integer input from the user in a variable called myNum 是什麼？"
+      },
+      {
+        "question": "Which format specifier is used with <code class='w3-codespan'>scanf()</code> to read a single character?",
+        "options": [
+          "<code class='w3-codespan'>%d</code>",
+          "<code class='w3-codespan'>%c</code>",
+          "<code class='w3-codespan'>%f</code>",
+          "<code class='w3-codespan'>%s</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_user_input3",
+        "prompt_zh": "[使用者輸入] Which format specifier is used with scanf() to read a single character?"
+      },
+      {
+        "question": "Which function should you use if you need to read a full line of text including spaces?",
+        "options": [
+          "<code class='w3-codespan'>scanf()</code>",
+          "<code class='w3-codespan'>gets()</code>",
+          "<code class='w3-codespan'>fgets()</code>",
+          "<code class='w3-codespan'>puts()</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_user_input4",
+        "prompt_zh": "[使用者輸入] Which function should you use if you need to read a full line of text including spaces?"
+      },
+      {
+        "question": "What will the following code output if the user enters <code class='w3-codespan'>John Doe</code>?<br><code class='codeblock'>char name[20];<br>scanf(\"%s\", name);<br>printf(\"Hello %s\", name);</code>",
+        "options": [
+          "Hello John",
+          "Hello John Doe",
+          "Hello",
+          "Hello Doe"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_user_input5",
+        "prompt_zh": "[使用者輸入] What will the following code output if the user enters John Doe?char name[20];scanf(\"%s\", name);printf(\"Hello %s\", name);"
+      }
+    ],
+    "variables": [
+      {
+        "question": "Which data type is used to store integers (whole numbers) in C?",
+        "options": [
+          "char",
+          "float",
+          "int",
+          "double"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables1",
+        "prompt_zh": "哪個 data type 用來store integers (whole numbers) in C？"
+      },
+      {
+        "question": "What is the correct syntax to declare a variable of type <code class='w3-codespan'>int</code> with the value 15?",
+        "options": [
+          "int = 15;",
+          "int myNum = 15;",
+          "int: myNum = 15;",
+          "myNum int = 15;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables2",
+        "prompt_zh": "correct syntax to declare a variable of type int with the value 15 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_variables1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables3",
+        "prompt_zh": "變數 填空題"
+      },
+      {
+        "question": "Why won't the following code run?<br><code class='codeblock'>int myNum = 15;<br>printf(myNum);</code>",
+        "options": [
+          "printf is missing a format specifier",
+          "It will run! It will print 15",
+          "It will run! It will print myNum"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables4",
+        "prompt_zh": "[變數] Why won't the following code run?int myNum = 15;printf(myNum);"
+      },
+      {
+        "question": "Which data type is used to store single characters in C?",
+        "options": [
+          "char",
+          "int",
+          "float",
+          "string"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables5",
+        "prompt_zh": "哪個 data type 用來store single characters in C？"
+      },
+      {
+        "question": "What is the correct syntax to declare a float variable named 'myFloat' without assigning it a value?",
+        "options": [
+          "float myFloat = ;",
+          "myFloat = float;",
+          "float myFloat;",
+          "myFloat float;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables6",
+        "prompt_zh": "correct syntax to declare a float variable named 'myFloat' without assigning it a value 是什麼？"
+      },
+      {
+        "question": "True or False:<br>You can declare a variable in C without assigning it a value and assign the value later.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables7",
+        "prompt_zh": "True 或 False：You can declare a variable in C without assigning it a value and assign the value later."
+      }
+    ],
+    "variables_change": [
+      {
+        "question": "What happens when you assign a new value to an existing variable in C?",
+        "options": [
+          "The previous value is overwritten",
+          "The previous value is deleted, and the variable is cleared",
+          "The new value is ignored",
+          "An error occurs"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_change1",
+        "prompt_zh": "[變更變數] What happens when you assign a new value to an existing variable in C?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myNum = 15;<br>myNum = 10;<br>printf(\"%d\", myNum);</code>",
+        "options": [
+          "15",
+          "10",
+          "%d",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_change2",
+        "prompt_zh": "[變更變數] What will the following code output?int myNum = 15;myNum = 10;printf(\"%d\", myNum);"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myNum = 15;<br>int myOtherNum = 23;<br>myNum = myOtherNum;<br>printf(\"%d\", myNum);</code>",
+        "options": [
+          "15",
+          "23",
+          "myOtherNum",
+          "An error"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_change3",
+        "prompt_zh": "[變更變數] What will the following code output?int myNum = 15;int myOtherNum = 23;myNum = myOtherNum;printf(\"%d\", myNum);"
+      },
+      {
+        "question": "Which of the following lines correctly assigns the value of one variable to another?",
+        "options": [
+          "myNum == myOtherNum;",
+          "myOtherNum = myNum;",
+          "myNum = 15 == myOtherNum;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_change4",
+        "prompt_zh": "[變更變數] Which of the following lines correctly assigns the value of one variable to another?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x = 5;<br>int y = 6;<br>int sum = x + y;<br>printf(\"%d\", sum);</code>",
+        "options": [
+          "5",
+          "6",
+          "11",
+          "An error"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_change5",
+        "prompt_zh": "[變更變數] What will the following code output?int x = 5;int y = 6;int sum = x + y;printf(\"%d\", sum);"
+      }
+    ],
+    "variables_format": [
+      {
+        "question": "What format specifier is used to print an integer value in C?",
+        "options": [
+          "%f",
+          "%d",
+          "%c",
+          "%s"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format1",
+        "prompt_zh": "[格式說明符] What format specifier is used to print an integer value in C?"
+      },
+      {
+        "fillintheblanks": "exercise_variables2.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format2",
+        "prompt_zh": "格式說明符 填空題"
+      },
+      {
+        "question": "Which format specifier would you use to print a floating-point number?",
+        "options": [
+          "%d",
+          "%f",
+          "%c",
+          "%i"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format3",
+        "prompt_zh": "[格式說明符] Which format specifier would you use to print a floating-point number?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int myNum = 15;<br>printf(\"%d\", myNum);</code>",
+        "options": [
+          "15",
+          "%d",
+          "myNum",
+          "An error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format4",
+        "prompt_zh": "[格式說明符] What will the following code output?int myNum = 15;printf(\"%d\", myNum);"
+      },
+      {
+        "fillintheblanks": "exercise_variables3.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format5",
+        "prompt_zh": "格式說明符 填空題"
+      },
+      {
+        "question": "Which format specifier is used to print a single character in C?",
+        "options": [
+          "%d",
+          "%f",
+          "%c",
+          "%s"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format6",
+        "prompt_zh": "哪個 format specifier 用來print a single character in C？"
+      },
+      {
+        "question": "True or False:<br>You can print a value directly in <code class='w3-codespan'>printf()</code> without using a variable, as long as the correct format specifier is used.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_format7",
+        "prompt_zh": "True 或 False：You can print a value directly in printf() without using a variable, as long as the correct format specifier is used."
+      }
+    ],
+    "variables_multiple": [
+      {
+        "question": "How do you declare multiple variables of the same type in C?",
+        "options": [
+          "Separate each variable with a semicolon",
+          "Use a comma-separated list",
+          "Declare each variable on a new line",
+          "Use square brackets around variable names"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple1",
+        "prompt_zh": "如何declare multiple variables of the same type in C？"
+      },
+      {
+        "fillintheblanks": "exercise_variables4.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple2",
+        "prompt_zh": "多變數 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x = 5, y = 6, z = 50;<br>printf(\"%d\", x + y + z);</code>",
+        "options": [
+          "5",
+          "6",
+          "5650",
+          "50",
+          "61"
+        ],
+        "correct": 4,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple3",
+        "prompt_zh": "[多變數] What will the following code output?int x = 5, y = 6, z = 50;printf(\"%d\", x + y + z);"
+      },
+      {
+        "question": "What does the following code do?<br><code class='codeblock'>int x, y, z;<br>x = y = z = 50;</code>",
+        "options": [
+          "Assigns 50 to x, y, and z",
+          "Assigns different values to each variable",
+          "Declares variables without assigning values",
+          "Throws an error"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple4",
+        "prompt_zh": "the following code 做什麼？int x, y, z;x = y = z = 50;"
+      },
+      {
+        "question": "How would you declare three integer variables 'a', 'b', and 'c' with values 1, 2, and 3 in a single line?",
+        "options": [
+          "int a 1, b 2, c 3;",
+          "int a = 1; int b = 2; int c = 3;",
+          "int a = 1, b = 2, c = 3;",
+          "int a, b, c = 1, 2, 3;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple5",
+        "prompt_zh": "[多變數] How would you declare three integer variables 'a', 'b', and 'c' with values 1, 2, and 3 in a single line?"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int x, y, z;<br>x = y = z = 20;<br>printf(\"%d\", x + y + z);</code>",
+        "options": [
+          "20",
+          "40",
+          "60",
+          "An error"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_multiple6",
+        "prompt_zh": "[多變數] What will the following code output?int x, y, z;x = y = z = 20;printf(\"%d\", x + y + z);"
+      }
+    ],
+    "variables_names": [
+      {
+        "question": "What is a recommended practice when naming variables in C?",
+        "options": [
+          "Use short, single-letter names like x and y.",
+          "Use descriptive names to create understandable code.",
+          "Use reserved words as variable names."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_names1",
+        "prompt_zh": "[變數命名] What is a recommended practice when naming variables in C?"
+      },
+      {
+        "question": "What is an example of a descriptive variable name?",
+        "options": [
+          "int x = 10;",
+          "int m = 60;",
+          "int totalAmount = 100;",
+          "int _ = 5;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_names2",
+        "prompt_zh": "[變數命名] What is an example of a descriptive variable name?"
+      },
+      {
+        "question": "What characters can variable names in C contain?",
+        "options": [
+          "Letters, digits, and underscores",
+          "Letters, digits, and special characters",
+          "Letters and spaces",
+          "Digits and special characters only"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_names3",
+        "prompt_zh": "[變數命名] What characters can variable names in C contain?"
+      },
+      {
+        "question": "What will happen if you try to use a reserved word as a variable name?",
+        "options": [
+          "The compiler will ignore it.",
+          "The compiler will throw an error.",
+          "The variable will be created with no issues.",
+          "The reserved word will automatically change."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_variables_names4",
+        "prompt_zh": "[變數命名] What will happen if you try to use a reserved word as a variable name?"
+      }
+    ],
+    "while_loop": [
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>while</code> loop in C?",
+        "options": [
+          "To execute a block of code a fixed number of times",
+          "To execute a block of code as long as a specified condition is true",
+          "To execute code only if a condition is false",
+          "To declare multiple variables in a loop"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_while_loop1",
+        "prompt_zh": "purpose of the while loop in C 是什麼？"
+      },
+      {
+        "question": "What is the correct syntax for a <code class='w3-codespan'>while</code> loop?",
+        "options": [
+          "<code class='w3-codespan'>while { condition }</code>",
+          "<code class='w3-codespan'>while (condition) { // code block }</code>",
+          "<code class='w3-codespan'>while (condition) // code block</code>",
+          "<code class='w3-codespan'>while condition { // code block }</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_while_loop2",
+        "prompt_zh": "a while loop 的正確syntax是？"
+      },
+      {
+        "fillintheblanks": "exercise_while_loop1.htm",
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_while_loop3",
+        "prompt_zh": "while 迴圈 填空題"
+      },
+      {
+        "question": "What will the following code output?<br><code class='codeblock'>int i = 0;<br>while (i < 3) {<br>&nbsp;&nbsp;printf(\"%d \", i);<br>&nbsp;&nbsp;i++;<br>}</code>",
+        "options": [
+          "0\n1\n2",
+          "1\n2\n3",
+          "0\n1\n2\n3",
+          "No output"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_while_loop4",
+        "prompt_zh": "[while 迴圈] What will the following code output?int i = 0;while (i   printf(\"%d \", i);  i++;}"
+      },
+      {
+        "question": "What happens if the condition in a <code class='w3-codespan'>while</code> loop is always true and there is no increment statement?",
+        "options": [
+          "The loop runs indefinitely",
+          "The loop runs once",
+          "The loop produces an error",
+          "The loop runs twice"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/c/exercise.php?x=xrcise_while_loop5",
+        "prompt_zh": "[while 迴圈] What happens if the condition in a while loop is always true and there is no increment statement?"
+      }
+    ]
+  }
+}

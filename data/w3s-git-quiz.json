@@ -1,0 +1,1109 @@
+{
+  "test": "GIT",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is Git?",
+      "options": [
+        {
+          "value": 1,
+          "text": "A version control system."
+        },
+        {
+          "value": 2,
+          "text": "A programming language."
+        },
+        {
+          "value": 3,
+          "text": "A nickname for GitHub."
+        },
+        {
+          "value": 4,
+          "text": "A remote repository platform."
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "Git 是什麼？",
+      "options_translations": [
+        {
+          "text_en": "A version control system.",
+          "text_zh": "版本控制系統",
+          "correct": true
+        },
+        {
+          "text_en": "A programming language.",
+          "text_zh": "程式語言",
+          "correct": false
+        },
+        {
+          "text_en": "A nickname for GitHub.",
+          "text_zh": "GitHub 的暱稱",
+          "correct": false
+        },
+        {
+          "text_en": "A remote repository platform.",
+          "text_zh": "遠端儲存庫平台（那是 GitHub/GitLab 等）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "Git is the same as GitHub.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "Git 跟 GitHub 是同一個東西。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "Git 是工具，GitHub 是託管平台",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "What is the command to get the installed version of Git?",
+      "options": [
+        {
+          "value": 1,
+          "text": "gitVersion"
+        },
+        {
+          "value": 2,
+          "text": "getGitVersion"
+        },
+        {
+          "value": 3,
+          "text": "git --version"
+        },
+        {
+          "value": 4,
+          "text": "git help version"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "檢查已安裝的 Git 版本指令是？",
+      "options_translations": [
+        {
+          "text_en": "gitVersion",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "getGitVersion",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git --version",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git help version",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "Which option should you use to set the default user name for every repository on your computer?",
+      "options": [
+        {
+          "value": 1,
+          "text": "No need to specify, that is the default."
+        },
+        {
+          "value": 2,
+          "text": "--all"
+        },
+        {
+          "value": 3,
+          "text": "--A"
+        },
+        {
+          "value": 4,
+          "text": "--global"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "設定電腦上所有儲存庫的預設使用者名稱要用哪個 option？",
+      "options_translations": [
+        {
+          "text_en": "No need to specify, that is the default.",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "--all",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "--A",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "--global",
+          "text_zh": "全域設定",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "What is the command to set the user email for the current repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git email.user"
+        },
+        {
+          "value": 2,
+          "text": "git config email"
+        },
+        {
+          "value": 3,
+          "text": "git config user.email"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "設定當前儲存庫使用者 email 的指令是？",
+      "options_translations": [
+        {
+          "text_en": "git email.user",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git config email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git config user.email",
+          "text_zh": "標準寫法",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "What is the command to add all files and changes of the current folder to the staging environment of the Git repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git add --files"
+        },
+        {
+          "value": 2,
+          "text": "git add"
+        },
+        {
+          "value": 3,
+          "text": "git add --all"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "把當前資料夾的所有檔案/變更加到 staging 區的指令是？",
+      "options_translations": [
+        {
+          "text_en": "git add --files",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git add",
+          "text_zh": "少了參數",
+          "correct": false
+        },
+        {
+          "text_en": "git add --all",
+          "text_zh": "加全部（也可用 git add .）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "What is the command to get the current status of the Git repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git getStatus"
+        },
+        {
+          "value": 2,
+          "text": "git status"
+        },
+        {
+          "value": 3,
+          "text": "git config --status"
+        },
+        {
+          "value": 4,
+          "text": "--status"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "取得 Git 儲存庫當前狀態的指令？",
+      "options_translations": [
+        {
+          "text_en": "git getStatus",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git status",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git config --status",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "--status",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "What is the command to initialize Git on the current repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git init"
+        },
+        {
+          "value": 2,
+          "text": "start git"
+        },
+        {
+          "value": 3,
+          "text": "initialize git"
+        },
+        {
+          "value": 4,
+          "text": "git start"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "在當前資料夾初始化 Git 儲存庫的指令？",
+      "options_translations": [
+        {
+          "text_en": "git init",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "start git",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "initialize git",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git start",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "Git automatically adds new files to the repository and starts tracking them.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "Git 會自動把新檔案加進儲存庫並追蹤。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "必須手動 git add",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "Git commit history is automatically deleted:",
+      "options": [
+        {
+          "value": 1,
+          "text": "Commit history is never automatically deleted."
+        },
+        {
+          "value": 2,
+          "text": "Every 2 weeks."
+        },
+        {
+          "value": 3,
+          "text": "Every year."
+        },
+        {
+          "value": 4,
+          "text": "Every month."
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "Git commit 歷史多久會自動刪除？",
+      "options_translations": [
+        {
+          "text_en": "Commit history is never automatically deleted.",
+          "text_zh": "永遠不會自動刪除",
+          "correct": true
+        },
+        {
+          "text_en": "Every 2 weeks.",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Every year.",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Every month.",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "What is the command to commit the staged changes for the Git repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git save"
+        },
+        {
+          "value": 2,
+          "text": "git snapshot"
+        },
+        {
+          "value": 3,
+          "text": "git commit"
+        },
+        {
+          "value": 4,
+          "text": "git com"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "提交 staged 變更的指令？",
+      "options_translations": [
+        {
+          "text_en": "git save",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git snapshot",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git commit",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git com",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "What is the command to commit with the message \"New email\":",
+      "options": [
+        {
+          "value": 1,
+          "text": "git commit message \"New email\""
+        },
+        {
+          "value": 2,
+          "text": "git commit -log \"New email\""
+        },
+        {
+          "value": 3,
+          "text": "git commit -m \"New email\""
+        },
+        {
+          "value": 4,
+          "text": "git commit -mess \"New email\""
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "用訊息 \"New email\" 提交的指令？",
+      "options_translations": [
+        {
+          "text_en": "git commit message \"New email\"",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git commit -log \"New email\"",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git commit -m \"New email\"",
+          "text_zh": "-m 帶 message",
+          "correct": true
+        },
+        {
+          "text_en": "git commit -mess \"New email\"",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "What is the command to view the history of commits for the repository?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git log"
+        },
+        {
+          "value": 2,
+          "text": "git history"
+        },
+        {
+          "value": 3,
+          "text": "git commits"
+        },
+        {
+          "value": 4,
+          "text": "git --full-log"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "檢視儲存庫 commit 歷史的指令？",
+      "options_translations": [
+        {
+          "text_en": "git log",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git history",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git commits",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git --full-log",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "What is the command to see the available options for the commit command?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git commit -help"
+        },
+        {
+          "value": 2,
+          "text": "git commitHelp"
+        },
+        {
+          "value": 3,
+          "text": "git commit readme"
+        },
+        {
+          "value": 4,
+          "text": "gitHelp commit"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "檢視 commit 指令可用選項的指令？",
+      "options_translations": [
+        {
+          "text_en": "git commit -help",
+          "text_zh": "-help 不是慣例（常見是 --help）",
+          "correct": true
+        },
+        {
+          "text_en": "git commitHelp",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git commit readme",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "gitHelp commit",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "In Git, a branch is:",
+      "options": [
+        {
+          "value": 1,
+          "text": "A separate version of the main repository."
+        },
+        {
+          "value": 2,
+          "text": "A small wooden stick you can use to type commands."
+        },
+        {
+          "value": 3,
+          "text": "A secret part of Git config."
+        },
+        {
+          "value": 4,
+          "text": "Nothing, it is a nonsense word."
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "Git 中的 branch 是什麼？",
+      "options_translations": [
+        {
+          "text_en": "A separate version of the main repository.",
+          "text_zh": "主儲存庫的獨立版本",
+          "correct": true
+        },
+        {
+          "text_en": "A small wooden stick you can use to type commands.",
+          "text_zh": "開玩笑選項",
+          "correct": false
+        },
+        {
+          "text_en": "A secret part of Git config.",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Nothing, it is a nonsense word.",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "What is the command to create a new branch named \"new-email\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git add branch \"new-email\""
+        },
+        {
+          "value": 2,
+          "text": "git branch new-email"
+        },
+        {
+          "value": 3,
+          "text": "git newBranch \"new-email\""
+        },
+        {
+          "value": 4,
+          "text": "git branch new \"new-email\""
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "建立名為 \"new-email\" 分支的指令？",
+      "options_translations": [
+        {
+          "text_en": "git add branch \"new-email\"",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git branch new-email",
+          "text_zh": "建立分支",
+          "correct": true
+        },
+        {
+          "text_en": "git newBranch \"new-email\"",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git branch new \"new-email\"",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "What is the command to move to the branch named \"new-email\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git branch new-email"
+        },
+        {
+          "value": 2,
+          "text": "git branch -move new-email"
+        },
+        {
+          "value": 3,
+          "text": "git checkout new-email"
+        },
+        {
+          "value": 4,
+          "text": "git checkout branch new-email"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "切換到 \"new-email\" 分支的指令？",
+      "options_translations": [
+        {
+          "text_en": "git branch new-email",
+          "text_zh": "那是建立分支",
+          "correct": false
+        },
+        {
+          "text_en": "git branch -move new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git checkout new-email",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git checkout branch new-email",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "What is the option, when moving to a branch, to create the branch it if it does not exist?",
+      "options": [
+        {
+          "value": 1,
+          "text": "-b"
+        },
+        {
+          "value": 2,
+          "text": "-newbranch"
+        },
+        {
+          "value": 3,
+          "text": "-all"
+        },
+        {
+          "value": 4,
+          "text": "-new"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "切換分支時若分支不存在就建立，要用哪個 option？",
+      "options_translations": [
+        {
+          "text_en": "-b",
+          "text_zh": "git checkout -b 建立並切換",
+          "correct": true
+        },
+        {
+          "text_en": "-newbranch",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "-all",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "-new",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "What is the command to merge the current branch with the branch \"new-email\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git merge new-email"
+        },
+        {
+          "value": 2,
+          "text": "git commit -merge new-email"
+        },
+        {
+          "value": 3,
+          "text": "git add new-email"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "把當前分支與 \"new-email\" 分支合併的指令？",
+      "options_translations": [
+        {
+          "text_en": "git merge new-email",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git commit -merge new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git add new-email",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "What is the command to delete the branch \"new-email\"",
+      "options": [
+        {
+          "value": 1,
+          "text": "git delete new-email"
+        },
+        {
+          "value": 2,
+          "text": "git branch -d new-email"
+        },
+        {
+          "value": 3,
+          "text": "git delete branch new-email"
+        },
+        {
+          "value": 4,
+          "text": "git gone new-email"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "刪除 \"new-email\" 分支的指令？",
+      "options_translations": [
+        {
+          "text_en": "git delete new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git branch -d new-email",
+          "text_zh": "-d 刪除分支",
+          "correct": true
+        },
+        {
+          "text_en": "git delete branch new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git gone new-email",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "What is the command to add the remote repository \"https://abc.xyz/d/e.git\" as \"origin\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git remote add origin https://abc.xyz/d/e.git"
+        },
+        {
+          "value": 2,
+          "text": "git remote https://abc.xyz/d/e.git"
+        },
+        {
+          "value": 3,
+          "text": "git origin=https://abc.xyz/d/e.git"
+        },
+        {
+          "value": 4,
+          "text": "git add origin https://abc.xyz/d/e.git"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "加入遠端儲存庫 \"origin\" 的指令？",
+      "options_translations": [
+        {
+          "text_en": "git remote add origin https://abc.xyz/d/e.git",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git remote https://abc.xyz/d/e.git",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git origin=https://abc.xyz/d/e.git",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git add origin https://abc.xyz/d/e.git",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "What is the command to push the current repository to the remote origin?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git push origin"
+        },
+        {
+          "value": 2,
+          "text": "git remote push"
+        },
+        {
+          "value": 3,
+          "text": "git remote commit"
+        },
+        {
+          "value": 4,
+          "text": "git merge remote"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "把當前儲存庫推送到遠端 origin 的指令？",
+      "options_translations": [
+        {
+          "text_en": "git push origin",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "git remote push",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git remote commit",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git merge remote",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "What is the command to get all the change history of the remote repository \"origin\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git get log origin"
+        },
+        {
+          "value": 2,
+          "text": "git fetch origin"
+        },
+        {
+          "value": 3,
+          "text": "git status remote origin"
+        },
+        {
+          "value": 4,
+          "text": "git origin help"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "取得遠端 \"origin\" 所有變更歷史的指令？",
+      "options_translations": [
+        {
+          "text_en": "git get log origin",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git fetch origin",
+          "text_zh": "抓取遠端最新但不合併",
+          "correct": true
+        },
+        {
+          "text_en": "git status remote origin",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git origin help",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "What is the command to show the differences between the current branch and the branch \"new-email\"?",
+      "options": [
+        {
+          "value": 1,
+          "text": "git status new-email"
+        },
+        {
+          "value": 2,
+          "text": "git changes new-email"
+        },
+        {
+          "value": 3,
+          "text": "git log new-email"
+        },
+        {
+          "value": 4,
+          "text": "git diff new-email"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "顯示當前分支與 \"new-email\" 差異的指令？",
+      "options_translations": [
+        {
+          "text_en": "git status new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git changes new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git log new-email",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "git diff new-email",
+          "text_zh": "標準寫法",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Git Pull is a combination of:",
+      "options": [
+        {
+          "value": 1,
+          "text": "add and commit"
+        },
+        {
+          "value": 2,
+          "text": "fetch and merge"
+        },
+        {
+          "value": 3,
+          "text": "branch and checkout"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=GIT",
+      "prompt_zh": "git pull 是哪兩個指令的組合？",
+      "options_translations": [
+        {
+          "text_en": "add and commit",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "fetch and merge",
+          "text_zh": "抓取 + 合併",
+          "correct": true
+        },
+        {
+          "text_en": "branch and checkout",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

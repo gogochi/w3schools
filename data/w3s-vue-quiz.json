@@ -1,0 +1,1154 @@
+{
+  "test": "VUE",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is the main purpose of the 'data' instance in a Vue component?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To define methods for the component"
+        },
+        {
+          "value": 2,
+          "text": "To define computed properties"
+        },
+        {
+          "value": 3,
+          "text": "To define variables"
+        },
+        {
+          "value": 4,
+          "text": "To handle user interactions"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 元件中 'data' 實例的主要用途？",
+      "options_translations": [
+        {
+          "text_en": "To define methods for the component",
+          "text_zh": "定義方法（那是 methods）",
+          "correct": false
+        },
+        {
+          "text_en": "To define computed properties",
+          "text_zh": "定義 computed（那是 computed）",
+          "correct": false
+        },
+        {
+          "text_en": "To define variables",
+          "text_zh": "定義變數（響應式資料）",
+          "correct": true
+        },
+        {
+          "text_en": "To handle user interactions",
+          "text_zh": "處理使用者互動",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "How do you define a computed property in Vue",
+      "options": [
+        {
+          "value": 1,
+          "text": "As a method inside the 'computed' instance"
+        },
+        {
+          "value": 2,
+          "text": "As a method inside the 'methods' instance"
+        },
+        {
+          "value": 3,
+          "text": "As a variable inside the 'computed' instance"
+        },
+        {
+          "value": 4,
+          "text": "As a variable inside the 'methods' instance"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 中如何定義 computed 屬性？",
+      "options_translations": [
+        {
+          "text_en": "As a method inside the 'computed' instance",
+          "text_zh": "在 computed 內以方法定義",
+          "correct": true
+        },
+        {
+          "text_en": "As a method inside the 'methods' instance",
+          "text_zh": "那是 methods",
+          "correct": false
+        },
+        {
+          "text_en": "As a variable inside the 'computed' instance",
+          "text_zh": "computed 是方法不是變數",
+          "correct": false
+        },
+        {
+          "text_en": "As a variable inside the 'methods' instance",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "Which Vue directive is used to conditionally display an element?",
+      "options": [
+        {
+          "value": 1,
+          "text": "v-for"
+        },
+        {
+          "value": 2,
+          "text": "v-bind"
+        },
+        {
+          "value": 3,
+          "text": "v-model"
+        },
+        {
+          "value": 4,
+          "text": "v-show"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個 Vue 指令用於有條件地顯示元素？",
+      "options_translations": [
+        {
+          "text_en": "v-for",
+          "text_zh": "列表渲染",
+          "correct": false
+        },
+        {
+          "text_en": "v-bind",
+          "text_zh": "屬性綁定",
+          "correct": false
+        },
+        {
+          "text_en": "v-model",
+          "text_zh": "雙向綁定",
+          "correct": false
+        },
+        {
+          "text_en": "v-show",
+          "text_zh": "切換 display 樣式",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "Which language is Vue written in?",
+      "options": [
+        {
+          "value": 1,
+          "text": "JavaScript"
+        },
+        {
+          "value": 2,
+          "text": "Python"
+        },
+        {
+          "value": 3,
+          "text": "C"
+        },
+        {
+          "value": 4,
+          "text": "C++"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 是用什麼語言寫的？",
+      "options_translations": [
+        {
+          "text_en": "JavaScript",
+          "text_zh": "是 JavaScript（含 TypeScript）",
+          "correct": true
+        },
+        {
+          "text_en": "Python",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "C",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "C++",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "Which Vue directive is used to conditionally render an element?",
+      "options": [
+        {
+          "value": 1,
+          "text": "v-model"
+        },
+        {
+          "value": 2,
+          "text": "v-if"
+        },
+        {
+          "value": 3,
+          "text": "v-for"
+        },
+        {
+          "value": 4,
+          "text": "v-bind"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個 Vue 指令用於有條件地渲染元素？",
+      "options_translations": [
+        {
+          "text_en": "v-model",
+          "text_zh": "雙向綁定",
+          "correct": false
+        },
+        {
+          "text_en": "v-if",
+          "text_zh": "條件渲染（不渲染 DOM）",
+          "correct": true
+        },
+        {
+          "text_en": "v-for",
+          "text_zh": "列表渲染",
+          "correct": false
+        },
+        {
+          "text_en": "v-bind",
+          "text_zh": "屬性綁定",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "Which Vue directive is used for list rendering?",
+      "options": [
+        {
+          "value": 1,
+          "text": "v-if"
+        },
+        {
+          "value": 2,
+          "text": "v-bind"
+        },
+        {
+          "value": 3,
+          "text": "v-for"
+        },
+        {
+          "value": 4,
+          "text": "v-show"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個 Vue 指令用於列表渲染？",
+      "options_translations": [
+        {
+          "text_en": "v-if",
+          "text_zh": "條件渲染",
+          "correct": false
+        },
+        {
+          "text_en": "v-bind",
+          "text_zh": "屬性綁定",
+          "correct": false
+        },
+        {
+          "text_en": "v-for",
+          "text_zh": "列表渲染",
+          "correct": true
+        },
+        {
+          "text_en": "v-show",
+          "text_zh": "條件顯示",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "The v-bind directive is used to attatch an HTML attribute to a data property.",
+      "options": [
+        {
+          "value": 1,
+          "text": "No, never"
+        },
+        {
+          "value": 2,
+          "text": "Yes"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "v-bind 指令用於把 HTML 屬性綁到資料屬性。",
+      "options_translations": [
+        {
+          "text_en": "No, never",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Yes",
+          "text_zh": "正確",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "Which Vue directive is used to create a two-way binding between a form input and a data property?",
+      "options": [
+        {
+          "value": 1,
+          "text": "v-model"
+        },
+        {
+          "value": 2,
+          "text": "v-bind"
+        },
+        {
+          "value": 3,
+          "text": "v-for"
+        },
+        {
+          "value": 4,
+          "text": "v-show"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個 Vue 指令在表單 input 與資料屬性間建立雙向綁定？",
+      "options_translations": [
+        {
+          "text_en": "v-model",
+          "text_zh": "雙向綁定",
+          "correct": true
+        },
+        {
+          "text_en": "v-bind",
+          "text_zh": "單向屬性綁定",
+          "correct": false
+        },
+        {
+          "text_en": "v-for",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "v-show",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "We can make a 'watcher' in Vue to monitor a data property and create side effects.",
+      "options": [
+        {
+          "value": 1,
+          "text": "No, watchers can only monitor data properties, never create side effects"
+        },
+        {
+          "value": 2,
+          "text": "Yes, watchers are made to create side effects when a monitored data property reaches a certain point, that is the intention"
+        },
+        {
+          "value": 3,
+          "text": "There is no such thing as watchers in Vue."
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 中可以用 watcher 監看資料屬性並產生副作用嗎？",
+      "options_translations": [
+        {
+          "text_en": "No, watchers can only monitor data properties, never create side effects",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Yes, watchers are made to create side effects when a monitored data property reaches a certain point, that is the intention",
+          "text_zh": "watcher 就是設計來監看 + 產生副作用",
+          "correct": true
+        },
+        {
+          "text_en": "There is no such thing as watchers in Vue.",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "When a 'watcher' runs, both the old and the new data property values are available as arguments to the watcher method.",
+      "options": [
+        {
+          "value": 1,
+          "text": "Yes"
+        },
+        {
+          "value": 2,
+          "text": "Only the old data property value is available"
+        },
+        {
+          "value": 3,
+          "text": "Only the new data property value is available"
+        },
+        {
+          "value": 4,
+          "text": "Neither the old nor the new data property values are available"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "watcher 執行時，可以同時拿到舊值與新值嗎？",
+      "options_translations": [
+        {
+          "text_en": "Yes",
+          "text_zh": "watcher(newVal, oldVal)",
+          "correct": true
+        },
+        {
+          "text_en": "Only the old data property value is available",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Only the new data property value is available",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Neither the old nor the new data property values are available",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "To display the value from the data property 'message' inside a &lt;p&gt; tag with text interpolation, what is the correct syntax?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;p&gt;'' message ''&lt;/p&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;p&gt;## message ##&lt;/p&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;p&gt;{{ message }}&lt;/p&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;p&gt;// message //&lt;/p&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "<p> 內用插值語法顯示 message 變數的正確語法是？",
+      "options_translations": [
+        {
+          "text_en": "<p>'' message ''</p>",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "<p>## message ##</p>",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "<p>{{ message }}</p>",
+          "text_zh": "雙大括號 mustache 語法",
+          "correct": true
+        },
+        {
+          "text_en": "<p>// message //</p>",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "What is the main purpose of the 'mounted' lifecycle hook in a Vue component?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To define computed properties"
+        },
+        {
+          "value": 2,
+          "text": "To watch data property changes"
+        },
+        {
+          "value": 3,
+          "text": "To define the component's slots before the component is rendered"
+        },
+        {
+          "value": 4,
+          "text": "To perform side effects after the component has been inserted into the DOM"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 元件 'mounted' 生命週期 hook 的主要用途？",
+      "options_translations": [
+        {
+          "text_en": "To define computed properties",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To watch data property changes",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To define the component's slots before the component is rendered",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To perform side effects after the component has been inserted into the DOM",
+          "text_zh": "元件插入 DOM 後執行副作用",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "Vue uses a file to initialize the root Vue instance and mount it to the DOM, what is the file's name?",
+      "options": [
+        {
+          "value": 1,
+          "text": "settings.js"
+        },
+        {
+          "value": 2,
+          "text": "config.js"
+        },
+        {
+          "value": 3,
+          "text": "views.js"
+        },
+        {
+          "value": 4,
+          "text": "main.js"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 用什麼檔案初始化根 Vue 實例並掛載到 DOM？",
+      "options_translations": [
+        {
+          "text_en": "settings.js",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "config.js",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "views.js",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "main.js",
+          "text_zh": "預設進入點",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "In which lifecycle hook is the DOM accessible and ready for manipulation?",
+      "options": [
+        {
+          "value": 1,
+          "text": "beforeCreate"
+        },
+        {
+          "value": 2,
+          "text": "created"
+        },
+        {
+          "value": 3,
+          "text": "mounted"
+        },
+        {
+          "value": 4,
+          "text": "beforeMount"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個生命週期 hook 中 DOM 已可存取且可以操作？",
+      "options_translations": [
+        {
+          "text_en": "beforeCreate",
+          "text_zh": "建立前",
+          "correct": false
+        },
+        {
+          "text_en": "created",
+          "text_zh": "建立後但未掛載",
+          "correct": false
+        },
+        {
+          "text_en": "mounted",
+          "text_zh": "已掛載 DOM",
+          "correct": true
+        },
+        {
+          "text_en": "beforeMount",
+          "text_zh": "掛載前",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "What is the purpose of the provide() method?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To make data available to other components"
+        },
+        {
+          "value": 2,
+          "text": "To keep methods local to a single component"
+        },
+        {
+          "value": 3,
+          "text": "To make data locally available to a specific parent component"
+        },
+        {
+          "value": 4,
+          "text": "To make a strict interface of data shared between components"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "provide() 方法的用途？",
+      "options_translations": [
+        {
+          "text_en": "To make data available to other components",
+          "text_zh": "把資料提供給其他元件（依賴注入）",
+          "correct": true
+        },
+        {
+          "text_en": "To keep methods local to a single component",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To make data locally available to a specific parent component",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To make a strict interface of data shared between components",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "What is the purpose of the inject() method?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To create a global funtion"
+        },
+        {
+          "value": 2,
+          "text": "To include 3rd party libraries"
+        },
+        {
+          "value": 3,
+          "text": "To smoothly integrate the iframe tag in Vue"
+        },
+        {
+          "value": 4,
+          "text": "To get data in a component that is provided by another component"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "inject() 方法的用途？",
+      "options_translations": [
+        {
+          "text_en": "To create a global funtion",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To include 3rd party libraries",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To smoothly integrate the iframe tag in Vue",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "To get data in a component that is provided by another component",
+          "text_zh": "取得別的元件 provide 的資料",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "What is the purpose of the 'errorCaptured' lifecycle hook?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To handle errors thrown in component methods"
+        },
+        {
+          "value": 2,
+          "text": "To handle errors thrown in component lifecycle hooks"
+        },
+        {
+          "value": 3,
+          "text": "To handle errors thrown in component watchers"
+        },
+        {
+          "value": 4,
+          "text": "To handle errors thrown in any of the cases mentioned"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "errorCaptured 生命週期 hook 的用途？",
+      "options_translations": [
+        {
+          "text_en": "To handle errors thrown in component methods",
+          "text_zh": "只處理 method 錯誤",
+          "correct": false
+        },
+        {
+          "text_en": "To handle errors thrown in component lifecycle hooks",
+          "text_zh": "只處理生命週期 hook 錯誤",
+          "correct": false
+        },
+        {
+          "text_en": "To handle errors thrown in component watchers",
+          "text_zh": "只處理 watcher 錯誤",
+          "correct": false
+        },
+        {
+          "text_en": "To handle errors thrown in any of the cases mentioned",
+          "text_zh": "上述全部都處理",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "How can you add a transition effect to an element in Vue?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Using the &lt;Transition&gt; wrapper element"
+        },
+        {
+          "value": 2,
+          "text": "Using the v-transition directive"
+        },
+        {
+          "value": 3,
+          "text": "Using the transition() method"
+        },
+        {
+          "value": 4,
+          "text": "Transitions are not supported in Vue"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 中如何為元素加上 transition 效果？",
+      "options_translations": [
+        {
+          "text_en": "Using the <Transition> wrapper element",
+          "text_zh": "用 <Transition> 包裹",
+          "correct": true
+        },
+        {
+          "text_en": "Using the v-transition directive",
+          "text_zh": "沒這指令",
+          "correct": false
+        },
+        {
+          "text_en": "Using the transition() method",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Transitions are not supported in Vue",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "Which special Vue attribute is recommended to provide when generating elements with v-for?",
+      "options": [
+        {
+          "value": 1,
+          "text": "key"
+        },
+        {
+          "value": 2,
+          "text": "note"
+        },
+        {
+          "value": 3,
+          "text": "elementID"
+        },
+        {
+          "value": 4,
+          "text": "number"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "v-for 產生元素時建議提供哪個特殊屬性？",
+      "options_translations": [
+        {
+          "text_en": "key",
+          "text_zh": ":key 提供穩定識別",
+          "correct": true
+        },
+        {
+          "text_en": "note",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "elementID",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "number",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "What command do we need to write to run our Vue project in developer mode?",
+      "options": [
+        {
+          "value": 1,
+          "text": "run vue in developer mode"
+        },
+        {
+          "value": 2,
+          "text": "npm run vue"
+        },
+        {
+          "value": 3,
+          "text": "run dev mode"
+        },
+        {
+          "value": 4,
+          "text": "compile to dev"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "執行 Vue 專案開發模式的指令？",
+      "options_translations": [
+        {
+          "text_en": "run vue in developer mode",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "npm run vue",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "run dev mode",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "compile to dev",
+          "text_zh": "接近，但實際是 npm run dev / serve",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "What attribute must be used to make the CSS rules inside the &lt;style&gt; tag of a component local to only that specific component?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;style local&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;style onlyHere&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;style scoped&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;style this&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "哪個屬性讓元件 <style> 的 CSS 規則只作用於該元件？",
+      "options_translations": [
+        {
+          "text_en": "<style local>",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "<style onlyHere>",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "<style scoped>",
+          "text_zh": "scoped 屬性",
+          "correct": true
+        },
+        {
+          "text_en": "<style this>",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "How is data passed to a component using props?",
+      "options": [
+        {
+          "value": 1,
+          "text": "as a special attribute"
+        },
+        {
+          "value": 2,
+          "text": "as text between the components start tag and end tag"
+        },
+        {
+          "value": 3,
+          "text": "as a special wrapper tag"
+        },
+        {
+          "value": 4,
+          "text": "as a method"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "使用 props 時如何傳資料給元件？",
+      "options_translations": [
+        {
+          "text_en": "as a special attribute",
+          "text_zh": "以特殊屬性傳入",
+          "correct": true
+        },
+        {
+          "text_en": "as text between the components start tag and end tag",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "as a special wrapper tag",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "as a method",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "In what ways can we pass data from a parent to a child component?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Fallthrough Attributes"
+        },
+        {
+          "value": 2,
+          "text": "Props"
+        },
+        {
+          "value": 3,
+          "text": "Provide/Inject"
+        },
+        {
+          "value": 4,
+          "text": "All of the techniques mentioned"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "父元件可以用什麼方式傳資料給子元件？",
+      "options_translations": [
+        {
+          "text_en": "Fallthrough Attributes",
+          "text_zh": "屬性透傳",
+          "correct": false
+        },
+        {
+          "text_en": "Props",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Provide/Inject",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "All of the techniques mentioned",
+          "text_zh": "以上全部皆可",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "Which special tag is used to make dynamic components in Vue?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;KeepAlive&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;Slot&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;DynamicComponent&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;component&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "Vue 中哪個特殊標籤用於建立動態元件？",
+      "options_translations": [
+        {
+          "text_en": "<KeepAlive>",
+          "text_zh": "快取元件",
+          "correct": false
+        },
+        {
+          "text_en": "<Slot>",
+          "text_zh": "插槽",
+          "correct": false
+        },
+        {
+          "text_en": "<DynamicComponent>",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "<component>",
+          "text_zh": "動態元件",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Which attribute is used with the &lt;component&gt; tag so that we can switch between components?",
+      "options": [
+        {
+          "value": 1,
+          "text": "is"
+        },
+        {
+          "value": 2,
+          "text": "dynamic"
+        },
+        {
+          "value": 3,
+          "text": "switch"
+        },
+        {
+          "value": 4,
+          "text": "componentName"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE",
+      "prompt_zh": "<component> 標籤用哪個屬性切換元件？",
+      "options_translations": [
+        {
+          "text_en": "is",
+          "text_zh": ":is 綁定動態元件",
+          "correct": true
+        },
+        {
+          "text_en": "dynamic",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "switch",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "componentName",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

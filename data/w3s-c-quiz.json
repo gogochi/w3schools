@@ -1,0 +1,1109 @@
+{
+  "test": "C",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is a correct syntax to output \"Hello World\" in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "System.out.printline(\"Hello World\");"
+        },
+        {
+          "value": 2,
+          "text": "cout &lt;&lt; \"Hello World\";"
+        },
+        {
+          "value": 3,
+          "text": "printf(\"Hello World\");"
+        },
+        {
+          "value": 4,
+          "text": "Console.WriteLine(\"Hello World\");"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 語言中輸出 \"Hello World\" 的正確語法是？",
+      "options_translations": [
+        {
+          "text_en": "System.out.printline(\"Hello World\");",
+          "text_zh": "那是 Java 語法（且 println 拼錯）",
+          "correct": false
+        },
+        {
+          "text_en": "cout << \"Hello World\";",
+          "text_zh": "那是 C++",
+          "correct": false
+        },
+        {
+          "text_en": "printf(\"Hello World\");",
+          "text_zh": "C 標準輸出",
+          "correct": true
+        },
+        {
+          "text_en": "Console.WriteLine(\"Hello World\");",
+          "text_zh": "那是 C#",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "How do you insert COMMENTS in C code?",
+      "options": [
+        {
+          "value": 1,
+          "text": "* This is a comment"
+        },
+        {
+          "value": 2,
+          "text": "// This is a comment"
+        },
+        {
+          "value": 3,
+          "text": "# This is a comment"
+        },
+        {
+          "value": 4,
+          "text": "-- This is a comment"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 語言中如何加註解？",
+      "options_translations": [
+        {
+          "text_en": "* This is a comment",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "// This is a comment",
+          "text_zh": "單行註解（C99+）",
+          "correct": true
+        },
+        {
+          "text_en": "# This is a comment",
+          "text_zh": "那是 Python/Shell",
+          "correct": false
+        },
+        {
+          "text_en": "-- This is a comment",
+          "text_zh": "那是 SQL/Lua",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "When a variable is created in C, a memory address is assigned to the variable.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "在 C 中，建立變數時會分配一個記憶體位址。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確（變數有記憶體位址）",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "In C, code statements must end with a semicolon (;)",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "在 C 中，敘述必須以分號 (;) 結尾。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "How can you create a variable with the numeric value 5?",
+      "options": [
+        {
+          "value": 1,
+          "text": "val num = 5;"
+        },
+        {
+          "value": 2,
+          "text": "num = 5;"
+        },
+        {
+          "value": 3,
+          "text": "int num = 5;"
+        },
+        {
+          "value": 4,
+          "text": "num = 5 int;"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "如何建立值為 5 的整數變數？",
+      "options_translations": [
+        {
+          "text_en": "val num = 5;",
+          "text_zh": "val 不是 C 關鍵字",
+          "correct": false
+        },
+        {
+          "text_en": "num = 5;",
+          "text_zh": "沒型別宣告",
+          "correct": false
+        },
+        {
+          "text_en": "int num = 5;",
+          "text_zh": "int 型別宣告",
+          "correct": true
+        },
+        {
+          "text_en": "num = 5 int;",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "How can you create a variable with the floating number 2.8?",
+      "options": [
+        {
+          "value": 1,
+          "text": "val num = 2.8;"
+        },
+        {
+          "value": 2,
+          "text": "num = 2.8 double;"
+        },
+        {
+          "value": 3,
+          "text": "float num = 2.8;"
+        },
+        {
+          "value": 4,
+          "text": "num = 2.8 float;"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "如何建立值為 2.8 的浮點變數？",
+      "options_translations": [
+        {
+          "text_en": "val num = 2.8;",
+          "text_zh": "val 不是 C 關鍵字",
+          "correct": false
+        },
+        {
+          "text_en": "num = 2.8 double;",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "float num = 2.8;",
+          "text_zh": "float 型別宣告",
+          "correct": true
+        },
+        {
+          "text_en": "num = 2.8 float;",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "Which operator is used to add together two values?",
+      "options": [
+        {
+          "value": 1,
+          "text": "The & sign"
+        },
+        {
+          "value": 2,
+          "text": "The * sign"
+        },
+        {
+          "value": 3,
+          "text": "The + sign"
+        },
+        {
+          "value": 4,
+          "text": "The ADD keyword"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個運算子用來把兩個值相加？",
+      "options_translations": [
+        {
+          "text_en": "The & sign",
+          "text_zh": "& 是位元 AND 或取址",
+          "correct": false
+        },
+        {
+          "text_en": "The * sign",
+          "text_zh": "* 是乘號",
+          "correct": false
+        },
+        {
+          "text_en": "The + sign",
+          "text_zh": "+ 加號",
+          "correct": true
+        },
+        {
+          "text_en": "The ADD keyword",
+          "text_zh": "沒這關鍵字",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "Which function is often used to output values and print text?",
+      "options": [
+        {
+          "value": 1,
+          "text": "printf()"
+        },
+        {
+          "value": 2,
+          "text": "printword()"
+        },
+        {
+          "value": 3,
+          "text": "output()"
+        },
+        {
+          "value": 4,
+          "text": "write()"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個函式常用於輸出值與列印文字？",
+      "options_translations": [
+        {
+          "text_en": "printf()",
+          "text_zh": "格式化輸出",
+          "correct": true
+        },
+        {
+          "text_en": "printword()",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "output()",
+          "text_zh": "沒這個函式",
+          "correct": false
+        },
+        {
+          "text_en": "write()",
+          "text_zh": "低階系統呼叫，不是 C 標準輸出",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "Which format specifier is often used to print integers?",
+      "options": [
+        {
+          "value": 1,
+          "text": "%d"
+        },
+        {
+          "value": 2,
+          "text": "%c"
+        },
+        {
+          "value": 3,
+          "text": "%f"
+        },
+        {
+          "value": 4,
+          "text": "%s"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個格式說明符常用來列印整數？",
+      "options_translations": [
+        {
+          "text_en": "%d",
+          "text_zh": "整數 decimal",
+          "correct": true
+        },
+        {
+          "text_en": "%c",
+          "text_zh": "單一字元",
+          "correct": false
+        },
+        {
+          "text_en": "%f",
+          "text_zh": "浮點數",
+          "correct": false
+        },
+        {
+          "text_en": "%s",
+          "text_zh": "字串",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "Which operator can be used to compare two values?",
+      "options": [
+        {
+          "value": 1,
+          "text": "=="
+        },
+        {
+          "value": 2,
+          "text": "&lt;&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&gt;&lt;"
+        },
+        {
+          "value": 4,
+          "text": "="
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個運算子用來比較兩個值是否相等？",
+      "options_translations": [
+        {
+          "text_en": "==",
+          "text_zh": "等於比較",
+          "correct": true
+        },
+        {
+          "text_en": "<>",
+          "text_zh": "非 C 語法",
+          "correct": false
+        },
+        {
+          "text_en": "><",
+          "text_zh": "非 C 語法",
+          "correct": false
+        },
+        {
+          "text_en": "=",
+          "text_zh": "= 是賦值",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "Which operator can be used to find the memory size (in bytes) of a data type or variable?",
+      "options": [
+        {
+          "value": 1,
+          "text": "The sizer property"
+        },
+        {
+          "value": 2,
+          "text": "The length property"
+        },
+        {
+          "value": 3,
+          "text": "The sizeof property"
+        },
+        {
+          "value": 4,
+          "text": "The len property"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個運算子可以取得資料型別或變數的記憶體大小（位元組）？",
+      "options_translations": [
+        {
+          "text_en": "The sizer property",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "The length property",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "The sizeof property",
+          "text_zh": "sizeof 運算子",
+          "correct": true
+        },
+        {
+          "text_en": "The len property",
+          "text_zh": "沒這個",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "Which keyword can be used to make a variable unchangeable/read-only?",
+      "options": [
+        {
+          "value": 1,
+          "text": "const"
+        },
+        {
+          "value": 2,
+          "text": "final"
+        },
+        {
+          "value": 3,
+          "text": "readonly"
+        },
+        {
+          "value": 4,
+          "text": "constant"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個關鍵字可讓變數變成不可更改/唯讀？",
+      "options_translations": [
+        {
+          "text_en": "const",
+          "text_zh": "const 關鍵字",
+          "correct": true
+        },
+        {
+          "text_en": "final",
+          "text_zh": "那是 Java/Kotlin",
+          "correct": false
+        },
+        {
+          "text_en": "readonly",
+          "text_zh": "那是 C#",
+          "correct": false
+        },
+        {
+          "text_en": "constant",
+          "text_zh": "沒這個關鍵字",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "What do we call the following? int myNumbers[] = {25, 50, 75, 100};",
+      "options": [
+        {
+          "value": 1,
+          "text": "An array"
+        },
+        {
+          "value": 2,
+          "text": "A pointer"
+        },
+        {
+          "value": 3,
+          "text": "A class"
+        },
+        {
+          "value": 4,
+          "text": "None of the above"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "以下宣告 int myNumbers[] = {25, 50, 75, 100}; 叫做什麼？",
+      "options_translations": [
+        {
+          "text_en": "An array",
+          "text_zh": "陣列",
+          "correct": true
+        },
+        {
+          "text_en": "A pointer",
+          "text_zh": "指標",
+          "correct": false
+        },
+        {
+          "text_en": "A class",
+          "text_zh": "類別（C 沒有 class）",
+          "correct": false
+        },
+        {
+          "text_en": "None of the above",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "Array indexes start with:",
+      "options": [
+        {
+          "value": 1,
+          "text": "0"
+        },
+        {
+          "value": 2,
+          "text": "1"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "陣列索引從哪個數字開始？",
+      "options_translations": [
+        {
+          "text_en": "0",
+          "text_zh": "0-based",
+          "correct": true
+        },
+        {
+          "text_en": "1",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "How do you call a function in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "myFunction();"
+        },
+        {
+          "value": 2,
+          "text": "(myFunction);"
+        },
+        {
+          "value": 3,
+          "text": "myFunction;"
+        },
+        {
+          "value": 4,
+          "text": "myFunction[];"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 中如何呼叫函式？",
+      "options_translations": [
+        {
+          "text_en": "myFunction();",
+          "text_zh": "加括號呼叫",
+          "correct": true
+        },
+        {
+          "text_en": "(myFunction);",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "myFunction;",
+          "text_zh": "沒呼叫，只是表達式",
+          "correct": false
+        },
+        {
+          "text_en": "myFunction[];",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "How do you start writing an if statement in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "if x &gt; y"
+        },
+        {
+          "value": 2,
+          "text": "if x &gt; y then"
+        },
+        {
+          "value": 3,
+          "text": "if (x &gt; y)"
+        },
+        {
+          "value": 4,
+          "text": "if x &gt; y()"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 中 if 敘述怎麼寫？",
+      "options_translations": [
+        {
+          "text_en": "if x > y",
+          "text_zh": "條件需 () 包起來",
+          "correct": false
+        },
+        {
+          "text_en": "if x > y then",
+          "text_zh": "C 不用 then",
+          "correct": false
+        },
+        {
+          "text_en": "if (x > y)",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "if x > y()",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "How do you start writing a while loop in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "if x &gt; y while"
+        },
+        {
+          "value": 2,
+          "text": "while (x &lt; y)"
+        },
+        {
+          "value": 3,
+          "text": "while x &lt; y"
+        },
+        {
+          "value": 4,
+          "text": "while x &lt; y then"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 中 while 迴圈怎麼開頭？",
+      "options_translations": [
+        {
+          "text_en": "if x > y while",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "while (x < y)",
+          "text_zh": "條件用 ()",
+          "correct": true
+        },
+        {
+          "text_en": "while x < y",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "while x < y then",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "Which keyword is used to return a value inside a function?",
+      "options": [
+        {
+          "value": 1,
+          "text": "get"
+        },
+        {
+          "value": 2,
+          "text": "return"
+        },
+        {
+          "value": 3,
+          "text": "break"
+        },
+        {
+          "value": 4,
+          "text": "void"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個關鍵字用來在函式內回傳值？",
+      "options_translations": [
+        {
+          "text_en": "get",
+          "text_zh": "沒這關鍵字",
+          "correct": false
+        },
+        {
+          "text_en": "return",
+          "text_zh": "return 回傳",
+          "correct": true
+        },
+        {
+          "text_en": "break",
+          "text_zh": "break 是中斷迴圈/switch",
+          "correct": false
+        },
+        {
+          "text_en": "void",
+          "text_zh": "void 表示無回傳值的函式型別",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "How do you start writing a for loop in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "for (x in y)"
+        },
+        {
+          "value": 2,
+          "text": "for (int i = 0; i &lt; 5; i++)"
+        },
+        {
+          "value": 3,
+          "text": "for (int i = 0; switch &lt; 5; i++)"
+        },
+        {
+          "value": 4,
+          "text": "for (int i = 0; while &lt; 5; i++)"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 中 for 迴圈怎麼開頭？",
+      "options_translations": [
+        {
+          "text_en": "for (x in y)",
+          "text_zh": "那是 Python/JS",
+          "correct": false
+        },
+        {
+          "text_en": "for (int i = 0; i < 5; i++)",
+          "text_zh": "標準三段式",
+          "correct": true
+        },
+        {
+          "text_en": "for (int i = 0; switch < 5; i++)",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "for (int i = 0; while < 5; i++)",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "Which statement can be used to select one of many code blocks to be executed?",
+      "options": [
+        {
+          "value": 1,
+          "text": "switch"
+        },
+        {
+          "value": 2,
+          "text": "break"
+        },
+        {
+          "value": 3,
+          "text": "default"
+        },
+        {
+          "value": 4,
+          "text": "when"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個敘述用來從多個程式碼區塊中選一個執行？",
+      "options_translations": [
+        {
+          "text_en": "switch",
+          "text_zh": "switch-case",
+          "correct": true
+        },
+        {
+          "text_en": "break",
+          "text_zh": "中斷",
+          "correct": false
+        },
+        {
+          "text_en": "default",
+          "text_zh": "switch 內的預設區塊",
+          "correct": false
+        },
+        {
+          "text_en": "when",
+          "text_zh": "沒這關鍵字（C 沒）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "Which statement is used to stop a loop?",
+      "options": [
+        {
+          "value": 1,
+          "text": "stop"
+        },
+        {
+          "value": 2,
+          "text": "exit"
+        },
+        {
+          "value": 3,
+          "text": "void"
+        },
+        {
+          "value": 4,
+          "text": "break"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個敘述用來中斷迴圈？",
+      "options_translations": [
+        {
+          "text_en": "stop",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "exit",
+          "text_zh": "exit 是終止整個程式",
+          "correct": false
+        },
+        {
+          "text_en": "void",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "break",
+          "text_zh": "break 中斷迴圈",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "Which keyword is used to create a class in C?",
+      "options": [
+        {
+          "value": 1,
+          "text": "class"
+        },
+        {
+          "value": 2,
+          "text": "class()"
+        },
+        {
+          "value": 3,
+          "text": "class = myClass"
+        },
+        {
+          "value": 4,
+          "text": "None of the above"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "C 中用哪個關鍵字建立 class？",
+      "options_translations": [
+        {
+          "text_en": "class",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "class()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "class = myClass",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "None of the above",
+          "text_zh": "C 沒有 class（只有 struct）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "What is ptr in the following code known as? int* ptr = &myAge;",
+      "options": [
+        {
+          "value": 1,
+          "text": "A pointer"
+        },
+        {
+          "value": 2,
+          "text": "A class"
+        },
+        {
+          "value": 3,
+          "text": "An array"
+        },
+        {
+          "value": 4,
+          "text": "A parameter"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "以下程式中 int* ptr = &myAge; 的 ptr 叫做？",
+      "options_translations": [
+        {
+          "text_en": "A pointer",
+          "text_zh": "指標",
+          "correct": true
+        },
+        {
+          "text_en": "A class",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "An array",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "A parameter",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "In C, it is possible to inherit class properties and functions from one class to another.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "在 C 中，可以從一個 class 繼承屬性與函式到另一個 class。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "C 沒有 class，更沒繼承（C++ 才有）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Which keyword is used to create a structure?",
+      "options": [
+        {
+          "value": 1,
+          "text": "struct"
+        },
+        {
+          "value": 2,
+          "text": "structure"
+        },
+        {
+          "value": 3,
+          "text": "str"
+        },
+        {
+          "value": 4,
+          "text": "structs"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.php?qtest=C",
+      "prompt_zh": "哪個關鍵字用來建立結構（structure）？",
+      "options_translations": [
+        {
+          "text_en": "struct",
+          "text_zh": "struct 結構",
+          "correct": true
+        },
+        {
+          "text_en": "structure",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "str",
+          "text_zh": "沒這個",
+          "correct": false
+        },
+        {
+          "text_en": "structs",
+          "text_zh": "沒這個",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

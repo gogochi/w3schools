@@ -1,0 +1,3542 @@
+{
+  "language": "sql",
+  "topics": {
+    "alias": [
+      {
+        "question": "Which SQL statement creates an alias for the CustomerID column as 'ID'?",
+        "options": [
+          "SELECT CustomerID = 'ID' FROM Customers;",
+          "SELECT CustomerID AS ID FROM Customers;",
+          "SELECT CustomerID TO ID FROM Customers;",
+          "SELECT CustomerID 'ID' FROM Customers;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alias1",
+        "prompt_zh": "[別名(AS)] Which SQL statement creates an alias for the CustomerID column as 'ID'?"
+      },
+      {
+        "question": "What is the primary purpose of SQL aliases?",
+        "options": [
+          "To permanently rename a table or column",
+          "To create temporary names for columns or tables",
+          "To join multiple tables together",
+          "To optimize query performance"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alias2",
+        "prompt_zh": "primary purpose of SQL aliases 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_alias1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alias3",
+        "prompt_zh": "別名(AS) 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_alias2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alias4",
+        "prompt_zh": "別名(AS) 填空題"
+      },
+      {
+        "draganddroptext": "<code>SELECT ProductName AS ___</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to create an alias for ProductName as 'Great Products'.",
+        "options": [
+          "<code>'Great Products'</code>",
+          "<code>[Great Products]</code>",
+          "<code>'Products'</code>",
+          "<code>[Products]</code>",
+          "<code>Great Products</code>"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alias5",
+        "prompt_zh": "[別名(AS)] 拖放正確的 syntax to create an alias for ProductName as 'Great Products'."
+      }
+    ],
+    "alter": [
+      {
+        "question": "Which SQL statement adds a new column named 'Email' to the 'Employees' table?",
+        "options": [
+          "ALTER TABLE Employees ADD COLUMN Email varchar(255);",
+          "ALTER Employees ADD COLUMN Email varchar(255);",
+          "ALTER TABLE Employees ADD Email varchar(255);",
+          "MODIFY TABLE Employees ADD COLUMN Email varchar(255);"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter1",
+        "prompt_zh": "[ALTER TABLE] Which SQL statement adds a new column named 'Email' to the 'Employees' table?"
+      },
+      {
+        "question": "What does the SQL <code class='w3-codespan'>ALTER TABLE</code> statement allow you to do?",
+        "options": [
+          "Create a new table in the database",
+          "Delete all data from a table",
+          "Add, delete, or modify columns in an existing table",
+          "Insert data into a table"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter2",
+        "prompt_zh": "the SQL ALTER TABLE statement allow you to 做什麼？"
+      },
+      {
+        "question": "What will the following SQL statement do?<br><code class='codeblock'>ALTER TABLE Customers DROP COLUMN Email;</code>",
+        "options": [
+          "Delete all records in the 'Email' column",
+          "Delete the 'Email' column from the 'Customers' table",
+          "Change the data type of the 'Email' column",
+          "Rename the 'Email' column to 'CustomerEmail'"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter3",
+        "prompt_zh": "[ALTER TABLE] What will the following SQL statement do?ALTER TABLE Customers DROP COLUMN Email;"
+      },
+      {
+        "fillintheblanks": "exercise_database6.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter4",
+        "prompt_zh": "ALTER TABLE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_database7.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter5",
+        "prompt_zh": "ALTER TABLE 填空題"
+      },
+      {
+        "question": "Which syntax is correct for changing the data type of a column in MySQL?",
+        "options": [
+          "ALTER TABLE table_name ALTER COLUMN column_name datatype;",
+          "ALTER TABLE table_name MODIFY COLUMN column_name datatype;",
+          "MODIFY COLUMN column_name datatype;",
+          "CHANGE table_name column_name datatype;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter6",
+        "prompt_zh": "[ALTER TABLE] Which syntax is correct for changing the data type of a column in MySQL?"
+      },
+      {
+        "draganddroptext": "<code>___ TABLE Persons ___ COLUMN DateOfBirth;</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to form a statement that deletes the 'DateOfBirth' column from the 'Persons' table.",
+        "options": [
+          "ALTER",
+          "DROP",
+          "ADD",
+          "MODIFY"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter7",
+        "prompt_zh": "[ALTER TABLE] 拖放正確的 關鍵字s to form a statement that deletes the 'DateOfBirth' column from the 'Persons' table."
+      },
+      {
+        "question": "How do you rename a column in a table in SQL Server?",
+        "options": [
+          "ALTER TABLE table_name RENAME COLUMN old_name TO new_name;",
+          "EXEC sp_rename 'table_name.old_name', 'new_name', 'COLUMN';",
+          "ALTER COLUMN table_name old_name TO new_name;",
+          "CHANGE COLUMN table_name old_name TO new_name;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_alter8",
+        "prompt_zh": "如何rename a column in a table in SQL Server？"
+      }
+    ],
+    "and": [
+      {
+        "question": "True or False:<br>The <code class='w3-codespan'>AND</code> operator is used to filter records based on more than one condition.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_and1",
+        "prompt_zh": "True 或 False：The AND operator is used to filter records based on more than one condition."
+      },
+      {
+        "question": "What will this SQL query return?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE Country = 'Spain'<br>AND CustomerName LIKE 'G%';</code>",
+        "options": [
+          "All customers from Spain",
+          "All customers whose names start with 'G'",
+          "All customers from Spain whose names start with 'G'",
+          "All customers whose names start with 'Spain'"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_and2",
+        "prompt_zh": "this SQL query 會回傳什麼？SELECT * FROM CustomersWHERE Country = 'Spain'AND CustomerName LIKE 'G%';"
+      },
+      {
+        "question": "What result will this query return?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE Country = 'Germany'<br>AND City = 'Berlin' AND PostalCode > 12000;</code>",
+        "options": [
+          "Customers from Germany in any city",
+          "Customers from Germany in Berlin with a PostalCode over 12000",
+          "Customers from Berlin with a PostalCode over 12000",
+          "All German customers regardless of city or PostalCode"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_and3",
+        "prompt_zh": "[AND 運算子] What result will this query return?SELECT * FROM CustomersWHERE Country = 'Germany'AND City = 'Berlin' AND PostalCode > 12000;"
+      },
+      {
+        "fillintheblanks": "exercise_and1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_and4",
+        "prompt_zh": "AND 運算子 填空題"
+      },
+      {
+        "question": "True or False:<br>You cannot combine <code class='w3-codespan'>AND</code> and <code class='w3-codespan'>OR</code> operators.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_and5",
+        "prompt_zh": "True 或 False：You cannot combine AND and OR operators."
+      }
+    ],
+    "any_all": [
+      {
+        "question": "Which SQL statement uses the <code class='w3-codespan'>ANY</code> operator correctly?",
+        "options": [
+          "SELECT *<br>FROM Products<br>WHERE ProductID ANY <br>(SELECT ProductID FROM OrderDetails);",
+          "SELECT *<br>FROM Products<br>WHERE ProductID = ANY <br>(SELECT ProductID FROM OrderDetails);",
+          "SELECT ProductName ANY <br>(SELECT ProductID FROM OrderDetails WHERE Quantity > 10);",
+          "SELECT *<br>FROM Products<br>WHERE ANY <br>ProductID IN (SELECT ProductID FROM OrderDetails);"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_any_all1",
+        "prompt_zh": "[ANY/ALL] Which SQL statement uses the ANY operator correctly?"
+      },
+      {
+        "question": "What does the SQL <code class='w3-codespan'>ALL</code> operator do?",
+        "options": [
+          "Returns TRUE if all subquery values meet the condition",
+          "Returns TRUE if any subquery value meets the condition",
+          "Returns all columns from the table",
+          "Returns only distinct rows from the table"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_any_all2",
+        "prompt_zh": "the SQL ALL operator 做什麼？"
+      },
+      {
+        "question": "Which SQL statement uses the <code class='w3-codespan'>ALL</code> operator correctly?",
+        "options": [
+          "SELECT ProductName<br>FROM Products<br>WHERE ProductID = ALL<br>(SELECT ProductID FROM OrderDetails);",
+          "SELECT ALL ProductName<br>FROM Products<br>WHERE Quantity > 10;",
+          "SELECT *<br>FROM Products<br>WHERE ALL<br>ProductID IN (SELECT ProductID FROM OrderDetails);",
+          "SELECT *<br>FROM Products<br>WHERE ProductID ALL<br>(SELECT ProductID FROM OrderDetails);"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_any_all3",
+        "prompt_zh": "[ANY/ALL] Which SQL statement uses the ALL operator correctly?"
+      },
+      {
+        "draganddroptext": "<code>SELECT ProductName<br>FROM Products<br>WHERE ProductID ___ ___ <br>(SELECT ProductID<br>FROM OrderDetails<br>WHERE Quantity > 10);</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to complete the query using the ANY operator.",
+        "options": [
+          "<code>=</code>",
+          "<code>ANY</code>",
+          "<code>ALL</code>",
+          "<code>NOT</code>"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_any_all4",
+        "prompt_zh": "[ANY/ALL] 拖放正確的 SQL 關鍵字s to complete the query using the ANY operator."
+      },
+      {
+        "draganddroptext": "<code>SELECT ProductName<br>FROM Products<br>WHERE ProductID ___ ___ <br>(SELECT ProductID<br>FROM OrderDetails<br>WHERE Quantity = 10);</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to complete the query using the ALL operator.",
+        "options": [
+          "<code>=</code>",
+          "<code>ANY</code>",
+          "<code>ALL</code>",
+          "<code>NOT</code>"
+        ],
+        "correct": [
+          0,
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_any_all5",
+        "prompt_zh": "[ANY/ALL] 拖放正確的 SQL 關鍵字s to complete the query using the ALL operator."
+      }
+    ],
+    "autoincrement": [
+      {
+        "question": "What is the primary purpose of an <code class='w3-codespan'>AUTO_INCREMENT</code> field in SQL?",
+        "options": [
+          "To allow duplicate values in a column",
+          "To automatically generate a unique number for a column",
+          "To reset column values after deletion",
+          "To format column data as text"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_autoincrement1",
+        "prompt_zh": "primary purpose of an AUTO_INCREMENT field in SQL 是什麼？"
+      },
+      {
+        "question": "Which keyword is used to implement auto-increment in MySQL?",
+        "options": [
+          "IDENTITY",
+          "SERIAL",
+          "AUTO_INCREMENT",
+          "AUTOINCREMENT"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_autoincrement2",
+        "prompt_zh": "哪個關鍵字用來implement auto-increment in MySQL？"
+      },
+      {
+        "question": "Which keyword is used to implement auto-increment in SQL Server?",
+        "options": [
+          "IDENTITY",
+          "SERIAL",
+          "AUTO_INCREMENT",
+          "AUTOINCREMENT"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_autoincrement3",
+        "prompt_zh": "哪個關鍵字用來implement auto-increment in SQL Server？"
+      }
+    ],
+    "avg": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>AVG()</code> function do?",
+        "options": [
+          "Returns the sum of a numeric column",
+          "Returns the average value of a numeric column",
+          "Counts the number of rows in a table",
+          "Finds the maximum value in a numeric column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_avg1",
+        "prompt_zh": "the SQL AVG() function 做什麼？"
+      },
+      {
+        "question": "Which of the following queries will return the average price of products?",
+        "options": [
+          "<code>SELECT SUM(Price) FROM Products;</code>",
+          "<code>SELECT COUNT(Price) FROM Products;</code>",
+          "<code>SELECT MAX(Price) FROM Products;</code>",
+          "<code>SELECT AVG(Price) FROM Products;</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_avg2",
+        "prompt_zh": "[AVG()] Which of the following queries will return the average price of products?"
+      },
+      {
+        "fillintheblanks": "exercise_functions4.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_avg3",
+        "prompt_zh": "AVG() 填空題"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>AVG()</code> function ignore while calculating the average?",
+        "options": [
+          "Zero values",
+          "Negative values",
+          "NULL values",
+          "Duplicate values"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_avg4",
+        "prompt_zh": "[AVG()] What does the AVG() function ignore while calculating the average?"
+      },
+      {
+        "draganddroptext": "<code>SELECT ___(Price) FROM Products;</code>",
+        "draganddropquestion": "Drag and drop the correct function to calculate the average price of products.",
+        "options": [
+          "<code>AVG</code>",
+          "<code>SUM</code>",
+          "<code>COUNT</code>",
+          "<code>MAX</code>"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_avg5",
+        "prompt_zh": "[AVG()] 拖放正確的 function to calculate the average price of products."
+      }
+    ],
+    "backup_db": [
+      {
+        "question": "Which SQL statement creates a full backup of a database named 'myDB'?",
+        "options": [
+          "BACKUP DATABASE myDB TO FILE = 'C:\\backups\\myDB.bak';",
+          "BACKUP DATABASE myDB TO DISK = 'C:\\backups\\myDB.bak';",
+          "BACKUP DATABASE myDB WITH DIFFERENTIAL;",
+          "SAVE DATABASE myDB TO 'C:\\backups\\myDB.bak';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_backup_db1",
+        "prompt_zh": "[備份資料庫] Which SQL statement creates a full backup of a database named 'myDB'?"
+      },
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>BACKUP DATABASE</code> statement?",
+        "options": [
+          "To restore a database from a backup file",
+          "To create a backup of an existing database",
+          "To delete old database backups",
+          "To copy tables from one database to another"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_backup_db2",
+        "prompt_zh": "purpose of the SQL BACKUP DATABASE statement 是什麼？"
+      },
+      {
+        "question": "What is the primary purpose of a differential backup?",
+        "options": [
+          "To back up the entire database",
+          "To back up only the parts that have changed since the last full backup",
+          "To back up the database schema",
+          "To create a temporary backup"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_backup_db3",
+        "prompt_zh": "primary purpose of a differential backup 是什麼？"
+      },
+      {
+        "question": "Which syntax is used to create a differential backup in SQL Server?",
+        "options": [
+          "BACKUP DATABASE myDB TO DISK = 'D:\\myDB.bak' DIFFERENTIAL;",
+          "BACKUP DATABASE myDB TO DISK = 'D:\\myDB.bak' WITH DIFFERENTIAL;",
+          "BACKUP DIFFERENTIAL DATABASE myDB TO DISK = 'D:\\myDB.bak';",
+          "DIFFERENTIAL BACKUP DATABASE myDB TO DISK = 'D:\\myDB.bak';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_backup_db4",
+        "prompt_zh": "哪個 syntax 用來建立 differential backup in SQL Server？"
+      },
+      {
+        "draganddroptext": "<code>___ ___ ___ TO DISK = ___;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to back up a database named 'SchoolDB' to the D drive.",
+        "options": [
+          "DATABASE",
+          "'D:\\backups\\SchoolDB.bak'",
+          "SchoolDB",
+          "BACKUP"
+        ],
+        "correct": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_backup_db5",
+        "prompt_zh": "[備份資料庫] 拖放正確的 SQL 關鍵字s to back up a database named 'SchoolDB' to the D drive."
+      }
+    ],
+    "between": [
+      {
+        "question": "Which SQL statement selects all products with a price between 10 and 20?",
+        "options": [
+          "SELECT * FROM Products WHERE Price = 10 AND Price = 20;",
+          "SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;",
+          "SELECT * FROM Products WHERE Price >= 10 OR Price <= 20;",
+          "SELECT * FROM Products WHERE Price LIKE '10-20';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between1",
+        "prompt_zh": "[BETWEEN] Which SQL statement selects all products with a price between 10 and 20?"
+      },
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>BETWEEN</code> operator?",
+        "options": [
+          "To select values within a specified range",
+          "To check if a value matches a specific pattern",
+          "To filter values based on a list",
+          "To combine multiple conditions in a WHERE clause"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between2",
+        "prompt_zh": "primary purpose of the SQL BETWEEN operator 是什麼？"
+      },
+      {
+        "question": "What does the SQL <code class='w3-codespan'>NOT BETWEEN</code> operator do?",
+        "options": [
+          "Selects values that do not fall within a specified range",
+          "Selects values that are null",
+          "Selects values outside of a table",
+          "Selects values that match a specified pattern"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between3",
+        "prompt_zh": "the SQL NOT BETWEEN operator 做什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_between1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between4",
+        "prompt_zh": "BETWEEN 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_between2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between5",
+        "prompt_zh": "BETWEEN 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_between3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between6",
+        "prompt_zh": "BETWEEN 填空題"
+      },
+      {
+        "question": "Which SQL query uses <code class='w3-codespan'>BETWEEN</code> with text values?",
+        "options": [
+          "SELECT * FROM Products<br>WHERE ProductName = 'A%' AND ProductName = 'Z%';",
+          "SELECT * FROM Products<br>WHERE ProductName BETWEEN 'Apple' AND 'Orange';",
+          "SELECT * FROM Products<br>WHERE ProductName NOT IN ('Apple', 'Orange');",
+          "SELECT * FROM Products<br>WHERE ProductName LIKE 'Apple%Orange';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between7",
+        "prompt_zh": "[BETWEEN] Which SQL query uses BETWEEN with text values?"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Products ___ Price ___ ___ AND ___;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to complete the SQL query that selects products with prices between 50 and 70.",
+        "options": [
+          "<code>BETWEEN</code>",
+          "<code>NOT</code>",
+          "<code>Price</code>",
+          "<code>50</code>",
+          "<code>70</code>",
+          "<code>WHERE</code>"
+        ],
+        "correct": [
+          5,
+          0,
+          3,
+          4
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_between8",
+        "prompt_zh": "[BETWEEN] 拖放正確的 syntax to complete the SQL query that selects products with prices between 50 and 70."
+      }
+    ],
+    "case": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>CASE</code> expression do?",
+        "options": [
+          "It iterates over table rows and returns a value for each column.",
+          "It evaluates conditions and returns a value based on the first true condition.",
+          "It specifies an alias for a column or table.",
+          "It combines rows from two tables based on a condition."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_case1",
+        "prompt_zh": "the SQL CASE expression 做什麼？"
+      },
+      {
+        "question": "What happens if no condition is true in a <code class='w3-codespan'>CASE</code> expression and there is no <code class='w3-codespan'>ELSE</code> clause?",
+        "options": [
+          "It returns NULL.",
+          "It throws an error.",
+          "It stops execution of the query.",
+          "It defaults to the first condition."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_case2",
+        "prompt_zh": "[CASE 表達式] What happens if no condition is true in a CASE expression and there is no ELSE clause?"
+      },
+      {
+        "draganddroptext": "<code>___ <br>&nbsp;&nbsp;WHEN Quantity > 50 THEN 'High'<br>&nbsp;&nbsp;WHEN Quantity <= 50 THEN 'Low'<br>&nbsp;&nbsp;___ 'Unknown'<br>___ AS QuantityCategory</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to complete the SQL CASE expression.",
+        "options": [
+          "WHEN",
+          "ELSE",
+          "CASE",
+          "AS",
+          "SELECT",
+          "END"
+        ],
+        "correct": [
+          2,
+          1,
+          5
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_case3",
+        "prompt_zh": "[CASE 表達式] 拖放正確的 關鍵字s to complete the SQL CASE expression."
+      }
+    ],
+    "check": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>CHECK</code> constraint?",
+        "options": [
+          "To ensure that a column cannot have NULL values",
+          "To enforce unique values in a column",
+          "To limit the value range that can be placed in a column",
+          "To link a column to a primary key in another table"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_check1",
+        "prompt_zh": "primary purpose of the SQL CHECK constraint 是什麼？"
+      },
+      {
+        "question": "Which SQL statement correctly creates a <code class='w3-codespan'>CHECK</code> constraint on the 'Age' column to ensure it is greater than or equal to 18?",
+        "options": [
+          "ALTER TABLE Persons ADD CHECK (Age > 18);",
+          "ALTER TABLE Persons ADD CHECK (Age >= 18);",
+          "ALTER TABLE Persons ADD CONSTRAINT CHECK (Age = 18);",
+          "ALTER TABLE Persons ADD CHECK Age >= 18;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_check2",
+        "prompt_zh": "[CHECK 約束] Which SQL statement correctly creates a CHECK constraint on the 'Age' column to ensure it is greater than or equal to 18?"
+      },
+      {
+        "question": "Can a <code class='w3-codespan'>CHECK</code> constraint refer to multiple columns in a table?",
+        "options": [
+          "No, CHECK constraints can only apply to a single column",
+          "Yes, but only if the table is newly created",
+          "Yes, a CHECK constraint can validate conditions across multiple columns",
+          "No, for multiple columns, use a UNIQUE constraint instead"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_check3",
+        "prompt_zh": "[CHECK 約束] Can a CHECK constraint refer to multiple columns in a table?"
+      },
+      {
+        "question": "Which SQL statement removes a named <code class='w3-codespan'>CHECK</code> constraint in MySQL?",
+        "options": [
+          "ALTER TABLE Persons DROP CHECK CHK_Age;",
+          "ALTER TABLE Persons REMOVE CONSTRAINT CHK_Age;",
+          "ALTER TABLE Persons DELETE CHECK CHK_Age;",
+          "ALTER TABLE Persons DROP CONSTRAINT CHK_Age;"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_check4",
+        "prompt_zh": "[CHECK 約束] Which SQL statement removes a named CHECK constraint in MySQL?"
+      }
+    ],
+    "comments": [
+      {
+        "question": "What is the primary purpose of comments in SQL?",
+        "options": [
+          "To execute additional SQL statements",
+          "To explain sections of SQL code or prevent execution",
+          "To create aliases for columns",
+          "To perform complex calculations"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments1",
+        "prompt_zh": "primary purpose of comments in SQL 是什麼？"
+      },
+      {
+        "question": "Which symbol is used to start a single-line comment in SQL?",
+        "options": [
+          "--",
+          "//",
+          "/*",
+          "#"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments2",
+        "prompt_zh": "哪個 symbol 用來start a single-line comment in SQL？"
+      },
+      {
+        "question": "What happens to the text inside a multi-line comment?",
+        "options": [
+          "It is executed as part of the SQL statement",
+          "It is ignored by the SQL engine",
+          "It is treated as a syntax error",
+          "It is displayed as output"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments3",
+        "prompt_zh": "[註解] What happens to the text inside a multi-line comment?"
+      },
+      {
+        "question": "Which of the following statements contains a valid multi-line comment?",
+        "options": [
+          "/* SELECT * FROM Customers;",
+          "/* SELECT * FROM Customers */",
+          "-- SELECT * FROM Customers */",
+          "/* SELECT * FROM Customers -- */"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments4",
+        "prompt_zh": "[註解] Which of the following statements contains a valid multi-line comment?"
+      },
+      {
+        "question": "How would you comment out the WHERE clause in the following SQL?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE City='Berlin';</code>",
+        "options": [
+          "<code>-- WHERE City='Berlin';</code>",
+          "<code>SELECT * FROM Customers -- WHERE City='Berlin';</code>",
+          "<code>SELECT * FROM Customers /* WHERE City='Berlin'; */</code>",
+          "Both B and C"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments5",
+        "prompt_zh": "[註解] How would you comment out the WHERE clause in the following SQL?SELECT * FROM CustomersWHERE City='Berlin';"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers<br>___ WHERE City = 'Berlin';</code>",
+        "draganddropquestion": "Drag and drop to make the WHERE clause a single-line comment.",
+        "options": [
+          "<code>--</code>",
+          "<code>/*</code>",
+          "<code>//</code>",
+          "<code>*/</code>"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments6",
+        "prompt_zh": "[註解] Drag and drop to make the WHERE clause a single-line comment."
+      },
+      {
+        "question": "What will the following SQL do?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE (CustomerName LIKE 'A%' /* OR CustomerName LIKE 'B%' */);</code>",
+        "options": [
+          "Return all customers whose names start with 'A' or 'B'",
+          "Return all customers whose names start with 'A'",
+          "Return all customers",
+          "Return no customers"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_comments7",
+        "prompt_zh": "[註解] What will the following SQL do?SELECT * FROM CustomersWHERE (CustomerName LIKE 'A%' /* OR CustomerName LIKE 'B%' */);"
+      }
+    ],
+    "constraints": [
+      {
+        "question": "What is the primary purpose of SQL constraints?",
+        "options": [
+          "To define relationships between databases",
+          "To enforce rules for the data in a table",
+          "To create new tables in a database",
+          "To manage SQL user permissions"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_constraints1",
+        "prompt_zh": "primary purpose of SQL constraints 是什麼？"
+      },
+      {
+        "question": "Which constraint ensures that all values in a column are unique?",
+        "options": [
+          "NOT NULL",
+          "PRIMARY KEY",
+          "UNIQUE",
+          "FOREIGN KEY"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_constraints2",
+        "prompt_zh": "[約束] Which constraint ensures that all values in a column are unique?"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>CHECK</code> constraint do?",
+        "options": [
+          "Ensures that a column cannot have a NULL value",
+          "Ensures that the values in a column satisfy a specific condition",
+          "Sets a default value for a column",
+          "Uniquely identifies each row in a table"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_constraints3",
+        "prompt_zh": "the CHECK constraint 做什麼？"
+      },
+      {
+        "question": "What is the difference between a column-level constraint and a table-level constraint?",
+        "options": [
+          "Column-level constraints apply to one column; table-level constraints apply to multiple columns or the whole table",
+          "Column-level constraints apply to multiple columns; table-level constraints apply to one column",
+          "Column-level constraints are defined using ALTER TABLE; table-level constraints are defined using CREATE TABLE",
+          "There is no difference; they are interchangeable"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_constraints4",
+        "prompt_zh": "difference between a column-level constraint and a table-level constraint 是什麼？"
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>DEFAULT</code> constraint?",
+        "options": [
+          "It prevents NULL values in a column",
+          "It provides a default value for a column if no value is specified",
+          "It ensures all values in a column are unique",
+          "It enforces referential integrity between two tables"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_constraints5",
+        "prompt_zh": "purpose of the DEFAULT constraint 是什麼？"
+      }
+    ],
+    "count": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>COUNT()</code> function do?",
+        "options": [
+          "Calculates the sum of all values in a column",
+          "Returns the number of rows that match a specified criterion",
+          "Finds the minimum value in a column",
+          "Returns the average value of all rows in a column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_count1",
+        "prompt_zh": "the SQL COUNT() function 做什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_functions3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_count2",
+        "prompt_zh": "COUNT() 填空題"
+      },
+      {
+        "question": "Which keyword can be used to ignore duplicates?",
+        "options": [
+          "DISCOUNT",
+          "DISTINCT",
+          "DESC",
+          "DESCRIPTIVE"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_count3",
+        "prompt_zh": "[COUNT()] Which keyword can be used to ignore duplicates?"
+      },
+      {
+        "question": "Which keyword can be used to give a column a name?",
+        "options": [
+          "DESC",
+          "ASC",
+          "AS",
+          "UPDATE",
+          "GROUP"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_count4",
+        "prompt_zh": "[COUNT()] Which keyword can be used to give a column a name?"
+      }
+    ],
+    "create_db": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>CREATE DATABASE</code> statement?",
+        "options": [
+          "To create a new table in an existing database",
+          "To delete an existing database",
+          "To create a new SQL database",
+          "To modify an existing database"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_db1",
+        "prompt_zh": "purpose of the SQL CREATE DATABASE statement 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_database1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_db2",
+        "prompt_zh": "建立資料庫 填空題"
+      },
+      {
+        "question": "What should you ensure before creating a new database?",
+        "options": [
+          "You have guest privileges",
+          "You have admin privileges",
+          "You have at least one existing table",
+          "You have a backup of all other databases"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_db3",
+        "prompt_zh": "[建立資料庫] What should you ensure before creating a new database?"
+      },
+      {
+        "draganddroptext": "<code>___ DATABASE ___;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to create a database named 'SchoolDB'.",
+        "options": [
+          "CREATE",
+          "DATABASE",
+          "TABLE",
+          "SchoolDB"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_db4",
+        "prompt_zh": "[建立資料庫] 拖放正確的 SQL 關鍵字s to create a database named 'SchoolDB'."
+      },
+      {
+        "question": "After creating a database, how can you confirm its creation?",
+        "options": [
+          "By running the command SHOW DATABASES;",
+          "By restarting the SQL server",
+          "By creating a table inside the database",
+          "By running a SELECT query"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_db5",
+        "prompt_zh": "[建立資料庫] After creating a database, how can you confirm its creation?"
+      }
+    ],
+    "create_index": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>CREATE INDEX</code> statement?",
+        "options": [
+          "To create a backup of a table",
+          "To retrieve data more quickly by creating indexes",
+          "To ensure data integrity in a table",
+          "To delete an existing index in a table"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_index1",
+        "prompt_zh": "purpose of the SQL CREATE INDEX statement 是什麼？"
+      },
+      {
+        "question": "How can you create a unique index on the 'ID' column in the 'Persons' table?",
+        "options": [
+          "CREATE INDEX idx_id ON Persons (ID);",
+          "CREATE INDEX UNIQUE idx_id ON Persons (ID);",
+          "CREATE UNIQUE INDEX idx_id ON Persons (ID);",
+          "CREATE INDEX idx_id UNIQUE ON Persons (ID);"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_index2",
+        "prompt_zh": "如何建立 unique index on the 'ID' column in the 'Persons' table？"
+      },
+      {
+        "question": "What is the correct syntax to create an index on both the 'LastName' and 'FirstName' columns?",
+        "options": [
+          "CREATE INDEX idx_fullname ON Persons (LastName, FirstName);",
+          "CREATE INDEX idx_fullname ON (LastName, FirstName) IN Persons;",
+          "CREATE UNIQUE INDEX idx_fullname ON Persons (LastName AND FirstName);",
+          "CREATE INDEX idx_fullname ON Persons {LastName, FirstName};"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_index3",
+        "prompt_zh": "correct syntax to create an index on both the 'LastName' and 'FirstName' columns 是什麼？"
+      },
+      {
+        "question": "Which SQL statement is used to delete an index in a table?",
+        "options": [
+          "DROP INDEX",
+          "DROP ALTER",
+          "ALTER TABLE",
+          "DELETE INDEX"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_index4",
+        "prompt_zh": "哪個 SQL 語句用來delete an index in a table？"
+      },
+      {
+        "question": "What happens when you update a table with indexes?",
+        "options": [
+          "The table updates faster because of the index",
+          "The index does not affect the update process",
+          "The update takes longer because the index also needs to be updated",
+          "Indexes are temporarily removed during updates"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_index5",
+        "prompt_zh": "[建立索引] What happens when you update a table with indexes?"
+      }
+    ],
+    "create_table": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>CREATE TABLE</code> statement?",
+        "options": [
+          "To create a new table in a database",
+          "To insert data into a table",
+          "To join a table",
+          "To delete a table from a database"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_table1",
+        "prompt_zh": "primary purpose of the SQL CREATE TABLE statement 是什麼？"
+      },
+      {
+        "question": "Which of the following SQL statements will create a table named 'Books' with columns for ID, Title, and Author?",
+        "options": [
+          "CREATE TABLE Books (ID int, Title varchar(255), Author varchar(255));",
+          "CREATE Books TABLE (ID int, Title varchar(255), Author varchar(255));",
+          "CREATE TABLE (Books) (ID int, Title varchar(255), Author varchar(255));",
+          "CREATE DATABASE TABLE (Books) (ID int, Title varchar(255), Author varchar(255));"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_table2",
+        "prompt_zh": "[建立資料表] Which of the following SQL statements will create a table named 'Books' with columns for ID, Title, and Author?"
+      },
+      {
+        "fillintheblanks": "exercise_database3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_table3",
+        "prompt_zh": "建立資料表 填空題"
+      },
+      {
+        "question": "What does the 'datatype' parameter in the <code class='w3-codespan'>CREATE TABLE</code> statement specify?",
+        "options": [
+          "The default value of the column",
+          "The name of the column",
+          "The type of data the column can hold",
+          "The primary key for the column"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_table4",
+        "prompt_zh": "[建立資料表] What does the 'datatype' parameter in the CREATE TABLE statement specify?"
+      },
+      {
+        "draganddroptext": "<code>___ ___ ( ___ varchar(255), ___ int, ___ varchar(255) );</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords and column names to create a table named 'Customers' with columns 'Name', 'ID', and 'Address'.",
+        "options": [
+          "Customers",
+          "Name",
+          "ID",
+          "Address",
+          "CREATE TABLE"
+        ],
+        "correct": [
+          4,
+          0,
+          1,
+          2,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_create_table5",
+        "prompt_zh": "[建立資料表] 拖放正確的 SQL 關鍵字s and column names to create a table named 'Customers' with columns 'Name', 'ID', and 'Address'."
+      }
+    ],
+    "datatypes": [
+      {
+        "question": "Which of the following is NOT a string data type in MySQL?",
+        "options": [
+          "VARCHAR",
+          "TEXT",
+          "TIMESTAMP",
+          "CHAR"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_datatypes1",
+        "prompt_zh": "下列哪個不是a string data type in MySQL？"
+      },
+      {
+        "question": "What is the maximum size of a <code class='w3-codespan'>VARCHAR</code> column in MySQL?",
+        "options": [
+          "255",
+          "65535",
+          "16777215",
+          "4GB"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_datatypes2",
+        "prompt_zh": "maximum size of a VARCHAR column in MySQL 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>A floating point number can be defined using FLOAT or ___.</code>",
+        "draganddropquestion": "Drag and drop the correct MySQL data types for floating point numbers.",
+        "options": [
+          "INT",
+          "DOUBLE",
+          "REAL",
+          "NUMERIC"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_datatypes3",
+        "prompt_zh": "[資料型別] 拖放正確的 MySQL data types for floating point numbers."
+      }
+    ],
+    "dates": [
+      {
+        "question": "Which of the following is the correct format for the <code class='w3-codespan'>DATE</code> data type?",
+        "options": [
+          "YYYY/MM/DD",
+          "MM-DD-YYYY",
+          "YYYY-MM-DD",
+          "DD-MM-YYYY"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_dates1",
+        "prompt_zh": "下列哪個是the correct format for the DATE data type？"
+      },
+      {
+        "question": "Which SQL data type is used to store both date and time?",
+        "options": [
+          "DATE",
+          "DATETIME",
+          "TIMEDATE",
+          "YEAR"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_dates2",
+        "prompt_zh": "哪個 SQL data type 用來store both date and time？"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Orders ___ ___ = 2025-11-11;</code>",
+        "draganddropquestion": "Drag and drop the correct column name to filter records with the OrderDate of 2025-11-11.",
+        "options": [
+          "OrderDate",
+          "OrderId",
+          "WHERE",
+          "FROM"
+        ],
+        "correct": [
+          2,
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_dates3",
+        "prompt_zh": "[日期處理] 拖放正確的 column name to filter records with the OrderDate of 2025-11-11."
+      }
+    ],
+    "default": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>DEFAULT</code> constraint?",
+        "options": [
+          "To ensure all values in a column are unique",
+          "To set a default value for a column when no value is specified",
+          "To limit the range of values in a column",
+          "To prevent NULL values in a column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_default1",
+        "prompt_zh": "primary purpose of the SQL DEFAULT constraint 是什麼？"
+      },
+      {
+        "question": "How do you add a <code class='w3-codespan'>DEFAULT</code> constraint to an existing table in SQL Server?",
+        "options": [
+          "ALTER TABLE Persons ADD DEFAULT 'Sandnes' TO City;",
+          "ALTER TABLE Persons ADD CONSTRAINT df_City DEFAULT 'Sandnes' FOR City;",
+          "ALTER TABLE Persons MODIFY City SET DEFAULT 'Sandnes';",
+          "ALTER TABLE Persons ALTER COLUMN City DEFAULT 'Sandnes';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_default2",
+        "prompt_zh": "如何add a DEFAULT constraint to an existing table in SQL Server？"
+      },
+      {
+        "question": "Which SQL statement drops a <code class='w3-codespan'>DEFAULT</code> constraint in MySQL?",
+        "options": [
+          "ALTER TABLE Persons DROP DEFAULT ON City;",
+          "ALTER TABLE Persons ALTER City REMOVE DEFAULT;",
+          "ALTER TABLE Persons ALTER City DROP DEFAULT;",
+          "ALTER TABLE Persons DELETE DEFAULT City;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_default3",
+        "prompt_zh": "[DEFAULT 約束] Which SQL statement drops a DEFAULT constraint in MySQL?"
+      },
+      {
+        "question": "What happens when a new row is inserted into a table with a column that has a <code class='w3-codespan'>DEFAULT</code> constraint and no value is provided for that column?",
+        "options": [
+          "The operation fails",
+          "The column is left NULL",
+          "The column gets the default value",
+          "The column inherits the value from the previous row"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_default4",
+        "prompt_zh": "[DEFAULT 約束] What happens when a new row is inserted into a table with a column that has a DEFAULT constraint and no value is provided for that column?"
+      }
+    ],
+    "delete": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>DELETE</code> statement?",
+        "options": [
+          "To add new records to a table",
+          "To modify existing records in a table",
+          "To delete existing records from a table",
+          "To retrieve records from a table"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete1",
+        "prompt_zh": "purpose of the SQL DELETE statement 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_delete1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete2",
+        "prompt_zh": "DELETE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_delete2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete3",
+        "prompt_zh": "DELETE 填空題"
+      },
+      {
+        "question": "What will happen if you omit the <code class='w3-codespan'>WHERE</code> clause in a <code class='w3-codespan'>DELETE</code> statement?",
+        "options": [
+          "No records will be deleted",
+          "Only the first record will be deleted",
+          "All records in the table will be deleted",
+          "An error will occur"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete4",
+        "prompt_zh": "[DELETE] What will happen if you omit the WHERE clause in a DELETE statement?"
+      },
+      {
+        "question": "How would you delete all records from a table named 'Customers' without deleting the table itself?",
+        "options": [
+          "DELETE FROM Customers WHERE CustomerID > 0;",
+          "DELETE FROM Customers;",
+          "DROP TABLE Customers;",
+          "DELETE Customers;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete5",
+        "prompt_zh": "[DELETE] How would you delete all records from a table named 'Customers' without deleting the table itself?"
+      },
+      {
+        "draganddroptext": "<code>___ FROM Customers ___ CustomerName = 'Alfreds Futterkiste';</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to delete a record where 'CustomerName' is 'Alfreds Futterkiste'.",
+        "options": [
+          "<code>DELETE</code>",
+          "<code>FROM</code>",
+          "<code>UPDATE</code>",
+          "<code>DROP</code>",
+          "<code>WHERE</code>"
+        ],
+        "correct": [
+          0,
+          4
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_delete6",
+        "prompt_zh": "[DELETE] 拖放正確的 syntax to delete a record where 'CustomerName' is 'Alfreds Futterkiste'."
+      }
+    ],
+    "distinct": [
+      {
+        "question": "Which of the following SQL statements would return a list of all unique countries from a table named 'Customers'?",
+        "options": [
+          "SELECT UNIQUE Country FROM Customers;",
+          "SELECT Country FROM Customers;",
+          "SELECT DISTINCT Country FROM Customers;",
+          "SELECT * FROM Customers WHERE Country IS UNIQUE;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_distinct1",
+        "prompt_zh": "[DISTINCT] Which of the following SQL statements would return a list of all unique countries from a table named 'Customers'?"
+      },
+      {
+        "fillintheblanks": "exercise_select3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_distinct2",
+        "prompt_zh": "DISTINCT 填空題"
+      },
+      {
+        "question": "What would be the result of omitting the <code class='w3-codespan'>DISTINCT</code> keyword in a statement like <code class='w3-codespan'>SELECT DISTINCT Country FROM Customers;</code>?",
+        "options": [
+          "It would result in an error",
+          "It would return all values in the Country column, including duplicate values.",
+          "It would remove all null values from the Country column",
+          "It would sort the countries alphabetically"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_distinct3",
+        "prompt_zh": "[DISTINCT] What would be the result of omitting the DISTINCT keyword in a statement like SELECT DISTINCT Country FROM Customers;?"
+      },
+      {
+        "question": "What does the following SQL statement do?<br><code class='w3-codespan'>SELECT COUNT(DISTINCT Country) FROM Customers;</code>",
+        "options": [
+          "Returns all countries in the Customers table, excluding the 10 first countries",
+          "Returns the number of different countries in the Customers table",
+          "Returns only the first 10 countries in the Customers table"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_distinct4",
+        "prompt_zh": "the following SQL statement 做什麼？SELECT COUNT(DISTINCT Country) FROM Customers;"
+      },
+      {
+        "question": "In which scenario would you most likely use the <code class='w3-codespan'>DISTINCT</code> keyword?",
+        "options": [
+          "To select all rows from a table",
+          "To return unique values from a column that contains duplicates",
+          "To delete duplicate rows in a table",
+          "To filter rows that contain null values"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_distinct5",
+        "prompt_zh": "[DISTINCT] In which scenario would you most likely use the DISTINCT keyword?"
+      }
+    ],
+    "drop_db": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>DROP DATABASE</code> statement?",
+        "options": [
+          "To delete a table from a database",
+          "To delete all records in a table",
+          "To delete an existing database",
+          "To delete specific rows from a database"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db1",
+        "prompt_zh": "purpose of the SQL DROP DATABASE statement 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_database2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db2",
+        "prompt_zh": "刪除資料庫 填空題"
+      },
+      {
+        "question": "What happens when you drop a database?",
+        "options": [
+          "All tables in the database are removed, but the database structure remains",
+          "Only empty tables are removed",
+          "The database and all its contents are permanently deleted",
+          "The database is temporarily deactivated"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db3",
+        "prompt_zh": "[刪除資料庫] What happens when you drop a database?"
+      },
+      {
+        "question": "Which precaution should you take before dropping a database?",
+        "options": [
+          "Ensure the database is not currently in use",
+          "Have a backup of the database (if needed)",
+          "Have admin privileges",
+          "All of the above"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db4",
+        "prompt_zh": "[刪除資料庫] Which precaution should you take before dropping a database?"
+      },
+      {
+        "draganddroptext": "<code>___ DATABASE ___;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to drop a database named 'SchoolDB'.",
+        "options": [
+          "DROP",
+          "DATABASE",
+          "TABLE",
+          "SchoolDB"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db5",
+        "prompt_zh": "[刪除資料庫] 拖放正確的 SQL 關鍵字s to drop a database named 'SchoolDB'."
+      },
+      {
+        "question": "What SQL command can confirm the database no longer exists after being dropped?",
+        "options": [
+          "SHOW TABLES;",
+          "SELECT DATABASE;",
+          "SHOW DATABASES;",
+          "DESCRIBE DATABASES;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_db6",
+        "prompt_zh": "[刪除資料庫] What SQL command can confirm the database no longer exists after being dropped?"
+      }
+    ],
+    "drop_table": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>DROP TABLE</code> statement do?",
+        "options": [
+          "Deletes a table and all its data from the database",
+          "Renames an existing table",
+          "Copies a table and its data to a new table"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table1",
+        "prompt_zh": "the SQL DROP TABLE statement 做什麼？"
+      },
+      {
+        "question": "Which of the following SQL statements will delete the table 'Orders'?",
+        "options": [
+          "DROP Orders;",
+          "DELETE TABLE Orders;",
+          "DROP TABLE Orders;",
+          "TRUNCATE Orders;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table2",
+        "prompt_zh": "[刪除資料表] Which of the following SQL statements will delete the table 'Orders'?"
+      },
+      {
+        "fillintheblanks": "exercise_database4.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table3",
+        "prompt_zh": "刪除資料表 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_database5.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table4",
+        "prompt_zh": "刪除資料表 填空題"
+      },
+      {
+        "question": "What will happen if you try to <code class='w3-codespan'>DROP</code> a table that does not exist?",
+        "options": [
+          "An error will occur.",
+          "The query will be ignored without any error.",
+          "The table will be created first, then dropped.",
+          "It will drop all tables in the database."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table5",
+        "prompt_zh": "[刪除資料表] What will happen if you try to DROP a table that does not exist?"
+      },
+      {
+        "draganddroptext": "<code>___ TABLE ___;</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to form a statement that deletes the 'Customers' table.",
+        "options": [
+          "DROP",
+          "DELETE",
+          "TRUNCATE",
+          "Customers"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table6",
+        "prompt_zh": "[刪除資料表] 拖放正確的 關鍵字s to form a statement that deletes the 'Customers' table."
+      },
+      {
+        "question": "Which of the following SQL statements will delete all data inside the table 'Products' but retain the table structure?",
+        "options": [
+          "DROP TABLE Products;",
+          "DELETE TABLE Products;",
+          "TRUNCATE TABLE Products;",
+          "REMOVE Products;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_drop_table7",
+        "prompt_zh": "[刪除資料表] Which of the following SQL statements will delete all data inside the table 'Products' but retain the table structure?"
+      }
+    ],
+    "exists": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>EXISTS</code> operator do?",
+        "options": [
+          "Checks if a subquery returns one or more records",
+          "Combines results of multiple queries",
+          "Joins two tables based on a common column",
+          "Filters rows based on a condition"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_exists1",
+        "prompt_zh": "the SQL EXISTS operator 做什麼？"
+      },
+      {
+        "question": "The <code class='w3-codespan'>EXISTS</code> operator returns ___ when the subquery produces one or more records.",
+        "options": [
+          "NULL",
+          "FALSE",
+          "TRUE",
+          "ERROR"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_exists2",
+        "prompt_zh": "[EXISTS] The EXISTS operator returns ___ when the subquery produces one or more records."
+      },
+      {
+        "draganddroptext": "<code>SELECT SupplierName<br>___ Suppliers<br>___ ___ (SELECT ProductName FROM Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to create a query that lists suppliers with products priced under 20.",
+        "options": [
+          "<code>WHERE</code>",
+          "<code>EXISTS</code>",
+          "<code>SELECT</code>",
+          "<code>FROM</code>",
+          "<code>GROUP BY</code>"
+        ],
+        "correct": [
+          3,
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_exists3",
+        "prompt_zh": "[EXISTS] 拖放正確的 syntax to create a query that lists suppliers with products priced under 20."
+      }
+    ],
+    "foreignkey": [
+      {
+        "question": "The <code class='w3-codespan'>FOREIGN KEY</code> constraint is used to:",
+        "options": [
+          "Perform a comparison between a single column value and a range of other values",
+          "Prevent actions that would destroy links between tables",
+          "Ensure that a column cannot contain NULL values",
+          "Automatically generate values for columns"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_foreignkey1",
+        "prompt_zh": "[外鍵] The FOREIGN KEY constraint is used to:"
+      },
+      {
+        "question": "In a database relationship, what is the table containing the <code class='w3-codespan'>FOREIGN KEY</code> called?",
+        "options": [
+          "Parent table",
+          "Child table",
+          "Primary table",
+          "Master table"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_foreignkey2",
+        "prompt_zh": "[外鍵] In a database relationship, what is the table containing the FOREIGN KEY called?"
+      },
+      {
+        "question": "How do you drop a <code class='w3-codespan'>FOREIGN KEY</code> constraint named 'FK_PersonOrder' in SQL Server?",
+        "options": [
+          "ALTER TABLE Orders<br>DROP FOREIGN KEY FK_PersonOrder;",
+          "DROP FOREIGN KEY Orders.FK_PersonOrder;",
+          "ALTER TABLE Orders<br>DROP CONSTRAINT FK_PersonOrder;",
+          "ALTER TABLE Orders<br>DELETE FOREIGN KEY FK_PersonOrder;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_foreignkey3",
+        "prompt_zh": "如何drop a FOREIGN KEY constraint named 'FK_PersonOrder' in SQL Server？"
+      },
+      {
+        "question": "Can a <code class='w3-codespan'>FOREIGN KEY</code> reference a composite PRIMARY KEY in another table?",
+        "options": [
+          "Yes, but only in MySQL",
+          "No, a FOREIGN KEY can only reference single-column PRIMARY KEYs",
+          "Yes, a FOREIGN KEY can reference composite PRIMARY KEYs",
+          "No, FOREIGN KEYs and composite PRIMARY KEYs are incompatible"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_foreignkey4",
+        "prompt_zh": "[外鍵] Can a FOREIGN KEY reference a composite PRIMARY KEY in another table?"
+      },
+      {
+        "question": "What is a key difference between <code class='w3-codespan'>PRIMARY KEY</code> and <code class='w3-codespan'>FOREIGN KEY</code>?",
+        "options": [
+          "A PRIMARY KEY can reference another table, while a FOREIGN KEY cannot",
+          "A PRIMARY KEY ensures uniqueness within its table, while a FOREIGN KEY links tables",
+          "A FOREIGN KEY is always unique, while a PRIMARY KEY can have duplicates",
+          "A PRIMARY KEY can be NULL, while a FOREIGN KEY cannot"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_foreignkey5",
+        "prompt_zh": "[外鍵] What is a key difference between PRIMARY KEY and FOREIGN KEY?"
+      }
+    ],
+    "groupby": [
+      {
+        "question": "Which aggregate functions are commonly used with the <code class='w3-codespan'>GROUP BY</code> statement?",
+        "options": [
+          "COUNT(), MAX(), MIN(), SUM(), AVG()",
+          "SELECT(), INSERT(), UPDATE(), DELETE()",
+          "JOIN(), UNION(), INTERSECT(), EXCEPT()",
+          "HAVING(), WHERE(), ORDER BY(), DISTINCT()"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_groupby1",
+        "prompt_zh": "[GROUP BY] Which aggregate functions are commonly used with the GROUP BY statement?"
+      },
+      {
+        "fillintheblanks": "exercise_groupby1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_groupby2",
+        "prompt_zh": "GROUP BY 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_groupby2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_groupby3",
+        "prompt_zh": "GROUP BY 填空題"
+      },
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>GROUP BY</code> statement?",
+        "options": [
+          "To combine rows from multiple tables",
+          "To group rows with the same values into summary rows",
+          "To filter rows based on a condition",
+          "To sort the rows in a result set"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_groupby4",
+        "prompt_zh": "primary purpose of the SQL GROUP BY statement 是什麼？"
+      },
+      {
+        "question": "How can you sort the results of a <code class='w3-codespan'>GROUP BY</code> statement?",
+        "options": [
+          "Use the ORDER BY clause after the GROUP BY clause",
+          "Use the HAVING clause before the GROUP BY clause",
+          "Use the DISTINCT keyword in the query",
+          "You cannot sort results of a GROUP BY query"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_groupby5",
+        "prompt_zh": "如何sort the results of a GROUP BY statement？"
+      }
+    ],
+    "having": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>HAVING</code> clause?",
+        "options": [
+          "To filter rows based on a condition before grouping",
+          "To filter groups based on an aggregate condition after grouping",
+          "To order the result set in ascending or descending order",
+          "To join multiple tables"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_having1",
+        "prompt_zh": "primary purpose of the SQL HAVING clause 是什麼？"
+      },
+      {
+        "question": "Why can't the <code class='w3-codespan'>WHERE</code> clause be used with aggregate functions?",
+        "options": [
+          "The WHERE clause can only filter columns, not rows",
+          "Aggregate functions are evaluated after the WHERE clause",
+          "The WHERE clause is not compatible with GROUP BY",
+          "Aggregate functions require a JOIN clause"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_having2",
+        "prompt_zh": "[HAVING] Why can't the WHERE clause be used with aggregate functions?"
+      },
+      {
+        "question": "Which SQL query correctly filters groups where the total number of orders is greater than 100?",
+        "options": [
+          "SELECT COUNT(OrderID), CustomerID<br>FROM Orders<br>WHERE COUNT(OrderID) > 100<br>GROUP BY CustomerID;",
+          "SELECT CustomerID, COUNT(OrderID)<br>FROM Orders<br>GROUP BY CustomerID<br>WHERE COUNT(OrderID) > 100;",
+          "SELECT CustomerID, COUNT(OrderID)<br>FROM Orders<br>GROUP BY CustomerID<br>HAVING COUNT(OrderID) > 100;",
+          "SELECT COUNT(OrderID), CustomerID<br>FROM Orders<br>HAVING COUNT(OrderID) > 100<br>GROUP BY CustomerID;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_having3",
+        "prompt_zh": "[HAVING] Which SQL query correctly filters groups where the total number of orders is greater than 100?"
+      },
+      {
+        "question": "What is the difference between the <code class='w3-codespan'>WHERE</code> and <code class='w3-codespan'>HAVING</code> clauses?",
+        "options": [
+          "The WHERE clause filters rows; the HAVING clause filters groups",
+          "The WHERE clause filters groups; the HAVING clause filters rows",
+          "The WHERE clause is used only with JOIN; the HAVING clause is used with UNION",
+          "The WHERE clause is used for sorting; the HAVING clause is used for filtering"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_having4",
+        "prompt_zh": "difference between the WHERE and HAVING clauses 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrders<br>___ (Orders INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)<br>GROUP BY LastName<br>___ COUNT(Orders.OrderID) > ___;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to lists the employees that have registered more than 10 orders.",
+        "options": [
+          "<code>COUNT</code>",
+          "<code>FROM</code>",
+          "<code>GROUP BY</code>",
+          "<code>HAVING</code>",
+          "<code>WHERE</code>",
+          "<code>ORDER BY</code>",
+          "<code>10</code>"
+        ],
+        "correct": [
+          1,
+          3,
+          6
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_having5",
+        "prompt_zh": "[HAVING] 拖放正確的 syntax to lists the employees that have registered more than 10 orders."
+      }
+    ],
+    "hosting": [
+      {
+        "question": "Which of the following is a popular SQL database software for high-traffic, database-driven websites?",
+        "options": [
+          "SQL Server",
+          "Oracle",
+          "MySQL",
+          "All of the above"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_hosting1",
+        "prompt_zh": "下列哪個是a popular SQL database software for high-traffic, database-driven websites？"
+      },
+      {
+        "question": "Which SQL database is open-source and free?",
+        "options": [
+          "MySQL",
+          "PostgreSQL",
+          "SQL Server",
+          "Oracle"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_hosting2",
+        "prompt_zh": "[資料庫主機] Which SQL database is open-source and free?"
+      }
+    ],
+    "in": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>IN</code> operator?",
+        "options": [
+          "To specify a range of values in a WHERE clause",
+          "To select all columns from a table",
+          "To perform a wildcard search"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in1",
+        "prompt_zh": "primary purpose of the SQL IN operator 是什麼？"
+      },
+      {
+        "question": "Which query returns all customers from 'Germany', 'France', or 'UK'?",
+        "options": [
+          "SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');",
+          "SELECT * FROM Customers WHERE Country = 'Germany' OR 'France' OR 'UK';",
+          "SELECT * FROM Customers WHERE Country LIKE 'Germany, France, UK';",
+          "SELECT * FROM Customers WHERE Country = ('Germany', 'France', 'UK');"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in2",
+        "prompt_zh": "[IN 運算子] Which query returns all customers from 'Germany', 'France', or 'UK'?"
+      },
+      {
+        "question": "What will the following query return?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE Country NOT IN ('Mexico', 'Sweden');</code>",
+        "options": [
+          "All customers from Mexico and Sweden",
+          "All customers except those from Mexico and Sweden",
+          "All customers with NULL values in the Country column",
+          "An error due to syntax issues"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in3",
+        "prompt_zh": "the following query 會回傳什麼？SELECT * FROM CustomersWHERE Country NOT IN ('Mexico', 'Sweden');"
+      },
+      {
+        "fillintheblanks": "exercise_in1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in4",
+        "prompt_zh": "IN 運算子 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_in2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in5",
+        "prompt_zh": "IN 運算子 填空題"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers WHERE ___ ___ ('Norway', 'France', 'USA');</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to return customers from the countries 'Norway', 'France', or 'USA'.",
+        "options": [
+          "<code>Country</code>",
+          "<code>IN</code>",
+          "<code>NOT</code>",
+          "<code>WHERE</code>",
+          "<code>SELECT</code>"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_in6",
+        "prompt_zh": "[IN 運算子] 拖放正確的 SQL 關鍵字s to return customers from the countries 'Norway', 'France', or 'USA'."
+      }
+    ],
+    "injection": [
+      {
+        "question": "What is SQL injection?",
+        "options": [
+          "A technique to optimize SQL queries",
+          "A code injection technique to access or destroy a database",
+          "A method to protect SQL queries from being hacked",
+          "A debugging process for SQL queries"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_injection1",
+        "prompt_zh": "[SQL 注入] What is SQL injection?"
+      },
+      {
+        "question": "What does the statement <code>1=1</code> in a SQL query imply?",
+        "options": [
+          "A logical statement that is always true",
+          "A conditional operator for database sorting",
+          "To copy data from one table into a new table",
+          "To create an index on a table"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_injection2",
+        "prompt_zh": "[SQL 注入] What does the statement 1=1 in a SQL query imply?"
+      },
+      {
+        "question": "Which approach helps prevent SQL injection attacks?",
+        "options": [
+          "Using concatenated SQL strings",
+          "Using the NULL operator",
+          "Using SQL parameters",
+          "Allowing multiple SQL statements in a query"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_injection3",
+        "prompt_zh": "[SQL 注入] Which approach helps prevent SQL injection attacks?"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers WHERE CustomerId = ___;</code>",
+        "draganddropquestion": "Drag and drop the correct parameterized placeholder to complete the SQL query.",
+        "options": [
+          "@customerid",
+          ":id",
+          "?param",
+          "@"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_injection4",
+        "prompt_zh": "[SQL 注入] 拖放正確的 parameterized placeholder to complete the SQL query."
+      }
+    ],
+    "insert": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>INSERT INTO</code> statement?",
+        "options": [
+          "To update records in a table",
+          "To delete records from a table",
+          "To add new records to a table",
+          "To retrieve records from a table"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert1",
+        "prompt_zh": "purpose of the SQL INSERT INTO statement 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>___ Customers (CustomerName, City, Country)<br>___ ('Cardinal', 'Stavanger', 'Norway');</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to insert data into the Customers table for specified columns:",
+        "options": [
+          "<code>INSERT INTO</code>",
+          "<code>VALUES</code>",
+          "<code>ADD INTO</code>",
+          "<code>INSERT</code>",
+          "<code>VALUE</code>"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert2",
+        "prompt_zh": "[INSERT] 拖放正確的 syntax to insert data into the Customers table for specified columns:"
+      },
+      {
+        "fillintheblanks": "exercise_insert1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert3",
+        "prompt_zh": "INSERT 填空題"
+      },
+      {
+        "question": "How can you insert multiple rows with a single <code class='w3-codespan'>INSERT INTO</code> statement in SQL?",
+        "options": [
+          "INSERT INTO table_name VALUES (value1), (value2), (value3);",
+          "INSERT INTO table_name VALUES ROWS (value1), (value2), (value3);",
+          "INSERT INTO table_name ROWS (value1), (value2), (value3);",
+          "INSERT INTO table_name VALUES (value1, value2, value3);"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert4",
+        "prompt_zh": "如何insert multiple rows with a single INSERT INTO statement in SQL？"
+      }
+    ],
+    "insert_into_select": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>INSERT INTO SELECT</code> statement?",
+        "options": [
+          "To copy data from one table and insert it into another table",
+          "To delete rows from one table and insert them into another",
+          "To test for the existence of any record in a subquery",
+          "To combine rows from two or more tables, based on a related column between them"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert_into_select1",
+        "prompt_zh": "purpose of the SQL INSERT INTO SELECT statement 是什麼？"
+      },
+      {
+        "question": "True or False:<br>The <code class='w3-codespan'>INSERT INTO SELECT</code> statement requires that the data types in source and target tables match.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert_into_select2",
+        "prompt_zh": "True 或 False：The INSERT INTO SELECT statement requires that the data types in source and target tables match."
+      },
+      {
+        "question": "How do you copy specific columns from 'Suppliers' to 'Customers'?",
+        "options": [
+          "INSERT INTO Customers<br>SELECT SupplierName, City<br>FROM Suppliers;",
+          "INSERT INTO Customers (CustomerName, City)<br>SELECT SupplierName, City<br>FROM Suppliers;",
+          "INSERT INTO Customers (CustomerName, City)<br>FROM Suppliers<br>SELECT SupplierName, City;",
+          "SELECT SupplierName, City<br>INTO Customers (CustomerName, City)<br>FROM Suppliers;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert_into_select3",
+        "prompt_zh": "如何copy specific columns from 'Suppliers' to 'Customers'？"
+      },
+      {
+        "draganddroptext": "<code>INSERT INTO Customers<br>(CustomerName, City, Country)<br>___ SupplierName, City, Country<br>FROM ___;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to complete the query.",
+        "options": [
+          "<code>SELECT</code>",
+          "<code>Suppliers</code>",
+          "<code>WHERE</code>",
+          "<code>INTO</code>"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_insert_into_select4",
+        "prompt_zh": "[INSERT INTO SELECT] 拖放正確的 SQL 關鍵字s to complete the query."
+      }
+    ],
+    "isnull": [
+      {
+        "question": "In SQL Server, which function can be used to replace <code class='w3-codespan'>NULL</code> values with a specified alternative?",
+        "options": [
+          "NVL()",
+          "ISNULL()",
+          "IFNULL()",
+          "COALESCE()"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_isnull1",
+        "prompt_zh": "[ISNULL] In SQL Server, which function can be used to replace NULL values with a specified alternative?"
+      },
+      {
+        "question": "Which function in MySQL is used to handle <code class='w3-codespan'>NULL</code> values by providing an alternative value?",
+        "options": [
+          "COALESCE()",
+          "ISNULL()",
+          "IFNULL()",
+          "NVL()"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_isnull2",
+        "prompt_zh": "哪個 function in MySQL 用來處理 NULL values by providing an alternative value？"
+      },
+      {
+        "question": "What will happen if you do not handle <code class='w3-codespan'>NULL</code> values in an expression like <code class='w3-codespan'>UnitPrice * (UnitsInStock + UnitsOnOrder)</code>?",
+        "options": [
+          "The result will be NULL if any value in the expression is NULL.",
+          "The result will default to 0.",
+          "The query will fail to execute.",
+          "The NULL value will be ignored."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_isnull3",
+        "prompt_zh": "[ISNULL] What will happen if you do not handle NULL values in an expression like UnitPrice * (UnitsInStock + UnitsOnOrder)?"
+      },
+      {
+        "question": "Which function is supported by both Oracle and SQL Server to handle <code class='w3-codespan'>NULL</code> values?",
+        "options": [
+          "NVL()",
+          "ISNULL()",
+          "IFNULL()",
+          "COALESCE()"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_isnull4",
+        "prompt_zh": "[ISNULL] Which function is supported by both Oracle and SQL Server to handle NULL values?"
+      },
+      {
+        "question": "Which function is specific to Oracle for replacing <code class='w3-codespan'>NULL</code> values?",
+        "options": [
+          "ISNULL()",
+          "IFNULL()",
+          "NVL()",
+          "COALESCE()"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_isnull5",
+        "prompt_zh": "[ISNULL] Which function is specific to Oracle for replacing NULL values?"
+      }
+    ],
+    "join": [
+      {
+        "question": "What is the primary purpose of an SQL <code class='w3-codespan'>JOIN</code>?",
+        "options": [
+          "To create a new table from existing tables",
+          "To delete duplicate rows in a table",
+          "To sort data in ascending or descending order",
+          "To combine rows from two or more tables based on a related column"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join1",
+        "prompt_zh": "primary purpose of an SQL JOIN 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_join1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join2",
+        "prompt_zh": "JOIN 填空題"
+      },
+      {
+        "question": "Which SQL <code class='w3-codespan'>JOIN</code> type returns only the records that have matching values in both tables?",
+        "options": [
+          "LEFT JOIN",
+          "FULL OUTER JOIN",
+          "INNER JOIN",
+          "RIGHT JOIN"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join3",
+        "prompt_zh": "[JOIN] Which SQL JOIN type returns only the records that have matching values in both tables?"
+      },
+      {
+        "question": "What does a <code class='w3-codespan'>LEFT JOIN</code> return?",
+        "options": [
+          "All records from the left table and matched records from the right table",
+          "Only matched records from both tables",
+          "All records from the right table and matched records from the left table",
+          "All records from both tables"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join4",
+        "prompt_zh": "[JOIN] What does a LEFT JOIN return?"
+      },
+      {
+        "question": "Which SQL statement is correct to join 'Orders' and 'Customers' tables on 'CustomerID'?",
+        "options": [
+          "SELECT * FROM Orders<br>JOIN Customers;",
+          "SELECT * FROM Orders<br>INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;",
+          "SELECT Orders.CustomerID, Customers.CustomerName<br>FROM Customers;",
+          "SELECT Orders<br>INNER JOIN Customers WHERE Orders.CustomerID;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join5",
+        "prompt_zh": "[JOIN] Which SQL statement is correct to join 'Orders' and 'Customers' tables on 'CustomerID'?"
+      },
+      {
+        "question": "Which SQL JOIN returns all records when there is a match in either left or right table?",
+        "options": [
+          "INNER JOIN",
+          "LEFT JOIN",
+          "RIGHT JOIN",
+          "FULL OUTER JOIN"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join6",
+        "prompt_zh": "[JOIN] Which SQL JOIN returns all records when there is a match in either left or right table?"
+      }
+    ],
+    "join_full": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>FULL OUTER JOIN</code> keyword do?",
+        "options": [
+          "Returns all records when there is a match in the left or right table",
+          "Returns all records from the left table and matching records from the right table",
+          "Returns all records from the right table and matching records from the left table"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_full1",
+        "prompt_zh": "the SQL FULL OUTER JOIN keyword 做什麼？"
+      },
+      {
+        "question": "True or False?<br><code class='w3-codespan'>FULL OUTER JOIN</code> and <code class='w3-codespan'>FULL JOIN</code> are the same.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_full2",
+        "prompt_zh": "True 或 False：?FULL OUTER JOIN and FULL JOIN are the same."
+      },
+      {
+        "question": "True or False?<br><code class='w3-codespan'>FULL OUTER JOIN</code> can potentially return very large result-sets.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_full3",
+        "prompt_zh": "True 或 False：?FULL OUTER JOIN can potentially return very large result-sets."
+      }
+    ],
+    "join_inner": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>INNER JOIN</code> keyword?",
+        "options": [
+          "To return unmatched records from the left table",
+          "To return unmatched records from the right table",
+          "To select only the records that have matching values in both tables"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_inner1",
+        "prompt_zh": "purpose of the SQL INNER JOIN keyword 是什麼？"
+      },
+      {
+        "question": "Which SQL statement is correct for joining the Products and Categories tables on CategoryID?",
+        "options": [
+          "SELECT * FROM Products<br>INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;",
+          "SELECT * FROM Products<br>JOIN Categories;",
+          "SELECT * FROM Products<br>INNER JOIN Categories;",
+          "SELECT Products.ProductID, ProductName<br>FROM Categories;"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_inner2",
+        "prompt_zh": "[INNER JOIN] Which SQL statement is correct for joining the Products and Categories tables on CategoryID?"
+      },
+      {
+        "question": "What happens when there is no match between tables in an <code class='w3-codespan'>INNER JOIN</code>?",
+        "options": [
+          "The unmatched rows from both tables are returned",
+          "The unmatched rows from the left table are returned",
+          "The unmatched rows from the right table are returned",
+          "No rows are returned for the unmatched entries"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_inner3",
+        "prompt_zh": "[INNER JOIN] What happens when there is no match between tables in an INNER JOIN?"
+      },
+      {
+        "fillintheblanks": "exercise_join2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_inner4",
+        "prompt_zh": "INNER JOIN 填空題"
+      },
+      {
+        "draganddroptext": "<code>SELECT ___, Products.ProductName, Categories.CategoryName<br>FROM Products<br>___ Categories ON Products.CategoryID = Categories.CategoryID;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to create an INNER JOIN between Products and Categories.",
+        "options": [
+          "<code>ProductID</code>",
+          "<code>INNER JOIN</code>",
+          "<code>LEFT JOIN</code>",
+          "<code>FULL OUTER JOIN</code>",
+          "<code>RIGHT JOIN</code>"
+        ],
+        "correct": [
+          0,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_inner5",
+        "prompt_zh": "[INNER JOIN] 拖放正確的 syntax to create an INNER JOIN between Products and Categories."
+      }
+    ],
+    "join_left": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>LEFT JOIN</code> keyword do?",
+        "options": [
+          "Returns only matching records from both tables",
+          "Returns all records from the left table and matching records from the right table",
+          "Returns all records from the right table and matching records from the left table",
+          "Returns all records from both tables"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_left1",
+        "prompt_zh": "the SQL LEFT JOIN keyword 做什麼？"
+      },
+      {
+        "question": "True or False?<br>In some databases <code class='w3-codespan'>LEFT JOIN</code> is called <code class='w3-codespan'>LEFT OUTER JOIN</code>.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_left2",
+        "prompt_zh": "True 或 False：?In some databases LEFT JOIN is called LEFT OUTER JOIN."
+      },
+      {
+        "draganddroptext": "<code>SELECT *<br>FROM Orders<br>___ Customers<br>ON Orders.CustomerID=Customers.CustomerID;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to perform a LEFT JOIN between Customers and Orders.",
+        "options": [
+          "<code>LEFT JOIN</code>",
+          "<code>INNER JOIN</code>",
+          "<code>FULL JOIN</code>",
+          "<code>ON</code>",
+          "<code>RIGHT JOIN</code>"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_left3",
+        "prompt_zh": "[LEFT JOIN] 拖放正確的 syntax to perform a LEFT JOIN between Customers and Orders."
+      }
+    ],
+    "join_right": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>RIGHT JOIN</code> keyword do?",
+        "options": [
+          "Returns only matching records from both tables",
+          "Returns all records from the left table and matching records from the right table",
+          "Returns all records from the right table and matching records from the left table",
+          "Returns all records from both tables"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_right1",
+        "prompt_zh": "the SQL RIGHT JOIN keyword 做什麼？"
+      },
+      {
+        "question": "True or False?<br>In some databases <code class='w3-codespan'>RIGHT JOIN</code> is called <code class='w3-codespan'>RIGHT OUTER JOIN</code>.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_right2",
+        "prompt_zh": "True 或 False：?In some databases RIGHT JOIN is called RIGHT OUTER JOIN."
+      },
+      {
+        "fillintheblanks": "exercise_join2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_right3",
+        "prompt_zh": "RIGHT JOIN 填空題"
+      }
+    ],
+    "join_self": [
+      {
+        "question": "What is the purpose of a self join in SQL?",
+        "options": [
+          "To join a table with another table",
+          "To join a table with itself",
+          "To create a new table by combining columns",
+          "To perform a full outer join"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_self1",
+        "prompt_zh": "purpose of a self join in SQL 是什麼？"
+      },
+      {
+        "question": "Which of the following SQL statements correctly implements a self join?",
+        "options": [
+          "SELECT * FROM Customers;",
+          "SELECT A.CustomerName, B.CustomerName<br>FROM Customers A<br>JOIN SELF Customers B;",
+          "SELECT A.CustomerName, B.CustomerName<br>FROM Customers A, Customers B<br>WHERE A.City = B.City;",
+          "SELECT A.CustomerName, B.CustomerName<br>FROM Customers<br>SELF JOIN Customers;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_self2",
+        "prompt_zh": "[SELF JOIN] Which of the following SQL statements correctly implements a self join?"
+      },
+      {
+        "question": "In a self join, what is the purpose of using table aliases like A and B?",
+        "options": [
+          "To join different tables",
+          "To reference the same table with different roles",
+          "To eliminate duplicate records",
+          "To use aggregate functions more efficiently"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_join_self3",
+        "prompt_zh": "[SELF JOIN] In a self join, what is the purpose of using table aliases like A and B?"
+      }
+    ],
+    "like": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>LIKE</code> operator do?",
+        "options": [
+          "Groups records based on a condition",
+          "Returns the largest value in a column",
+          "Searches for a specified pattern in a column"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like1",
+        "prompt_zh": "the SQL LIKE operator 做什麼？"
+      },
+      {
+        "question": "Which SQL statement will return all customers with names starting with 'H'?",
+        "options": [
+          "SELECT * FROM Customers WHERE CustomerName LIKE '%H';",
+          "SELECT * FROM Customers WHERE CustomerName LIKE '_H';",
+          "SELECT * FROM Customers WHERE CustomerName LIKE 'H%';",
+          "SELECT * FROM Customers WHERE CustomerName LIKE 'H__%';"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like2",
+        "prompt_zh": "[LIKE] Which SQL statement will return all customers with names starting with 'H'?"
+      },
+      {
+        "question": "Which wildcard in the LIKE operator represents any single character?",
+        "options": [
+          "The percent sign (%)",
+          "The underscore sign (_)",
+          "The caret sign (^) ",
+          "The asterisk sign (*)"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like3",
+        "prompt_zh": "[LIKE] Which wildcard in the LIKE operator represents any single character?"
+      },
+      {
+        "fillintheblanks": "exercise_like1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like4",
+        "prompt_zh": "LIKE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_like2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like5",
+        "prompt_zh": "LIKE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_like3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like6",
+        "prompt_zh": "LIKE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_like4.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like7",
+        "prompt_zh": "LIKE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_like5.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like8",
+        "prompt_zh": "LIKE 填空題"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers ___ CustomerName ___ 'A%';</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to select customers whose names start with 'A'.",
+        "options": [
+          "<code>LIKE</code>",
+          "<code>AND</code>",
+          "<code>OR</code>",
+          "<code>WHERE</code>",
+          "<code>SELECT</code>"
+        ],
+        "correct": [
+          3,
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_like9",
+        "prompt_zh": "[LIKE] 拖放正確的 SQL 關鍵字s to select customers whose names start with 'A'."
+      }
+    ],
+    "min_max": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>MIN()</code> function do?",
+        "options": [
+          "Returns the largest value of the selected column",
+          "Returns the smallest value of the selected column",
+          "Calculates the average of the selected column",
+          "Counts the number of records in the selected column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_min_max1",
+        "prompt_zh": "the SQL MIN() function 做什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_functions1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_min_max2",
+        "prompt_zh": "MIN/MAX 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_functions2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_min_max3",
+        "prompt_zh": "MIN/MAX 填空題"
+      },
+      {
+        "question": "Which keyword can be used to give a column a descriptive name?",
+        "options": [
+          "DESC",
+          "ASC",
+          "AS",
+          "UPDATE",
+          "GROUP"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_min_max4",
+        "prompt_zh": "[MIN/MAX] Which keyword can be used to give a column a descriptive name?"
+      },
+      {
+        "draganddroptext": "<code>SELECT ___(Price) FROM Products;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to select the highest price in the 'Price' column.",
+        "options": [
+          "<code>MIN</code>",
+          "<code>MAX</code>",
+          "<code>AS</code>",
+          "<code>FROM</code>",
+          "<code>Price</code>"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_min_max5",
+        "prompt_zh": "[MIN/MAX] 拖放正確的 syntax to select the highest price in the 'Price' column."
+      }
+    ],
+    "not": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>NOT</code> operator?",
+        "options": [
+          "To filter records that match a specified condition",
+          "To filter records that do not match a specified condition",
+          "To filter records that match multiple conditions",
+          "To filter records that are exactly equal to a specified condition"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not1",
+        "prompt_zh": "primary purpose of the SQL NOT operator 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_not1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not2",
+        "prompt_zh": "NOT 填空題"
+      },
+      {
+        "question": "Which SQL query would select all customers that are NOT from 'Spain'?",
+        "options": [
+          "SELECT * FROM Customers WHERE Country = 'Spain';",
+          "SELECT * FROM Customers WHERE Country NOT 'Spain';",
+          "SELECT * FROM Customers WHERE NOT Country = 'Spain';",
+          "SELECT * FROM Customers WHERE Country != 'Spain';"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not3",
+        "prompt_zh": "[NOT] Which SQL query would select all customers that are NOT from 'Spain'?"
+      },
+      {
+        "draganddroptext": "SELECT * FROM Customers<br><code>___ CustomerName ___ ___ '___';</code>",
+        "draganddropquestion": "Select the correct statements to return all customers whose names do NOT start with the letter 'A':",
+        "options": [
+          "<code>WHERE</code>",
+          "<code>NOT</code>",
+          "<code>LIKE</code>",
+          "<code>FROM</code>",
+          "<code>A%</code>"
+        ],
+        "correct": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not4",
+        "prompt_zh": "[NOT] Select the correct statements to return all customers whose names do NOT start with the letter 'A':"
+      },
+      {
+        "question": "Which SQL statement would select all customers whose CustomerID is NOT between 10 and 50?",
+        "options": [
+          "SELECT * FROM Customers WHERE CustomerID = 10 AND 50;",
+          "SELECT * FROM Customers WHERE CustomerID BETWEEN 10 AND 50;",
+          "SELECT * FROM Customers WHERE CustomerID NOT IN (10, 50);",
+          "SELECT * FROM Customers WHERE CustomerID NOT BETWEEN 10 AND 50;"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not5",
+        "prompt_zh": "[NOT] Which SQL statement would select all customers whose CustomerID is NOT between 10 and 50?"
+      },
+      {
+        "question": "Which query will select customers who are NOT located in 'Paris' or 'London'?",
+        "options": [
+          "SELECT * FROM Customers WHERE NOT City IN ('Paris', 'London');",
+          "SELECT * FROM Customers WHERE City NOT IN ('Paris', 'London');",
+          "SELECT * FROM Customers WHERE City != ('Paris', 'London');",
+          "SELECT * FROM Customers WHERE City NOT LIKE ('Paris', 'London');"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_not6",
+        "prompt_zh": "[NOT] Which query will select customers who are NOT located in 'Paris' or 'London'?"
+      }
+    ],
+    "notnull": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>NOT NULL</code> constraint?",
+        "options": [
+          "To ensure a column cannot have duplicate values",
+          "To enforce that a column must always contain a value",
+          "To define a unique identifier for a table",
+          "To prevent a table from being dropped"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_notnull1",
+        "prompt_zh": "purpose of the SQL NOT NULL constraint 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>CREATE TABLE Employees (<br>&nbsp;&nbsp;ID int ___,<br>&nbsp;&nbsp;Name varchar(255) ___,<br>&nbsp;&nbsp;Age int<br>);</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to enforce NOT NULL constraints on the ID and Name columns.",
+        "options": [
+          "<code>NOT NULL</code>",
+          "<code>NULL</code>",
+          "<code>UNIQUE</code>",
+          "<code>ISNULL</code>",
+          "<code>DEFAULT</code>",
+          "<code>NOT NULL</code>"
+        ],
+        "correct": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_notnull2",
+        "prompt_zh": "[NOT NULL] 拖放正確的 關鍵字s to enforce NOT NULL constraints on the ID and Name columns."
+      },
+      {
+        "question": "What happens if you try to insert a NULL value into a column with a <code class='w3-codespan'>NOT NULL</code> constraint?",
+        "options": [
+          "The value will be automatically converted to a default value",
+          "The database will throw an error",
+          "The record will be inserted, but the NULL value will be ignored",
+          "The record will be inserted, and the column will be filled with a blank space"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_notnull3",
+        "prompt_zh": "[NOT NULL] What happens if you try to insert a NULL value into a column with a NOT NULL constraint?"
+      },
+      {
+        "question": "How do you define a <code class='w3-codespan'>NOT NULL</code> constraint during table creation?",
+        "options": [
+          "By adding 'NOT NULL' after the column's data type",
+          "By adding 'CHECK NOT NULL' after the column's data type",
+          "By using the 'ALTER TABLE' statement",
+          "By specifying 'DEFAULT NOT NULL' during table creation"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_notnull4",
+        "prompt_zh": "如何define a NOT NULL constraint during table creation？"
+      },
+      {
+        "question": "Which of the following is true about <code class='w3-codespan'>NOT NULL</code> constraints?",
+        "options": [
+          "They allow NULL values only during updates",
+          "They prevent a column from having NULL values during both insertion and updates",
+          "They are optional and do not enforce any restrictions",
+          "They apply only to numeric columns"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_notnull5",
+        "prompt_zh": "下列哪個是true about NOT NULL constraints？"
+      }
+    ],
+    "null_values": [
+      {
+        "question": "What is a <code class='w3-codespan'>NULL</code> value in SQL?",
+        "options": [
+          "A field with no value",
+          "A field with a zero value",
+          "A field containing spaces",
+          "A field that has been deleted"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values1",
+        "prompt_zh": "[NULL 值] What is a NULL value in SQL?"
+      },
+      {
+        "question": "How can you test for <code class='w3-codespan'>NULL</code> values in SQL?",
+        "options": [
+          "Using the = operator",
+          "Using the IS NULL operator",
+          "Using the != operator",
+          "Using the < operator"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values2",
+        "prompt_zh": "如何test for NULL values in SQL？"
+      },
+      {
+        "question": "Which of the following SQL queries would retrieve customers with no address provided?",
+        "options": [
+          "SELECT * FROM Customers WHERE Address = NULL;",
+          "SELECT * FROM Customers WHERE Address IS NULL;",
+          "SELECT * FROM Customers WHERE Address != NULL;",
+          "SELECT * FROM Customers WHERE Address <> NULL;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values3",
+        "prompt_zh": "[NULL 值] Which of the following SQL queries would retrieve customers with no address provided?"
+      },
+      {
+        "fillintheblanks": "exercise_null1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values4",
+        "prompt_zh": "NULL 值 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_null2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values5",
+        "prompt_zh": "NULL 值 填空題"
+      },
+      {
+        "question": "What is the correct SQL syntax to test if a field is <code class='w3-codespan'>NOT NULL</code>?",
+        "options": [
+          "SELECT column_name FROM table WHERE column_name IS NOT NULL;",
+          "SELECT column_name FROM table WHERE column_name != NULL;",
+          "SELECT column_name FROM table WHERE column_name <> NULL;",
+          "SELECT column_name FROM table WHERE column_name = NOT NULL;"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values6",
+        "prompt_zh": "correct SQL syntax to test if a field is NOT NULL 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers WHERE ___ ___;</code>",
+        "draganddropquestion": "Select the correct syntax to test for empty values in an 'Address' field:",
+        "options": [
+          "<code>IS NULL</code>",
+          "<code>Address</code>",
+          "<code>!=</code>",
+          "<code>IS ZERO</code>"
+        ],
+        "correct": [
+          1,
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_null_values7",
+        "prompt_zh": "[NULL 值] Select the correct syntax to test for empty values in an 'Address' field:"
+      }
+    ],
+    "operators": [
+      {
+        "question": "Which SQL operator is used to add two numbers?",
+        "options": [
+          "+",
+          "-",
+          "*",
+          "/"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators1",
+        "prompt_zh": "哪個 SQL operator 用來add two numbers？"
+      },
+      {
+        "question": "What does the <code class='w3-codespan'>%</code> operator do in SQL?",
+        "options": [
+          "Calculates the percentage of a value",
+          "Returns the remainder of a division",
+          "Performs bitwise AND operation"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators2",
+        "prompt_zh": "[運算子] What does the % operator do in SQL?"
+      },
+      {
+        "question": "Which SQL operator is used to check if a value matches a pattern?",
+        "options": [
+          "=",
+          "LIKE",
+          "IN",
+          "BETWEEN"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators3",
+        "prompt_zh": "哪個 SQL operator 用來check if a value matches a pattern？"
+      },
+      {
+        "question": "Which of these operators is a <b>compound operator</b> in SQL?",
+        "options": [
+          "=",
+          "+=",
+          "AND",
+          "IN"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators4",
+        "prompt_zh": "[運算子] Which of these operators is a compound operator in SQL?"
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>BETWEEN</code> operator in SQL?",
+        "options": [
+          "To check if a value is between a given range",
+          "To compare two columns",
+          "To check for matching patterns in strings",
+          "To combine multiple conditions"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators5",
+        "prompt_zh": "purpose of the BETWEEN operator in SQL 是什麼？"
+      },
+      {
+        "question": "The <code class='w3-codespan'><></code> operator in SQL is equivalent to:",
+        "options": [
+          "=",
+          "NOT",
+          "NOT EQUAL",
+          "BETWEEN"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators6",
+        "prompt_zh": "[運算子] The <> operator in SQL is equivalent to:"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers<br>WHERE City = 'Berlin' ___ Age ___ 30;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL operators to complete the query.",
+        "options": [
+          "City =",
+          "AND",
+          "<",
+          "Population",
+          "City"
+        ],
+        "correct": [
+          1,
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_operators7",
+        "prompt_zh": "[運算子] 拖放正確的 SQL operators to complete the query."
+      }
+    ],
+    "or": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>OR</code> operator?",
+        "options": [
+          "To filter records based on multiple conditions where at least one condition is true",
+          "To filter records based on multiple conditions where all conditions must be true",
+          "To sort records in descending order",
+          "To count the number of rows in a table"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_or1",
+        "prompt_zh": "primary purpose of the SQL OR operator 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_or1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_or2",
+        "prompt_zh": "OR 運算子 填空題"
+      },
+      {
+        "question": "Which SQL query would select all customers from either Germany or Spain?",
+        "options": [
+          "SELECT * FROM Customers<br>WHERE Country = 'Germany' OR Country = 'Spain';",
+          "SELECT * FROM Customers<br>WHERE Country = 'Germany' AND Country = 'Spain';",
+          "SELECT * FROM Customers<br>WHERE Country ARE ('Germany', 'Spain');",
+          "SELECT * FROM Customers<br>WHERE Country FROM 'Germany' OR 'Spain';"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_or3",
+        "prompt_zh": "[OR 運算子] Which SQL query would select all customers from either Germany or Spain?"
+      },
+      {
+        "question": "What will the following SQL query return?<br><code class='codeblock'>SELECT * FROM Customers<br>WHERE City = 'Berlin' OR Country = 'Norway';</code>",
+        "options": [
+          "All customers from either Berlin or Norway",
+          "All customers from Berlin only",
+          "All customers from Norway only"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_or4",
+        "prompt_zh": "the following SQL query 會回傳什麼？SELECT * FROM CustomersWHERE City = 'Berlin' OR Country = 'Norway';"
+      },
+      {
+        "question": "Which SQL query would select all Spanish customers whose names start with 'G' or 'R'?",
+        "options": [
+          "SELECT * FROM Customers<br>WHERE Country = 'Spain' AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');",
+          "SELECT * FROM Customers<br>WHERE Country = 'Spain' OR CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';",
+          "SELECT * FROM Customers<br>WHERE Country = 'Spain' AND CustomerName LIKE 'G%' AND CustomerName LIKE 'R%';",
+          "SELECT * FROM Customers<br>WHERE Country = 'Spain' OR CustomerName LIKE 'G%';"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_or5",
+        "prompt_zh": "[OR 運算子] Which SQL query would select all Spanish customers whose names start with 'G' or 'R'?"
+      }
+    ],
+    "orderby": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>ORDER BY</code> keyword?",
+        "options": [
+          "To filter records based on a condition",
+          "To group records with the same value",
+          "To sort records in ascending or descending order"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby1",
+        "prompt_zh": "purpose of the SQL ORDER BY keyword 是什麼？"
+      },
+      {
+        "question": "Which SQL statement sorts products from highest to lowest price?",
+        "options": [
+          "SELECT * FROM Products ORDER BY Price;",
+          "SELECT * FROM Products ORDER BY Price ASC;",
+          "SELECT * FROM Products ORDER BY Price DESC;",
+          "SELECT * FROM Products SORT BY Price DESC;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby2",
+        "prompt_zh": "[ORDER BY] Which SQL statement sorts products from highest to lowest price?"
+      },
+      {
+        "fillintheblanks": "exercise_orderby1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby3",
+        "prompt_zh": "ORDER BY 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_orderby2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby4",
+        "prompt_zh": "ORDER BY 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_orderby3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby5",
+        "prompt_zh": "ORDER BY 填空題"
+      },
+      {
+        "question": "In the SQL <code class='w3-codespan'>ORDER BY</code> clause, what is the default sorting order if <code class='w3-codespan'>ASC</code> or <code class='w3-codespan'>DESC</code> is not specified?",
+        "options": [
+          "Descending",
+          "Ascending",
+          "Random"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_orderby6",
+        "prompt_zh": "[ORDER BY] In the SQL ORDER BY clause, what is the default sorting order if ASC or DESC is not specified?"
+      }
+    ],
+    "primarykey": [
+      {
+        "question": "True or False:<br>Primary keys must contain UNIQUE values, and cannot contain NULL values.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_primarykey1",
+        "prompt_zh": "True 或 False：Primary keys must contain UNIQUE values, and cannot contain NULL values."
+      },
+      {
+        "question": "How many <code class='w3-codespan'>PRIMARY KEY</code> constraints can a table have?",
+        "options": [
+          "Only one per table",
+          "One per column",
+          "Multiple, as long as they are on different columns",
+          "None, unless combined with UNIQUE"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_primarykey2",
+        "prompt_zh": "[主鍵] How many PRIMARY KEY constraints can a table have?"
+      },
+      {
+        "question": "How do you add a <code class='w3-codespan'>PRIMARY KEY</code> to the 'ID' column in an existing table?",
+        "options": [
+          "ALTER TABLE Persons ADD PRIMARY KEY (ID);",
+          "ALTER TABLE Persons SET PRIMARY KEY (ID);",
+          "ALTER TABLE Persons MODIFY PRIMARY KEY (ID);",
+          "ALTER TABLE Persons ADD CONSTRAINT PRIMARY KEY ID;"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_primarykey3",
+        "prompt_zh": "如何add a PRIMARY KEY to the 'ID' column in an existing table？"
+      },
+      {
+        "question": "What happens if you try to add a <code class='w3-codespan'>PRIMARY KEY</code> to a column that contains NULL values?",
+        "options": [
+          "The operation will succeed, but all NULL values will be replaced with 0",
+          "The operation will fail with an error",
+          "The operation will succeed, and NULL values will remain",
+          "The operation will succeed, but duplicates will be ignored"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_primarykey4",
+        "prompt_zh": "[主鍵] What happens if you try to add a PRIMARY KEY to a column that contains NULL values?"
+      }
+    ],
+    "select": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>SELECT</code> statement?",
+        "options": [
+          "To insert data into a database",
+          "To select data from a database",
+          "To delete data from a database",
+          "To update data in a database"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select1",
+        "prompt_zh": "purpose of the SQL SELECT statement 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_select1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select2",
+        "prompt_zh": "SELECT 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_select2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select3",
+        "prompt_zh": "SELECT 填空題"
+      },
+      {
+        "question": "How would you select the 'CustomerName' and 'City' columns from a table named 'Customers'?",
+        "options": [
+          "SELECT CustomerName City FROM Customers;",
+          "SELECT * FROM Customers;",
+          "SELECT CustomerName, City FROM Customers;",
+          "SELECT CustomerName AND City FROM Customers;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select4",
+        "prompt_zh": "[SELECT] How would you select the 'CustomerName' and 'City' columns from a table named 'Customers'?"
+      },
+      {
+        "draganddroptext": "<code>___ ___ Customers;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to select all columns from a table named 'Customers'",
+        "options": [
+          "<code>SELECT *</code>",
+          "<code>GET *</code>",
+          "<code>SELECT ALL</code>",
+          "<code>FROM</code>"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select5",
+        "prompt_zh": "[SELECT] 拖放正確的 syntax to select all columns from a table named 'Customers'"
+      }
+    ],
+    "select_into": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>SELECT INTO</code> statement?",
+        "options": [
+          "To update data in an existing table",
+          "To copy data from one table into a new table",
+          "To delete data from a table",
+          "To create an index on a table"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select_into1",
+        "prompt_zh": "primary purpose of the SQL SELECT INTO statement 是什麼？"
+      },
+      {
+        "question": "Which of the following SQL statements creates a backup copy of the 'Customers' table?",
+        "options": [
+          "SELECT * FROM Customers INTO CustomersBackup;",
+          "SELECT INTO CustomersBackup FROM Customers;",
+          "SELECT * INTO CustomersBackup FROM Customers;",
+          "SELECT INTO Customers FROM CustomersBackup;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select_into2",
+        "prompt_zh": "[SELECT INTO] Which of the following SQL statements creates a backup copy of the 'Customers' table?"
+      },
+      {
+        "question": "How can you copy only specific columns into a new table using <code class='w3-codespan'>SELECT INTO</code>?",
+        "options": [
+          "SELECT column1, column2 INTO newtable FROM oldtable;",
+          "SELECT INTO newtable column1, column2 FROM oldtable;",
+          "SELECT column1, column2 INTO oldtable FROM newtable;",
+          "SELECT INTO oldtable column1, column2 FROM newtable;"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select_into3",
+        "prompt_zh": "如何copy only specific columns into a new table using SELECT INTO？"
+      },
+      {
+        "draganddroptext": "<code>SELECT * ___ CustomersGermany<br>___ Customers<br>___ Country = '___';</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to create a new table with German customers only.",
+        "options": [
+          "<code>*</code>",
+          "<code>Germany</code>",
+          "<code>Country</code>",
+          "<code>FROM</code>",
+          "<code>WHERE</code>",
+          "<code>ALL</code>",
+          "<code>INTO</code>",
+          "<code>UNION</code>"
+        ],
+        "correct": [
+          6,
+          3,
+          4,
+          1
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select_into4",
+        "prompt_zh": "[SELECT INTO] 拖放正確的 SQL 關鍵字s to create a new table with German customers only."
+      },
+      {
+        "draganddroptext": "<code>SELECT Customers.CustomerName, Orders.OrderID<br>___ CustomersOrderBackup<br>FROM Customers<br>___ Orders ___ Customers.CustomerID = Orders.CustomerID;</code>",
+        "draganddropquestion": "Drag and drop the correct SQL keywords to copy data from multiple tables into a new table.",
+        "options": [
+          "<code>SELECT</code>",
+          "<code>INTO</code>",
+          "<code>ALL</code>",
+          "<code>FROM</code>",
+          "<code>LEFT JOIN</code>",
+          "<code>IN</code>",
+          "<code>ON</code>"
+        ],
+        "correct": [
+          1,
+          4,
+          6
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_select_into5",
+        "prompt_zh": "[SELECT INTO] 拖放正確的 SQL 關鍵字s to copy data from multiple tables into a new table."
+      }
+    ],
+    "stored_procedures": [
+      {
+        "question": "What is the primary purpose of a stored procedure in SQL?",
+        "options": [
+          "To optimize indexing in the database",
+          "To save reusable SQL code for repeated use",
+          "To create tables automatically",
+          "To handle NULL values in queries"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures1",
+        "prompt_zh": "primary purpose of a stored procedure in SQL 是什麼？"
+      },
+      {
+        "question": "Which of the following is the correct syntax to create a stored procedure?",
+        "options": [
+          "SET PROCEDURE procedure_name BEGIN sql_statement END;",
+          "EXEC PROCEDURE procedure_name GO sql_statement;",
+          "CREATE PROCEDURE procedure_name BEGIN sql_statement;",
+          "CREATE PROCEDURE procedure_name AS BEGIN sql_statement END;"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures2",
+        "prompt_zh": "下列哪個是the correct syntax to create a stored procedure？"
+      },
+      {
+        "question": "How do you execute a stored procedure named <code class='w3-codespan'>GetCustomers</code>?",
+        "options": [
+          "CALL GetCustomers;",
+          "EXEC GetCustomers;",
+          "RUN PROCEDURE GetCustomers;",
+          "EXECUTE GetCustomers();"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures3",
+        "prompt_zh": "如何execute a stored procedure named GetCustomers？"
+      },
+      {
+        "question": "What is the purpose of the <code class='w3-codespan'>@City</code> parameter in the following stored procedure?\n\n<code class='codeblock'>CREATE PROCEDURE SelectCustomers @City nvarchar(50)<br>AS<br>BEGIN<br>SELECT * FROM Customers WHERE City = @City<br>END;</code>",
+        "options": [
+          "To define the column to search in the Customers table",
+          "To specify a variable for the City filter in the query",
+          "To assign default values to all records in the City column",
+          "To replace NULL values in the City column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures4",
+        "prompt_zh": "purpose of the @City parameter in the following stored procedure 是什麼？ CREATE PROCEDURE SelectCustomers @City nvarchar(50)ASBEGINSELECT * FROM Customers WHERE City = @CityEND;"
+      },
+      {
+        "draganddroptext": "<code>___ SelectAllCustomers @City nvarchar(30), @PostalCode nvarchar(10)<br>___<br>SELECT * FROM Customers WHERE City = @City AND PostalCode = @PostalCode<br>___;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to create a stored procedure with multiple parameters.",
+        "options": [
+          "<code>SELECT</code>",
+          "<code>CREATE PROCEDURE</code>",
+          "<code>END</code>",
+          "<code>AS BEGIN</code>",
+          "<code>EXEC</code>",
+          "<code>JOIN</code>"
+        ],
+        "correct": [
+          1,
+          3,
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures5",
+        "prompt_zh": "[預存程序] 拖放正確的 syntax to create a stored procedure with multiple parameters."
+      },
+      {
+        "question": "Which of the following is a valid way to execute a stored procedure with two parameters?",
+        "options": [
+          "EXEC GetCustomerDetails @City = 'London', @PostalCode = 'WA1 1DP';",
+          "CALL GetCustomerDetails 'London', 'WA1 1DP';",
+          "EXECUTE PROCEDURE GetCustomerDetails(London, WA1 1DP);",
+          "CALL GetCustomerDetails('London', 'WA1 1DP');"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_stored_procedures6",
+        "prompt_zh": "下列哪個是a valid way to execute a stored procedure with two parameters？"
+      }
+    ],
+    "sum": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>SUM()</code> function do?",
+        "options": [
+          "Counts the number of rows in a table",
+          "Returns the total sum of a numeric column",
+          "Calculates the average value of a column",
+          "Returns the maximum value in a column"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_sum1",
+        "prompt_zh": "the SQL SUM() function 做什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_functions5.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_sum2",
+        "prompt_zh": "SUM() 填空題"
+      },
+      {
+        "question": "Which of the following queries would return the sum of all Quantity values in the 'OrderDetails' table?",
+        "options": [
+          "<code>SELECT SUM(Quantity) FROM OrderDetails;</code>",
+          "<code>SELECT COUNT(Quantity) FROM OrderDetails;</code>",
+          "<code>SELECT TOTAL(Quantity) FROM OrderDetails;</code>",
+          "<code>SELECT SUM(ProductID) FROM OrderDetails;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_sum3",
+        "prompt_zh": "[SUM()] Which of the following queries would return the sum of all Quantity values in the 'OrderDetails' table?"
+      },
+      {
+        "question": "What will the following query return?<br><code class='codeblock'>SELECT SUM(Quantity)<br>FROM OrderDetails<br>WHERE ProductID = 11;</code>",
+        "options": [
+          "The total sum of all Quantity values in the OrderDetails table",
+          "The total sum of Quantity values where ProductID is 11",
+          "The sum of all ProductID values where Quantity is 11",
+          "The average of Quantity values where ProductID is 11"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_sum4",
+        "prompt_zh": "the following query 會回傳什麼？SELECT SUM(Quantity)FROM OrderDetailsWHERE ProductID = 11;"
+      },
+      {
+        "draganddroptext": "<code>SELECT ___(Quantity) FROM OrderDetails;</code>",
+        "draganddropquestion": "Drag and drop the correct function to calculate the total quantity from the OrderDetails table.",
+        "options": [
+          "<code>SUM</code>",
+          "<code>AVG</code>",
+          "<code>MAX</code>",
+          "<code>MIN</code>"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_sum5",
+        "prompt_zh": "[SUM()] 拖放正確的 function to calculate the total quantity from the OrderDetails table."
+      }
+    ],
+    "syntax": [
+      {
+        "question": "Which SQL statement is used to select all records from a table named 'Customers'?",
+        "options": [
+          "SELECT FROM Customers;",
+          "SELECT ALL FROM Customers;",
+          "SELECT * FROM Customers;",
+          "GET ALL FROM Customers;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_syntax1",
+        "prompt_zh": "哪個 SQL 語句用來select all records from a table named 'Customers'？"
+      },
+      {
+        "question": "What is a table in a database?",
+        "options": [
+          "A collection of databases",
+          "A structured set of data organized in rows and columns",
+          "A list of SQL statements",
+          "A command for executing SQL queries"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_syntax2",
+        "prompt_zh": "[SQL 語法] What is a table in a database?"
+      },
+      {
+        "question": "Are SQL keywords case-sensitive?",
+        "options": [
+          "Yes, they are case-sensitive.",
+          "No, they are not case-sensitive.",
+          "Only in certain database systems.",
+          "It depends on the SQL statement."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_syntax3",
+        "prompt_zh": "[SQL 語法] Are SQL keywords case-sensitive?"
+      },
+      {
+        "question": "Why is a semicolon used at the end of SQL statements?",
+        "options": [
+          "To improve readability",
+          "To separate multiple SQL statements",
+          "To make SQL statements case-insensitive"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_syntax4",
+        "prompt_zh": "[SQL 語法] Why is a semicolon used at the end of SQL statements?"
+      }
+    ],
+    "top": [
+      {
+        "question": "What would the following query do in SQL Server?<br><code class='w3-codespan'>SELECT TOP 5 * FROM Customers;</code>",
+        "options": [
+          "Select the first 5 records from the Customers table",
+          "Select the last 5 records from the Customers table",
+          "Select 5 records sorted by CustomerName",
+          "Select all records with CustomerID less than 5"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_top1",
+        "prompt_zh": "[TOP/LIMIT] What would the following query do in SQL Server?SELECT TOP 5 * FROM Customers;"
+      },
+      {
+        "question": "Which SQL clause is used to limit the number of returned records in MySQL?",
+        "options": [
+          "TOP",
+          "ROWNUM",
+          "LIMIT",
+          "FETCH FIRST"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_top2",
+        "prompt_zh": "哪個 SQL clause 用來limit the number of returned records in MySQL？"
+      },
+      {
+        "draganddroptext": "<code>SELECT ___ ___ Customers ORDER BY CustomerName DESC ___ 3;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to select the first 3 records in MySQL, sorted by CustomerName in descending order.",
+        "options": [
+          "<code>*</code>",
+          "<code>FROM</code>",
+          "<code>LIMIT</code>",
+          "<code>TOP</code>",
+          "<code>SELECT</code>"
+        ],
+        "correct": [
+          0,
+          1,
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_top3",
+        "prompt_zh": "[TOP/LIMIT] 拖放正確的 syntax to select the first 3 records in MySQL, sorted by CustomerName in descending order."
+      }
+    ],
+    "union": [
+      {
+        "question": "What is the primary purpose of the SQL <code class='w3-codespan'>UNION</code> operator?",
+        "options": [
+          "To create a new table with combined columns",
+          "To delete duplicate rows in a table",
+          "To perform a self join",
+          "To combine the result-sets of two or more SELECT statements"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_union1",
+        "prompt_zh": "primary purpose of the SQL UNION operator 是什麼？"
+      },
+      {
+        "question": "What is the key difference between <code class='w3-codespan'>UNION</code> and <code class='w3-codespan'>UNION ALL</code>?",
+        "options": [
+          "UNION includes all rows, including duplicates, while UNION ALL removes duplicates",
+          "UNION removes duplicates by default, while UNION ALL includes all rows",
+          "UNION sorts the rows, while UNION ALL does not",
+          "There is no difference between UNION and UNION ALL"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_union2",
+        "prompt_zh": "key difference between UNION and UNION ALL 是什麼？"
+      },
+      {
+        "question": "Which condition must be met when using the <code class='w3-codespan'>UNION</code> operator?",
+        "options": [
+          "The tables must have the same number of rows",
+          "The SELECT statements must have the same number of columns with similar data types",
+          "The tables must have a primary key",
+          "The columns must be indexed"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_union3",
+        "prompt_zh": "[UNION] Which condition must be met when using the UNION operator?"
+      },
+      {
+        "draganddroptext": "<code>SELECT City FROM Customers<br>___<br>SELECT City FROM Suppliers<br>ORDER BY City;</code>",
+        "draganddropquestion": "Drag and drop the correct syntax to combine cities from Customers and Suppliers with duplicate values.",
+        "options": [
+          "<code>City</code>",
+          "<code>UNION</code>",
+          "<code>UNION ALL</code>",
+          "<code>ORDER BY</code>",
+          "<code>WHERE</code>"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_union4",
+        "prompt_zh": "[UNION] 拖放正確的 syntax to combine cities from Customers and Suppliers with duplicate values."
+      }
+    ],
+    "unique": [
+      {
+        "question": "What does the SQL <code class='w3-codespan'>UNIQUE</code> constraint ensure?",
+        "options": [
+          "That a column cannot contain NULL values",
+          "That all values in a column are different",
+          "That a column must always contain a value",
+          "That a column is a foreign key"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_unique1",
+        "prompt_zh": "[UNIQUE] What does the SQL UNIQUE constraint ensure?"
+      },
+      {
+        "question": "How many <code class='w3-codespan'>UNIQUE</code> constraints can a single table have?",
+        "options": [
+          "Only one",
+          "Multiple",
+          "One for each numeric column",
+          "Only for columns with a NOT NULL constraint"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_unique2",
+        "prompt_zh": "[UNIQUE] How many UNIQUE constraints can a single table have?"
+      },
+      {
+        "question": "How do you create a <code class='w3-codespan'>UNIQUE</code> constraint on the 'ID' column in an existing table?",
+        "options": [
+          "ALTER TABLE Persons ADD UNIQUE ID;",
+          "ALTER TABLE Persons ADD CONSTRAINT UNIQUE (ID);",
+          "ALTER TABLE Persons ADD UNIQUE (ID);",
+          "ALTER TABLE Persons MODIFY COLUMN ID UNIQUE;"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_unique3",
+        "prompt_zh": "如何建立 UNIQUE constraint on the 'ID' column in an existing table？"
+      },
+      {
+        "draganddroptext": "<code>ALTER TABLE Persons<br>___ CONSTRAINT UC_Person ___ (ID, LastName);</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to add a named UNIQUE constraint on the 'ID' and 'LastName' columns.",
+        "options": [
+          "ADD",
+          "DROP",
+          "INDEX",
+          "UNIQUE"
+        ],
+        "correct": [
+          0,
+          3
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_unique4",
+        "prompt_zh": "[UNIQUE] 拖放正確的 關鍵字s to add a named UNIQUE constraint on the 'ID' and 'LastName' columns."
+      },
+      {
+        "question": "What is the difference between a <code class='w3-codespan'>PRIMARY KEY</code> and a <code class='w3-codespan'>UNIQUE</code> constraint?",
+        "options": [
+          "A PRIMARY KEY allows duplicate values, while UNIQUE does not",
+          "A UNIQUE constraint can exist multiple times in a table, while a PRIMARY KEY is limited to one per table",
+          "A UNIQUE constraint automatically creates a foreign key",
+          "A PRIMARY KEY cannot combine multiple columns, while UNIQUE can"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_unique5",
+        "prompt_zh": "difference between a PRIMARY KEY and a UNIQUE constraint 是什麼？"
+      }
+    ],
+    "update": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>UPDATE</code> statement?",
+        "options": [
+          "To add new records to a table",
+          "To delete records from a table",
+          "To modify existing records in a table",
+          "To retrieve records from a table"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update1",
+        "prompt_zh": "purpose of the SQL UPDATE statement 是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_update1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update2",
+        "prompt_zh": "UPDATE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_update2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update3",
+        "prompt_zh": "UPDATE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_update3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update4",
+        "prompt_zh": "UPDATE 填空題"
+      },
+      {
+        "question": "What will happen if you omit the <code class='w3-codespan'>WHERE</code> clause in an <code class='w3-codespan'>UPDATE</code> statement?",
+        "options": [
+          "No records will be updated",
+          "Only the first record will be updated",
+          "All records will be updated",
+          "An error will occur"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update5",
+        "prompt_zh": "[UPDATE] What will happen if you omit the WHERE clause in an UPDATE statement?"
+      },
+      {
+        "draganddroptext": "<code>___ Customers ___ City = 'New York';</code>",
+        "draganddropquestion": "Select the correct syntax to update the City column of all records in the Customers table.",
+        "options": [
+          "<code>DELETE</code>",
+          "<code>UPDATE</code>",
+          "<code>GET</code>",
+          "<code>INSERT</code>",
+          "<code>SET</code>"
+        ],
+        "correct": [
+          1,
+          4
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_update6",
+        "prompt_zh": "[UPDATE] Select the correct syntax to update the City column of all records in the Customers table."
+      }
+    ],
+    "view": [
+      {
+        "question": "What is an SQL view?",
+        "options": [
+          "A real table stored in the database",
+          "A virtual table based on the result-set of an SQL statement",
+          "A function that modifies data in the database",
+          "A temporary table used for backup purposes"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view1",
+        "prompt_zh": "[VIEW] What is an SQL view?"
+      },
+      {
+        "question": "Which SQL statement is used to create a view?",
+        "options": [
+          "CREATE TABLE",
+          "CREATE VIEW",
+          "CREATE FUNCTION",
+          "CREATE DATABASE"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view2",
+        "prompt_zh": "哪個 SQL 語句用來建立 view？"
+      },
+      {
+        "question": "What happens when you query a view?",
+        "options": [
+          "The database retrieves pre-stored static data",
+          "The database engine recreates the view with up-to-date data",
+          "The view is converted into a real table",
+          "The query is ignored if the view is not indexed"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view3",
+        "prompt_zh": "[VIEW] What happens when you query a view?"
+      },
+      {
+        "question": "Which SQL statement adds or modifies the columns of an existing view?",
+        "options": [
+          "ALTER VIEW",
+          "UPDATE VIEW",
+          "CREATE OR REPLACE VIEW",
+          "MODIFY VIEW"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view4",
+        "prompt_zh": "[VIEW] Which SQL statement adds or modifies the columns of an existing view?"
+      },
+      {
+        "question": "What is the correct syntax to drop a view?",
+        "options": [
+          "DELETE VIEW view_name;",
+          "DROP VIEW view_name;",
+          "REMOVE VIEW view_name;",
+          "TRUNCATE VIEW view_name;"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view5",
+        "prompt_zh": "correct syntax to drop a view 是什麼？"
+      },
+      {
+        "draganddroptext": "<code>___ view_name AS<br>___ column1, column2, ...<br>___ table_name<br>___ condition;</code>",
+        "draganddropquestion": "Drag and drop the correct keywords to make sense of the following syntax code:",
+        "options": [
+          "SELECT",
+          "FROM",
+          "WHERE",
+          "CREATE VIEW"
+        ],
+        "correct": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_view6",
+        "prompt_zh": "[VIEW] 拖放正確的 關鍵字s to make sense of the following syntax code:"
+      }
+    ],
+    "where": [
+      {
+        "question": "What is the purpose of the SQL <code class='w3-codespan'>WHERE</code> clause?",
+        "options": [
+          "To specify the table from which to select data",
+          "To filter records that meet a specified condition",
+          "To join multiple tables together",
+          "To sort records in ascending order"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where1",
+        "prompt_zh": "purpose of the SQL WHERE clause 是什麼？"
+      },
+      {
+        "question": "Which of the following SQL statements would return all customers from 'Mexico'?",
+        "options": [
+          "SELECT * FROM Customers WHERE City='Mexico';",
+          "SELECT * FROM Customers WHERE Country='Mexico';",
+          "SELECT * FROM Customers AND Country='Mexico';",
+          "SELECT * WHERE Country='Mexico';"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where2",
+        "prompt_zh": "[WHERE] Which of the following SQL statements would return all customers from 'Mexico'?"
+      },
+      {
+        "fillintheblanks": "exercise_where1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where3",
+        "prompt_zh": "WHERE 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_where2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where4",
+        "prompt_zh": "WHERE 填空題"
+      },
+      {
+        "question": "How should text values be enclosed in the SQL <code class='w3-codespan'>WHERE</code> clause?",
+        "options": [
+          "With double quotes",
+          "With single quotes",
+          "With no quotes",
+          "With backticks"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where5",
+        "prompt_zh": "[WHERE] How should text values be enclosed in the SQL WHERE clause?"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers<br>___ CustomerID ___ 50;</code>",
+        "draganddropquestion": "Drag and drop to select all customers with a CustomerID greater than 50.",
+        "options": [
+          "<code>LIKE</code>",
+          "<code>SELECT</code>",
+          "<code>WHERE</code>",
+          "<code><</code>",
+          "<code>></code>",
+          "<code>FROM</code>"
+        ],
+        "correct": [
+          2,
+          4
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_where6",
+        "prompt_zh": "[WHERE] Drag and drop to select all customers with a CustomerID greater than 50."
+      }
+    ],
+    "wildcards": [
+      {
+        "question": "What does the <code class='w3-codespan'>%</code> wildcard represent in SQL?",
+        "options": [
+          "Zero or more characters",
+          "A single character",
+          "Any single character within a range",
+          "An exact match for a string"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards1",
+        "prompt_zh": "[萬用字元] What does the % wildcard represent in SQL?"
+      },
+      {
+        "question": "Which wildcard should be used to represent a single character in SQL?",
+        "options": [
+          "%",
+          "_",
+          "[]",
+          "-"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards2",
+        "prompt_zh": "[萬用字元] Which wildcard should be used to represent a single character in SQL?"
+      },
+      {
+        "fillintheblanks": "exercise_wildcards1.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards3",
+        "prompt_zh": "萬用字元 填空題"
+      },
+      {
+        "question": "How do you specify a range of characters in SQL using wildcards?",
+        "options": [
+          "Using '%' with the range inside brackets",
+          "Using '_' with the range inside quotes",
+          "Using '[]' with the range and a '-' between the characters",
+          "Using '{}' with the range and a ',' between the characters"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards4",
+        "prompt_zh": "如何specify a range of characters in SQL using wildcards？"
+      },
+      {
+        "fillintheblanks": "exercise_wildcards2.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards5",
+        "prompt_zh": "萬用字元 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_wildcards3.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards6",
+        "prompt_zh": "萬用字元 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_wildcards4.htm",
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards7",
+        "prompt_zh": "萬用字元 填空題"
+      },
+      {
+        "draganddroptext": "<code>SELECT * FROM Customers WHERE City LIKE ___;</code>",
+        "draganddropquestion": "Drag and drop the correct wildcard to select cities that start with 'L' and end with 'n'.",
+        "options": [
+          "<code>'L%n'</code>",
+          "<code>'_Ln'</code>",
+          "<code>'Lxn'</code>",
+          "<code>'_Ln%'</code>"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/sql/exercise.asp?x=xrcise_wildcards8",
+        "prompt_zh": "[萬用字元] 拖放正確的 wildcard to select cities that start with 'L' and end with 'n'."
+      }
+    ]
+  }
+}

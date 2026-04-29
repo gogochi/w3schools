@@ -1,0 +1,683 @@
+{
+  "language": "vue",
+  "topics": {
+    "intro": [
+      {
+        "fillintheblanks": true,
+        "question": "What is the name of the programming language missing here?",
+        "code": "Vue is a popular @(10) framework.",
+        "solution": "Vue is a popular JavaScript framework.",
+        "alternatives": [
+          "Vue is a popular Javascript framework.",
+          "Vue is a popular javascript framework."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_intro1",
+        "filename": "exercise_intro1",
+        "index": 1,
+        "prompt_zh": "這裡缺少的程式語言名稱是？"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Use text interpolation to display the 'message' data property value.",
+        "code": "<div id=\"app\">@(13)</div>\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        message: \"Hello World!\"\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">{{ message }}</div>\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        message: \"Hello World!\"\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [
+          "<div id=\"app\">{{message}}</div>\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        message: \"Hello World!\"\n      }\n    }\n  })\n  app.mount('#app')\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_intro2",
+        "filename": "exercise_intro2",
+        "index": 2,
+        "prompt_zh": "使用文字插值顯示 'message' 資料屬性的值"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "You need basic prior experience with @(4), CSS and JavaScript to follow this tutorial.",
+        "code": "You need basic prior experience with @(4), \nCSS and JavaScript to follow this tutorial.",
+        "solution": "You need basic prior experience with HTML, \nCSS and JavaScript to follow this tutorial.",
+        "alternatives": [
+          "You need basic prior experience with html, \nCSS and JavaScript to follow this tutorial."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_intro3",
+        "filename": "exercise_intro3",
+        "index": 3,
+        "prompt_zh": "你需要先具備 @(4)、CSS 與 JavaScript 的基本經驗才能跟得上這份教學"
+      }
+    ],
+    "directives": [
+      {
+        "fillintheblanks": true,
+        "question": "Fill in the missing part to connect the class attribute to the \"myClass\" data property.",
+        "code": "<p @(6):class=\"myClass\"></p>",
+        "solution": "<p v-bind:class=\"myClass\"></p>",
+        "alternatives": [
+          "<p :class=\"myClass\"></p>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives1",
+        "filename": "exercise_directives1",
+        "index": 1,
+        "prompt_zh": "補上缺少的部分，把 class 屬性連結到 'myClass' 資料屬性"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The shorthand for 'v-bind:' is simply '@(1)'.",
+        "code": "The shorthand for 'v-bind:' is simply '@(1)'.",
+        "solution": "The shorthand for 'v-bind:' is simply ':'.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives2",
+        "filename": "exercise_directives2",
+        "index": 2,
+        "prompt_zh": "'v-bind:' 的縮寫是 '@(1)'"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Provide the missing code so that the class is set equal to the 'className' data property, using a Vue directive shorthand.",
+        "code": "<div @(6)=\"className\">\n  The class is set with Vue\n</div>",
+        "solution": "<div :class=\"className\">\n  The class is set with Vue\n</div>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives3",
+        "filename": "exercise_directives3",
+        "index": 3,
+        "prompt_zh": "用 Vue 指令縮寫，把 class 設為等於 'className' 資料屬性"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "List rendering in Vue can be done so that several HTML elements are created based on an array.",
+        "code": "v-@(10)",
+        "solution": "v-for",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives4",
+        "filename": "exercise_directives4",
+        "index": 4,
+        "prompt_zh": "Vue 中可以用列表渲染依陣列產生多個 HTML 元素"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Fill in the missing field.",
+        "code": "In Vue, events are handled with the @(4) directive.",
+        "solution": "In Vue, events are handled with the v-on directive.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives5",
+        "filename": "exercise_directives5",
+        "index": 5,
+        "prompt_zh": "填入缺少的欄位"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The shorthand for 'v-on:' is simply '@(1)'.",
+        "code": "The shorthand for 'v-on:' is simply '@(1)'.",
+        "solution": "The shorthand for 'v-on:' is simply '@'.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives6",
+        "filename": "exercise_directives6",
+        "index": 6,
+        "prompt_zh": "'v-on:' 的縮寫是 '@(1)'"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Complete the code so that the image toggles when the button is clicked.",
+        "code": "<template>\n  <button @(10)=\"showImg = !showImg\">\n    Toggle image\n  </button>\n  <img src=\"flower.jpg\" alt=\"flower\" v-show=\"showImg\">\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        @(7): true\n      }\n    }\n  }\n</script>",
+        "solution": "<template>\n  <button v-on:click=\"showImg = !showImg\">\n    Toggle image\n  </button>\n  <img src=\"flower.jpg\" alt=\"flower\" v-show=\"showImg\">\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        showImg: true\n      }\n    }\n  }\n</script>",
+        "alternatives": [
+          "<template>\n  <button @:click=\"showImg = !showImg\">\n    Toggle image\n  </button>\n  <img src=\"flower.jpg\" alt=\"flower\" v-show=\"showImg\">\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        showImg: true\n      }\n    }\n  }\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives7",
+        "filename": "exercise_directives7",
+        "index": 7,
+        "prompt_zh": "完成程式碼，讓圖片在按鈕被點擊時切換"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Fill in the missing part so that Vue toggles the visibility of the tag below for us, depending on the 'lightOn' boolean data property.",
+        "code": "<div id=\"app\">\n  <div id=\"lightDiv\">\n    <div @(6)=\"lightOn\"></div>\n    <img src=\"img_lightBulb.svg\">\n  </div>\n  <button v-on:click=\" lightOn =! lightOn \">Switch light</button>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        lightOn: false\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <div id=\"lightDiv\">\n    <div v-show=\"lightOn\"></div>\n    <img src=\"img_lightBulb.svg\">\n  </div>\n  <button v-on:click=\" lightOn =! lightOn \">Switch light</button>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        lightOn: false\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [
+          "<div id=\"app\">\n  <div id=\"lightDiv\">\n    <div v-if=\"lightOn\"></div>\n    <img src=\"img_lightBulb.svg\">\n  </div>\n  <button v-on:click=\" lightOn =! lightOn \">Switch light</button>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        lightOn: false\n      }\n    }\n  })\n  app.mount('#app')\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives8",
+        "filename": "exercise_directives8",
+        "index": 8,
+        "prompt_zh": "補齊缺少的部分，讓 Vue 依 'lightOn' 布林值切換下方標籤的顯示"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Use the shorthand of a Vue directive so that the light bulb turns on and off when the button is clicked.",
+        "code": "<div id=\"app\">\n  <div id=\"lightDiv\">\n    <div v-show=\"lightOn\"></div>\n    <img src=\"img_lightBulb.svg\">\n  </div>\n  <button @(6)=\" lightOn =! lightOn \">Switch light</button>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        lightOn: false\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <div id=\"lightDiv\">\n    <div v-show=\"lightOn\"></div>\n    <img src=\"img_lightBulb.svg\">\n  </div>\n  <button @click=\" lightOn =! lightOn \">Switch light</button>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        lightOn: false\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives9",
+        "filename": "exercise_directives9",
+        "index": 9,
+        "prompt_zh": "用 Vue 指令縮寫，讓燈泡在按鈕被點擊時開關"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Provide the correct code so that the element changes color when right clicked.",
+        "code": "<div id=\"app\">\n  <div v-on:click.@(13)=\"changeColor\"\n      v-bind:style=\"{backgroundColor:'hsl('+bgColor+',80%,80%)'}\">\n    <p>Press right mouse button here.</p>\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        bgColor: 0\n      }\n    },\n    methods: {\n      changeColor() {\n        this.bgColor+=50\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <div v-on:click.right.prevent=\"changeColor\"\n      v-bind:style=\"{backgroundColor:'hsl('+bgColor+',80%,80%)'}\">\n    <p>Press right mouse button here.</p>\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        bgColor: 0\n      }\n    },\n    methods: {\n      changeColor() {\n        this.bgColor+=50\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives10",
+        "filename": "exercise_directives10",
+        "index": 10,
+        "prompt_zh": "提供正確程式碼，讓元素在右鍵點擊時變色"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Provide the correct code so that the default browser refresh on submit is prevented.",
+        "code": "<form v-on:@(14)=\"addItem\">\n  <p>Add item</p>\n  <p>\n    Item name: \n    <input type=\"text\" required @(7)=\"itemName\">\n  </p>\n  <p>\n    How many: \n    <input type=\"number\" @(7)=\"itemNumber\">\n  </p>\n  <button type=\"submit\">Add item</button>\n</form>",
+        "solution": "<form v-on:submit.prevent=\"addItem\">\n  <p>Add item</p>\n  <p>\n    Item name: \n    <input type=\"text\" required v-model=\"itemName\">\n  </p>\n  <p>\n    How many: \n    <input type=\"number\" v-model=\"itemNumber\">\n  </p>\n  <button type=\"submit\">Add item</button>\n</form>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives11",
+        "filename": "exercise_directives11",
+        "index": 11,
+        "prompt_zh": "提供正確程式碼，阻止瀏覽器在表單 submit 時預設重新整理"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "To display an element conditionally depending on a boolean value (true or false), we can use either:",
+        "code": "the 'v-if' directive or the '@(6)' directive.",
+        "solution": "the 'v-if' directive or the 'v-show' directive.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives12",
+        "filename": "exercise_directives12",
+        "index": 12,
+        "prompt_zh": "依布林值（true 或 false）有條件顯示元素，可用以下哪個指令："
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Fill in the missing code so that the user either sees the text 'in stock' or 'not in stock'.",
+        "code": "<div id=\"app\">\n  <p @(4)=\"typewritersInStock\">\n    in stock\n  </p>\n  <p @(6)>\n    not in stock\n  </p>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\nconst app = Vue.createApp({\n  data() {\n    return {\n      typewritersInStock: true\n    }\n  }\n})\napp.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <p v-if=\"typewritersInStock\">\n    in stock\n  </p>\n  <p v-else>\n    not in stock\n  </p>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\nconst app = Vue.createApp({\n  data() {\n    return {\n      typewritersInStock: true\n    }\n  }\n})\napp.mount('#app')\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives13",
+        "filename": "exercise_directives13",
+        "index": 13,
+        "prompt_zh": "補齊缺少的程式碼，讓使用者看到 'in stock' 或 'not in stock'"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Fill in the missing code so that the input gets a two-way binding with the 'inpText' data property.",
+        "code": "<template>\n  <input type=\"text\" @(17)>\n  <p> {{ inpText }} </p>\n</template>\n\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        inpText: 'Initial text'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<template>\n  <input type=\"text\" v-model=\"inpText\">\n  <p> {{ inpText }} </p>\n</template>\n\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        inpText: 'Initial text'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [
+          "<template>\n  <input type=\"text\" v-model='inpText'>\n  <p> {{ inpText }} </p>\n</template>\n\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        inpText: 'Initial text'\n      }\n    }\n  })\n  app.mount('#app')\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_directives14",
+        "filename": "exercise_directives14",
+        "index": 14,
+        "prompt_zh": "補齊程式碼，讓 input 與 'inpText' 資料屬性建立雙向綁定"
+      }
+    ],
+    "methods": [
+      {
+        "fillintheblanks": true,
+        "question": "Write the missing code so that the 'writeText' method is called when the tag is clicked.",
+        "code": "<div id=\"app\">\n  <p>Click on the box below:</p>\n  <div @(10)=@(11)>\n    {{ text }}\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        text: ''\n      }\n    },\n    @(7): {\n      writeText() {\n        this.@(4) = 'Hello World!'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <p>Click on the box below:</p>\n  <div v-on:click=\"writeText\">\n    {{ text }}\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        text: ''\n      }\n    },\n    methods: {\n      writeText() {\n        this.text = 'Hello World!'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+        "alternatives": [
+          "<div id=\"app\">\n  <p>Click on the box below:</p>\n  <div v-on:click='writeText'>\n    {{ text }}\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        text: ''\n      }\n    },\n    methods: {\n      writeText() {\n        this.text = 'Hello World!'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+          "<div id=\"app\">\n  <p>Click on the box below:</p>\n  <div @:click='writeText'>\n    {{ text }}\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        text: ''\n      }\n    },\n    methods: {\n      writeText() {\n        this.text = 'Hello World!'\n      }\n    }\n  })\n  app.mount('#app')\n</script>",
+          "<div id=\"app\">\n  <p>Click on the box below:</p>\n  <div @:click=\"writeText\">\n    {{ text }}\n  </div>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        text: ''\n      }\n    },\n    methods: {\n      writeText() {\n        this.text = 'Hello World!'\n      }\n    }\n  })\n  app.mount('#app')\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_methods1",
+        "filename": "exercise_methods1",
+        "index": 1,
+        "prompt_zh": "補上缺少的程式碼，讓 'writeText' 方法在標籤被點擊時呼叫"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "There is a certain word we need to use to reach data properties from inside a method.",
+        "code": "data() {\n  return {\n    text: ''\n  }\n},\nmethods: {\n  writeText() {\n    @(4).text = 'Hello World!'\n  }\n}",
+        "solution": "data() {\n  return {\n    text: ''\n  }\n},\nmethods: {\n  writeText() {\n    this.text = 'Hello World!'\n  }\n}",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_methods2",
+        "filename": "exercise_methods2",
+        "index": 2,
+        "prompt_zh": "在方法內存取資料屬性必須用某個關鍵字（提示：this）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What is missing so that the click event is passed with the method as an argument?",
+        "code": "<button v-on:click=\"addAnimal(@(6), 5)\">+5</button>",
+        "solution": "<button v-on:click=\"addAnimal($event, 5)\">+5</button>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_methods3",
+        "filename": "exercise_methods3",
+        "index": 3,
+        "prompt_zh": "缺什麼才能把 click 事件當作參數傳給方法？"
+      }
+    ],
+    "computed-properties": [
+      {
+        "fillintheblanks": true,
+        "question": "Computed properties are used like we use @(4) properties, but written like @(9)",
+        "code": "Computed properties are used like we use @(4) properties, \nbut written like @(9)",
+        "solution": "Computed properties are used like we use data properties, \nbut written like methods",
+        "alternatives": [
+          "Computed properties are used like we use data properties, \nbut written like functions"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_computed-properties1",
+        "filename": "exercise_computed-properties1",
+        "index": 1,
+        "prompt_zh": "computed 屬性用起來像 @(4) 屬性，但寫起來像 @(9)（提示：data / methods）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Provide the correct code so that the 'isImportant' computed property is shown on the screen.",
+        "code": "<div id=\"app\">\n  <form>\n    <p>\n      Important item?\n      <label>\n         <input type=\"checkbox\" v-model=\"chbxVal\"> \n         @(17)\n      </label>\n    </p>\n  </form>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        chbxVal: false\n      }\n    },\n    @(8): {\n      isImportant() {\n        if(this.chbxVal){\n          return 'yes'\n        }\n        else {\n          return 'no'\n        }\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <form>\n    <p>\n      Important item?\n      <label>\n         <input type=\"checkbox\" v-model=\"chbxVal\"> \n         {{ isImportant }}\n      </label>\n    </p>\n  </form>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        chbxVal: false\n      }\n    },\n    computed: {\n      isImportant() {\n        if(this.chbxVal){\n          return 'yes'\n        }\n        else {\n          return 'no'\n        }\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "alternatives": [
+          "<div id=\"app\">\n  <form>\n    <p>\n      Important item?\n      <label>\n         <input type=\"checkbox\" v-model=\"chbxVal\"> \n         {{isImportant}}\n      </label>\n    </p>\n  </form>\n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        chbxVal: false\n      }\n    },\n    computed: {\n      isImportant() {\n        if(this.chbxVal){\n          return 'yes'\n        }\n        else {\n          return 'no'\n        }\n      }\n    }\n  })\n app.mount('#app')\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_computed-properties2",
+        "filename": "exercise_computed-properties2",
+        "index": 2,
+        "prompt_zh": "提供正確程式碼，讓 'isImportant' computed 屬性顯示在畫面上"
+      }
+    ],
+    "watchers": [
+      {
+        "fillintheblanks": true,
+        "question": "The watcher in this exercise is supposed to increment the 'count' data property by one every time 'rangeVal' data property changes.",
+        "code": "<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n      \trangeVal: 70,\n        count: 0\n      }\n    },\n    watch: {\n      @(8)() {\n        this.count++\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "solution": "<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n      \trangeVal: 70,\n        count: 0\n      }\n    },\n    watch: {\n      rangeVal() {\n        this.count++\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_watchers1",
+        "filename": "exercise_watchers1",
+        "index": 1,
+        "prompt_zh": "練習中的 watcher 應該在 'rangeVal' 資料屬性變更時，把 'count' 加 1"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Write the missing code so that the watcher activates a warning class when the value is lower than 40.",
+        "code": "<div id=\"app\">\n  <input type=\"range\" v-model=\"rangeVal\">\n  <p :class=\"{ warnClass: warnActive }\"><code>{{ rangeVal }}</code></p> \n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        rangeVal: 70,\n        warnActive: false\n      }\n    },\n    watch: {\n      @(13) {\n        if(val<40){\n          this.warnActive = true;\n        }\n        else{\n          this.warnActive = false;\n        }\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "solution": "<div id=\"app\">\n  <input type=\"range\" v-model=\"rangeVal\">\n  <p :class=\"{ warnClass: warnActive }\"><code>{{ rangeVal }}</code></p> \n</div>\n\n<script src=\"https://unpkg.com/vue@3/dist/vue.global.js\"></script>\n<script>\n  const app = Vue.createApp({\n    data() {\n      return {\n        rangeVal: 70,\n        warnActive: false\n      }\n    },\n    watch: {\n      rangeVal(val) {\n        if(val<40){\n          this.warnActive = true;\n        }\n        else{\n          this.warnActive = false;\n        }\n      }\n    }\n  })\n app.mount('#app')\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_watchers2",
+        "filename": "exercise_watchers2",
+        "index": 2,
+        "prompt_zh": "補上缺少的程式碼，讓 watcher 在值小於 40 時啟用 warning class"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Both the @(3) value and the @(3) value are available as input arguments to a watcher method.",
+        "code": "Both the @(3) value and the @(3) value are available as input arguments to a watcher method.",
+        "solution": "Both the old value and the new value are available as input arguments to a watcher method.",
+        "alternatives": [
+          "Both the new value and the old value are available as input arguments to a watcher method."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_watchers3",
+        "filename": "exercise_watchers3",
+        "index": 3,
+        "prompt_zh": "watcher 方法的參數同時可以拿到 @(3) 值與 @(3) 值（提示：new、old）"
+      }
+    ],
+    "scale-up": [
+      {
+        "fillintheblanks": true,
+        "question": "*.vue files must be compiled into files the browser can run.",
+        "code": "*.vue files are compiled into *.html, *.css and *.@(4)",
+        "solution": "*.vue files are compiled into *.html, *.css and *.js",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_scale-up1",
+        "filename": "exercise_scale-up1",
+        "index": 1,
+        "prompt_zh": "*.vue 檔必須被編譯成瀏覽器能執行的檔案"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What is the name of the file?",
+        "code": "@(7) is responsible for telling the compiler \nwhich files the Vue project consists of.",
+        "solution": "main.js is responsible for telling the compiler \nwhich files the Vue project consists of.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_scale-up2",
+        "filename": "exercise_scale-up2",
+        "index": 2,
+        "prompt_zh": "這個檔案的名稱是？"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The 'App.vue' file consists of these three parts: , and .",
+        "code": "The 'App.vue' file consists of these three parts: \n<@(8)>, <script> and <style>.",
+        "solution": "The 'App.vue' file consists of these three parts: \n<template>, <script> and <style>.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_scale-up3",
+        "filename": "exercise_scale-up3",
+        "index": 3,
+        "prompt_zh": "'App.vue' 檔由三個部分組成：（template、script、style）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What is the command we need to write to run the project in development mode?",
+        "code": "npm @(7)",
+        "solution": "npm run dev",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_scale-up4",
+        "filename": "exercise_scale-up4",
+        "index": 4,
+        "prompt_zh": "執行專案開發模式的指令是？"
+      }
+    ],
+    "components": [
+      {
+        "fillintheblanks": true,
+        "question": "The line below in main.js adds a component to our Vue project:",
+        "code": "<template>\n  <h1>Fish</h1>\n  @(25)\n</template>",
+        "solution": "<template>\n  <h1>Fish</h1>\n  <fish-type/>             \n</template>",
+        "alternatives": [
+          "<template>\n  <h1>Fish</h1>\n  <fish-type></fish-type>\n</template>",
+          "<template>\n  <h1>Fish</h1>\n  <fish-type />\n</template>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components1",
+        "filename": "exercise_components1",
+        "index": 1,
+        "prompt_zh": "main.js 中下面這行把元件加進 Vue 專案："
+      },
+      {
+        "fillintheblanks": true,
+        "question": "With props we can pass data to the components via custom @(10) to the component tag.",
+        "code": "With props we can pass data to the components via custom @(10) to the component tag.",
+        "solution": "With props we can pass data to the components via custom attributes to the component tag.",
+        "alternatives": [
+          "With props we can pass data to the components via custom attribute to the component tag.",
+          "With props we can pass data to the components via custom atribute to the component tag.",
+          "With props we can pass data to the components via custom atributes to the component tag."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components2",
+        "filename": "exercise_components2",
+        "index": 2,
+        "prompt_zh": "用 props 可以透過元件標籤上的自訂 @(10)（attributes）把資料傳進元件"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What must we write in a component so that it receives data sent via the 'fish-name' attribute from App.vue as a prop?",
+        "code": "<script>\n  export default {\n    @(5): [\n      '@(8)'\n    ]\n  }\n</script>",
+        "solution": "<script>\n  export default {\n    props: [\n      'fishName'\n    ]\n  }\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components3",
+        "filename": "exercise_components3",
+        "index": 3,
+        "prompt_zh": "元件中要寫什麼，才能接收 App.vue 透過 'fish-name' 屬性傳來的 prop？"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "When generating elements with v-for, which specific attribute is always recommended to use?",
+        "code": "<fish-type\n  v-for=\"x in fish\"\n  :@(3)=\"x.id\"\n  :fish-name=\"x.name\"\n  :img-url=\"x.url\"\n/>",
+        "solution": "<fish-type\n  v-for=\"x in fish\"\n  :key=\"x.id\"\n  :fish-name=\"x.name\"\n  :img-url=\"x.url\"\n/>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components4",
+        "filename": "exercise_components4",
+        "index": 4,
+        "prompt_zh": "用 v-for 產生元素時，建議一定要加哪個特殊屬性？（提示：key）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Props are used to send data from the parent element to the child component, and @(7) is used to to pass information from the child component to the parent.",
+        "code": "Props are used to send data \nfrom the parent element to the child component, \nand @(7) is used to to pass information \nfrom the child component to the parent.",
+        "solution": "Props are used to send data \nfrom the parent element to the child component, \nand $emit() is used to to pass information \nfrom the child component to the parent.",
+        "alternatives": [
+          "Props are used to send data \nfrom the parent element to the child component, \nand emit() is used to to pass information \nfrom the child component to the parent.",
+          "Props are used to send data \nfrom the parent element to the child component, \nand $emit is used to to pass information \nfrom the child component to the parent.",
+          "Props are used to send data \nfrom the parent element to the child component, \nand emit is used to to pass information \nfrom the child component to the parent."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components5",
+        "filename": "exercise_components5",
+        "index": 5,
+        "prompt_zh": "props 用來把資料從父元件傳給子元件，@(7) 用來反向把訊息傳回（提示：emits）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Set the root element of the 'fish-type' component to belong to the 'blue' CSS class (create a fallthrough attribute).",
+        "code": "<fish-type @(12) />",
+        "solution": "<fish-type class=\"blue\" />",
+        "alternatives": [
+          "<fish-type class='blue' />"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components6",
+        "filename": "exercise_components6",
+        "index": 6,
+        "prompt_zh": "把 'fish-type' 元件的根元素設為屬於 'blue' 這個 CSS class（建立 fallthrough 屬性）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "With more than one root element in a component, like in the example below, we can define on which root element a fallthrough attribute should be applied.",
+        "code": "<template>\n  <div>Goat</div>\n  <div v-bind=\"@(6)\">Cow</div>\n  <div>Rabbit</div>\n</template>",
+        "solution": "<template>\n  <div>Goat</div>\n  <div v-bind=\"$attrs\">Cow</div>\n  <div>Rabbit</div>\n</template>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components7",
+        "filename": "exercise_components7",
+        "index": 7,
+        "prompt_zh": "當元件有多個根元素時，我們可以指定 fallthrough 屬性要套用到哪個根元素"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "How can we make the 'comp-one' component available locally, only to one component?",
+        "code": "<script> \n  @(6) CompOne from './components/CompOne.vue';\n\n  export default {\n    @(10): {\n      'comp-one': @(7)\n    }\n  }\n</script>",
+        "solution": "<script> \n  import CompOne from './components/CompOne.vue';\n\n  export default {\n    components: {\n      'comp-one': CompOne\n    }\n  }\n</script>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_components8",
+        "filename": "exercise_components8",
+        "index": 8,
+        "prompt_zh": "如何讓 'comp-one' 元件只在某個元件本地可用？"
+      }
+    ],
+    "slots": [
+      {
+        "fillintheblanks": true,
+        "question": "When a text is provided between the start tag and end tag of a component like this:",
+        "code": "<template>\n  <div>  \n    <p>CompOne.vue</p>\n    @(14)\n  </div>\n</template>",
+        "solution": "<template>\n  <div>  \n    <p>CompOne.vue</p>\n    <slot></slot>\n  </div>\n</template>",
+        "alternatives": [
+          "<template>\n  <div>  \n    <p>CompOne.vue</p>\n    <slot/>\n  </div>\n</template>",
+          "<template>\n  <div>  \n    <p>CompOne.vue</p>\n    <slot />\n  </div>\n</template>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_slots1",
+        "filename": "exercise_slots1",
+        "index": 1,
+        "prompt_zh": "當文字寫在元件開始與結束標籤之間時：（會放進預設 slot）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "If a component 'CompOne' has two slots, like this:",
+        "code": "<slot-comp @(15)>\n    Animals are interesting!\n</slot-comp>",
+        "solution": "<slot-comp v-slot:mainSlot>\n    Animals are interesting!\n</slot-comp>",
+        "alternatives": [
+          "<slot-comp #mainSlot>\n    Animals are interesting!\n</slot-comp>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_slots2",
+        "filename": "exercise_slots2",
+        "index": 2,
+        "prompt_zh": "若 'CompOne' 元件有兩個 slot："
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What directives are needed to provide data from a components slot to the parent?",
+        "code": "Local data in a component is sent from a slot with @(6), \nand it can be received in the parent with @(6).\n\nCompOne.vue:\n<slot @(6):lclData=\"data\"></slot>\n\nApp.vue:\n<comp-one @(6):\"dataFromSlot\">\n  <h2>{{ dataFromSlot.lclData }}</h2>\n</comp-one>",
+        "solution": "Local data in a component is sent from a slot with v-bind, \nand it can be received in the parent with v-slot.\n\nCompOne.vue:\n<slot v-bind:lclData=\"data\"></slot>\n\nApp.vue:\n<comp-one v-slot:\"dataFromSlot\">\n  <h2>{{ dataFromSlot.lclData }}</h2>\n</comp-one>",
+        "alternatives": [
+          "Local data in a component is sent from a slot with v-bind, \nand it can be received in the parent with v-slot.\n\nCompOne.vue:\n<slot :lclData=\"data\"></slot>\n\nApp.vue:\n<comp-one v-slot:\"dataFromSlot\">\n  <h2>{{ dataFromSlot.lclData }}</h2>\n</comp-one>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_slots3",
+        "filename": "exercise_slots3",
+        "index": 3,
+        "prompt_zh": "從元件 slot 把資料提供給父層需要哪些指令？"
+      }
+    ],
+    "lifecycle-hooks": [
+      {
+        "fillintheblanks": true,
+        "question": "The @(13) lifecycle hook is called just before a component is removed from the DOM.",
+        "code": "The @(13) lifecycle hook is called \njust before a component is removed from the DOM.",
+        "solution": "The beforeUnmount lifecycle hook is called \njust before a component is removed from the DOM.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_lifecycle-hooks1",
+        "filename": "exercise_lifecycle-hooks1",
+        "index": 1,
+        "prompt_zh": "@(13) 生命週期 hook 在元件即將從 DOM 移除前被呼叫（提示：beforeUnmount）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "A dynamic component is mounted once, but the component you see (the active one) can change.",
+        "code": "We need the '@(9)' and '@(11)' lifecycle hooks for that.",
+        "solution": "We need the 'activated' and 'deactivated' lifecycle hooks for that.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_lifecycle-hooks2",
+        "filename": "exercise_lifecycle-hooks2",
+        "index": 2,
+        "prompt_zh": "動態元件只 mount 一次，但目前顯示（active）的元件可以切換"
+      }
+    ],
+    "provide-inject": [
+      {
+        "fillintheblanks": true,
+        "question": "Which configuration option is needed in the code below so that the fish name 'Turbot' becomes available to other components?",
+        "code": "data() {\n  return {\n    fishName: 'Turbot',\n    count: 4\n  }\n},\n@(7)() {\n  return {\n    fishName: this.fishName\n  }\n}",
+        "solution": "data() {\n  return {\n    fishName: 'Turbot',\n    count: 4\n  }\n},\nprovide() {\n  return {\n    fishName: this.fishName\n  }\n}",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_provide-inject1",
+        "filename": "exercise_provide-inject1",
+        "index": 1,
+        "prompt_zh": "下方程式中需要哪個設定選項，才能讓 'Turbot' 這個 fish name 提供給其他元件？（提示：provide）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The 'fishName' data property is provided from App.vue so that it is available in this component.",
+        "code": "<script>\n  export default {\n    inject: @(14)\n  }\n</script>",
+        "solution": "<script>\n  export default {\n    inject: ['fishName']  \n  }\n</script>",
+        "alternatives": [
+          "<script>\n  export default {\n    inject: [\"fishName\"]  \n  }\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_provide-inject2",
+        "filename": "exercise_provide-inject2",
+        "index": 2,
+        "prompt_zh": "'fishName' 從 App.vue provide 出來，本元件如何取得它？（提示：inject）"
+      }
+    ],
+    "routing": [
+      {
+        "fillintheblanks": true,
+        "question": "How does routing work in Vue?",
+        "code": "Routing in Vue is used to @(8) the Vue application, \nand it happens on the client side (in the @(7)) \nwithout full page reload, which results in a @(6) \nuser experience.",
+        "solution": "Routing in Vue is used to navigate the Vue application, \nand it happens on the client side (in the browser) \nwithout full page reload, which results in a faster \nuser experience.",
+        "alternatives": [
+          "Routing in Vue is used to navigate the Vue application, \nand it happens on the client side (in the browser) \nwithout full page reload, which results in a better \nuser experience."
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_routing1",
+        "filename": "exercise_routing1",
+        "index": 1,
+        "prompt_zh": "Vue 的路由如何運作？"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "Routing in Vue is set up in the 'main.js' file.",
+        "code": "import { createApp } from 'vue'\nimport { createRouter, createWebHistory } from 'vue-router'\n\nimport App from './App.vue'\nimport FishTypes from './components/FishTypes.vue'\n\nconst router = createRouter({\n    history: createWebHistory(),\n    routes: [\n        { @(4): '/fish', @(9): FishTypes }\n    ]\n});\n\nconst app = createApp(App)\napp.use(router);\napp.mount('#app')",
+        "solution": "import { createApp } from 'vue'\nimport { createRouter, createWebHistory } from 'vue-router'\n\nimport App from './App.vue'\nimport FishTypes from './components/FishTypes.vue'\n\nconst router = createRouter({\n    history: createWebHistory(),\n    routes: [\n        { path: '/fish', component: FishTypes }\n    ]\n});\n\nconst app = createApp(App)\napp.use(router);\napp.mount('#app')",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_routing2",
+        "filename": "exercise_routing2",
+        "index": 2,
+        "prompt_zh": "Vue 路由設定在 'main.js' 檔內"
+      }
+    ],
+    "refs": [
+      {
+        "fillintheblanks": true,
+        "question": "Refs are used to refer to specific DOM elements.",
+        "code": "<template>\n  <p>This is just some text.</p>\n  <p @(9)>This is the initial text</p>\n</template>\n\n<script>\n  export default {\n    mounted() {\n      this.@(5).pEl.innerHTML = \"Hello World!\";\n    }\n  };\n</script>",
+        "solution": "<template>\n  <p>This is just some text.</p>\n  <p ref=\"pEl\">This is the initial text</p>\n</template>\n\n<script>\n  export default {\n    mounted() {\n      this.$refs.pEl.innerHTML = \"Hello World!\";\n    }\n  };\n</script>",
+        "alternatives": [
+          "<template>\n  <p>This is just some text.</p>\n  <p ref='pEl'>This is the initial text</p>\n</template>\n\n<script>\n  export default {\n    mounted() {\n      this.$refs.pEl.innerHTML = \"Hello World!\";\n    }\n  };\n</script>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_refs1",
+        "filename": "exercise_refs1",
+        "index": 1,
+        "prompt_zh": "refs 用來引用特定的 DOM 元素"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "When HTML elements are created with v-for, with the ref attribute, like this:",
+        "code": "the elements will be added to the $refs object as an @(5).",
+        "solution": "the elements will be added to the $refs object as an array.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_refs2",
+        "filename": "exercise_refs2",
+        "index": 2,
+        "prompt_zh": "當 HTML 元素以 v-for 並帶有 ref 屬性建立時："
+      }
+    ],
+    "animations": [
+      {
+        "fillintheblanks": true,
+        "question": "Which Vue specific component do we use when animating a single element?",
+        "code": "<template>\n  <h1>Add/Remove <p> Tag</h1>\n  <button @click=\"this.exists = !this.exists\">{{btnText}}</button><br>\n  <@(10)>\n    <p v-if=\"exists\">Hello World!</p>\n  </@(10)>\n</template>",
+        "solution": "<template>\n  <h1>Add/Remove <p> Tag</h1>\n  <button @click=\"this.exists = !this.exists\">{{btnText}}</button><br>\n  <Transition>\n    <p v-if=\"exists\">Hello World!</p>\n  </Transition>\n</template>",
+        "alternatives": [
+          "<template>\n  <h1>Add/Remove <p> Tag</h1>\n  <button @click=\"this.exists = !this.exists\">{{btnText}}</button><br>\n  <transition>\n    <p v-if=\"exists\">Hello World!</p>\n  </transition>\n</template>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_animations1",
+        "filename": "exercise_animations1",
+        "index": 1,
+        "prompt_zh": "動畫單一元素時用哪個 Vue 專屬元件？（提示：<Transition>）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The component automatically gives us 6 different CSS classes we can use to animate an element.",
+        "code": "1. v-enter-@(6)\n    2. v-enter-@(6)\n    3. v-enter-@(6)",
+        "solution": "1. v-enter-from  \n    2. v-enter-active\n    3. v-enter-to",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_animations2",
+        "filename": "exercise_animations2",
+        "index": 2,
+        "prompt_zh": "<Transition> 元件會自動提供 6 個可用於動畫的 CSS class"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "The component can be used when flipping through elements, so that it looks good when a new element becomes visible, and when an old element is removed.",
+        "code": "<Transition @(4)=\"@(6)\">\n  <img src=\"/img_pizza.svg\" v-if=\"imgActive === 'pizza'\">\n  <img src=\"/img_apple.svg\" v-else-if=\"imgActive === 'apple'\">\n  <img src=\"/img_cake.svg\" v-else-if=\"imgActive === 'cake'\">\n  <img src=\"/img_fish.svg\" v-else-if=\"imgActive === 'fish'\">\n  <img src=\"/img_rice.svg\" v-else-if=\"imgActive === 'rice'\">\n</Transition>",
+        "solution": "<Transition mode=\"out-in\">\n  <img src=\"/img_pizza.svg\" v-if=\"imgActive === 'pizza'\">\n  <img src=\"/img_apple.svg\" v-else-if=\"imgActive === 'apple'\">\n  <img src=\"/img_cake.svg\" v-else-if=\"imgActive === 'cake'\">\n  <img src=\"/img_fish.svg\" v-else-if=\"imgActive === 'fish'\">\n  <img src=\"/img_rice.svg\" v-else-if=\"imgActive === 'rice'\">\n</Transition>",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_animations3",
+        "filename": "exercise_animations3",
+        "index": 3,
+        "prompt_zh": "切換元素時這個元件可讓新元素出現/舊元素離開時看起來流暢"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What is the name of the Vue specific component used to animate elements created or removed with v-for?",
+        "code": "<@(15) tag=\"ol\">\n  <li v-for=\"x in products\" :key=\"x\">\n    {{ x }}\n  </li>\n</@(15)>",
+        "solution": "<TransitionGroup tag=\"ol\">\n  <li v-for=\"x in products\" :key=\"x\">\n    {{ x }}\n  </li>\n</TransitionGroup>",
+        "alternatives": [
+          "<Transitiongroup tag=\"ol\">\n  <li v-for=\"x in products\" :key=\"x\">\n    {{ x }}\n  </li>\n</Transitiongroup>",
+          "<transitiongroup tag=\"ol\">\n  <li v-for=\"x in products\" :key=\"x\">\n    {{ x }}\n  </li>\n</transitiongroup>"
+        ],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_animations4",
+        "filename": "exercise_animations4",
+        "index": 4,
+        "prompt_zh": "用什麼 Vue 專屬元件可以動畫 v-for 建立或移除的元素？（提示：<TransitionGroup>）"
+      }
+    ],
+    "build": [
+      {
+        "fillintheblanks": true,
+        "question": "The @(5) command compiles our Vue project into .html, .js and .css files that are optimized to run directly in the @(7).",
+        "code": "The @(5) command compiles our Vue project \ninto .html, .js and .css files that are \noptimized to run directly in the @(7).",
+        "solution": "The build command compiles our Vue project \ninto .html, .js and .css files that are \noptimized to run directly in the browser.",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_build1",
+        "filename": "exercise_build1",
+        "index": 1,
+        "prompt_zh": "@(5) 指令會把 Vue 專案編譯成最佳化過、可在 @(7) 直接執行的 .html / .js / .css 檔（提示：build / browser）"
+      },
+      {
+        "fillintheblanks": true,
+        "question": "What is the command we need to write compile our project into html, .js and .css files that are optimized to run directly in the browser?",
+        "code": "npm @(9)",
+        "solution": "npm run build",
+        "alternatives": [],
+        "url": "https://www.w3schools.com/vue/exercise.php?filename=exercise_build2",
+        "filename": "exercise_build2",
+        "index": 2,
+        "prompt_zh": "把專案編譯成可直接在瀏覽器執行的 .html / .js / .css 檔的指令是？"
+      }
+    ]
+  }
+}

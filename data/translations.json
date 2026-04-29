@@ -1,0 +1,695 @@
+{
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements1": {
+    "prompt_zh": "哪個 HTML 元素用於將表單中相關資料分組並預設會繪製邊框？（提示：`<fieldset>`）"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements2": {
+    "prompt_zh": "在下方表單中加入一個 name=\"cars\" 的空下拉式選單"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements3": {
+    "prompt_zh": "在下方表單中加入兩個 option 元素到下拉式選單"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements4": {
+    "prompt_zh": "在下方表單中加入一個 name=\"note\" 的 text area"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types1": {
+    "prompt_zh": "INPUT 元素的 type 屬性預設值是什麼？",
+    "answer_en": "text"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types2": {
+    "prompt_zh": "在下方表單中加入一個 name=\"username\" 的文字輸入欄位"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types3": {
+    "prompt_zh": "在下方表單中加入一個 value=\"Submit Form\" 的 submit 按鈕"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types4": {
+    "prompt_zh": "加入兩個 name=\"color\" 的 radio button"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types5": {
+    "prompt_zh": "在下方表單中加入一個 value=\"Click Me\" 的 button 欄位"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types6": {
+    "prompt_zh": "在下方表單中加入只能輸入數字的欄位，並用適當的 input 屬性限制只能輸入 1 到 5 之間的數字"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms1": {
+    "prompt_zh": "用於定義表單的正確 HTML 元素是什麼？（提示：`<form>`）"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms2": {
+    "prompt_zh": "在下方表單中加入一個 type=\"button\"、value=\"OK\" 的 input 欄位"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms3": {
+    "prompt_zh": "在下方表單中加入兩個 name=\"fav_language\" 的 radio button"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes1": {
+    "prompt_zh": "用什麼語法可讓表單結果在新瀏覽器分頁開啟？（提示：`target=\"_blank\"`）"
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes2": {
+    "prompt_zh": "加入 submit 按鈕，並指定表單送到 \"/action_page.php\""
+  },
+  "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes3": {
+    "prompt_zh": "指定表單使用 \"POST\" 方法提交"
+  },
+  "https://www.w3schools.com/js/exercise.asp?x=xrcise_json1": {
+    "prompt_zh": "JSON 是什麼的縮寫？",
+    "answer_en": "JavaScript Object Notation",
+    "answer_zh": "JavaScript 物件表示法"
+  },
+  "https://www.w3schools.com/js/exercise.asp?x=xrcise_json2": {
+    "prompt_zh": "將字串轉成 JavaScript 物件的正確函式是哪一個？",
+    "answer_en": "JSON.parse()"
+  },
+  "https://www.w3schools.com/js/exercise.asp?x=xrcise_json3": {
+    "prompt_zh": "下列哪一個是合法的 JSON 物件？",
+    "answer_en": "{\"firstName\":\"John\", \"lastName\":\"Doe\"}",
+    "answer_zh": "註：JSON 的 key 必須加雙引號"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async1": {
+    "prompt_zh": "拖放正確的模型"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async2": {
+    "prompt_zh": "完成非同步讀取檔案的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async3": {
+    "prompt_zh": "下列哪一項最能描述 Node.js 的非阻塞 I/O 模型？",
+    "answer_en": "The program continues executing while I/O operations are processed in the background",
+    "answer_zh": "程式繼續執行，I/O 操作在背景處理"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async4": {
+    "prompt_zh": "Node.js 中的「callback hell」是什麼？",
+    "answer_en": "Deeply nested callbacks that make code hard to read and maintain",
+    "answer_zh": "深度巢狀的 callback，使程式碼難以閱讀與維護"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async5": {
+    "prompt_zh": "拖放正確字詞"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async_await1": {
+    "prompt_zh": "拖放正確的關鍵字"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async_await2": {
+    "prompt_zh": "完成平行非同步程式碼（同時等待多個 Promise）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async_await3": {
+    "prompt_zh": "async 函式回傳的是什麼？",
+    "answer_en": "A Promise",
+    "answer_zh": "一個 Promise 物件"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_async_await4": {
+    "prompt_zh": "拖放正確答案（async/await 的錯誤處理機制）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_express1": {
+    "prompt_zh": "Express.js 是什麼？",
+    "answer_en": "The most popular web application framework for Node.js",
+    "answer_zh": "Node.js 最熱門的網頁應用程式框架"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_express2": {
+    "prompt_zh": "完成建立基本 Express.js 伺服器的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_express3": {
+    "prompt_zh": "哪個方法用來啟動 Express 伺服器？",
+    "answer_en": "app.listen()"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_filesystem1": {
+    "prompt_zh": "拖放正確字詞以完成句子"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_filesystem2": {
+    "prompt_zh": "完成讀取與寫入檔案的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_filesystem3": {
+    "prompt_zh": "你會用哪個方法非同步讀取檔案？",
+    "answer_en": "fs.readFile()"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_get_started1": {
+    "prompt_zh": "拖放正確的指令以執行 Node.js 檔案"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_get_started2": {
+    "prompt_zh": "完成建立第一個 Node.js 應用程式的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_get_started3": {
+    "prompt_zh": "Node.js 檔案包含什麼？",
+    "answer_en": "JavaScript code to be executed on the server",
+    "answer_zh": "將在伺服器執行的 JavaScript 程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_http1": {
+    "prompt_zh": "拖放正確的方法（用於在 Node.js 建立 HTTP 伺服器）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_http2": {
+    "prompt_zh": "完成 HTTP 伺服器程式碼，使其回傳狀態碼 200 與內容類型 text/html"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_http3": {
+    "prompt_zh": "哪個 Node.js 物件代表來自客戶端的 HTTP 請求？",
+    "answer_en": "req"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_https1": {
+    "prompt_zh": "HTTPS 的預設連接埠是什麼？",
+    "answer_en": "443"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_https2": {
+    "prompt_zh": "在 Node.js 建立 HTTPS 伺服器時，'key' 與 'cert' 選項的用途是什麼？",
+    "answer_en": "They provide the SSL/TLS private key and certificate for the server",
+    "answer_zh": "它們提供伺服器的 SSL/TLS 私鑰與憑證"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_https3": {
+    "prompt_zh": "完成建立基本 HTTPS 伺服器的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_intro1": {
+    "prompt_zh": "拖放正確字詞以完成句子"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_intro2": {
+    "prompt_zh": "完成建立簡單 Node.js 網頁伺服器的程式碼片段"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_intro3": {
+    "prompt_zh": "Node.js 建構在什麼之上？",
+    "answer_en": "Chrome's V8 JavaScript engine",
+    "answer_zh": "Chrome 的 V8 JavaScript 引擎"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_middleware1": {
+    "prompt_zh": "拖放正確答案"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_middleware2": {
+    "prompt_zh": "完成 Express middleware 函式"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_middleware3": {
+    "prompt_zh": "在 middleware 中不呼叫 next() 會發生什麼？",
+    "answer_en": "The request will hang and eventually timeout",
+    "answer_zh": "請求會卡住並最終逾時"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules1": {
+    "prompt_zh": "拖放正確的語法以匯入 HTTP 模組"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules2": {
+    "prompt_zh": "建立名為 myDateTime 的模組（CommonJS 匯出）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules3": {
+    "prompt_zh": "下列哪一項是匯入自訂模組的正確方式？",
+    "answer_en": "const myMod = require('./mymodule');"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules_esm1": {
+    "prompt_zh": "拖放正確的關鍵字（ES module 引入）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules_esm2": {
+    "prompt_zh": "完成 ES modules 語法"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_modules_esm3": {
+    "prompt_zh": "Node.js 中 ES modules 常用的副檔名是什麼？",
+    "answer_en": ".mjs"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql1": {
+    "prompt_zh": "拖放正確的方法名稱（執行 SQL 查詢）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql2": {
+    "prompt_zh": "完成建立 MySQL 連線的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql3": {
+    "prompt_zh": "在 MySQL 操作中處理錯誤的正確方式是什麼？",
+    "answer_en": "Check the 'err' parameter in callback functions",
+    "answer_zh": "檢查 callback 函式中的 'err' 參數"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_db1": {
+    "prompt_zh": "拖放正確的 SQL 語句（建立資料庫）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_db2": {
+    "prompt_zh": "完成建立 MySQL 資料庫的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_db3": {
+    "prompt_zh": "下列哪一項正確建立名為 'testdb' 的 MySQL 資料庫？",
+    "answer_en": "con.query('CREATE DATABASE testdb', callback);"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_table1": {
+    "prompt_zh": "拖放正確的 SQL 語句（建立資料表）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_table2": {
+    "prompt_zh": "哪個 SQL 子句建立自動遞增的主鍵欄位？",
+    "answer_en": "INT AUTO_INCREMENT PRIMARY KEY",
+    "answer_zh": "註：SQLite 對應的是 `INTEGER PRIMARY KEY AUTOINCREMENT`"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_create_table3": {
+    "prompt_zh": "哪個 SQL 語句用於將主鍵加到現有表格？",
+    "answer_en": "ALTER TABLE"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_delete1": {
+    "prompt_zh": "result 物件的哪個屬性顯示刪除了幾筆資料列？",
+    "answer_en": "result.affectedRows"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_delete2": {
+    "prompt_zh": "完成從 MySQL 表格刪除資料列的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_delete3": {
+    "prompt_zh": "DELETE 語句省略 WHERE 子句會發生什麼？⚠️",
+    "answer_en": "All records will be deleted",
+    "answer_zh": "所有資料列都會被刪除（危險！）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_insert1": {
+    "prompt_zh": "拖放正確的屬性名稱（取得受影響的列數）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_insert2": {
+    "prompt_zh": "完成將資料列插入 MySQL 表格的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_insert3": {
+    "prompt_zh": "result 物件的哪個屬性給你插入資料列的 ID？",
+    "answer_en": "result.insertId",
+    "answer_zh": "註：SQLite 用 `this.lastID`（在 `db.run` callback 內）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_limit1": {
+    "prompt_zh": "拖放正確的 SQL 子句（限制筆數）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_limit2": {
+    "prompt_zh": "完成從指定位置開始抓取資料列的程式碼（分頁）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_limit3": {
+    "prompt_zh": "下列哪一項等同於 'LIMIT 5 OFFSET 2'？",
+    "answer_en": "LIMIT 2, 5",
+    "answer_zh": "MySQL 簡寫語法（offset, count）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_orderby1": {
+    "prompt_zh": "拖放正確的 SQL 子句（排序）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_orderby2": {
+    "prompt_zh": "完成將結果倒序排序的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_orderby3": {
+    "prompt_zh": "'%' 萬用字元代表什麼？",
+    "answer_en": "Any number of characters",
+    "answer_zh": "任意數量的字元（含 0 個）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_select1": {
+    "prompt_zh": "拖放正確的 SQL 語句（查詢資料）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_select2": {
+    "prompt_zh": "完成查詢 MySQL 表格所有資料列的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_select3": {
+    "prompt_zh": "如何存取查詢結果中第三筆紀錄的 address 欄位？",
+    "answer_en": "result[2].address"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_select4": {
+    "prompt_zh": "查詢 callback 函式的哪個參數包含結果中每個欄位的資訊？",
+    "answer_en": "The third parameter (fields)",
+    "answer_zh": "第三個參數（fields）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_update1": {
+    "prompt_zh": "拖放正確的 SQL 語句（更新資料）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_update2": {
+    "prompt_zh": "完成更新 MySQL 表格資料列的程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_update3": {
+    "prompt_zh": "UPDATE 語句省略 WHERE 子句會發生什麼？⚠️",
+    "answer_en": "All records will be updated",
+    "answer_zh": "所有資料列都會被更新（危險！）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_where1": {
+    "prompt_zh": "拖放正確的 SQL 子句（條件過濾）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_where2": {
+    "prompt_zh": "完成程式碼：在查詢中安全地使用使用者輸入（用 placeholder 防 SQL injection）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_mysql_where3": {
+    "prompt_zh": "哪一種方式最能安全地把使用者輸入放進 SQL 查詢？",
+    "answer_en": "Use ? as a placeholder and pass values as an array",
+    "answer_zh": "使用 ? 當 placeholder 並把值用陣列傳入"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_npm1": {
+    "prompt_zh": "拖放正確語法以從 npm 安裝套件"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_npm2": {
+    "prompt_zh": "完成全域安裝模組的指令"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_npm3": {
+    "prompt_zh": "哪個指令依語意化版本（semver）將所有套件更新至最新版？",
+    "answer_en": "npm update"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_npm4": {
+    "prompt_zh": "哪個指令從 node_modules 資料夾移除套件？",
+    "answer_en": "npm uninstall package-name"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_package_json1": {
+    "prompt_zh": "拖放正確的欄位名稱（指定進入點檔案）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_package_json2": {
+    "prompt_zh": "完成最小可用的 package.json 檔案"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_package_json3": {
+    "prompt_zh": "哪個指令以預設值建立新的 package.json 檔案？",
+    "answer_en": "npm init -y"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_promises1": {
+    "prompt_zh": "拖放正確的狀態以完成句子（Promise 的三種狀態）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_promises2": {
+    "prompt_zh": "建立一個延遲後 resolve 的 Promise"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_promises3": {
+    "prompt_zh": "哪個方法用於處理 Promise 鏈中的錯誤？",
+    "answer_en": "catch()"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_promises4": {
+    "prompt_zh": "拖放正確的方法名稱（同時等待多個 Promise）"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_rest_api1": {
+    "prompt_zh": "拖放正確的詞彙"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_rest_api2": {
+    "prompt_zh": "完成 RESTful API 端點的 Express 程式碼"
+  },
+  "https://www.w3schools.com/nodejs/exercise.asp?x=xrcise_rest_api3": {
+    "prompt_zh": "哪個 HTTP 方法通常用來更新資源？",
+    "answer_en": "PUT"
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q1": {
+    "prompt_en": "How do you include the HTTP module in a Node.js file?",
+    "prompt_zh": "如何在 Node.js 檔案中引入 HTTP 模組？",
+    "options": [
+      {
+        "text_en": "import http module from 'http module'",
+        "text_zh": "從 'http module' 匯入 http 模組",
+        "correct": false
+      },
+      {
+        "text_en": "const http = require('http')",
+        "text_zh": "用 require 載入 http",
+        "correct": true
+      },
+      {
+        "text_en": "include http;",
+        "text_zh": "此語法在 Node.js 不存在",
+        "correct": false
+      },
+      {
+        "text_en": "using http;",
+        "text_zh": "此語法在 Node.js 不存在",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q11": {
+    "prompt_en": "What is the purpose of the require() function in Node.js?",
+    "prompt_zh": "Node.js 中 require() 函式的用途是什麼？",
+    "options": [
+      {
+        "text_en": "To include CSS files",
+        "text_zh": "引入 CSS 檔案",
+        "correct": false
+      },
+      {
+        "text_en": "To include modules that exist in separate files",
+        "text_zh": "引入存在獨立檔案中的模組",
+        "correct": true
+      },
+      {
+        "text_en": "To make HTTP requests",
+        "text_zh": "發送 HTTP 請求",
+        "correct": false
+      },
+      {
+        "text_en": "To validate user input",
+        "text_zh": "驗證使用者輸入",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q12": {
+    "prompt_en": "Which method is used to handle GET requests in Express.js?",
+    "prompt_zh": "Express.js 中哪個方法用於處理 GET 請求？",
+    "options": [
+      {
+        "text_en": "app.post()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "app.put()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "app.delete()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "app.get()",
+        "text_zh": "對應講義「express 基本路由」",
+        "correct": true
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q13": {
+    "prompt_en": "What is the purpose of the crypto module in Node.js?",
+    "prompt_zh": "Node.js 中 crypto 模組的用途是什麼？",
+    "options": [
+      {
+        "text_en": "To provide cryptographic functionality",
+        "text_zh": "提供加密功能",
+        "correct": true
+      },
+      {
+        "text_en": "To handle database connections",
+        "text_zh": "處理資料庫連線",
+        "correct": false
+      },
+      {
+        "text_en": "To manage file uploads",
+        "text_zh": "管理檔案上傳",
+        "correct": false
+      },
+      {
+        "text_en": "To validate user input",
+        "text_zh": "驗證使用者輸入",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q2": {
+    "prompt_en": "Which method is used to create an HTTP server in Node.js?",
+    "prompt_zh": "Node.js 中用哪個方法建立 HTTP 伺服器？",
+    "options": [
+      {
+        "text_en": "http.createServer()",
+        "text_zh": null,
+        "correct": true
+      },
+      {
+        "text_en": "http.newServer()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "http.server()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "http.startServer()",
+        "text_zh": null,
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q21": {
+    "prompt_en": "Which method is used to redirect a response in Express.js?",
+    "prompt_zh": "Express.js 中哪個方法用於重新導向回應？",
+    "options": [
+      {
+        "text_en": "res.forward()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "res.to()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "res.redirect()",
+        "text_zh": null,
+        "correct": true
+      },
+      {
+        "text_en": "res.go()",
+        "text_zh": null,
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q22": {
+    "prompt_en": "What is the purpose of the app.use() method in Express.js?",
+    "prompt_zh": "Express.js 中 app.use() 方法的用途是什麼？",
+    "options": [
+      {
+        "text_en": "To mount middleware functions",
+        "text_zh": "掛載中介軟體函式（對應講義「express.json()」）",
+        "correct": true
+      },
+      {
+        "text_en": "To define route handlers",
+        "text_zh": "定義路由處理函式",
+        "correct": false
+      },
+      {
+        "text_en": "To send responses",
+        "text_zh": "送出回應",
+        "correct": false
+      },
+      {
+        "text_en": "To handle errors",
+        "text_zh": "處理錯誤",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q4": {
+    "prompt_en": "Which of the following is NOT a valid HTTP method in Node.js?",
+    "prompt_zh": "下列哪個不是 Node.js 中合法的 HTTP 方法？",
+    "options": [
+      {
+        "text_en": "GET",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "POST",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "DELETE",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "UPDATE",
+        "text_zh": "沒有 UPDATE，更新用 PUT 或 PATCH",
+        "correct": true
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q5": {
+    "prompt_en": "How do you access query parameters in an Express.js?",
+    "prompt_zh": "Express.js 中如何存取 query parameters？",
+    "options": [
+      {
+        "text_en": "req.query",
+        "text_zh": "對應講義「讀取 GET 的 query 資料」",
+        "correct": true
+      },
+      {
+        "text_en": "req.params",
+        "text_zh": "路徑參數，例如 /users/:id",
+        "correct": false
+      },
+      {
+        "text_en": "req.body",
+        "text_zh": "POST body",
+        "correct": false
+      },
+      {
+        "text_en": "req.param",
+        "text_zh": null,
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q6": {
+    "prompt_en": "What is the purpose of the package.json file in a Node.js project?",
+    "prompt_zh": "Node.js 專案中 package.json 的用途是什麼？",
+    "options": [
+      {
+        "text_en": "It contains the main application code",
+        "text_zh": "包含主要應用程式碼",
+        "correct": false
+      },
+      {
+        "text_en": "It contains metadata about the project and its dependencies",
+        "text_zh": "包含專案 metadata 與相依套件",
+        "correct": true
+      },
+      {
+        "text_en": "It is required to run JavaScript files",
+        "text_zh": "執行 JavaScript 檔案所必需",
+        "correct": false
+      },
+      {
+        "text_en": "It stores database configurations",
+        "text_zh": "儲存資料庫設定",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q7": {
+    "prompt_en": "Which command is used to install all dependencies listed in package.json?",
+    "prompt_zh": "哪個指令用來安裝 package.json 列出的所有相依套件？",
+    "options": [
+      {
+        "text_en": "npm install",
+        "text_zh": "對應講義「安裝 module」",
+        "correct": true
+      },
+      {
+        "text_en": "npm init",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "npm update",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "npm start",
+        "text_zh": null,
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q8": {
+    "prompt_en": "What is the purpose of the node_modules folder?",
+    "prompt_zh": "node_modules 資料夾的用途是什麼？",
+    "options": [
+      {
+        "text_en": "It contains the Node.js source code",
+        "text_zh": "包含 Node.js 原始碼",
+        "correct": false
+      },
+      {
+        "text_en": "It stores user configuration files",
+        "text_zh": "儲存使用者設定檔",
+        "correct": false
+      },
+      {
+        "text_en": "It contains all the installed dependencies",
+        "text_zh": "包含所有已安裝的相依套件",
+        "correct": true
+      },
+      {
+        "text_en": "It holds temporary files",
+        "text_zh": "儲存暫存檔",
+        "correct": false
+      }
+    ]
+  },
+  "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS#q9": {
+    "prompt_en": "Which method is used to parse JSON data in Node.js?",
+    "prompt_zh": "哪個方法用於解析 Node.js 中的 JSON 資料？",
+    "options": [
+      {
+        "text_en": "JSON.encode()",
+        "text_zh": null,
+        "correct": false
+      },
+      {
+        "text_en": "JSON.parse()",
+        "text_zh": null,
+        "correct": true
+      },
+      {
+        "text_en": "JSON.stringify()",
+        "text_zh": "反向：物件轉字串",
+        "correct": false
+      },
+      {
+        "text_en": "JSON.decode()",
+        "text_zh": null,
+        "correct": false
+      }
+    ]
+  }
+}

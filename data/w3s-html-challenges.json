@@ -1,0 +1,2044 @@
+{
+  "language": "html",
+  "topics": {
+    "attributes": [
+      {
+        "id": "attributes_img",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;img&gt;</code> element after the paragraph</li><li style='margin-top:8px'>Set <code class='w3-codespan'>src</code> to <strong>img_girl.jpg</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>alt</code> to <strong>Girl with a jacket</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>width</code> to <strong>250</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>height</code> to <strong>300</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Gallery</h1>\n<p>Here is a photo from my vacation:</p>\n\n<!-- Add an image here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Gallery</h1>\n<p>Here is a photo from my vacation:</p>\n\n<img src=\"img_girl.jpg\" alt=\"Girl with a jacket\" width=\"250\" height=\"300\">\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasImg",
+            "label": "Add an <code class=\"w3-codespan\">&lt;img&gt;</code> element",
+            "pattern": "<img\\s",
+            "flags": "i",
+            "linePattern": "<img\\s",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSrc",
+            "label": "Set <code class=\"w3-codespan\">src</code> to <strong>img_girl.jpg</strong>",
+            "pattern": "<img\\s[^>]*src\\s*=\\s*[\"']img_girl\\.jpg[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*src\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasAlt",
+            "label": "Set <code class=\"w3-codespan\">alt</code> to <strong>Girl with a jacket</strong>",
+            "pattern": "<img\\s[^>]*alt\\s*=\\s*[\"']Girl with a jacket[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*alt\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasWidth",
+            "label": "Set <code class=\"w3-codespan\">width</code> to <strong>250</strong>",
+            "pattern": "<img\\s[^>]*width\\s*=\\s*[\"']250[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*width\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasHeight",
+            "label": "Set <code class=\"w3-codespan\">height</code> to <strong>300</strong>",
+            "pattern": "<img\\s[^>]*height\\s*=\\s*[\"']300[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*height\\s*=",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<img\\s[^>]*(?!alt\\s*=)[^>]*/?\\s*>",
+            "flags": "i",
+            "msg": "Don't forget the <code class='w3-codespan'>alt</code> attribute - it describes the image for accessibility."
+          },
+          {
+            "pattern": "src\\s*=\\s*img_girl",
+            "flags": "i",
+            "msg": "Attribute values should be wrapped in quotes: <code class='w3-codespan'>src=\"img_girl.jpg\"</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_attributes.asp"
+      }
+    ],
+    "audio": [
+      {
+        "id": "audio_embed",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;audio&gt;</code> element with the <code class='w3-codespan'>controls</code> attribute</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;source&gt;</code> with <code class='w3-codespan'>src=\"horse.mp3\"</code> and <code class='w3-codespan'>type=\"audio/mpeg\"</code></li><li style='margin-top:8px'>Add a second <code class='w3-codespan'>&lt;source&gt;</code> with <code class='w3-codespan'>src=\"horse.ogg\"</code> and <code class='w3-codespan'>type=\"audio/ogg\"</code></li><li style='margin-top:8px'>Add fallback text: <strong>Your browser does not support the audio element.</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Audio</h1>\n\n<!-- Add audio here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Audio</h1>\n\n<audio controls>\n  <source src=\"horse.mp3\" type=\"audio/mpeg\">\n  <source src=\"horse.ogg\" type=\"audio/ogg\">\n  Your browser does not support the audio element.\n</audio>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasAudio",
+            "label": "Add an <code class=\"w3-codespan\">&lt;audio&gt;</code> element with <code class=\"w3-codespan\">controls</code>",
+            "pattern": "<audio[^>]*\\scontrols[\\s>]",
+            "flags": "i",
+            "linePattern": "</?audio",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasMp3",
+            "label": "Add a source for <strong>horse.mp3</strong>",
+            "pattern": "<audio[\\s\\S]*<source[^>]*src\\s*=\\s*[\"']horse\\.mp3[\"'][^>]*type\\s*=\\s*[\"']audio/mpeg[\"'][\\s\\S]*</audio>",
+            "flags": "i",
+            "linePattern": "horse\\.mp3",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasOgg",
+            "label": "Add a source for <strong>horse.ogg</strong>",
+            "pattern": "<audio[\\s\\S]*<source[^>]*src\\s*=\\s*[\"']horse\\.ogg[\"'][^>]*type\\s*=\\s*[\"']audio/ogg[\"'][\\s\\S]*</audio>",
+            "flags": "i",
+            "linePattern": "horse\\.ogg",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFallback",
+            "label": "Add fallback text for unsupported browsers",
+            "pattern": "<audio[\\s\\S]*Your browser does not support the audio element\\.[\\s\\S]*</audio>",
+            "flags": "i",
+            "linePattern": "Your browser does not support",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<video[^>]*horse",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>&lt;audio&gt;</code> element for audio files, not <code class='w3-codespan'>&lt;video&gt;</code>."
+          },
+          {
+            "pattern": "<audio[^>]*src\\s*=",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;source&gt;</code> child elements to specify audio files, so you can provide multiple formats."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_audio.asp"
+      }
+    ],
+    "basic": [
+      {
+        "id": "basic_document",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add the <code class='w3-codespan'>&lt;!DOCTYPE html&gt;</code> declaration</li><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;html&gt;</code> element</li><li style='margin-top:8px'>Inside it, add a <code class='w3-codespan'>&lt;body&gt;</code> element</li><li style='margin-top:8px'>Inside the body, add an <code class='w3-codespan'>&lt;h1&gt;</code> with the text <strong>Hello World</strong></li></ol>",
+        "starter": "<!-- Build your HTML page here -->\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Hello World</h1>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasDoctype",
+            "label": "Add the <code class=\"w3-codespan\">&lt;!DOCTYPE html&gt;</code> declaration",
+            "pattern": "<!DOCTYPE\\s+html>",
+            "flags": "i",
+            "linePattern": "<!DOCTYPE\\s+html>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasHtml",
+            "label": "Add an <code class=\"w3-codespan\">&lt;html&gt;</code> element",
+            "pattern": "<html>[\\s\\S]*</html>",
+            "flags": "i",
+            "linePattern": "</?html>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBody",
+            "label": "Add a <code class=\"w3-codespan\">&lt;body&gt;</code> element inside &lt;html&gt;",
+            "pattern": "<html>[\\s\\S]*<body>[\\s\\S]*</body>[\\s\\S]*</html>",
+            "flags": "i",
+            "linePattern": "</?body>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH1",
+            "label": "Add an <code class=\"w3-codespan\">&lt;h1&gt;</code> with the text <strong>Hello World</strong> inside &lt;body&gt;",
+            "pattern": "<body>[\\s\\S]*<h1>\\s*Hello\\s+World\\s*</h1>[\\s\\S]*</body>",
+            "flags": "i",
+            "linePattern": "<h1>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<h1>\\s*Hello\\s+World\\s*</h1>[\\s\\S]*<body>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;h1&gt;</code> element should be placed <strong>inside</strong> the <code class='w3-codespan'>&lt;body&gt;</code> element."
+          },
+          {
+            "pattern": "<h1>Hello World",
+            "flags": "i",
+            "msg": "Don't forget to close the <code class='w3-codespan'>&lt;h1&gt;</code> tag with <code class='w3-codespan'>&lt;/h1&gt;</code>."
+          },
+          {
+            "pattern": "<!DOCTYPE>",
+            "flags": "",
+            "msg": "The DOCTYPE declaration needs the word <strong>html</strong>: <code class='w3-codespan'>&lt;!DOCTYPE html&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_basic.asp"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "blocks_div_span",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap the London heading and paragraph in a <code class='w3-codespan'>&lt;div&gt;</code> element (block-level container)</li><li style='margin-top:8px'>Wrap the Oslo heading and paragraph in another <code class='w3-codespan'>&lt;div&gt;</code> element</li><li style='margin-top:8px'>In the London paragraph, wrap the word <strong>capital</strong> in a <code class='w3-codespan'>&lt;span&gt;</code> element (inline container)</li><li style='margin-top:8px'>In the Oslo paragraph, wrap the word <strong>capital</strong> in a <code class='w3-codespan'>&lt;span&gt;</code> element</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2>London</h2>\n<p>London is the capital of England.</p>\n\n<h2>Oslo</h2>\n<p>Oslo is the capital of Norway.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<div>\n<h2>London</h2>\n<p>London is the <span>capital</span> of England.</p>\n</div>\n\n<div>\n<h2>Oslo</h2>\n<p>Oslo is the <span>capital</span> of Norway.</p>\n</div>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasDivLondon",
+            "label": "Wrap the London section in a <code class=\"w3-codespan\">&lt;div&gt;</code> element",
+            "pattern": "<div>[\\s\\S]*?London[\\s\\S]*?England[\\s\\S]*?</div>",
+            "flags": "i",
+            "linePattern": "</?div>|London|England",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasDivOslo",
+            "label": "Wrap the Oslo section in a <code class=\"w3-codespan\">&lt;div&gt;</code> element",
+            "pattern": "<div>[\\s\\S]*?Oslo[\\s\\S]*?Norway[\\s\\S]*?</div>",
+            "flags": "i",
+            "linePattern": "</?div>|Oslo|Norway",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSpanLondon",
+            "label": "Wrap <strong>capital</strong> in a <code class=\"w3-codespan\">&lt;span&gt;</code> in the London paragraph",
+            "pattern": "London[\\s\\S]*?<span>\\s*capital\\s*</span>",
+            "flags": "i",
+            "linePattern": "<span>\\s*capital",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSpanOslo",
+            "label": "Wrap <strong>capital</strong> in a <code class=\"w3-codespan\">&lt;span&gt;</code> in the Oslo paragraph",
+            "pattern": "Oslo[\\s\\S]*?<span>\\s*capital\\s*</span>",
+            "flags": "i",
+            "linePattern": "<span>\\s*capital",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<span[^>]*>[\\s\\S]*<h2>",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;div&gt;</code> (block element) to group the heading and paragraph. <code class='w3-codespan'>&lt;span&gt;</code> is inline and should not contain block elements."
+          },
+          {
+            "pattern": "<div>[\\s\\S]*London[\\s\\S]*Oslo[\\s\\S]*</div>",
+            "flags": "i",
+            "msg": "Each city should be in its <strong>own</strong> <code class='w3-codespan'>&lt;div&gt;</code>, not both in one."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_blocks.asp"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "buttons_basic",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;button&gt;</code> element with the text <strong>Click Me</strong></li><li style='margin-top:8px'>Add an <code class='w3-codespan'>onclick</code> attribute that runs <strong>alert('Hello!')</strong></li><li style='margin-top:8px'>Add a second <code class='w3-codespan'>&lt;button&gt;</code> with the text <strong>Disabled</strong></li><li style='margin-top:8px'>Add the <code class='w3-codespan'>disabled</code> attribute to the second button</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Buttons</h1>\n\n<!-- Add buttons here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Buttons</h1>\n\n<button onclick=\"alert('Hello!')\">Click Me</button>\n<button disabled>Disabled</button>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasButton",
+            "label": "Add a <code class=\"w3-codespan\">&lt;button&gt;</code> with text <strong>Click Me</strong>",
+            "pattern": "<button[^>]*>\\s*Click Me\\s*</button>",
+            "flags": "i",
+            "linePattern": "Click Me",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasOnclick",
+            "label": "Add <code class=\"w3-codespan\">onclick</code> that runs <strong>alert('Hello!')</strong>",
+            "pattern": "<button[^>]*onclick\\s*=\\s*[\"']alert\\(",
+            "flags": "i",
+            "linePattern": "onclick",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasDisabledBtn",
+            "label": "Add a second button with text <strong>Disabled</strong>",
+            "pattern": "<button[^>]*>\\s*Disabled\\s*</button>",
+            "flags": "i",
+            "linePattern": "Disabled",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasDisabled",
+            "label": "Add the <code class=\"w3-codespan\">disabled</code> attribute",
+            "pattern": "<button[^>]*\\sdisabled[\\s>]",
+            "flags": "i",
+            "linePattern": "disabled",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<button>[\\s\\S]*Click Me[\\s\\S]*</button>(?![\\s\\S]*onclick)",
+            "flags": "i",
+            "msg": "Add an <code class='w3-codespan'>onclick</code> attribute to the Click Me button."
+          },
+          {
+            "pattern": "disabled\\s*=\\s*[\"']disabled[\"']",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>disabled</code> attribute doesn't need a value - just write <code class='w3-codespan'>disabled</code> by itself."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_buttons.asp"
+      }
+    ],
+    "canvas": [
+      {
+        "id": "canvas_setup",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;canvas&gt;</code> element with <code class='w3-codespan'>id=\"myCanvas\"</code>, <code class='w3-codespan'>width=\"200\"</code>, and <code class='w3-codespan'>height=\"100\"</code></li><li style='margin-top:8px'>Add a border: <strong>border:1px solid black;</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;script&gt;</code> that gets the canvas with <code class='w3-codespan'>document.getElementById(\"myCanvas\")</code></li><li style='margin-top:8px'>Get the 2D context with <code class='w3-codespan'>.getContext(\"2d\")</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Canvas</h1>\n\n<!-- Add canvas element here -->\n\n<!-- Add script here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Canvas</h1>\n\n<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid black;\"></canvas>\n\n<script>\nvar c = document.getElementById(\"myCanvas\");\nvar ctx = c.getContext(\"2d\");\n</script>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasCanvas",
+            "label": "Add a <code class=\"w3-codespan\">&lt;canvas&gt;</code> with <strong>id</strong>, <strong>width</strong>, and <strong>height</strong>",
+            "pattern": "<canvas[^>]*id\\s*=\\s*[\"']myCanvas[\"'][^>]*width\\s*=\\s*[\"']200[\"'][^>]*height\\s*=\\s*[\"']100[\"']",
+            "flags": "i",
+            "linePattern": "</?canvas",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBorder",
+            "label": "Add a border: <strong>border:1px solid black;</strong>",
+            "pattern": "border\\s*:\\s*1px\\s+solid\\s+black",
+            "flags": "i",
+            "linePattern": "border\\s*:\\s*1px",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasGetElement",
+            "label": "Get the canvas with <code class=\"w3-codespan\">getElementById(\"myCanvas\")</code>",
+            "pattern": "<script>[\\s\\S]*getElementById\\s*\\(\\s*[\"']myCanvas[\"']\\s*\\)[\\s\\S]*</script>",
+            "flags": "",
+            "linePattern": "</?script>|getElementById",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasContext",
+            "label": "Get the 2D context with <code class=\"w3-codespan\">.getContext(\"2d\")</code>",
+            "pattern": "<script>[\\s\\S]*\\.getContext\\s*\\(\\s*[\"']2d[\"']\\s*\\)[\\s\\S]*</script>",
+            "flags": "",
+            "linePattern": "</?script>|getContext",
+            "lineFlags": ""
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<svg[^>]*myCanvas",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>&lt;canvas&gt;</code> element, not <code class='w3-codespan'>&lt;svg&gt;</code>. Canvas uses JavaScript to draw graphics."
+          },
+          {
+            "pattern": "getContext\\s*\\(\\s*[\"']3d",
+            "flags": "",
+            "msg": "Use <code class='w3-codespan'>\"2d\"</code> for the context, not <code class='w3-codespan'>\"3d\"</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_canvas.asp"
+      }
+    ],
+    "classes": [
+      {
+        "id": "classes_usage",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;style&gt;</code> element in the <code class='w3-codespan'>&lt;head&gt;</code></li><li style='margin-top:8px'>Create a class called <strong>.city</strong> with <strong>background-color: tomato;</strong> and <strong>padding: 10px;</strong></li><li style='margin-top:8px'>Add <code class='w3-codespan'>class=\"city\"</code> to both <code class='w3-codespan'>&lt;h2&gt;</code> elements</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Add style here -->\n</head>\n<body>\n\n<h2>London</h2>\n<p>London is the capital of England.</p>\n\n<h2>Paris</h2>\n<p>Paris is the capital of France.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.city {\n  background-color: tomato;\n  padding: 10px;\n}\n</style>\n</head>\n<body>\n\n<h2 class=\"city\">London</h2>\n<p>London is the capital of England.</p>\n\n<h2 class=\"city\">Paris</h2>\n<p>Paris is the capital of France.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasStyle",
+            "label": "Add a <code class=\"w3-codespan\">&lt;style&gt;</code> element in the <code class=\"w3-codespan\">&lt;head&gt;</code>",
+            "pattern": "<head>[\\s\\S]*<style>[\\s\\S]*</style>[\\s\\S]*</head>",
+            "flags": "i",
+            "linePattern": "</?style>|\\.city|background-color|padding|\\}",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasClass",
+            "label": "Create a <strong>.city</strong> class with the specified styles",
+            "pattern": "\\.city\\s*\\{[^}]*background-color\\s*:\\s*tomato[^}]*padding\\s*:\\s*10px",
+            "flags": "i",
+            "linePattern": "\\.city",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH2London",
+            "label": "Add <code class=\"w3-codespan\">class=\"city\"</code> to the London heading",
+            "pattern": "<h2\\s[^>]*class\\s*=\\s*[\"'][^\"']*city[^\"']*[\"'][^>]*>\\s*London",
+            "flags": "i",
+            "linePattern": "class\\s*=\\s*[\"'][^\"']*city[^\"']*[\"'][^>]*>\\s*London",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH2Paris",
+            "label": "Add <code class=\"w3-codespan\">class=\"city\"</code> to the Paris heading",
+            "pattern": "<h2\\s[^>]*class\\s*=\\s*[\"'][^\"']*city[^\"']*[\"'][^>]*>\\s*Paris",
+            "flags": "i",
+            "linePattern": "class\\s*=\\s*[\"'][^\"']*city[^\"']*[\"'][^>]*>\\s*Paris",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "#city\\s*\\{",
+            "flags": "i",
+            "msg": "Use a period (.) for class selectors, not a hash (#). The hash is for id selectors."
+          },
+          {
+            "pattern": "<h2\\s[^>]*style\\s*=\\s*[\"'].*tomato",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>class</code> attribute instead of inline styles - that way both headings share the same style."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_classes.asp"
+      }
+    ],
+    "colors": [
+      {
+        "id": "colors_apply",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Set the background color of the <code class='w3-codespan'>&lt;h1&gt;</code> to <strong>DodgerBlue</strong></li><li style='margin-top:8px'>Set the text color of the first paragraph to <strong>Tomato</strong></li><li style='margin-top:8px'>Set the border color of the second paragraph to <strong>MediumSeaGreen</strong> (use <code class='w3-codespan'>border:2px solid MediumSeaGreen</code>)</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Color Names</h1>\n\n<p>HTML supports 140 standard color names.</p>\n\n<p>Colors can be applied to borders too.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1 style=\"background-color:DodgerBlue;\">Color Names</h1>\n\n<p style=\"color:Tomato;\">HTML supports 140 standard color names.</p>\n\n<p style=\"border:2px solid MediumSeaGreen;\">Colors can be applied to borders too.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasBgColor",
+            "label": "Set the background color of <code class=\"w3-codespan\">&lt;h1&gt;</code> to <strong>DodgerBlue</strong>",
+            "pattern": "<h1\\s[^>]*style\\s*=\\s*[\"'][^\"']*background-color\\s*:\\s*DodgerBlue",
+            "flags": "i",
+            "linePattern": "background-color\\s*:\\s*DodgerBlue",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTextColor",
+            "label": "Set the text color of the first paragraph to <strong>Tomato</strong>",
+            "pattern": "<p\\s[^>]*style\\s*=\\s*[\"'][^\"']*color\\s*:\\s*Tomato",
+            "flags": "i",
+            "linePattern": "color\\s*:\\s*Tomato",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBorder",
+            "label": "Set the border color of the second paragraph to <strong>MediumSeaGreen</strong>",
+            "pattern": "<p\\s[^>]*style\\s*=\\s*[\"'][^\"']*border\\s*:[^\"']*MediumSeaGreen",
+            "flags": "i",
+            "linePattern": "border\\s*:[^;]*MediumSeaGreen",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "background-color\\s*:\\s*Dodger\\s+Blue",
+            "flags": "i",
+            "msg": "The color name is one word: <code class='w3-codespan'>DodgerBlue</code>, not <code class='w3-codespan'>Dodger Blue</code>."
+          },
+          {
+            "pattern": "color\\s*:\\s*tomato[^;\"']*border",
+            "flags": "i",
+            "msg": "The text color and border should be on <strong>different</strong> paragraphs."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_colors.asp"
+      }
+    ],
+    "comments": [
+      {
+        "id": "comments_usage",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an HTML comment with the text <strong>This is the navigation</strong> above the first paragraph</li><li style='margin-top:8px'>Comment out the second paragraph so it is hidden from the browser</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Website</h1>\n\n<p>Home | About | Contact</p>\n\n<p>This paragraph should be hidden.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Website</h1>\n\n<!-- This is the navigation -->\n<p>Home | About | Contact</p>\n\n<!-- <p>This paragraph should be hidden.</p> -->\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasComment",
+            "label": "Add a comment with the text <strong>This is the navigation</strong>",
+            "pattern": "<!--\\s*This is the navigation\\s*-->",
+            "flags": "i",
+            "linePattern": "<!--\\s*This is the navigation",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasHidden",
+            "label": "Comment out the second paragraph to hide it",
+            "pattern": "<!--[\\s\\S]*<p>\\s*This paragraph should be hidden\\.\\s*</p>[\\s\\S]*-->",
+            "flags": "i",
+            "linePattern": "<!--.*This paragraph should be hidden",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<!-\\s*This is the navigation",
+            "flags": "i",
+            "msg": "HTML comments start with <code class='w3-codespan'>&lt;!--</code> (two dashes), not one."
+          },
+          {
+            "pattern": "<p>\\s*This paragraph should be hidden\\.\\s*</p>\\s*(?!\\s*-->)",
+            "flags": "i",
+            "msg": "Wrap the paragraph in <code class='w3-codespan'>&lt;!-- ... --&gt;</code> to hide it from the browser."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_comments.asp"
+      }
+    ],
+    "computercode": [
+      {
+        "id": "computercode_elements",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap <strong>Ctrl + S</strong> in a <code class='w3-codespan'>&lt;kbd&gt;</code> element (keyboard input)</li><li style='margin-top:8px'>Wrap the code block in <code class='w3-codespan'>&lt;pre&gt;&lt;code&gt;</code> to preserve formatting</li><li style='margin-top:8px'>Wrap the variables <strong>b</strong> and <strong>h</strong> in <code class='w3-codespan'>&lt;var&gt;</code> elements in the formula</li><li style='margin-top:8px'>Wrap <strong>Error 404</strong> in a <code class='w3-codespan'>&lt;samp&gt;</code> element (program output)</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Technical Documentation</h1>\n\n<p>Save the file by pressing Ctrl + S on your keyboard.</p>\n\n<h2>Code Example</h2>\nx = 5;\ny = 6;\nz = x + y;\n\n<h2>Formula</h2>\n<p>Area of a triangle: 1/2 x b x h</p>\n\n<h2>Output</h2>\n<p>The system returned: Error 404</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Technical Documentation</h1>\n\n<p>Save the file by pressing <kbd>Ctrl + S</kbd> on your keyboard.</p>\n\n<h2>Code Example</h2>\n<pre><code>\nx = 5;\ny = 6;\nz = x + y;\n</code></pre>\n\n<h2>Formula</h2>\n<p>Area of a triangle: 1/2 x <var>b</var> x <var>h</var></p>\n\n<h2>Output</h2>\n<p>The system returned: <samp>Error 404</samp></p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasKbd",
+            "label": "Wrap <strong>Ctrl + S</strong> in a <code class=\"w3-codespan\">&lt;kbd&gt;</code> element",
+            "pattern": "<kbd>\\s*Ctrl \\+ S\\s*</kbd>",
+            "flags": "i",
+            "linePattern": "<kbd>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasPreCode",
+            "label": "Wrap the code block in <code class=\"w3-codespan\">&lt;pre&gt;&lt;code&gt;</code>",
+            "pattern": "<pre>\\s*<code>[\\s\\S]*x = 5;[\\s\\S]*z = x \\+ y;[\\s\\S]*</code>\\s*</pre>",
+            "flags": "i",
+            "linePattern": "</?pre>|</?code>|x = |y = |z = ",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasVar",
+            "label": "Wrap <strong>b</strong> and <strong>h</strong> in <code class=\"w3-codespan\">&lt;var&gt;</code> elements",
+            "pattern": "<var>\\s*b\\s*</var>[\\s\\S]*<var>\\s*h\\s*</var>",
+            "flags": "i",
+            "linePattern": "<var>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSamp",
+            "label": "Wrap <strong>Error 404</strong> in a <code class=\"w3-codespan\">&lt;samp&gt;</code> element",
+            "pattern": "<samp>\\s*Error 404\\s*</samp>",
+            "flags": "i",
+            "linePattern": "<samp>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<code>[\\s\\S]*x = 5;[\\s\\S]*</code>(?![\\s\\S]*</pre>)",
+            "flags": "i",
+            "msg": "Wrap <code class='w3-codespan'>&lt;code&gt;</code> inside <code class='w3-codespan'>&lt;pre&gt;</code> to preserve line breaks and whitespace."
+          },
+          {
+            "pattern": "<code>\\s*Ctrl",
+            "flags": "i",
+            "msg": "Keyboard input should use <code class='w3-codespan'>&lt;kbd&gt;</code>, not <code class='w3-codespan'>&lt;code&gt;</code>. Each element has a specific purpose."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_computercode.asp"
+      }
+    ],
+    "css": [
+      {
+        "id": "css_internal",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;style&gt;</code> element inside the <code class='w3-codespan'>&lt;head&gt;</code></li><li style='margin-top:8px'>Set the background-color of <code class='w3-codespan'>body</code> to <strong>powderblue</strong></li><li style='margin-top:8px'>Set the color of <code class='w3-codespan'>h1</code> to <strong>blue</strong></li><li style='margin-top:8px'>Set the color of <code class='w3-codespan'>p</code> to <strong>red</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Add a style element here -->\n</head>\n<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {background-color: powderblue;}\nh1 {color: blue;}\np {color: red;}\n</style>\n</head>\n<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasStyle",
+            "label": "Add a <code class=\"w3-codespan\">&lt;style&gt;</code> element inside <code class=\"w3-codespan\">&lt;head&gt;</code>",
+            "pattern": "<head>[\\s\\S]*<style>[\\s\\S]*</style>[\\s\\S]*</head>",
+            "flags": "i",
+            "linePattern": "</?style>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBgColor",
+            "label": "Set the body background-color to <strong>powderblue</strong>",
+            "pattern": "body\\s*\\{[^}]*background-color\\s*:\\s*powderblue",
+            "flags": "i",
+            "linePattern": "background-color\\s*:\\s*powderblue",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH1Color",
+            "label": "Set the color of <code class=\"w3-codespan\">h1</code> to <strong>blue</strong>",
+            "pattern": "h1\\s*\\{[^}]*color\\s*:\\s*blue",
+            "flags": "i",
+            "linePattern": "color\\s*:\\s*blue",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasPColor",
+            "label": "Set the color of <code class=\"w3-codespan\">p</code> to <strong>red</strong>",
+            "pattern": "p\\s*\\{[^}]*color\\s*:\\s*red",
+            "flags": "i",
+            "linePattern": "color\\s*:\\s*red",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<style>[\\s\\S]*</style>[\\s\\S]*<head>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;style&gt;</code> element should be placed <strong>inside</strong> the <code class='w3-codespan'>&lt;head&gt;</code> section."
+          },
+          {
+            "pattern": "<p\\s[^>]*style\\s*=",
+            "flags": "i",
+            "msg": "Use an <strong>internal</strong> style sheet (<code class='w3-codespan'>&lt;style&gt;</code> in <code class='w3-codespan'>&lt;head&gt;</code>), not inline styles."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_css.asp"
+      }
+    ],
+    "div": [
+      {
+        "id": "div_container",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap the heading and paragraph in a <code class='w3-codespan'>&lt;div&gt;</code> element</li><li style='margin-top:8px'>Set the <code class='w3-codespan'>width</code> of the div to <strong>300px</strong></li><li style='margin-top:8px'>Center the div using <code class='w3-codespan'>margin:auto</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h2>London</h2>\n<p>London is the capital of England.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<div style=\"width:300px;margin:auto;\">\n<h2>London</h2>\n<p>London is the capital of England.</p>\n</div>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasDiv",
+            "label": "Wrap the heading and paragraph in a <code class=\"w3-codespan\">&lt;div&gt;</code>",
+            "pattern": "<div[^>]*>[\\s\\S]*?<h2>[\\s\\S]*?London[\\s\\S]*?</h2>[\\s\\S]*?<p>[\\s\\S]*?</p>[\\s\\S]*?</div>",
+            "flags": "i",
+            "linePattern": "</?div|London|England",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasWidth",
+            "label": "Set the width to <strong>300px</strong>",
+            "pattern": "width\\s*:\\s*300px",
+            "flags": "i",
+            "linePattern": "width\\s*:\\s*300px",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasMargin",
+            "label": "Center the div with <code class=\"w3-codespan\">margin:auto</code>",
+            "pattern": "margin\\s*:\\s*auto",
+            "flags": "i",
+            "linePattern": "margin\\s*:\\s*auto",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "text-align\\s*:\\s*center",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>margin:auto</code> to center a <code class='w3-codespan'>&lt;div&gt;</code>, not <code class='w3-codespan'>text-align:center</code>. The text-align property centers text inside the element, not the element itself."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_div.asp"
+      }
+    ],
+    "elements": [
+      {
+        "id": "elements_nesting",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Close the <code class='w3-codespan'>&lt;h1&gt;</code> element with the correct end tag</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;p&gt;</code> element with the text <strong>My first paragraph.</strong></li><li style='margin-top:8px'>Inside the paragraph, add a <code class='w3-codespan'>&lt;br&gt;</code> after the word <strong>first</strong></li><li style='margin-top:8px'>Close the <code class='w3-codespan'>&lt;body&gt;</code> element with the correct end tag</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading\n\n<!-- Add a paragraph here -->\n\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First Heading</h1>\n\n<p>My first<br> paragraph.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasH1Close",
+            "label": "Close the <code class=\"w3-codespan\">&lt;h1&gt;</code> element with <code class=\"w3-codespan\">&lt;/h1&gt;</code>",
+            "pattern": "<h1>\\s*My First Heading\\s*</h1>",
+            "flags": "i",
+            "linePattern": "</h1>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasP",
+            "label": "Add a <code class=\"w3-codespan\">&lt;p&gt;</code> element with the text <strong>My first paragraph.</strong>",
+            "pattern": "<p>[\\s\\S]*My first[\\s\\S]*paragraph\\.[\\s\\S]*</p>",
+            "flags": "i",
+            "linePattern": "<p>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBr",
+            "label": "Add a <code class=\"w3-codespan\">&lt;br&gt;</code> after the word <strong>first</strong>",
+            "pattern": "first\\s*<br\\s*/?>",
+            "flags": "i",
+            "linePattern": "<br",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBodyClose",
+            "label": "Close the <code class=\"w3-codespan\">&lt;body&gt;</code> element with <code class=\"w3-codespan\">&lt;/body&gt;</code>",
+            "pattern": "<body>[\\s\\S]*</body>",
+            "flags": "i",
+            "linePattern": "</body>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<h1>My First Heading[^<]*<p>",
+            "flags": "i",
+            "msg": "Don't forget to close the <code class='w3-codespan'>&lt;h1&gt;</code> element with <code class='w3-codespan'>&lt;/h1&gt;</code> - never skip the end tag!"
+          },
+          {
+            "pattern": "</html>[\\s\\S]*</body>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;/body&gt;</code> end tag should come <strong>before</strong> <code class='w3-codespan'>&lt;/html&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_elements.asp"
+      }
+    ],
+    "entities": [
+      {
+        "id": "entities_reserved",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Insert a copyright symbol (<code class='w3-codespan'>&amp;copy;</code>) at the beginning of the paragraph</li><li style='margin-top:8px'>Add one non-breaking space (<code class='w3-codespan'>&amp;nbsp;</code>) between <strong>2026</strong> and <strong>W3Schools</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Entities</h1>\n\n<p>2026 W3Schools</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Entities</h1>\n\n<p>&copy;2026&nbsp;W3Schools</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasCopy",
+            "label": "Display the copyright symbol using <code class=\"w3-codespan\">&amp;copy;</code>",
+            "pattern": "&copy;",
+            "flags": "",
+            "linePattern": "&copy;",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasNbsp",
+            "label": "Add one non-breaking space between <strong>2026</strong> and <strong>W3Schools</strong>",
+            "pattern": "2026&nbsp;W3Schools",
+            "flags": "",
+            "linePattern": "&nbsp;",
+            "lineFlags": ""
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "&amp;copy;",
+            "flags": "",
+            "msg": "Use <code class='w3-codespan'>&amp;copy;</code> directly in your HTML � don't double-escape it."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_entities.asp"
+      }
+    ],
+    "filepaths": [
+      {
+        "id": "filepaths_types",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>The first image <strong>picture.jpg</strong> is in the <strong>images</strong> folder (same level) - use a relative path</li><li style='margin-top:8px'>The second image uses an absolute URL from <strong>https://www.w3schools.com/images/picture.jpg</strong></li><li style='margin-top:8px'>The stylesheet <strong>mystyle.css</strong> is in the root <strong>/css/</strong> folder - use a root-relative path</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"FIX_THIS_PATH\">\n</head>\n<body>\n\n<h1>File Paths</h1>\n\n<img src=\"FIX_THIS_PATH\" alt=\"Local image\">\n<img src=\"FIX_THIS_PATH\" alt=\"Remote image\">\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n  <link rel=\"stylesheet\" href=\"/css/mystyle.css\">\n</head>\n<body>\n\n<h1>File Paths</h1>\n\n<img src=\"images/picture.jpg\" alt=\"Local image\">\n<img src=\"https://www.w3schools.com/images/picture.jpg\" alt=\"Remote image\">\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasRelative",
+            "label": "Use a relative path <strong>images/picture.jpg</strong> for the local image",
+            "pattern": "<img\\s[^>]*src\\s*=\\s*[\"']images/picture\\.jpg[\"']",
+            "flags": "i",
+            "linePattern": "src\\s*=\\s*[\"']images/picture\\.jpg",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasAbsolute",
+            "label": "Use the absolute URL for the remote image",
+            "pattern": "<img\\s[^>]*src\\s*=\\s*[\"']https://www\\.w3schools\\.com/images/picture\\.jpg[\"']",
+            "flags": "i",
+            "linePattern": "src\\s*=\\s*[\"']https://",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasRootRelative",
+            "label": "Use a root-relative path <strong>/css/mystyle.css</strong> for the stylesheet",
+            "pattern": "href\\s*=\\s*[\"']/css/mystyle\\.css[\"']",
+            "flags": "i",
+            "linePattern": "href\\s*=\\s*[\"']/css/mystyle\\.css",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "FIX_THIS_PATH",
+            "flags": "",
+            "msg": "Replace all <strong>FIX_THIS_PATH</strong> placeholders with the correct file paths."
+          },
+          {
+            "pattern": "src\\s*=\\s*[\"']/images/picture\\.jpg[\"'][^>]*alt\\s*=\\s*[\"']Local",
+            "flags": "i",
+            "msg": "For a file in a subfolder of the current directory, use <code class='w3-codespan'>images/picture.jpg</code> (no leading slash)."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_filepaths.asp"
+      }
+    ],
+    "form_elements": [
+      {
+        "id": "form_elements_select",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;select&gt;</code> element with <code class='w3-codespan'>name=\"car\"</code></li><li style='margin-top:8px'>Add three <code class='w3-codespan'>&lt;option&gt;</code> elements: <strong>Volvo</strong>, <strong>Saab</strong>, <strong>Fiat</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;textarea&gt;</code> element with <code class='w3-codespan'>name=\"message\"</code> and <code class='w3-codespan'>rows=\"4\"</code> and <code class='w3-codespan'>cols=\"30\"</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Reservation</h1>\n\n<form>\n  <label>Choose a car:</label><br>\n  <!-- Add select here -->\n\n  <br><br>\n  <label>Your message:</label><br>\n  <!-- Add textarea here -->\n</form>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Reservation</h1>\n\n<form>\n  <label>Choose a car:</label><br>\n  <select name=\"car\">\n    <option>Volvo</option>\n    <option>Saab</option>\n    <option>Fiat</option>\n  </select>\n\n  <br><br>\n  <label>Your message:</label><br>\n  <textarea name=\"message\" rows=\"4\" cols=\"30\"></textarea>\n</form>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasSelect",
+            "label": "Add a <code class=\"w3-codespan\">&lt;select&gt;</code> with <code class=\"w3-codespan\">name=\"car\"</code>",
+            "pattern": "<select[^>]*name\\s*=\\s*[\"']car[\"']",
+            "flags": "i",
+            "linePattern": "</?select|<option",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasOptions",
+            "label": "Add options for <strong>Volvo</strong>, <strong>Saab</strong>, and <strong>Fiat</strong>",
+            "pattern": "<option[^>]*>\\s*Volvo\\s*</option>[\\s\\S]*<option[^>]*>\\s*Saab\\s*</option>[\\s\\S]*<option[^>]*>\\s*Fiat\\s*</option>",
+            "flags": "i",
+            "linePattern": "<option",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTextarea",
+            "label": "Add a <code class=\"w3-codespan\">&lt;textarea&gt;</code> with <strong>rows=\"4\"</strong> and <strong>cols=\"30\"</strong>",
+            "pattern": "<textarea[^>]*name\\s*=\\s*[\"']message[\"'][^>]*rows\\s*=\\s*[\"']4[\"'][^>]*cols\\s*=\\s*[\"']30[\"']",
+            "flags": "i",
+            "linePattern": "<textarea",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']select",
+            "flags": "i",
+            "msg": "A dropdown uses the <code class='w3-codespan'>&lt;select&gt;</code> element, not <code class='w3-codespan'>&lt;input type=\"select\"&gt;</code>."
+          },
+          {
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']textarea",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>&lt;textarea&gt;</code> element, not <code class='w3-codespan'>&lt;input type=\"textarea\"&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_form_elements.asp"
+      }
+    ],
+    "formatting": [
+      {
+        "id": "formatting_tags",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap the word <strong>important</strong> in a <code class='w3-codespan'>&lt;strong&gt;</code> element</li><li style='margin-top:8px'>Wrap the word <strong>carefully</strong> in an <code class='w3-codespan'>&lt;em&gt;</code> element</li><li style='margin-top:8px'>Wrap the word <strong>milk</strong> in a <code class='w3-codespan'>&lt;mark&gt;</code> element</li><li style='margin-top:8px'>Wrap the <strong>2</strong> in H2O with a <code class='w3-codespan'>&lt;sub&gt;</code> element</li><li style='margin-top:8px'>Wrap the word <strong>blue</strong> in a <code class='w3-codespan'>&lt;del&gt;</code> element</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Formatting Text</h1>\n\n<p>This is an important message.</p>\n<p>Please read carefully.</p>\n<p>Do not forget to buy milk today.</p>\n<p>The chemical formula for water is: H2O</p>\n<p>My favorite color is blue red.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Formatting Text</h1>\n\n<p>This is an <strong>important</strong> message.</p>\n<p>Please read <em>carefully</em>.</p>\n<p>Do not forget to buy <mark>milk</mark> today.</p>\n<p>The chemical formula for water is: H<sub>2</sub>O</p>\n<p>My favorite color is <del>blue</del> red.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasStrong",
+            "label": "Wrap <strong>important</strong> in a <code class=\"w3-codespan\">&lt;strong&gt;</code> element",
+            "pattern": "<strong>\\s*important\\s*</strong>",
+            "flags": "i",
+            "linePattern": "<strong>\\s*important",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasEm",
+            "label": "Wrap <strong>carefully</strong> in an <code class=\"w3-codespan\">&lt;em&gt;</code> element",
+            "pattern": "<em>\\s*carefully\\s*</em>",
+            "flags": "i",
+            "linePattern": "<em>\\s*carefully",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasMark",
+            "label": "Wrap <strong>milk</strong> in a <code class=\"w3-codespan\">&lt;mark&gt;</code> element",
+            "pattern": "<mark>\\s*milk\\s*</mark>",
+            "flags": "i",
+            "linePattern": "<mark>\\s*milk",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSub",
+            "label": "Wrap the <strong>2</strong> in H2O with a <code class=\"w3-codespan\">&lt;sub&gt;</code> element",
+            "pattern": "H\\s*<sub>\\s*2\\s*</sub>\\s*O",
+            "flags": "",
+            "linePattern": "<sub>\\s*2",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasDel",
+            "label": "Wrap <strong>blue</strong> in a <code class=\"w3-codespan\">&lt;del&gt;</code> element",
+            "pattern": "<del>\\s*blue\\s*</del>",
+            "flags": "i",
+            "linePattern": "<del>\\s*blue",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<b>\\s*important\\s*</b>",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;strong&gt;</code> instead of <code class='w3-codespan'>&lt;b&gt;</code> - it carries semantic meaning."
+          },
+          {
+            "pattern": "<i>\\s*carefully\\s*</i>",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;em&gt;</code> instead of <code class='w3-codespan'>&lt;i&gt;</code> - it carries semantic meaning."
+          },
+          {
+            "pattern": "H<sup>2</sup>O",
+            "flags": "",
+            "msg": "Chemical formulas use <code class='w3-codespan'>&lt;sub&gt;</code> (subscript), not <code class='w3-codespan'>&lt;sup&gt;</code> (superscript)."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_formatting.asp"
+      }
+    ],
+    "forms": [
+      {
+        "id": "forms_basic",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;form&gt;</code> element</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;label&gt;</code> with the text <strong>First name:</strong> and <code class='w3-codespan'>for=\"fname\"</code></li><li style='margin-top:8px'>Add a text <code class='w3-codespan'>&lt;input&gt;</code> with <code class='w3-codespan'>id=\"fname\"</code> and <code class='w3-codespan'>name=\"fname\"</code></li><li style='margin-top:8px'>Add a submit button using <code class='w3-codespan'>&lt;input type=\"submit\" value=\"Submit\"&gt;</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Registration</h1>\n\n<!-- Add a form here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Registration</h1>\n\n<form>\n  <label for=\"fname\">First name:</label><br>\n  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>\n  <input type=\"submit\" value=\"Submit\">\n</form>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasForm",
+            "label": "Add a <code class=\"w3-codespan\">&lt;form&gt;</code> element",
+            "pattern": "<form[^>]*>[\\s\\S]*</form>",
+            "flags": "i",
+            "linePattern": "</?form>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasLabel",
+            "label": "Add a <code class=\"w3-codespan\">&lt;label&gt;</code> with <code class=\"w3-codespan\">for=\"fname\"</code>",
+            "pattern": "<label\\s[^>]*for\\s*=\\s*[\"']fname[\"'][^>]*>\\s*First name:\\s*</label>",
+            "flags": "i",
+            "linePattern": "<label\\s[^>]*for\\s*=\\s*[\"']fname",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasInput",
+            "label": "Add a text <code class=\"w3-codespan\">&lt;input&gt;</code> with <code class=\"w3-codespan\">id=\"fname\"</code> and <code class=\"w3-codespan\">name=\"fname\"</code>",
+            "pattern": "<input\\s[^>]*type\\s*=\\s*[\"']text[\"'][^>]*id\\s*=\\s*[\"']fname[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']text[\"'][^>]*id\\s*=\\s*[\"']fname",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSubmit",
+            "label": "Add a submit button",
+            "pattern": "<input\\s[^>]*type\\s*=\\s*[\"']submit[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']submit",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']text[\"'](?![^>]*name\\s*=)",
+            "flags": "i",
+            "msg": "Add a <code class='w3-codespan'>name</code> attribute to the input - without it, the form data won't be submitted."
+          },
+          {
+            "pattern": "<label>\\s*First name",
+            "flags": "i",
+            "msg": "Add a <code class='w3-codespan'>for</code> attribute to the label to link it to the input field."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_forms.asp"
+      }
+    ],
+    "head": [
+      {
+        "id": "head_metadata",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;title&gt;</code> element with the text <strong>My First Page</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;meta&gt;</code> element with <code class='w3-codespan'>charset=\"UTF-8\"</code></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;meta&gt;</code> element with <code class='w3-codespan'>name=\"description\"</code> and <code class='w3-codespan'>content=\"A tutorial page\"</code></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;link&gt;</code> element to link an external stylesheet: <strong>styles.css</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Add metadata here -->\n</head>\n<body>\n\n<h1>Hello World</h1>\n<p>This is my first page.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<title>My First Page</title>\n<meta charset=\"UTF-8\">\n<meta name=\"description\" content=\"A tutorial page\">\n<link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n\n<h1>Hello World</h1>\n<p>This is my first page.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasTitle",
+            "label": "Add a <code class=\"w3-codespan\">&lt;title&gt;</code> with text <strong>My First Page</strong>",
+            "pattern": "<title>\\s*My First Page\\s*</title>",
+            "flags": "i",
+            "linePattern": "<title>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasCharset",
+            "label": "Add a <code class=\"w3-codespan\">&lt;meta&gt;</code> with <code class=\"w3-codespan\">charset=\"UTF-8\"</code>",
+            "pattern": "<meta\\s[^>]*charset\\s*=\\s*[\"']UTF-8[\"']",
+            "flags": "i",
+            "linePattern": "charset\\s*=\\s*[\"']UTF-8",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasDescription",
+            "label": "Add a <code class=\"w3-codespan\">&lt;meta&gt;</code> with <code class=\"w3-codespan\">name=\"description\"</code> and <code class=\"w3-codespan\">content=\"A tutorial page\"</code>",
+            "pattern": "<meta\\s[^>]*name\\s*=\\s*[\"']description[\"'][^>]*content\\s*=\\s*[\"']A tutorial page[\"']",
+            "flags": "i",
+            "linePattern": "name\\s*=\\s*[\"']description",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasLink",
+            "label": "Add a <code class=\"w3-codespan\">&lt;link&gt;</code> to <strong>styles.css</strong>",
+            "pattern": "<link\\s[^>]*rel\\s*=\\s*[\"']stylesheet[\"'][^>]*href\\s*=\\s*[\"']styles\\.css[\"']",
+            "flags": "i",
+            "linePattern": "href\\s*=\\s*[\"']styles\\.css",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<title>[\\s\\S]*</title>[\\s\\S]*</head>[\\s\\S]*<link",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;link&gt;</code> element should be inside the <code class='w3-codespan'>&lt;head&gt;</code> section."
+          },
+          {
+            "pattern": "<body>[\\s\\S]*<title>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;title&gt;</code> element belongs in the <code class='w3-codespan'>&lt;head&gt;</code>, not the <code class='w3-codespan'>&lt;body&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_head.asp"
+      }
+    ],
+    "headings": [
+      {
+        "id": "headings_hierarchy",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Change the text <strong>My Website</strong> to use an <code class='w3-codespan'>&lt;h1&gt;</code> heading</li><li style='margin-top:8px'>Change the text <strong>About Me</strong> to use an <code class='w3-codespan'>&lt;h2&gt;</code> heading</li><li style='margin-top:8px'>Change the text <strong>My Hobbies</strong> to use an <code class='w3-codespan'>&lt;h2&gt;</code> heading</li><li style='margin-top:8px'>Change the text <strong>Photography</strong> to use an <code class='w3-codespan'>&lt;h3&gt;</code> heading</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\nMy Website\n\nAbout Me\n<p>I love building web pages.</p>\n\nMy Hobbies\n\nPhotography\n<p>I enjoy taking photos of nature.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Website</h1>\n\n<h2>About Me</h2>\n<p>I love building web pages.</p>\n\n<h2>My Hobbies</h2>\n\n<h3>Photography</h3>\n<p>I enjoy taking photos of nature.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasH1",
+            "label": "Use <code class=\"w3-codespan\">&lt;h1&gt;</code> for <strong>My Website</strong>",
+            "pattern": "<h1>\\s*My Website\\s*</h1>",
+            "flags": "i",
+            "linePattern": "<h1>\\s*My Website",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH2About",
+            "label": "Use <code class=\"w3-codespan\">&lt;h2&gt;</code> for <strong>About Me</strong>",
+            "pattern": "<h2>\\s*About Me\\s*</h2>",
+            "flags": "i",
+            "linePattern": "<h2>\\s*About Me",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH2Hobbies",
+            "label": "Use <code class=\"w3-codespan\">&lt;h2&gt;</code> for <strong>My Hobbies</strong>",
+            "pattern": "<h2>\\s*My Hobbies\\s*</h2>",
+            "flags": "i",
+            "linePattern": "<h2>\\s*My Hobbies",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasH3",
+            "label": "Use <code class=\"w3-codespan\">&lt;h3&gt;</code> for <strong>Photography</strong>",
+            "pattern": "<h3>\\s*Photography\\s*</h3>",
+            "flags": "i",
+            "linePattern": "<h3>\\s*Photography",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<h1>\\s*About Me\\s*</h1>",
+            "flags": "i",
+            "msg": "Section titles like <strong>About Me</strong> should use <code class='w3-codespan'>&lt;h2&gt;</code>, not <code class='w3-codespan'>&lt;h1&gt;</code>. Reserve <code class='w3-codespan'>&lt;h1&gt;</code> for the main title."
+          },
+          {
+            "pattern": "<h2>\\s*Photography\\s*</h2>",
+            "flags": "i",
+            "msg": "<strong>Photography</strong> is a sub-topic under <strong>My Hobbies</strong>, so it should use <code class='w3-codespan'>&lt;h3&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_headings.asp"
+      }
+    ],
+    "id": [
+      {
+        "id": "id_usage",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;style&gt;</code> element in the <code class='w3-codespan'>&lt;head&gt;</code> section</li><li style='margin-top:8px'>Create a style for <strong>#myHeader</strong> with <strong>background-color: lightblue;</strong> and <strong>padding: 40px;</strong></li><li style='margin-top:8px'>Add <code class='w3-codespan'>id=\"myHeader\"</code> to the <code class='w3-codespan'>&lt;h1&gt;</code> element</li><li style='margin-top:8px'>Add a bookmark link that jumps to <strong>#myHeader</strong> with the text <strong>Back to top</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Add style here -->\n</head>\n<body>\n\n<h1>My Cities</h1>\n\n<h2>London</h2>\n<p>London is the capital of England.</p>\n\n<h2>Paris</h2>\n<p>Paris is the capital of France.</p>\n\n<!-- Add a bookmark link here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n#myHeader {\n  background-color: lightblue;\n  padding: 40px;\n}\n</style>\n</head>\n<body>\n\n<h1 id=\"myHeader\">My Cities</h1>\n\n<h2>London</h2>\n<p>London is the capital of England.</p>\n\n<h2>Paris</h2>\n<p>Paris is the capital of France.</p>\n\n<a href=\"#myHeader\">Back to top</a>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasStyle",
+            "label": "Create a style for <strong>#myHeader</strong> with <strong>background-color:lightblue;padding:40px;</strong>",
+            "pattern": "#myHeader\\s*\\{[^}]*background-color\\s*:\\s*lightblue[^}]*padding\\s*:\\s*40px",
+            "flags": "i",
+            "linePattern": "</?style>|#myHeader|background-color|padding|\\}",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasId",
+            "label": "Add <code class=\"w3-codespan\">id=\"myHeader\"</code> to the <code class=\"w3-codespan\">&lt;h1&gt;</code>",
+            "pattern": "<h1\\s[^>]*id\\s*=\\s*[\"']myHeader[\"']",
+            "flags": "",
+            "linePattern": "id\\s*=\\s*[\"']myHeader",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasBookmark",
+            "label": "Add a link to <strong>#myHeader</strong> with text <strong>Back to top</strong>",
+            "pattern": "<a\\s[^>]*href\\s*=\\s*[\"']#myHeader[\"'][^>]*>\\s*Back to top\\s*</a>",
+            "flags": "i",
+            "linePattern": "href\\s*=\\s*[\"']#myHeader",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "\\.myHeader\\s*\\{",
+            "flags": "",
+            "msg": "Use a hash (#) for id selectors, not a period (.). The period is for class selectors."
+          },
+          {
+            "pattern": "href\\s*=\\s*[\"']myHeader[\"']",
+            "flags": "i",
+            "msg": "Bookmark links need a hash: <code class='w3-codespan'>href=\"#myHeader\"</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_id.asp"
+      }
+    ],
+    "iframes": [
+      {
+        "id": "iframes_embed",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;iframe&gt;</code> element</li><li style='margin-top:8px'>Set <code class='w3-codespan'>src</code> to <strong>demo_iframe.htm</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>height</code> to <strong>300</strong> and <code class='w3-codespan'>width</code> to <strong>400</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>title</code> to <strong>W3Schools</strong></li><li style='margin-top:8px'>Remove the border using <code class='w3-codespan'>style=\"border:none;\"</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Iframes</h1>\n\n<!-- Add an iframe here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Iframes</h1>\n\n<iframe src=\"demo_iframe.htm\" height=\"300\" width=\"400\" title=\"W3Schools\" style=\"border:none;\"></iframe>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasIframe",
+            "label": "Add an <code class=\"w3-codespan\">&lt;iframe&gt;</code> element",
+            "pattern": "<iframe\\s",
+            "flags": "i",
+            "linePattern": "<iframe\\s",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSrc",
+            "label": "Set <code class=\"w3-codespan\">src</code> to <strong>demo_iframe.htm</strong>",
+            "pattern": "<iframe\\s[^>]*src\\s*=\\s*[\"']demo_iframe\\.htm[\"']",
+            "flags": "i",
+            "linePattern": "src\\s*=\\s*[\"']demo_iframe\\.htm",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSize",
+            "label": "Set <code class=\"w3-codespan\">height</code> to <strong>300</strong> and <code class=\"w3-codespan\">width</code> to <strong>400</strong>",
+            "pattern": "<iframe\\s[^>]*height\\s*=\\s*[\"']300[\"']",
+            "flags": "i",
+            "linePattern": "height\\s*=\\s*[\"']300",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTitle",
+            "label": "Set <code class=\"w3-codespan\">title</code> to <strong>W3Schools</strong>",
+            "pattern": "<iframe\\s[^>]*title\\s*=\\s*[\"']W3Schools[\"']",
+            "flags": "i",
+            "linePattern": "title\\s*=\\s*[\"']W3Schools",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasNoBorder",
+            "label": "Remove the border with <code class=\"w3-codespan\">style=\"border:none;\"</code>",
+            "pattern": "<iframe\\s[^>]*style\\s*=\\s*[\"'][^\"']*border\\s*:\\s*none",
+            "flags": "i",
+            "linePattern": "border\\s*:\\s*none",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<iframe\\s(?![^>]*title\\s*=)[^>]*>",
+            "flags": "i",
+            "msg": "Always include a <code class='w3-codespan'>title</code> attribute for accessibility - screen readers use it to describe the iframe content."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_iframes.asp"
+      }
+    ],
+    "images": [
+      {
+        "id": "images_basics",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;img&gt;</code> element after the heading</li><li style='margin-top:8px'>Set <code class='w3-codespan'>src</code> to <strong>pic_trulli.jpg</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>alt</code> to <strong>Italian Trulli</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>width</code> to <strong>500</strong></li><li style='margin-top:8px'>Set <code class='w3-codespan'>height</code> to <strong>333</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Italian Trulli</h1>\n\n<!-- Add an image here -->\n\n<p>Trulli are traditional stone huts found in southern Italy.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Italian Trulli</h1>\n\n<img src=\"pic_trulli.jpg\" alt=\"Italian Trulli\" width=\"500\" height=\"333\">\n\n<p>Trulli are traditional stone huts found in southern Italy.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasImg",
+            "label": "Add an <code class=\"w3-codespan\">&lt;img&gt;</code> element",
+            "pattern": "<img\\s",
+            "flags": "i",
+            "linePattern": "<img\\s",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSrc",
+            "label": "Set <code class=\"w3-codespan\">src</code> to <strong>pic_trulli.jpg</strong>",
+            "pattern": "<img\\s[^>]*src\\s*=\\s*[\"']pic_trulli\\.jpg[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*src\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasAlt",
+            "label": "Set <code class=\"w3-codespan\">alt</code> to <strong>Italian Trulli</strong>",
+            "pattern": "<img\\s[^>]*alt\\s*=\\s*[\"']Italian Trulli[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*alt\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasWidth",
+            "label": "Set <code class=\"w3-codespan\">width</code> to <strong>500</strong>",
+            "pattern": "<img\\s[^>]*width\\s*=\\s*[\"']500[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*width\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasHeight",
+            "label": "Set <code class=\"w3-codespan\">height</code> to <strong>333</strong>",
+            "pattern": "<img\\s[^>]*height\\s*=\\s*[\"']333[\"']",
+            "flags": "i",
+            "linePattern": "<img\\s[^>]*height\\s*=",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<img\\s[^>]*>[\\s\\S]*</img>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;img&gt;</code> tag is an empty element - it does not have a closing tag."
+          },
+          {
+            "pattern": "<img\\s(?![^>]*alt\\s*=)[^>]*>",
+            "flags": "i",
+            "msg": "Always include the <code class='w3-codespan'>alt</code> attribute - it is required for accessibility."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_images.asp"
+      }
+    ],
+    "input_types": [
+      {
+        "id": "input_types_mix",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Set the email input type to <code class='w3-codespan'>email</code></li><li style='margin-top:8px'>Set the password input type to <code class='w3-codespan'>password</code></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>checkbox</code> input with <code class='w3-codespan'>name=\"remember\"</code></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>submit</code> input with <code class='w3-codespan'>value=\"Log In\"</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Login</h1>\n\n<form>\n  <label for=\"email\">Email:</label><br>\n  <input type=\"FIX\" id=\"email\" name=\"email\"><br><br>\n\n  <label for=\"pwd\">Password:</label><br>\n  <input type=\"FIX\" id=\"pwd\" name=\"pwd\"><br><br>\n\n  <!-- Add checkbox and submit here -->\n</form>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Login</h1>\n\n<form>\n  <label for=\"email\">Email:</label><br>\n  <input type=\"email\" id=\"email\" name=\"email\"><br><br>\n\n  <label for=\"pwd\">Password:</label><br>\n  <input type=\"password\" id=\"pwd\" name=\"pwd\"><br><br>\n\n  <input type=\"checkbox\" name=\"remember\"> Remember me<br><br>\n  <input type=\"submit\" value=\"Log In\">\n</form>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasEmail",
+            "label": "Set the email input type to <code class=\"w3-codespan\">email</code>",
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']email[\"'][^>]*name\\s*=\\s*[\"']email[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']email[\"']",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasPassword",
+            "label": "Set the password input type to <code class=\"w3-codespan\">password</code>",
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']password[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']password[\"']",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasCheckbox",
+            "label": "Add a <code class=\"w3-codespan\">checkbox</code> input with <code class=\"w3-codespan\">name=\"remember\"</code>",
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']checkbox[\"'][^>]*name\\s*=\\s*[\"']remember[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']checkbox[\"']",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSubmit",
+            "label": "Add a <code class=\"w3-codespan\">submit</code> input with <code class=\"w3-codespan\">value=\"Log In\"</code>",
+            "pattern": "<input[^>]*type\\s*=\\s*[\"']submit[\"'][^>]*value\\s*=\\s*[\"']Log In[\"']",
+            "flags": "i",
+            "linePattern": "type\\s*=\\s*[\"']submit[\"']",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "type\\s*=\\s*[\"']FIX[\"']",
+            "flags": "",
+            "msg": "Replace <strong>FIX</strong> with the correct input type."
+          },
+          {
+            "pattern": "type\\s*=\\s*[\"']text[\"'][^>]*name\\s*=\\s*[\"']pwd",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>type=\"password\"</code> for the password field so characters are hidden."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_input_types.asp"
+      }
+    ],
+    "layout": [
+      {
+        "id": "layout_structure",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;header&gt;</code> with an <code class='w3-codespan'>&lt;h1&gt;</code> containing <strong>My Website</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;nav&gt;</code> with links to <strong>#home</strong>, <strong>#about</strong>, and <strong>#contact</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;section&gt;</code> containing an <code class='w3-codespan'>&lt;article&gt;</code> with an <code class='w3-codespan'>&lt;h2&gt;</code> and a <code class='w3-codespan'>&lt;p&gt;</code></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;footer&gt;</code> with a paragraph containing <strong>Copyright 2026</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<!-- Build the layout here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<header>\n  <h1>My Website</h1>\n</header>\n\n<nav>\n  <a href=\"#home\">Home</a>\n  <a href=\"#about\">About</a>\n  <a href=\"#contact\">Contact</a>\n</nav>\n\n<section>\n  <article>\n    <h2>Welcome</h2>\n    <p>This is my website.</p>\n  </article>\n</section>\n\n<footer>\n  <p>Copyright 2026</p>\n</footer>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasHeader",
+            "label": "Add a <code class=\"w3-codespan\">&lt;header&gt;</code> with <strong>My Website</strong>",
+            "pattern": "<header>[\\s\\S]*<h1>[\\s\\S]*My Website[\\s\\S]*</h1>[\\s\\S]*</header>",
+            "flags": "i",
+            "linePattern": "</?header>|<h1>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasNav",
+            "label": "Add a <code class=\"w3-codespan\">&lt;nav&gt;</code> with three links",
+            "pattern": "<nav>[\\s\\S]*<a[^>]*href\\s*=\\s*[\"']#home[\"'][\\s\\S]*<a[^>]*href\\s*=\\s*[\"']#about[\"'][\\s\\S]*<a[^>]*href\\s*=\\s*[\"']#contact[\"'][\\s\\S]*</nav>",
+            "flags": "i",
+            "linePattern": "</?nav>|<a ",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSection",
+            "label": "Add a <code class=\"w3-codespan\">&lt;section&gt;</code> containing an <code class=\"w3-codespan\">&lt;article&gt;</code>",
+            "pattern": "<section>[\\s\\S]*<article>[\\s\\S]*<h2>[\\s\\S]*</h2>[\\s\\S]*<p>[\\s\\S]*</p>[\\s\\S]*</article>[\\s\\S]*</section>",
+            "flags": "i",
+            "linePattern": "</?section>|</?article>|<h2>|<p>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFooter",
+            "label": "Add a <code class=\"w3-codespan\">&lt;footer&gt;</code> with <strong>Copyright 2026</strong>",
+            "pattern": "<footer>[\\s\\S]*Copyright 2026[\\s\\S]*</footer>",
+            "flags": "i",
+            "linePattern": "</?footer>|Copyright",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<div[^>]*>[\\s\\S]*My Website",
+            "flags": "i",
+            "msg": "Use semantic elements like <code class='w3-codespan'>&lt;header&gt;</code> instead of <code class='w3-codespan'>&lt;div&gt;</code> for page layout."
+          },
+          {
+            "pattern": "<article>[\\s\\S]*<section>",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;article&gt;</code> should be <strong>inside</strong> the <code class='w3-codespan'>&lt;section&gt;</code>, not the other way around."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_layout.asp"
+      }
+    ],
+    "links": [
+      {
+        "id": "links_syntax",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Make the text <strong>Visit W3Schools</strong> a link to <strong>https://www.w3schools.com</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>target</code> attribute to open the link in a new tab</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>title</code> attribute with the value <strong>Go to W3Schools</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Links</h1>\n\n<p>Visit W3Schools</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>HTML Links</h1>\n\n<p><a href=\"https://www.w3schools.com\" target=\"_blank\" title=\"Go to W3Schools\">Visit W3Schools</a></p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasLink",
+            "label": "Make <strong>Visit W3Schools</strong> a link to <strong>https://www.w3schools.com</strong>",
+            "pattern": "<a\\s[^>]*href\\s*=\\s*[\"']https://www\\.w3schools\\.com/?[\"'][^>]*>\\s*Visit W3Schools\\s*</a>",
+            "flags": "i",
+            "linePattern": "<a\\s[^>]*href",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTarget",
+            "label": "Add <code class=\"w3-codespan\">target=\"_blank\"</code> to open in a new tab",
+            "pattern": "<a\\s[^>]*target\\s*=\\s*[\"']_blank[\"']",
+            "flags": "i",
+            "linePattern": "target\\s*=\\s*[\"']_blank",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTitle",
+            "label": "Add <code class=\"w3-codespan\">title</code> attribute with value <strong>Go to W3Schools</strong>",
+            "pattern": "<a\\s[^>]*title\\s*=\\s*[\"']Go to W3Schools[\"']",
+            "flags": "i",
+            "linePattern": "title\\s*=\\s*[\"']Go to W3Schools",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<a>\\s*Visit",
+            "flags": "i",
+            "msg": "The <code class='w3-codespan'>&lt;a&gt;</code> tag needs an <code class='w3-codespan'>href</code> attribute to specify the link destination."
+          },
+          {
+            "pattern": "href\\s*=\\s*[\"']w3schools\\.com",
+            "flags": "i",
+            "msg": "Use the full URL including the protocol: <code class='w3-codespan'>https://www.w3schools.com</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_links.asp"
+      }
+    ],
+    "lists": [
+      {
+        "id": "lists_types",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Create an unordered list (<code class='w3-codespan'>&lt;ul&gt;</code>) with three items: <strong>Coffee</strong>, <strong>Tea</strong>, <strong>Milk</strong></li><li style='margin-top:8px'>Create an ordered list (<code class='w3-codespan'>&lt;ol&gt;</code>) with three items: <strong>Wake up</strong>, <strong>Eat breakfast</strong>, <strong>Go to work</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Day</h1>\n\n<h2>Shopping List</h2>\n<!-- Add an unordered list here -->\n\n<h2>Morning Routine</h2>\n<!-- Add an ordered list here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Day</h1>\n\n<h2>Shopping List</h2>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>\n\n<h2>Morning Routine</h2>\n<ol>\n  <li>Wake up</li>\n  <li>Eat breakfast</li>\n  <li>Go to work</li>\n</ol>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasUl",
+            "label": "Create an unordered list with <strong>Coffee</strong>, <strong>Tea</strong>, <strong>Milk</strong>",
+            "pattern": "<ul>[\\s\\S]*<li>\\s*Coffee\\s*</li>[\\s\\S]*<li>\\s*Tea\\s*</li>[\\s\\S]*<li>\\s*Milk\\s*</li>[\\s\\S]*</ul>",
+            "flags": "i",
+            "linePattern": "</?ul>|</?li>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasOl",
+            "label": "Create an ordered list with <strong>Wake up</strong>, <strong>Eat breakfast</strong>, <strong>Go to work</strong>",
+            "pattern": "<ol>[\\s\\S]*<li>\\s*Wake up\\s*</li>[\\s\\S]*<li>\\s*Eat breakfast\\s*</li>[\\s\\S]*<li>\\s*Go to work\\s*</li>[\\s\\S]*</ol>",
+            "flags": "i",
+            "linePattern": "</?ol>|</?li>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<ol>[\\s\\S]*Coffee",
+            "flags": "i",
+            "msg": "A shopping list should use an <strong>unordered</strong> list (<code class='w3-codespan'>&lt;ul&gt;</code>), not an ordered list."
+          },
+          {
+            "pattern": "<ul>[\\s\\S]*Wake up",
+            "flags": "i",
+            "msg": "A morning routine has a specific order - use an <strong>ordered</strong> list (<code class='w3-codespan'>&lt;ol&gt;</code>)."
+          },
+          {
+            "pattern": "<li>[\\s\\S]*<li>(?!\\s*<)",
+            "flags": "i",
+            "msg": "Don't forget to close each list item with <code class='w3-codespan'>&lt;/li&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_lists.asp"
+      }
+    ],
+    "paragraphs": [
+      {
+        "id": "paragraphs_linebreak",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap the first two lines in a <code class='w3-codespan'>&lt;p&gt;</code> element</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;br&gt;</code> between the two lines (after <strong>star,</strong>)</li><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;hr&gt;</code> after the paragraph to separate the sections</li><li style='margin-top:8px'>Wrap the last two lines in a <code class='w3-codespan'>&lt;pre&gt;</code> element to preserve the formatting</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>A Short Poem</h1>\n\nTwinkle twinkle little star,\nHow I wonder what you are.\n\nUp above the world so high,\nLike a diamond in the sky.\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>A Short Poem</h1>\n\n<p>Twinkle twinkle little star,<br>\nHow I wonder what you are.</p>\n<hr>\n<pre>\nUp above the world so high,\nLike a diamond in the sky.\n</pre>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasP",
+            "label": "Wrap the first two lines in a <code class=\"w3-codespan\">&lt;p&gt;</code> element",
+            "pattern": "<p>[\\s\\S]*Twinkle[\\s\\S]*what you are\\.[\\s\\S]*</p>",
+            "flags": "i",
+            "linePattern": "<p>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasBr",
+            "label": "Add a <code class=\"w3-codespan\">&lt;br&gt;</code> between the two lines",
+            "pattern": "star,\\s*<br\\s*/?>",
+            "flags": "i",
+            "linePattern": "<br",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasHr",
+            "label": "Add an <code class=\"w3-codespan\">&lt;hr&gt;</code> after the paragraph",
+            "pattern": "</p>[\\s\\S]*<hr\\s*/?>",
+            "flags": "i",
+            "linePattern": "<hr",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasPre",
+            "label": "Wrap the last two lines in a <code class=\"w3-codespan\">&lt;pre&gt;</code> element",
+            "pattern": "<pre>[\\s\\S]*Up above[\\s\\S]*in the sky\\.[\\s\\S]*</pre>",
+            "flags": "i",
+            "linePattern": "</?pre>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<p>[\\s\\S]*Up above",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;pre&gt;</code> for the last two lines - it preserves spaces and line breaks, solving the \"poem problem\"."
+          },
+          {
+            "pattern": "star,[\\s]*How",
+            "flags": "i",
+            "msg": "Add a <code class='w3-codespan'>&lt;br&gt;</code> after <strong>star,</strong> to create a line break inside the paragraph."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_paragraphs.asp"
+      }
+    ],
+    "quotations": [
+      {
+        "id": "quotations_elements",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Wrap the quote text in a <code class='w3-codespan'>&lt;blockquote&gt;</code> element</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>cite</code> attribute to the blockquote with the value <strong>https://www.w3schools.com</strong></li><li style='margin-top:8px'>Wrap the abbreviation <strong>HTML</strong> in an <code class='w3-codespan'>&lt;abbr&gt;</code> element</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>title</code> attribute to the abbr with the value <strong>Hyper Text Markup Language</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Famous Quotes</h1>\n\n<p>Here is a quote from W3Schools:</p>\nLearning HTML is fun and easy!\n\n<p>We all love HTML!</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Famous Quotes</h1>\n\n<p>Here is a quote from W3Schools:</p>\n<blockquote cite=\"https://www.w3schools.com\">Learning HTML is fun and easy!</blockquote>\n\n<p>We all love <abbr title=\"Hyper Text Markup Language\">HTML</abbr>!</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasBlockquote",
+            "label": "Wrap the quote in a <code class=\"w3-codespan\">&lt;blockquote&gt;</code> element",
+            "pattern": "<blockquote[^>]*>\\s*Learning HTML is fun and easy!\\s*</blockquote>",
+            "flags": "i",
+            "linePattern": "<blockquote",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasCite",
+            "label": "Add <code class=\"w3-codespan\">cite</code> attribute with value <strong>https://www.w3schools.com</strong>",
+            "pattern": "<blockquote[^>]*cite\\s*=\\s*[\"']https://www\\.w3schools\\.com[\"']",
+            "flags": "i",
+            "linePattern": "cite\\s*=",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasAbbr",
+            "label": "Wrap <strong>HTML</strong> in an <code class=\"w3-codespan\">&lt;abbr&gt;</code> element",
+            "pattern": "<abbr[^>]*>\\s*HTML\\s*</abbr>",
+            "flags": "i",
+            "linePattern": "<abbr",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasTitle",
+            "label": "Add <code class=\"w3-codespan\">title</code> attribute with value <strong>Hyper Text Markup Language</strong>",
+            "pattern": "<abbr[^>]*title\\s*=\\s*[\"']Hyper Text Markup Language[\"']",
+            "flags": "i",
+            "linePattern": "title\\s*=",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<q>\\s*Learning",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;blockquote&gt;</code> for longer block-level quotes, not <code class='w3-codespan'>&lt;q&gt;</code>."
+          },
+          {
+            "pattern": "<blockquote>\\s*Learning",
+            "flags": "i",
+            "msg": "Don't forget to add the <code class='w3-codespan'>cite</code> attribute to the <code class='w3-codespan'>&lt;blockquote&gt;</code> element."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_quotations.asp"
+      }
+    ],
+    "responsive": [
+      {
+        "id": "responsive_viewport",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add the viewport <code class='w3-codespan'>&lt;meta&gt;</code> tag in the <code class='w3-codespan'>&lt;head&gt;</code> with <code class='w3-codespan'>name=\"viewport\"</code> and <code class='w3-codespan'>content=\"width=device-width, initial-scale=1.0\"</code></li><li style='margin-top:8px'>Make the image responsive by setting its <code class='w3-codespan'>style</code> to <strong>max-width:100%;height:auto;</strong></li><li style='margin-top:8px'>Make the text in <code class='w3-codespan'>&lt;h1&gt;</code> scale with the viewport by setting its <code class='w3-codespan'>style</code> to <strong>font-size:5vw;</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Add viewport meta tag here -->\n</head>\n<body>\n\n<h1>Welcome to My Page</h1>\n\n<img src=\"img_girl.jpg\" alt=\"Girl in a jacket\">\n\n<p>Resize the browser window to see the responsive effect.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n</head>\n<body>\n\n<h1 style=\"font-size:5vw;\">Welcome to My Page</h1>\n\n<img src=\"img_girl.jpg\" alt=\"Girl in a jacket\" style=\"max-width:100%;height:auto;\">\n\n<p>Resize the browser window to see the responsive effect.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasViewport",
+            "label": "Add the viewport <code class=\"w3-codespan\">&lt;meta&gt;</code> tag",
+            "pattern": "<meta\\s[^>]*name\\s*=\\s*[\"']viewport[\"'][^>]*content\\s*=\\s*[\"']width=device-width,\\s*initial-scale=1\\.0[\"']",
+            "flags": "i",
+            "linePattern": "name\\s*=\\s*[\"']viewport",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasResponsiveImg",
+            "label": "Make the image responsive with <strong>max-width:100%</strong>",
+            "pattern": "<img\\s[^>]*style\\s*=\\s*[\"'][^\"']*max-width\\s*:\\s*100%",
+            "flags": "i",
+            "linePattern": "max-width\\s*:\\s*100%",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasVwText",
+            "label": "Set the heading to <strong>font-size:5vw</strong>",
+            "pattern": "<h1\\s[^>]*style\\s*=\\s*[\"'][^\"']*font-size\\s*:\\s*5vw",
+            "flags": "i",
+            "linePattern": "font-size\\s*:\\s*5vw",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<body>[\\s\\S]*<meta[^>]*viewport",
+            "flags": "i",
+            "msg": "The viewport <code class='w3-codespan'>&lt;meta&gt;</code> tag belongs in the <code class='w3-codespan'>&lt;head&gt;</code>, not the <code class='w3-codespan'>&lt;body&gt;</code>."
+          },
+          {
+            "pattern": "width\\s*:\\s*100%[^\"']*height\\s*:\\s*auto",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>max-width:100%</code> instead of <code class='w3-codespan'>width:100%</code> so the image never scales larger than its original size."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_responsive.asp"
+      }
+    ],
+    "scripts": [
+      {
+        "id": "scripts_basics",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;script&gt;</code> element after the paragraph</li><li style='margin-top:8px'>Use <code class='w3-codespan'>document.getElementById(\"demo\")</code> to select the paragraph</li><li style='margin-top:8px'>Set its <code class='w3-codespan'>.innerHTML</code> to <strong>\"Hello JavaScript!\"</strong></li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;noscript&gt;</code> element with the text <strong>JavaScript is not supported.</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p id=\"demo\">This text will change.</p>\n\n<!-- Add script and noscript here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My First JavaScript</h1>\n\n<p id=\"demo\">This text will change.</p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n<noscript>JavaScript is not supported.</noscript>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasScript",
+            "label": "Add a <code class=\"w3-codespan\">&lt;script&gt;</code> element",
+            "pattern": "<script>[\\s\\S]*</script>",
+            "flags": "i",
+            "linePattern": "</?script>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasGetElement",
+            "label": "Use <code class=\"w3-codespan\">document.getElementById(\"demo\")</code>",
+            "pattern": "<script>[\\s\\S]*document\\.getElementById\\s*\\(\\s*[\"']demo[\"']\\s*\\)[\\s\\S]*</script>",
+            "flags": "",
+            "linePattern": "getElementById",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasInnerHTML",
+            "label": "Set <code class=\"w3-codespan\">.innerHTML</code> to <strong>\"Hello JavaScript!\"</strong>",
+            "pattern": "<script>[\\s\\S]*\\.innerHTML\\s*=\\s*[\"']Hello JavaScript![\"'][\\s\\S]*</script>",
+            "flags": "",
+            "linePattern": "\\.innerHTML",
+            "lineFlags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasNoscript",
+            "label": "Add a <code class=\"w3-codespan\">&lt;noscript&gt;</code> with fallback text",
+            "pattern": "<noscript>\\s*JavaScript is not supported\\.\\s*</noscript>",
+            "flags": "i",
+            "linePattern": "<noscript>",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "getElementById\\s*\\(\\s*demo\\s*\\)",
+            "flags": "",
+            "msg": "The id must be in quotes: <code class='w3-codespan'>getElementById(\"demo\")</code>."
+          },
+          {
+            "pattern": "\\.innerHtml",
+            "flags": "",
+            "msg": "JavaScript is case-sensitive. Use <code class='w3-codespan'>.innerHTML</code> (capital H-T-M-L)."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_scripts.asp"
+      }
+    ],
+    "semantics": [
+      {
+        "id": "semantics_layout",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Replace <code class='w3-codespan'>&lt;div class=\"header\"&gt;</code> with a <code class='w3-codespan'>&lt;header&gt;</code> element</li><li style='margin-top:8px'>Replace <code class='w3-codespan'>&lt;div class=\"nav\"&gt;</code> with a <code class='w3-codespan'>&lt;nav&gt;</code> element</li><li style='margin-top:8px'>Replace <code class='w3-codespan'>&lt;div class=\"article\"&gt;</code> with an <code class='w3-codespan'>&lt;article&gt;</code> element</li><li style='margin-top:8px'>Replace <code class='w3-codespan'>&lt;div class=\"footer\"&gt;</code> with a <code class='w3-codespan'>&lt;footer&gt;</code> element</li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<div class=\"header\">\n  <h1>My Blog</h1>\n</div>\n\n<div class=\"nav\">\n  <a href=\"#\">Home</a> |\n  <a href=\"#\">About</a> |\n  <a href=\"#\">Contact</a>\n</div>\n\n<div class=\"article\">\n  <h2>My First Post</h2>\n  <p>This is my very first blog post!</p>\n</div>\n\n<div class=\"footer\">\n  <p>Copyright 2026</p>\n</div>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<header>\n  <h1>My Blog</h1>\n</header>\n\n<nav>\n  <a href=\"#\">Home</a> |\n  <a href=\"#\">About</a> |\n  <a href=\"#\">Contact</a>\n</nav>\n\n<article>\n  <h2>My First Post</h2>\n  <p>This is my very first blog post!</p>\n</article>\n\n<footer>\n  <p>Copyright 2026</p>\n</footer>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasHeader",
+            "label": "Use a <code class=\"w3-codespan\">&lt;header&gt;</code> element",
+            "pattern": "<header>[\\s\\S]*My Blog[\\s\\S]*</header>",
+            "flags": "i",
+            "linePattern": "</?header>|<h1>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasNav",
+            "label": "Use a <code class=\"w3-codespan\">&lt;nav&gt;</code> element",
+            "pattern": "<nav>[\\s\\S]*Home[\\s\\S]*</nav>",
+            "flags": "i",
+            "linePattern": "</?nav>|<a ",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasArticle",
+            "label": "Use an <code class=\"w3-codespan\">&lt;article&gt;</code> element",
+            "pattern": "<article>[\\s\\S]*My First Post[\\s\\S]*</article>",
+            "flags": "i",
+            "linePattern": "</?article>|<h2>|<p>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFooter",
+            "label": "Use a <code class=\"w3-codespan\">&lt;footer&gt;</code> element",
+            "pattern": "<footer>[\\s\\S]*Copyright[\\s\\S]*</footer>",
+            "flags": "i",
+            "linePattern": "</?footer>|Copyright",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<div class\\s*=\\s*[\"']header[\"']>",
+            "flags": "i",
+            "msg": "Replace <code class='w3-codespan'>&lt;div class=\"header\"&gt;</code> with the semantic <code class='w3-codespan'>&lt;header&gt;</code> element."
+          },
+          {
+            "pattern": "<div class\\s*=\\s*[\"']footer[\"']>",
+            "flags": "i",
+            "msg": "Replace <code class='w3-codespan'>&lt;div class=\"footer\"&gt;</code> with the semantic <code class='w3-codespan'>&lt;footer&gt;</code> element."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_semantics.asp"
+      }
+    ],
+    "styles": [
+      {
+        "id": "styles_inline",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Set the background color of the <code class='w3-codespan'>&lt;body&gt;</code> to <strong>powderblue</strong></li><li style='margin-top:8px'>Set the text color of the <code class='w3-codespan'>&lt;h1&gt;</code> to <strong>blue</strong></li><li style='margin-top:8px'>Set the font-family of the <code class='w3-codespan'>&lt;h1&gt;</code> to <strong>verdana</strong></li><li style='margin-top:8px'>Set the text-align of the <code class='w3-codespan'>&lt;p&gt;</code> to <strong>center</strong></li><li style='margin-top:8px'>Set the font-size of the <code class='w3-codespan'>&lt;p&gt;</code> to <strong>20px</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>Welcome to My Page</h1>\n<p>This is a styled paragraph.</p>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body style=\"background-color:powderblue;\">\n\n<h1 style=\"color:blue;font-family:verdana;\">Welcome to My Page</h1>\n<p style=\"text-align:center;font-size:20px;\">This is a styled paragraph.</p>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasBgColor",
+            "label": "Set the background color of <code class=\"w3-codespan\">&lt;body&gt;</code> to <strong>powderblue</strong>",
+            "pattern": "<body\\s[^>]*style\\s*=\\s*[\"'][^\"']*background-color\\s*:\\s*powderblue",
+            "flags": "i",
+            "linePattern": "background-color\\s*:\\s*powderblue",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasColor",
+            "label": "Set the text color of <code class=\"w3-codespan\">&lt;h1&gt;</code> to <strong>blue</strong>",
+            "pattern": "<h1\\s[^>]*style\\s*=\\s*[\"'][^\"']*color\\s*:\\s*blue",
+            "flags": "i",
+            "linePattern": "color\\s*:\\s*blue",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFont",
+            "label": "Set the font-family of <code class=\"w3-codespan\">&lt;h1&gt;</code> to <strong>verdana</strong>",
+            "pattern": "<h1\\s[^>]*style\\s*=\\s*[\"'][^\"']*font-family\\s*:\\s*verdana",
+            "flags": "i",
+            "linePattern": "font-family\\s*:\\s*verdana",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasAlign",
+            "label": "Set the text-align of <code class=\"w3-codespan\">&lt;p&gt;</code> to <strong>center</strong>",
+            "pattern": "<p\\s[^>]*style\\s*=\\s*[\"'][^\"']*text-align\\s*:\\s*center",
+            "flags": "i",
+            "linePattern": "text-align\\s*:\\s*center",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFontSize",
+            "label": "Set the font-size of <code class=\"w3-codespan\">&lt;p&gt;</code> to <strong>20px</strong>",
+            "pattern": "<p\\s[^>]*style\\s*=\\s*[\"'][^\"']*font-size\\s*:\\s*20px",
+            "flags": "i",
+            "linePattern": "font-size\\s*:\\s*20px",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "color\\s*=\\s*[\"']?blue",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>style</code> attribute with CSS syntax: <code class='w3-codespan'>style=\"color:blue;\"</code>."
+          },
+          {
+            "pattern": "background-color\\s*=\\s*[\"']?powder",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>style</code> attribute: <code class='w3-codespan'>style=\"background-color:powderblue;\"</code>."
+          },
+          {
+            "pattern": "font-size\\s*=\\s*[\"']?20",
+            "flags": "i",
+            "msg": "CSS properties go inside the <code class='w3-codespan'>style</code> attribute: <code class='w3-codespan'>style=\"font-size:20px;\"</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_styles.asp"
+      }
+    ],
+    "svg": [
+      {
+        "id": "svg_shapes",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add an <code class='w3-codespan'>&lt;svg&gt;</code> element with <code class='w3-codespan'>width=\"200\"</code> and <code class='w3-codespan'>height=\"200\"</code></li><li style='margin-top:8px'>Draw a circle: <code class='w3-codespan'>cx=\"100\"</code> <code class='w3-codespan'>cy=\"80\"</code> <code class='w3-codespan'>r=\"50\"</code> <code class='w3-codespan'>fill=\"red\"</code></li><li style='margin-top:8px'>Draw a rectangle: <code class='w3-codespan'>x=\"50\"</code> <code class='w3-codespan'>y=\"140\"</code> <code class='w3-codespan'>width=\"100\"</code> <code class='w3-codespan'>height=\"40\"</code> <code class='w3-codespan'>fill=\"blue\"</code></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>SVG Shapes</h1>\n\n<!-- Add SVG here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>SVG Shapes</h1>\n\n<svg width=\"200\" height=\"200\">\n  <circle cx=\"100\" cy=\"80\" r=\"50\" fill=\"red\" />\n  <rect x=\"50\" y=\"140\" width=\"100\" height=\"40\" fill=\"blue\" />\n</svg>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasSvg",
+            "label": "Add an <code class=\"w3-codespan\">&lt;svg&gt;</code> with <strong>width=\"200\"</strong> and <strong>height=\"200\"</strong>",
+            "pattern": "<svg[^>]*width\\s*=\\s*[\"']200[\"'][^>]*height\\s*=\\s*[\"']200[\"']",
+            "flags": "i",
+            "linePattern": "</?svg",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasCircle",
+            "label": "Draw a <code class=\"w3-codespan\">&lt;circle&gt;</code> with the specified attributes",
+            "pattern": "<svg[\\s\\S]*<circle[^>]*cx\\s*=\\s*[\"']100[\"'][^>]*cy\\s*=\\s*[\"']80[\"'][^>]*r\\s*=\\s*[\"']50[\"'][^>]*fill\\s*=\\s*[\"']red[\"'][\\s\\S]*</svg>",
+            "flags": "i",
+            "linePattern": "<circle",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasRect",
+            "label": "Draw a <code class=\"w3-codespan\">&lt;rect&gt;</code> with the specified attributes",
+            "pattern": "<svg[\\s\\S]*<rect[^>]*x\\s*=\\s*[\"']50[\"'][^>]*y\\s*=\\s*[\"']140[\"'][^>]*width\\s*=\\s*[\"']100[\"'][^>]*height\\s*=\\s*[\"']40[\"'][^>]*fill\\s*=\\s*[\"']blue[\"'][\\s\\S]*</svg>",
+            "flags": "i",
+            "linePattern": "<rect",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<canvas[^>]*>",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;svg&gt;</code> for vector shapes, not <code class='w3-codespan'>&lt;canvas&gt;</code>. Canvas requires JavaScript to draw."
+          },
+          {
+            "pattern": "<div[^>]*style[^>]*border-radius",
+            "flags": "i",
+            "msg": "Use SVG elements like <code class='w3-codespan'>&lt;circle&gt;</code> and <code class='w3-codespan'>&lt;rect&gt;</code> to draw shapes."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_svg.asp"
+      }
+    ],
+    "tables": [
+      {
+        "id": "tables_basic",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add the first table row (<code class='w3-codespan'>&lt;tr&gt;</code>) with two <code class='w3-codespan'>&lt;th&gt;</code> cells: <strong>Name</strong> and <strong>Country</strong></li><li style='margin-top:8px'>Add a second row with two <code class='w3-codespan'>&lt;td&gt;</code> cells: <strong>Maria Anders</strong> and <strong>Germany</strong></li><li style='margin-top:8px'>Add a third row with two <code class='w3-codespan'>&lt;td&gt;</code> cells: <strong>Francisco Chang</strong> and <strong>Mexico</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<head>\n<style>\ntable, th, td {\nborder: 1px solid black;\n}\n</style>\n</head>\n<body>\n\n<h1>Contacts</h1>\n\n<table>\n  <!-- Add rows here -->\n</table>\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\ntable, th, td {\nborder: 1px solid black;\n}\n</style>\n</head>\n<body>\n\n<h1>Contacts</h1>\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Country</th>\n  </tr>\n  <tr>\n    <td>Maria Anders</td>\n    <td>Germany</td>\n  </tr>\n  <tr>\n    <td>Francisco Chang</td>\n    <td>Mexico</td>\n  </tr>\n</table>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasHeaderRow",
+            "label": "Add the first row with <code class=\"w3-codespan\">&lt;th&gt;</code> cells: <strong>Name</strong> and <strong>Country</strong>",
+            "pattern": "<table>[\\s\\S]*?<tr>[\\s\\S]*?<th>[\\s\\S]*?Name[\\s\\S]*?</th>[\\s\\S]*?<th>[\\s\\S]*?Country[\\s\\S]*?</th>[\\s\\S]*?</tr>",
+            "flags": "i",
+            "linePattern": "</?tr>|</?th>",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasRow1",
+            "label": "Add a row with <strong>Maria Anders</strong> and <strong>Germany</strong>",
+            "pattern": "<tr>[\\s\\S]*?<td>[\\s\\S]*?Maria Anders[\\s\\S]*?</td>[\\s\\S]*?<td>[\\s\\S]*?Germany[\\s\\S]*?</td>[\\s\\S]*?</tr>",
+            "flags": "i",
+            "linePattern": "</?tr>|</?td>|Maria Anders|Germany",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasRow2",
+            "label": "Add a row with <strong>Francisco Chang</strong> and <strong>Mexico</strong>",
+            "pattern": "<tr>[\\s\\S]*?<td>[\\s\\S]*?Francisco Chang[\\s\\S]*?</td>[\\s\\S]*?<td>[\\s\\S]*?Mexico[\\s\\S]*?</td>[\\s\\S]*?</tr>",
+            "flags": "i",
+            "linePattern": "</?tr>|</?td>|Francisco Chang|Mexico",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<td>\\s*Name\\s*</td>",
+            "flags": "i",
+            "msg": "Use <code class='w3-codespan'>&lt;th&gt;</code> for header cells, not <code class='w3-codespan'>&lt;td&gt;</code>."
+          },
+          {
+            "pattern": "<th>[\\s\\S]*Maria",
+            "flags": "i",
+            "msg": "Data cells should use <code class='w3-codespan'>&lt;td&gt;</code>, not <code class='w3-codespan'>&lt;th&gt;</code>. Reserve <code class='w3-codespan'>&lt;th&gt;</code> for headers."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_tables.asp"
+      }
+    ],
+    "video": [
+      {
+        "id": "video_embed",
+        "intro": "Inside the editor, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;video&gt;</code> element with <code class='w3-codespan'>width=\"320\"</code> and <code class='w3-codespan'>height=\"240\"</code></li><li style='margin-top:8px'>Add the <code class='w3-codespan'>controls</code> attribute</li><li style='margin-top:8px'>Add a <code class='w3-codespan'>&lt;source&gt;</code> with <code class='w3-codespan'>src=\"movie.mp4\"</code> and <code class='w3-codespan'>type=\"video/mp4\"</code></li><li style='margin-top:8px'>Add fallback text: <strong>Your browser does not support the video tag.</strong></li></ol>",
+        "starter": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Video</h1>\n\n<!-- Add video here -->\n\n</body>\n</html>\n",
+        "solution": "<!DOCTYPE html>\n<html>\n<body>\n\n<h1>My Video</h1>\n\n<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Your browser does not support the video tag.\n</video>\n\n</body>\n</html>\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasVideo",
+            "label": "Add a <code class=\"w3-codespan\">&lt;video&gt;</code> element with <strong>width</strong> and <strong>height</strong>",
+            "pattern": "<video[^>]*width\\s*=\\s*[\"']320[\"'][^>]*height\\s*=\\s*[\"']240[\"']",
+            "flags": "i",
+            "linePattern": "</?video",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasControls",
+            "label": "Add the <code class=\"w3-codespan\">controls</code> attribute",
+            "pattern": "<video[^>]*\\scontrols[\\s>]",
+            "flags": "i",
+            "linePattern": "controls",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasSource",
+            "label": "Add a <code class=\"w3-codespan\">&lt;source&gt;</code> with <strong>movie.mp4</strong>",
+            "pattern": "<video[\\s\\S]*<source[^>]*src\\s*=\\s*[\"']movie\\.mp4[\"'][^>]*type\\s*=\\s*[\"']video/mp4[\"'][\\s\\S]*</video>",
+            "flags": "i",
+            "linePattern": "<source",
+            "lineFlags": "i"
+          },
+          {
+            "type": "regex",
+            "id": "hasFallback",
+            "label": "Add fallback text for unsupported browsers",
+            "pattern": "<video[\\s\\S]*Your browser does not support the video tag\\.[\\s\\S]*</video>",
+            "flags": "i",
+            "linePattern": "Your browser does not support",
+            "lineFlags": "i"
+          }
+        ],
+        "commonMistakes": [
+          {
+            "pattern": "<img[^>]*movie\\.mp4",
+            "flags": "i",
+            "msg": "Use the <code class='w3-codespan'>&lt;video&gt;</code> element to embed video, not <code class='w3-codespan'>&lt;img&gt;</code>."
+          },
+          {
+            "pattern": "<video[^>]*src\\s*=",
+            "flags": "i",
+            "msg": "Use a <code class='w3-codespan'>&lt;source&gt;</code> child element instead of the <code class='w3-codespan'>src</code> attribute on <code class='w3-codespan'>&lt;video&gt;</code>."
+          }
+        ],
+        "url": "https://www.w3schools.com/html/html_challenges_video.asp"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1661 @@
+{
+  "test": "HTML",
+  "total": 40,
+  "questions": [
+    {
+      "number": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Home Tool Markup Language"
+        },
+        {
+          "value": 2,
+          "text": "Hyperlinks and Text Markup Language"
+        },
+        {
+          "value": 3,
+          "text": "Hyper Text Markup Language"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML 是什麼的縮寫？",
+      "options_translations": [
+        {
+          "text_en": "Home Tool Markup Language",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Hyperlinks and Text Markup Language",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Hyper Text Markup Language",
+          "text_zh": "超文字標記語言",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "Who is making the Web standards?",
+      "options": [
+        {
+          "value": 1,
+          "text": "The World Wide Web Consortium"
+        },
+        {
+          "value": 2,
+          "text": "Microsoft"
+        },
+        {
+          "value": 3,
+          "text": "Mozilla"
+        },
+        {
+          "value": 4,
+          "text": "Google"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "誰在制定 Web 標準？",
+      "options_translations": [
+        {
+          "text_en": "The World Wide Web Consortium",
+          "text_zh": "W3C 全球資訊網協會",
+          "correct": true
+        },
+        {
+          "text_en": "Microsoft",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Mozilla",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "Google",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "Choose the correct HTML element for the largest heading:",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;h1&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;heading&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;h6&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;head&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "最大的標題用哪個 HTML 元素？",
+      "options_translations": [
+        {
+          "text_en": "<h1>",
+          "text_zh": "最大標題",
+          "correct": true
+        },
+        {
+          "text_en": "<heading>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<h6>",
+          "text_zh": "最小標題",
+          "correct": false
+        },
+        {
+          "text_en": "<head>",
+          "text_zh": "文件 head 區塊",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "What is the correct HTML element for inserting a line break?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;lb&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;br&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;break&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素用來插入換行？",
+      "options_translations": [
+        {
+          "text_en": "<lb>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<br>",
+          "text_zh": "換行",
+          "correct": true
+        },
+        {
+          "text_en": "<break>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "What is the correct HTML for adding a background color?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;body style=\"background-color:yellow;\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;background&gt;yellow&lt;/background&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;body bg=\"yellow\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "設定背景顏色的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<body style=\"background-color:yellow;\">",
+          "text_zh": "用 CSS style 屬性，正確",
+          "correct": true
+        },
+        {
+          "text_en": "<background>yellow</background>",
+          "text_zh": "沒這個元素",
+          "correct": false
+        },
+        {
+          "text_en": "<body bg=\"yellow\">",
+          "text_zh": "bg 不是合法屬性",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "Choose the correct HTML element to define important text",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;i&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;strong&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;important&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;b&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "定義「重要文字」用哪個 HTML 元素？",
+      "options_translations": [
+        {
+          "text_en": "<i>",
+          "text_zh": "斜體（樣式）",
+          "correct": false
+        },
+        {
+          "text_en": "<strong>",
+          "text_zh": "重要文字（語意）",
+          "correct": true
+        },
+        {
+          "text_en": "<important>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<b>",
+          "text_zh": "粗體（樣式）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "Choose the correct HTML element to define emphasized text",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;italic&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;em&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;i&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "定義「強調文字」用哪個 HTML 元素？",
+      "options_translations": [
+        {
+          "text_en": "<italic>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<em>",
+          "text_zh": "強調 emphasis",
+          "correct": true
+        },
+        {
+          "text_en": "<i>",
+          "text_zh": "斜體樣式（非語意）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;a&gt;http://www.w3schools.com&lt;/a&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;a href=\"http://www.w3schools.com\"&gt;W3Schools&lt;/a&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;a url=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;a name=\"http://www.w3schools.com\"&gt;W3Schools.com&lt;/a&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "建立超連結的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<a>http://www.w3schools.com</a>",
+          "text_zh": "沒 href，不是連結",
+          "correct": false
+        },
+        {
+          "text_en": "<a href=\"http://www.w3schools.com\">W3Schools</a>",
+          "text_zh": "標準寫法",
+          "correct": true
+        },
+        {
+          "text_en": "<a url=\"http://www.w3schools.com\">W3Schools.com</a>",
+          "text_zh": "url 不是合法屬性",
+          "correct": false
+        },
+        {
+          "text_en": "<a name=\"http://www.w3schools.com\">W3Schools.com</a>",
+          "text_zh": "name 是錨點，不是連結",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "Which character is used to indicate an end tag?",
+      "options": [
+        {
+          "value": 1,
+          "text": "*"
+        },
+        {
+          "value": 2,
+          "text": "&lt;"
+        },
+        {
+          "value": 3,
+          "text": "/"
+        },
+        {
+          "value": 4,
+          "text": "^"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個字元代表結束標籤？",
+      "options_translations": [
+        {
+          "text_en": "*",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "<",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "/",
+          "text_zh": "</tag> 中的斜線",
+          "correct": true
+        },
+        {
+          "text_en": "^",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "How can you open a link in a new tab/browser window?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;a href=\"url\" target=\"_blank\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;a href=\"url\" new&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;a href=\"url\" target=\"new\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "如何讓連結在新分頁/視窗開啟？",
+      "options_translations": [
+        {
+          "text_en": "<a href=\"url\" target=\"_blank\">",
+          "text_zh": "target=_blank 開新分頁",
+          "correct": true
+        },
+        {
+          "text_en": "<a href=\"url\" new>",
+          "text_zh": "new 不是合法屬性",
+          "correct": false
+        },
+        {
+          "text_en": "<a href=\"url\" target=\"new\">",
+          "text_zh": "target 值應該是 _blank",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "Which of these elements are all &lt;table&gt; elements?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;table&gt;&lt;head&gt;&lt;tfoot&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;table&gt;&lt;tr&gt;&lt;tt&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;thead&gt;&lt;body&gt;&lt;tr&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;table&gt;&lt;tr&gt;&lt;td&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "下列哪組全部都是 <table> 相關元素？",
+      "options_translations": [
+        {
+          "text_en": "<table><head><tfoot>",
+          "text_zh": "<head> 是文件區塊不是表格",
+          "correct": false
+        },
+        {
+          "text_en": "<table><tr><tt>",
+          "text_zh": "<tt> 不是表格元素",
+          "correct": false
+        },
+        {
+          "text_en": "<thead><body><tr>",
+          "text_zh": "<body> 不是表格元素",
+          "correct": false
+        },
+        {
+          "text_en": "<table><tr><td>",
+          "text_zh": "表格、列、儲存格",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "Inline elements are normally displayed without starting a new line.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "行內元素（inline）通常不會換行顯示。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "How can you make a numbered list?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;ol&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;dl&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;ul&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;list&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "如何建立有編號的清單？",
+      "options_translations": [
+        {
+          "text_en": "<ol>",
+          "text_zh": "ordered list 編號清單",
+          "correct": true
+        },
+        {
+          "text_en": "<dl>",
+          "text_zh": "definition list 定義清單",
+          "correct": false
+        },
+        {
+          "text_en": "<ul>",
+          "text_zh": "unordered list 無序清單（項目符號）",
+          "correct": false
+        },
+        {
+          "text_en": "<list>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "How can you make a bulleted list?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;ol&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;ul&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;dl&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;list&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "如何建立項目符號清單？",
+      "options_translations": [
+        {
+          "text_en": "<ol>",
+          "text_zh": "編號清單",
+          "correct": false
+        },
+        {
+          "text_en": "<ul>",
+          "text_zh": "unordered list 項目符號清單",
+          "correct": true
+        },
+        {
+          "text_en": "<dl>",
+          "text_zh": "定義清單",
+          "correct": false
+        },
+        {
+          "text_en": "<list>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "What is the correct HTML for making a checkbox?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;checkbox&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;check&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;input type=\"checkbox\"&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;input type=\"check\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "建立 checkbox 的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<checkbox>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<check>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<input type=\"checkbox\">",
+          "text_zh": "input 加 type=checkbox",
+          "correct": true
+        },
+        {
+          "text_en": "<input type=\"check\">",
+          "text_zh": "type 應為 checkbox",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "What is the correct HTML for making a text input field?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;input type=\"textfield\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;textfield&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;input type=\"text\"&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;textinput type=\"text\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "建立文字輸入欄位的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<input type=\"textfield\">",
+          "text_zh": "type 應為 text",
+          "correct": false
+        },
+        {
+          "text_en": "<textfield>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<input type=\"text\">",
+          "text_zh": "input 加 type=text",
+          "correct": true
+        },
+        {
+          "text_en": "<textinput type=\"text\">",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "What is the correct HTML for making a drop-down list?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;input type=\"dropdown\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;select&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;list&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;input type=\"list\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "建立下拉式選單的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<input type=\"dropdown\">",
+          "text_zh": "沒這個 type",
+          "correct": false
+        },
+        {
+          "text_en": "<select>",
+          "text_zh": "select 配 option",
+          "correct": true
+        },
+        {
+          "text_en": "<list>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<input type=\"list\">",
+          "text_zh": "沒這個 type",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "What is the correct HTML for making a text area?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;textarea&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;input type=\"textbox\"&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;input type=\"textarea\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "建立 text area 的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<textarea>",
+          "text_zh": "多行文字輸入",
+          "correct": true
+        },
+        {
+          "text_en": "<input type=\"textbox\">",
+          "text_zh": "沒這個 type",
+          "correct": false
+        },
+        {
+          "text_en": "<input type=\"textarea\">",
+          "text_zh": "沒這個 type",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "What is the correct HTML for inserting an image?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;img alt=\"MyImage\"&gt;image.gif&lt;/img&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;image src=\"image.gif\" alt=\"MyImage\"&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;img href=\"image.gif\" alt=\"MyImage\"&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;img src=\"image.gif\" alt=\"MyImage\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "插入圖片的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<img alt=\"MyImage\">image.gif</img>",
+          "text_zh": "img 沒 src 且不該有結束標籤",
+          "correct": false
+        },
+        {
+          "text_en": "<image src=\"image.gif\" alt=\"MyImage\">",
+          "text_zh": "標籤名應為 img",
+          "correct": false
+        },
+        {
+          "text_en": "<img href=\"image.gif\" alt=\"MyImage\">",
+          "text_zh": "應該用 src 不是 href",
+          "correct": false
+        },
+        {
+          "text_en": "<img src=\"image.gif\" alt=\"MyImage\">",
+          "text_zh": "img + src + alt",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "What is the correct HTML for inserting a background image?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;background img=\"background.gif\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;body bg=\"background.gif\"&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;body style=\"background-image:url(background.gif)\"&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "插入背景圖片的正確 HTML 是？",
+      "options_translations": [
+        {
+          "text_en": "<background img=\"background.gif\">",
+          "text_zh": "沒這個元素",
+          "correct": false
+        },
+        {
+          "text_en": "<body bg=\"background.gif\">",
+          "text_zh": "bg 不是合法屬性",
+          "correct": false
+        },
+        {
+          "text_en": "<body style=\"background-image:url(background.gif)\">",
+          "text_zh": "用 CSS style",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "An &lt;iframe&gt; is used to display a web page within a web page.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        },
+        {
+          "value": 3,
+          "text": "There is no such thing as an &lt;iframe&gt;"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "<iframe> 用於在網頁中嵌入另一個網頁。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "There is no such thing as an <iframe>",
+          "text_zh": "<iframe> 是真的元素",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "HTML comments start with &lt;!-- and end with --&gt;",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML 註解以 <!-- 開頭、--> 結尾。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "Block elements are normally displayed without starting a new line.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "區塊元素（block）通常不會換行顯示。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "False",
+          "text_zh": "區塊元素會換行（佔整行）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "Which HTML element defines the title of a document?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;meta&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;head&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;title&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素定義文件標題？",
+      "options_translations": [
+        {
+          "text_en": "<meta>",
+          "text_zh": "meta 資訊",
+          "correct": false
+        },
+        {
+          "text_en": "<head>",
+          "text_zh": "head 區塊",
+          "correct": false
+        },
+        {
+          "text_en": "<title>",
+          "text_zh": "瀏覽器分頁標題",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      "options": [
+        {
+          "value": 1,
+          "text": "longdesc"
+        },
+        {
+          "value": 2,
+          "text": "alt"
+        },
+        {
+          "value": 3,
+          "text": "title"
+        },
+        {
+          "value": 4,
+          "text": "src"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 屬性指定圖片無法顯示時的替代文字？",
+      "options_translations": [
+        {
+          "text_en": "longdesc",
+          "text_zh": "長描述（已廢棄）",
+          "correct": false
+        },
+        {
+          "text_en": "alt",
+          "text_zh": "alternative 替代文字",
+          "correct": true
+        },
+        {
+          "text_en": "title",
+          "text_zh": "游標 hover 提示文字",
+          "correct": false
+        },
+        {
+          "text_en": "src",
+          "text_zh": "圖片來源 URL",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 26,
+      "question": "Which doctype is correct for HTML5?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 5.0//EN\" \"http://www.w3.org/TR/html5/strict.dtd\"&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;!DOCTYPE HTML5&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;!DOCTYPE html&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML5 的 doctype 是？",
+      "options_translations": [
+        {
+          "text_en": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 5.0//EN\" \"http://www.w3.org/TR/html5/strict.dtd\">",
+          "text_zh": "舊式長 doctype，HTML5 不用",
+          "correct": false
+        },
+        {
+          "text_en": "<!DOCTYPE HTML5>",
+          "text_zh": "沒這個寫法",
+          "correct": false
+        },
+        {
+          "text_en": "<!DOCTYPE html>",
+          "text_zh": "HTML5 簡寫",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 27,
+      "question": "Which HTML element is used to specify a footer for a document or section?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;bottom&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;footer&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;section&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素定義文件或區塊的 footer？",
+      "options_translations": [
+        {
+          "text_en": "<bottom>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<footer>",
+          "text_zh": "footer 元素",
+          "correct": true
+        },
+        {
+          "text_en": "<section>",
+          "text_zh": "通用區塊",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "question": "In HTML, you can embed SVG elements directly into an HTML page.",
+      "options": [
+        {
+          "value": 1,
+          "text": "True"
+        },
+        {
+          "value": 2,
+          "text": "False"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML 中可以直接嵌入 SVG 元素。",
+      "options_translations": [
+        {
+          "text_en": "True",
+          "text_zh": "正確",
+          "correct": true
+        },
+        {
+          "text_en": "False",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 29,
+      "question": "What is the correct HTML element for playing video files?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;movie&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;media&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;video&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "播放影片用哪個 HTML 元素？",
+      "options_translations": [
+        {
+          "text_en": "<movie>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<media>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<video>",
+          "text_zh": "video 元素",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 30,
+      "question": "What is the correct HTML element for playing audio files?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;sound&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;audio&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;mp3&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "播放音訊用哪個 HTML 元素？",
+      "options_translations": [
+        {
+          "text_en": "<sound>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<audio>",
+          "text_zh": "audio 元素",
+          "correct": true
+        },
+        {
+          "text_en": "<mp3>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "question": "The HTML global attribute, \"contenteditable\" is used to:",
+      "options": [
+        {
+          "value": 1,
+          "text": "Update content from the server"
+        },
+        {
+          "value": 2,
+          "text": "Return the position of the first found occurrence of content inside a string"
+        },
+        {
+          "value": 3,
+          "text": "Specifies a context menu for an element. The menu appears when a user right-clicks on the element"
+        },
+        {
+          "value": 4,
+          "text": "Specify whether the content of an element should be editable or not"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML 全域屬性 contenteditable 用於：",
+      "options_translations": [
+        {
+          "text_en": "Update content from the server",
+          "text_zh": "從伺服器更新內容",
+          "correct": false
+        },
+        {
+          "text_en": "Return the position of the first found occurrence of content inside a string",
+          "text_zh": "字串中找子字串",
+          "correct": false
+        },
+        {
+          "text_en": "Specifies a context menu for an element. The menu appears when a user right-clicks on the element",
+          "text_zh": "指定右鍵選單（那是 contextmenu）",
+          "correct": false
+        },
+        {
+          "text_en": "Specify whether the content of an element should be editable or not",
+          "text_zh": "指定元素內容是否可編輯",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 32,
+      "question": "In HTML, onblur and onfocus are:",
+      "options": [
+        {
+          "value": 1,
+          "text": "Style attributes"
+        },
+        {
+          "value": 2,
+          "text": "HTML elements"
+        },
+        {
+          "value": 3,
+          "text": "Event attributes"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "HTML 中 onblur 與 onfocus 是：",
+      "options_translations": [
+        {
+          "text_en": "Style attributes",
+          "text_zh": "樣式屬性",
+          "correct": false
+        },
+        {
+          "text_en": "HTML elements",
+          "text_zh": "HTML 元素",
+          "correct": false
+        },
+        {
+          "text_en": "Event attributes",
+          "text_zh": "事件屬性（失去焦點/取得焦點）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 33,
+      "question": "Graphics defined by SVG is in which format?",
+      "options": [
+        {
+          "value": 1,
+          "text": "XML"
+        },
+        {
+          "value": 2,
+          "text": "CSS"
+        },
+        {
+          "value": 3,
+          "text": "HTML"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "SVG 圖形使用什麼格式定義？",
+      "options_translations": [
+        {
+          "text_en": "XML",
+          "text_zh": "SVG 是基於 XML",
+          "correct": true
+        },
+        {
+          "text_en": "CSS",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "HTML",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 34,
+      "question": "The HTML &lt;canvas&gt; element is used to:",
+      "options": [
+        {
+          "value": 1,
+          "text": "display database records"
+        },
+        {
+          "value": 2,
+          "text": "create draggable elements"
+        },
+        {
+          "value": 3,
+          "text": "manipulate data in MySQL"
+        },
+        {
+          "value": 4,
+          "text": "draw graphics"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "<canvas> 元素用於：",
+      "options_translations": [
+        {
+          "text_en": "display database records",
+          "text_zh": "顯示資料庫記錄",
+          "correct": false
+        },
+        {
+          "text_en": "create draggable elements",
+          "text_zh": "建立可拖曳元素",
+          "correct": false
+        },
+        {
+          "text_en": "manipulate data in MySQL",
+          "text_zh": "操作 MySQL 資料",
+          "correct": false
+        },
+        {
+          "text_en": "draw graphics",
+          "text_zh": "繪圖（用 JavaScript 繪製）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "question": "In HTML, which attribute is used to specify that an input field must be filled out?",
+      "options": [
+        {
+          "value": 1,
+          "text": "placeholder"
+        },
+        {
+          "value": 2,
+          "text": "validate"
+        },
+        {
+          "value": 3,
+          "text": "formvalidate"
+        },
+        {
+          "value": 4,
+          "text": "required"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 屬性指定 input 欄位必填？",
+      "options_translations": [
+        {
+          "text_en": "placeholder",
+          "text_zh": "預留提示文字",
+          "correct": false
+        },
+        {
+          "text_en": "validate",
+          "text_zh": "不是合法屬性",
+          "correct": false
+        },
+        {
+          "text_en": "formvalidate",
+          "text_zh": "不是合法屬性",
+          "correct": false
+        },
+        {
+          "text_en": "required",
+          "text_zh": "必填屬性",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "question": "Which input type defines a slider control?",
+      "options": [
+        {
+          "value": 1,
+          "text": "slider"
+        },
+        {
+          "value": 2,
+          "text": "controls"
+        },
+        {
+          "value": 3,
+          "text": "search"
+        },
+        {
+          "value": 4,
+          "text": "range"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 input type 定義滑桿（slider）？",
+      "options_translations": [
+        {
+          "text_en": "slider",
+          "text_zh": "沒這個 type",
+          "correct": false
+        },
+        {
+          "text_en": "controls",
+          "text_zh": "沒這個 type",
+          "correct": false
+        },
+        {
+          "text_en": "search",
+          "text_zh": "搜尋框",
+          "correct": false
+        },
+        {
+          "text_en": "range",
+          "text_zh": "range 即滑桿",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 37,
+      "question": "Which HTML element is used to display a scalar measurement within a range?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;measure&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;meter&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;gauge&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;range&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素用於顯示某範圍內的純量度量？",
+      "options_translations": [
+        {
+          "text_en": "<measure>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<meter>",
+          "text_zh": "meter 元素（顯示已知範圍的度量）",
+          "correct": true
+        },
+        {
+          "text_en": "<gauge>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<range>",
+          "text_zh": "不存在（input type=range 才是滑桿）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 38,
+      "question": "Which HTML element defines navigation links?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;navigation&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;nav&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;navigate&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素定義導覽連結？",
+      "options_translations": [
+        {
+          "text_en": "<navigation>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<nav>",
+          "text_zh": "nav 元素",
+          "correct": true
+        },
+        {
+          "text_en": "<navigate>",
+          "text_zh": "不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 39,
+      "question": "In HTML, what does the &lt;aside&gt; element define?",
+      "options": [
+        {
+          "value": 1,
+          "text": "The ASCII character-set; to send information between computers on the Internet"
+        },
+        {
+          "value": 2,
+          "text": "Content aside from the page content"
+        },
+        {
+          "value": 3,
+          "text": "A navigation list to be shown at the left side of the page"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "<aside> 元素定義什麼？",
+      "options_translations": [
+        {
+          "text_en": "The ASCII character-set; to send information between computers on the Internet",
+          "text_zh": "ASCII 字元集（無關）",
+          "correct": false
+        },
+        {
+          "text_en": "Content aside from the page content",
+          "text_zh": "與主要內容相關但獨立的旁註內容（如側邊欄）",
+          "correct": true
+        },
+        {
+          "text_en": "A navigation list to be shown at the left side of the page",
+          "text_zh": "左側導覽列（那是 nav）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "question": "Which HTML element is used to specify a header for a document or section?",
+      "options": [
+        {
+          "value": 1,
+          "text": "&lt;header&gt;"
+        },
+        {
+          "value": 2,
+          "text": "&lt;top&gt;"
+        },
+        {
+          "value": 3,
+          "text": "&lt;section&gt;"
+        },
+        {
+          "value": 4,
+          "text": "&lt;head&gt;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML",
+      "prompt_zh": "哪個 HTML 元素用於指定文件或區塊的 header？",
+      "options_translations": [
+        {
+          "text_en": "<header>",
+          "text_zh": "header 元素",
+          "correct": true
+        },
+        {
+          "text_en": "<top>",
+          "text_zh": "不存在",
+          "correct": false
+        },
+        {
+          "text_en": "<section>",
+          "text_zh": "通用區塊",
+          "correct": false
+        },
+        {
+          "text_en": "<head>",
+          "text_zh": "文件 head 區塊（非語意 header）",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

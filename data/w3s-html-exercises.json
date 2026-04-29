@@ -1,0 +1,1659 @@
+{
+  "language": "html",
+  "topics": {
+    "attributes": [
+      {
+        "question": "Which of the following is a correct syntax for using an HTML attribute?",
+        "options": [
+          "<code>&lt;img src='img_girl.jpg'&gt;</code>",
+          "<code>&lt;img src('img_girl.jpg')&gt;</code>",
+          "<code>&lt;img src:'img_girl.jpg'&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_attributes1",
+        "prompt_zh": "使用 HTML 屬性的正確語法是？",
+        "answer_zh": "<img src='img_girl.jpg'>"
+      },
+      {
+        "fillintheblanks": "exercise_html_attributes1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_attributes2",
+        "prompt_zh": "屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_attributes2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_attributes3",
+        "prompt_zh": "屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_attributes3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_attributes4",
+        "prompt_zh": "屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_attributes4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_attributes5",
+        "prompt_zh": "屬性填空題"
+      }
+    ],
+    "basic": [
+      {
+        "question": "What is a correct HTML markup for the document type declaration?",
+        "options": [
+          "<code>&lt;!DOCTYPE html&gt;</code>",
+          "<code>DOCTYPE html;</code>",
+          "<code>--DOCTYPE html;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_basic1",
+        "prompt_zh": "document type 宣告的正確 HTML 標記是？",
+        "answer_zh": "<!DOCTYPE html>"
+      },
+      {
+        "draganddroptext": "<code>&lt;!DOCTYPE html&gt;<br>___<br>___<br><br>___My First Heading___<br><br>___My first paragraph.___<br><br>___<br>___<br></code>",
+        "draganddropquestion": "Place the start- and end-tags in the correct positions.",
+        "options": [
+          "<code>&lt;body&gt;</code>",
+          "<code>&lt;h1&gt;</code>",
+          "<code>&lt;/p&gt;</code>",
+          "<code>&lt;/html&gt;</code>",
+          "<code>&lt;p&gt;</code>",
+          "<code>&lt;/body&gt;</code>",
+          "<code>&lt;html&gt;</code>",
+          "<code>&lt;/h1&gt;</code>"
+        ],
+        "correct": [
+          6,
+          0,
+          1,
+          7,
+          4,
+          2,
+          5,
+          3
+        ],
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_basic2",
+        "prompt_zh": "把開始與結束標籤拖到正確位置"
+      },
+      {
+        "fillintheblanks": "exercise_html_basic1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_basic3",
+        "prompt_zh": "基本語法填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_basic2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_basic4",
+        "prompt_zh": "基本語法填空題"
+      }
+    ],
+    "blocks": [
+      {
+        "question": "Which type of elements takes up the full width available?",
+        "options": [
+          "Block elements",
+          "Inline elements"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_blocks1",
+        "prompt_zh": "哪種元素會佔滿整行寬度？",
+        "answer_zh": "區塊（block）元素"
+      },
+      {
+        "fillintheblanks": "exercise_html_block_inline1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_blocks2",
+        "prompt_zh": "區塊/行內元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_block_inline2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_blocks3",
+        "prompt_zh": "區塊/行內元素填空題"
+      }
+    ],
+    "classes": [
+      {
+        "question": "True or False. The class name is case sensitive",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_classes1",
+        "prompt_zh": "True or False：class 名稱區分大小寫",
+        "answer_zh": "True"
+      },
+      {
+        "fillintheblanks": "exercise_html_classes1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_classes2",
+        "prompt_zh": "classes 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_classes2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_classes3",
+        "prompt_zh": "classes 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_classes3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_classes4",
+        "prompt_zh": "classes 填空題"
+      }
+    ],
+    "colors": [
+      {
+        "question": "Do you remember any legal HTML color names? Which one of the following is a legal HTML color?",
+        "options": [
+          "Apple",
+          "Banana",
+          "Tomato"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors1",
+        "prompt_zh": "下列哪個是合法的 HTML color name？",
+        "answer_zh": "Tomato"
+      },
+      {
+        "fillintheblanks": "exercise_html_colors1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors2",
+        "prompt_zh": "colors 填空題"
+      },
+      {
+        "question": "The Alpha channel of a color controls the color-transparency, but which of the following values will be MOST transparent?",
+        "options": [
+          "<code>background-color:rgba(255, 0, 0, 0.5);</code>",
+          "<code>background-color:rgba(255, 0, 0, 100%);</code>",
+          "<code>background-color:rgba(255, 0, 0, 0);</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors3",
+        "prompt_zh": "alpha 通道控制透明度，下列哪個值最透明？",
+        "answer_zh": "background-color:rgba(255, 0, 0, 0);"
+      }
+    ],
+    "colors_hex": [
+      {
+        "question": "What is the highest HEX number of the following:",
+        "options": [
+          "<code>#44</code>",
+          "<code>#AA</code>",
+          "<code>#BB</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hex1",
+        "prompt_zh": "下列哪個 HEX 數字最大？",
+        "answer_zh": "#BB"
+      },
+      {
+        "fillintheblanks": "exercise_html_colors4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hex2",
+        "prompt_zh": "HEX colors 填空題"
+      },
+      {
+        "question": "Which one of the following will result in a grey color?",
+        "options": [
+          "<code>#A0A0A0</code>",
+          "<code>#FF00FF</code>",
+          "<code>#00FF00</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hex3",
+        "prompt_zh": "下列哪個會呈現灰色？",
+        "answer_zh": "#A0A0A0"
+      }
+    ],
+    "colors_hsl": [
+      {
+        "question": "Which one of the following color values will result in a black color?",
+        "options": [
+          "<code>hsl(0, 100%, 0%)</code>",
+          "<code>hsl(0, 0, 100%)</code>",
+          "<code>hsl(0, 100%, 100%)</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hsl1",
+        "prompt_zh": "下列哪個顏色值會呈現黑色？",
+        "answer_zh": "hsl(0, 100%, 0%)"
+      },
+      {
+        "fillintheblanks": "exercise_html_colors5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hsl2",
+        "prompt_zh": "HSL colors 填空題"
+      },
+      {
+        "question": "What does HSL stand for?",
+        "options": [
+          "HTML Signal Light",
+          "Hue, Saturation and Lightness",
+          "Higher Sense of Light"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_hsl3",
+        "prompt_zh": "HSL 是什麼縮寫？",
+        "answer_zh": "Hue（色相）、Saturation（飽和度）、Lightness（亮度）"
+      }
+    ],
+    "colors_rgb": [
+      {
+        "question": "What is the color of the following text:<h1 style='color:rgb(0,255,0)'>Hello</h1>",
+        "options": [
+          "<code>color:rgb(0, 255, 0)</code>",
+          "<code>color:rgb(255, 0, 0)</code>",
+          "<code>color:rgb(0, 255, 255)</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_rgb1",
+        "prompt_zh": "以下文字 \"Hello\" 的顏色是什麼？",
+        "answer_zh": "color:rgb(0, 255, 0)（綠色）"
+      },
+      {
+        "fillintheblanks": "exercise_html_colors2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_rgb2",
+        "prompt_zh": "RGB 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_colors3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_colors_rgb3",
+        "prompt_zh": "RGB 填空題"
+      }
+    ],
+    "comments": [
+      {
+        "question": "What is the correct syntax for adding a comment in HTML?",
+        "options": [
+          "<code>&lt;-- This is a comment --&gt;</code>",
+          "<code>&lt;## This is a comment ##&gt;</code>",
+          "<code>&lt;--&gt; This is a comment &lt;/--&gt;</code>",
+          "<code>&lt;!-- This is a comment --&gt;</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_comments1",
+        "prompt_zh": "在 HTML 中加註解的正確語法是？",
+        "answer_zh": "<!-- This is a comment -->"
+      },
+      {
+        "fillintheblanks": "exercise_html_comments1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_comments2",
+        "prompt_zh": "註解填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_comments2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_comments3",
+        "prompt_zh": "註解填空題"
+      }
+    ],
+    "computercode_elements": [
+      {
+        "question": "Which one of the following is NOT an HTML element?",
+        "options": [
+          "<code>&lt;code&gt;</code>",
+          "<code>&lt;pre&gt;</code>",
+          "<code>&lt;kbd&gt;</code>",
+          "<code>&lt;xamp&gt;</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_computercode_elements1",
+        "prompt_zh": "下列哪個不是合法 HTML 元素？",
+        "answer_zh": "<xamp>"
+      },
+      {
+        "fillintheblanks": "exercise_html_computercode_elements1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_computercode_elements2",
+        "prompt_zh": "電腦程式碼元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_computercode_elements2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_computercode_elements3",
+        "prompt_zh": "電腦程式碼元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_computercode_elements3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_computercode_elements4",
+        "prompt_zh": "電腦程式碼元素填空題"
+      }
+    ],
+    "css": [
+      {
+        "question": "What is a correct syntax for linking to an external stylesheet?",
+        "options": [
+          "<code>&lt;style rel='stylesheet' href='styles.css'></code>",
+          "<code>&lt;link rel='stylesheet' href='styles.css'></code>",
+          "<code>&lt;a rel='stylesheet' href='styles.css'></code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_css1",
+        "prompt_zh": "連結外部樣式表的正確語法是？",
+        "answer_zh": "<link rel='stylesheet' href='styles.css'>"
+      },
+      {
+        "fillintheblanks": "exercise_html_css1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_css2",
+        "prompt_zh": "CSS 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_css2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_css3",
+        "prompt_zh": "CSS 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_css3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_css4",
+        "prompt_zh": "CSS 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_css4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_css5",
+        "prompt_zh": "CSS 填空題"
+      }
+    ],
+    "div": [
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>&lt;div style='width:200px;margin:auto'&gt;<br>&nbsp;&nbsp;&lt;h2&gt;London&lt;/h2&gt;<br>&lt;/div&gt;</code><br>How will the DIV element be aligned?",
+        "options": [
+          "Left aligned",
+          "Center aligned",
+          "Right aligned"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_div1",
+        "prompt_zh": "以下程式碼 <div style='width:200px;margin:auto'> 結果是？",
+        "answer_zh": "水平置中（margin:auto 讓區塊置中）"
+      },
+      {
+        "question": "True or False. You cannot align DIV elements side by side",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_div2",
+        "prompt_zh": "True or False：DIV 元素無法並排",
+        "answer_zh": "False（用 flex/inline-block 等可以並排）"
+      },
+      {
+        "question": "One of the following statements is true about the DIV element, which one?",
+        "options": [
+          "By default, DIV elements come with a yellow background",
+          "By default, DIV elements come with a border",
+          "By default, DIV elements come with line breaks before and after"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_div3",
+        "prompt_zh": "下列關於 DIV 元素哪個是正確的？",
+        "answer_zh": "DIV 預設前後會自動換行（block 元素）"
+      }
+    ],
+    "elements": [
+      {
+        "question": "True or False. Empty elements must have a close tag.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_elements1",
+        "prompt_zh": "True or False：空元素必須有結束標籤",
+        "answer_zh": "False（空元素如 <br>、<img> 不需要結束標籤）"
+      },
+      {
+        "fillintheblanks": "exercise_html_elements1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_elements2",
+        "prompt_zh": "元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_elements2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_elements3",
+        "prompt_zh": "元素填空題"
+      }
+    ],
+    "entities": [
+      {
+        "question": "What is the entity name that represents a less than <code class='w3-codespan'>&lt;</code> sign?",
+        "options": [
+          "<code>&amp;lt;</code>",
+          "<code>&amp;less;</code>",
+          "<code>&amp;nbsp;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_entities1",
+        "prompt_zh": "代表小於號 < 的 entity 名稱是？",
+        "answer_zh": "&lt;"
+      },
+      {
+        "question": "What is the entity name that represents a space character?",
+        "options": [
+          "<code>&amp;spc;</code>",
+          "<code>&amp;space;</code>",
+          "<code>&amp;nbsp;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_entities2",
+        "prompt_zh": "代表空白字元的 entity 名稱是？",
+        "answer_zh": "&nbsp;"
+      },
+      {
+        "question": "What is the entity name that represents a <code class='w3-codespan'>&amp;</code> sign?",
+        "options": [
+          "<code>&amp;and;</code>",
+          "<code>&amp;amp;</code>",
+          "<code>&amp;app;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_entities3",
+        "prompt_zh": "代表 & 符號的 entity 名稱是？",
+        "answer_zh": "&amp;"
+      }
+    ],
+    "favicon": [
+      {
+        "question": "In which HTML element is the Favicon defined?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;img&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;body&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;link&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;style&gt;</code> element"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_favicon1",
+        "prompt_zh": "Favicon 在哪個 HTML 元素中定義？",
+        "answer_zh": "<link> 元素"
+      },
+      {
+        "fillintheblanks": "exercise_html_images9.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_favicon2",
+        "prompt_zh": "Favicon 填空題"
+      },
+      {
+        "question": "True or False. Favicons must have the <code>.ico</code> file extension.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_favicon3",
+        "prompt_zh": "True or False：Favicon 必須是 .ico 副檔名",
+        "answer_zh": "False（也可用 .png、.svg 等）"
+      }
+    ],
+    "form_attributes": [
+      {
+        "question": "What is the default value of the INPUT element's <code class='w3-codespan'>size</code> attribute?",
+        "options": [
+          "<code>10</code>",
+          "<code>15</code>",
+          "<code>20</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes1",
+        "prompt_zh": "INPUT 元素的 size 屬性預設值是？",
+        "answer_zh": "20"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_attributes1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes2",
+        "prompt_zh": "表單屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_attributes2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes3",
+        "prompt_zh": "表單屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_attributes3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes4",
+        "prompt_zh": "表單屬性填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_attributes4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes5",
+        "prompt_zh": "表單屬性填空題"
+      }
+    ],
+    "form_attributes_form": [
+      {
+        "question": "What is not a legal form attribute for the INPUT element?",
+        "options": [
+          "<code>formaction</code>",
+          "<code>formtype</code>",
+          "<code>formtarget</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes_form1",
+        "prompt_zh": "哪個不是 INPUT 合法的 form 屬性？",
+        "answer_zh": "formtype（沒這個屬性）"
+      },
+      {
+        "question": "What form attribute is used to define the HTTP method for sending data?",
+        "options": [
+          "<code>formaction</code>",
+          "<code>formmethod</code>",
+          "<code>formtarget</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes_form2",
+        "prompt_zh": "哪個 form 屬性指定送出資料的 HTTP method？",
+        "answer_zh": "formmethod"
+      },
+      {
+        "question": "True or False. The <code class='w3-codespan'>formtarget</code> attribute only works with the input types 'submit' and 'image'.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_attributes_form3",
+        "prompt_zh": "True or False：formtarget 只能用在 input type='submit' 與 'image'",
+        "answer_zh": "True"
+      }
+    ],
+    "form_elements": [
+      {
+        "question": "What is the correct HTML element to group related data in a form and also, by default, draw a border around it?",
+        "options": [
+          "<code>&lt;group&gt;</code>",
+          "<code>&lt;fieldset&gt;</code>",
+          "<code>&lt;fence&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements1",
+        "prompt_zh": "哪個 HTML 元素用於將表單中相關資料分組並預設會繪製邊框？（提示：`<fieldset>`）"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_elements1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements2",
+        "prompt_zh": "在下方表單中加入一個 name=\"cars\" 的空下拉式選單"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_elements2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements3",
+        "prompt_zh": "在下方表單中加入兩個 option 元素到下拉式選單"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_elements3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_elements4",
+        "prompt_zh": "在下方表單中加入一個 name=\"note\" 的 text area"
+      }
+    ],
+    "form_input_types": [
+      {
+        "question": "What is the default value of the INPUT element's <code class='w3-codespan'>type</code> attribute?",
+        "options": [
+          "<code>button</code>",
+          "<code>submit</code>",
+          "<code>text</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types1",
+        "prompt_zh": "INPUT 元素的 type 屬性預設值是什麼？"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_input_types1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types2",
+        "prompt_zh": "在下方表單中加入一個 name=\"username\" 的文字輸入欄位"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_input_types2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types3",
+        "prompt_zh": "在下方表單中加入一個 value=\"Submit Form\" 的 submit 按鈕"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_input_types3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types4",
+        "prompt_zh": "加入兩個 name=\"color\" 的 radio button"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_input_types4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types5",
+        "prompt_zh": "在下方表單中加入一個 value=\"Click Me\" 的 button 欄位"
+      },
+      {
+        "fillintheblanks": "exercise_html_form_input_types5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_form_input_types6",
+        "prompt_zh": "在下方表單中加入只能輸入數字的欄位，並用適當的 input 屬性限制只能輸入 1 到 5 之間的數字"
+      }
+    ],
+    "formatting": [
+      {
+        "question": "Two of the following HTML elements makes the text bold, which two?",
+        "options": [
+          "<code class='w3-codespan'>&lt;em&gt;</code> and <code class='w3-codespan'>&lt;b&gt;</code>",
+          "<code class='w3-codespan'>&lt;strong&gt;</code> and <code class='w3-codespan'>&lt;b&gt;</code>",
+          "<code class='w3-codespan'>&lt;big&gt;</code> and <code class='w3-codespan'>&lt;b&gt;</code>",
+          "<code class='w3-codespan'>&lt;mark&gt;</code> and <code class='w3-codespan'>&lt;b&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting1",
+        "prompt_zh": "下列哪兩個 HTML 元素會把文字變粗？",
+        "answer_zh": "<strong> 與 <b>"
+      },
+      {
+        "fillintheblanks": "exercise_html_formatting1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting2",
+        "prompt_zh": "格式化填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_formatting2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting3",
+        "prompt_zh": "格式化填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_formatting3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting4",
+        "prompt_zh": "格式化填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_formatting4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting5",
+        "prompt_zh": "格式化填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_formatting5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_formatting6",
+        "prompt_zh": "格式化填空題"
+      }
+    ],
+    "forms": [
+      {
+        "question": "What is the correct HTML element for defining a form?",
+        "options": [
+          "<code>&lt;schema&gt;</code>",
+          "<code>&lt;ff&gt;</code>",
+          "<code>&lt;form&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms1",
+        "prompt_zh": "用於定義表單的正確 HTML 元素是什麼？（提示：`<form>`）"
+      },
+      {
+        "fillintheblanks": "exercise_html_forms1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms2",
+        "prompt_zh": "在下方表單中加入一個 type=\"button\"、value=\"OK\" 的 input 欄位"
+      },
+      {
+        "fillintheblanks": "exercise_html_forms2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms3",
+        "prompt_zh": "在下方表單中加入兩個 name=\"fav_language\" 的 radio button"
+      }
+    ],
+    "forms_attributes": [
+      {
+        "question": "What is the correct syntax for opening the form's result in a new browser tab?",
+        "options": [
+          "<code>&lt;form action='/action_page.php' target='_blank'&gt;</code>",
+          "<code>&lt;form action='/action_page.php' target='_top'&gt;</code>",
+          "<code>&lt;form action='/action_page.php' target='_new'&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes1",
+        "prompt_zh": "用什麼語法可讓表單結果在新瀏覽器分頁開啟？（提示：`target=\"_blank\"`）"
+      },
+      {
+        "fillintheblanks": "exercise_html_forms_attributes1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes2",
+        "prompt_zh": "加入 submit 按鈕，並指定表單送到 \"/action_page.php\""
+      },
+      {
+        "fillintheblanks": "exercise_html_forms_attributes2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_forms_attributes3",
+        "prompt_zh": "指定表單使用 \"POST\" 方法提交"
+      }
+    ],
+    "head": [
+      {
+        "question": "Which one of the following elements should NOT be placed in the <code class='w3-codespan'>head</code> section?",
+        "options": [
+          "<code>&lt;title&gt;</code>",
+          "<code>&lt;link&gt;</code>",
+          "<code>&lt;body&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_head1",
+        "prompt_zh": "下列哪個元素不該放在 head 區塊？",
+        "answer_zh": "<body>"
+      },
+      {
+        "question": "True or False. The <code class='w3-codespan'>head</code> element can be a container for metadata.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_head2",
+        "prompt_zh": "True or False：head 元素可以是 metadata 的容器",
+        "answer_zh": "True"
+      },
+      {
+        "question": "What is the name of the element where we can specify metadata (like charset, viewport etc.)?",
+        "options": [
+          "<code>&lt;metadata&gt;</code>",
+          "<code>&lt;meta&gt;</code>",
+          "<code>&lt;data&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_head3",
+        "prompt_zh": "指定 metadata（charset、viewport 等）的元素名稱是？",
+        "answer_zh": "<meta>"
+      }
+    ],
+    "headings": [
+      {
+        "question": "Which of the following headers is the largest and most important header?",
+        "options": [
+          "<code>&lt;h1&gt;</code>",
+          "<code>&lt;h2&gt;</code>",
+          "<code>&lt;h3&gt;</code>",
+          "<code>&lt;h4&gt;</code>",
+          "<code>&lt;h5&gt;</code>",
+          "<code>&lt;h6&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_headings1",
+        "prompt_zh": "下列哪個是最大、最重要的標題？",
+        "answer_zh": "<h1>"
+      },
+      {
+        "fillintheblanks": "exercise_html_headings1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_headings2",
+        "prompt_zh": "標題填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_headings2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_headings3",
+        "prompt_zh": "標題填空題"
+      }
+    ],
+    "id": [
+      {
+        "question": "True or False. The id name is case sensitive",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_id1",
+        "prompt_zh": "True or False：id 名稱區分大小寫",
+        "answer_zh": "True"
+      },
+      {
+        "fillintheblanks": "exercise_html_id1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_id2",
+        "prompt_zh": "id 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_id2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_id3",
+        "prompt_zh": "id 填空題"
+      }
+    ],
+    "iframe": [
+      {
+        "question": "In which IFRAME attribute can we specify an URL?",
+        "options": [
+          "<code>href</code>",
+          "<code>src</code>",
+          "<code>url</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_iframe1",
+        "prompt_zh": "哪個 IFRAME 屬性可以指定 URL？",
+        "answer_zh": "src"
+      },
+      {
+        "fillintheblanks": "exercise_html_iframe1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_iframe2",
+        "prompt_zh": "iframe 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_iframe2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_iframe3",
+        "prompt_zh": "iframe 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_iframe3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_iframe4",
+        "prompt_zh": "iframe 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_iframe4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_iframe5",
+        "prompt_zh": "iframe 填空題"
+      }
+    ],
+    "images": [
+      {
+        "question": "What is a correct HTML element for adding an image?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;image&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;img&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;media&gt;</code> element"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images1",
+        "prompt_zh": "加入圖片的正確 HTML 元素是？",
+        "answer_zh": "<img> 元素"
+      },
+      {
+        "fillintheblanks": "exercise_html_images1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images2",
+        "prompt_zh": "圖片填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_images2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images3",
+        "prompt_zh": "圖片填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_images3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images4",
+        "prompt_zh": "圖片填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_images4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images5",
+        "prompt_zh": "圖片填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_images5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images6",
+        "prompt_zh": "圖片填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_images6.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images7",
+        "prompt_zh": "圖片填空題"
+      }
+    ],
+    "images_background": [
+      {
+        "question": "What is a correct CSS property for defining background images?",
+        "options": [
+          "The <code class='w3-codespan'>bg</code> property",
+          "The <code class='w3-codespan'>image</code> property",
+          "The <code class='w3-codespan'>background-image</code> property"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_background1",
+        "prompt_zh": "定義背景圖的正確 CSS 屬性是？",
+        "answer_zh": "background-image"
+      },
+      {
+        "question": "To add a background image on an entire HTML page, on which element should you specify the background image?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;document&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;html&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;body&gt;</code> element"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_background2",
+        "prompt_zh": "要為整個 HTML 頁面加背景圖，該指定在哪個元素？",
+        "answer_zh": "<body> 元素"
+      },
+      {
+        "fillintheblanks": "exercise_html_images8.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_background3",
+        "prompt_zh": "背景圖填空題"
+      }
+    ],
+    "images_imagemap": [
+      {
+        "question": "What is a correct HTML element for defining an image map?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;imagemap&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;imgmap&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;map&gt;</code> element"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_imagemap1",
+        "prompt_zh": "定義 image map 的正確 HTML 元素是？",
+        "answer_zh": "<map> 元素"
+      },
+      {
+        "question": "What is another HTML element used when defining image maps?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;area&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;content&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;shape&gt;</code> element"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_imagemap2",
+        "prompt_zh": "image map 還會用哪個 HTML 元素？",
+        "answer_zh": "<area> 元素"
+      },
+      {
+        "fillintheblanks": "exercise_html_images7.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_imagemap3",
+        "prompt_zh": "image map 填空題"
+      }
+    ],
+    "images_picture": [
+      {
+        "question": "One of these elements is NOT a legal HTML element, which one?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;image&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;picture&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;source&gt;</code> element"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_picture1",
+        "prompt_zh": "下列哪個不是合法 HTML 元素？",
+        "answer_zh": "<image>（正確的是 <img>）"
+      },
+      {
+        "question": "Consider the following code:<br><code class='codeblock'>&lt;picture&gt;<br>&nbsp;&nbsp;&lt;source srcset='avatar.png'&gt;<br>&nbsp;&nbsp;&lt;source srcset='mustang.jpg'&gt;<br>&lt;/picture&gt;</code><br>What will be the result if the browser supports both images?",
+        "options": [
+          "Only the first image will be displayed",
+          "Only the last image will be displayed",
+          "Both images will be displayed"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_picture2",
+        "prompt_zh": "<picture> 含多個 <source> 時會發生什麼？",
+        "answer_zh": "只會顯示第一個（媒體查詢符合的）圖"
+      },
+      {
+        "question": "True or False. An <code>&lt;img&gt;</code> element inside a <code>&lt;picture&gt;</code> element wil always be prioritised before any image defined in a <code>&lt;source&gt;</code> element.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_images_picture3",
+        "prompt_zh": "True or False：<picture> 內的 <img> 永遠優先於 <source>",
+        "answer_zh": "False（<source> 媒體查詢符合時優先）"
+      }
+    ],
+    "intro": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hot Typing Markup Language",
+          "Home Typing Modern Language",
+          "Hyper Text Markup Language",
+          "Home Testing Mixed Language"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_intro1",
+        "prompt_zh": "HTML 是什麼縮寫？",
+        "answer_zh": "Hyper Text Markup Language"
+      },
+      {
+        "question": "Which one of the following headers has the correct HTML syntax?",
+        "options": [
+          "<code>&lt;h1&gt;Welcome&lt;/h1&gt;</code>",
+          "<code>{{h1}}Welcome{{:h1}}</code>",
+          "<code>{h1:Welcome}</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_intro2",
+        "prompt_zh": "下列哪個標題語法正確？",
+        "answer_zh": "<h1>Welcome</h1>"
+      },
+      {
+        "question": "Who invented HTML?",
+        "options": [
+          "Tim Berners-Lee",
+          "Brendan Eich",
+          "Guido van Rossum"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_intro3",
+        "prompt_zh": "誰發明 HTML？",
+        "answer_zh": "Tim Berners-Lee"
+      }
+    ],
+    "links": [
+      {
+        "question": "What is a correct syntax for an HTML hyperlink?",
+        "options": [
+          "<code>&lt;a href='/home.htm'&gt;Visit W3Schools.com!&lt;/a&gt;</code>",
+          "<code>&lt;link href='/home.htm'&gt;Visit W3Schools.com!&lt;/link&gt;</code>",
+          "<code>&lt;alink href='/home.htm'&gt;Visit W3Schools.com!&lt;/alink&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links1",
+        "prompt_zh": "HTML 超連結的正確語法是？",
+        "answer_zh": "<a href='/home.htm'>Visit W3Schools.com!</a>"
+      },
+      {
+        "fillintheblanks": "exercise_html_links1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links2",
+        "prompt_zh": "連結填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_links3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links3",
+        "prompt_zh": "連結填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_links4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links4",
+        "prompt_zh": "連結填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_links5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links5",
+        "prompt_zh": "連結填空題"
+      }
+    ],
+    "links_bookmarks": [
+      {
+        "question": "What HTML attribute is used to create a bookmark?",
+        "options": [
+          "The <code class='w3-codespan'>bookmark</code> attribute",
+          "The <code class='w3-codespan'>anchor</code> attribute",
+          "The <code class='w3-codespan'>id</code> attribute"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_bookmarks1",
+        "prompt_zh": "建立書籤用哪個 HTML 屬性？",
+        "answer_zh": "id 屬性"
+      },
+      {
+        "fillintheblanks": "exercise_html_links6.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_bookmarks2",
+        "prompt_zh": "書籤填空題"
+      },
+      {
+        "question": "What is a correct syntax for linking to a bookmark named <code class='w3-codespan'>C4</code> on another page?",
+        "options": [
+          "<code>&lt;a href='demo.html' jump='C4'>Jump to Chapter 4&lt;/a&gt;</code>",
+          "<code>&lt;a href='demo.html' bookmark='C4'>Jump to Chapter 4&lt;/a&gt;</code>",
+          "<code>&lt;a href='demo.html#C4'>Jump to Chapter 4&lt;/a&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_bookmarks3",
+        "prompt_zh": "連結到另一頁名為 C4 的書籤的正確語法是？",
+        "answer_zh": "<a href='demo.html#C4'>Jump to Chapter 4</a>"
+      }
+    ],
+    "links_colors": [
+      {
+        "question": "True or False. By default all hyperlinks are underlined.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_colors1",
+        "prompt_zh": "True or False：超連結預設都有底線",
+        "answer_zh": "True"
+      },
+      {
+        "fillintheblanks": "exercise_html_links2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_colors2",
+        "prompt_zh": "連結顏色填空題"
+      },
+      {
+        "question": "What is a correct syntax for making a link red when you mouse over it?",
+        "options": [
+          "<code class='codeblock'>&lt;style&gt;<br>a:over {color:red}<br>&lt;/style&gt;</code>",
+          "<code class='codeblock'>&lt;style&gt;<br>a:hover {color:red}<br>&lt;/style&gt;</code>",
+          "<code class='codeblock'>&lt;style&gt;<br>a:mouseover {color:red}<br>&lt;/style&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_links_colors3",
+        "prompt_zh": "游標移到連結上時變紅的正確語法是？",
+        "answer_zh": "<style>a:hover {color:red}</style>"
+      }
+    ],
+    "lists": [
+      {
+        "question": "What is the correct tag name for list items?",
+        "options": [
+          "<code>&lt;item&gt;</code>",
+          "<code>&lt;list-item&gt;</code>",
+          "<code>&lt;li&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists1",
+        "prompt_zh": "清單項目的正確標籤名稱是？",
+        "answer_zh": "<li>"
+      },
+      {
+        "question": "Which one is NOT a legal element in HTML?",
+        "options": [
+          "<code>&lt;ol&gt;</code>",
+          "<code>&lt;ul&gt;</code>",
+          "<code>&lt;ll&gt;</code>",
+          "<code>&lt;dd&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists2",
+        "prompt_zh": "下列哪個不是合法 HTML 元素？",
+        "answer_zh": "<ll>（沒這個元素）"
+      },
+      {
+        "question": "True or False. The list items in ordered lists will be marked with small black circles by default.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists3",
+        "prompt_zh": "True or False：有序清單預設用小黑圓點",
+        "answer_zh": "False（有序清單預設用數字；黑圓點是無序清單）"
+      }
+    ],
+    "lists_ordered": [
+      {
+        "question": "What is the correct HTML attribute to use when defining the type of the list item marker of ordered lists?",
+        "options": [
+          "<code>list-style</code>",
+          "<code>list-type</code>",
+          "<code>marker-type</code>",
+          "<code>type</code>"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_ordered1",
+        "prompt_zh": "定義有序清單項目標記類型的正確 HTML 屬性是？",
+        "answer_zh": "type"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_ordered2",
+        "prompt_zh": "有序清單填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_ordered3",
+        "prompt_zh": "有序清單填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_ordered4",
+        "prompt_zh": "有序清單填空題"
+      }
+    ],
+    "lists_other": [
+      {
+        "question": "What is the correct tag name for a description list?",
+        "options": [
+          "<code>&lt;dl&gt;</code>",
+          "<code>&lt;list&gt;</code>",
+          "<code>&lt;definition&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_other1",
+        "prompt_zh": "description list 的正確標籤名稱是？",
+        "answer_zh": "<dl>"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists6.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_other2",
+        "prompt_zh": "description list 填空題"
+      },
+      {
+        "question": "What is the correct tag name for describing the term of a definition list?",
+        "options": [
+          "<code>&lt;dd&gt;</code>",
+          "<code>&lt;dt&gt;</code>",
+          "<code>&lt;tt&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_other3",
+        "prompt_zh": "描述定義清單中項目的正確標籤是？",
+        "answer_zh": "<dd>"
+      }
+    ],
+    "lists_unordered": [
+      {
+        "question": "What is the correct CSS property to use when defining the style of a list marker of unordered lists?",
+        "options": [
+          "<code>list-style-type</code>",
+          "<code>style-type-list</code>",
+          "<code>type-list-style</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_unordered1",
+        "prompt_zh": "定義無序清單標記樣式的正確 CSS 屬性是？",
+        "answer_zh": "list-style-type"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_unordered2",
+        "prompt_zh": "無序清單填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_unordered3",
+        "prompt_zh": "無序清單填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_lists7.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_lists_unordered4",
+        "prompt_zh": "無序清單填空題"
+      }
+    ],
+    "page_title": [
+      {
+        "question": "In which HTML element is the page title defined?",
+        "options": [
+          "The <code class='w3-codespan'>&lt;title&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;body&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;link&gt;</code> element",
+          "The <code class='w3-codespan'>&lt;page&gt;</code> element"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_page_title1",
+        "prompt_zh": "頁面 title 在哪個 HTML 元素中定義？",
+        "answer_zh": "<title> 元素"
+      },
+      {
+        "question": "Consider this web page:<br><img style='width600px;max-width:100%' src='title_example.png'><br>What is the page's title?",
+        "options": [
+          "Welcome",
+          "homepage",
+          "The best in town"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_page_title2",
+        "prompt_zh": "這個網頁的 title 是？",
+        "answer_zh": "Welcome"
+      },
+      {
+        "question": "True or False. A page should only have one <code>title</code> element.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_page_title3",
+        "prompt_zh": "True or False：一頁應該只有一個 title 元素",
+        "answer_zh": "True"
+      }
+    ],
+    "paragraphs": [
+      {
+        "question": "True or False. HTML paragraphs always starts on a new line.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs1",
+        "prompt_zh": "True or False：HTML 段落總是另起新行",
+        "answer_zh": "True"
+      },
+      {
+        "fillintheblanks": "exercise_html_paragraphs1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs2",
+        "prompt_zh": "段落填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_paragraphs2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs3",
+        "prompt_zh": "段落填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_paragraphs3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs4",
+        "prompt_zh": "段落填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_paragraphs4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs5",
+        "prompt_zh": "段落填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_paragraphs5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_paragraphs6",
+        "prompt_zh": "段落填空題"
+      }
+    ],
+    "quotation_elements": [
+      {
+        "question": "Which of the following is NOT a quotation element (in fact, not an HTML element at all)?",
+        "options": [
+          "<code>&lt;q&gt;</code>",
+          "<code>&lt;quote&gt;</code>",
+          "<code>&lt;blockquote&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_quotation_elements1",
+        "prompt_zh": "下列哪個不是引用元素（事實上根本不是 HTML 元素）？",
+        "answer_zh": "<quote>（沒這個元素）"
+      },
+      {
+        "fillintheblanks": "exercise_html_quotation_elements1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_quotation_elements2",
+        "prompt_zh": "引用元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_quotation_elements2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_quotation_elements3",
+        "prompt_zh": "引用元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_quotation_elements3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_quotation_elements4",
+        "prompt_zh": "引用元素填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_quotation_elements4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_quotation_elements5",
+        "prompt_zh": "引用元素填空題"
+      }
+    ],
+    "responsive": [
+      {
+        "question": "There is a CSS font size unit that sizes text in percent of the viewport, what unit is that?",
+        "options": [
+          "<code>px</code>",
+          "<code>em</code>",
+          "<code>vw</code>",
+          "<code>vp</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_responsive1",
+        "prompt_zh": "哪個 CSS 字型大小單位以視窗寬度百分比為基準？",
+        "answer_zh": "vw（viewport width）"
+      },
+      {
+        "question": "What is a correct syntax for specifying a CSS Media Query?",
+        "options": [
+          "<code>@media screen and (max-width: 800px) {}</code>",
+          "<code>#media screen and (max-width: 800px) {}</code>",
+          "<code>$media screen and (max-width: 800px) {}</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_responsive2",
+        "prompt_zh": "指定 CSS Media Query 的正確語法是？",
+        "answer_zh": "@media screen and (max-width: 800px) {}"
+      },
+      {
+        "question": "True or False. If you set the width of an image to 100%<br><code class='w3-codespan'>style='width:100%'</code><br> the image will never be larger than it's original size",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_responsive3",
+        "prompt_zh": "True or False：圖片寬度設 100% 後永遠不會超過原圖大小",
+        "answer_zh": "False（會放大；要避免要加 max-width）"
+      }
+    ],
+    "scripts": [
+      {
+        "question": "In which HTML element do we put JavaScripts?",
+        "options": [
+          "<code>&lt;java&gt;</code>",
+          "<code>&lt;javascript&gt;</code>",
+          "<code>&lt;script&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_scripts1",
+        "prompt_zh": "JavaScript 放在哪個 HTML 元素內？",
+        "answer_zh": "<script>"
+      },
+      {
+        "fillintheblanks": "exercise_html_scripts1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_scripts2",
+        "prompt_zh": "scripts 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_scripts2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_scripts3",
+        "prompt_zh": "scripts 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_scripts3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_scripts4",
+        "prompt_zh": "scripts 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_scripts4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_scripts5",
+        "prompt_zh": "scripts 填空題"
+      }
+    ],
+    "semantic_elements": [
+      {
+        "question": "Which one of the following is NOT an HTML element?",
+        "options": [
+          "<code>&lt;header&gt;</code>",
+          "<code>&lt;footer&gt;</code>",
+          "<code>&lt;content&gt;</code>",
+          "<code>&lt;main&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_semantic_elements1",
+        "prompt_zh": "下列哪個不是 HTML 元素？",
+        "answer_zh": "<content>（沒這個語意元素）"
+      },
+      {
+        "question": "Which one of these HTML elements is meant for navigation?",
+        "options": [
+          "<code>&lt;nav&gt;</code>",
+          "<code>&lt;article&gt;</code>",
+          "<code>&lt;figure&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_semantic_elements2",
+        "prompt_zh": "下列哪個 HTML 元素為導覽用途？",
+        "answer_zh": "<nav>"
+      },
+      {
+        "question": "True or False. Content in the <code class='w3-codespan'>footer</code> element is not visible in the browser.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_semantic_elements3",
+        "prompt_zh": "True or False：footer 元素中的內容在瀏覽器看不到",
+        "answer_zh": "False（看得到）"
+      }
+    ],
+    "styles": [
+      {
+        "question": "What is a correct way to add a background color to an HTML document?",
+        "options": [
+          "<code>&lt;body style='background-color:pink;'&gt;</code>",
+          "<code>&lt;body background-color='pink;'&gt;</code>",
+          "<code>&lt;body style='bgcolor:pink;'&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles1",
+        "prompt_zh": "為 HTML 文件加背景顏色的正確方式是？",
+        "answer_zh": "<body style='background-color:pink;'>"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles2",
+        "prompt_zh": "styles 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles3",
+        "prompt_zh": "styles 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles4",
+        "prompt_zh": "styles 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles5",
+        "prompt_zh": "styles 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles6",
+        "prompt_zh": "styles 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_styles6.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_styles7",
+        "prompt_zh": "styles 填空題"
+      }
+    ],
+    "table_borders": [
+      {
+        "question": "What is the correct CSS property for styling the border of a table?",
+        "options": [
+          "<code>table-border</code>",
+          "<code>table-style</code>",
+          "<code>border</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_borders1",
+        "prompt_zh": "設定表格邊框樣式的正確 CSS 屬性是？",
+        "answer_zh": "border"
+      },
+      {
+        "question": "<style>.table1,.table1 td,.table2,.table2 td {border: 1px solid #ffffff;margin:auto;} .table2,.table2 td{border-collapse:collapse;}</style>What is the correct CSS code to turn this table:<br><table class='table1' style='width:30%;'><tbody><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><br>into this table:<br><table class='table2' style='width:30%;'><tbody><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>?",
+        "options": [
+          "<code>border-span: single;</code>",
+          "<code>border-collapse: collapse;</code>",
+          "<code>border-implode: implode;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_borders2",
+        "prompt_zh": "讓表格邊框合併（不重複）的 CSS 屬性？",
+        "answer_zh": "border-collapse: collapse;"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables2.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_borders3",
+        "prompt_zh": "表格邊框填空題"
+      }
+    ],
+    "table_colspan_rowspan": [
+      {
+        "question": "What is the correct HTML attribute for specifying how many rows a cell should span?",
+        "options": [
+          "<code>span</code>",
+          "<code>rowspan</code>",
+          "<code>spanning</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_colspan_rowspan1",
+        "prompt_zh": "指定儲存格跨幾列的正確 HTML 屬性是？",
+        "answer_zh": "rowspan"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables6.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_colspan_rowspan2",
+        "prompt_zh": "colspan/rowspan 填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables7.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_colspan_rowspan3",
+        "prompt_zh": "colspan/rowspan 填空題"
+      }
+    ],
+    "table_headers": [
+      {
+        "question": "What is the correct tag name for a table-header in HTML?",
+        "options": [
+          "<code>&lt;table-header&gt;</code>",
+          "<code>&lt;td&gt;</code>",
+          "<code>&lt;th&gt;</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_headers1",
+        "prompt_zh": "HTML 表格表頭的正確標籤名稱是？",
+        "answer_zh": "<th>"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables1.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_headers2",
+        "prompt_zh": "表格表頭填空題"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables4.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_headers3",
+        "prompt_zh": "表格表頭填空題"
+      }
+    ],
+    "table_padding_spacing": [
+      {
+        "question": "What is the correct CSS property for styling the padding inside table cells?",
+        "options": [
+          "<code>padding</code>",
+          "<code>table-padding</code>",
+          "<code>cell-padding</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_padding_spacing1",
+        "prompt_zh": "設定表格儲存格內距樣式的正確 CSS 屬性是？",
+        "answer_zh": "padding"
+      },
+      {
+        "question": "What is the correct CSS property for styling the space between the table cells?",
+        "options": [
+          "<code>spacing</code>",
+          "<code>table-spacing</code>",
+          "<code>border-spacing</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_padding_spacing2",
+        "prompt_zh": "設定儲存格之間間距的正確 CSS 屬性是？",
+        "answer_zh": "border-spacing"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables5.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_padding_spacing3",
+        "prompt_zh": "表格 padding/spacing 填空題"
+      }
+    ],
+    "table_sizes": [
+      {
+        "question": "What is the correct CSS property for styling the width of a table?",
+        "options": [
+          "<code>size</code>",
+          "<code>table-size</code>",
+          "<code>width</code>"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_sizes1",
+        "prompt_zh": "設定表格寬度的正確 CSS 屬性是？",
+        "answer_zh": "width"
+      },
+      {
+        "question": "True or False. To specify a table width, you are only allowed to use percentages as a value.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_sizes2",
+        "prompt_zh": "True or False：指定表格寬度只能用百分比",
+        "answer_zh": "False（也可用 px、em 等）"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables3.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_table_sizes3",
+        "prompt_zh": "表格大小填空題"
+      }
+    ],
+    "tables": [
+      {
+        "question": "What is the correct tag name for a table-cell in HTML?",
+        "options": [
+          "<code>&lt;tc&gt;</code>",
+          "<code>&lt;td&gt;</code>",
+          "<code>&lt;tr&gt;</code>"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_tables1",
+        "prompt_zh": "HTML 表格儲存格的正確標籤名稱是？",
+        "answer_zh": "<td>"
+      },
+      {
+        "question": "What is the correct tag name for a table-row in HTML?",
+        "options": [
+          "<code>&lt;tr&gt;</code>",
+          "<code>&lt;td&gt;</code>",
+          "<code>&lt;th&gt;</code>"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_tables2",
+        "prompt_zh": "HTML 表格列的正確標籤名稱是？",
+        "answer_zh": "<tr>"
+      },
+      {
+        "fillintheblanks": "exercise_html_tables8.htm",
+        "url": "https://www.w3schools.com/html/exercise.asp?x=xrcise_tables3",
+        "prompt_zh": "表格填空題"
+      }
+    ]
+  }
+}

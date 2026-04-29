@@ -1,0 +1,1181 @@
+{
+  "test": "NODEJS",
+  "total": 25,
+  "questions": [
+    {
+      "number": 1,
+      "question": "How do you include the HTTP module in a Node.js file?",
+      "options": [
+        {
+          "value": 1,
+          "text": "import http module from 'http module'"
+        },
+        {
+          "value": 2,
+          "text": "const http = require('http')"
+        },
+        {
+          "value": 3,
+          "text": "include http;"
+        },
+        {
+          "value": 4,
+          "text": "using http;"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "如何在 Node.js 檔案中引入 HTTP 模組？",
+      "options_translations": [
+        {
+          "text_en": "import http module from 'http module'",
+          "text_zh": "從 'http module' 匯入 http 模組",
+          "correct": false
+        },
+        {
+          "text_en": "const http = require('http')",
+          "text_zh": "用 require 載入 http",
+          "correct": true
+        },
+        {
+          "text_en": "include http;",
+          "text_zh": "此語法在 Node.js 不存在",
+          "correct": false
+        },
+        {
+          "text_en": "using http;",
+          "text_zh": "此語法在 Node.js 不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "question": "Which method is used to create an HTTP server in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "http.createServer()"
+        },
+        {
+          "value": 2,
+          "text": "http.newServer()"
+        },
+        {
+          "value": 3,
+          "text": "http.server()"
+        },
+        {
+          "value": 4,
+          "text": "http.startServer()"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中用哪個方法建立 HTTP 伺服器？",
+      "options_translations": [
+        {
+          "text_en": "http.createServer()",
+          "text_zh": null,
+          "correct": true
+        },
+        {
+          "text_en": "http.newServer()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "http.server()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "http.startServer()",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "question": "Which method is used to read a file synchronously in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "fs.readFile()"
+        },
+        {
+          "value": 2,
+          "text": "fs.readFileSync()"
+        },
+        {
+          "value": 3,
+          "text": "fs.read()"
+        },
+        {
+          "value": 4,
+          "text": "fs.readAsync()"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中哪個方法用來同步讀取檔案？",
+      "options_translations": [
+        {
+          "text_en": "fs.readFile()",
+          "text_zh": "非同步讀取",
+          "correct": false
+        },
+        {
+          "text_en": "fs.readFileSync()",
+          "text_zh": "同步讀取",
+          "correct": true
+        },
+        {
+          "text_en": "fs.read()",
+          "text_zh": "低階讀取（需傳檔案描述子）",
+          "correct": false
+        },
+        {
+          "text_en": "fs.readAsync()",
+          "text_zh": "此方法不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "question": "Which of the following is NOT a valid HTTP method in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "GET"
+        },
+        {
+          "value": 2,
+          "text": "POST"
+        },
+        {
+          "value": 3,
+          "text": "DELETE"
+        },
+        {
+          "value": 4,
+          "text": "UPDATE"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "下列哪個不是 Node.js 中合法的 HTTP 方法？",
+      "options_translations": [
+        {
+          "text_en": "GET",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "POST",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "DELETE",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "UPDATE",
+          "text_zh": "沒有 UPDATE，更新用 PUT 或 PATCH",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "question": "How do you access query parameters in an Express.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "req.query"
+        },
+        {
+          "value": 2,
+          "text": "req.params"
+        },
+        {
+          "value": 3,
+          "text": "req.body"
+        },
+        {
+          "value": 4,
+          "text": "req.param"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Express.js 中如何存取 query parameters？",
+      "options_translations": [
+        {
+          "text_en": "req.query",
+          "text_zh": "對應講義「讀取 GET 的 query 資料」",
+          "correct": true
+        },
+        {
+          "text_en": "req.params",
+          "text_zh": "路徑參數，例如 /users/:id",
+          "correct": false
+        },
+        {
+          "text_en": "req.body",
+          "text_zh": "POST body",
+          "correct": false
+        },
+        {
+          "text_en": "req.param",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "question": "What is the purpose of the package.json file in a Node.js project?",
+      "options": [
+        {
+          "value": 1,
+          "text": "It contains the main application code"
+        },
+        {
+          "value": 2,
+          "text": "It contains metadata about the project and its dependencies"
+        },
+        {
+          "value": 3,
+          "text": "It is required to run JavaScript files"
+        },
+        {
+          "value": 4,
+          "text": "It stores database configurations"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 專案中 package.json 的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "It contains the main application code",
+          "text_zh": "包含主要應用程式碼",
+          "correct": false
+        },
+        {
+          "text_en": "It contains metadata about the project and its dependencies",
+          "text_zh": "包含專案 metadata 與相依套件",
+          "correct": true
+        },
+        {
+          "text_en": "It is required to run JavaScript files",
+          "text_zh": "執行 JavaScript 檔案所必需",
+          "correct": false
+        },
+        {
+          "text_en": "It stores database configurations",
+          "text_zh": "儲存資料庫設定",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "question": "Which command is used to install all dependencies listed in package.json?",
+      "options": [
+        {
+          "value": 1,
+          "text": "npm install"
+        },
+        {
+          "value": 2,
+          "text": "npm init"
+        },
+        {
+          "value": 3,
+          "text": "npm update"
+        },
+        {
+          "value": 4,
+          "text": "npm start"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "哪個指令用來安裝 package.json 列出的所有相依套件？",
+      "options_translations": [
+        {
+          "text_en": "npm install",
+          "text_zh": "對應講義「安裝 module」",
+          "correct": true
+        },
+        {
+          "text_en": "npm init",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "npm update",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "npm start",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "question": "What is the purpose of the node_modules folder?",
+      "options": [
+        {
+          "value": 1,
+          "text": "It contains the Node.js source code"
+        },
+        {
+          "value": 2,
+          "text": "It stores user configuration files"
+        },
+        {
+          "value": 3,
+          "text": "It contains all the installed dependencies"
+        },
+        {
+          "value": 4,
+          "text": "It holds temporary files"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "node_modules 資料夾的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "It contains the Node.js source code",
+          "text_zh": "包含 Node.js 原始碼",
+          "correct": false
+        },
+        {
+          "text_en": "It stores user configuration files",
+          "text_zh": "儲存使用者設定檔",
+          "correct": false
+        },
+        {
+          "text_en": "It contains all the installed dependencies",
+          "text_zh": "包含所有已安裝的相依套件",
+          "correct": true
+        },
+        {
+          "text_en": "It holds temporary files",
+          "text_zh": "儲存暫存檔",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "question": "Which method is used to parse JSON data in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "JSON.encode()"
+        },
+        {
+          "value": 2,
+          "text": "JSON.parse()"
+        },
+        {
+          "value": 3,
+          "text": "JSON.stringify()"
+        },
+        {
+          "value": 4,
+          "text": "JSON.decode()"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "哪個方法用於解析 Node.js 中的 JSON 資料？",
+      "options_translations": [
+        {
+          "text_en": "JSON.encode()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "JSON.parse()",
+          "text_zh": null,
+          "correct": true
+        },
+        {
+          "text_en": "JSON.stringify()",
+          "text_zh": "反向：物件轉字串",
+          "correct": false
+        },
+        {
+          "text_en": "JSON.decode()",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "question": "Which module would you use to work with file paths in a cross-platform way?",
+      "options": [
+        {
+          "value": 1,
+          "text": "fs"
+        },
+        {
+          "value": 2,
+          "text": "os"
+        },
+        {
+          "value": 3,
+          "text": "url"
+        },
+        {
+          "value": 4,
+          "text": "path"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "哪個模組可以跨平台處理檔案路徑？",
+      "options_translations": [
+        {
+          "text_en": "fs",
+          "text_zh": "檔案系統，但不專門處理路徑",
+          "correct": false
+        },
+        {
+          "text_en": "os",
+          "text_zh": "作業系統資訊",
+          "correct": false
+        },
+        {
+          "text_en": "url",
+          "text_zh": "URL 解析",
+          "correct": false
+        },
+        {
+          "text_en": "path",
+          "text_zh": "路徑處理（path.join、path.resolve 等）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "question": "What is the purpose of the require() function in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To include CSS files"
+        },
+        {
+          "value": 2,
+          "text": "To include modules that exist in separate files"
+        },
+        {
+          "value": 3,
+          "text": "To make HTTP requests"
+        },
+        {
+          "value": 4,
+          "text": "To validate user input"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中 require() 函式的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To include CSS files",
+          "text_zh": "引入 CSS 檔案",
+          "correct": false
+        },
+        {
+          "text_en": "To include modules that exist in separate files",
+          "text_zh": "引入存在獨立檔案中的模組",
+          "correct": true
+        },
+        {
+          "text_en": "To make HTTP requests",
+          "text_zh": "發送 HTTP 請求",
+          "correct": false
+        },
+        {
+          "text_en": "To validate user input",
+          "text_zh": "驗證使用者輸入",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "question": "Which method is used to handle GET requests in Express.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "app.post()"
+        },
+        {
+          "value": 2,
+          "text": "app.put()"
+        },
+        {
+          "value": 3,
+          "text": "app.delete()"
+        },
+        {
+          "value": 4,
+          "text": "app.get()"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Express.js 中哪個方法用於處理 GET 請求？",
+      "options_translations": [
+        {
+          "text_en": "app.post()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "app.put()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "app.delete()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "app.get()",
+          "text_zh": "對應講義「express 基本路由」",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "question": "What is the purpose of the crypto module in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To provide cryptographic functionality"
+        },
+        {
+          "value": 2,
+          "text": "To handle database connections"
+        },
+        {
+          "value": 3,
+          "text": "To manage file uploads"
+        },
+        {
+          "value": 4,
+          "text": "To validate user input"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中 crypto 模組的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To provide cryptographic functionality",
+          "text_zh": "提供加密功能",
+          "correct": true
+        },
+        {
+          "text_en": "To handle database connections",
+          "text_zh": "處理資料庫連線",
+          "correct": false
+        },
+        {
+          "text_en": "To manage file uploads",
+          "text_zh": "管理檔案上傳",
+          "correct": false
+        },
+        {
+          "text_en": "To validate user input",
+          "text_zh": "驗證使用者輸入",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "question": "What is the purpose of the path.join() method in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To split a path into segments"
+        },
+        {
+          "value": 2,
+          "text": "To join multiple path segments into a single path"
+        },
+        {
+          "value": 3,
+          "text": "To get the file extension from a path"
+        },
+        {
+          "value": 4,
+          "text": "To resolve a path to an absolute path"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中 path.join() 方法的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To split a path into segments",
+          "text_zh": "把路徑切成片段（應該用 path.parse）",
+          "correct": false
+        },
+        {
+          "text_en": "To join multiple path segments into a single path",
+          "text_zh": "把多個路徑片段合併成單一路徑",
+          "correct": true
+        },
+        {
+          "text_en": "To get the file extension from a path",
+          "text_zh": "取得副檔名（應該用 path.extname）",
+          "correct": false
+        },
+        {
+          "text_en": "To resolve a path to an absolute path",
+          "text_zh": "轉成絕對路徑（應該用 path.resolve）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "question": "Which of the following is NOT a valid way to read environment variables in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "process.env.VARIABLE_NAME"
+        },
+        {
+          "value": 2,
+          "text": "process.env['VARIABLE_NAME']"
+        },
+        {
+          "value": 3,
+          "text": "process.getEnv('VARIABLE_NAME')"
+        },
+        {
+          "value": 4,
+          "text": "const { VARIABLE_NAME } = process.env"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "下列哪個不是 Node.js 中讀取環境變數的合法方式？",
+      "options_translations": [
+        {
+          "text_en": "process.env.VARIABLE_NAME",
+          "text_zh": "點記法，合法",
+          "correct": false
+        },
+        {
+          "text_en": "process.env['VARIABLE_NAME']",
+          "text_zh": "中括號記法，合法",
+          "correct": false
+        },
+        {
+          "text_en": "process.getEnv('VARIABLE_NAME')",
+          "text_zh": "此方法不存在",
+          "correct": true
+        },
+        {
+          "text_en": "const { VARIABLE_NAME } = process.env",
+          "text_zh": "解構賦值，合法",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "question": "What is the purpose of the util.promisify() method in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To convert callback-based functions to Promises"
+        },
+        {
+          "value": 2,
+          "text": "To validate function parameters"
+        },
+        {
+          "value": 3,
+          "text": "To measure function execution time"
+        },
+        {
+          "value": 4,
+          "text": "To create utility functions"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中 util.promisify() 方法的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To convert callback-based functions to Promises",
+          "text_zh": "把 callback 風格的函式轉成 Promise",
+          "correct": true
+        },
+        {
+          "text_en": "To validate function parameters",
+          "text_zh": "驗證函式參數",
+          "correct": false
+        },
+        {
+          "text_en": "To measure function execution time",
+          "text_zh": "測量函式執行時間",
+          "correct": false
+        },
+        {
+          "text_en": "To create utility functions",
+          "text_zh": "建立工具函式",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "question": "Which module would you use to create a child process in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "process"
+        },
+        {
+          "value": 2,
+          "text": "os"
+        },
+        {
+          "value": 3,
+          "text": "http"
+        },
+        {
+          "value": 4,
+          "text": "child_process"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中要建立子行程會用哪個模組？",
+      "options_translations": [
+        {
+          "text_en": "process",
+          "text_zh": "目前行程資訊（不是建立新行程）",
+          "correct": false
+        },
+        {
+          "text_en": "os",
+          "text_zh": "作業系統資訊",
+          "correct": false
+        },
+        {
+          "text_en": "http",
+          "text_zh": "HTTP 伺服器/客戶端",
+          "correct": false
+        },
+        {
+          "text_en": "child_process",
+          "text_zh": "子行程模組（spawn、exec、fork 等）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "question": "What is the purpose of the events module in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To handle HTTP requests and responses"
+        },
+        {
+          "value": 2,
+          "text": "To handle and create custom events"
+        },
+        {
+          "value": 3,
+          "text": "To manage database connections"
+        },
+        {
+          "value": 4,
+          "text": "To work with the file system"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 中 events 模組的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To handle HTTP requests and responses",
+          "text_zh": "處理 HTTP 請求/回應（那是 http 模組）",
+          "correct": false
+        },
+        {
+          "text_en": "To handle and create custom events",
+          "text_zh": "處理與建立自訂事件（EventEmitter）",
+          "correct": true
+        },
+        {
+          "text_en": "To manage database connections",
+          "text_zh": "管理資料庫連線",
+          "correct": false
+        },
+        {
+          "text_en": "To work with the file system",
+          "text_zh": "操作檔案系統（那是 fs 模組）",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "question": "Which method is used to read environment variables from a .env file?",
+      "options": [
+        {
+          "value": 1,
+          "text": "process.loadEnv()"
+        },
+        {
+          "value": 2,
+          "text": "process.env.load()"
+        },
+        {
+          "value": 3,
+          "text": "require('dotenv').config()"
+        },
+        {
+          "value": 4,
+          "text": "process.config()"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "哪個方法用來從 .env 檔讀取環境變數？",
+      "options_translations": [
+        {
+          "text_en": "process.loadEnv()",
+          "text_zh": "此方法不存在",
+          "correct": false
+        },
+        {
+          "text_en": "process.env.load()",
+          "text_zh": "此方法不存在",
+          "correct": false
+        },
+        {
+          "text_en": "require('dotenv').config()",
+          "text_zh": "用 dotenv 套件載入 .env 檔",
+          "correct": true
+        },
+        {
+          "text_en": "process.config()",
+          "text_zh": "此方法不存在",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "question": "Which of the following is NOT a valid stream event in Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "data"
+        },
+        {
+          "value": 2,
+          "text": "end"
+        },
+        {
+          "value": 3,
+          "text": "error"
+        },
+        {
+          "value": 4,
+          "text": "complete"
+        }
+      ],
+      "correct": 4,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "下列哪個不是 Node.js 中合法的 stream 事件？",
+      "options_translations": [
+        {
+          "text_en": "data",
+          "text_zh": "資料可讀事件，合法",
+          "correct": false
+        },
+        {
+          "text_en": "end",
+          "text_zh": "讀取結束事件，合法",
+          "correct": false
+        },
+        {
+          "text_en": "error",
+          "text_zh": "錯誤事件，合法",
+          "correct": false
+        },
+        {
+          "text_en": "complete",
+          "text_zh": "此事件不存在（應該用 end 或 finish）",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "question": "Which method is used to redirect a response in Express.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "res.forward()"
+        },
+        {
+          "value": 2,
+          "text": "res.to()"
+        },
+        {
+          "value": 3,
+          "text": "res.redirect()"
+        },
+        {
+          "value": 4,
+          "text": "res.go()"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Express.js 中哪個方法用於重新導向回應？",
+      "options_translations": [
+        {
+          "text_en": "res.forward()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "res.to()",
+          "text_zh": null,
+          "correct": false
+        },
+        {
+          "text_en": "res.redirect()",
+          "text_zh": null,
+          "correct": true
+        },
+        {
+          "text_en": "res.go()",
+          "text_zh": null,
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 22,
+      "question": "What is the purpose of the app.use() method in Express.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "To mount middleware functions"
+        },
+        {
+          "value": 2,
+          "text": "To define route handlers"
+        },
+        {
+          "value": 3,
+          "text": "To send responses"
+        },
+        {
+          "value": 4,
+          "text": "To handle errors"
+        }
+      ],
+      "correct": null,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Express.js 中 app.use() 方法的用途是什麼？",
+      "options_translations": [
+        {
+          "text_en": "To mount middleware functions",
+          "text_zh": "掛載中介軟體函式（對應講義「express.json()」）",
+          "correct": true
+        },
+        {
+          "text_en": "To define route handlers",
+          "text_zh": "定義路由處理函式",
+          "correct": false
+        },
+        {
+          "text_en": "To send responses",
+          "text_zh": "送出回應",
+          "correct": false
+        },
+        {
+          "text_en": "To handle errors",
+          "text_zh": "處理錯誤",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "question": "Which of the following best describes the architecture of Node.js?",
+      "options": [
+        {
+          "value": 1,
+          "text": "Single-threaded, event-driven"
+        },
+        {
+          "value": 2,
+          "text": "Multi-threaded, user-driven"
+        },
+        {
+          "value": 3,
+          "text": "Multi-threaded, event-driven"
+        },
+        {
+          "value": 4,
+          "text": "Single-threaded, session-driven"
+        }
+      ],
+      "correct": 1,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "下列哪個最能描述 Node.js 的架構？",
+      "options_translations": [
+        {
+          "text_en": "Single-threaded, event-driven",
+          "text_zh": "單執行緒、事件驅動",
+          "correct": true
+        },
+        {
+          "text_en": "Multi-threaded, user-driven",
+          "text_zh": "多執行緒、使用者驅動",
+          "correct": false
+        },
+        {
+          "text_en": "Multi-threaded, event-driven",
+          "text_zh": "多執行緒、事件驅動",
+          "correct": false
+        },
+        {
+          "text_en": "Single-threaded, session-driven",
+          "text_zh": "單執行緒、session 驅動",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 24,
+      "question": "The Node.js Event Loop is responsible for making Node.js:",
+      "options": [
+        {
+          "value": 1,
+          "text": "Synchronous and blocking"
+        },
+        {
+          "value": 2,
+          "text": "Non-blocking and efficient"
+        },
+        {
+          "value": 3,
+          "text": "Inefficient and slow"
+        },
+        {
+          "value": 4,
+          "text": "Asynchronous but slow"
+        }
+      ],
+      "correct": 2,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "Node.js 的 Event Loop 讓 Node.js 變得：",
+      "options_translations": [
+        {
+          "text_en": "Synchronous and blocking",
+          "text_zh": "同步且阻塞",
+          "correct": false
+        },
+        {
+          "text_en": "Non-blocking and efficient",
+          "text_zh": "非阻塞且高效",
+          "correct": true
+        },
+        {
+          "text_en": "Inefficient and slow",
+          "text_zh": "低效且慢",
+          "correct": false
+        },
+        {
+          "text_en": "Asynchronous but slow",
+          "text_zh": "非同步但慢",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "number": 25,
+      "question": "NPM is a",
+      "options": [
+        {
+          "value": 1,
+          "text": "Programming language"
+        },
+        {
+          "value": 2,
+          "text": "Web development framework"
+        },
+        {
+          "value": 3,
+          "text": "Package Manager"
+        },
+        {
+          "value": 4,
+          "text": "Database system"
+        }
+      ],
+      "correct": 3,
+      "url": "https://www.w3schools.com/quiztest/quiztest.asp?qtest=NODEJS",
+      "prompt_zh": "NPM 是：",
+      "options_translations": [
+        {
+          "text_en": "Programming language",
+          "text_zh": "程式語言",
+          "correct": false
+        },
+        {
+          "text_en": "Web development framework",
+          "text_zh": "網頁開發框架",
+          "correct": false
+        },
+        {
+          "text_en": "Package Manager",
+          "text_zh": "套件管理器（Node Package Manager）",
+          "correct": true
+        },
+        {
+          "text_en": "Database system",
+          "text_zh": "資料庫系統",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

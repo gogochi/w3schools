@@ -1,0 +1,1449 @@
+{
+  "language": "git",
+  "topics": {
+    "amend": [
+      {
+        "draganddroptext": "<code>git commit ___ -m \"Updated index\"</code>",
+        "draganddropquestion": "Drag and drop the correct option to amend the previous commit with a new message.",
+        "options": [
+          "--fixup",
+          "--amend",
+          "--soft",
+          "--reset"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_amend1",
+        "prompt_zh": "拖放正確選項，用新訊息修改前一個 commit"
+      },
+      {
+        "question": "What does 'git commit --amend' do?",
+        "options": [
+          "Creates a new commit that undoes the previous one.",
+          "Modifies the most recent commit, combining staged changes and/or changing the message.",
+          "Deletes the last commit permanently.",
+          "Pushes changes to the remote repository."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_amend2",
+        "prompt_zh": "git commit --amend 做什麼？",
+        "answer_zh": "修改最近一個 commit，可合併 staged 變更或更新訊息"
+      }
+    ],
+    "bestpractices": [
+      {
+        "draganddroptext": "<code>git ___</code>",
+        "draganddropquestion": "Drag and drop the command to run before <code>git push</code> to avoid conflicts.",
+        "options": [
+          "status",
+          "add",
+          "commit",
+          "pull"
+        ],
+        "correct": [
+          3
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_bestpractices1",
+        "prompt_zh": "拖放在 git push 前該執行的指令以避免衝突"
+      },
+      {
+        "question": "Why should you write clear commit messages?",
+        "options": [
+          "To help you and your team understand the project history.",
+          "Because Git requires it.",
+          "It makes the repository smaller.",
+          "It increases commit speed."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_bestpractices2",
+        "prompt_zh": "為什麼要寫清楚的 commit 訊息？",
+        "answer_zh": "幫助自己與團隊理解專案歷史"
+      },
+      {
+        "question": "Which file should you use to prevent tracking of build artifacts, logs, and secrets?",
+        "options": [
+          "README.md",
+          ".gitignore",
+          "main.py",
+          "LICENSE"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_bestpractices3",
+        "prompt_zh": "哪個檔案用來避免追蹤 build 產物、log、機密？",
+        "answer_zh": ".gitignore"
+      }
+    ],
+    "branch": [
+      {
+        "question": "Which command switches to an existing branch?",
+        "options": [
+          "git checkout branch-name",
+          "git branch branch-name",
+          "git merge branch-name",
+          "git add branch-name"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch1",
+        "prompt_zh": "哪個指令切換到既有分支？",
+        "answer_zh": "git checkout branch-name"
+      },
+      {
+        "draganddroptext": "<code>git ___ hello-world-images</code>",
+        "draganddropquestion": "Drag and drop the correct command to create a new branch called hello-world-images.",
+        "options": [
+          "branch",
+          "checkout",
+          "switch",
+          "merge"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch2",
+        "prompt_zh": "拖放正確指令以建立名為 hello-world-images 的新分支"
+      },
+      {
+        "fillintheblanks": "exercise_branch1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch3",
+        "prompt_zh": "分支相關填空題"
+      }
+    ],
+    "branch_merge": [
+      {
+        "draganddroptext": "<code>git ___ hello-you</code>",
+        "draganddropquestion": "Drag and drop the correct command to merge the hello-you branch into the current branch.",
+        "options": [
+          "branch",
+          "checkout",
+          "merge",
+          "commit"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_merge1",
+        "prompt_zh": "拖放正確指令把 hello-you 分支合併進當前分支"
+      },
+      {
+        "fillintheblanks": "exercise_branch_merge1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_merge2",
+        "prompt_zh": "分支合併填空題"
+      },
+      {
+        "question": "Which command aborts a merge in progress?",
+        "options": [
+          "git merge --no-ff",
+          "git merge --abort",
+          "git merge --squash",
+          "git abort merge"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_merge3",
+        "prompt_zh": "哪個指令中止進行中的合併？",
+        "answer_zh": "git merge --abort"
+      },
+      {
+        "question": "What does a merge conflict mean?",
+        "options": [
+          "There are incompatible changes in both branches that must be resolved manually.",
+          "The merge was successful and no further action is needed.",
+          "A branch was deleted during the merge.",
+          "The repository is corrupted."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_merge4",
+        "prompt_zh": "merge conflict 是什麼意思？",
+        "answer_zh": "兩個分支有不相容的變更需要手動解決"
+      }
+    ],
+    "branch_pull_from_remote": [
+      {
+        "question": "Which command lists all local and remote branches?",
+        "options": [
+          "git branch -r",
+          "git branch -a",
+          "git branch",
+          "git show-branch"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_pull_from_remote1",
+        "prompt_zh": "哪個指令列出所有本地與遠端分支？",
+        "answer_zh": "git branch -a"
+      },
+      {
+        "draganddroptext": "<code>git ___ branch-name</code>",
+        "draganddropquestion": "Drag and drop the correct command to switch to a remote branch after fetching or pulling.",
+        "options": [
+          "checkout",
+          "merge",
+          "clone",
+          "pull"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_pull_from_remote2",
+        "prompt_zh": "拖放在 fetch 或 pull 後切換到遠端分支的指令"
+      },
+      {
+        "question": "After switching to a new remote branch, which command updates it with the latest changes?",
+        "options": [
+          "git branch",
+          "git status",
+          "git pull",
+          "git fetch"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_pull_from_remote3",
+        "prompt_zh": "切換到新遠端分支後，哪個指令更新最新變更？",
+        "answer_zh": "git pull"
+      },
+      {
+        "fillintheblanks": "exercise_branch_pull_from_remote1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_pull_from_remote4",
+        "prompt_zh": "從遠端拉取分支填空題"
+      }
+    ],
+    "branch_push_to_remote": [
+      {
+        "question": "Which command will push your current branch to the remote named 'origin'?",
+        "options": [
+          "git push origin",
+          "git push --tags",
+          "git push origin --delete branch-name",
+          "git branch -d branch-name"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_push_to_remote1",
+        "prompt_zh": "哪個指令把當前分支推送到名為 'origin' 的遠端？",
+        "answer_zh": "git push origin"
+      },
+      {
+        "fillintheblanks": "exercise_branch_push_to_remote1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_push_to_remote2",
+        "prompt_zh": "推送分支到遠端的填空題"
+      },
+      {
+        "draganddroptext": "<code>git push ___ origin</code>",
+        "draganddropquestion": "Drag and drop the correct option to push all local branches to the remote 'origin'.",
+        "options": [
+          "--branches",
+          "--feature",
+          "--all",
+          "--push"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_branch_push_to_remote3",
+        "prompt_zh": "拖放正確選項把所有本地分支推送到 'origin'"
+      }
+    ],
+    "cherrypick_patch": [
+      {
+        "draganddroptext": "<code>git cherry-pick ___</code>",
+        "draganddropquestion": "Drag and drop the correct argument to add a line to the commit message showing where the commit came from.",
+        "options": [
+          "-x",
+          "--no-commit",
+          "--from"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cherrypick_patch1",
+        "prompt_zh": "拖放正確參數，在 commit 訊息中加上來源 commit 的資訊"
+      },
+      {
+        "fillintheblanks": "exercise_cherrypick1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cherrypick_patch2",
+        "prompt_zh": "cherry-pick 填空題"
+      },
+      {
+        "question": "What does git format-patch do?",
+        "options": [
+          "Applies a patch to your branch",
+          "Creates a patch file from one or more commits",
+          "Copies a commit from another branch",
+          "Deletes a commit"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cherrypick_patch3",
+        "prompt_zh": "git format-patch 做什麼？",
+        "answer_zh": "從一個或多個 commit 產生 patch 檔"
+      }
+    ],
+    "cicd": [
+      {
+        "draganddroptext": "<code>on: [___]</code>",
+        "draganddropquestion": "Drag and drop the correct event to trigger a CI/CD workflow on every code push.",
+        "options": [
+          "pull_request",
+          "push",
+          "merge"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cicd1",
+        "prompt_zh": "拖放每次 push 程式時觸發 CI/CD 工作流的事件名稱"
+      },
+      {
+        "fillintheblanks": "exercise_cicd1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cicd2",
+        "prompt_zh": "CI/CD 設定填空題"
+      },
+      {
+        "question": "Which file tells GitHub Actions how to run CI for your project?",
+        "options": [
+          ".gitlab-ci.yml",
+          ".travis.yml",
+          ".github/workflows/ci.yml",
+          "azure-pipelines.yml"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_cicd3",
+        "prompt_zh": "哪個檔案告訴 GitHub Actions 如何跑專案的 CI？",
+        "answer_zh": ".github/workflows/ci.yml"
+      }
+    ],
+    "clone": [
+      {
+        "draganddroptext": "<code>git ___ https://example.com/repo.git</code>",
+        "draganddropquestion": "Drag and drop the correct command to clone a repository to your computer.",
+        "options": [
+          "get",
+          "clone",
+          "init",
+          "fork"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_clone1",
+        "prompt_zh": "拖放正確指令把儲存庫複製到電腦"
+      },
+      {
+        "fillintheblanks": "exercise_clone1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_clone2",
+        "prompt_zh": "clone 指令填空題"
+      },
+      {
+        "question": "What does the 'git clone' command do?",
+        "options": [
+          "Creates a new empty repository",
+          "Copies a remote repository to your local machine",
+          "Deletes a remote repository",
+          "Uploads your code to GitHub"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_clone3",
+        "prompt_zh": "git clone 指令做什麼？",
+        "answer_zh": "把遠端儲存庫複製到本地"
+      }
+    ],
+    "commit": [
+      {
+        "draganddroptext": "<code>git commit ___ \"Initial commit\"</code>",
+        "draganddropquestion": "Drag and drop the correct flag to add a commit message.",
+        "options": [
+          "-a",
+          "-m",
+          "-s"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_commit1",
+        "prompt_zh": "拖放加入 commit 訊息的正確 flag"
+      },
+      {
+        "fillintheblanks": "exercise_commit1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_commit2",
+        "prompt_zh": "commit 填空題"
+      },
+      {
+        "question": "What does a Git commit do?",
+        "options": [
+          "Deletes files from the repository.",
+          "Saves a snapshot of your project with a message.",
+          "Uploads files to GitHub.",
+          "Resets your project to a previous state."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_commit3",
+        "prompt_zh": "Git commit 做什麼？",
+        "answer_zh": "以訊息儲存專案的快照"
+      },
+      {
+        "fillintheblanks": "exercise_commit2.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_commit4",
+        "prompt_zh": "commit 進階填空題"
+      }
+    ],
+    "config": [
+      {
+        "draganddroptext": "<code>git config --___ user.name \"Your Name\"</code>",
+        "draganddropquestion": "Drag and drop the correct code to set your Git user name globally.",
+        "options": [
+          "global",
+          "local",
+          "system"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_config1",
+        "prompt_zh": "拖放全域設定 Git 使用者名稱的正確程式碼"
+      },
+      {
+        "fillintheblanks": "exercise_config1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_config2",
+        "prompt_zh": "config 填空題"
+      },
+      {
+        "question": "Which command lists all your Git configuration settings?",
+        "options": [
+          "git config --all",
+          "git config --list",
+          "git list config",
+          "git show config"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_config3",
+        "prompt_zh": "哪個指令列出所有 Git 設定？",
+        "answer_zh": "git config --list"
+      }
+    ],
+    "getstarted": [
+      {
+        "draganddroptext": "<code>___ myproject</code>",
+        "draganddropquestion": "Drag and drop the correct command to change into your new project directory.",
+        "options": [
+          "cd",
+          "rm",
+          "ls"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_getstarted1",
+        "prompt_zh": "拖放切換到新專案目錄的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_getstarted1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_getstarted2",
+        "prompt_zh": "開始使用填空題"
+      },
+      {
+        "question": "What is a Git repository?",
+        "options": [
+          "A place to Get Good in.",
+          "A Cloud Storage Device.",
+          "A file that Git deletes.",
+          "A folder that Git tracks for changes."
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_getstarted3",
+        "prompt_zh": "Git 儲存庫是什麼？",
+        "answer_zh": "Git 追蹤變更的資料夾"
+      }
+    ],
+    "gitattributes": [
+      {
+        "draganddroptext": "<code>*.png ___</code>",
+        "draganddropquestion": "Drag and drop the correct keyword to mark all PNG files as binary in .gitattributes.",
+        "options": [
+          "binary",
+          "text",
+          "filter=lfs"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_gitattributes1",
+        "prompt_zh": "拖放在 .gitattributes 中標記所有 PNG 為 binary 的關鍵字"
+      },
+      {
+        "fillintheblanks": "exercise_gitattributes1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_gitattributes2",
+        "prompt_zh": "gitattributes 填空題"
+      },
+      {
+        "question": "What is one common use for .gitattributes?",
+        "options": [
+          "To specify which files to ignore in the repository",
+          "To set file handling rules like line endings, binary/text, or custom diff",
+          "To store large files outside the repository",
+          "To save commit messages"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_gitattributes3",
+        "prompt_zh": ".gitattributes 的常見用途之一是？",
+        "answer_zh": "設定檔案處理規則（換行符、二進位/文字、自訂 diff 等）"
+      }
+    ],
+    "help": [
+      {
+        "draganddroptext": "<code>git ___ status</code>",
+        "draganddropquestion": "Drag and drop the correct flag to show help for the status command.",
+        "options": [
+          "help",
+          "status",
+          "commit",
+          "branch"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_help1",
+        "prompt_zh": "拖放顯示 status 指令說明的正確 flag"
+      },
+      {
+        "fillintheblanks": "exercise_help1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_help2",
+        "prompt_zh": "help 填空題"
+      },
+      {
+        "question": "Which command shows a quick summary of options for <code>git commit</code>?",
+        "options": [
+          "git commit -h",
+          "git c-help",
+          "git com -help",
+          "git help --all"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_help3",
+        "prompt_zh": "哪個指令快速顯示 git commit 的選項摘要？",
+        "answer_zh": "git commit -h"
+      }
+    ],
+    "history": [
+      {
+        "draganddroptext": "<code>git log ___</code>",
+        "draganddropquestion": "Drag and drop the correct flag to show a summary of all commits.",
+        "options": [
+          "--oneline",
+          "--stat",
+          "--graph"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_history1",
+        "prompt_zh": "拖放顯示所有 commit 摘要的正確 flag"
+      },
+      {
+        "fillintheblanks": "exercise_history1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_history2",
+        "prompt_zh": "history 填空題"
+      },
+      {
+        "question": "Which command shows only commits from the last week?",
+        "options": [
+          "git log --since=\"1 week ago\"",
+          "git log --stat",
+          "git show HEAD",
+          "git log --graph"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_history3",
+        "prompt_zh": "哪個指令只顯示最近一週的 commit？",
+        "answer_zh": "git log --since=\"1 week ago\""
+      }
+    ],
+    "hooks": [
+      {
+        "draganddroptext": "<code>#!/bin/sh\n___ -r 'console.log' *.js</code>",
+        "draganddropquestion": "Drag and drop the correct command to search for \"console.log\" in all .js files in a pre-commit hook.",
+        "options": [
+          "ls",
+          "grep",
+          "chmod"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_hooks1",
+        "prompt_zh": "拖放在 pre-commit hook 中搜尋所有 .js 檔內 \"console.log\" 的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_hooks1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_hooks2",
+        "prompt_zh": "hooks 填空題"
+      },
+      {
+        "question": "Which hook runs before you make a commit and can be used to check code style?",
+        "options": [
+          "pre-commit",
+          "commit-msg",
+          "pre-push",
+          "pre-receive"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_hooks3",
+        "prompt_zh": "哪個 hook 在 commit 前執行，可用來檢查程式風格？",
+        "answer_zh": "pre-commit"
+      }
+    ],
+    "ignore": [
+      {
+        "draganddroptext": "<code>___</code>",
+        "draganddropquestion": "Drag and drop the correct code to ignore all .log files in .gitignore.",
+        "options": [
+          "*.log",
+          "!important.log",
+          "log.txt"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_ignore1",
+        "prompt_zh": "拖放在 .gitignore 忽略所有 .log 檔案的正確程式碼"
+      },
+      {
+        "fillintheblanks": "exercise_ignore1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_ignore2",
+        "prompt_zh": "ignore 填空題"
+      },
+      {
+        "question": "Which pattern will ignore all files with the .tmp extension in .gitignore?",
+        "options": [
+          "tmp.*",
+          "/tmp/",
+          "*.tmp",
+          "!*.tmp"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_ignore3",
+        "prompt_zh": "在 .gitignore 中哪個 pattern 會忽略所有 .tmp 副檔名檔案？",
+        "answer_zh": "*.tmp"
+      }
+    ],
+    "install": [
+      {
+        "draganddroptext": "<code>git --___;</code>",
+        "draganddropquestion": "Drag and drop the correct code to check your installed Git version.",
+        "options": [
+          "version",
+          "install",
+          "help"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_install1",
+        "prompt_zh": "拖放檢查已安裝 Git 版本的正確程式碼"
+      },
+      {
+        "fillintheblanks": "exercise_install1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_install2",
+        "prompt_zh": "install 填空題"
+      },
+      {
+        "question": "Which command installs Git on Ubuntu?",
+        "options": [
+          "git install ubuntu",
+          "appstore install git",
+          "sudo apt-get install git",
+          "install get"
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_install3",
+        "prompt_zh": "哪個指令在 Ubuntu 上安裝 Git？",
+        "answer_zh": "sudo apt-get install git"
+      }
+    ],
+    "lfs": [
+      {
+        "draganddroptext": "<code>git lfs ___</code>",
+        "draganddropquestion": "Drag and drop the correct command to initialize Git LFS in your repository.",
+        "options": [
+          "track",
+          "install",
+          "pull"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_lfs1",
+        "prompt_zh": "拖放在儲存庫初始化 Git LFS 的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_lfs1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_lfs2",
+        "prompt_zh": "LFS 填空題"
+      },
+      {
+        "question": "What does Git LFS do?",
+        "options": [
+          "Stores large files directly in your Git repository",
+          "Stores pointers in your repo and large files on a separate server",
+          "Compresses all files in your repo",
+          "Deletes large files from your repo"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_lfs3",
+        "prompt_zh": "Git LFS 做什麼？",
+        "answer_zh": "在儲存庫存指標、把大檔放在另外的伺服器"
+      }
+    ],
+    "merge_conflicts": [
+      {
+        "draganddroptext": "<code>git checkout ___ filename.txt</code>",
+        "draganddropquestion": "Drag and drop the correct argument to keep only the other branch's changes during a conflict.",
+        "options": [
+          "--ours",
+          "--theirs",
+          "--both"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_merge_conflicts1",
+        "prompt_zh": "拖放在衝突中只保留另一分支變更的正確參數"
+      },
+      {
+        "fillintheblanks": "exercise_mergeconflict1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_merge_conflicts2",
+        "prompt_zh": "合併衝突填空題"
+      },
+      {
+        "question": "Which command shows you which files have merge conflicts?",
+        "options": [
+          "git log",
+          "git status",
+          "git commit",
+          "git branch"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_merge_conflicts3",
+        "prompt_zh": "哪個指令顯示有合併衝突的檔案？",
+        "answer_zh": "git status"
+      }
+    ],
+    "new_files": [
+      {
+        "draganddroptext": "<code>___ index.html</code>",
+        "draganddropquestion": "Drag and drop the correct command to list files in your project directory.",
+        "options": [
+          "ls",
+          "cat",
+          "git"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_new_files1",
+        "prompt_zh": "拖放列出專案目錄中檔案的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_new_files1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_new_files2",
+        "prompt_zh": "新檔案填空題"
+      },
+      {
+        "question": "What does it mean if a file is <strong>untracked</strong> in Git?",
+        "options": [
+          "It is being tracked for changes by Git.",
+          "It has been staged and committed.",
+          "Git does not know about this file yet.",
+          "It is ignored by Git."
+        ],
+        "correct": 2,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_new_files3",
+        "prompt_zh": "檔案在 Git 中是 untracked 代表什麼？",
+        "answer_zh": "Git 還不認識這個檔案"
+      }
+    ],
+    "pull_from_remote": [
+      {
+        "question": "Which command downloads new data from a remote repository but does NOT change your working files or branches?",
+        "options": [
+          "git fetch",
+          "git pull",
+          "git clone",
+          "git merge"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_pull_from_remote1",
+        "prompt_zh": "哪個指令從遠端下載新資料但不變動工作檔案或分支？",
+        "answer_zh": "git fetch"
+      },
+      {
+        "fillintheblanks": "exercise_pull_from_remote1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_pull_from_remote2",
+        "prompt_zh": "從遠端拉取填空題"
+      },
+      {
+        "draganddroptext": "<code>git pull ___</code>",
+        "draganddropquestion": "Drag and drop the correct remote name to pull changes from the default remote repository.",
+        "options": [
+          "origin",
+          "main",
+          "master",
+          "remote"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_pull_from_remote3",
+        "prompt_zh": "拖放從預設遠端拉取變更的正確 remote 名稱"
+      },
+      {
+        "fillintheblanks": "exercise_pull_from_remote2.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_pull_from_remote4",
+        "prompt_zh": "從遠端拉取進階填空題"
+      }
+    ],
+    "push_to_remote": [
+      {
+        "draganddroptext": "<code>git ___ origin</code>",
+        "draganddropquestion": "Drag and drop the correct command to upload local commits to the remote repository.",
+        "options": [
+          "commit",
+          "send",
+          "push"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_push_to_remote1",
+        "prompt_zh": "拖放把本地 commit 上傳到遠端的正確指令"
+      },
+      {
+        "question": "Which action is always required before you can push new changes to a remote repository?",
+        "options": [
+          "Make and commit changes",
+          "Fetch from remote",
+          "Check out a new branch",
+          "Tag a commit"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_push_to_remote2",
+        "prompt_zh": "在 push 新變更到遠端前，必須做什麼？",
+        "answer_zh": "先做變更並 commit"
+      },
+      {
+        "fillintheblanks": "exercise_push_to_remote1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_push_to_remote3",
+        "prompt_zh": "推送到遠端填空題"
+      }
+    ],
+    "rebase": [
+      {
+        "draganddroptext": "<code>git rebase ___</code>",
+        "draganddropquestion": "Drag and drop the correct option to continue a rebase after resolving conflicts.",
+        "options": [
+          "--abort",
+          "--continue",
+          "--skip",
+          "--interactive"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_rebase1",
+        "prompt_zh": "拖放解決衝突後繼續 rebase 的正確選項"
+      },
+      {
+        "fillintheblanks": "exercise_rebase1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_rebase2",
+        "prompt_zh": "rebase 填空題"
+      },
+      {
+        "question": "What does 'git rebase -i' do?",
+        "options": [
+          "Starts an interactive rebase to edit, reorder, squash, or fix up commits.",
+          "Aborts the current rebase.",
+          "Skips the current commit during a rebase.",
+          "Pushes all rebased commits to the remote repository."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_rebase3",
+        "prompt_zh": "git rebase -i 做什麼？",
+        "answer_zh": "啟動互動式 rebase 來編輯、重排、squash、修正 commit"
+      }
+    ],
+    "recovery": [
+      {
+        "draganddroptext": "<code>git ___</code>",
+        "draganddropquestion": "Drag and drop the correct option to show the reflog and recover lost commits.",
+        "options": [
+          "restore",
+          "reflog",
+          "commit",
+          "branch"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_recovery1",
+        "prompt_zh": "拖放顯示 reflog 並恢復遺失 commit 的正確選項"
+      },
+      {
+        "fillintheblanks": "exercise_recovery1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_recovery2",
+        "prompt_zh": "恢復填空題"
+      },
+      {
+        "question": "Which command can you use to recover a deleted or changed file from the latest commit?",
+        "options": [
+          "git restore filename.txt",
+          "git reflog filename.txt",
+          "git checkout filename.txt",
+          "git reset --hard filename.txt"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_recovery3",
+        "prompt_zh": "哪個指令可從最新 commit 恢復被刪除或變更的檔案？",
+        "answer_zh": "git restore filename.txt"
+      },
+      {
+        "fillintheblanks": "exercise_recovery2.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_recovery4",
+        "prompt_zh": "恢復進階填空題"
+      }
+    ],
+    "reflog": [
+      {
+        "draganddroptext": "<code>git ___</code>",
+        "draganddropquestion": "Drag and drop the correct option to show the log of reference updates (HEAD and branch changes).",
+        "options": [
+          "--all",
+          "reset",
+          "expire",
+          "reflog"
+        ],
+        "correct": [
+          3
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reflog1",
+        "prompt_zh": "拖放顯示 reference 更新（HEAD 與分支變動）log 的正確選項"
+      },
+      {
+        "fillintheblanks": "exercise_reflog1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reflog2",
+        "prompt_zh": "reflog 填空題"
+      },
+      {
+        "question": "What is the purpose of 'git reflog'?",
+        "options": [
+          "To show the log of reference updates (HEAD and branch changes)",
+          "To delete all commits in the repository",
+          "To merge two branches together",
+          "To push changes to the remote repository"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reflog3",
+        "prompt_zh": "git reflog 的用途是？",
+        "answer_zh": "顯示 reference 更新（HEAD 與分支變動）的 log"
+      }
+    ],
+    "remote_advanced": [
+      {
+        "draganddroptext": "<code>git remote ___ upstream https://github.com/w3schools/test.git</code>",
+        "draganddropquestion": "Drag and drop the correct command to add a new remote named upstream.",
+        "options": [
+          "add",
+          "remove",
+          "show"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_advanced1",
+        "prompt_zh": "拖放新增名為 upstream 的遠端的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_remote_advanced1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_advanced2",
+        "prompt_zh": "遠端進階填空題"
+      },
+      {
+        "question": "Which command lists all remotes and their URLs?",
+        "options": [
+          "git remote show",
+          "git remote -v",
+          "git remote add",
+          "git fetch"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_advanced3",
+        "prompt_zh": "哪個指令列出所有遠端與其 URL？",
+        "answer_zh": "git remote -v"
+      }
+    ],
+    "remote_branch": [
+      {
+        "draganddroptext": "<code>git ___ branch-name</code>",
+        "draganddropquestion": "Drag and drop the correct command to switch to a branch called 'branch-name'.",
+        "options": [
+          "switch",
+          "checkout",
+          "merge",
+          "pull"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_branch1",
+        "prompt_zh": "拖放切換到名為 'branch-name' 分支的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_remote_branch1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_branch2",
+        "prompt_zh": "遠端分支填空題"
+      },
+      {
+        "question": "Which command creates a new branch and switches to it?",
+        "options": [
+          "git branch branch-name",
+          "git switch -c branch-name",
+          "git merge branch-name",
+          "git tag branch-name"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_branch3",
+        "prompt_zh": "哪個指令建立新分支並切換到它？",
+        "answer_zh": "git switch -c branch-name"
+      },
+      {
+        "question": "How do you delete a branch named 'feature' locally?",
+        "options": [
+          "git branch -d feature",
+          "git delete feature",
+          "git remove branch feature",
+          "git branch --remove feature"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_branch4",
+        "prompt_zh": "如何在本地刪除名為 'feature' 的分支？",
+        "answer_zh": "git branch -d feature"
+      }
+    ],
+    "remote_send_pull_request": [
+      {
+        "draganddroptext": "<code>git push origin ___</code>",
+        "draganddropquestion": "Drag and drop the correct remote name to push the branch 'feature' to your remote origin.",
+        "options": [
+          "origin",
+          "main",
+          "remote",
+          "feature"
+        ],
+        "correct": [
+          3
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_send_pull_request1",
+        "prompt_zh": "拖放把 'feature' 分支推送到 origin 的正確 remote 名稱"
+      },
+      {
+        "fillintheblanks": "exercise_remote_send_pull_request1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_send_pull_request2",
+        "prompt_zh": "送出 pull request 填空題"
+      },
+      {
+        "question": "After pushing your changes to your fork, what is the next step to suggest your changes to the original repository?",
+        "options": [
+          "Create a pull/merge request",
+          "Delete your fork",
+          "Clone the original repository again",
+          "Change the default branch"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_remote_send_pull_request3",
+        "prompt_zh": "把變更 push 到自己的 fork 後，下一步是？",
+        "answer_zh": "建立 pull/merge request"
+      }
+    ],
+    "reset": [
+      {
+        "draganddroptext": "<code>git reset ___ abc1234</code>",
+        "draganddropquestion": "Drag and drop the correct option to reset to the commit with hash abc1234 and keep changes staged.",
+        "options": [
+          "--hard",
+          "--soft",
+          "--mixed",
+          "--abort"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reset1",
+        "prompt_zh": "拖放 reset 到 commit hash abc1234 並保留 staged 變更的正確選項"
+      },
+      {
+        "fillintheblanks": "exercise_reset1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reset2",
+        "prompt_zh": "reset 填空題"
+      },
+      {
+        "question": "What does 'git reset --hard' do?",
+        "options": [
+          "Moves HEAD to a commit and deletes all changes in the working directory and index.",
+          "Moves HEAD to a commit but keeps all changes staged.",
+          "Moves HEAD to a commit but keeps all changes in the working directory.",
+          "Unstages a file from the index."
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_reset3",
+        "prompt_zh": "git reset --hard 做什麼？",
+        "answer_zh": "把 HEAD 移到指定 commit 並刪除工作目錄與 index 中的所有變更"
+      }
+    ],
+    "revert": [
+      {
+        "draganddroptext": "<code>git ___ HEAD</code>",
+        "draganddropquestion": "Drag and drop the correct command to revert the latest commit.",
+        "options": [
+          "reset",
+          "revert",
+          "restore",
+          "remove"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_revert1",
+        "prompt_zh": "拖放 revert 最新 commit 的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_revert1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_revert2",
+        "prompt_zh": "revert 填空題"
+      },
+      {
+        "question": "What does 'git revert' do?",
+        "options": [
+          "Deletes the commit permanently from history.",
+          "Creates a new commit that undoes the changes of a previous commit.",
+          "Moves HEAD to a previous commit.",
+          "Removes all files from the repository."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_revert3",
+        "prompt_zh": "git revert 做什麼？",
+        "answer_zh": "建立一個新 commit 來撤銷前一個 commit 的變更"
+      }
+    ],
+    "security_ssh": [
+      {
+        "draganddroptext": "<code>___ -t rsa -b 4096 -C \"your@email.com\"</code>",
+        "draganddropquestion": "Drag and drop the correct algorithm to generate a new SSH key pair.",
+        "options": [
+          "ecdsa",
+          "ssh-keygen",
+          "generate",
+          "keymaster"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_security_ssh1",
+        "prompt_zh": "拖放產生新 SSH key pair 的正確演算法"
+      },
+      {
+        "question": "Which command adds your private SSH key to the SSH agent?",
+        "options": [
+          "ssh-add ~/.ssh/id_rsa",
+          "ssh-copy-id ~/.ssh/id_rsa",
+          "ssh -T git@github.com",
+          "chmod 600 ~/.ssh/id_rsa"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_security_ssh2",
+        "prompt_zh": "哪個指令把私鑰加到 SSH agent？",
+        "answer_zh": "ssh-add ~/.ssh/id_rsa"
+      },
+      {
+        "question": "What should you NEVER do with your private SSH key?",
+        "options": [
+          "Store it securely",
+          "Share it with anyone",
+          "Use a passphrase",
+          "Back it up in a safe place"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_security_ssh3",
+        "prompt_zh": "私鑰絕對不該做什麼？",
+        "answer_zh": "分享給任何人"
+      },
+      {
+        "question": "Which file do you add to your GitHub/Bitbucket/GitLab account for SSH access?",
+        "options": [
+          "The private key (e.g., id_rsa)",
+          "config file",
+          "authorized_keys",
+          "The public key (e.g., id_rsa.pub)"
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_security_ssh4",
+        "prompt_zh": "要在 GitHub/Bitbucket/GitLab 帳號加入哪個檔案以啟用 SSH 存取？",
+        "answer_zh": "公鑰（例如 id_rsa.pub）"
+      }
+    ],
+    "set_remote": [
+      {
+        "draganddroptext": "<code>git remote ___ origin git@github.com:username/repo.git</code>",
+        "draganddropquestion": "Drag and drop the correct subcommand to add a new remote.",
+        "options": [
+          "set-url",
+          "add",
+          "update",
+          "push"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_set_remote1",
+        "prompt_zh": "拖放新增遠端的正確子指令"
+      },
+      {
+        "question": "How do you update the URL for an existing remote named 'origin'?",
+        "options": [
+          "git remote set-url origin git@github.com:username/repo.git",
+          "git remote update-url origin git@github.com:username/repo.git",
+          "git remote edit origin git@github.com:username/repo.git",
+          "git remote change-url origin git@github.com:username/repo.git"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_set_remote2",
+        "prompt_zh": "如何更新名為 'origin' 的遠端 URL？",
+        "answer_zh": "git remote set-url origin git@github.com:username/repo.git"
+      },
+      {
+        "fillintheblanks": "exercise_set_remote1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_set_remote3",
+        "prompt_zh": "設定遠端填空題"
+      }
+    ],
+    "signing": [
+      {
+        "draganddroptext": "<code>git commit ___ -m \"message\"</code>",
+        "draganddropquestion": "Drag and drop the correct flag to sign a commit.",
+        "options": [
+          "-s",
+          "-S",
+          "-a"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_signing1",
+        "prompt_zh": "拖放簽署 commit 的正確 flag"
+      },
+      {
+        "fillintheblanks": "exercise_signing1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_signing2",
+        "prompt_zh": "簽署填空題"
+      },
+      {
+        "question": "What is the main purpose of signing a Git commit?",
+        "options": [
+          "To compress the commit data",
+          "To prove the commit was made by you and has not been tampered with",
+          "To add a comment to the commit",
+          "To encrypt the commit history"
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_signing3",
+        "prompt_zh": "簽署 Git commit 的主要目的是？",
+        "answer_zh": "證明 commit 由你發出且未被竄改"
+      }
+    ],
+    "staging_environment": [
+      {
+        "question": "What is the purpose of the staging area in Git?",
+        "options": [
+          "To permanently delete files.",
+          "To display files on a stage.",
+          "To store your project online.",
+          "To select which changes will go into the next commit."
+        ],
+        "correct": 3,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_staging_environment1",
+        "prompt_zh": "Git 中 staging 區的用途是？",
+        "answer_zh": "選擇哪些變更要進入下一次 commit"
+      },
+      {
+        "draganddroptext": "<code>git ___ index.html</code>",
+        "draganddropquestion": "Drag and drop the correct command to stage a file.",
+        "options": [
+          "file",
+          "add",
+          "stage"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_staging_environment2",
+        "prompt_zh": "拖放 stage 一個檔案的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_staging_environment1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_staging_environment3",
+        "prompt_zh": "staging 填空題"
+      }
+    ],
+    "stash": [
+      {
+        "draganddroptext": "<code>git stash ___</code>",
+        "draganddropquestion": "Drag and drop the correct command to apply and remove the most recent stash.",
+        "options": [
+          "apply",
+          "pop",
+          "clear"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_stash1",
+        "prompt_zh": "拖放套用並移除最新 stash 的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_stash1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_stash2",
+        "prompt_zh": "stash 填空題"
+      },
+      {
+        "question": "What does <code>git stash</code> do?",
+        "options": [
+          "Deletes your repository.",
+          "Saves your uncommitted changes for later.",
+          "Pushes your code to GitHub.",
+          "Resets your branch to main."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_stash3",
+        "prompt_zh": "git stash 做什麼？",
+        "answer_zh": "暫存未 commit 的變更供之後使用"
+      }
+    ],
+    "submodules": [
+      {
+        "draganddroptext": "<code>git submodule ___ https://github.com/example/library.git libs/library</code>",
+        "draganddropquestion": "Drag and drop the correct command to add a submodule to your project.",
+        "options": [
+          "add",
+          "update",
+          "remove"
+        ],
+        "correct": [
+          0
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_submodules1",
+        "prompt_zh": "拖放在專案加入 submodule 的正確指令"
+      },
+      {
+        "fillintheblanks": "exercise_submodules1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_submodules2",
+        "prompt_zh": "submodules 填空題"
+      },
+      {
+        "question": "Which file keeps track of all submodules and their paths in your repository?",
+        "options": [
+          ".gitmodules",
+          ".git/config",
+          "README.md",
+          ".submodules"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_submodules3",
+        "prompt_zh": "哪個檔案紀錄儲存庫所有 submodule 與其路徑？",
+        "answer_zh": ".gitmodules"
+      }
+    ],
+    "tagging": [
+      {
+        "draganddroptext": "<code>git tag ___ v1.0 -m \"Initial release\"</code>",
+        "draganddropquestion": "Drag and drop the correct flag to create an annotated tag with a message.",
+        "options": [
+          "-f",
+          "-d",
+          "-a"
+        ],
+        "correct": [
+          2
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_tagging1",
+        "prompt_zh": "拖放建立帶訊息的 annotated tag 的正確 flag"
+      },
+      {
+        "fillintheblanks": "exercise_tagging1.htm",
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_tagging2",
+        "prompt_zh": "tagging 填空題"
+      },
+      {
+        "question": "What is the main purpose of a Git tag?",
+        "options": [
+          "To delete files from the repository.",
+          "To mark important points or releases in the project history.",
+          "To merge branches.",
+          "To reset the repository to a previous state."
+        ],
+        "correct": 1,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_tagging3",
+        "prompt_zh": "Git tag 的主要用途是？",
+        "answer_zh": "標記專案歷史中的重要時間點或 release"
+      }
+    ],
+    "workflow": [
+      {
+        "draganddroptext": "<code>git ___ .</code>",
+        "draganddropquestion": "Drag and drop the correct command to move changes from the working directory to the staging area.",
+        "options": [
+          "commit",
+          "add",
+          "push",
+          "status"
+        ],
+        "correct": [
+          1
+        ],
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_workflow1",
+        "prompt_zh": "拖放把變更從 working directory 移到 staging area 的正確指令"
+      },
+      {
+        "question": "Which area in Git holds changes before they are committed?",
+        "options": [
+          "Staging Area (Index)",
+          "Working Directory",
+          "Remote Repository",
+          "Trash Bin"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_workflow2",
+        "prompt_zh": "Git 中哪個區域存放尚未 commit 的變更？",
+        "answer_zh": "Staging Area（Index）"
+      },
+      {
+        "question": "What command saves staged changes to your local repository?",
+        "options": [
+          "git commit",
+          "git push",
+          "git add",
+          "git status"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_workflow3",
+        "prompt_zh": "哪個指令把 staged 變更存到本地儲存庫？",
+        "answer_zh": "git commit"
+      },
+      {
+        "question": "Which command shows the current status of files in your working directory and staging area?",
+        "options": [
+          "git status",
+          "git log",
+          "git diff",
+          "git restore"
+        ],
+        "correct": 0,
+        "url": "https://www.w3schools.com/git/exercise.asp?x=xrcise_workflow4",
+        "prompt_zh": "哪個指令顯示工作目錄與 staging 區的當前狀態？",
+        "answer_zh": "git status"
+      }
+    ]
+  }
+}

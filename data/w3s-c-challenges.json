@@ -1,0 +1,1328 @@
+{
+  "language": "c",
+  "topics": {
+    "arrays": [
+      {
+        "id": "arrays",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare an <code class='w3-codespan'>int</code> array named <code class='w3-codespan'>numbers</code> with 5 elements</li><li style='margin-top:8px'>Set the first element (<code class='w3-codespan'>numbers[0]</code>) to <code class='w3-codespan'>10</code></li><li style='margin-top:8px'>Set the last element (<code class='w3-codespan'>numbers[4]</code>) to <code class='w3-codespan'>50</code></li><li style='margin-top:8px'>Print the first and last element using <code class='w3-codespan'>printf</code></li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // 1) Declare an int array named numbers with 5 elements\n\n  // 2) Set numbers[0] to 10\n  // 3) Set numbers[4] to 50\n\n  // 4) Print numbers[0]\n  // 5) Print numbers[4]\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int numbers[5];\n\n  numbers[0] = 10;\n  numbers[4] = 50;\n\n  printf(\"%d\\n\", numbers[0]);\n  printf(\"%d\\n\", numbers[4]);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declArray",
+            "label": "Declare: <code class='w3-codespan'>int numbers[5];</code>",
+            "pattern": "\\bint\\s+numbers\\s*\\[\\s*5\\s*\\]\\s*(?:;|=\\s*\\{[\\s\\S]*?\\}\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "setFirst",
+            "label": "Set <code class='w3-codespan'>numbers[0] = 10;</code>",
+            "pattern": "(?:\\bnumbers\\s*\\[\\s*0\\s*\\]\\s*=\\s*10\\s*;|\\bint\\s+numbers\\s*\\[\\s*5\\s*\\]\\s*=\\s*\\{\\s*10\\b[\\s\\S]*?\\}\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "setLast",
+            "label": "Set <code class='w3-codespan'>numbers[4] = 50;</code>",
+            "pattern": "(?:\\bnumbers\\s*\\[\\s*4\\s*\\]\\s*=\\s*50\\s*;|\\bint\\s+numbers\\s*\\[\\s*5\\s*\\]\\s*=\\s*\\{\\s*10\\s*,[\\s\\S]*?,\\s*50\\s*\\}\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printFirst",
+            "label": "Print <code class='w3-codespan'>numbers[0]</code> with <code class='w3-codespan'>printf</code>",
+            "pattern": "(?:printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*0\\s*\\]\\s*\\)*\\s*\\)\\s*;|printf\\s*\\(\\s*\"[^\"]*%(?:d|i)[^\"]*%(?:d|i)[^\"]*\"\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*0\\s*\\]\\s*\\)*\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*4\\s*\\]\\s*\\)*\\s*\\)\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printLast",
+            "label": "Print <code class='w3-codespan'>numbers[4]</code> with <code class='w3-codespan'>printf</code>",
+            "pattern": "(?:printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*4\\s*\\]\\s*\\)*\\s*\\)\\s*;|printf\\s*\\(\\s*\"[^\"]*%(?:d|i)[^\"]*%(?:d|i)[^\"]*\"\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*0\\s*\\]\\s*\\)*\\s*,\\s*\\(*\\s*numbers\\s*\\[\\s*4\\s*\\]\\s*\\)*\\s*\\)\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_arrays.php"
+      }
+    ],
+    "booleans": [
+      {
+        "id": "boolean",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare two <code class='w3-codespan'>int</code> variables named <code class='w3-codespan'>age</code> and <code class='w3-codespan'>minAge</code>, and assign them values</li><li style='margin-top:8px'>Use <code class='w3-codespan'>printf</code> to print the result of this comparison: <code class='w3-codespan'>age >= minAge</code></li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Declare and assign age\n  // Declare and assign minAge\n\n  // Print the result of: age >= minAge\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int age = 20;\n  int minAge = 18;\n\n  printf(\"%d\", age >= minAge);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\b\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declAge",
+            "label": "Declare <code class='w3-codespan'>int age</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bage\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignAge",
+            "label": "Assign a value to <code class='w3-codespan'>age</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bage\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bage\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declMinAge",
+            "label": "Declare <code class='w3-codespan'>int minAge</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bminAge\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignMinAge",
+            "label": "Assign a value to <code class='w3-codespan'>minAge</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bminAge\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bminAge\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printComparison",
+            "label": "Print <code class='w3-codespan'>age &gt;= minAge</code> with <code class='w3-codespan'>printf</code> and use <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(?\\s*(?:age\\s*>=\\s*minAge|minAge\\s*<=\\s*age)\\s*\\)?\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_booleans.php"
+      }
+    ],
+    "conditions": [
+      {
+        "id": "conditions",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare an <code class='w3-codespan'>int</code> variable named <code class='w3-codespan'>age</code> and assign it a value</li><li style='margin-top:8px'>Use an <code class='w3-codespan'>if</code> statement with the <code class='w3-codespan'>>=</code> operator to check if <code class='w3-codespan'>age</code> is 18 or older</li><li style='margin-top:8px'>If the condition is true, print <code class='w3-codespan'>Allowed</code></li><li style='margin-top:8px'>Otherwise, print <code class='w3-codespan'>Not allowed</code></li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write age here\n\n  // Write an if statement that checks if age >= 18\n  // If true, print \"Allowed\" inside the if block\n  // Write an else statement\n  // Inside the else block, print \"Not allowed\"\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int age = 20;\n\n  if (age >= 18) {\n    printf(\"Allowed\");\n  } else {\n    printf(\"Not allowed\");\n  }\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declaresAge",
+            "label": "Declare <code class='w3-codespan'>int age</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bage\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignsAge",
+            "label": "Assign a value to <code class='w3-codespan'>age</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bage\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bage\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasIfCondition",
+            "label": "Use <code class='w3-codespan'>if</code> with <code class='w3-codespan'>age >= 18</code>",
+            "pattern": "\\bif\\s*\\(\\s*\\(?\\s*(?:age\\s*>=\\s*18|18\\s*<=\\s*age)\\s*\\)?\\s*\\)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "validIfElseStructure",
+            "label": "Write a valid <code class='w3-codespan'>if</code>/<code class='w3-codespan'>else</code> statement",
+            "pattern": "\\bif\\b[\\s\\S]*?\\bprintf\\s*\\(\\s*\"\\s*Allowed\\s*(?:\\\\n)?\\s*\"\\s*\\)\\s*;[\\s\\S]*?\\belse\\b[\\s\\S]*?\\bprintf\\s*\\(\\s*\"\\s*Not allowed\\s*(?:\\\\n)?\\s*\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasElse",
+            "label": "Use <code class='w3-codespan'>else</code>",
+            "pattern": "\\belse\\b",
+            "flags": "",
+            "linePattern": "^\\s*\\}\\s*else\\s*\\{|^\\s*else\\b",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "printsAllowed",
+            "label": "Print <code class='w3-codespan'>\"Allowed\"</code>",
+            "pattern": "printf\\s*\\(\\s*\"\\s*Allowed\\s*(?:\\\\n)?\\s*\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printsNotAllowed",
+            "label": "Print <code class='w3-codespan'>\"Not allowed\"</code>",
+            "pattern": "printf\\s*\\(\\s*\"\\s*Not allowed\\s*(?:\\\\n)?\\s*\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_conditions.php"
+      }
+    ],
+    "data_types": [
+      {
+        "id": "types",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare an <code class='w3-codespan'>int</code> named <code class='w3-codespan'>studentID</code> and assign it a value</li><li style='margin-top:8px'>Declare a <code class='w3-codespan'>float</code> named <code class='w3-codespan'>score</code> and assign it a value (with decimals)</li><li style='margin-top:8px'>Declare a <code class='w3-codespan'>char</code> named <code class='w3-codespan'>grade</code> and assign it a single letter (in single quotes)</li><li style='margin-top:8px'>Print all three values using <code class='w3-codespan'>printf</code> (use the correct format specifiers).</li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write studentID here\n  // Write score here\n  // Write grade here\n\n  // Print studentID\n  // Print score\n  // Print grade\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int studentID = 1001;\n  float score = 92.5;\n  char grade = 'A';\n\n  printf(\"%d\\n\", studentID);\n  printf(\"%f\\n\", score);\n  printf(\"%c\\n\", grade);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declStudentID",
+            "label": "Declare <code class='w3-codespan'>int studentID</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bstudentID\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignStudentID",
+            "label": "Assign an integer value to <code class='w3-codespan'>studentID</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bstudentID\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bstudentID\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declScore",
+            "label": "Declare <code class='w3-codespan'>float score</code>",
+            "pattern": "\\bfloat\\b\\s+[^;\\n]*\\bscore\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignScore",
+            "label": "Assign a decimal value to <code class='w3-codespan'>score</code>",
+            "pattern": "(?:\\bfloat\\b\\s+[^;\\n]*\\bscore\\b\\s*=\\s*-?(?:(?:\\d+\\.\\d+)|(?:\\d+\\.)|(?:\\.\\d+))\\s*(?:[fF])?\\s*(?:,|;)|\\bscore\\s*=\\s*-?(?:(?:\\d+\\.\\d+)|(?:\\d+\\.)|(?:\\.\\d+))\\s*(?:[fF])?\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declGrade",
+            "label": "Declare <code class='w3-codespan'>char grade</code>",
+            "pattern": "\\bchar\\b\\s+[^;\\n]*\\bgrade\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignGrade",
+            "label": "Assign a letter to <code class='w3-codespan'>grade</code>",
+            "pattern": "(?:\\bchar\\b\\s+[^;\\n]*\\bgrade\\b\\s*=\\s*'[A-Za-z]'\\s*(?:,|;)|\\bgrade\\s*=\\s*'[A-Za-z]'\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printStudentID",
+            "label": "Print <code class='w3-codespan'>studentID</code> with <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*[^)]*\\(*\\s*\\bstudentID\\b\\s*\\)*[^)]*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printScore",
+            "label": "Print <code class='w3-codespan'>score</code> with <code class='w3-codespan'>%f</code> or <code class='w3-codespan'>%F</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:\\.\\d+)?[fF](?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*[^)]*\\(*\\s*\\bscore\\b\\s*\\)*[^)]*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printGrade",
+            "label": "Print <code class='w3-codespan'>grade</code> with <code class='w3-codespan'>%c</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%c(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*[^)]*\\(*\\s*\\bgrade\\b\\s*\\)*[^)]*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_data_types.php"
+      }
+    ],
+    "enums": [
+      {
+        "id": "enums",
+        "intro": "Complete the steps below (follow the order):<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Inside <code class='w3-codespan'>main()</code>, declare a variable of type <code class='w3-codespan'>enum Day</code> named <code class='w3-codespan'>today</code></li><li style='margin-top:8px'>Set <code class='w3-codespan'>today</code> to <code class='w3-codespan'>MON</code></li><li style='margin-top:8px'>Print <code class='w3-codespan'>today</code> using the correct format specifier</li></ol>",
+        "starter": "#include <stdio.h>\n\nenum Day { SUN, MON, TUE, WED, THU, FRI, SAT };\n\nint main() {\n  // 1) Declare the enum variable here\n  // 2) Set the value here\n  // 3) Print the value here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nenum Day { SUN, MON, TUE, WED, THU, FRI, SAT };\n\nint main() {\n  enum Day today;\n  today = MON;\n  printf(\"%d\", today);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "enumDayDefinition",
+            "label": "Define <code class='w3-codespan'>enum Day</code>",
+            "pattern": "\\benum\\s+Day\\s*\\{\\s*SUN\\s*\\,\\s*MON\\s*,\\s*TUE\\s*,\\s*WED\\s*,\\s*THU\\s*,\\s*FRI\\s*,\\s*SAT\\s*}\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "enumBeforeMain",
+            "label": "Define <code class='w3-codespan'>enum Day</code> before <code class='w3-codespan'>main()</code>",
+            "pattern": "\\benum\\s+Day\\s*\\{[\\s\\S]*?\\}\\s*;[\\s\\S]*?\\bint\\s+main\\s*\\(",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declareEnumVar",
+            "label": "Declare <code class='w3-codespan'>enum Day today</code>",
+            "pattern": "\\benum\\s+Day\\s+today\\s*(?:;|=\\s*\\(*\\s*MON\\s*\\)*\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignEnum",
+            "label": "Set <code class='w3-codespan'>today</code> to <code class='w3-codespan'>MON</code>",
+            "pattern": "(?:\\btoday\\s*=\\s*\\(*\\s*MON\\s*\\)*\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printEnum",
+            "label": "Print <code class='w3-codespan'>today</code> using <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*today\\s*\\)*\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_enums.php"
+      }
+    ],
+    "errors": [
+      {
+        "id": "errors_fix",
+        "intro": "The code in the editor has several errors and will not run.<br><br>Fix it by completing these steps:<br><ol style='margin:12px 0 0 18px;padding:0'><li style='margin-top:8px'>Add the missing semicolon after the variable declaration</li><li style='margin-top:8px'>Fix the <code class='w3-codespan'>printf()</code> line so it prints the value of <code class='w3-codespan'>myNum</code> instead of <code class='w3-codespan'>x</code></li><li style='margin-top:8px'>Make sure <code class='w3-codespan'>main()</code> ends with <code class='w3-codespan'>return 0;</code></li><li style='margin-top:8px'>Make sure the program ends with a closing <code class='w3-codespan'>}</code></li><br></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  int myNum = 5\n  printf(\"%d\", x);\n\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int myNum = 5;\n  printf(\"%d\", myNum);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "fixSemicolon",
+            "label": "Fix missing semicolon <code class='w3-codespan'>;</code>",
+            "pattern": "\\bint\\s+myNum\\s*=\\s*5\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "fixPrintfVar",
+            "label": "Print <code class='w3-codespan'>myNum</code> using <code class='w3-codespan'>%d</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%d(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*myNum\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_errors.php"
+      }
+    ],
+    "for_loop": [
+      {
+        "id": "for_loop",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare <code class='w3-codespan'>int i</code> (either before the loop or inside the <code class='w3-codespan'>for</code>)</li><li style='margin-top:8px'>Use a <code class='w3-codespan'>for</code> loop, and:</li><ul style='margin-top:8px;margin-left:-20px!important'><li style='margin-top:8px'>Set <code class='w3-codespan'>i = 1</code></li><li style='margin-top:8px'>Run the loop while <code class='w3-codespan'>i <= 5</code></li><li style='margin-top:8px'>Increase <code class='w3-codespan'>i</code> using <code class='w3-codespan'>i++</code></li><li style='margin-top:8px'>Inside the loop, print <code class='w3-codespan'>i</code> using the correct format specifier</li></ul></ol><br>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write the for loop here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int i;\n\n  for (i = 1; i <= 5; i++) {\n    printf(\"%d\\n\", i);\n  }\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasI",
+            "label": "Declare <code class='w3-codespan'>int i</code> (before the loop or inside the <code class='w3-codespan'>for</code> loop)",
+            "pattern": "(?:\\bint\\s+i\\s*(?:=\\s*[-]?\\d+\\s*)?;)|(?:\\bfor\\s*\\(\\s*int\\s+i\\s*=\\s*1\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "forLoop",
+            "label": "Use: <code class='w3-codespan'>for (int i = 1; i <= 5; i++)</code>",
+            "pattern": "\\bfor\\s*\\(\\s*(?:int\\s+)?i\\s*=\\s*1\\s*;\\s*i\\s*<=\\s*5\\s*;\\s*i\\s*\\+\\+\\s*\\)\\s*(?:\\{|\\S)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printI",
+            "label": "Print <code class='w3-codespan'>i</code> using <code class='w3-codespan'>printf</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*i\\s*\\)*\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "closeForBlock",
+            "label": "Place the loop before <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\bfor\\s*\\([\\s\\S]*?\\)[\\s\\S]*?\\bprintf\\s*\\([\\s\\S]*?\\)\\s*;[\\s\\S]*?\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_for_loop.php"
+      }
+    ],
+    "functions": [
+      {
+        "id": "functions",
+        "intro": "Complete the steps below (follow the order):<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Above <code class='w3-codespan'>main()</code>, declare a function named <code class='w3-codespan'>add</code> that returns an <code class='w3-codespan'>int</code> and takes two <code class='w3-codespan'>int</code> parameters named <code class='w3-codespan'>x</code> and <code class='w3-codespan'>y</code></li><li style='margin-top:8px'>Inside <code class='w3-codespan'>main()</code>, create an <code class='w3-codespan'>int</code> variable named <code class='w3-codespan'>result</code> and set it to <code class='w3-codespan'>add(5, 3)</code></li><li style='margin-top:8px'>Inside <code class='w3-codespan'>main()</code>, print <code class='w3-codespan'>result</code> using the correct format specifier</li><li style='margin-top:8px'>End <code class='w3-codespan'>main()</code> with <code class='w3-codespan'>return 0;</code></li><li style='margin-top:8px'>Below <code class='w3-codespan'>main()</code>, define the <code class='w3-codespan'>add</code> function using the same parameter names <code class='w3-codespan'>x</code> and <code class='w3-codespan'>y</code></li><li style='margin-top:8px'>Inside <code class='w3-codespan'>add</code>, return <code class='w3-codespan'>x + y</code></li><li style='margin-top:8px'>The result should be <code class='w3-codespan'>8</code>.<br></ol>",
+        "starter": "#include <stdio.h>\n\n// Write the function declaration here\n\nint main() {\n  // Call the function here\n  // Print the result here\n\n  // return 0;\n }\n\n// Write the function definition here\n",
+        "solution": "#include <stdio.h>\n\nint add(int x, int y);\n\nint main() {\n  int result = add(5, 3);\n  printf(\"%d\", result);\n\n  return 0;\n}\n\nint add(int x, int y) {\n  return x + y;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "funcDeclXY",
+            "label": "Declare <code class='w3-codespan'>add(int x, int y)</code>",
+            "pattern": "\\bint\\s+add\\s*\\(\\s*int\\s+x\\s*,\\s*int\\s+y\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declResult",
+            "label": "Declare <code class='w3-codespan'>int result</code>",
+            "pattern": "\\bint\\b\\s+(?:[^;\\n]*,\\s*)*\\bresult\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignResult",
+            "label": "Set <code class='w3-codespan'>result</code> to <code class='w3-codespan'>add(5, 3)</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bresult\\b\\s*=\\s*add\\s*\\(\\s*5\\s*,\\s*3\\s*\\)\\s*(?:,|;)|\\bresult\\s*=\\s*add\\s*\\(\\s*5\\s*,\\s*3\\s*\\)\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printResult",
+            "label": "Print <code class='w3-codespan'>result</code> using <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*result\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End <code class='w3-codespan'>main()</code> with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "closeMainBeforeFunction",
+            "label": "Close <code class='w3-codespan'>main()</code> before defining <code class='w3-codespan'>add()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*\\)\\s*\\{[\\s\\S]*?\\}[\\s\\S]*?\\bint\\s+add\\s*\\(",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "funcDefXY",
+            "label": "Define <code class='w3-codespan'>add(int x, int y)</code>",
+            "pattern": "\\bint\\s+add\\s*\\(\\s*int\\s+x\\s*,\\s*int\\s+y\\s*\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "returnXY",
+            "label": "Return <code class='w3-codespan'>x + y</code>",
+            "pattern": "\\breturn\\s*\\(*\\s*(?:x\\s*\\+\\s*y|y\\s*\\+\\s*x)\\s*\\)*\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_functions.php"
+      }
+    ],
+    "operators": [
+      {
+        "id": "operators",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare two <code class='w3-codespan'>int</code> variables named <code class='w3-codespan'>itemPrice</code> and <code class='w3-codespan'>shippingCost</code>, and assign them values</li><li style='margin-top:8px'>Create an <code class='w3-codespan'>int</code> variable named <code class='w3-codespan'>sum</code></li><li style='margin-top:8px'>Calculate the total cost by adding <code class='w3-codespan'>itemPrice</code> and <code class='w3-codespan'>shippingCost</code> (store the result in <code class='w3-codespan'>sum</code>)</li><li style='margin-top:8px'>Print the total cost using <code class='w3-codespan'>printf</code></li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write itemPrice here\n  // Write shippingCost here\n\n  // Write sum here (itemPrice + shippingCost)\n\n  // Print sum here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int itemPrice = 50;\n  int shippingCost = 15;\n\n  int sum = itemPrice + shippingCost;\n\n  printf(\"%d\", sum);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declItemPrice",
+            "label": "Declare <code class='w3-codespan'>int itemPrice</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bitemPrice\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignItemPrice",
+            "label": "Assign an integer value to <code class='w3-codespan'>itemPrice</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bitemPrice\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bitemPrice\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declShippingCost",
+            "label": "Declare <code class='w3-codespan'>int shippingCost</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bshippingCost\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignShippingCost",
+            "label": "Assign an integer value to <code class='w3-codespan'>shippingCost</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bshippingCost\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bshippingCost\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declSum",
+            "label": "Declare <code class='w3-codespan'>int sum</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bsum\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "calcSum",
+            "label": "Calculate <code class='w3-codespan'>sum</code> using <code class='w3-codespan'>itemPrice + shippingCost</code>",
+            "pattern": "(?:(?:\\bint\\b\\s+sum\\s*=\\s*)?\\(?\\s*(?:itemPrice\\s*\\+\\s*shippingCost|shippingCost\\s*\\+\\s*itemPrice)\\s*\\)?\\s*;|\\bsum\\s*=\\s*\\(?\\s*(?:itemPrice\\s*\\+\\s*shippingCost|shippingCost\\s*\\+\\s*itemPrice)\\s*\\)?\\s*;|\\bsum\\s*=\\s*itemPrice\\s*;[\\s\\S]*?\\bsum\\s*=\\s*sum\\s*\\+\\s*shippingCost\\s*;|\\bsum\\s*=\\s*shippingCost\\s*;[\\s\\S]*?\\bsum\\s*=\\s*sum\\s*\\+\\s*itemPrice\\s*;|\\bsum\\s*=\\s*itemPrice\\s*;[\\s\\S]*?\\bsum\\s*\\+=\\s*shippingCost\\s*;|\\bsum\\s*=\\s*shippingCost\\s*;[\\s\\S]*?\\bsum\\s*\\+=\\s*itemPrice\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printSum",
+            "label": "Print <code class='w3-codespan'>sum</code> with <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*sum\\s*\\)*\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_operators.php"
+      }
+    ],
+    "output": [
+      {
+        "id": "output",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Use one <code class='w3-codespan'>printf</code> to print <strong>Hello World!</strong> followed by a new line</li><li style='margin-top:8px'>Use another <code class='w3-codespan'>printf</code> to print <strong>I am learning C.</strong></li></ol><p><b>Note:</b> Remember to end a statement with semicolon.",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // 1) Print \"Hello World!\" with a new line\n  // 2) Print \"I am learning C.\"\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  printf(\"Hello World!\\n\");\n  printf(\"I am learning C.\");\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printHello",
+            "label": "Use <code class='w3-codespan'>printf</code> to output \"Hello World!\" with a new line (<code class='w3-codespan'>\\n</code>)",
+            "pattern": "printf\\s*\\(\\s*\"\\s*Hello\\s+World!?\\s*\\\\n\\s*\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printLearning",
+            "label": "Use another <code class='w3-codespan'>printf</code> to output \"I am learning C.\"",
+            "pattern": "printf\\s*\\(\\s*\"\\s*I\\s+am\\s+learning\\s+C\\.?\\s*(?:\\\\n\\s*)?\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_output.php"
+      }
+    ],
+    "pointers": [
+      {
+        "id": "pointers",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare an <code class='w3-codespan'>int</code> variable named <code class='w3-codespan'>x</code> and store <code class='w3-codespan'>10</code> in it</li><li style='margin-top:8px'>Declare a pointer named <code class='w3-codespan'>ptr</code> that points to <code class='w3-codespan'>x</code></li><li style='margin-top:8px'>Print the value of <code class='w3-codespan'>x</code> by dereferencing <code class='w3-codespan'>ptr</code></li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write your code here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int x = 10;\n  int* ptr = &x;\n\n  printf(\"%d\", *ptr);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declX",
+            "label": "Declare <code class='w3-codespan'>int x</code>",
+            "pattern": "\\bint\\s+x\\s*(?:;|=)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignX",
+            "label": "Store <code class='w3-codespan'>10</code> in <code class='w3-codespan'>x</code>",
+            "pattern": "\\bx\\s*=\\s*10\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declPtr",
+            "label": "Declare pointer <code class='w3-codespan'>ptr</code>",
+            "pattern": "\\bint\\s*\\*\\s*ptr\\s*(?:;|=)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignPtr",
+            "label": "Make <code class='w3-codespan'>ptr</code> point to <code class='w3-codespan'>x</code>",
+            "pattern": "\\bptr\\s*=\\s*&\\s*x\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printDeref",
+            "label": "Print <code class='w3-codespan'>*ptr</code> using <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\*\\s*ptr\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_pointers.php"
+      }
+    ],
+    "strings": [
+      {
+        "id": "strings",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare a variable named <code class='w3-codespan'>message</code> that should store a string</li><li style='margin-top:8px'>Store the text <code class='w3-codespan'>Hello</code> in the string</li><li style='margin-top:8px'>Print the string using the correct format specifier</li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write your code here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  char message[] = \"Hello\";\n\n  printf(\"%s\", message);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declString",
+            "label": "Create <code class='w3-codespan'>message</code> and store <code class='w3-codespan'>Hello</code> in it",
+            "pattern": "(?:\\bchar\\s+message\\s*(?:\\[\\s*\\]|\\[\\s*\\d+\\s*\\])\\s*=\\s*\"Hello\"\\s*;|\\bchar\\s+message\\s*(?:\\[\\s*\\]|\\[\\s*\\d+\\s*\\])\\s*=\\s*\\{\\s*'H'\\s*,\\s*'e'\\s*,\\s*'l'\\s*,\\s*'l'\\s*,\\s*'o'\\s*,\\s*'\\\\0'\\s*\\}\\s*;|\\bchar\\s+message\\s*\\[\\s*\\d+\\s*\\]\\s*;[\\s\\S]*?\\b(?:strcpy|strncpy)\\s*\\(\\s*message\\s*,\\s*\"Hello\"|\\bchar\\s*\\*\\s*message\\s*=\\s*\"Hello\"\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printString",
+            "label": "Print <code class='w3-codespan'>message</code> using <code class='w3-codespan'>%s</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%s(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*message\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_strings.php"
+      }
+    ],
+    "structs": [
+      {
+        "id": "structures",
+        "intro": "Complete the steps below (follow the order):<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Above <code class='w3-codespan'>main()</code>, define a structure named <code class='w3-codespan'>Person</code></li><li style='margin-top:8px'>The structure must contain an <code class='w3-codespan'>int</code> member named <code class='w3-codespan'>age</code></li><li style='margin-top:8px'>Inside <code class='w3-codespan'>main()</code>, declare a variable of type <code class='w3-codespan'>struct Person</code> named <code class='w3-codespan'>p</code></li><li style='margin-top:8px'>Set <code class='w3-codespan'>p.age</code> to <code class='w3-codespan'>25</code></li><li style='margin-top:8px'>Print <code class='w3-codespan'>p.age</code> using the correct format specifier</li></ol>",
+        "starter": "#include <stdio.h>\n\n// Define the structure here\n\nint main() {\n  // Declare the struct variable here\n  // Set the age here\n  // Print the age here\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nstruct Person {\n  int age;\n};\n\nint main() {\n  struct Person p;\n  p.age = 25;\n  printf(\"%d\", p.age);\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "structStart",
+            "label": "Start <code class='w3-codespan'>struct Person</code>",
+            "pattern": "\\bstruct\\s+Person\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "structMemberAge",
+            "label": "Add <code class='w3-codespan'>int age;</code>",
+            "pattern": "\\bint\\s+age\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "structEnd",
+            "label": "End struct with <code class='w3-codespan'>};</code>",
+            "pattern": "\\}\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "structBeforeMain",
+            "label": "Define <code class='w3-codespan'>struct Person</code> above <code class='w3-codespan'>main()</code>",
+            "pattern": "\\bstruct\\s+Person\\s*\\{[\\s\\S]*?\\}\\s*;[\\s\\S]*?\\bint\\s+main\\s*\\(",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declareStructVar",
+            "label": "Declare <code class='w3-codespan'>struct Person p</code>",
+            "pattern": "\\bstruct\\s+Person\\s+p\\s*(?:;|=\\s*\\{[\\s\\S]*?\\}\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignAge",
+            "label": "Set <code class='w3-codespan'>p.age</code> to <code class='w3-codespan'>25</code>",
+            "pattern": "(?:\\bp\\.age\\s*=\\s*25\\s*;|\\bstruct\\s+Person\\s+p\\s*=\\s*\\{\\s*25\\s*\\}\\s*;|\\bstruct\\s+Person\\s+p\\s*=\\s*\\{\\s*\\.age\\s*=\\s*25\\s*\\}\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printAge",
+            "label": "Print <code class='w3-codespan'>p.age</code> using <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*p\\.age\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_structs.php"
+      }
+    ],
+    "switch": [
+      {
+        "id": "fix_switch",
+        "intro": "A customer wants to order <strong>Coffee</strong>.<br><br>The code in the editor is incomplete. Fix it by inserting the missing values so the program prints the correct order.<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Change <code class='w3-codespan'>choice</code> to the correct number for Coffee (see the comments).</li><li style='margin-top:8px'>Insert <code class='w3-codespan'>choice</code> inside <code class='w3-codespan'>switch()</code>.</li><li style='margin-top:8px'>Replace each <code class='w3-codespan'>case:</code> with the correct number based on the comments above.</li><li style='margin-top:8px'>Move <code class='w3-codespan'>printf(\"Invalid choice\\n\")</code> into a <code class='w3-codespan'>default:</code> case.</li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  int choice = 2;\n\n  // 1 = Coffee\n  // 2 = Tea\n\n  switch () {\n    case:\n      printf(\"You ordered Coffee\");\n      break;\n\n    case:\n      printf(\"You ordered Tea\");\n      break;\n\n      printf(\"Invalid choice\");\n  }\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int choice = 1;\n\n  // 1 = Coffee\n  // 2 = Tea\n\n  switch (choice) {\n    case 1:\n      printf(\"You ordered Coffee\");\n      break;\n\n    case 2:\n      printf(\"You ordered Tea\");\n      break;\n\n    default:\n      printf(\"Invalid choice\");\n  }\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declaresChoice",
+            "label": "Declare <code class='w3-codespan'>int choice</code>",
+            "pattern": "\\bint\\s+choice\\b",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignsChoice",
+            "label": "Set <code class='w3-codespan'>choice</code> to Coffee (<code class='w3-codespan'>1</code>)",
+            "pattern": "(?:\\bint\\s+choice\\s*=\\s*1\\s*;)|(?:\\bchoice\\s*=\\s*1\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "usesSwitch",
+            "label": "Use <code class='w3-codespan'>switch(choice)</code>",
+            "pattern": "\\bswitch\\s*\\(\\s*choice\\s*\\)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "coffeeCase",
+            "label": "Create Coffee <code class='w3-codespan'>case</code> (<code class='w3-codespan'>1</code>)",
+            "pattern": "\\bcase\\s+1\\s*:",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "teaCase",
+            "label": "Create Tea <code class='w3-codespan'>case</code> (<code class='w3-codespan'>2</code>)",
+            "pattern": "\\bcase\\s+2\\s*:",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "coffeeStructure",
+            "label": "<code class='w3-codespan'>case 1</code> prints <code class='w3-codespan'>\"You ordered Coffee\"</code>",
+            "pattern": "\\bcase\\s+1\\s*:[\\s\\S]*?printf\\s*\\(\\s*\"You ordered Coffee(?:\\\\(?:[abfnrtv\\\\'\"?]|[0-7]{1,3}|x[0-9A-Fa-f]+))*\"\\s*\\)\\s*;[\\s\\S]*?\\bbreak\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "teaStructure",
+            "label": "<code class='w3-codespan'>case 2</code> prints <code class='w3-codespan'>\"You ordered Tea\"</code>",
+            "pattern": "\\bcase\\s+2\\s*:[\\s\\S]*?printf\\s*\\(\\s*\"You ordered Tea(?:\\\\(?:[abfnrtv\\\\'\"?]|[0-7]{1,3}|x[0-9A-Fa-f]+))*\"\\s*\\)\\s*;[\\s\\S]*?\\bbreak\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasFirstBreak",
+            "label": "Missing <code class='w3-codespan'>break</code> statement",
+            "pattern": "\\bbreak\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasSecondBreak",
+            "label": "Missing <code class='w3-codespan'>break</code> statement",
+            "pattern": "\\bbreak\\s*;[\\s\\S]*\\bbreak\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasDefault",
+            "label": "Use <code class='w3-codespan'>default</code> case",
+            "pattern": "\\bdefault\\s*:",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printsInvalid",
+            "label": "Print <code class='w3-codespan'>\"Invalid choice\"</code>",
+            "pattern": "printf\\s*\\(\\s*\"Invalid choice(?:\\\\(?:[abfnrtv\\\\'\"?]|[0-7]{1,3}|x[0-9A-Fa-f]+))*\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_switch.php"
+      }
+    ],
+    "syntax": [
+      {
+        "id": "syntax",
+        "intro": "Use the editor to complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Write a <code class='w3-codespan'>main()</code> function</li><li style='margin-top:8px'>Use <code class='w3-codespan'>printf</code> to print <strong>Hello, C!</strong></li><li style='margin-top:8px'>End the program with <code class='w3-codespan'>return 0;</code></li></ol><p><b>Note:</b> Remember curly braces and semicolons.</p>",
+        "starter": "#include <stdio.h>\n\n// 1) Write the main() function here\n// 2) Use printf() to print \"Hello, C!\"\n// 3) End the program with return 0;\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  printf(\"Hello, C!\");\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasPrintf",
+            "label": "Print \"Hello, C!\" using one <code class='w3-codespan'>printf</code> function",
+            "pattern": "\\bprintf\\s*\\(\\s*\"\\s*Hello,\\s*C!?\\s*(?:\\\\n\\s*)?\"\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "hasReturn0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_syntax.php"
+      }
+    ],
+    "variables": [
+      {
+        "id": "area",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare <code class='w3-codespan'>int</code> variables named <code class='w3-codespan'>length</code> and <code class='w3-codespan'>width</code>, and assign them values</li><li style='margin-top:8px'>Declare <code class='w3-codespan'>int area</code> and calculate it using <code class='w3-codespan'>length * width</code></li><li style='margin-top:8px'>Print the value of <code class='w3-codespan'>area</code> using <code class='w3-codespan'>printf</code> and use the correct format specifier</li></ol><p><b>Note:</b> Remember to end a statement with semicolon.",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // Write length here\n  // Write width here\n  // Write area here (length * width)\n\n  // Print area here\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int length = 4;\n  int width = 6;\n  int area = length * width;\n\n  printf(\"%d\", area);\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include stdio.h",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declLength",
+            "label": "Declare <code class='w3-codespan'>int length</code>",
+            "pattern": "\\bint\\b\\s+(?:[^;\\n]*,\\s*)*\\blength\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignLength",
+            "label": "Assign a numeric value to <code class='w3-codespan'>length</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\blength\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\blength\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declWidth",
+            "label": "Declare <code class='w3-codespan'>int width</code>",
+            "pattern": "\\bint\\b\\s+(?:[^;\\n]*,\\s*)*\\bwidth\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignWidth",
+            "label": "Assign a numeric value to <code class='w3-codespan'>width</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bwidth\\b\\s*=\\s*-?\\d+\\s*(?:,|;)|\\bwidth\\s*=\\s*-?\\d+\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declArea",
+            "label": "Declare <code class='w3-codespan'>int area</code>",
+            "pattern": "\\bint\\b\\s+(?:[^;\\n]*,\\s*)*\\barea\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignArea",
+            "label": "Calculate <code class='w3-codespan'>area</code> using <code class='w3-codespan'>length * width</code>",
+            "pattern": "(?:(?:\\bint\\s+area\\s*=\\s*)?\\(?\\s*(?:length\\s*\\*\\s*width|width\\s*\\*\\s*length)\\s*\\)?\\s*;|\\barea\\s*=\\s*\\(?\\s*(?:length\\s*\\*\\s*width|width\\s*\\*\\s*length)\\s*\\)?\\s*;|\\barea\\s*=\\s*length\\s*;[\\s\\S]*?\\barea\\s*=\\s*area\\s*\\*\\s*width\\s*;|\\barea\\s*=\\s*width\\s*;[\\s\\S]*?\\barea\\s*=\\s*area\\s*\\*\\s*length\\s*;|\\barea\\s*=\\s*length\\s*;[\\s\\S]*?\\barea\\s*\\*=\\s*width\\s*;|\\barea\\s*=\\s*width\\s*;[\\s\\S]*?\\barea\\s*\\*=\\s*length\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "printsArea",
+            "label": "Print <code class='w3-codespan'>area</code> with <code class='w3-codespan'>printf</code> using <code class='w3-codespan'>%d</code> or <code class='w3-codespan'>%i</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*area\\s*\\)*\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_variables.php"
+      }
+    ],
+    "while_loop": [
+      {
+        "id": "while_loop",
+        "intro": "Inside <code class='w3-codespan'>main()</code>, complete the following steps:<ol style='margin:8px 0 0 18px;padding:0'><li style='margin-top:8px'>Declare an <code class='w3-codespan'>int</code> variable named <code class='w3-codespan'>i</code> and set it to <code class='w3-codespan'>1</code></li><li style='margin-top:8px'>Use a <code class='w3-codespan'>while</code> loop to run as long as <code class='w3-codespan'>i</code> is less than or equal to <code class='w3-codespan'>5</code></li><li style='margin-top:8px'>Inside the loop, print the value of <code class='w3-codespan'>i</code> using the correct format specifier</li><li style='margin-top:8px'>Increase <code class='w3-codespan'>i</code> by <code class='w3-codespan'>1</code> in each loop</li></ol>",
+        "starter": "#include <stdio.h>\n\nint main() {\n  // 1) Write int i \n\n  // 2) Write while here\n  // 3) Print i inside the loop\n  // 4) Increase i\n\n  return 0;\n}\n",
+        "solution": "#include <stdio.h>\n\nint main() {\n  int i = 1;\n\n  while (i <= 5) {\n    printf(\"%d\\n\", i);\n    i++;\n  }\n\n  return 0;\n}\n",
+        "requirements": [
+          {
+            "type": "regex",
+            "id": "hasInclude",
+            "label": "Include <code class='w3-codespan'>stdio.h</code>",
+            "pattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>",
+            "flags": "m",
+            "linePattern": "^\\s*#\\s*include\\s*<\\s*stdio\\.h\\s*>\\s*(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "hasMain",
+            "label": "Have <code class='w3-codespan'>int main()</code>",
+            "pattern": "\\bint\\s+main\\s*\\(\\s*(?:void\\s*)?\\)\\s*\\{",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "declareI",
+            "label": "Declare <code class='w3-codespan'>int i</code>",
+            "pattern": "\\bint\\b\\s+[^;\\n]*\\bi\\b\\s*(?:=|,|;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "assignI",
+            "label": "Set <code class='w3-codespan'>i</code> to <code class='w3-codespan'>1</code>",
+            "pattern": "(?:\\bint\\b\\s+[^;\\n]*\\bi\\b\\s*=\\s*1\\s*(?:,|;)|\\bi\\s*=\\s*1\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "whileCondition",
+            "label": "Use <code class='w3-codespan'>while</code> with <code class='w3-codespan'>i <= 5</code>",
+            "pattern": "\\bwhile\\s*\\(\\s*(?:i\\s*<=\\s*5|i\\s*<\\s*6|5\\s*>=\\s*i|6\\s*>\\s*i)\\s*\\)\\s*(?:\\{|\\S)",
+            "flags": "",
+            "linePattern": "^\\s*while\\s*\\(\\s*(?:i\\s*<=\\s*5|i\\s*<\\s*6|5\\s*>=\\s*i|6\\s*>\\s*i)\\s*\\)\\s*(?:\\{\\s*)?(?:(//.*)?)\\s*$",
+            "lineFlags": "m"
+          },
+          {
+            "type": "regex",
+            "id": "printI",
+            "label": "Print <code class='w3-codespan'>i</code> using <code class='w3-codespan'>printf</code>",
+            "pattern": "printf\\s*\\(\\s*\"[^\"]*%(?:d|i)(?=(?:\"|\\\\n|[^a-zA-Z\"]))[^\"]*\"\\s*,\\s*\\(*\\s*(?:\\bi\\b|\\bi\\s*\\+\\+|\\+\\+\\s*i)\\s*\\)*\\s*\\)\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "incrementI",
+            "label": "Increase <code class='w3-codespan'>i</code> by <code class='w3-codespan'>1</code>",
+            "pattern": "(?:\\(*\\s*(?:\\bi\\s*\\+\\+|\\+\\+\\s*i)\\s*\\)*\\s*;|\\bi\\s*\\+=\\s*1\\s*;|\\bi\\s*=\\s*i\\s*\\+\\s*1\\s*;|printf\\s*\\([\\s\\S]*?\\,\\s*\\(*\\s*(?:\\bi\\s*\\+\\+|\\+\\+\\s*i)\\s*\\)*\\s*\\)\\s*;)",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "whileBeforeReturn",
+            "label": "Place the loop before <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\bwhile\\b[\\s\\S]*?\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "return0",
+            "label": "End with <code class='w3-codespan'>return 0;</code>",
+            "pattern": "\\breturn\\s+0\\s*;",
+            "flags": ""
+          },
+          {
+            "type": "regex",
+            "id": "endsWithBrace",
+            "label": "End with a closing <code class='w3-codespan'>}</code>",
+            "pattern": "\\}\\s*$",
+            "flags": ""
+          }
+        ],
+        "url": "https://www.w3schools.com/c/c_challenges_while_loop.php"
+      }
+    ]
+  }
+}
