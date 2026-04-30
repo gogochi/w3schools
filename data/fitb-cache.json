@@ -178,5 +178,2390 @@
     "prompt": "Specify that the form is submitted using the \"POST\" method.",
     "code": "<form action=\"/action_page.php\" @(13)>\nName: <input type=\"text\" name=\"name\">\n<input type=\"submit\">\n</form>",
     "solution": "<form action=\"/action_page.php\" method=\"post\">\nName: <input type=\"text\" name=\"name\">\n<input type=\"submit\">\n</form>"
+  },
+  "html/exercise_html_attributes1.htm": {
+    "prompt": "Add a \"tooltip\" to the paragraph below with the text \"About W3Schools\".",
+    "code": "<p @(5)=\"About W3Schools\">W3Schools is a web developer's site.</p>",
+    "solution": "<p title=\"About W3Schools\">W3Schools is a web developer's site.</p>"
+  },
+  "html/exercise_html_attributes2.htm": {
+    "prompt": "Set the size of the image to 250 pixels wide and 400 pixels tall.",
+    "code": "<img src=\"w3schools.jpg\" width=\"@(3)\" height=\"@(3)\">",
+    "solution": "<img src=\"w3schools.jpg\" width=\"250\" height=\"400\">"
+  },
+  "html/exercise_html_attributes3.htm": {
+    "prompt": "Make the element below into a link that goes to \"https://www.w3schools.com\".",
+    "code": "<a @(5)\"https://www.w3schools.com\">This is a link</a>",
+    "solution": "<a href=\"https://www.w3schools.com\">This is a link</a>"
+  },
+  "html/exercise_html_attributes4.htm": {
+    "prompt": "Specify an alternate text for the image.\nAlternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.",
+    "code": "<img src=\"w3schools.png\" @(3)=\"w3schools Logo\">",
+    "solution": "<img src=\"w3schools.png\" alt=\"w3schools Logo\">"
+  },
+  "html/exercise_html_basic1.htm": {
+    "prompt": "HTML elements are surrounded by a specific type of brackets, which one?",
+    "code": "@(1)p@(1)This is a paragraph.@(1)/p@(1)",
+    "solution": "<p>This is a paragraph.</p>"
+  },
+  "html/exercise_html_basic2.htm": {
+    "prompt": "Fill in the missing code to complete the markup of the HTML hyperlink.",
+    "code": "@(2) href=\"https://www.w3schools.com\">This is a link@(4)",
+    "solution": "<a href=\"https://www.w3schools.com\">This is a link</a>"
+  },
+  "html/exercise_html_block_inline1.htm": {
+    "prompt": "Name one HTML block element.",
+    "code": "@(10)",
+    "solution": "div"
+  },
+  "html/exercise_html_block_inline2.htm": {
+    "prompt": "Name one HTML inline element.",
+    "code": "@(8)",
+    "solution": "span"
+  },
+  "html/exercise_html_classes1.htm": {
+    "prompt": "In the <style> section, create a class selector named \"special\".\nAdd a color property with the value \"blue\" inside the \"special\" class.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n@(8) @(1)\n  @(10);\n@(1)\n</style>\n</head>\n<body>\n<p class=\"special\">My paragraph</p>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.special {\n  color:blue;\n}\n</style>\n</head>\n<body>\n<p class=\"special\">My paragraph</p>\n</body>\n</html>"
+  },
+  "html/exercise_html_classes2.htm": {
+    "prompt": "Add the correct class to make the H1 element red.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.mystyle {color:red;}\n</style>\n</head>\n<body>\n<h1 @(15)>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.mystyle {color:red;}\n</style>\n</head>\n<body>\n<h1 class=\"mystyle\">My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_classes3.htm": {
+    "prompt": "Add two classes to the H1 element, to make the background pink and the color red.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.intro {background:pink;}\n.special {color:red;}\n</style>\n</head>\n<body>\n<h1 @(21)>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n.intro {background:pink;}\n.special {color:red;}\n</style>\n</head>\n<body>\n<h1 class=\"intro special\">My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_colors1.htm": {
+    "prompt": "Insert the correct property to make the text color violet.",
+    "code": "<p style=\"@(5): violet\">This is a paragraph.</p>",
+    "solution": "<p style=\"color: violet\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_colors4.htm": {
+    "prompt": "Insert the correct HEX value to make the text color white.",
+    "code": "<p style=\"color: #@(6)\">This is a paragraph.</p>",
+    "solution": "<p style=\"color: #ffffff\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_colors5.htm": {
+    "prompt": "Insert the HSLA value to make a color with no hue, 100% saturation, 50% lightness,\nand 50% transparency.",
+    "code": "<p style=\"color: @(4)(@(17))\">This is a paragraph.</p>",
+    "solution": "<p style=\"color: hsla(0, 100%, 50%, 0.5)\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_colors2.htm": {
+    "prompt": "Insert the correct RGB color values to make the background color completely blue.",
+    "code": "<p style=\"background-color:rgb(@(1), @(1), @(3))\">This is a paragraph.</p>",
+    "solution": "<p style=\"background-color:rgb(0, 0, 255)\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_colors3.htm": {
+    "prompt": "Insert the a background color where green has the value 100, red has the value 106, and blue has the value 205.",
+    "code": "<p style=\"background-color:rgb(@(3), @(3), @(3))\">This is a paragraph.</p>",
+    "solution": "<p style=\"background-color:rgb(106, 100, 205)\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_comments1.htm": {
+    "prompt": "Use the HTML comment tag to make a comment out of the \"This is a comment\" text.",
+    "code": "<h1>This is a heading</h1>\n@(4) This is a comment @(3)\n<p>This is a paragraph.</p>",
+    "solution": "<h1>This is a heading</h1>\n<!-- This is a comment -->\n<p>This is a paragraph.</p>"
+  },
+  "html/exercise_html_comments2.htm": {
+    "prompt": "Add comment tags around the paragraph:",
+    "code": "@(4) <p>This is a paragraph.</p> @(3)",
+    "solution": "<!-- <p>This is a paragraph.</p> -->"
+  },
+  "html/exercise_html_computercode_elements1.htm": {
+    "prompt": "Define the text \"var person;\" as programming code.",
+    "code": "<p>Code example: @(6)var person;@(7)</p>",
+    "solution": "<p>Code example: <code>var person;</code></p>"
+  },
+  "html/exercise_html_computercode_elements2.htm": {
+    "prompt": "Define the text inside the <code> element as preformatted text (to preserve spaces and line breaks).",
+    "code": "<p>Code example:</p>\n@(5)<code>var person = {\n  firstName:\"John\",\n  lastName:\"Doe\"\n}</code>@(6)",
+    "solution": "<p>Code example:</p>\n<pre><code>var person = {\n  firstName:\"John\",\n  lastName:\"Doe\"\n}</code></pre>"
+  },
+  "html/exercise_html_computercode_elements3.htm": {
+    "prompt": "Define the character \"x\" in the equation as a variable.",
+    "code": "<p>A simple math equation:\n@(5)x@(6) = 3 + 2;\n</p>",
+    "solution": "<p>A simple math equation:\n<var>x</var> = 3 + 2;\n</p>"
+  },
+  "html/exercise_html_css1.htm": {
+    "prompt": "Use CSS to set the background color of the document (body) to yellow.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n@(4) @(1)\n  @(16):yellow;\n@(1)\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {\n  background-color:yellow;\n}\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_css2.htm": {
+    "prompt": "Use CSS to set the font of the document to \"courier\".",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {@(11):courier;}\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {font-family:courier;}\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_css3.htm": {
+    "prompt": "Use CSS to set the text color of the document to red.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {@(5):red;}\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\nbody {color:red;}\n</style>\n</head>\n<body>\n<h1>My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_css4.htm": {
+    "prompt": "Use CSS to make a yellow, 1 pixel thick, border around all paragraphs.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n@(1) {@(6): @(3) solid @(6);}\n</style>\n</head>\n<body>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\np {border: 1px solid yellow;}\n</style>\n</head>\n<body>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n</body>\n</html>"
+  },
+  "html/exercise_html_elements1.htm": {
+    "prompt": "Insert the correct end tag for the HTML heading.",
+    "code": "<h1>This is a heading@(5)",
+    "solution": "<h1>This is a heading</h1>"
+  },
+  "html/exercise_html_elements2.htm": {
+    "prompt": "Insert the correct end tags in this HTML document:",
+    "code": "<html><br>\n<body><br>\n<h4>This is a heading@(5)<br>\n<p>This is a paragraph.@(4)<br>\n@(7)<br>\n@(7)",
+    "solution": "<html><br>\n<body><br>\n<h4>This is a heading</h4><br>\n<p>This is a paragraph.</p><br>\n</body><br>\n</html>"
+  },
+  "html/exercise_html_images9.htm": {
+    "prompt": "Which HTML tag is used to handle the favicon (the little image to the left in the browser tab):",
+    "code": "<@(4) rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">",
+    "solution": "<link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\">"
+  },
+  "html/exercise_html_form_attributes1.htm": {
+    "prompt": "In the input field below, add placeholder that says \"Your name here\".",
+    "code": "<form action=\"/action_page.php\">\n<input type=\"text\" @(28)>\n</form>",
+    "solution": "<form action=\"/action_page.php\">\n<input type=\"text\" placeholder=\"Your name here\">\n</form>"
+  },
+  "html/exercise_html_form_attributes2.htm": {
+    "prompt": "Disable the input field below.",
+    "code": "<form action=\"/action_page.php\">\n<input type=\"text\" @(8)>\n</form>",
+    "solution": "<form action=\"/action_page.php\">\n<input type=\"text\" disabled>\n</form>"
+  },
+  "html/exercise_html_form_attributes3.htm": {
+    "prompt": "Set the max numbers of characters allowed in the input field to 40.",
+    "code": "<form action=\"/action_page.php\">\n<input type=\"text\" @(14)>\n</form>",
+    "solution": "<form action=\"/action_page.php\">\n<input type=\"text\" maxlength=\"40\">\n</form>"
+  },
+  "html/exercise_html_form_attributes4.htm": {
+    "prompt": "Set the input field to be read only (meaning that the value cannot be changed).",
+    "code": "<form action=\"/action_page.php\">\n<input type=\"text\" @(8)>\n</form>",
+    "solution": "<form action=\"/action_page.php\">\n<input type=\"text\" readonly>\n</form>"
+  },
+  "html/exercise_html_formatting1.htm": {
+    "prompt": "Add extra importance to the word \"degradation\" in the paragraph below.",
+    "code": "<p>\nWWF's mission is to stop the\n@(8)degradation@(9) of our\nplanet's natural environment.\n</p>",
+    "solution": "<p>\nWWF's mission is to stop the\n<strong>degradation</strong> of our\nplanet's natural environment.\n</p>"
+  },
+  "html/exercise_html_formatting2.htm": {
+    "prompt": "Emphasize the word \"metropolitan\" in the text below.",
+    "code": "<h1>Tokyo</h1>\n<p>\nTokyo is the capital of Japan,\nthe most populous @(4)metropolitan@(5)\narea in the world.\n</p>",
+    "solution": "<h1>Tokyo</h1>\n<p>\nTokyo is the capital of Japan,\nthe most populous <em>metropolitan</em>\narea in the world.\n</p>"
+  },
+  "html/exercise_html_formatting3.htm": {
+    "prompt": "Highlight the word \"FUN\" in the text below.",
+    "code": "<p>\nHTML is @(6)FUN@(7) to learn!\n</p>",
+    "solution": "<p>\nHTML is <mark>FUN</mark> to learn!\n</p>"
+  },
+  "html/exercise_html_formatting4.htm": {
+    "prompt": "Apply subscript formatting to the number \"2\" in the text below.",
+    "code": "<p>\nH@(5)2@(6)O is the scientific term for water.\n</p>",
+    "solution": "<p>\nH<sub>2</sub>O is the scientific term for water.\n</p>"
+  },
+  "html/exercise_html_formatting5.htm": {
+    "prompt": "Add a line through (strikeout) the letters \"blue\" in the text below.",
+    "code": "<p>\nMy favorite color is @(5)blue@(6) red.\n</p>",
+    "solution": "<p>\nMy favorite color is <del>blue</del> red.\n</p>"
+  },
+  "html/exercise_html_headings1.htm": {
+    "prompt": "Use the correct HTML tag to add a heading with the text \"London\".",
+    "code": "@(15)\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>",
+    "solution": "<h1>London</h1>\n\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>"
+  },
+  "html/exercise_html_headings2.htm": {
+    "prompt": "Add six headings to the document with the text \"Hello\".\nStart with the most important heading (the largest) and end with the least important heading (the smallest).",
+    "code": "<html>\n<body>\n@(14)\n@(14)\n@(14)\n@(14)\n@(14)\n@(14)\n</body>\n</html>",
+    "solution": "<html>\n<body>\n<h1>Hello</h1>\n<h2>Hello</h2>\n<h3>Hello</h3>\n<h4>Hello</h4>\n<h5>Hello</h5>\n<h6>Hello</h6>\n</body>\n</html>"
+  },
+  "html/exercise_html_id1.htm": {
+    "prompt": "Add the correct HTML attribute to make the H1 element red.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n#myheader {color:red;}\n</style>\n</head>\n<body>\n<h1 @(13)>My Home Page</h1>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n#myheader {color:red;}\n</style>\n</head>\n<body>\n<h1 id=\"myheader\">My Home Page</h1>\n</body>\n</html>"
+  },
+  "html/exercise_html_id2.htm": {
+    "prompt": "Create an id selector named \"special\".\nAdd a color property with the value \"blue\" inside the \"special\" declaration \nblock.",
+    "code": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n@(8) @(1)\n  @(10);\n@(1)\n</style>\n</head>\n<body>\n<p id=\"special\">My paragraph</p>\n</body>\n</html>",
+    "solution": "<!DOCTYPE html>\n<html>\n<head>\n<style>\n#special {\n  color:blue;\n}\n</style>\n</head>\n<body>\n<p id=\"special\">My paragraph</p>\n</body>\n</html>"
+  },
+  "html/exercise_html_iframe1.htm": {
+    "prompt": "Create an iframe with a URL address that goes to https://www.w3schools.com.",
+    "code": "<iframe @(3)=\"https://www.w3schools.com\"></iframe>",
+    "solution": "<iframe src=\"https://www.w3schools.com\"></iframe>"
+  },
+  "html/exercise_html_iframe2.htm": {
+    "prompt": "Use an iframe attribute to make the iframe 500 pixels wide.",
+    "code": "<iframe src=\"https://www.w3schools.com\" @(11)></iframe>",
+    "solution": "<iframe src=\"https://www.w3schools.com\" width=\"500\"></iframe>"
+  },
+  "html/exercise_html_iframe3.htm": {
+    "prompt": "Use CSS to display an iframe with no borders.",
+    "code": "<iframe src=\"https://www.w3schools.com\" style=\"@(12)\"></iframe>",
+    "solution": "<iframe src=\"https://www.w3schools.com\" style=\"border:none;\"></iframe>"
+  },
+  "html/exercise_html_iframe4.htm": {
+    "prompt": "Create an iframe with a URL address that goes to \"default.html\".",
+    "code": "@(36)",
+    "solution": "<iframe src=\"default.html\"></iframe>"
+  },
+  "html/exercise_html_images1.htm": {
+    "prompt": "Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.",
+    "code": "<img src=\"scream.png\" @(5)=\"250\" @(6)=\"400\">",
+    "solution": "<img src=\"scream.png\" width=\"250\" height=\"400\">"
+  },
+  "html/exercise_html_images2.htm": {
+    "prompt": "Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.",
+    "code": "<img src=\"scream.png\" style=\"@(24);\">",
+    "solution": "<img src=\"scream.png\" style=\"width:250px;height:400px;\">"
+  },
+  "html/exercise_html_images3.htm": {
+    "prompt": "Use the correct HTML to make the image become a link to \"default.html\".",
+    "code": "@(2) @(19)>\n<img src=\"smiley.gif\">\n@(4)",
+    "solution": "<a href=\"default.html\">\n<img src=\"smiley.gif\">\n</a>"
+  },
+  "html/exercise_html_images4.htm": {
+    "prompt": "Make the image below float to the right of the paragraph.",
+    "code": "<p>\n<img src=\"smiley.gif\" style=\"@(11);\">\nThis is a paragraph.\nThis paragraph contains an image\n</p>",
+    "solution": "<p>\n<img src=\"smiley.gif\" style=\"float:right;\">\nThis is a paragraph.\nThis paragraph contains an image\n</p>"
+  },
+  "html/exercise_html_images5.htm": {
+    "prompt": "Add the correct HTML attribute to display the \"smiley.gif\" image.",
+    "code": "<img @(16)>",
+    "solution": "<img src=\"smiley.gif\">"
+  },
+  "html/exercise_html_images6.htm": {
+    "prompt": "Specify an alternate text for the image.\nThe alternate text should say \"Smiley\".\nAlternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.",
+    "code": "<img src=\"smiley.gif\" @(12)>",
+    "solution": "<img src=\"smiley.gif\" alt=\"Smiley\">"
+  },
+  "html/exercise_html_images8.htm": {
+    "prompt": "Add a background image named \"myimage.png\" on a HTML element.",
+    "code": "<p style=\"background-image: @(18);\">",
+    "solution": "<p style=\"background-image: url('myimage.png');\">"
+  },
+  "html/exercise_html_images7.htm": {
+    "prompt": "For image maps, specify a legal value for the area tag's shape attribute.\n(Any legal value will give a correct answer)",
+    "code": "<area shape=\"@(7)\" href=\"default.html\">",
+    "solution": "<area shape=\"default\" href=\"default.html\">"
+  },
+  "html/exercise_html_links1.htm": {
+    "prompt": "Use the correct HTML to make the text below into a link to \"default.html\".",
+    "code": "@(2) @(19)>Visit our HTML tutorial.@(4)",
+    "solution": "<a href=\"default.html\">Visit our HTML tutorial.</a>"
+  },
+  "html/exercise_html_links3.htm": {
+    "prompt": "Use the correct HTML attribute to make the link open in a new window.",
+    "code": "<a href=\"html_images.asp\" @(15)>HTML Images</a>",
+    "solution": "<a href=\"html_images.asp\" target=\"_blank\">HTML Images</a>"
+  },
+  "html/exercise_html_links4.htm": {
+    "prompt": "Use the correct HTML to make the image become a link to \"default.html\".",
+    "code": "@(2) @(20)\n<img src=\"smiley.gif\">\n@(4)",
+    "solution": "<a href=\"default.html\">\n<img src=\"smiley.gif\">\n</a>"
+  },
+  "html/exercise_html_links5.htm": {
+    "prompt": "Add a \"tooltip\" to the link.\nThe \"tooltip\" should say \"Home\".",
+    "code": "<a href=\"default.html\" @(12)>Back to Home</a>",
+    "solution": "<a href=\"default.html\" title=\"Home\">Back to Home</a>"
+  },
+  "html/exercise_html_links6.htm": {
+    "prompt": "Add a link to a bookmark, on the same page, with the id=\"mytext\".",
+    "code": "<a @(4)=\"@(7)\">Jump to new text</a>",
+    "solution": "<a href=\"#mytext\">Jump to new text</a>"
+  },
+  "html/exercise_html_links2.htm": {
+    "prompt": "Use CSS to remove the underline from the link.",
+    "code": "<a href=\"html_images.asp\" style=\"@(21)\">HTML Images</a>",
+    "solution": "<a href=\"html_images.asp\" style=\"text-decoration:none;\">HTML Images</a>"
+  },
+  "html/exercise_html_lists3.htm": {
+    "prompt": "Finish the HTML code to make an ordered list.",
+    "code": "@(4)\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n@(5)",
+    "solution": "<ol>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>"
+  },
+  "html/exercise_html_lists4.htm": {
+    "prompt": "Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers.",
+    "code": "<ol @(8)>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+    "solution": "<ol type=\"A\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>"
+  },
+  "html/exercise_html_lists5.htm": {
+    "prompt": "Use the correct HTML attribute to display uppercase roman numbers.",
+    "code": "<ol @(8)>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>",
+    "solution": "<ol type=\"I\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ol>"
+  },
+  "html/exercise_html_lists6.htm": {
+    "prompt": "Use the correct HTML elements to make a description of each term in the description list.",
+    "code": "<dl>\n  <dt>Coffee</dt>\n  @(4)- black hot drink@(5)\n  <dt>Milk</dt>\n  @(4)- white cold drink@(5)\n</dl>",
+    "solution": "<dl>\n  <dt>Coffee</dt>\n  <dd>- black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>- white cold drink</dd>\n</dl>"
+  },
+  "html/exercise_html_lists1.htm": {
+    "prompt": "Add a list item with the text \"Coffee\" inside the <ul>.",
+    "code": "<ul>\n@(4)Coffee@(5)\n</ul>",
+    "solution": "<ul>\n<li>Coffee</li>\n</ul>"
+  },
+  "html/exercise_html_lists2.htm": {
+    "prompt": "Finish the HTML code to make an unordered list.",
+    "code": "@(4)\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n@(5)",
+    "solution": "<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>"
+  },
+  "html/exercise_html_lists7.htm": {
+    "prompt": "Use CSS to display squares instead of bullets.",
+    "code": "<ul style=\"@(22);\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>",
+    "solution": "<ul style=\"list-style-type:square;\">\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Milk</li>\n</ul>"
+  },
+  "html/exercise_html_paragraphs1.htm": {
+    "prompt": "Use the correct HTML tag to add a paragraph with the text \"Hello World!\".",
+    "code": "<html>\n<body>\n@(19)\n</body>\n</html>",
+    "solution": "<html>\n<body>\n<p>Hello World!</p>\n</body>\n</html>"
+  },
+  "html/exercise_html_paragraphs2.htm": {
+    "prompt": "Clean up this document with proper end tags.",
+    "code": "<h1>This is a Heading@(5)\n<br>\n<p>This is a paragraph.@(4)",
+    "solution": "<h1>This is a Heading</h1>\n<br>\n<p>This is a paragraph.</p>"
+  },
+  "html/exercise_html_paragraphs3.htm": {
+    "prompt": "Add a horizontal rule between the heading and the paragraph.",
+    "code": "<h1>London</h1>\n@(4)\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>",
+    "solution": "<h1>London</h1>\n<hr>\n<p>London is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.</p>"
+  },
+  "html/exercise_html_paragraphs4.htm": {
+    "prompt": "Add a line break in the middle of the paragraph:",
+    "code": "<p>My Bonnie lies@(4)over the ocean.</p>",
+    "solution": "<p>My Bonnie lies<br>over the ocean.</p>"
+  },
+  "html/exercise_html_paragraphs5.htm": {
+    "prompt": "Wrap this poem around HTML tags that will preserve all spaces and linebreaks when the element is displayed.",
+    "code": "@(5)\n  My Bonnie lies over the ocean.\n  My Bonnie lies over the sea.\n  My Bonnie lies over the ocean.\n  Oh, bring back my Bonnie to me.\n@(6)",
+    "solution": "<pre>\n  My Bonnie lies over the ocean.\n  My Bonnie lies over the sea.\n  My Bonnie lies over the ocean.\n  Oh, bring back my Bonnie to me.\n</pre>"
+  },
+  "html/exercise_html_quotation_elements1.htm": {
+    "prompt": "Use an HTML element to add quotation marks around the letters \"cool\".",
+    "code": "<p>\nI am so @(3)cool@(4).\n</p>",
+    "solution": "<p>\nI am so <q>cool</q>.\n</p>"
+  },
+  "html/exercise_html_quotation_elements2.htm": {
+    "prompt": "The text below should be a quoted section.\n\nAdd the proper HTML element to it, and specify that it is quoted from the following URL:\n\nhttp://www.worldwildlife.org/who/index.html",
+    "code": "@(11) @(4)=\"http://www.worldwildlife.org/who/index.html\">\nFor 50 years, WWF has been protecting the future of nature.\nThe world's leading conservation organization,\nWWF works in 100 countries and is supported by\n1.2 million members in the United States and\nclose to 5 million globally.\n@(13)",
+    "solution": "<blockquote cite=\"http://www.worldwildlife.org/who/index.html\">\nFor 50 years, WWF has been protecting the future of nature.\nThe world's leading conservation organization,\nWWF works in 100 countries and is supported by\n1.2 million members in the United States and\nclose to 5 million globally.\n</blockquote>"
+  },
+  "html/exercise_html_quotation_elements3.htm": {
+    "prompt": "Change text direction.\nMake the text below go right-to-left.",
+    "code": "@(15)What a beautiful day!@(6)",
+    "solution": "<bdo dir=\"rtl\">What a beautiful day!</bdo>"
+  },
+  "html/exercise_html_quotation_elements4.htm": {
+    "prompt": "The letters \"WHO\" in the text below is an abbreviation of \"World Health Organization\".\nUse an HTML element to provide the specified abbreviation of \"WHO\".",
+    "code": "<p>\nThe <@(4) @(6)\"World Health Organization\">\nWHO</@(4)> was founded in 1948.\n</p>",
+    "solution": "<p>\nThe <abbr title=\"World Health Organization\">\nWHO</abbr> was founded in 1948.\n</p>"
+  },
+  "html/exercise_html_scripts1.htm": {
+    "prompt": "Use JavaScript to change the HTML content of the <p> element to \"Hello World!\".",
+    "code": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.@(14)(\"demo\").innerHTML = \"Hello World!\";\n</script> \n</body>",
+    "solution": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script> \n</body>"
+  },
+  "html/exercise_html_scripts2.htm": {
+    "prompt": "Use JavaScript to change the text size of the <p> element to 40 pixels.",
+    "code": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.getElementById(\"demo\").@(5).@(8) = \"40px\";\n</script> \n</body>",
+    "solution": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.getElementById(\"demo\").style.fontSize = \"40px\";\n</script> \n</body>"
+  },
+  "html/exercise_html_scripts3.htm": {
+    "prompt": "Use JavaScript to set the color of the <p> element to \"red\".",
+    "code": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.getElementById(\"demo\").@(5).@(5) = \"red\";\n</script> \n</body>",
+    "solution": "<body>\n<p id=\"demo\">Hi.</p>\n<script>\ndocument.getElementById(\"demo\").style.color = \"red\";\n</script> \n</body>"
+  },
+  "html/exercise_html_scripts4.htm": {
+    "prompt": "Use JavaScript to change the image source from \"scream.png\" to \"smiley.gif\".",
+    "code": "<body>\n<img id=\"demo\" src=\"scream.png\">\n<script>\n@(8).getElementById(\"demo\").@(3) = \"smiley.gif\";\n</script> \n</body>",
+    "solution": "<body>\n<img id=\"demo\" src=\"scream.png\">\n<script>\ndocument.getElementById(\"demo\").src = \"smiley.gif\";\n</script> \n</body>"
+  },
+  "html/exercise_html_styles1.htm": {
+    "prompt": "Use the correct HTML attribute, and CSS, to set the color of the paragraph to \"blue\".",
+    "code": "<p @(5)=\"@(10);\">This is a paragraph.</p>",
+    "solution": "<p style=\"color:blue;\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_styles2.htm": {
+    "prompt": "Use CSS to set the font of the paragraph to \"courier\".",
+    "code": "<p style=\"@(11):courier;\">This is a paragraph.</p>",
+    "solution": "<p style=\"font-family:courier;\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_styles3.htm": {
+    "prompt": "Use CSS to center align the paragraph.",
+    "code": "<p style=\"@(10):center;\">This is a paragraph.</p>",
+    "solution": "<p style=\"text-align:center;\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_styles4.htm": {
+    "prompt": "Use CSS to set the text size to 50 pixels.",
+    "code": "<p style=\"@(9):50px;\">This is a paragraph.</p>",
+    "solution": "<p style=\"font-size:50px;\">This is a paragraph.</p>"
+  },
+  "html/exercise_html_styles5.htm": {
+    "prompt": "Use CSS to set the background color of the document to yellow.",
+    "code": "<html>\n\n<body style=\"@(16):yellow;\">\n\n<h1>This is a heading</h1>\n\n<p>This is a paragraph.</p>\n\n</body>\n\n</html>",
+    "solution": "<html>\n\n<body style=\"background-color:yellow;\">\n\n<h1>This is a heading</h1>\n\n<p>This is a paragraph.</p>\n\n</body>\n\n</html>"
+  },
+  "html/exercise_html_styles6.htm": {
+    "prompt": "Use CSS to center align the document.",
+    "code": "<html>\n\n<body @(5)=\"@(17);\">\n\n<h1>This is a heading</h1>\n\n<p>This is a paragraph.</p>\n\n</body>\n\n</html>",
+    "solution": "<html>\n\n<body style=\"text-align:center;\">\n\n<h1>This is a heading</h1>\n\n<p>This is a paragraph.</p>\n\n</body>\n\n</html>"
+  },
+  "html/exercise_html_tables2.htm": {
+    "prompt": "Use the correct CSS border values to create a solid black 3-pixels border on a table element.",
+    "code": "table, th, td {\n  border: @(15);\n}",
+    "solution": "table, th, td {\n  border: 3px solid black;\n}"
+  },
+  "html/exercise_html_tables6.htm": {
+    "prompt": "Use the correct HTML attribute to make the second TH element span two rows.",
+    "code": "<table>\n  <tr>\n    <th>Name</th>\n    <td>Jill Smith</td>\n  </tr>\n  <tr>\n    <th @(11)>Phone</th>\n    <td>555-77854</td>\n  </tr>\n  <tr>\n    <td>555-77854</td>\n  </tr>\n</table>",
+    "solution": "<table>\n  <tr>\n    <th>Name</th>\n    <td>Jill Smith</td>\n  </tr>\n  <tr>\n    <th rowspan=\"2\">Phone</th>\n    <td>555-77854</td>\n  </tr>\n  <tr>\n    <td>555-77854</td>\n  </tr>\n</table>"
+  },
+  "html/exercise_html_tables7.htm": {
+    "prompt": "Use the correct HTML attribute to make the first TH element span two columns.",
+    "code": "<table>\n  <tr>\n    <th @(11)>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve</td>\n    <td>Jackson</td>\n    <td>94</td>\n  </tr>\n</table>",
+    "solution": "<table>\n  <tr>\n    <th colspan=\"2\">Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve</td>\n    <td>Jackson</td>\n    <td>94</td>\n  </tr>\n</table>"
+  },
+  "html/exercise_html_tables1.htm": {
+    "prompt": "Add a table row with two table headers.\nThe two table headers should have the value \"Name\" and \"Age\".",
+    "code": "<table>\n  @(4)\n    @(13)\n    @(12)\n  @(5)\n  <tr>\n    <td>Jill Smith</td>\n    <td>50</td>\n  </tr>\n</table>",
+    "solution": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill Smith</td>\n    <td>50</td>\n  </tr>\n</table>"
+  },
+  "html/exercise_html_tables4.htm": {
+    "prompt": "Add a table caption that says \"Names\".",
+    "code": "<table>\n  @(24)\n  <tr>\n    <th>First Name</th>\n    <th>Last Name</th>\n    <th>Points</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n</table>",
+    "solution": "<table>\n  <caption>Names</caption>\n  <tr>\n    <th>First Name</th>\n    <th>Last Name</th>\n    <th>Points</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n</table>"
+  },
+  "html/exercise_html_tables5.htm": {
+    "prompt": "Use the correct CSS property to add 15 pixels of space between the cell border and cell content.\nThe result should look like this:",
+    "code": ".table td  {\n  @(7): 15px;\n}",
+    "solution": ".table td  {\n  padding: 15px;\n}"
+  },
+  "html/exercise_html_tables3.htm": {
+    "prompt": "Use CSS styles to make the table 300 pixels wide.",
+    "code": "<table @(20)>\n  <tr>\n    <th>First Name</th>\n    <th>Last Name</th>\n    <th>Points</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n</table>",
+    "solution": "<table style=\"width:300px;\">\n  <tr>\n    <th>First Name</th>\n    <th>Last Name</th>\n    <th>Points</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n</table>"
+  },
+  "html/exercise_html_tables8.htm": {
+    "prompt": "Add a table row at the end of the table, with two table cells.\nThe two table cells should have the value \"Eve Jackson\" and \"94\".",
+    "code": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill Smith</td>\n    <td>50</td>\n  </tr>\n  @(4)\n    @(20)\n    @(11)\n  @(5)\n</table>",
+    "solution": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill Smith</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve Jackson</td>\n    <td>94</td>\n  </tr>\n</table>"
+  },
+  "css/exercise_align_horizontal1.htm": {
+    "prompt": "Use the margin property to make sure that the <div> element is center aligned according to its parent element.",
+    "code": "<style>\n.intro {\n  width: 200px;\n  @(6): @(4);\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>",
+    "solution": "<style>\n.intro {\n  width: 200px;\n  margin: auto;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>"
+  },
+  "css/exercise_align_horizontal2.htm": {
+    "prompt": "Position the <div> element all the way to the right by using absolute positioning.",
+    "code": "<style>\n.intro {\n  width: 200px;\n  margin: auto;\n  @(8): absolute;\n  @(5): 0px;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>",
+    "solution": "<style>\n.intro {\n  width: 200px;\n  margin: auto;\n  position: absolute;\n  right: 0px;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>"
+  },
+  "css/exercise_attribute_selectors1.htm": {
+    "prompt": "Set the background color to \"red\" for <a> elements that have a target attribute.",
+    "code": "<style>\n@(9) {\n  background-color: red;\n}\n</style>\n\n<body>\n  <a href=\"https://w3schools.com\">w3schools.com</a>\n  <a href=\"http://disney.com\" target=\"_blank\">Disney.com</a>\n  <a href=\"http://wikipedia.org\" target=\"_top\">wikipedia.org</a>\n</body>",
+    "solution": "<style>\na[target] {\n  background-color: red;\n}\n</style>\n\n<body>\n  <a href=\"https://w3schools.com\">w3schools.com</a>\n  <a href=\"http://disney.com\" target=\"_blank\">Disney.com</a>\n  <a href=\"http://wikipedia.org\" target=\"_top\">wikipedia.org</a>\n</body>"
+  },
+  "css/exercise_attribute_selectors2.htm": {
+    "prompt": "Set the background color to \"red\" for <a> elements that have a target attribute with the value \"_blank\".",
+    "code": "<style>\n@(18) {\n  background-color: red;\n}\n</style>\n\n<body>\n  <a href=\"https://w3schools.com\">w3schools.com</a>\n  <a href=\"http://disney.com\" target=\"_blank\">Disney.com</a>\n  <a href=\"http://wikipedia.org\" target=\"_top\">wikipedia.org</a>\n</body>",
+    "solution": "<style>\na[target=\"_blank\"] {\n  background-color: red;\n}\n</style>\n\n<body>\n  <a href=\"https://w3schools.com\">w3schools.com</a>\n  <a href=\"http://disney.com\" target=\"_blank\">Disney.com</a>\n  <a href=\"http://wikipedia.org\" target=\"_top\">wikipedia.org</a>\n</body>"
+  },
+  "css/exercise_attribute_selectors3.htm": {
+    "prompt": "Set a border for <img> elements that have a title attribute that contains the word blue.",
+    "code": "<style>\nimg@(15) {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>",
+    "solution": "<style>\nimg[title~=\"blue\"] {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>"
+  },
+  "css/exercise_attribute_selectors_advanced1.htm": {
+    "prompt": "Set a border for <img> elements that have a title attribute starting with blue.",
+    "code": "<style>\nimg@(15) {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>",
+    "solution": "<style>\nimg[title^=\"blue\"] {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>"
+  },
+  "css/exercise_attribute_selectors_advanced2.htm": {
+    "prompt": "Set a border for <img> elements that have a title attribute ending with the word flower (not flowers).",
+    "code": "<style>\nimg@(17) {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>",
+    "solution": "<style>\nimg[title$=\"flower\"] {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>"
+  },
+  "css/exercise_attribute_selectors_advanced3.htm": {
+    "prompt": "Set a border for <img> elements that have a title attribute containing the value flower (hint: flowers also contain flower).",
+    "code": "<style>\nimg@(17) {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>",
+    "solution": "<style>\nimg[title*=\"flower\"] {\n  border: 5px solid red;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" title=\"blue flower\">\n  <img src=\"klematis2.jpg\" title=\"purple flowers\">\n  <img src=\"klematis3.jpg\" title=\"two blue flowers\">  \n</body>"
+  },
+  "css/exercise_background1.htm": {
+    "prompt": "Set the background color of the <h1> element to \"lightblue\".",
+    "code": "<style>\nh1 {\n  @(16): lightblue;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  background-color: lightblue;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_background5.htm": {
+    "prompt": "Use the correct background property to make the background image NOT scroll with the rest of the page.",
+    "code": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  @(21): @(5);\n}\n</style>",
+    "solution": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  background-attachment: fixed;\n}\n</style>"
+  },
+  "css/exercise_background2.htm": {
+    "prompt": "Set \"paper.gif\" as the background image of the page.",
+    "code": "<style>\nbody {\n  @(16): @(16);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url(\"paper.gif\");\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_background3.htm": {
+    "prompt": "Make the background image repeat only vertically.",
+    "code": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  @(17): @(8);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  background-repeat: repeat-y;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_background4.htm": {
+    "prompt": "Specify that the background image should be shown once, in the top right corner.",
+    "code": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  @(17): @(9);\n  @(19): @(9);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url(\"img_tree.png\");\n  background-repeat: no-repeat;\n  background-position: top right;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_border2.htm": {
+    "prompt": "Use the correct border property to set the border color to \"red\".",
+    "code": "<style>\np {\n  border-style: dotted;\n  border-width: 4px;\n  @(12): red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  border-style: dotted;\n  border-width: 4px;\n  border-color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_border4.htm": {
+    "prompt": "Use the correct border property to add ROUNDED borders to the <p> elements.",
+    "code": "<style>\np {\n  border: 2px solid red;\n  @(13): 5px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  border: 2px solid red;\n  border-radius: 5px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_border1.htm": {
+    "prompt": "Use the border shorthand property to set a \"4px\", \"dotted\", \"red\" border for the <p> elements.",
+    "code": "<style>\np {\n  @(6): @(14);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  border: 4px dotted red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_border3.htm": {
+    "prompt": "Use the correct border property to set the LEFT border to \"dotted\".",
+    "code": "<style>\np {\n  @(17): dotted;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  border-left-style: dotted;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_boxmodel1.htm": {
+    "prompt": "Set the width of the <div> element to \"200px\".",
+    "code": "<style>\n@(3) {\n  @(5): @(5);\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  width: 200px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_boxmodel2.htm": {
+    "prompt": "Add a 2px solid red border to the <div> element.",
+    "code": "<style>\n@(3) {\n  width: 200px;\n  @(6): 2px solid red;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  width: 200px;\n  border: 2px solid red;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_boxmodel3.htm": {
+    "prompt": "Add 25 pixels space between the <div> element's border and its content.",
+    "code": "<style>\ndiv {\n  width: 200px;\n  border: 2px solid red;  \n  @(7): 25px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  width: 200px;\n  border: 2px solid red;  \n  padding: 25px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_boxmodel4.htm": {
+    "prompt": "Add a 25 pixels space outside, to the left of the <div> element.",
+    "code": "<style>\ndiv {\n  width: 200px;\n  border: 2px solid red;  \n  padding: 25px;\n  @(11): 25px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  width: 200px;\n  border: 2px solid red;  \n  padding: 25px;\n  margin-left: 25px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_combinators1.htm": {
+    "prompt": "Change the color of all <p> elements, that are descendants of <div> elements, to \"red\".",
+    "code": "<style>\n@(5) {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\ndiv p {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_combinators2.htm": {
+    "prompt": "Change the color of all <p> elements, that are immediate children of <div> elements, to \"red\".",
+    "code": "<style>\n@(7) {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\ndiv > p {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_combinators3.htm": {
+    "prompt": "Change the color of the first <p> element that is directly after a <div> element, to \"red\".",
+    "code": "<style>\n@(7) {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\ndiv + p {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_combinators4.htm": {
+    "prompt": "Change the color of the <p> elements that are siblings of a <div> element, to \"red\".",
+    "code": "<style>\n@(7) {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\ndiv ~ p {\n  color: red;\n}\n</style>\n\n<body>\n\n<div>\n  <p>This is a paragraph.</p>\n  <p>This is a paragraph.</p>\n</div>\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_css3_2dtransforms1.htm": {
+    "prompt": "With the transform property, move the <div> element 100px to the right, and 200px down.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  @(9): @(23);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: translate(100px, 200px);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_2dtransforms2.htm": {
+    "prompt": "With the transform property, rotate the <div> element 45 degrees.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  @(9): @(13);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: rotate(45deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_2dtransforms_scale1.htm": {
+    "prompt": "With the transform property, change the size of the <div> to half its width, but double its height.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  @(9): @(13);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: scale(0.5, 2);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_2dtransforms_skew1.htm": {
+    "prompt": "With the transform property, skew the <div> element 20 degrees along the X-axis, and 30 degrees along the Y-axis.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  @(9): @(18);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  margin: 50px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: skew(20deg, 30deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_3dtransforms1.htm": {
+    "prompt": "With the transform property, rotate the <div> element 150deg around its X-axis.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  @(9): @(15);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: rotateX(150deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_3dtransforms2.htm": {
+    "prompt": "With the transform property, rotate the <div> element 120deg around its Y-axis.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: @(15);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: rotateY(120deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_3dtransforms3.htm": {
+    "prompt": "With the transform property, rotate the <div> element 90deg around its Z-axis.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: @(14);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: lightblue;\n  border: 1px solid black;\n  transform: rotateZ(90deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations1.htm": {
+    "prompt": "Add a 2 second animation for the <div> element, which changes the color from red to blue. Call the animation \"example\".",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: red;\n  animation-name: @(7);\n  @(18): 2s;\n}\n\n@keyframes example {\n  from {@(16): red;}\n  to {@(16): blue;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 2s;\n}\n\n@keyframes example {\n  from {background-color: red;}\n  to {background-color: blue;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations2.htm": {
+    "prompt": "Add the following 5 steps to the animation \"example\" (using 0%, 25%, 50%, 75%, and 100%):",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n}\n\n@keyframes example {\n  0%   {@(17);}\n  25%  {@(19);}\n  50%  {@(21);}\n  75%  {@(19);}\n  100% {@(17);}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n}\n\n@keyframes example {\n  0%   {left:0px; top:0px;}\n  25%  {left:0px; top:200px;}\n  50%  {left:200px; top:200px;}\n  75%  {left:200px; top:0px;}\n  100% {left:0px; top:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations_properties1.htm": {
+    "prompt": "Specify that the animation of the <div> element should alternate between running forwards and backwards.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n  animation-iteration-count: infinite;\n  @(19): @(9);   \n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px; top:0px;}\n  25%  {background-color: blue; left:0px; top:200px;}\n  50%  {background-color: green; left:200px; top:200px;}\n  75%  {background-color: yellow; left:200px; top:0px;}\n  100% {background-color: red; left:0px; top:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n  animation-iteration-count: infinite;\n  animation-direction: alternate;   \n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px; top:0px;}\n  25%  {background-color: blue; left:0px; top:200px;}\n  50%  {background-color: green; left:200px; top:200px;}\n  75%  {background-color: yellow; left:200px; top:0px;}\n  100% {background-color: red; left:0px; top:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations_timing1.htm": {
+    "prompt": "Specify that the animation of the <div> element should have a \"1\" second delay before starting.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 2s;\n  @(15): @(2);\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 2s;\n  animation-delay: 1s;\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations_timing2.htm": {
+    "prompt": "Specify that the animation of the <div> element should continue to loop for ever.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 2s;\n  @(25): @(8);\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 2s;\n  animation-iteration-count: infinite;\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_animations_timing3.htm": {
+    "prompt": "Specify that the animation of the <div> element should have a \"ease-in-out\" speed curve.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n  @(25): @(11);\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  position: relative;\n  background-color: red;\n  animation-name: example;\n  animation-duration: 4s;\n  animation-timing-function: ease-in-out;\n}\n\n@keyframes example {\n  0%   {background-color: red; left:0px;}\n  50%  {background-color: yellow; left:200px;}\n  100% {background-color: red; left:0px;}\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_backgrounds1.htm": {
+    "prompt": "Add two background images to the <body> element.\nimg1.gif and img2.gif.\nMake sure that img2.gif is displayed on top of img1.gif.",
+    "code": "<style>\nbody {\n  background-image: @(32);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url('img2.gif'), url('img1.gif');\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_backgrounds2.htm": {
+    "prompt": "Set the width of the background image to 100px, and the height to 80px.",
+    "code": "<style>\nbody {\n  background-image: url('img1.gif');\n  @(15): @(10);\n  background-repeat: no-repeat;  \n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url('img1.gif');\n  background-size: 100px 80px;\n  background-repeat: no-repeat;  \n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_backgrounds3.htm": {
+    "prompt": "Position the two background images in each top corner.\nimg1.gif at the left and img2.gif at the right.",
+    "code": "<style>\nbody {\n  background-image: url('img1.gif'), url('img2.gif');\n  background-repeat: no-repeat, no-repeat;\n  @(19): @(8), @(9);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-image: url('img1.gif'), url('img2.gif');\n  background-repeat: no-repeat, no-repeat;\n  background-position: left top, right top;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_backgrounds4.htm": {
+    "prompt": "There is a CSS property that allows us to specify if the background image should be positioned according to the border, padding or the content.\nInsert the correct CSS background property, and value, to position the image according to where the content is positioned.",
+    "code": "<style>\n#example1 {\n  padding: 20px;\n  background-image: url('img1.gif');\n  background-repeat: no-repeat;\n  @(17): @(11);\n}\n</style>",
+    "solution": "<style>\n#example1 {\n  padding: 20px;\n  background-image: url('img1.gif');\n  background-repeat: no-repeat;\n  background-origin: content-box;\n}\n</style>"
+  },
+  "css/exercise_css3_backgrounds5.htm": {
+    "prompt": "The background-clip property has three possible values, insert one of them.",
+    "code": "<style>\n#example1 {\n  border: 10px dotted red;\n  padding: 20px;\n  background-color: yellow;\n  background-clip: @(11);\n}\n</style>",
+    "solution": "<style>\n#example1 {\n  border: 10px dotted red;\n  padding: 20px;\n  background-color: yellow;\n  background-clip: padding-box;\n}\n</style>"
+  },
+  "css/exercise_css3_border_images1.htm": {
+    "prompt": "Give the div element an image border.\nUse the short hand property to define the details of the image border.",
+    "code": "<style>\ndiv {\n  border: 10px solid transparent;\n  @(12): url(border.png) 30 round;\n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>",
+    "solution": "<style>\ndiv {\n  border: 10px solid transparent;\n  border-image: url(border.png) 30 round;\n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>"
+  },
+  "css/exercise_css3_border_images2.htm": {
+    "prompt": "The image border needs a border-image-repeat value,\ninsert one of the legal values.",
+    "code": "<style>\ndiv {\n  border: 10px solid transparent;\n  border-image-source: url(border.png);\n  border-image-repeat: @(7);  \n  border-image-slice: 30;\n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>",
+    "solution": "<style>\ndiv {\n  border: 10px solid transparent;\n  border-image-source: url(border.png);\n  border-image-repeat: stretch;  \n  border-image-slice: 30;\n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>"
+  },
+  "css/exercise_css3_borders1.htm": {
+    "prompt": "Give the <div> element rounded corners.",
+    "code": "<style>\ndiv {\n  background: red;\n  @(13): 10px;  \n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>",
+    "solution": "<style>\ndiv {\n  background: red;\n  border-radius: 10px;  \n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>"
+  },
+  "css/exercise_css3_borders2.htm": {
+    "prompt": "Give the <div> element a rounded corner on the bottom left side.",
+    "code": "<style>\ndiv {\n  background: red;\n  @(25): 10px;  \n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>",
+    "solution": "<style>\ndiv {\n  background: red;\n  border-bottom-left-radius: 10px;  \n}\n</style>\n\n<body>\n  <div>This is a div element. It has some text.</div>\n</body>"
+  },
+  "css/exercise_css3_colors1.htm": {
+    "prompt": "Insert the RGBA color value for a full red background color of the <h1> element, with no transparency.",
+    "code": "<style>\nh1 {\n  background-color: @(20);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  background-color: rgba(255, 0, 0, 1.0);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_colors2.htm": {
+    "prompt": "Use hue, saturation and lightness to set a background color of the <h1> element.\nSet the hue to red, saturation to 100%, and lightness to 50%.",
+    "code": "<style>\nh1 {\n  background-color: @(17);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  background-color: hsl(0, 100%, 50%);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_colors3.htm": {
+    "prompt": "There is also a method where we can specify the alpha channel as well as hue, saturation, and lightness, what is the name of this method?",
+    "code": "<style>\nh1 {\n  background-color: @(4)(0, 100%, 50%, 0.3);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  background-color: hsla(0, 100%, 50%, 0.3);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_colors4.htm": {
+    "prompt": "We can set the transparence for the whole element, not only the background, by using which CSS property?",
+    "code": "<style>\nh1 {\n  background-color: rgb(255, 0, 0);\n  @(7): 0.3;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  background-color: rgb(255, 0, 0);\n  opacity: 0.3;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_fonts1.htm": {
+    "prompt": "Add a web font with the name \"sansation\" and the URL \"sansation_light.woff\".",
+    "code": "<style>\n@(10) {\n  font-family: @(9);\n  @(3): @(27);\n}\n\nbody {\n  font-family: sansation;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\n@font-face {\n  font-family: sansation;\n  src: url('sansation_light.woff');\n}\n\nbody {\n  font-family: sansation;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_fonts2.htm": {
+    "prompt": "Add another @font-face rule for bold characters of the \"sansation\" font. Use the URL \"sansation_bold.woff\".",
+    "code": "<style>\n@font-face {\n  font-family: sansation;\n  src: url('sansation_light.woff');\n}\n\n@font-face {\n  font-family: sansation;\n  src: url('sansation_bold.woff');\n  @(11): @(4);\n}\n\nbody {\n  font-family: sansation;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a <b>paragraph</b></p>\n</body>",
+    "solution": "<style>\n@font-face {\n  font-family: sansation;\n  src: url('sansation_light.woff');\n}\n\n@font-face {\n  font-family: sansation;\n  src: url('sansation_bold.woff');\n  font-weight: bold;\n}\n\nbody {\n  font-family: sansation;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a <b>paragraph</b></p>\n</body>"
+  },
+  "css/exercise_css3_gradients1.htm": {
+    "prompt": "Set a linear gradient background for the <div> element, going from the top to bottom, transitioning from \"white\" to \"green\".",
+    "code": "<style>\ndiv {\n  @(16): @(15)(white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: linear-gradient(white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients2.htm": {
+    "prompt": "Set a linear gradient background for the <div> element, going from left to right.",
+    "code": "<style>\ndiv {\n  background-image: linear-gradient(@(8), white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: linear-gradient(to right, white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients3.htm": {
+    "prompt": "Set a linear gradient background for the <div> element, going from right to left.",
+    "code": "<style>\ndiv {\n  background-image: linear-gradient(@(7), white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: linear-gradient(to left, white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients4.htm": {
+    "prompt": "Set a linear gradient background for the <div> element, going diagonally from top left to bottom right.",
+    "code": "<style>\ndiv {\n  background-image: linear-gradient(@(15), white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: linear-gradient(to bottom right, white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients5.htm": {
+    "prompt": "Set a linear gradient background for the <div> element, going at a 70 degree angle.",
+    "code": "<style>\ndiv {\n  background-image: linear-gradient(@(5), white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: linear-gradient(70deg, white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients6.htm": {
+    "prompt": "Set a radial gradient background for the <div> element, transitioning from \"white\" to \"green\".",
+    "code": "<style>\ndiv {\n  background-image: @(15)(white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: radial-gradient(white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_gradients7.htm": {
+    "prompt": "Set a radial gradient background for the <div> element, transitioning from \"white\" to \"green\", in a circle shape.",
+    "code": "<style>\ndiv {\n  background-image: radial-gradient(@(6), @(5), @(5));\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>",
+    "solution": "<style>\ndiv {\n  background-image: radial-gradient(circle, white, green);\n}\n</style>\n\n<body>\n  <div style=\"height:200px\"></div>\n</body>"
+  },
+  "css/exercise_css3_shadows1.htm": {
+    "prompt": "Set a \"2px\" horizontal, and \"2px\" vertical, text shadow for the <h1> element.",
+    "code": "<style>\nh1 {\n  @(11): 2px 2px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  text-shadow: 2px 2px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_shadows2.htm": {
+    "prompt": "Set a \"2px\" horizontal, and \"2px\" vertical, \"green\" text shadow for the <h1> element, with a \"5px\" blur radius.",
+    "code": "<style>\nh1 {\n  text-shadow: @(17);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  text-shadow: 2px 2px 5px green;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_shadows3.htm": {
+    "prompt": "In addition to the green shadow, add a red shadow with 3px horizontal and vertical shadow, and a 10px blur effect.",
+    "code": "<style>\nh1 {\n  text-shadow: 2px 2px 5px green@(18);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  text-shadow: 2px 2px 5px green, 3px 3px 10px red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_css3_shadows4.htm": {
+    "prompt": "Set a \"10px\" horizontal, and \"10px\" vertical, box shadow for the <div> element.",
+    "code": "<style>\ndiv {\n  @(10): 10px 10px;\n}\n</style>\n\n<body>\n  <div>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph</p>\n    <p>This is a paragraph</p>\n  </div>\n</body>",
+    "solution": "<style>\ndiv {\n  box-shadow: 10px 10px;\n}\n</style>\n\n<body>\n  <div>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph</p>\n    <p>This is a paragraph</p>\n  </div>\n</body>"
+  },
+  "css/exercise_css3_shadows5.htm": {
+    "prompt": "Set a \"10px\" horizontal, and \"10px\" vertical, \"red\" box shadow for the <div> element.",
+    "code": "<style>\ndiv {\n  box-shadow: @(13);\n}\n</style>\n\n<body>\n  <div>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph</p>\n    <p>This is a paragraph</p>\n  </div>\n</body>",
+    "solution": "<style>\ndiv {\n  box-shadow: 10px 10px red;\n}\n</style>\n\n<body>\n  <div>\n    <h1>This is a heading</h1>\n    <p>This is a paragraph</p>\n    <p>This is a paragraph</p>\n  </div>\n</body>"
+  },
+  "css/exercise_css3_text_effects1.htm": {
+    "prompt": "Specify that the overflowed content for the <p> element should be signaled with an ellipsis (...).",
+    "code": "<style>\np {\n  white-space: nowrap; \n  width: 200px; \n  border: 1px solid #000000;\n  overflow: hidden;\n  @(13): @(8);\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>",
+    "solution": "<style>\np {\n  white-space: nowrap; \n  width: 200px; \n  border: 1px solid #000000;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>"
+  },
+  "css/exercise_css3_text_effects2.htm": {
+    "prompt": "Specify that text in the <p> element should wrap, even if it needs to split in the middle of a word.",
+    "code": "<style>\np {\n  width: 150px; \n  border: 1px solid #000000;\n  @(9): @(10);\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>",
+    "solution": "<style>\np {\n  width: 150px; \n  border: 1px solid #000000;\n  word-wrap: break-word;\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>"
+  },
+  "css/exercise_css3_text_effects3.htm": {
+    "prompt": "Specify that text in the <p> element can break between any two letters.",
+    "code": "<style>\np {\n  width: 150px; \n  border: 1px solid #000000;\n  @(10): @(9);\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>",
+    "solution": "<style>\np {\n  width: 150px; \n  border: 1px solid #000000;\n  word-break: break-all;\n}\n</style>\n\n<body>\n  <p>\n    This paragraph contains a very long word: supercalifragilisticexpialidocious.\n  </p>\n</body>"
+  },
+  "css/exercise_css3_transitions1.htm": {
+    "prompt": "Add a 2 second transition effect for width changes of the <div> element.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  @(10): @(8);\n}\n\ndiv:hover {\n  width: 300px;\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: width 2s;\n}\n\ndiv:hover {\n  width: 300px;\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_transitions2.htm": {
+    "prompt": "Add a 2 second transition effect for background, and transform changes of the <div> element.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: @(13), @(12);\n}\n\ndiv:hover {\n  background: blue;\n  transform: rotate(180deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: background 2s, transform 2s;\n}\n\ndiv:hover {\n  background: blue;\n  transform: rotate(180deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_transitions_timing1.htm": {
+    "prompt": "Specify that the transition of the <div> element should have a \"0.5\" second delay before starting.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: width 2s;\n  @(16): 0.5s;\n}\n\ndiv:hover {\n  width: 300px;\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: width 2s;\n  transition-delay: 0.5s;\n}\n\ndiv:hover {\n  width: 300px;\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_css3_transitions_timing2.htm": {
+    "prompt": "Add a 2 second transition effect for background, and transform changes of the <div> element.",
+    "code": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: @(13), @(12);\n}\n\ndiv:hover {\n  background: blue;\n  transform: rotate(180deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>",
+    "solution": "<style>\ndiv {\n  width: 100px;\n  height: 100px;\n  background: red;\n  transition: background 2s, transform 2s;\n}\n\ndiv:hover {\n  background: blue;\n  transform: rotate(180deg);\n}\n</style>\n\n<body>\n  <div>This is a div</div>\n</body>"
+  },
+  "css/exercise_display_hide1.htm": {
+    "prompt": "Hide the <h1> element. It should still take up the same space as before.",
+    "code": "<style>\nh1 {\n  @(10): @(6);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  visibility: hidden;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_display_hide2.htm": {
+    "prompt": "Hide the <h1> element. It should NOT take up any space.",
+    "code": "<style>\nh1 {\n  @(7): @(4);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  display: none;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_display_visibility1.htm": {
+    "prompt": "Display the list items as inline elements.",
+    "code": "<style>\n@(2) {\n  @(7): @(6);\n}\n</style>\n\n<body>\n<ul>\n  <li>Apple</li>\n  <li>Orange</li>\n  <li>Pear</li>\n</ul>\n</body>",
+    "solution": "<style>\nli {\n  display: inline;\n}\n</style>\n\n<body>\n<ul>\n  <li>Apple</li>\n  <li>Orange</li>\n  <li>Pear</li>\n</ul>\n</body>"
+  },
+  "css/exercise_display_visibility2.htm": {
+    "prompt": "Display the <strong> elements as block elements.",
+    "code": "<style>\n@(6) {\n  @(7): @(5);\n}\n</style>\n\n<body>\n<h1>This is a Heading</h1>\n<p>This is a <strong>paragraph</strong></p>\n</body>",
+    "solution": "<style>\nstrong {\n  display: block;\n}\n</style>\n\n<body>\n<h1>This is a Heading</h1>\n<p>This is a <strong>paragraph</strong></p>\n</body>"
+  },
+  "css/exercise_font1.htm": {
+    "prompt": "Set the font for <h1> to \"Verdana\".",
+    "code": "<style>\nh1 {\n  @(11): Verdana;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  font-family: Verdana;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_font3.htm": {
+    "prompt": "Set the font size of <h1> to 50px.",
+    "code": "<style>\nh1 {\n  @(9): 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  font-size: 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_font2.htm": {
+    "prompt": "Set the style of <h1> to \"italic\" text.",
+    "code": "<style>\nh1 {\n  @(10): @(6);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  font-style: italic;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_font4.htm": {
+    "prompt": "Set the style of <p> elements as \"bold\" text.",
+    "code": "<style>\np {\n  @(11): bold;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>  \n</body>",
+    "solution": "<style>\np {\n  font-weight: bold;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>  \n</body>"
+  },
+  "css/exercise_font5.htm": {
+    "prompt": "Use the correct font- property to style the <p> elements as \"small-caps\".",
+    "code": "<style>\np {\n  @(12): small-caps;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>  \n</body>",
+    "solution": "<style>\np {\n  font-variant: small-caps;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>  \n</body>"
+  },
+  "css/exercise_height_width1.htm": {
+    "prompt": "Set the height of the <h1> element to \"100px\".",
+    "code": "<style>\nh1 {\n  @(6): 100px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  height: 100px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_height_width2.htm": {
+    "prompt": "Set the width of the <h1> element to \"50%\".",
+    "code": "<style>\nh1 {\n  @(5): 50%;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  width: 50%;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_howto1.htm": {
+    "prompt": "Add an external style sheet with the URL: \"mystyle.css\".",
+    "code": "<head>\n@(42)\n</head>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<head>\n<link rel=\"stylesheet\" href=\"mystyle.css\">\n</head>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_howto_inline1.htm": {
+    "prompt": "Set the page's background color to red, by using an inline style.",
+    "code": "<body @(5)=\"background-color: red\">\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<body style=\"background-color: red\">\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_howto_internal1.htm": {
+    "prompt": "Set the page's background color to red using an internal style sheet.",
+    "code": "<style>\n@(4) {\n  @(17) red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nbody {\n  background-color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_image_transparency1.htm": {
+    "prompt": "Use CSS to set the transparency of the image to 50%.",
+    "code": "<style>\nimg {\n  @(7): @(3);\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" width=\"150\" height=\"113\">\n</body>",
+    "solution": "<style>\nimg {\n  opacity: 0.5;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" width=\"150\" height=\"113\">\n</body>"
+  },
+  "css/exercise_image_transparency2.htm": {
+    "prompt": "Use CSS to \"remove\" the transparency of the image when the user mouse over the image.",
+    "code": "<style>\nimg {\n  opacity: 0.4;\n}\nimg:hover {\n  opacity: @(3);\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" width=\"150\" height=\"113\">\n</body>",
+    "solution": "<style>\nimg {\n  opacity: 0.4;\n}\nimg:hover {\n  opacity: 1.0;\n}\n</style>\n\n<body>\n  <img src=\"klematis.jpg\" width=\"150\" height=\"113\">\n</body>"
+  },
+  "css/exercise_link1.htm": {
+    "prompt": "Set the color of links to \"red\".",
+    "code": "<style>\n@(1) {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>",
+    "solution": "<style>\na {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>"
+  },
+  "css/exercise_link2.htm": {
+    "prompt": "Set the style when you mouse over a link (hover) to red.",
+    "code": "<style>\n@(7) {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>",
+    "solution": "<style>\na:hover {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>"
+  },
+  "css/exercise_link3.htm": {
+    "prompt": "Set the style for links to pages you have visited to red.",
+    "code": "<style>\n@(9) {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>",
+    "solution": "<style>\na:visited {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>"
+  },
+  "css/exercise_link4.htm": {
+    "prompt": "Remove the default underline style for links, but add a underline when you mouse over a link (hover).",
+    "code": "<style>\n/* unvisited link */\n@(6) {text-decoration: none;}\n\n/* visited link */\n@(9) {text-decoration: none;}\n\n/* mouse over link */\n@(7) {text-decoration: underline;}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>",
+    "solution": "<style>\n/* unvisited link */\na:link {text-decoration: none;}\n\n/* visited link */\na:visited {text-decoration: none;}\n\n/* mouse over link */\na:hover {text-decoration: underline;}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>"
+  },
+  "css/exercise_list1.htm": {
+    "prompt": "Set the list style for unordered lists to \"square\".",
+    "code": "<style>\nul {\n  @(15): @(6);\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>",
+    "solution": "<style>\nul {\n  list-style-type: square;\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>"
+  },
+  "css/exercise_list2.htm": {
+    "prompt": "Change the list's item marker to an image called 'bling.jpg':",
+    "code": "<style>\nul {\n  @(16): @(16);\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>",
+    "solution": "<style>\nul {\n  list-style-image: url(\"bling.jpg\");\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>"
+  },
+  "css/exercise_list3.htm": {
+    "prompt": "Remove the bullets/markers from the list items.",
+    "code": "<style>\nul {\n  @(15): @(4);\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>",
+    "solution": "<style>\nul {\n  list-style-type: none;\n}\n</style>\n\n<body>\n<ul>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ul>\n</body>"
+  },
+  "css/exercise_list4.htm": {
+    "prompt": "Set the list style to I, II, III, instead of 1, 2, 3 for ordered lists.",
+    "code": "<style>\nol {\n  @(15): @(11);\n}\n</style>\n\n<body>\n<ol>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ol>\n</body>",
+    "solution": "<style>\nol {\n  list-style-type: upper-roman;\n}\n</style>\n\n<body>\n<ol>\n  <li>Coffee</li>\n  <li>Tea</li>\n  <li>Coca Cola</li>\n</ol>\n</body>"
+  },
+  "css/exercise_margin1.htm": {
+    "prompt": "Add a 20 pixels left margin to the <h1> element.",
+    "code": "<style>\nh1 {\n  @(11): 20px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  margin-left: 20px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_margin2.htm": {
+    "prompt": "Use the shorthand margin property to add 20 pixels top and bottom margins, and 40 pixels left and right margins, on the <h1> element.",
+    "code": "<style>\nh1 {\n  margin: @(9);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  margin: 20px 40px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_margin3.htm": {
+    "prompt": "For the <h1> element, use the shorthand margin property to add these margins:\n\nleft: 10px\n\nright: 15px\n\ntop: 20px\n\nbottom: 25px",
+    "code": "<style>\nh1 {\n  margin: @(2)px @(2)px @(2)px @(2)px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  margin: 20px 15px 25px 10px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_margin4.htm": {
+    "prompt": "Use the margin property to center align the <h1> element.",
+    "code": "<style>\nh1 {\n  margin: @(4);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  margin: auto;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_outline2.htm": {
+    "prompt": "Set the color of the outline border to red.",
+    "code": "<style>\ndiv {\n  outline-style: solid;\n  outline-width: 5px;\n  @(13): red;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  outline-style: solid;\n  outline-width: 5px;\n  outline-color: red;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_outline3.htm": {
+    "prompt": "Use the outline shorthand property to set a \"4px\", \"dotted\", \"red\" outline border for the <div> element.",
+    "code": "<style>\ndiv {\n  @(7): @(14);\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  outline: 4px dotted red;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_outline1.htm": {
+    "prompt": "Set a solid, 5px outline border for the <div> element.",
+    "code": "<style>\ndiv {\n  @(13): solid;\n  @(13): 5px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>",
+    "solution": "<style>\ndiv {\n  outline-style: solid;\n  outline-width: 5px;\n}\n</style>\n\n<body>\n\n<div>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</div>\n\n</body>"
+  },
+  "css/exercise_overflow1.htm": {
+    "prompt": "Force a scroll bar to the <div> element with class=\"intro\".",
+    "code": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  @(8): @(6);\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>",
+    "solution": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  overflow: scroll;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>"
+  },
+  "css/exercise_overflow2.htm": {
+    "prompt": "Specify that the overflowing text in the <div> element should not be visible,\nnot even with a scroll bar.",
+    "code": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  @(8): @(6);\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>",
+    "solution": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  overflow: hidden;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>"
+  },
+  "css/exercise_overflow_xy1.htm": {
+    "prompt": "Add a horizontal scrollbar to the <div> element.",
+    "code": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  @(10): @(6);\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>",
+    "solution": "<style>\n.intro {\n  width: 200px;\n  height: 70px;\n  overflow-x: scroll;\n}\n</style>\n\n<body>\n\n<div class=\"intro\">\nLorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Phasellus imperdiet, nulla et dictum interdum,<br>nisi lorem egestas odio,<br>vitae scelerisque enim ligula venenatis dolor.\n</div>\n\n</body>"
+  },
+  "css/exercise_padding1.htm": {
+    "prompt": "Set the top padding of the <h1> element to 30 pixels.",
+    "code": "<style>\nh1 {\n  @(11): 30px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  padding-top: 30px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_padding2.htm": {
+    "prompt": "Set the padding of all sides of the <h1> element to 30 pixels.",
+    "code": "<style>\nh1 {\n  @(7): 30px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  padding: 30px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_padding3.htm": {
+    "prompt": "Use the shorthand padding property to add 10 pixels left and right padding,\nand 40 pixels top and bottom padding, on the <h1> element.",
+    "code": "<style>\nh1 {\n  padding: @(2)px @(2)px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  padding: 40px 10px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_positioning1.htm": {
+    "prompt": "Position the <h1> element 50px from the top, relative to its normal position.",
+    "code": "<style>\nh1 {\n  @(8): @(8);\n  @(3): 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  position: relative;\n  top: 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_positioning2.htm": {
+    "prompt": "Position the <h1> element 50px from the top, by referring to its class name.",
+    "code": "<style>\n@(9) {\n  @(8): relative;\n  top: @(4);\n}\n</style>\n\n<body>\n  <h1 class=\"myheader\">This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\n.myheader {\n  position: relative;\n  top: 50px;\n}\n</style>\n\n<body>\n  <h1 class=\"myheader\">This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_positioning_fixed_absolute1.htm": {
+    "prompt": "Position the <h1> element to always be 50px from the top,\nand 10px from the right, relative to the window/frame edges.",
+    "code": "<style>\nh1 {\n  @(8): @(5);\n  @(3): 50px;\n  @(5): 10px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  position: fixed;\n  top: 50px;\n  right: 10px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_positioning_fixed_absolute2.htm": {
+    "prompt": "Position the <h1> element 50px from the top, relative to the HTML page.",
+    "code": "<style>\nh1 {\n  @(8): @(8);\n  @(3): 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  position: absolute;\n  top: 50px;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_pseudo_classes_interactive1.htm": {
+    "prompt": "Set the background-color to red, when you mouse over a link.",
+    "code": "<style>\n@(7) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<h1>This is a header.</h1>\n<p>This is a paragraph.</p>\n<a href=\"https://w3schools.com\">This is a link.</a>\n\n</body>",
+    "solution": "<style>\na:hover {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<h1>This is a header.</h1>\n<p>This is a paragraph.</p>\n<a href=\"https://w3schools.com\">This is a link.</a>\n\n</body>"
+  },
+  "css/exercise_pseudo_classes_interactive2.htm": {
+    "prompt": "Set the background-color to red, when you mouse over elements with the class \"master\".",
+    "code": "<style>\n@(13) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<h1 class=\"master\">This is a header.</h1>\n<p class=\"master\">This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\n.master:hover {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<h1 class=\"master\">This is a header.</h1>\n<p class=\"master\">This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_pseudo_classes_interactive3.htm": {
+    "prompt": "Set the background-color to red, of any <input> element that are in focus.",
+    "code": "<style>\n@(11) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<form>\n  Name:\n  <input type=\"text\" name=\"fname\">\n  Age:\n  <input type=\"text\" name=\"age\">\n</form>\n\n</body>",
+    "solution": "<style>\ninput:focus {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<form>\n  Name:\n  <input type=\"text\" name=\"fname\">\n  Age:\n  <input type=\"text\" name=\"age\">\n</form>\n\n</body>"
+  },
+  "css/exercise_pseudo_classes_structural1.htm": {
+    "prompt": "Set the background-color to red, of any <p> element that are the first child of any element.",
+    "code": "<style>\n@(13) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\np:first-child {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_pseudo_elements_content1.htm": {
+    "prompt": "Insert the image \"smiley.gif\" before, and after any <p>element, using the ::before and ::after pseudo-elements.",
+    "code": "<style>\np::before {\n  @(7): url('smiley.gif');\n}\np::after {\n  @(7): url('smiley.gif');\n}\n</style>\n\n<body>\n\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>",
+    "solution": "<style>\np::before {\n  content: url('smiley.gif');\n}\np::after {\n  content: url('smiley.gif');\n}\n</style>\n\n<body>\n\n<p>This is a paragraph.</p>\n<p>This is a paragraph.</p>\n\n</body>"
+  },
+  "css/exercise_pseudo_elements_text1.htm": {
+    "prompt": "Set the background-color to red, of the first line of the paragraph.",
+    "code": "<style>\n@(18) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p class=\"intro\">\nIn my younger and more vulnerable years\nmy father gave me some advice that I've\nbeen turning over in my mind ever since.\n'Whenever you feel like criticizing anyone,' he told me,\n'just remember that all the people in this world\nhaven't had the advantages that you've had.'\n</p>\n\n</body>",
+    "solution": "<style>\n.intro::first-line {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p class=\"intro\">\nIn my younger and more vulnerable years\nmy father gave me some advice that I've\nbeen turning over in my mind ever since.\n'Whenever you feel like criticizing anyone,' he told me,\n'just remember that all the people in this world\nhaven't had the advantages that you've had.'\n</p>\n\n</body>"
+  },
+  "css/exercise_pseudo_elements_text2.htm": {
+    "prompt": "Set the background-color to red, for the first letter of the <p> element.",
+    "code": "<style>\n@(20) {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p class=\"intro\">\nIn my younger and more vulnerable years\nmy father gave me some advice that I've\nbeen turning over in my mind ever since.\n'Whenever you feel like criticizing anyone,' he told me,\n'just remember that all the people in this world\nhaven't had the advantages that you've had.'\n</p>\n\n</body>",
+    "solution": "<style>\n.intro::first-letter {\n  background-color: red;\n}\n</style>\n\n<body>\n\n<p class=\"intro\">\nIn my younger and more vulnerable years\nmy father gave me some advice that I've\nbeen turning over in my mind ever since.\n'Whenever you feel like criticizing anyone,' he told me,\n'just remember that all the people in this world\nhaven't had the advantages that you've had.'\n</p>\n\n</body>"
+  },
+  "css/exercise_selectors1.htm": {
+    "prompt": "Set the text color to red, for all <p> elements.",
+    "code": "<style>\n@(1) {\n  @(6) red;\n}\n</style>",
+    "solution": "<style>\np {\n  color: red;\n}\n</style>"
+  },
+  "css/exercise_selectors2.htm": {
+    "prompt": "Set the text color to red, for the element with id=\"para1\".",
+    "code": "<style>\n@(6) {\n  @(6) red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p id=\"para1\">This is a paragraph</p>\n</body>",
+    "solution": "<style>\n#para1 {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p id=\"para1\">This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_selectors3.htm": {
+    "prompt": "Set the text color to red, for elements with class=\"colortext\".",
+    "code": "<style>\n@(10) {\n  @(6) red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p class=\"colortext\">This is a paragraph</p>\n  <p class=\"colortext\">This is a paragraph</p>\n</body>",
+    "solution": "<style>\n.colortext {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p class=\"colortext\">This is a paragraph</p>\n  <p class=\"colortext\">This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_selectors_grouping1.htm": {
+    "prompt": "Set the text color to red, for all <p> and <h1> elements. Group the selectors to minimize code.",
+    "code": "<style>\n@(5) {\n  @(6) red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <h2>This is a smaller heading</h2>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1, p {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <h2>This is a smaller heading</h2>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_table1.htm": {
+    "prompt": "Set the border to \"2px solid green\" for table, th and td elements.",
+    "code": "<style>\n@(13) {\n  @(6): 2px solid green;\n}\n</style>\n\n<body>\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>\n</body>",
+    "solution": "<style>\ntable, th, td {\n  border: 2px solid green;\n}\n</style>\n\n<body>\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>\n</body>"
+  },
+  "css/exercise_table2.htm": {
+    "prompt": "Collapse the table borders into a single border.",
+    "code": "<style>\ntable {\n  @(15): @(8);\n}\n\ntable, th, td {\n  border: 1px solid green;\n}\n</style>\n\n<body>\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>\n</body>",
+    "solution": "<style>\ntable {\n  border-collapse: collapse;\n}\n\ntable, th, td {\n  border: 1px solid green;\n}\n</style>\n\n<body>\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>\n</body>"
+  },
+  "css/exercise_table3.htm": {
+    "prompt": "Use inline styles to set the width of the table to \"100%\".",
+    "code": "<table @(18)>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>",
+    "solution": "<table style=\"width:100%\">\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>"
+  },
+  "css/exercise_table4.htm": {
+    "prompt": "Set the text alignment in <td> elements to \"right\".",
+    "code": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\n@(2) {\n  @(10): right;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>",
+    "solution": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\ntd {\n  text-align: right;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>"
+  },
+  "css/exercise_table5.htm": {
+    "prompt": "Set the padding in <th> elements to \"15px\".",
+    "code": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\n@(2) {\n  @(7): 15px;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>",
+    "solution": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\nth {\n  padding: 15px;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>"
+  },
+  "css/exercise_table6.htm": {
+    "prompt": "Set the background color of <th> elements to \"lightblue\".",
+    "code": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\n@(2) {\n  @(16): lightblue;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>",
+    "solution": "<style>\ntable, th, td {\n  border: 1px solid green;\n}\n\nth {\n  background-color: lightblue;\n}\n</style>\n\n<table>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n  </tr>\n  <tr>\n    <td>Peter</td>\n    <td>Griffin</td>\n  </tr>\n  <tr>\n    <td>Lois</td>\n    <td>Griffin</td>\n  </tr>\n</table>"
+  },
+  "css/exercise_text1.htm": {
+    "prompt": "Change the text color of all <p> elements to \"red\".",
+    "code": "<style>\np {\n  @(5): red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  color: red;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_text2.htm": {
+    "prompt": "Center align the <p> elements.",
+    "code": "<style>\np {\n  @(10): @(6);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\np {\n  text-align: center;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_text3.htm": {
+    "prompt": "Remove the underline from the link.",
+    "code": "<style>\na {\n  @(15): @(4);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>",
+    "solution": "<style>\na {\n  text-decoration: none;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n  <a href=\"http://w3schools.com\">This is a link</a>\n</body>"
+  },
+  "css/exercise_text5.htm": {
+    "prompt": "Indent the first line of the <p> element with 20px.",
+    "code": "<style>\np {\n  @(11): 20px;\n}\n</style>\n\n<p>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</p>",
+    "solution": "<style>\np {\n  text-indent: 20px;\n}\n</style>\n\n<p>\nLorem ipsum dolor sit amet,\nconsectetur adipiscing elit,\nsed do eiusmod tempor incididunt\nut labore et dolore magna aliqua.\n</p>"
+  },
+  "css/exercise_text4.htm": {
+    "prompt": "Style text in <h1> to uppercase letters, and text in <p> to capitalized letters.",
+    "code": "<style>\nh1 {\n  @(14): @(9);\n}\np {\n  @(14): @(10);\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>",
+    "solution": "<style>\nh1 {\n  text-transform: uppercase;\n}\np {\n  text-transform: capitalize;\n}\n</style>\n\n<body>\n  <h1>This is a heading</h1>\n  <p>This is a paragraph</p>\n</body>"
+  },
+  "css/exercise_z-index1.htm": {
+    "prompt": "Both the header and the paragraph are positioned at the top of the page.\nMake sure that the header is placed on top of the paragraph.",
+    "code": "<style>\n@(8) {\n  position: absolute;\n  top: 0;\n  @(7): 1;  \n}\n@(8) {\n  position: absolute;\n  top: 0;\n  @(7): 0;\n}\n</style>\n\n<body>\n  <h1 id=\"mytitle\">This is a heading</h1>\n  <p id=\"myintro\">This is a paragraph</p>\n</body>",
+    "solution": "<style>\n#mytitle {\n  position: absolute;\n  top: 0;\n  z-index: 1;  \n}\n#myintro {\n  position: absolute;\n  top: 0;\n  z-index: 0;\n}\n</style>\n\n<body>\n  <h1 id=\"mytitle\">This is a heading</h1>\n  <p id=\"myintro\">This is a paragraph</p>\n</body>"
+  },
+  "js/exercise_js_array_methods2.htm": {
+    "prompt": "Use the correct Array method to add \"Kiwi\" to the fruits array.",
+    "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\n@(19);",
+    "solution": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\nfruits.push(\"Kiwi\");"
+  },
+  "js/exercise_js_array_methods3.htm": {
+    "prompt": "Use the splice() method to remove \"Orange\" and \"Apple\" from fruits.",
+    "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Kiwi\"];\nfruits.splice(@(1), @(1));",
+    "solution": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Kiwi\"];\nfruits.splice(1, 2);"
+  },
+  "js/exercise_js_array_sort1.htm": {
+    "prompt": "Use the correct Array method to sort the fruits array alphabetically.",
+    "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Kiwi\"];\n@(13);",
+    "solution": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Kiwi\"];\nfruits.sort();"
+  },
+  "js/exercise_js_arrays1.htm": {
+    "prompt": "Get the value \"Volvo\" from the cars array.",
+    "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\nlet x = @(7);",
+    "solution": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\nlet x = cars[1];"
+  },
+  "js/exercise_js_arrays2.htm": {
+    "prompt": "Change the first item of cars to \"Ford\".",
+    "code": "const cars = [\"Volvo\", \"Jeep\", \"Mercedes\"];\n@(7) = \"Ford\";",
+    "solution": "const cars = [\"Volvo\", \"Jeep\", \"Mercedes\"];\ncars[0] = \"Ford\";"
+  },
+  "js/exercise_js_arrays3.htm": {
+    "prompt": "Alert the number of items in an array, using the correct Array property.",
+    "code": "const cars = [\"Volvo\", \"Jeep\", \"Mercedes\"];\nalert(@(11));",
+    "solution": "const cars = [\"Volvo\", \"Jeep\", \"Mercedes\"];\nalert(cars.length);"
+  },
+  "js/exercise_js_operators4.htm": {
+    "prompt": "Use the correct assignment operator that will result in x being 15 (same as x = x + y).",
+    "code": "x = 10;\ny = 5;\nx @(2) y;",
+    "solution": "x = 10;\ny = 5;\nx += y;"
+  },
+  "js/exercise_js_operators5.htm": {
+    "prompt": "Use the correct assignment operator that will result in x being 50 (same as x = x * y).",
+    "code": "x = 10;\ny = 5;\nx @(2) y;",
+    "solution": "x = 10;\ny = 5;\nx *= y;"
+  },
+  "js/exercise_js_break1.htm": {
+    "prompt": "Make the loop stop when i is 5.",
+    "code": "for (i = 0; i < 10; i++) {\n  console.log(i);\n  if (i == 5) {\n    @(5);\n  }\n}",
+    "solution": "for (i = 0; i < 10; i++) {\n  console.log(i);\n  if (i == 5) {\n    break;\n  }\n}"
+  },
+  "js/exercise_js_break2.htm": {
+    "prompt": "Make the loop jump to the next iteration when i is 5.",
+    "code": "for (i = 0; i < 10; i++) {\n  if (i == 5) {\n    @(8);\n  }\n  console.log(i);\n}",
+    "solution": "for (i = 0; i < 10; i++) {\n  if (i == 5) {\n    continue;\n  }\n  console.log(i);\n}"
+  },
+  "js/exercise_js_comparisons1.htm": {
+    "prompt": "Choose the correct comparison operator to alert true, when x is greater than y.",
+    "code": "x = 10;\ny = 5;\nalert(x @(1) y);",
+    "solution": "x = 10;\ny = 5;\nalert(x > y);"
+  },
+  "js/exercise_js_comparisons2.htm": {
+    "prompt": "Choose the correct comparison operator to alert true, when x is equal to y.",
+    "code": "x = 10;\ny = 10;\nalert(x @(2) y);",
+    "solution": "x = 10;\ny = 10;\nalert(x == y);"
+  },
+  "js/exercise_js_comparisons3.htm": {
+    "prompt": "Choose the correct comparison operator to alert true, when x is NOT equal to y.",
+    "code": "x = 10;\ny = 5;\nalert(x @(2) y);",
+    "solution": "x = 10;\ny = 5;\nalert(x != y);"
+  },
+  "js/exercise_js_comparisons4.htm": {
+    "prompt": "Choose the correct conditional (ternary) operator to alert \"Too young\" if age is less than 18, otherwise alert \"Old enough\".",
+    "code": "var age = n;\nvar voteable = (age @(1) 18) @(1) \"Too young\" @(1) \"Old enough\";\nalert(voteable);",
+    "solution": "var age = n;\nvar voteable = (age < 18) ? \"Too young\" : \"Old enough\";\nalert(voteable);"
+  },
+  "js/exercise_js_dates2.htm": {
+    "prompt": "Use the correct Date method to extract the year (four digits) out of a date object.",
+    "code": "const d = new Date();\nyear = @(15);",
+    "solution": "const d = new Date();\nyear = d.getFullYear();"
+  },
+  "js/exercise_js_dates3.htm": {
+    "prompt": "Use the correct Date method to get the month (0-11) out of a date object.",
+    "code": "const d = new Date();\nmonth = @(12);",
+    "solution": "const d = new Date();\nmonth = d.getMonth();"
+  },
+  "js/exercise_js_dates4.htm": {
+    "prompt": "Use the correct Date method to set the year of a date object to 2020.",
+    "code": "const d = new Date();\nd.@(17);",
+    "solution": "const d = new Date();\nd.setFullYear(2020);"
+  },
+  "js/exercise_js_dates1.htm": {
+    "prompt": "Create a Date object and alert the current date and time.",
+    "code": "const d = @(10);\nalert(d);",
+    "solution": "const d = new Date();\nalert(d);"
+  },
+  "js/exercise_js_events2.htm": {
+    "prompt": "When the button is clicked, the function \"myFunction\" should be executed.",
+    "code": "<button @(7)=\"@(12)\">Click me.</button>",
+    "solution": "<button onclick=\"myFunction()\">Click me.</button>"
+  },
+  "js/exercise_js_events3.htm": {
+    "prompt": "The <div> element should turn red when someone moves the mouse over it.",
+    "code": "<div @(11)=\"this.style.backgroundColor='red'\">myDIV.</div>",
+    "solution": "<div onmouseover=\"this.style.backgroundColor='red'\">myDIV.</div>"
+  },
+  "js/exercise_js_functions1.htm": {
+    "prompt": "Execute the function named myFunction.",
+    "code": "function myFunction() {\n  alert(\"Hello World!\");\n}\n@(12);",
+    "solution": "function myFunction() {\n  alert(\"Hello World!\");\n}\nmyFunction();"
+  },
+  "js/exercise_js_functions2.htm": {
+    "prompt": "Create a function called \"myFunction\".",
+    "code": "@(8) @(12) @(1)\n  alert(\"Hello World!\");\n@(1)",
+    "solution": "function myFunction() {\n  alert(\"Hello World!\");\n}"
+  },
+  "js/exercise_js_functions3.htm": {
+    "prompt": "Make the function return \"Hello\".",
+    "code": "function myFunction() {\n  @(6) \"@(5)\";\n}\ndocument.getElementById(\"demo\").innerHTML = myFunction();",
+    "solution": "function myFunction() {\n  return \"Hello\";\n}\ndocument.getElementById(\"demo\").innerHTML = myFunction();"
+  },
+  "js/exercise_js_dom_html6.htm": {
+    "prompt": "Change the text color of the <p> element to \"red\".",
+    "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\")@(12) = \"red\";\n</script>",
+    "solution": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").style.color = \"red\";\n</script>"
+  },
+  "js/exercise_js_dom_html7.htm": {
+    "prompt": "Change the font size of the p element to 40 pixels.",
+    "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\")@(15) = \"@(4)\";\n</script>",
+    "solution": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").style.fontSize = \"40px\";\n</script>"
+  },
+  "js/exercise_js_dom_html8.htm": {
+    "prompt": "Use the CSS display property to hide the p element.",
+    "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\")@(14) = \"@(4)\";\n</script>",
+    "solution": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").style.display = \"none\";\n</script>"
+  },
+  "js/exercise_js_dom_html1.htm": {
+    "prompt": "Use the getElementById method to find the <p> element,\nand change its text to \"Hello\".",
+    "code": "<p id=\"demo\"></p>\n\n<script>\n@(41) = \"Hello\";\n</script>",
+    "solution": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = \"Hello\";\n</script>"
+  },
+  "js/exercise_js_dom_html2.htm": {
+    "prompt": "Use the getElementsByTagName method to find the first <p> element,\nand change its text to \"Hello\".",
+    "code": "<p id=\"demo\"></p>\n\n<script>\n@(47) = \"Hello\";\n</script>",
+    "solution": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementsByTagName(\"p\")[0].innerHTML = \"Hello\";\n</script>"
+  },
+  "js/exercise_js_dom_html9.htm": {
+    "prompt": "Use the eventListener to assign an onclick event to the \n<button> element.",
+    "code": "<button id=\"demo\">Click me1</button>\n\n<script>\ndocument.getElementById(\"demo\").@(16)(\"@(5)\", myFunction);\n</script>",
+    "solution": "<button id=\"demo\">Click me1</button>\n\n<script>\ndocument.getElementById(\"demo\").addEventListener(\"click\", myFunction);\n</script>"
+  },
+  "js/exercise_js_dom_html3.htm": {
+    "prompt": "Change the text of the first element that has the class name \"test\".",
+    "code": "<p class=\"test\"></p>\n<p class=\"test\"></p>\n\n<script>\n@(52) = \"Hello\";\n</script>",
+    "solution": "<p class=\"test\"></p>\n<p class=\"test\"></p>\n\n<script>\ndocument.getElementsByClassName(\"test\")[0].innerHTML = \"Hello\";\n</script>"
+  },
+  "js/exercise_js_dom_html4.htm": {
+    "prompt": "Use HTML DOM to change the value of the image's src attribute.",
+    "code": "<img id=\"image\" src=\"smiley.gif\">\n\n<script>\ndocument.getElementById(\"image\")@(4) = \"pic_mountain.jpg\";\n</script>",
+    "solution": "<img id=\"image\" src=\"smiley.gif\">\n\n<script>\ndocument.getElementById(\"image\").src = \"pic_mountain.jpg\";\n</script>"
+  },
+  "js/exercise_js_conditions1.htm": {
+    "prompt": "Fix the if statement to alert \"Hello World\" if x is greater than y.",
+    "code": "if @(1)x > y@(1) @(1)\n  alert(\"Hello World\");\n@(1)",
+    "solution": "if (x > y) {\n  alert(\"Hello World\");\n}"
+  },
+  "js/exercise_js_conditions2.htm": {
+    "prompt": "Fix the if statement to alert \"Hello World\" if x is greater than y, otherwise alert \"Goodbye\".",
+    "code": "@(2) (x @(1) y) {\n  alert(\"Hello World\");\n} @(4) {\n  alert(\"Goodbye\");\n}",
+    "solution": "if (x > y) {\n  alert(\"Hello World\");\n} else {\n  alert(\"Goodbye\");\n}"
+  },
+  "js/exercise_js_loops1.htm": {
+    "prompt": "Create a loop that runs from 0 to 9.",
+    "code": "let i;\n@(3) (@(1) = @(1); @(1) < @(2); @(3)) {\n  console.log(i);\n}",
+    "solution": "let i;\nfor (i = 0; i < 10; i++) {\n  console.log(i);\n}"
+  },
+  "js/exercise_js_loops2.htm": {
+    "prompt": "Create a loop that runs through each item in the fruits array.",
+    "code": "const fruits = [\"Apple\", \"Banana\", \"Orange\"];\nfor (x @(2) @(6)) {\n  console.log(x);\n}",
+    "solution": "const fruits = [\"Apple\", \"Banana\", \"Orange\"];\nfor (x of fruits) {\n  console.log(x);\n}"
+  },
+  "js/exercise_js_loop_while1.htm": {
+    "prompt": "Create a loop that runs as long as i is less than 10.",
+    "code": "let i = 0;\n@(5) (i @(1) 10) {\n  console.log(i);\n  i++\n}",
+    "solution": "let i = 0;\nwhile (i < 10) {\n  console.log(i);\n  i++\n}"
+  },
+  "js/exercise_js_loop_while2.htm": {
+    "prompt": "Create a loop that runs as long as i is less than 10,\nbut increase i with 2 each time.",
+    "code": "let i = 0;\nwhile (i < 10) {\n  console.log(i);\n  @(1) = @(1) @(1) @(1);\n}",
+    "solution": "let i = 0;\nwhile (i < 10) {\n  console.log(i);\n  i = i + 2;\n}"
+  },
+  "js/exercise_js_math2.htm": {
+    "prompt": "Use the correct Math method to return the largest number of 10 and 20.",
+    "code": "let x = @(8)(10, 20);",
+    "solution": "let x = Math.max(10, 20);"
+  },
+  "js/exercise_js_math3.htm": {
+    "prompt": "Use the correct Math method to round a number to the nearest integer.",
+    "code": "let x = Math.@(5)(5.3);",
+    "solution": "let x = Math.round(5.3);"
+  },
+  "js/exercise_js_math4.htm": {
+    "prompt": "Use the correct Math method to get the square root of 9.",
+    "code": "let x = Math.@(7);",
+    "solution": "let x = Math.sqrt(9);"
+  },
+  "js/exercise_js_objects1.htm": {
+    "prompt": "Alert \"John\" by extracting information from the person object.",
+    "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n};\n\nalert(@(16));",
+    "solution": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n};\n\nalert(person.firstName);"
+  },
+  "js/exercise_js_objects2.htm": {
+    "prompt": "Add the following property and value to the person object: country: Norway.",
+    "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\"@(1)\n  @(7): @(8)\n};",
+    "solution": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  country: \"Norway\"\n};"
+  },
+  "js/exercise_js_operators1.htm": {
+    "prompt": "Multiply 10 with 5, and alert the result:",
+    "code": "alert(10 @(1) 5);",
+    "solution": "alert(10 * 5);"
+  },
+  "js/exercise_js_math1.htm": {
+    "prompt": "Use the correct Math method to create a random number.",
+    "code": "let r = @(13);",
+    "solution": "let r = Math.random();"
+  },
+  "js/exercise_js_string_methods1.htm": {
+    "prompt": "Convert the text into an UPPERCASE text:",
+    "code": "let txt = \"Hello World!\";\ntxt = txt.@(13);",
+    "solution": "let txt = \"Hello World!\";\ntxt = txt.toUpperCase();"
+  },
+  "js/exercise_js_string_methods2.htm": {
+    "prompt": "Use the slice method to return the word \"bananas\".",
+    "code": "let txt = \"I can eat bananas all day\";\nlet x = txt.slice(@(3), @(2));",
+    "solution": "let txt = \"I can eat bananas all day\";\nlet x = txt.slice( 10, 17);"
+  },
+  "js/exercise_js_string_methods3.htm": {
+    "prompt": "Use the correct String method to replace the word \"Hello\" with the word \"Welcome\".",
+    "code": "let txt = \"Hello World\";\ntxt = txt.@(7)(\"Hello\", \"Welcome\");",
+    "solution": "let txt = \"Hello World\";\ntxt = txt.replace(\"Hello\", \"Welcome\");"
+  },
+  "js/exercise_js_string_methods5.htm": {
+    "prompt": "Convert the value of txt to lower case.",
+    "code": "let txt = \"Hello World\";\ntxt = @(17);",
+    "solution": "let txt = \"Hello World\";\ntxt = txt.toLowerCase();"
+  },
+  "js/exercise_js_strings4.htm": {
+    "prompt": "Find the position of the character h in the string txt.",
+    "code": "let txt = \"abcdefghijklm\";\nlet pos = txt.@(12);",
+    "solution": "let txt = \"abcdefghijklm\";\nlet pos = txt.indexOf(\"h\");"
+  },
+  "js/exercise_js_strings1.htm": {
+    "prompt": "Use the length property to alert the length of txt.",
+    "code": "let txt = \"Hello World!\";\nlet x = @(10);\nalert(x);",
+    "solution": "let txt = \"Hello World!\";\nlet x = txt.length;\nalert(x);"
+  },
+  "js/exercise_js_strings2.htm": {
+    "prompt": "Use escape characters to alert We are \"Vikings\".",
+    "code": "let txt = \"@(18)\";\nalert(txt);",
+    "solution": "let txt = \"We are \\\"Vikings\\\"\";\nalert(txt);"
+  },
+  "js/exercise_js_strings3.htm": {
+    "prompt": "Concatenate the two strings to alert \"Hello World!\".",
+    "code": "let str1 = \"Hello \";\nlet str2 = \"World!\";\nalert(@(4) @(1) @(4));",
+    "solution": "let str1 = \"Hello \";\nlet str2 = \"World!\";\nalert(str1 + str2);"
+  },
+  "js/exercise_js_switch1.htm": {
+    "prompt": "Create a switch statement that will alert \"Hello\"\nif fruits is \"banana\", and \"Welcome\"\nif fruits is \"apple\".",
+    "code": "@(6)(fruits) {\n  @(4) \"Banana\":\n    alert(\"Hello\")\n    break;\n  @(4) \"Apple\":\n    alert(\"Welcome\")\n    break;    \n}",
+    "solution": "switch(fruits) {\n  case \"Banana\":\n    alert(\"Hello\")\n    break;\n  case \"Apple\":\n    alert(\"Welcome\")\n    break;    \n}"
+  },
+  "js/exercise_js_switch2.htm": {
+    "prompt": "Add a section that will alert(\"Neither\")\nif fruits is neither \"banana\" nor \"apple\".",
+    "code": "switch(fruits) {\n  case \"Banana\":\n    alert(\"Hello\")\n    break;\n  case \"Apple\":\n    alert(\"Welcome\")\n    break;\n  @(8)\n    alert(\"Neither\");\n}",
+    "solution": "switch(fruits) {\n  case \"Banana\":\n    alert(\"Hello\")\n    break;\n  case \"Apple\":\n    alert(\"Welcome\")\n    break;\n  default:\n    alert(\"Neither\");\n}"
+  },
+  "js/exercise_js_dom_html5.htm": {
+    "prompt": "Use HTML DOM to change the value of the input field.",
+    "code": "<input type=\"text\" id=\"myText\" value=\"Hello\">\n\n<script>\ndocument.getElementById(\"myText\")@(6) = \"Have a nice day!\";\n</script>",
+    "solution": "<input type=\"text\" id=\"myText\" value=\"Hello\">\n\n<script>\ndocument.getElementById(\"myText\").value = \"Have a nice day!\";\n</script>"
+  },
+  "js/exercise_js_variables1.htm": {
+    "prompt": "Create a variable called carName, assign the value Volvo to it.",
+    "code": "let @(7) = \"@(5)\";",
+    "solution": "let carName = \"Volvo\";"
+  },
+  "js/exercise_js_variables2.htm": {
+    "prompt": "Create a variable called x, assign the value 50 to it.",
+    "code": "let @(1) = @(2)",
+    "solution": "let x = 50"
+  },
+  "js/exercise_js_variables3.htm": {
+    "prompt": "Display the sum of 5 + 10, using two variables: x and y.",
+    "code": "let @(1) = @(1);\nlet y = 10;\ndocument.getElementById(\"demo\").innerHTML = x @(1) y;",
+    "solution": "let x = 5;\nlet y = 10;\ndocument.getElementById(\"demo\").innerHTML = x + y;"
+  },
+  "c/exercise_arrays1.htm": {
+    "prompt": "Create an array of type int called myNumbers.",
+    "code": "@(3) @(11) @(1) {25, 50, 75, 100};",
+    "solution": "int myNumbers[] = {25, 50, 75, 100};"
+  },
+  "c/exercise_arrays2.htm": {
+    "prompt": "Print the value of the second element in the myNumbers array.",
+    "code": "int myNumbers[] = {25, 50, 75, 100};\nprintf(\"%d\", @(12));",
+    "solution": "int myNumbers[] = {25, 50, 75, 100};\nprintf(\"%d\", myNumbers[1]);"
+  },
+  "c/exercise_arrays3.htm": {
+    "prompt": "Change the value of the first element to 33:",
+    "code": "int myNumbers[] = {25, 50, 75, 100};\n@(12) @(1) @(2);",
+    "solution": "int myNumbers[] = {25, 50, 75, 100};\nmyNumbers[0] = 33;"
+  },
+  "c/exercise_arrays4.htm": {
+    "prompt": "Loop through the elements in the array using a for loop.",
+    "code": "int myNumbers[] = {25, 50, 75, 100};\nint i;\n\n@(3) (i = 0; i < 4; i++) {\n  printf(\"%d\\n\", @(12));\n}",
+    "solution": "int myNumbers[] = {25, 50, 75, 100};\nint i;\n\nfor (i = 0; i < 4; i++) {\n  printf(\"%d\\n\", myNumbers[i]);\n}"
+  },
+  "c/exercise_booleans1.htm": {
+    "prompt": "What is the result of the following example?",
+    "code": "printf(\"%d\", 15 > 5);\n\n@(1)",
+    "solution": "printf(\"%d\", 15 > 5);\n\n1"
+  },
+  "c/exercise_booleans2.htm": {
+    "prompt": "What is the result of the following example?",
+    "code": "printf(\"%d\", 5 > 5);\n\n@(1)",
+    "solution": "printf(\"%d\", 5 > 5);\n\n0"
+  },
+  "c/exercise_booleans3.htm": {
+    "prompt": "What is the result of the following example?",
+    "code": "printf(\"%d\", 10 == 10);\n\n@(1)",
+    "solution": "printf(\"%d\", 10 == 10);\n\n1"
+  },
+  "c/exercise_booleans4.htm": {
+    "prompt": "What is the result of the following example?",
+    "code": "bool isHamburgerTasty = true;\nbool isPizzaTasty = true;\nprintf(\"%d\", isHamburgerTasty == isPizzaTasty);\n\n@(1)",
+    "solution": "bool isHamburgerTasty = true;\nbool isPizzaTasty = true;\nprintf(\"%d\", isHamburgerTasty == isPizzaTasty);\n\n1"
+  },
+  "c/exercise_while_loop5.htm": {
+    "prompt": "In the following loop, when the value is \"4\", jump directly to the next value.",
+    "code": "for (int i = 0; i < 10; i++) {\n  if (i == 4) {\n    @(8);\n  }\n  printf(\"%d\\n\", i);\n}",
+    "solution": "for (int i = 0; i < 10; i++) {\n  if (i == 4) {\n    continue;\n  }\n  printf(\"%d\\n\", i);\n}"
+  },
+  "c/exercise_comments1.htm": {
+    "prompt": "Comments in C are written with special characters. Insert the missing parts:",
+    "code": "@(2) This is a single-line comment\n@(2) This is a multi-line comment @(2)",
+    "solution": "// This is a single-line comment\n/* This is a multi-line comment */"
+  },
+  "c/exercise_conditions1.htm": {
+    "prompt": "Print \"Hello World\" if x is greater than y.",
+    "code": "int x = 50;\nint y = 10;\n@(2) (x @(1) y) {\n  printf(\"Hello World\");\n}",
+    "solution": "int x = 50;\nint y = 10;\nif (x > y) {\n  printf(\"Hello World\");\n}"
+  },
+  "c/exercise_conditions2.htm": {
+    "prompt": "Print \"Hello World\" if x is equal to y.",
+    "code": "int x = 50;\nint y = 50;\n@(2) (x @(2) y) {\n  printf(\"Hello World\");\n}",
+    "solution": "int x = 50;\nint y = 50;\nif (x == y) {\n  printf(\"Hello World\");\n}"
+  },
+  "c/exercise_conditions3.htm": {
+    "prompt": "Print \"Yes\" if x is equal to y, otherwise print \"No\".",
+    "code": "int x = 50;\nint y = 50;\n@(2) (x @(2) y) {\n  printf(\"Yes\");\n} @(4) {\n  printf(\"No\");\n}",
+    "solution": "int x = 50;\nint y = 50;\nif (x == y) {\n  printf(\"Yes\");\n} else {\n  printf(\"No\");\n}"
+  },
+  "c/exercise_conditions4.htm": {
+    "prompt": "Print \"1\" if x is equal to y, print \"2\" if x is greater than y, otherwise print \"3\".",
+    "code": "int x = 50;\nint y = 50;\n\n@(2) (x @(2) y) {\n  printf(\"1\");\n} @(7) (x @(1) y) {\n  printf(\"2\");\n} @(4) {\n  printf(\"3\");\n}",
+    "solution": "int x = 50;\nint y = 50;\n\nif (x == y) {\n  printf(\"1\");\n} else if (x > y) {\n  printf(\"2\");\n} else {\n  printf(\"3\");\n}"
+  },
+  "c/exercise_constants1.htm": {
+    "prompt": "Make sure that the value of the following variable is not possible to change:",
+    "code": "@(5) int hoursPerDay = 24;",
+    "solution": "const int hoursPerDay = 24;"
+  },
+  "c/exercise_data_types1.htm": {
+    "prompt": "Add the correct data type for the following variables:",
+    "code": "@(3) myNum = 5;\n@(5) myFloatNum = 5.99;\n@(4) myLetter = 'D';",
+    "solution": "int myNum = 5;\nfloat myFloatNum = 5.99;\nchar myLetter = 'D';"
+  },
+  "c/exercise_data_types2.htm": {
+    "prompt": "Add the correct format specifier to print the value of the following variable:",
+    "code": "char myLetter = 'D';\nprintf(\"@(2)\", myLetter);",
+    "solution": "char myLetter = 'D';\nprintf(\"%c\", myLetter);"
+  },
+  "c/exercise_data_types3.htm": {
+    "prompt": "Make the output of the following example to only show one digit after the decimal point:",
+    "code": "float myScore = 9.5;\nprintf(\"@(4)\", myScore);",
+    "solution": "float myScore = 9.5;\nprintf(\"%.1f\", myScore);"
+  },
+  "c/exercise_while_loop2.htm": {
+    "prompt": "Use the do/while loop to print i as long as i is less than 6.",
+    "code": "int i = 1;\n@(2) {\n  printf(\"%d\\n\", i);\n  @(3);\n}\n@(5) (i < 6);",
+    "solution": "int i = 1;\ndo {\n  printf(\"%d\\n\", i);\n  i++;\n}\nwhile (i < 6);"
+  },
+  "c/exercise_while_loop3.htm": {
+    "prompt": "Use a for loop to print \"Yes\" 5 times:",
+    "code": "@(3) (int i = 0; i < 5; @(3)) {\n  printf(\"Yes\\n\");\n}",
+    "solution": "for (int i = 0; i < 5; i++) {\n  printf(\"Yes\\n\");\n}"
+  },
+  "c/exercise_functions1.htm": {
+    "prompt": "Create a function named myFunction and call it inside main().",
+    "code": "void @(10)() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  @(13)\n  return 0;\n}",
+    "solution": "void myFunction() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  myFunction();\n  return 0;\n}"
+  },
+  "c/exercise_functions2.htm": {
+    "prompt": "Insert the missing parts to call myFunction two times.",
+    "code": "void myFunction() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  @(13)\n  @(13)\n  return 0;\n}",
+    "solution": "void myFunction() {\n  printf(\"I just got executed!\");\n}\n\nint main() {\n  myFunction();\n  myFunction();\n  return 0;\n}"
+  },
+  "c/exercise_functions3.htm": {
+    "prompt": "Add a name parameter of type char (string) to myFunction.",
+    "code": "void myFunction(@(4) @(6)) {\n  printf(\"Hello %s\\n\", name);\n}\n\nint main() {\n  myFunction(\"Liam\");\n  myFunction(\"Jenny\");\n  myFunction(\"Anja\");\n  return 0;\n}",
+    "solution": "void myFunction(char name[]) {\n  printf(\"Hello %s\\n\", name);\n}\n\nint main() {\n  myFunction(\"Liam\");\n  myFunction(\"Jenny\");\n  myFunction(\"Anja\");\n  return 0;\n}"
+  },
+  "c/exercise_functions4.htm": {
+    "prompt": "Insert the missing part to print the number 8 in main, by using a specific keyword inside myFunction:",
+    "code": "int myFunction(int x) {\n  @(6) 5 + x;\n}\n\nint main() {\n  printf(\"%d\", myFunction(3));\n  return 0;\n}",
+    "solution": "int myFunction(int x) {\n  return 5 + x;\n}\n\nint main() {\n  printf(\"%d\", myFunction(3));\n  return 0;\n}"
+  },
+  "c/exercise_operators1.htm": {
+    "prompt": "Fill in the blanks to multiply 10 with 5, and print the result.",
+    "code": "int x = 10;\nint y = 5;\nprintf(\"@(2)\", x @(1) y);",
+    "solution": "int x = 10;\nint y = 5;\nprintf(\"%d\", x * y);"
+  },
+  "c/exercise_operators2.htm": {
+    "prompt": "Fill in the blanks to divide 10 by 5, and print the result.",
+    "code": "int x = 10;\nint y = 5;\nprintf(\"@(2)\", x @(1) y);",
+    "solution": "int x = 10;\nint y = 5;\nprintf(\"%d\", x / y);"
+  },
+  "c/exercise_operators3.htm": {
+    "prompt": "Use the correct operator to increase the value of the variable x by 1.",
+    "code": "int x = 10;\nx@(2);",
+    "solution": "int x = 10;\nx++;"
+  },
+  "c/exercise_operators4.htm": {
+    "prompt": "Use the addition assignment operator to add the value 5 to the variable x.",
+    "code": "int x = 10;\nx @(2) 5;",
+    "solution": "int x = 10;\nx += 5;"
+  },
+  "c/exercise_syntax1.htm": {
+    "prompt": "Insert the missing part of the code below to output \"Hello World!\".",
+    "code": "int @(4)() {\n  @(6)(\"Hello World!\");\n  return 0;\n}",
+    "solution": "int main() {\n  printf(\"Hello World!\");\n  return 0;\n}"
+  },
+  "c/exercise_pointers1.htm": {
+    "prompt": "Create a pointer variable called ptr, that points to the int variable myAge:",
+    "code": "int myAge = 43;\n@(4) @(3) = &myAge;",
+    "solution": "int myAge = 43;\nint* ptr = &myAge;"
+  },
+  "c/exercise_strings1.htm": {
+    "prompt": "Fill in the missing part to create a \"string\" named greetings, and assign it the value \"Hello\".",
+    "code": "@(4) @(11) = @(7);",
+    "solution": "char greetings[] = \"Hello\";"
+  },
+  "c/exercise_strings3.htm": {
+    "prompt": "Use the correct format specifier to output the string:",
+    "code": "char greetings[] = \"Hello World!\";\nprintf(\"@(2)\", greetings);",
+    "solution": "char greetings[] = \"Hello World!\";\nprintf(\"%s\", greetings);"
+  },
+  "c/exercise_strings4.htm": {
+    "prompt": "Print the first character in the greetings string:",
+    "code": "char greetings[] = \"Hello World!\";\nprintf(\"@(2)\", greetings@(3));",
+    "solution": "char greetings[] = \"Hello World!\";\nprintf(\"%c\", greetings[0]);"
+  },
+  "c/exercise_structs1.htm": {
+    "prompt": "Fill in the missing part to create a Car structure:",
+    "code": "@(6) Car {\n  char brand[50];\n  char model[50];\n  int year;\n};",
+    "solution": "struct Car {\n  char brand[50];\n  char model[50];\n  int year;\n};"
+  },
+  "c/exercise_structs2.htm": {
+    "prompt": "Fill in the missing parts to create a struct variable of \"Car\" named \"car1\" inside main:",
+    "code": "struct Car {\n  char brand[50];\n  char model[50];\n  int year;\n};\n\nint main() {\n  struct @(3) @(4);\n  return 0;\n}",
+    "solution": "struct Car {\n  char brand[50];\n  char model[50];\n  int year;\n};\n\nint main() {\n  struct Car car1;\n  return 0;\n}"
+  },
+  "c/exercise_structs3.htm": {
+    "prompt": "Fill in the missing parts to assign the following values to the car1 variable:\n\"BMW\" to brand, \"X5\" to model and 1999 to year.",
+    "code": "struct Car {\n  char brand[50];\n  char model[50];\n  int year;\n};\n\nint main() {\n  struct Car car1 = {@(5), @(4), @(4)};\n  return 0;\n}",
+    "solution": "struct Car {\n  char brand[50];\n  char model[50];\n  int year;\n};\n\nint main() {\n  struct Car car1 = {\"BMW\", \"X5\", 1999};\n  return 0;\n}"
+  },
+  "c/exercise_switch1.htm": {
+    "prompt": "Insert the missing parts to complete the following switch statement.",
+    "code": "int day = 2;\nswitch (@(3)) {\n  @(4) 1:\n    printf(\"Monday\");\n    @(5);\n  @(4) 2:\n    printf(\"Sunday\");\n    @(5);\n}",
+    "solution": "int day = 2;\nswitch (day) {\n  case 1:\n    printf(\"Monday\");\n    break;\n  case 2:\n    printf(\"Sunday\");\n    break;\n}"
+  },
+  "c/exercise_switch2.htm": {
+    "prompt": "Complete the switch statement, and add the correct keyword at the end to specify some code to run if there is no case match in the switch statement.",
+    "code": "int day = 4;\nswitch (@(3)) {\n  @(4) 1:\n    printf(\"Saturday\");\n    @(5);\n  @(4) 2:\n    printf(\"Sunday\");\n    @(5);\n  @(7):\n    printf(\"Weekend\");\n}",
+    "solution": "int day = 4;\nswitch (day) {\n  case 1:\n    printf(\"Saturday\");\n    break;\n  case 2:\n    printf(\"Sunday\");\n    break;\n  default:\n    printf(\"Weekend\");\n}"
+  },
+  "c/exercise_data_types4.htm": {
+    "prompt": "Use type conversion to make sure that the result of the following example is 1.5, and not just 1.",
+    "code": "float sum = @(7) 3 / 2;\nprintf(\"%.1f\", sum);",
+    "solution": "float sum = (float) 3 / 2;\nprintf(\"%.1f\", sum);"
+  },
+  "c/exercise_variables1.htm": {
+    "prompt": "Create a variable named myNum and assign the value 50 to it.",
+    "code": "@(3) @(5) = @(2);",
+    "solution": "int myNum = 50;"
+  },
+  "c/exercise_variables2.htm": {
+    "prompt": "Use the correct format specifier to output the value of myNum:",
+    "code": "int myNum = 15;\nprintf(\"@(2)\", myNum);",
+    "solution": "int myNum = 15;\nprintf(\"%d\", myNum);"
+  },
+  "c/exercise_variables3.htm": {
+    "prompt": "Display the sum of 5 + 10, using two variables: x and y.",
+    "code": "@(3) @(1) = @(1);\nint y = 10;\nprintf(\"%d\", x + y);",
+    "solution": "int x = 5;\nint y = 10;\nprintf(\"%d\", x + y);"
+  },
+  "c/exercise_variables4.htm": {
+    "prompt": "Fill in the missing parts to create three variables of the same type, using a \ncomma-separated list:",
+    "code": "@(3) myNum1 = 10@(1) myNum2 = 15@(1) myNum3 = 25;\nprintf(\"%d\", myNum1 + myNum2 + myNum3);",
+    "solution": "int myNum1 = 10, myNum2 = 15, myNum3 = 25;\nprintf(\"%d\", myNum1 + myNum2 + myNum3);"
+  },
+  "c/exercise_while_loop1.htm": {
+    "prompt": "Print i as long as i is less than 6.",
+    "code": "int i = 1;\n@(5) (i < 6) {\n  printf(\"%d\\n\", i);\n  @(3);\n}",
+    "solution": "int i = 1;\nwhile (i < 6) {\n  printf(\"%d\\n\", i);\n  i++;\n}"
+  },
+  "nodejs/exercise_api_auth1.htm": {
+    "prompt": "Complete the JWT authentication middleware:",
+    "code": "const jwt = require('@(12)');\n\nfunction authenticateToken(req, res, next) {\n  const authHeader = req.headers['authorization'];\n  const token = authHeader && authHeader.split(' ')[1];\n  \n  if (!token) return res.status(401).json({ message: 'Access denied' });\n  \n  jwt.@(6)(token, process.env.TOKEN_SECRET, (err, user) => {\n    if (err) return res.status(@(3)).json({ message: 'Invalid token' });\n    \n    req.user = user;\n    next();\n  });\n}",
+    "solution": "const jwt = require('jsonwebtoken');\n\nfunction authenticateToken(req, res, next) {\n  const authHeader = req.headers['authorization'];\n  const token = authHeader && authHeader.split(' ')[1];\n  \n  if (!token) return res.status(401).json({ message: 'Access denied' });\n  \n  jwt.verify(token, process.env.TOKEN_SECRET, (err, user) => {\n    if (err) return res.status(403).json({ message: 'Invalid token' });\n    \n    req.user = user;\n    next();\n  });\n}"
+  },
+  "nodejs/exercise_assert1.htm": {
+    "prompt": "Complete the code to test if the user is an admin:",
+    "code": "const assert = require('@(6)');\nconst user = { role: 'admin', id: 1 };\nassert.ok(user.role === 'admin', 'User should be an admin');",
+    "solution": "const assert = require('assert');\nconst user = { role: 'admin', id: 1 };\nassert.ok(user.role === 'admin', 'User should be an admin');"
+  },
+  "nodejs/exercise_child_process1.htm": {
+    "prompt": "Complete the code for child process",
+    "code": "const { @(4), execSync } = require('child_process');\nexec('ls -la', (error, @(6), stderr) => {\n  // handle output\n});",
+    "solution": "const { exec, execSync } = require('child_process');\nexec('ls -la', (error, stdout, stderr) => {\n  // handle output\n});"
+  },
+  "nodejs/exercise_cluster1.htm": {
+    "prompt": "Complete the code for clustering",
+    "code": "const cluster = require('@(7)');\nif (cluster.@(8)) {\n  // Master process\n  for (let i = 0; i < numCPUs; i++) {\n    cluster.@(4)();\n  }\n}",
+    "solution": "const cluster = require('cluster');\nif (cluster.isMaster) {\n  // Master process\n  for (let i = 0; i < numCPUs; i++) {\n    cluster.fork();\n  }\n}"
+  },
+  "nodejs/exercise_command_line1.htm": {
+    "prompt": "Complete the code to access the command line arguments:",
+    "code": "console.log('Arguments:', process.@(4));",
+    "solution": "console.log('Arguments:', process.argv);"
+  },
+  "nodejs/exercise_crypto1.htm": {
+    "prompt": "Complete the code to create a hash and updated it with data:",
+    "code": "const hash = crypto.@(10)('sha256');\nconst digest = hash.update('password123').@(6)('hex');",
+    "solution": "const hash = crypto.createHash('sha256');\nconst digest = hash.update('password123').digest('hex');"
+  },
+  "nodejs/exercise_debugging_advanced1.htm": {
+    "prompt": "Complete the code to use Node.js performance timing API:",
+    "code": "// Performance measurement\nconst { @(11) } = require('perf_hooks');\n\nconst start = performance.@(3)();\n\n// Code to measure goes here\nfor (let i = 0; i < 1000000; i++) {\n  // Some operation\n}\n\nconst end = performance.now();\nconsole.log(`Operation took ${end - start} milliseconds`);",
+    "solution": "// Performance measurement\nconst { performance } = require('perf_hooks');\n\nconst start = performance.now();\n\n// Code to measure goes here\nfor (let i = 0; i < 1000000; i++) {\n  // Some operation\n}\n\nconst end = performance.now();\nconsole.log(`Operation took ${end - start} milliseconds`);"
+  },
+  "nodejs/exercise_dependencies1.htm": {
+    "prompt": "Complete the package.json dependencies section:",
+    "code": "{\n  \"name\": \"my-project\",\n  \"@(12)\": {\n    \"express\": \"^4.17.1\",\n    \"mongoose\": \"^5.13.2\"\n  }\n}",
+    "solution": "{\n  \"name\": \"my-project\",\n  \"dependencies\": {\n    \"express\": \"^4.17.1\",\n    \"mongoose\": \"^5.13.2\"\n  }\n}"
+  },
+  "nodejs/exercise_deployment_modern1.htm": {
+    "prompt": "Complete the basic Dockerfile for a Node.js application:",
+    "code": "FROM node:14-alpine\nWORKDIR /app\nCOPY @(7)*.json .\nRUN npm install\n@(6) 8080\nCMD [\"node\", \"server.js\"]",
+    "solution": "FROM node:14-alpine\nWORKDIR /app\nCOPY package*.json .\nRUN npm install\nEXPOSE 8080\nCMD [\"node\", \"server.js\"]"
+  },
+  "nodejs/exercise_dev_vs_prod1.htm": {
+    "prompt": "Complete the code to work with environment variables:",
+    "code": "if (process.@(3).NODE_ENV !== 'production') {\n  console.log('Running in development mode');\n}",
+    "solution": "if (process.env.NODE_ENV !== 'production') {\n  console.log('Running in development mode');\n}"
+  },
+  "nodejs/exercise_dns1.htm": {
+    "prompt": "Complete the code to perform DNS lookups",
+    "code": "dns.@(6)('www.example.com', (err, address) => console.log(address));",
+    "solution": "dns.lookup('www.example.com', (err, address) => console.log(address));"
+  },
+  "nodejs/exercise_environment1.htm": {
+    "prompt": "Complete the code to work with environment variables:",
+    "code": "// Access environment variables\nconst port = @(7).env.PORT || 8080;\n\n// Using dotenv package\nrequire('@(6)').config();\nconsole.log(`Database URL: ${process.env.DB_URL}`);",
+    "solution": "// Access environment variables\nconst port = process.env.PORT || 8080;\n\n// Using dotenv package\nrequire('dotenv').config();\nconsole.log(`Database URL: ${process.env.DB_URL}`);"
+  },
+  "nodejs/exercise_error_handling1.htm": {
+    "prompt": "Complete the code to handle errors properly in Node.js:",
+    "code": "// Error handling with try-catch\n@(3) {\n  const data = JSON.parse('{\"invalid\": json}');\n  console.log(data);\n} @(5) (err) {\n  console.error('Error: ' + err.message);\n}",
+    "solution": "// Error handling with try-catch\ntry {\n  const data = JSON.parse('{\"invalid\": json}');\n  console.log(data);\n} catch (err) {\n  console.error('Error: ' + err.message);\n}"
+  },
+  "nodejs/exercise_es6_1.htm": {
+    "prompt": "Destructure the object using ES6 features:",
+    "code": "const user = { name: 'John', age: 30 };\n// Destructure the object\nconst { @(4), age } = user;",
+    "solution": "const user = { name: 'John', age: 30 };\n// Destructure the object\nconst { name, age } = user;"
+  },
+  "nodejs/exercise_event_loop1.htm": {
+    "prompt": "Complete the code with the numbers \"1\", \"2\", \"3\" to demonstrate the event loop execution order:",
+    "code": "console.log(@(1));\nsetTimeout(() => {\n  console.log(@(1));\n}, 0);\nconsole.log(@(1));",
+    "solution": "console.log(1);\nsetTimeout(() => {\n  console.log(3);\n}, 0);\nconsole.log(2);"
+  },
+  "nodejs/exercise_events1.htm": {
+    "prompt": "Complete the code for an event emitter",
+    "code": "const emitter = new EventEmitter();\nemitter.@(2)('data', message => console.log(message));",
+    "solution": "const emitter = new EventEmitter();\nemitter.on('data', message => console.log(message));"
+  },
+  "nodejs/exercise_frontend1.htm": {
+    "prompt": "Complete the Express code to enable CORS for your API:",
+    "code": "const express = require('express');\nconst @(4) = require('cors');\nconst app = express();\n\n// Enable CORS for all routes\napp.@(3)(@(4)());",
+    "solution": "const express = require('express');\nconst cors = require('cors');\nconst app = express();\n\n// Enable CORS for all routes\napp.use(cors());"
+  },
+  "nodejs/exercise_graphql1.htm": {
+    "prompt": "Define a basic GraphQL schema for a user type",
+    "code": "const typeDefs = gql`\n  type User {\n    @(2): ID!\n    name: String!\n    email: @(6)!\n  }\n`;",
+    "solution": "const typeDefs = gql`\n  type User {\n    id: ID!\n    name: String!\n    email: String!\n  }\n`;"
+  },
+  "nodejs/exercise_requirements1.htm": {
+    "prompt": "Fill in the blank to create an arrow function:",
+    "code": "const add = (a, b) @(2) a + b;",
+    "solution": "const add = (a, b) => a + b;"
+  },
+  "nodejs/exercise_linting_formatting1.htm": {
+    "prompt": "Complete the ESLint configuration file:",
+    "code": "// .eslintrc.json\n{\n  \"env\": \"node\",\n  \"extends\": [\n    \"@(6):recommended\"\n  ],\n  ...",
+    "solution": "// .eslintrc.json\n{\n  \"env\": \"node\",\n  \"extends\": [\n    \"eslint:recommended\"\n  ],\n  ..."
+  },
+  "nodejs/exercise_logging1.htm": {
+    "prompt": "Complete the Winston logger configuration code:",
+    "code": "const logger = winston.createLogger({\n  @(5): 'info', // Log only if level >= this level\n  format: winston.format.@(4)(),\n  transports: [\n    new winston.transports.Console(),\n    new winston.transports.@(4)({ filename: 'error.log', level: 'error' })\n  ]\n});",
+    "solution": "const logger = winston.createLogger({\n  level: 'info', // Log only if level >= this level\n  format: winston.format.json(),\n  transports: [\n    new winston.transports.Console(),\n    new winston.transports.File({ filename: 'error.log', level: 'error' })\n  ]\n});"
+  },
+  "nodejs/exercise_microservices1.htm": {
+    "prompt": "Create a basic Express.js microservice",
+    "code": "// Define a basic health check endpoint\napp.@(3)('/health', (req, res) => {\n  res.status(200).json({ status: 'UP' });\n});",
+    "solution": "// Define a basic health check endpoint\napp.get('/health', (req, res) => {\n  res.status(200).json({ status: 'UP' });\n});"
+  },
+  "nodejs/exercise_mongodb_create_db1.htm": {
+    "prompt": "Complete the code to create a MongoDB database:",
+    "code": "// Connect to MongoDB server\nMongoClient.@(7)(url, function(err, db) {\n  if (err) throw err;\n  console.log(\"Database created!\");\n});",
+    "solution": "// Connect to MongoDB server\nMongoClient.connect(url, function(err, db) {\n  if (err) throw err;\n  console.log(\"Database created!\");\n});"
+  },
+  "nodejs/exercise_mongodb_createcollection1.htm": {
+    "prompt": "Complete the code to create a collection in MongoDB:",
+    "code": "// Create a collection named \"products\"\ndbo.@(16)(\"products\", function(err, res) {\n  if (err) throw err;\n  console.log(\"Collection created!\");\n  db.close();\n});",
+    "solution": "// Create a collection named \"products\"\ndbo.createCollection(\"products\", function(err, res) {\n  if (err) throw err;\n  console.log(\"Collection created!\");\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_delete1.htm": {
+    "prompt": "Complete the code to delete multiple documents from a MongoDB collection:",
+    "code": "// Create a query to find all documents where address starts with \"S\"\nconst myquery = { address: @(4) };\n\n// Delete all documents matching the query\ndbo.collection(\"customers\").@(10)(myquery, function(err, obj) {\n  if (err) throw err;\n  \n  // Display how many documents were deleted\n  console.log(obj.result.n + \" document(s) deleted\");\n  \n  // Close the connection\n  db.close();\n});",
+    "solution": "// Create a query to find all documents where address starts with \"S\"\nconst myquery = { address: /^S/ };\n\n// Delete all documents matching the query\ndbo.collection(\"customers\").deleteMany(myquery, function(err, obj) {\n  if (err) throw err;\n  \n  // Display how many documents were deleted\n  console.log(obj.result.n + \" document(s) deleted\");\n  \n  // Close the connection\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_find1.htm": {
+    "prompt": "Complete the code to find a single document in a MongoDB collection:",
+    "code": "// Find the first document in the customers collection\ndbo.collection(\"customers\").@(7)({}, function(err, result) {\n  if (err) throw err;\n  \n  // Print the name and address from the first document\n  console.log(\"Customer Name: \" + result.name);\n  console.log(\"Address: \" + result.address);\n  \n  // Close the connection\n  db.close();\n});",
+    "solution": "// Find the first document in the customers collection\ndbo.collection(\"customers\").findOne({}, function(err, result) {\n  if (err) throw err;\n  \n  // Print the name and address from the first document\n  console.log(\"Customer Name: \" + result.name);\n  console.log(\"Address: \" + result.address);\n  \n  // Close the connection\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_insert1.htm": {
+    "prompt": "Complete the code to insert a document into a MongoDB collection:",
+    "code": "// Create a document to insert\nconst myobj = { name: \"Acme Inc\", address: \"Highway 99\", phone: \"555-1234\" };\n\n// Insert the document into the customers collection\ndbo.collection(\"customers\").@(9)(myobj, function(err, res) {\n  if (err) throw err;\n  console.log(\"1 document inserted\");\n  db.close();\n});",
+    "solution": "// Create a document to insert\nconst myobj = { name: \"Acme Inc\", address: \"Highway 99\", phone: \"555-1234\" };\n\n// Insert the document into the customers collection\ndbo.collection(\"customers\").insertOne(myobj, function(err, res) {\n  if (err) throw err;\n  console.log(\"1 document inserted\");\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_join1.htm": {
+    "prompt": "Complete the code to join multiple collections and add filtering:",
+    "code": "// Join the \"products\" and \"suppliers\" collections with the \"orders\" collection\ndbo.collection('orders').aggregate([\n  // Join with products collection\n  { $lookup: \n    {\n      @(4): 'products',\n      @(10): 'product_id',\n      @(12): '_id',\n      @(2): 'product_details'\n    }\n  },\n  // Join with suppliers collection\n  { $lookup:\n    {\n      from: 'suppliers',\n      localField: 'supplier_id',\n      foreignField: '_id',\n      as: 'supplier_info'\n    }\n  }\n])",
+    "solution": "// Join the \"products\" and \"suppliers\" collections with the \"orders\" collection\ndbo.collection('orders').aggregate([\n  // Join with products collection\n  { $lookup: \n    {\n      from: 'products',\n      localField: 'product_id',\n      foreignField: '_id',\n      as: 'product_details'\n    }\n  },\n  // Join with suppliers collection\n  { $lookup:\n    {\n      from: 'suppliers',\n      localField: 'supplier_id',\n      foreignField: '_id',\n      as: 'supplier_info'\n    }\n  }\n])"
+  },
+  "nodejs/exercise_mongodb_limit1.htm": {
+    "prompt": "Complete the code to limit the number of results returned in a MongoDB query to 5:",
+    "code": "// Find all documents in the customers collection but limit to only 5 results\ndbo.collection(\"customers\").find().@(5)(@(1)).toArray(function(err, result) {\n  if (err) throw err;\n  \n  console.log(\"Displaying 5 customers:\");\n  console.log(result);\n  \n  // Close the connection\n  db.close();\n});",
+    "solution": "// Find all documents in the customers collection but limit to only 5 results\ndbo.collection(\"customers\").find().limit(5).toArray(function(err, result) {\n  if (err) throw err;\n  \n  console.log(\"Displaying 5 customers:\");\n  console.log(result);\n  \n  // Close the connection\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_query1.htm": {
+    "prompt": "Complete the code to filter documents in a MongoDB collection:",
+    "code": "// Create a query object to find all customers with the name \"John\"\nconst query = { @(4): \"John\" };\n\n// Find documents that match the query\ndbo.collection(\"customers\").find(query).toArray(function(err, result) {\n  if (err) throw err;\n  \n  console.log(\"Customers named John:\");\n  console.log(result);\n  \n  // Close the connection\n  db.close();\n});",
+    "solution": "// Create a query object to find all customers with the name \"John\"\nconst query = { name: \"John\" };\n\n// Find documents that match the query\ndbo.collection(\"customers\").find(query).toArray(function(err, result) {\n  if (err) throw err;\n  \n  console.log(\"Customers named John:\");\n  console.log(result);\n  \n  // Close the connection\n  db.close();\n});"
+  },
+  "nodejs/exercise_mongodb_sort1.htm": {
+    "prompt": "Complete the code to sort documents in a MongoDB collection:",
+    "code": "// Create a sort object to sort by name in ascending order\nconst mysort = { @(4): @(1) };",
+    "solution": "// Create a sort object to sort by name in ascending order\nconst mysort = { name: 1 };"
+  },
+  "nodejs/exercise_mongodb_update1.htm": {
+    "prompt": "Complete the code to update only specific fields in a MongoDB document:",
+    "code": "// Create the update values - update only the address field\nconst newvalues = { @(4): { address: \"Highway 101\" } };\n\n// Update the document\ndbo.collection(\"customers\").updateOne(myquery, newvalues, function(err, res) {\n  if (err) throw err;\n  \n  console.log(\"Address updated successfully\");\n  \n  // Close the connection\n  db.close();\n});",
+    "solution": "// Create the update values - update only the address field\nconst newvalues = { $set: { address: \"Highway 101\" } };\n\n// Update the document\ndbo.collection(\"customers\").updateOne(myquery, newvalues, function(err, res) {\n  if (err) throw err;\n  \n  console.log(\"Address updated successfully\");\n  \n  // Close the connection\n  db.close();\n});"
+  },
+  "nodejs/exercise_monitoring_observability1.htm": {
+    "prompt": "Complete the code to set up basic logging with Winston:",
+    "code": "// Create a logger with multiple transports\nconst logger = winston.@(12)({\n  level: 'info',\n  format: winston.format.json(),\n  transports: [\n    new winston.transports.File({ filename: 'app.log' })\n  ]\n});",
+    "solution": "// Create a logger with multiple transports\nconst logger = winston.createLogger({\n  level: 'info',\n  format: winston.format.json(),\n  transports: [\n    new winston.transports.File({ filename: 'app.log' })\n  ]\n});"
+  },
+  "nodejs/exercise_mysql_drop_table1.htm": {
+    "prompt": "Complete the code to safely drop a MySQL table that may not exist:",
+    "code": "// Safely delete the table \"customers\" even if it doesn't exist\nconst sql = \"DROP TABLE @(9) customers\";\nconnection.query(sql, function (err, result) {\n  if (err) throw err;\n});",
+    "solution": "// Safely delete the table \"customers\" even if it doesn't exist\nconst sql = \"DROP TABLE IF EXISTS customers\";\nconnection.query(sql, function (err, result) {\n  if (err) throw err;\n});"
+  },
+  "nodejs/exercise_net1.htm": {
+    "prompt": "Complete the code to create a TCP server",
+    "code": "const server = net.@(12)((socket) => {\n  socket.@(5)('Connection established');\n});",
+    "solution": "const server = net.createServer((socket) => {\n  socket.write('Connection established');\n});"
+  },
+  "nodejs/exercise_os1.htm": {
+    "prompt": "Complete the code to get the home directory:",
+    "code": "const hdir = os.@(7)();\nconsole.log(hdir);",
+    "solution": "const hdir = os.homedir();\nconsole.log(hdir);"
+  },
+  "nodejs/exercise_path1.htm": {
+    "prompt": "Complete the code for the path operation:",
+    "code": "const dirName = path.@(7)(filePath);",
+    "solution": "const dirName = path.dirname(filePath);"
+  },
+  "nodejs/exercise_process_management1.htm": {
+    "prompt": "Complete the code to display memory usage:",
+    "code": "console.log('Memory usage:', process.@(11)());",
+    "solution": "console.log('Memory usage:', process.memoryUsage());"
+  },
+  "nodejs/exercise_publish_package1.htm": {
+    "prompt": "Complete command to log in to npm:",
+    "code": "npm @(5)",
+    "solution": "npm login"
+  },
+  "nodejs/exercise_readline1.htm": {
+    "prompt": "Complete the code to create a readline interface:",
+    "code": "const rl = readline.createInterface({\n  input: process.@(5),\n  output: process.@(6)\n});",
+    "solution": "const rl = readline.createInterface({\n  input: process.stdin,\n  output: process.stdout\n});"
+  },
+  "nodejs/exercise_scripts1.htm": {
+    "prompt": "Complete the package.json with a \"start\" script:",
+    "code": "\"scripts\": {\n  \"@(5)\": \"node server.js\",\n  \"test\": \"jest\"\n}",
+    "solution": "\"scripts\": {\n  \"start\": \"node server.js\",\n  \"test\": \"jest\"\n}"
+  },
+  "nodejs/exercise_security1.htm": {
+    "prompt": "Complete the code to prevent SQL injection:",
+    "code": "const query = 'SELECT * FROM users WHERE id = @(1)';\ndb.query(@(5), [userId], (err, results) => {\n  // Process results\n});",
+    "solution": "const query = 'SELECT * FROM users WHERE id = ?';\ndb.query(query, [userId], (err, results) => {\n  // Process results\n});"
+  },
+  "nodejs/exercise_socketio1.htm": {
+    "prompt": "Complete the Socket.IO server code:",
+    "code": "// Handle connection event\nio.on('@(10)', (socket) => {\n  console.log('A user connected');\n  socket.@(2)('chat message', (msg) => {\n    io.emit('chat message', msg);\n  }); \n});",
+    "solution": "// Handle connection event\nio.on('connection', (socket) => {\n  console.log('A user connected');\n  socket.on('chat message', (msg) => {\n    io.emit('chat message', msg);\n  }); \n});"
+  },
+  "nodejs/exercise_streams1.htm": {
+    "prompt": "Complete the code for a file read stream",
+    "code": "const readStream = fs.@(16)('input.txt');",
+    "solution": "const readStream = fs.createReadStream('input.txt');"
+  },
+  "nodejs/exercise_test_runner1.htm": {
+    "prompt": "Complete the code to assert that 1 + 2 equals 3:",
+    "code": "assert.@(11)(1 + 2, 3)",
+    "solution": "assert.strictEqual(1 + 2, 3)"
+  },
+  "nodejs/exercise_testing1.htm": {
+    "prompt": "Complete the code to create a simple unit test for a calculator module:",
+    "code": "const assert = require('assert');\nconst { add, multiply } = require('./calculator');\n\n// Test the add function\nassert.@(11)(add(2, 3), 5, 'Addition not working correctly');\nassert.strictEqual(add(-1, 1), 0, 'Addition with negative numbers not working');",
+    "solution": "const assert = require('assert');\nconst { add, multiply } = require('./calculator');\n\n// Test the add function\nassert.strictEqual(add(2, 3), 5, 'Addition not working correctly');\nassert.strictEqual(add(-1, 1), 0, 'Addition with negative numbers not working');"
+  },
+  "nodejs/exercise_testing_frameworks1.htm": {
+    "prompt": "Complete the Jest test code:",
+    "code": "// Function to test\nfunction sum(a, b) {\n  return a + b;\n}\n\n// Jest test\n@(4)('adds 1 + 2 to equal 3', () => {\n  @(6)(sum(1, 2)).toBe(3);\n});",
+    "solution": "// Function to test\nfunction sum(a, b) {\n  return a + b;\n}\n\n// Jest test\ntest('adds 1 + 2 to equal 3', () => {\n  expect(sum(1, 2)).toBe(3);\n});"
+  },
+  "nodejs/exercise_timers1.htm": {
+    "prompt": "Complete the code to log a message after 2 seconds:",
+    "code": "const timeoutId = @(10)(() => {\n  console.log('This message appears after 2 seconds');\n}, @(4));",
+    "solution": "const timeoutId = setTimeout(() => {\n  console.log('This message appears after 2 seconds');\n}, 2000);"
+  },
+  "nodejs/exercise_typescript_advanced1.htm": {
+    "prompt": "Complete the correct generic type parameter for this function in TypeScript:",
+    "code": "function getArray<@(1)>(items: T[]): T[] { return new Array().concat(items); }",
+    "solution": "function getArray<T>(items: T[]): T[] { return new Array().concat(items); }"
+  },
+  "nodejs/exercise_url1.htm": {
+    "prompt": "Complete the code for URL parsing",
+    "code": "const parsedUrl = url.@(5)(exampleUrl);",
+    "solution": "const parsedUrl = url.parse(exampleUrl);"
+  },
+  "nodejs/exercise_util1.htm": {
+    "prompt": "Complete the code to format a string with placeholders:",
+    "code": "const util = require('@(4)');\nconst name = 'Alice';\nconst age = 30;\nconst message = util.@(6)('Hello %s, you are %d years old', name, age);",
+    "solution": "const util = require('util');\nconst name = 'Alice';\nconst age = 30;\nconst message = util.format('Hello %s, you are %d years old', name, age);"
+  },
+  "nodejs/exercise_v8_engine1.htm": {
+    "prompt": "Complete the code to get information about V8's heap memory statistics:",
+    "code": "const v8 = require('v8');\nconst heapStats = v8.@(17)();",
+    "solution": "const v8 = require('v8');\nconst heapStats = v8.getHeapStatistics();"
+  },
+  "nodejs/exercise_vm1.htm": {
+    "prompt": "Complete the code to execute a script in a VM context",
+    "code": "const vm = require('vm'); const context = vm.@(13)({ x: 10, y: 20 });\nvm.@(12)('x + y', context);",
+    "solution": "const vm = require('vm'); const context = vm.createContext({ x: 10, y: 20 });\nvm.runInContext('x + y', context);"
+  },
+  "nodejs/exercise_vs_browser1.htm": {
+    "prompt": "Which object is used to show an alert in the browser?",
+    "code": "@(6).alert('Hello!');",
+    "solution": "window.alert('Hello!');"
+  },
+  "nodejs/exercise_webassembly1.htm": {
+    "prompt": "Complete the code to load and instantiate a WebAssembly module",
+    "code": "// Read the WebAssembly binary file\nconst wasmBuffer = fs.readFileSync('./math.wasm');\n\n// Instantiate the module\nWebAssembly.@(11)(wasmBuffer).then(result => {\n  const instance = result.instance;\n});",
+    "solution": "// Read the WebAssembly binary file\nconst wasmBuffer = fs.readFileSync('./math.wasm');\n\n// Instantiate the module\nWebAssembly.instantiate(wasmBuffer).then(result => {\n  const instance = result.instance;\n});"
+  },
+  "nodejs/exercise_websockets1.htm": {
+    "prompt": "Complete the code to create a WebSocket server on port 8080",
+    "code": "// Create a WebSocket server\nconst wss = new @(9).@(6)({ port: 8080 });\n\nwss.on('connection', (ws) => {\n  // Send a welcome message\n  ws.@(4)('Welcome to the WebSocket server!');\n});",
+    "solution": "// Create a WebSocket server\nconst wss = new WebSocket.Server({ port: 8080 });\n\nwss.on('connection', (ws) => {\n  // Send a welcome message\n  ws.send('Welcome to the WebSocket server!');\n});"
+  },
+  "nodejs/exercise_zlib1.htm": {
+    "prompt": "Complete the code for compression with zlib using the Gzip algorithm:",
+    "code": "zlib.@(4)(input, (err, compressed) => {\n  zlib.@(6)(compressed, (err, decompressed) => console.log(decompressed.toString()));\n});",
+    "solution": "zlib.gzip(input, (err, compressed) => {\n  zlib.gunzip(compressed, (err, decompressed) => console.log(decompressed.toString()));\n});"
+  },
+  "sql/exercise_alias1.htm": {
+    "prompt": "When displaying the Customers table,\nmake an ALIAS of the PostalCode column,\nthe column should be called Pno instead.",
+    "code": "SELECT CustomerName,\nAddress,\nPostalCode @(6)\nFROM Customers;",
+    "solution": "SELECT CustomerName,\nAddress,\nPostalCode AS Pno\nFROM Customers;"
+  },
+  "sql/exercise_alias2.htm": {
+    "prompt": "When displaying the Customers table,\nrefer to the table as Consumers instead of Customers.",
+    "code": "SELECT *\nFROM Customers @(12);",
+    "solution": "SELECT *\nFROM Customers AS Consumers;"
+  },
+  "sql/exercise_database6.htm": {
+    "prompt": "Add a column of type DATE called Birthday.",
+    "code": "@(11) Persons\n@(17);",
+    "solution": "ALTER TABLE Persons\nADD Birthday DATE;"
+  },
+  "sql/exercise_database7.htm": {
+    "prompt": "Delete the column Birthday from the Persons table.",
+    "code": "@(11) Persons\n@(11) Birthday;",
+    "solution": "ALTER TABLE Persons\nDROP COLUMN Birthday;"
+  },
+  "sql/exercise_and1.htm": {
+    "prompt": "Select all records where the City column has the value 'Berlin'\nand the PostalCode column has the value 12209.",
+    "code": "@(6) * FROM Customers\n@(5) City = 'Berlin'\n@(3) @(10) = 12209;",
+    "solution": "SELECT * FROM Customers\nWHERE City = 'Berlin'\nAND PostalCode = 12209;"
+  },
+  "sql/exercise_functions4.htm": {
+    "prompt": "Use an SQL function to calculate the average Price of all products.",
+    "code": "SELECT @(10)\nFROM Products;",
+    "solution": "SELECT AVG(Price)\nFROM Products;"
+  },
+  "sql/exercise_between1.htm": {
+    "prompt": "Use the BETWEEN operator to select all the records where the value of the\nPrice column is between 10 and 20.",
+    "code": "SELECT * FROM Products\nWHERE Price <br class=\"phonebr\">@(17);",
+    "solution": "SELECT * FROM Products\nWHERE Price <br class=\"phonebr\">BETWEEN 10 AND 20;"
+  },
+  "sql/exercise_between2.htm": {
+    "prompt": "Use the BETWEEN operator to select all the records where the value of the\nPrice column is NOT between 10 and 20.",
+    "code": "SELECT * FROM Products\nWHERE Price <br class=\"phonebr\">@(21);",
+    "solution": "SELECT * FROM Products\nWHERE Price <br class=\"phonebr\">NOT BETWEEN 10 AND 20;"
+  },
+  "sql/exercise_between3.htm": {
+    "prompt": "Use the BETWEEN operator to select all the records where the value of the\nProductName column is alphabetically between 'Geitost' and 'Pavlova'.",
+    "code": "SELECT * FROM Products\nWHERE ProductName <br class=\"phonebr\">@(31);",
+    "solution": "SELECT * FROM Products\nWHERE ProductName <br class=\"phonebr\">BETWEEN 'Geitost' AND 'Pavlova';"
+  },
+  "sql/exercise_functions3.htm": {
+    "prompt": "Use the correct function to return the number of records that have the Price value set to 18.",
+    "code": "SELECT @(5)(*)\nFROM Products\n@(5) Price = 18;",
+    "solution": "SELECT COUNT(*)\nFROM Products\nWHERE Price = 18;"
+  },
+  "sql/exercise_database1.htm": {
+    "prompt": "Write the correct SQL statement to create a new database called testDB.",
+    "code": "@(22);",
+    "solution": "CREATE DATABASE testDB;"
+  },
+  "sql/exercise_database3.htm": {
+    "prompt": "Write the correct SQL statement to create a new table called Persons.",
+    "code": "@(20) (\n  PersonID int,\n  LastName varchar(255),\n  FirstName varchar(255),\n  Address varchar(255),\n  City varchar(255) \n);",
+    "solution": "CREATE TABLE Persons (\n  PersonID int,\n  LastName varchar(255),\n  FirstName varchar(255),\n  Address varchar(255),\n  City varchar(255) \n);"
+  },
+  "sql/exercise_delete1.htm": {
+    "prompt": "Delete all the records from the Customers table where the Country value is 'Norway'.",
+    "code": "@(11) Customers\n@(5) Country = 'Norway';",
+    "solution": "DELETE FROM Customers\nWHERE Country = 'Norway';"
+  },
+  "sql/exercise_delete2.htm": {
+    "prompt": "Delete all the records from the Customers table.",
+    "code": "@(11) Customers;",
+    "solution": "DELETE FROM Customers;"
+  },
+  "sql/exercise_select3.htm": {
+    "prompt": "Select all the different values from the Country column in the Customers table.",
+    "code": "@(6) @(8) Country <br class=\"phonebr\">FROM Customers;",
+    "solution": "SELECT DISTINCT Country <br class=\"phonebr\">FROM Customers;"
+  },
+  "sql/exercise_database2.htm": {
+    "prompt": "Write the correct SQL statement to delete a database named testDB.",
+    "code": "@(20);",
+    "solution": "DROP DATABASE testDB;"
+  },
+  "sql/exercise_database4.htm": {
+    "prompt": "Write the correct SQL statement to delete a table called Persons.",
+    "code": "@(10) Persons;",
+    "solution": "DROP TABLE Persons;"
+  },
+  "sql/exercise_database5.htm": {
+    "prompt": "Use the TRUNCATE statement to delete all data inside a table.",
+    "code": "@(14) Persons;",
+    "solution": "TRUNCATE TABLE Persons;"
+  },
+  "sql/exercise_groupby1.htm": {
+    "prompt": "List the number of customers in each country.",
+    "code": "SELECT @(5)(CustomerID),\nCountry\nFROM Customers\n@(16);",
+    "solution": "SELECT COUNT(CustomerID),\nCountry\nFROM Customers\nGROUP BY Country;"
+  },
+  "sql/exercise_groupby2.htm": {
+    "prompt": "List the number of customers in each country, ordered by the country with the most customers first.",
+    "code": "SELECT @(5)(CustomerID),\nCountry\nFROM Customers\n@(16)\nORDER BY <br class=\"phonebr\">@(22);",
+    "solution": "SELECT COUNT(CustomerID),\nCountry\nFROM Customers\nGROUP BY Country\nORDER BY <br class=\"phonebr\">COUNT(CustomerID) DESC;"
+  },
+  "sql/exercise_in1.htm": {
+    "prompt": "Use the IN operator to select all the records where Country\nis either \"Norway\" or \"France\".",
+    "code": "SELECT * FROM Customers\n@(16) <br class=\"phonebr\">@(10) 'France'@(1);",
+    "solution": "SELECT * FROM Customers\nWHERE Country IN <br class=\"phonebr\">('Norway', 'France');"
+  },
+  "sql/exercise_in2.htm": {
+    "prompt": "Use the IN operator to select all the records where Country\nis NOT \"Norway\" and NOT \"France\".",
+    "code": "SELECT * FROM Customers\n@(20) <br class=\"phonebr\">('Norway', 'France');",
+    "solution": "SELECT * FROM Customers\nWHERE Country NOT IN <br class=\"phonebr\">('Norway', 'France');"
+  },
+  "sql/exercise_insert1.htm": {
+    "prompt": "Insert a new record in the Customers table.",
+    "code": "@(11) Customers @(1)\nCustomerName, \nAddress, \nCity, \nPostalCode,\nCountry@(1)\n@(6) @(1)\n'Hekkan Burger',\n'Gateveien 15',\n'Sandnes',\n'4306',\n'Norway'@(1);",
+    "solution": "INSERT INTO Customers (\nCustomerName, \nAddress, \nCity, \nPostalCode,\nCountry)\nVALUES (\n'Hekkan Burger',\n'Gateveien 15',\n'Sandnes',\n'4306',\n'Norway');"
+  },
+  "sql/exercise_join1.htm": {
+    "prompt": "Insert the missing parts in the JOIN clause to join the two tables \nOrders and Customers,\nusing the CustomerID field in both tables as the relationship between the two tables.",
+    "code": "SELECT *\nFROM Orders\nLEFT JOIN Customers\n@(20)=<br class=\"phonebr\">@(20);",
+    "solution": "SELECT *\nFROM Orders\nLEFT JOIN Customers\nON Orders.CustomerID=<br class=\"phonebr\">Customers.CustomerID;"
+  },
+  "sql/exercise_join2.htm": {
+    "prompt": "Choose the correct JOIN clause to select all records from the two tables\nwhere there is a match in both tables.",
+    "code": "SELECT *\nFROM Orders\n@(20)\nON Orders.CustomerID=<br class=\"phonebr\">Customers.CustomerID;",
+    "solution": "SELECT *\nFROM Orders\nINNER JOIN Customers\nON Orders.CustomerID=<br class=\"phonebr\">Customers.CustomerID;"
+  },
+  "sql/exercise_like1.htm": {
+    "prompt": "Select all records where the value of the City column starts with the letter \"a\".",
+    "code": "SELECT * FROM Customers\n@(20);",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE 'a%';"
+  },
+  "sql/exercise_like2.htm": {
+    "prompt": "Select all records where the value of the City column ends with the letter \"a\".",
+    "code": "SELECT * FROM Customers\n@(20);",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '%a';"
+  },
+  "sql/exercise_like3.htm": {
+    "prompt": "Select all records where the value of the City column contains the letter \"a\".",
+    "code": "SELECT * FROM Customers\n@(21);",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '%a%';"
+  },
+  "sql/exercise_like4.htm": {
+    "prompt": "Select all records where the value of the City column starts with letter \"a\" and ends with the letter \"b\".",
+    "code": "SELECT * FROM Customers\n@(21);",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE 'a%b';"
+  },
+  "sql/exercise_like5.htm": {
+    "prompt": "Select all records where the value of the City column does NOT start with the letter \"a\".",
+    "code": "SELECT * FROM Customers\n@(24);",
+    "solution": "SELECT * FROM Customers\nWHERE City NOT LIKE 'a%';"
+  },
+  "sql/exercise_functions1.htm": {
+    "prompt": "Use the MIN function to select the record with the smallest value of the Price column.",
+    "code": "SELECT @(10)\nFROM Products;",
+    "solution": "SELECT MIN(Price)\nFROM Products;"
+  },
+  "sql/exercise_functions2.htm": {
+    "prompt": "Use an SQL function to select the record with the highest value of the Price column.",
+    "code": "SELECT @(10)\nFROM Products;",
+    "solution": "SELECT MAX(Price)\nFROM Products;"
+  },
+  "sql/exercise_not1.htm": {
+    "prompt": "Use the NOT keyword to select all records where City is NOT \"Berlin\".",
+    "code": "SELECT * FROM Customers\n@(14) = '@(6)';",
+    "solution": "SELECT * FROM Customers\nWHERE NOT City = 'Berlin';"
+  },
+  "sql/exercise_null1.htm": {
+    "prompt": "Select all records from the Customers where the PostalCode column is empty.",
+    "code": "SELECT * FROM Customers\nWHERE @(10) @(2) @(4);",
+    "solution": "SELECT * FROM Customers\nWHERE PostalCode IS NULL;"
+  },
+  "sql/exercise_null2.htm": {
+    "prompt": "Select all records from the Customers where the PostalCode column is NOT empty.",
+    "code": "SELECT * FROM Customers\nWHERE @(10) @(2) @(3) @(4);",
+    "solution": "SELECT * FROM Customers\nWHERE PostalCode IS NOT NULL;"
+  },
+  "sql/exercise_or1.htm": {
+    "prompt": "Select all records where the City column has the value 'Berlin' OR 'London'.",
+    "code": "@(6) * FROM Customers\n@(5) City = 'Berlin'\n@(2) @(4) = '@(6)';",
+    "solution": "SELECT * FROM Customers\nWHERE City = 'Berlin'\nOR City = 'London';"
+  },
+  "sql/exercise_orderby1.htm": {
+    "prompt": "Select all records from the Customers table, sort the result alphabetically by the column City.",
+    "code": "SELECT * FROM Customers\n@(8) @(4);",
+    "solution": "SELECT * FROM Customers\nORDER BY City;"
+  },
+  "sql/exercise_orderby2.htm": {
+    "prompt": "Select all records from the Customers table, sort the result reversed alphabetically by the column City.",
+    "code": "SELECT * FROM Customers\n@(8) @(4) @(4);",
+    "solution": "SELECT * FROM Customers\nORDER BY City DESC;"
+  },
+  "sql/exercise_orderby3.htm": {
+    "prompt": "Select all records from the Customers table,\nsort the result alphabetically, first by the column Country,\nthen, by the column City.",
+    "code": "SELECT * FROM Customers\n@(8) @(8) @(4);",
+    "solution": "SELECT * FROM Customers\nORDER BY Country, City;"
+  },
+  "sql/exercise_select1.htm": {
+    "prompt": "Insert the missing statement to get all the columns from the Customers table.",
+    "code": "@(6) * <br class=\"phonebr\">FROM Customers;",
+    "solution": "SELECT * <br class=\"phonebr\">FROM Customers;"
+  },
+  "sql/exercise_select2.htm": {
+    "prompt": "Write a statement that will select the City column from the Customers table.",
+    "code": "@(6) @(4) <br class=\"phonebr\">@(4) Customers;",
+    "solution": "SELECT City <br class=\"phonebr\">FROM Customers;"
+  },
+  "sql/exercise_functions5.htm": {
+    "prompt": "Use an SQL function to calculate the sum of all the Price column values in the Products table.",
+    "code": "SELECT @(10)\nFROM Products;",
+    "solution": "SELECT SUM(Price)\nFROM Products;"
+  },
+  "sql/exercise_update1.htm": {
+    "prompt": "Update the City column of all records in the Customers table.",
+    "code": "@(6) Customers\n@(3) City = 'Oslo';",
+    "solution": "UPDATE Customers\nSET City = 'Oslo';"
+  },
+  "sql/exercise_update2.htm": {
+    "prompt": "Set the value of the City columns to 'Oslo', but only the ones where the Country column has the value \"Norway\".",
+    "code": "@(6) Customers\n@(3) City = 'Oslo'\n@(5) Country = 'Norway';",
+    "solution": "UPDATE Customers\nSET City = 'Oslo'\nWHERE Country = 'Norway';"
+  },
+  "sql/exercise_update3.htm": {
+    "prompt": "Update the City value and the Country value.",
+    "code": "@(6) Customers\n@(3) City = 'Oslo'@(1)\n@(7) = 'Norway'\nWHERE CustomerID = 32;",
+    "solution": "UPDATE Customers\nSET City = 'Oslo',\nCountry = 'Norway'\nWHERE CustomerID = 32;"
+  },
+  "sql/exercise_where1.htm": {
+    "prompt": "Select all records where the City column has the value \"Berlin\".",
+    "code": "SELECT * FROM Customers\n@(5) @(4) = @(8);",
+    "solution": "SELECT * FROM Customers\nWHERE City = 'Berlin';"
+  },
+  "sql/exercise_where2.htm": {
+    "prompt": "Select all records where the CustomerID column has the value 32.",
+    "code": "SELECT * FROM Customers\n@(5) CustomerID @(1) @(2);",
+    "solution": "SELECT * FROM Customers\nWHERE CustomerID = 32;"
+  },
+  "sql/exercise_wildcards1.htm": {
+    "prompt": "Select all records where the second letter of the City is an \"a\".",
+    "code": "SELECT * FROM Customers\nWHERE City LIKE '@(2)%';",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '_a%';"
+  },
+  "sql/exercise_wildcards2.htm": {
+    "prompt": "Select all records where the first letter of the City is an \"a\" or a \"c\" or an \"s\".",
+    "code": "SELECT * FROM Customers\nWHERE City LIKE '@(5)%';",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '[acs]%';"
+  },
+  "sql/exercise_wildcards3.htm": {
+    "prompt": "Select all records where the first letter of the City starts with anything from an \"a\" to an \"f\".",
+    "code": "SELECT * FROM Customers\nWHERE City LIKE '@(5)%';",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '[a-f]%';"
+  },
+  "sql/exercise_wildcards4.htm": {
+    "prompt": "Select all records where the first letter of the City is NOT an \"a\" or a \"c\" or an \"f\".",
+    "code": "SELECT * FROM Customers\nWHERE City LIKE '@(6)%';",
+    "solution": "SELECT * FROM Customers\nWHERE City LIKE '[!acf]%';"
+  },
+  "git/exercise_branch1.htm": {
+    "prompt": "List the existing branches:",
+    "code": "git @(6)",
+    "solution": "git branch"
+  },
+  "git/exercise_branch_merge1.htm": {
+    "prompt": "Remove the hello-you branch from the local repository:",
+    "code": "git @(6) @(2) hello-you",
+    "solution": "git branch -d hello-you"
+  },
+  "git/exercise_branch_pull_from_remote1.htm": {
+    "prompt": "List only remote branches of the current Git.",
+    "code": "git @(6) @(2)",
+    "solution": "git branch -r"
+  },
+  "git/exercise_branch_push_to_remote1.htm": {
+    "prompt": "Write the command to push a branch named feature to the remote origin:",
+    "code": "git push @(6) @(7)",
+    "solution": "git push origin feature"
+  },
+  "git/exercise_cherrypick1.htm": {
+    "prompt": "How do you apply a patch file and keep the original author and message?",
+    "code": "git @(2) 0001-some-change.patch",
+    "solution": "git am 0001-some-change.patch"
+  },
+  "git/exercise_cicd1.htm": {
+    "prompt": "What can you add to a commit message to skip running CI/CD for that commit?",
+    "code": "git commit -m \"Update docs [@(7)]\"",
+    "solution": "git commit -m \"Update docs [skip ci]\""
+  },
+  "git/exercise_clone1.htm": {
+    "prompt": "Clone the repository https://abc.com/x/y.git to a folder named \"newlife\":",
+    "code": "git @(5) @(23) @(7)",
+    "solution": "git clone https://abc.com/x/y.git newlife"
+  },
+  "git/exercise_commit1.htm": {
+    "prompt": "Commit the updated files directly, skipping the staging environment:",
+    "code": "git @(6) @(2) -m \"New line added\"",
+    "solution": "git commit -a -m \"New line added\""
+  },
+  "git/exercise_commit2.htm": {
+    "prompt": "View the history of commits for the repository:",
+    "code": "git @(3)",
+    "solution": "git log"
+  },
+  "git/exercise_config1.htm": {
+    "prompt": "Set your Git email to student@example.com",
+    "code": "<pre class=\"command-line\"><code>git config --global @(10) \"student@example.com\"</code></pre>",
+    "solution": "<pre class=\"command-line\"><code>git config --global user.email \"student@example.com\"</code></pre>"
+  },
+  "git/exercise_getstarted1.htm": {
+    "prompt": "Initialize Git on the current folder:",
+    "code": "git @(4)",
+    "solution": "git init"
+  },
+  "git/exercise_gitattributes1.htm": {
+    "prompt": "How do you set all shell script files to use LF (Unix) line endings in .gitattributes?",
+    "code": "*.sh text @(6)",
+    "solution": "*.sh text eol=lf"
+  },
+  "git/exercise_help1.htm": {
+    "prompt": "Show all git possible commands in command line:",
+    "code": "git @(4) @(5)",
+    "solution": "git help --all"
+  },
+  "git/exercise_history1.htm": {
+    "prompt": "Show the changes introduced in the most recent commit.",
+    "code": "git show @(4)",
+    "solution": "git show HEAD"
+  },
+  "git/exercise_hooks1.htm": {
+    "prompt": "Where are Git hooks stored in your repository?",
+    "code": "@(4)/hooks",
+    "solution": ".git/hooks"
+  },
+  "git/exercise_ignore1.htm": {
+    "prompt": "In .gitignore add a line to ignore all files in any directory named temp:",
+    "code": "@(5)",
+    "solution": "temp/"
+  },
+  "git/exercise_install1.htm": {
+    "prompt": "Type the command to check your installed Git version.",
+    "code": "<pre class=\"command-line\"><code>@(3) --version</code></pre>",
+    "solution": "<pre class=\"command-line\"><code>git --version</code></pre>"
+  },
+  "git/exercise_lfs1.htm": {
+    "prompt": "What command would you use to track all .zip files with Git LFS?",
+    "code": "git lfs track \"@(5)\"",
+    "solution": "git lfs track \"*.zip\""
+  },
+  "git/exercise_mergeconflict1.htm": {
+    "prompt": "What command do you use to cancel an in-progress merge and return to the pre-merge state?",
+    "code": "git merge @(7)",
+    "solution": "git merge --abort"
+  },
+  "git/exercise_new_files1.htm": {
+    "prompt": "Check the status of the Git:",
+    "code": "git @(6)",
+    "solution": "git status"
+  },
+  "git/exercise_pull_from_remote1.htm": {
+    "prompt": "pull is a combination of:",
+    "code": "@(5) and then @(5)",
+    "solution": "fetch and then merge"
+  },
+  "git/exercise_pull_from_remote2.htm": {
+    "prompt": "Update the current branch from its origin using a single command:",
+    "code": "git @(4) origin",
+    "solution": "git pull origin"
+  },
+  "git/exercise_push_to_remote1.htm": {
+    "prompt": "Push all local tags to the remote repository:",
+    "code": "git push @(6)",
+    "solution": "git push --tags"
+  },
+  "git/exercise_rebase1.htm": {
+    "prompt": "What is the correct code to abort a rebase in progress:",
+    "code": "git @(6) @(7)",
+    "solution": "git rebase --abort"
+  },
+  "git/exercise_recovery1.htm": {
+    "prompt": "Restore a deleted branch from a commit hash",
+    "code": "git @(8) -b branch-name abc123",
+    "solution": "git checkout -b branch-name abc123"
+  },
+  "git/exercise_recovery2.htm": {
+    "prompt": "Restore the previous HEAD position using the reflog entry at index 2.",
+    "code": "git @(5) --hard HEAD@{2}",
+    "solution": "git reset --hard HEAD@{2}"
+  },
+  "git/exercise_reflog1.htm": {
+    "prompt": "Restore the previous HEAD position using the reflog entry at index 2.",
+    "code": "git @(5) --hard HEAD@{2}",
+    "solution": "git reset --hard HEAD@{2}"
+  },
+  "git/exercise_remote_advanced1.htm": {
+    "prompt": "What command removes a remote named upstream?",
+    "code": "git remote @(6) upstream",
+    "solution": "git remote remove upstream"
+  },
+  "git/exercise_remote_branch1.htm": {
+    "prompt": "Delete a branch named feature from the remote origin:",
+    "code": "git push origin @(8) feature",
+    "solution": "git push origin --delete feature"
+  },
+  "git/exercise_remote_send_pull_request1.htm": {
+    "prompt": "Push your local changes to your remote origin:",
+    "code": "git @(4) origin",
+    "solution": "git push origin"
+  },
+  "git/exercise_reset1.htm": {
+    "prompt": "reset to the commit with the hash abc1234:",
+    "code": "git @(5) @(7)",
+    "solution": "git reset abc1234"
+  },
+  "git/exercise_revert1.htm": {
+    "prompt": "revert the latest commit, skipping the commit message editor:",
+    "code": "git revert HEAD @(9)",
+    "solution": "git revert HEAD --no-edit"
+  },
+  "git/exercise_set_remote1.htm": {
+    "prompt": "Check if your SSH connection is set up:",
+    "code": "@(3) -T git@github.com",
+    "solution": "ssh -T git@github.com"
+  },
+  "git/exercise_signing1.htm": {
+    "prompt": "How do you sign a tag named v1.0 with a message using Git?",
+    "code": "git tag @(2) v1.0 -m \"version 1.0\"",
+    "solution": "git tag -s v1.0 -m \"version 1.0\""
+  },
+  "git/exercise_staging_environment1.htm": {
+    "prompt": "Stage all new, modified, and deleted files. Use the shorthand command:",
+    "code": "git @(3) @(2)",
+    "solution": "git add -A"
+  },
+  "git/exercise_stash1.htm": {
+    "prompt": "Fill in the command to list all stashes.",
+    "code": "git stash @(4)",
+    "solution": "git stash list"
+  },
+  "git/exercise_submodules1.htm": {
+    "prompt": "After cloning a repo with submodules, what command fetches the submodule contents?",
+    "code": "git submodule @(6)",
+    "solution": "git submodule update"
+  },
+  "git/exercise_tagging1.htm": {
+    "prompt": "Create an annotated tag named v2.0 with the message \"Second release\".",
+    "code": "git tag -a @(4) @(2) \"Second release\"",
+    "solution": "git tag -a v2.0 -m \"Second release\""
   }
 }
