@@ -1,0 +1,209 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0;
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans TC", sans-serif;
+  background: Canvas;
+  color: CanvasText;
+}
+code {
+  font: 0.95em ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  background: color-mix(in oklab, Canvas 85%, CanvasText 15%);
+  padding: 0 .25em;
+  border-radius: 3px;
+}
+.muted { color: color-mix(in oklab, CanvasText 60%, Canvas 40%); font-size: .9em; }
+button { cursor: pointer; }
+
+/* ---- Student ---- */
+.quiz {
+  max-width: 720px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+.quiz__head {
+  display: flex; gap: 1rem; align-items: baseline; flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.quiz__head input {
+  font: inherit; padding: .35rem .5rem; border: 1px solid; border-radius: 4px;
+}
+.q {
+  border: 1px solid color-mix(in oklab, CanvasText 20%, Canvas 80%);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.q__prompt { font-weight: 600; }
+.q__en { font-size: .85em; color: color-mix(in oklab, CanvasText 55%, Canvas 45%); margin-top: .25rem; }
+.q__opts { margin-top: .75rem; display: grid; gap: .35rem; }
+.opt { display: flex; gap: .5rem; align-items: flex-start; cursor: pointer; }
+.opt:hover { background: color-mix(in oklab, Canvas 92%, CanvasText 8%); }
+.opt input { margin-top: .35rem; }
+.quiz__foot { display: flex; gap: 1rem; align-items: center; margin: 1rem 0 2rem; }
+#submit { padding: .5rem 1.25rem; font: inherit; }
+
+/* ---- Admin ---- */
+.admin { padding: 0; }
+.admin__head {
+  display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid color-mix(in oklab, CanvasText 20%, Canvas 80%);
+}
+.admin__head h1 { margin: 0; font-size: 1.1rem; }
+.admin__tools { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+.admin__tools input { font: inherit; padding: .25rem .4rem; }
+.admin__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr 340px;
+  gap: 0;
+  height: calc(100vh - 49px);
+}
+.pane { overflow: auto; padding: .75rem; border-right: 1px solid color-mix(in oklab, CanvasText 15%, Canvas 85%); }
+.pane:last-child { border-right: none; border-left: 1px solid color-mix(in oklab, CanvasText 15%, Canvas 85%); }
+
+.pane--tree details { margin-bottom: .25rem; }
+.pane--tree summary { cursor: pointer; padding: .15rem 0; }
+.pane--tree details details { margin-left: 1rem; }
+.pane--tree .topic {
+  display: block; width: 100%; text-align: left;
+  background: none; border: none; padding: .15rem 1rem;
+  font: inherit; color: inherit; cursor: pointer;
+  border-radius: 3px;
+}
+.pane--tree .topic:hover { background: color-mix(in oklab, Canvas 90%, CanvasText 10%); }
+.pane--tree details.empty { opacity: .5; }
+
+.items__head { display: flex; gap: 1rem; align-items: center; margin-bottom: .5rem; }
+.items__head h2 { margin: 0; font-size: 1rem; }
+.item {
+  border: 1px solid color-mix(in oklab, CanvasText 15%, Canvas 85%);
+  border-radius: 4px;
+  padding: .5rem .75rem;
+  margin-bottom: .5rem;
+}
+.item__head { display: flex; gap: .5rem; align-items: flex-start; }
+.item__head label { cursor: pointer; }
+.item__en { font-size: .8em; color: color-mix(in oklab, CanvasText 55%, Canvas 45%); margin: .15rem 0 .25rem 1.5rem; }
+.item__opts { margin: .25rem 0 0 1.5rem; padding-left: 1.25rem; }
+.item__opts li.correct {
+  color: green;
+  font-weight: 600;
+}
+.item__opts li.correct::after { content: " ✓"; }
+
+.pane--cart h2 { font-size: 1rem; margin: 0 0 .5rem; }
+.cart-actions { display: flex; gap: .5rem; align-items: center; margin-bottom: .5rem; flex-wrap: wrap; }
+.cart-actions a[aria-disabled=true] { pointer-events: none; opacity: .4; }
+#cart-url { width: 100%; font: 12px ui-monospace, monospace; }
+#cart-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+#cart-list li {
+  display: flex; gap: .5rem; align-items: flex-start;
+  padding: .25rem 0;
+  border-top: 1px dashed color-mix(in oklab, CanvasText 15%, Canvas 85%);
+  font-size: .9em;
+}
+#cart-list li > span { flex: 1; }
+#cart-list button { background: none; border: none; color: inherit; font: inherit; cursor: pointer; }
+
+dialog { border: 1px solid; border-radius: 6px; padding: 1rem; }
+dialog menu { display: flex; gap: .5rem; justify-content: flex-end; padding: 0; margin: .5rem 0 0; }
+
+@media (max-width: 800px) {
+  .admin__grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .pane { max-height: 50vh; border-right: none; border-bottom: 1px solid color-mix(in oklab, CanvasText 15%, Canvas 85%); }
+}
+
+/* ---- 題型 badge ---- */
+.kind-badge {
+  display: inline-block;
+  font-size: .7em;
+  padding: 0 .35em;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  vertical-align: 1px;
+}
+.kind-mcq      { background: color-mix(in oklab, dodgerblue 25%, Canvas 75%); color: dodgerblue; }
+.kind-fitb     { background: color-mix(in oklab, darkorange 25%, Canvas 75%); color: darkorange; }
+.kind-dragdrop { background: color-mix(in oklab, mediumseagreen 25%, Canvas 75%); color: seagreen; }
+
+/* ---- Student fitb ---- */
+.q__code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
+  padding: .75rem;
+  border-radius: 4px;
+  font: .9em ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  margin: .5rem 0 0;
+}
+.fitb-blank {
+  display: inline;
+  font: inherit;
+  padding: 0 .25em;
+  border: 1px solid color-mix(in oklab, CanvasText 30%, Canvas 70%);
+  border-radius: 3px;
+  background: Canvas;
+  color: CanvasText;
+  margin: 0 .15em;
+  min-width: 3em;
+}
+.fitb-blank:focus { outline: 2px solid color-mix(in oklab, dodgerblue 50%, Canvas 50%); }
+
+/* ---- Student dragdrop ---- */
+.q__dd-template {
+  background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
+  padding: .75rem;
+  border-radius: 4px;
+  font: .9em ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  white-space: pre-wrap;
+  margin: .5rem 0 0;
+}
+.q__dd-template > span { white-space: pre-wrap; }
+.dd-slot {
+  font: inherit;
+  padding: 0 .15em;
+  margin: 0 .15em;
+  border: 1px solid color-mix(in oklab, mediumseagreen 60%, Canvas 40%);
+  border-radius: 3px;
+  background: Canvas;
+  color: CanvasText;
+  max-width: 12em;
+}
+.q__hint { font-size: .85em; color: color-mix(in oklab, CanvasText 55%, Canvas 45%); margin-top: .5rem; }
+
+/* ---- Admin item kind extras ---- */
+.item__code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
+  padding: .5rem .75rem;
+  border-radius: 3px;
+  font: .85em ui-monospace, monospace;
+  margin: .25rem 0 .25rem 1.5rem;
+}
+.item__sol {
+  margin: .25rem 0 .25rem 1.5rem;
+  font-size: .9em;
+}
+.item__sol pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: color-mix(in oklab, mediumseagreen 10%, Canvas 90%);
+  padding: .35rem .5rem;
+  border-radius: 3px;
+  font: .85em ui-monospace, monospace;
+  margin: .25rem 0 0;
+}
+.item__dd {
+  background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
+  padding: .5rem .75rem;
+  border-radius: 3px;
+  font: .85em ui-monospace, monospace;
+  margin: .25rem 0 .25rem 1.5rem;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>挑題後台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="admin">
+<header class="admin__head">
+  <h1>挑題後台</h1>
+  <div class="admin__tools">
+    <label>站台 base
+      <input id="base" size="40" placeholder="https://&lt;user&gt;.github.io/&lt;repo&gt;/">
+    </label>
+    <button id="export-summary" type="button">匯出題庫摘要</button>
+    <button id="import-llm" type="button">匯入 LLM 回應</button>
+  </div>
+</header>
+
+<main class="admin__grid">
+  <aside id="tree" class="pane pane--tree" aria-label="題庫樹">載入中…</aside>
+  <section id="items" class="pane pane--items" aria-label="題目清單">
+    <p class="muted">從左側選一個 topic。</p>
+  </section>
+  <aside class="pane pane--cart" aria-label="購物車">
+    <h2>購物車 <span id="cart-count" class="muted">(0)</span></h2>
+    <div class="cart-actions">
+      <button id="cart-clear" type="button">清空</button>
+      <button id="cart-copy" type="button">複製 URL</button>
+      <a id="cart-preview" href="#" target="_blank" rel="noopener">預覽 ↗</a>
+    </div>
+    <textarea id="cart-url" rows="3" readonly></textarea>
+    <ul id="cart-list"></ul>
+  </aside>
+</main>
+
+<dialog id="llm-dialog">
+  <form method="dialog">
+    <h2>貼上 LLM 回應</h2>
+    <p class="muted">會自動抓出符合 <code>lang:ex:topic:idx</code> 的 ID（quiz / chal 不收）。</p>
+    <textarea id="llm-text" rows="14" cols="60" placeholder="把 LLM 的回應整段貼這裡…"></textarea>
+    <menu>
+      <button value="cancel">取消</button>
+      <button id="llm-ok" value="ok">匯入</button>
+    </menu>
+  </form>
+</dialog>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>練習</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="quiz">
+  <header class="quiz__head">
+    <label>學號 <input id="sid" inputmode="latin" autocomplete="off" placeholder="例如 b11234567"></label>
+    <span id="meta" class="muted"></span>
+  </header>
+  <div id="questions"></div>
+  <div class="quiz__foot">
+    <button id="submit" type="button">提交</button>
+    <output id="result" aria-live="polite"></output>
+  </div>
+</main>
+<script type="module" src="quiz.js"></script>
+</body>
+</html>
