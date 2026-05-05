@@ -5,7 +5,7 @@
 
 const SHEET_ID = '<PASTE_GOOGLE_SHEET_ID_HERE>';
 const SHEET_NAME = 'answers';
-const HEADERS = ['timestamp', 'studentId', 'questionId', 'kind', 'questionEn', 'selected', 'correct'];
+const HEADERS = ['timestamp', 'studentId', 'questionId', 'kind', 'questionEn', 'selected', 'correct', 'meta'];
 const STUDENT_ID_RE = /^[A-Za-z0-9]{4,15}$/;
 
 function getSheet_() {
@@ -57,6 +57,7 @@ function doPost(e) {
       String(a.questionEn || ''),
       serializeSelected_(a.selected),
       a.correct === true,
+      a.meta == null ? '' : (typeof a.meta === 'string' ? a.meta : JSON.stringify(a.meta)),
     ]);
     const sh = getSheet_();
     const startRow = sh.getLastRow() + 1;

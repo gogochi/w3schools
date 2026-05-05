@@ -4,7 +4,7 @@
 // is also tried so you don't need to push before testing.
 
 export const REPO_RAW = 'https://raw.githubusercontent.com/<user>/<repo>/main/data';
-export const TYPE_MAP = { ex: 'exercises' };
+export const TYPE_MAP = { ex: 'exercises', quiz: 'quiz', chal: 'challenges' };
 export const LANGS = ['html', 'css', 'js', 'c', 'nodejs', 'sql', 'git', 'vue'];
 
 const cache = new Map();
@@ -26,14 +26,38 @@ async function fetchJsonWithFallback(file) {
   throw lastErr || new Error(`fetch failed: ${file}`);
 }
 
+// quiz JSON shape is {test, total, questions: [...]}; normalize to the same
+// {topics: {main: [...]}} shape exercises use, with options flattened from
+// [{value, text}] to [text]. Falls back to options_translations for correct.
+function normalizeQuiz(j) {
+  const items = (j.questions || []).map(q => {
+    const options = (q.options || []).map(o => (o && typeof o === 'object') ? o.text : o);
+    let correct = typeof q.correct === 'number' ? q.correct : null;
+    if (correct === null && Array.isArray(q.options_translations)) {
+      const idx = q.options_translations.findIndex(o => o && o.correct === true);
+      if (idx >= 0) correct = idx;
+    }
+    return {
+      question: q.question,
+      options,
+      correct,
+      url: q.url,
+      prompt_zh: q.prompt_zh,
+      options_translations: q.options_translations,
+    };
+  });
+  return { topics: { main: items } };
+}
+
 export async function loadJson(lang, type) {
   const key = `${lang}:${type}`;
   if (cache.has(key)) return cache.get(key);
   const file = `w3s-${lang}-${TYPE_MAP[type]}.json`;
   try {
     const j = await fetchJsonWithFallback(file);
-    cache.set(key, j);
-    return j;
+    const out = (type === 'quiz') ? normalizeQuiz(j) : j;
+    cache.set(key, out);
+    return out;
   } catch (e) {
     cache.set(key, null);
     console.warn(`loadJson(${lang},${type}) failed:`, e);
@@ -57,7 +81,7 @@ export async function loadFitbCache() {
   return fitbCachePromise;
 }
 
-const ID_RE = /^([a-z]+):(ex):([\w-]+):(\d+)$/;
+const ID_RE = /^([a-z]+):(ex|quiz|chal):([\w-]+):(\d+)$/;
 
 export function parseId(s) {
   const m = ID_RE.exec(s);
@@ -69,6 +93,7 @@ export function parseId(s) {
 // 'mcq' | 'dragdrop' | 'fitb-inline' | 'fitb-ref' | null
 export function rawKind(q) {
   if (!q || typeof q !== 'object') return null;
+  if (typeof q.starter === 'string' && Array.isArray(q.requirements)) return 'challenge';
   if (typeof q.fillintheblanks === 'string') return 'fitb-ref';
   if (q.fillintheblanks === true) return 'fitb-inline';
   if (q.draganddroptext && Array.isArray(q.options) && Array.isArray(q.correct)) return 'dragdrop';
@@ -137,7 +162,24 @@ export async function expandQuestion(q, lang) {
       prompt_zh: q.prompt_zh,
     };
   }
+  if (k === 'challenge') {
+    return {
+      _kind: 'challenge',
+      question: stripHtml(q.intro || '').slice(0, 200),
+      intro: q.intro || '',
+      starter: q.starter || '',
+      solution: q.solution || '',
+      requirements: q.requirements || [],
+      commonMistakes: q.commonMistakes || [],
+      url: q.url,
+      prompt_zh: q.prompt_zh,
+    };
+  }
   return null;
+}
+
+function stripHtml(s) {
+  return String(s).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 export async function loadQuestionsByIds(idStrings) {

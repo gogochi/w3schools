@@ -127,9 +127,10 @@ dialog menu { display: flex; gap: .5rem; justify-content: flex-end; padding: 0; 
   letter-spacing: .03em;
   vertical-align: 1px;
 }
-.kind-mcq      { background: color-mix(in oklab, dodgerblue 25%, Canvas 75%); color: dodgerblue; }
-.kind-fitb     { background: color-mix(in oklab, darkorange 25%, Canvas 75%); color: darkorange; }
-.kind-dragdrop { background: color-mix(in oklab, mediumseagreen 25%, Canvas 75%); color: seagreen; }
+.kind-mcq       { background: color-mix(in oklab, dodgerblue 25%, Canvas 75%); color: dodgerblue; }
+.kind-fitb      { background: color-mix(in oklab, darkorange 25%, Canvas 75%); color: darkorange; }
+.kind-dragdrop  { background: color-mix(in oklab, mediumseagreen 25%, Canvas 75%); color: seagreen; }
+.kind-challenge { background: color-mix(in oklab, mediumpurple 25%, Canvas 75%); color: mediumpurple; }
 
 /* ---- Student fitb ---- */
 .q__code {
@@ -155,6 +156,40 @@ dialog menu { display: flex; gap: .5rem; justify-content: flex-end; padding: 0; 
 .fitb-blank:focus { outline: 2px solid color-mix(in oklab, dodgerblue 50%, Canvas 50%); }
 
 /* ---- Student dragdrop ---- */
+.dd-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin: .5rem 0;
+  padding: .5rem;
+  background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
+  border-radius: 4px;
+}
+.dd-option {
+  background: Canvas;
+  border: 1px solid color-mix(in oklab, mediumseagreen 60%, Canvas 40%);
+  border-radius: 4px;
+  padding: .15rem .55rem;
+  font: .9em ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  cursor: pointer;
+  color: CanvasText;
+}
+.dd-option:hover:not(:disabled) {
+  background: color-mix(in oklab, mediumseagreen 18%, Canvas 82%);
+}
+.dd-option:not(:disabled) { cursor: grab; }
+.dd-option:disabled,
+.dd-option.used {
+  opacity: .35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.dd-option.dragging,
+.dd-slot.dragging { opacity: .4; }
+.dd-options.drop-hover {
+  outline: 2px dashed color-mix(in oklab, dodgerblue 60%, Canvas 40%);
+  outline-offset: -2px;
+}
 .q__dd-template {
   background: color-mix(in oklab, Canvas 92%, CanvasText 8%);
   padding: .75rem;
@@ -165,14 +200,32 @@ dialog menu { display: flex; gap: .5rem; justify-content: flex-end; padding: 0; 
 }
 .q__dd-template > span { white-space: pre-wrap; }
 .dd-slot {
-  font: inherit;
-  padding: 0 .15em;
+  display: inline-block;
+  min-width: 4ch;
+  padding: 0 .35em;
   margin: 0 .15em;
-  border: 1px solid color-mix(in oklab, mediumseagreen 60%, Canvas 40%);
+  border: 1px dashed color-mix(in oklab, CanvasText 40%, Canvas 60%);
   border-radius: 3px;
   background: Canvas;
+  color: color-mix(in oklab, CanvasText 50%, Canvas 50%);
+  cursor: pointer;
+  font: inherit;
+  vertical-align: baseline;
+}
+.dd-slot:not([data-oi=""]) {
+  border-style: solid;
+  border-color: color-mix(in oklab, mediumseagreen 65%, Canvas 35%);
+  background: color-mix(in oklab, mediumseagreen 15%, Canvas 85%);
   color: CanvasText;
-  max-width: 12em;
+}
+.dd-slot:hover:not([data-oi=""]) {
+  background: color-mix(in oklab, tomato 15%, Canvas 85%);
+  border-color: color-mix(in oklab, tomato 50%, Canvas 50%);
+}
+.dd-slot:not([data-oi=""]) { cursor: grab; }
+.dd-slot.drop-hover {
+  outline: 2px dashed color-mix(in oklab, dodgerblue 60%, Canvas 40%);
+  outline-offset: 2px;
 }
 .q__hint { font-size: .85em; color: color-mix(in oklab, CanvasText 55%, Canvas 45%); margin-top: .5rem; }
 
@@ -207,3 +260,111 @@ dialog menu { display: flex; gap: .5rem; justify-content: flex-end; padding: 0; 
   margin: .25rem 0 .25rem 1.5rem;
   white-space: pre-wrap;
 }
+
+/* ---- Challenge (student) ---- */
+.q__intro {
+  margin: .75rem 0;
+  padding: .5rem .75rem;
+  background: color-mix(in oklab, mediumpurple 8%, Canvas 92%);
+  border-left: 3px solid color-mix(in oklab, mediumpurple 50%, Canvas 50%);
+  border-radius: 3px;
+}
+.q__intro ol, .q__intro ul { margin: .25rem 0 .25rem 1.5rem; padding: 0; }
+.q__intro code {
+  background: color-mix(in oklab, Canvas 85%, CanvasText 15%);
+  padding: 0 .25em;
+  border-radius: 3px;
+}
+.q__challenge-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+  margin: .5rem 0 0;
+}
+.q__challenge-wrap.has-preview {
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 720px) {
+  .q__challenge-wrap.has-preview { grid-template-columns: 1fr; }
+}
+.q__editor-pane, .q__preview-pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.q__pane-label {
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: color-mix(in oklab, CanvasText 55%, Canvas 45%);
+  margin-bottom: .25rem;
+}
+.q__editor {
+  width: 100%;
+  display: block;
+  font: .9em ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  padding: .5rem .75rem;
+  border: 1px solid color-mix(in oklab, CanvasText 25%, Canvas 75%);
+  border-radius: 4px;
+  background: color-mix(in oklab, Canvas 95%, CanvasText 5%);
+  color: CanvasText;
+  resize: vertical;
+  tab-size: 2;
+  white-space: pre;
+  overflow-x: auto;
+  min-height: 240px;
+}
+.q__preview {
+  width: 100%;
+  flex: 1;
+  min-height: 240px;
+  border: 1px solid color-mix(in oklab, CanvasText 25%, Canvas 75%);
+  border-radius: 4px;
+  background: white;
+}
+.q__checklist {
+  list-style: none;
+  padding: .5rem .75rem;
+  margin: .5rem 0 0;
+  background: color-mix(in oklab, Canvas 94%, CanvasText 6%);
+  border-radius: 4px;
+}
+.q__checklist li {
+  display: flex;
+  gap: .5rem;
+  align-items: flex-start;
+  padding: .15rem 0;
+}
+.q__checklist .check {
+  font-weight: 600;
+  color: color-mix(in oklab, CanvasText 50%, Canvas 50%);
+  min-width: 1.2em;
+  text-align: center;
+}
+.q__checklist li.passed .check {
+  color: green;
+}
+.q__checklist li.passed .label {
+  color: color-mix(in oklab, CanvasText 70%, Canvas 30%);
+}
+.q__checklist code {
+  background: color-mix(in oklab, Canvas 85%, CanvasText 15%);
+  padding: 0 .25em;
+  border-radius: 3px;
+}
+
+/* ---- Challenge (admin preview) ---- */
+.item__intro {
+  margin: .25rem 0 .25rem 1.5rem;
+  font-size: .9em;
+  color: color-mix(in oklab, CanvasText 80%, Canvas 20%);
+}
+.item__intro ol, .item__intro ul { margin: .25rem 0 .25rem 1.25rem; padding: 0; }
+.item__reqs {
+  margin: .25rem 0 .25rem 1.5rem;
+  font-size: .85em;
+  list-style: '✓ ';
+  padding-left: 1.25rem;
+}
+.item__reqs li { color: color-mix(in oklab, mediumpurple 70%, CanvasText 30%); }

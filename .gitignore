@@ -1,0 +1,18 @@
+# Local dev artifacts
+data/answers.csv
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Temp / scratch
+/tmp/
+/temp/
+.cache/
+
+# Python
+__pycache__/
+*.pyc

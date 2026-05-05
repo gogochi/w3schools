@@ -1,7 +1,7 @@
-import { LANGS, TYPE_MAP, loadJson, expandQuestion, parseId } from './lib.js';
+import { LANGS, TYPE_MAP, loadJson, expandQuestion, parseId } from './lib.js?v=5';
 
-const TYPES = ['ex'];
-const TYPE_LABEL = { ex: 'exercises' };
+const TYPES = ['ex', 'quiz', 'chal'];
+const TYPE_LABEL = { ex: 'exercises', quiz: 'quiz', chal: 'challenges' };
 
 const $ = (s) => document.querySelector(s);
 
@@ -71,7 +71,7 @@ async function buildTree() {
         if (n === 0) continue;
         typeTotal += n;
         const counts = items.reduce((m, it) => (m[it.q._kind] = (m[it.q._kind] || 0) + 1, m), {});
-        const summary = ['mcq', 'fitb', 'dragdrop'].filter(k => counts[k]).map(k => `${k}:${counts[k]}`).join(' ');
+        const summary = ['mcq', 'fitb', 'dragdrop', 'challenge'].filter(k => counts[k]).map(k => `${k}:${counts[k]}`).join(' ');
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'topic';
@@ -180,6 +180,25 @@ function showItems(lang, type, topic, items) {
       const correctText = q.correct.map(oi => htmlToText(q.options[oi] || '')).join(' → ');
       order.innerHTML = `<strong>正確順序：</strong>${correctText}`;
       card.appendChild(order);
+    } else if (q._kind === 'challenge') {
+      const intro = document.createElement('div');
+      intro.className = 'item__intro';
+      intro.innerHTML = q.intro || '';
+      card.appendChild(intro);
+      if ((q.requirements || []).length) {
+        const ul = document.createElement('ul');
+        ul.className = 'item__reqs';
+        q.requirements.forEach(r => {
+          const li = document.createElement('li');
+          li.innerHTML = r.label || r.id || '';
+          ul.appendChild(li);
+        });
+        card.appendChild(ul);
+      }
+      const sol = document.createElement('details');
+      sol.className = 'item__sol';
+      sol.innerHTML = `<summary>解答</summary><pre>${(q.solution || '').replace(/&/g,'&amp;').replace(/</g,'&lt;')}</pre>`;
+      card.appendChild(sol);
     }
 
     pane.appendChild(card);
@@ -200,9 +219,12 @@ function buildUrl() {
   const base = ($('#base').value || '').trim();
   const ids = [...cart.keys()].join(',');
   if (!ids) return '';
-  if (!base) return `?q=${encodeURIComponent(ids)}`;
+  // Always target index.html so the preview link / copied URL never resolves
+  // back to admin.html (when opened from this page with a relative URL).
+  const target = `index.html?q=${encodeURIComponent(ids)}`;
+  if (!base) return target;
   const sep = base.endsWith('/') ? '' : '/';
-  return `${base}${sep}?q=${encodeURIComponent(ids)}`;
+  return `${base}${sep}${target}`;
 }
 
 function renderCart() {
@@ -260,7 +282,7 @@ async function exportSummary() {
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
 
-const ID_GLOBAL_RE = /\b[a-z]+:ex:[\w-]+:\d+\b/g;
+const ID_GLOBAL_RE = /\b[a-z]+:(?:ex|quiz|chal):[\w-]+:\d+\b/g;
 
 async function importLlm(text) {
   const found = [...new Set(text.match(ID_GLOBAL_RE) || [])];
